@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import KreatrLogo from "../../../public/assets/images/home_page/logo/Kreatr-logo.svg";
-import Whatsapp from "../../../public/assets/images/home_page/social_media_icons/Twitter.svg";
-import Instagram from "../../../public/assets/images/home_page/social_media_icons/Instagram.svg";
-import Linkedin from "../../../public/assets/images/home_page/social_media_icons/Linkedin.svg";
+import KreatrLogo from "@/public/assets/images/home_page/logo/Kreatr-logo.svg";
+import Whatsapp from "@/public/assets/images/home_page/social_media_icons/Twitter.svg";
+import Instagram from "@/public/assets/images/home_page/social_media_icons/Instagram.svg";
+import Linkedin from "@/public/assets/images/home_page/social_media_icons/LinkedIn.svg";
 
 const Footer = () => {
   return (
