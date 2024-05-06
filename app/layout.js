@@ -5,12 +5,6 @@ import { MantineProvider } from "@mantine/core";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// import { VinaSans } from 'next/font/google';
- 
-// const vinaSans = VinaSans({
-//   subsets: ['latin'],
-//   variable: '--font-vina-sans',
-// });
 
 export const metadata = {
   title: "Kreatr",
