@@ -62,52 +62,52 @@ const LeftSection = () => {
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="flex items-center mt-[-12px] ">
-        <p className="pr-3 text-17 kreatr-speaker italic lg:text-[1.25rem] xl:text-30 ">
+      <div className="mt-[-12px] flex items-center ">
+        <p className="kreatr-speaker pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
         {soundActive ? (
           <Image
             src={FilledSpeaker}
-            className="h-[19px] w-[19px] xl:h-34 xl:w-34 cursor-pointer"
+            className="h-[19px] w-[19px] cursor-pointer xl:h-34 xl:w-34"
             alt="Active speaker"
             onClick={handleSoundClick}
           />
         ) : (
           <Image
             src={OutlinedSpeaker}
-            className="h-[19px] w-[19px] xl:h-34 xl:w-34 cursor-pointer"
+            className="h-[19px] w-[19px] cursor-pointer xl:h-34 xl:w-34"
             alt="Default speaker"
             onClick={handleSoundClick}
           />
         )}
       </div>
-      <div className=" my-2 flex sm:w-[92%] md:w-[80%] xl:w-[72%] lg:w-[72%]">
+      <div className=" my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[72%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
-            <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
+            <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               noun
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-30 xl:leading-9 carousel ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-30 xl:leading-9 ">
               A group of people who encourage creative thinking, promote
               cross-industry collaboration, and work towards creating a diverse
               community.
             </p>
           </Carousel.Slide>
           <Carousel.Slide>
-            <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
+            <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               verb
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-30 xl:leading-9 carousel ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-30 xl:leading-9 ">
               A group of like-minded creatives nurturing a community to support
               creatives like you.
             </p>
           </Carousel.Slide>
           <Carousel.Slide>
-            <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
+            <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               adjective(s)
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] lg:leading-6 xl:text-30 xl:leading-9 carousel ">
+            <p className="font-neueMonteral carousel text-16 lg:text-[1.25rem] lg:leading-6 xl:text-30 xl:leading-9 ">
               Innovative, creative, dynamic, supportive, knowledge hub,
               inclusive, and lots of fun.
             </p>
@@ -139,7 +139,7 @@ const LeftSection = () => {
             {(transitionStyles) => (
               <div style={transitionStyles} className="flex sm:items-center">
                 <div className="sm:w-[4.625rem] sm:pb-2 xl:w-[8.125rem] ">
-                  <p className="text-[1rem] text-blue-700 xl:text-28 emoji-content ">
+                  <p className="emoji-content text-[1rem] text-blue-700 xl:text-28 ">
                     We are:
                   </p>
                 </div>
@@ -178,7 +178,7 @@ const LeftSection = () => {
                     We are not:
                   </p>
                 </div>
-                <div className="flex w-2/4 flex-wrap pl-2 sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="flex w-2/4 flex-wrap pl-[3px] sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
@@ -198,9 +198,9 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10  hidden gap-x-2 sm:mt-[-14px] sm:mb-[16px] sm:flex md:mt-[-12px] md:mb-4 ">
+      <div className="mt-10  hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] ">
         <div
-          className={`flex md:py-2 md:px-1 items-center rounded-full bg-black cursor-pointer  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] text-white  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
           onMouseEnter={handlePlayStoreEnter}
           onMouseLeave={handlePlayStoreLeave}
@@ -223,10 +223,12 @@ const LeftSection = () => {
               />
             </div>
           )}
-          <p className="ml-[26px] sm:text-[14px] button-store xl:leading-6 lg:leading-5 md:leading-4 sm:leading-4 ">Get it on Playstore</p>
+          <p className=" button-store ml-[26px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ">
+            Get it on Playstore
+          </p>
         </div>
         <div
-          className={`flex  items-center rounded-full bg-black py-1 cursor-pointer  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+          className={`flex  cursor-pointer items-center rounded-full bg-black py-1  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
               ? "button-text border border-black bg-transparent"
@@ -248,11 +250,13 @@ const LeftSection = () => {
               alt="App store"
             />
           )}
-          <p className={` button-store xl:leading-6 lg:leading-5 md:leading-4 sm:text-[14px] sm:leading-4 ${
-            logoAppActive
-              ? "ml-[.625rem]"
-              : "ml-[.625rem] "
-          } `}>Available on Appstore</p>
+          <p
+            className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ${
+              logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
+            } `}
+          >
+            Available on Appstore
+          </p>
         </div>
       </div>
     </div>
