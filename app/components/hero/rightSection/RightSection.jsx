@@ -11,13 +11,13 @@ const RightSection = () => {
       <div className="relative mx-auto grid h-[200px] w-[320px] max-w-[100%] grid-cols-2 gap-0  sm:grid-cols-2 md:grid-cols-2">
         <img
           src="/assets/images/home_page/menu_stickers/about-layerblur.svg"
-          className=" h-[112px] w-[112px] top-[4%] hover:scale-105 absolute sm:left-[16%] sm:top-[8%] sm:h-[120px] sm:w-[120px] md:left-[12%] md:top-[6%] md:h-[140px] md:w-[140px] lg:left-[4%] lg:top-[-14%] lg:h-[190px] lg:w-[190px] xl:left-[-18%] xl:top-[-6%] xl:h-[14.8413rem] xl:w-[14.8413rem]"
+          className=" absolute top-[4%] h-[112px] w-[112px] hover:scale-105 sm:left-[16%] sm:top-[8%] sm:h-[120px] sm:w-[120px] md:left-[12%] md:top-[6%] md:h-[140px] md:w-[140px] lg:left-[4%] lg:top-[-14%] lg:h-[190px] lg:w-[190px] xl:left-[-18%] xl:top-[-6%] xl:h-[14.8413rem] xl:w-[14.8413rem]"
           alt="about kreatr"
         />
         <img
           src="/assets/images/home_page/menu_stickers/app-withshadow.svg"
           alt="app"
-          className=" absolute sm:rotate-[-10deg] left-[28%] top-[12%] h-[73.86px] w-[123.99px] hover:scale-105 sm:left-[47%] sm:top-[17%] sm:h-[70px] sm:w-[125px] md:right-[6%] md:top-[12%]  md:h-[90px] md:w-[155px] lg:left-[51%] lg:top-[-3%] lg:h-[120px] lg:w-[12.5rem] xl:left-[40%] xl:top-[7%] xl:h-[9.6244rem] xl:w-[16.1569rem] "
+          className=" absolute left-[28%] top-[12%] h-[73.86px] w-[123.99px] hover:scale-105 sm:left-[47%] sm:top-[17%] sm:h-[70px] sm:w-[125px] sm:rotate-[-10deg] md:right-[6%] md:top-[12%]  md:h-[90px] md:w-[155px] lg:left-[51%] lg:top-[-3%] lg:h-[120px] lg:w-[12.5rem] xl:left-[40%] xl:top-[7%] xl:h-[9.6244rem] xl:w-[16.1569rem] "
         />
         <img
           src="/assets/images/home_page/menu_stickers/events-withshadow.svg"
