@@ -60,7 +60,7 @@ const RightSection = () => {
             src={DarkPlayStore}
             alt="Play store"
           />
-          <p className="mx-[10px]">Get it on Play store</p>
+          <p className="mx-[10px] button-store">Get it on Play store</p>
         </div>
         <div className="flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-4 text-black">
           <Image
@@ -68,7 +68,7 @@ const RightSection = () => {
             className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
             alt="App store"
           />
-          <p className="mx-[10px]">Available on App store</p>
+          <p className="mx-[10px] button-store">Available on App store</p>
         </div>
       </div>
     </>

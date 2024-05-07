@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className="border-t border-gray-500">
         <div className="container  mx-auto  ">
           <div className="mt-[28px] grid  grid-cols-1 sm:grid-cols-2 md:mt-8 md:grid-cols-2 lg:ml-4 lg:mt-8 xl:mt-10 ">
-            <div className="lg:ml-4">
+            <div className="lg:ml-4 ml-0">
               <div>
                 <Image
                   src={KreatrLogo}
@@ -50,20 +50,20 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="flex flex-col items-center justify-around border-b border-gray-500 pt-7 sm:flex-row sm:border-none sm:pt-0 ">
+              <div className="flex flex-col items-center justify-around pb-[14px] pt-7 sm:flex-row sm:border-none sm:pt-0 ">
                 <ul className="footer-ul flex flex-row sm:flex-col ">
                   <a href="#">
-                    <li className="footer-section footer-content pr-10 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Blogs
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-section footer-content pr-6 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-section footer-content pr-3 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Careers
                     </li>
                   </a>
@@ -75,17 +75,17 @@ const Footer = () => {
                 </ul>
                 <ul className="footer-ul flex flex-row sm:mt-[-41px] sm:flex-col md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
                   <a href="#">
-                    <li className="footer-content footer-section block pr-10 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section block pr-5 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-content footer-section pr-10 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-content footer-section pr-3 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Join our Klan
                     </li>
                   </a>
@@ -96,8 +96,8 @@ const Footer = () => {
                   </a>
                 </ul>
                 <a href="#">
-                  <li className="footer-section footer-content block pr-3 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
-                    legal
+                  <li className="footer-section footer-content block  text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
+                    Legal
                   </li>
                 </a>
               </div>
@@ -105,9 +105,6 @@ const Footer = () => {
           </div>
 
           <div className="sm:hidden ">
-            <p className="footer-findus mt-[20px] text-center text-[1.125rem] text-blue-700">
-              Find us on
-            </p>
             <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
               <a href="#">
                 <Image

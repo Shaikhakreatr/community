@@ -7,10 +7,12 @@ import Footer from './components/footer/Footer';
 const App = () => {
   return (
     <>
-      <div className='bg-img'>
+      <div className='bg-img h-[100vh]'>
+          <div className=''>
           <Header />  
           <Hero />
           <Footer />
+          </div>
       </div>
     </>
   )

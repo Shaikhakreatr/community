@@ -62,21 +62,21 @@ const LeftSection = () => {
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="mt-[-12px] flex items-center ">
+      <div className="mt-[-1.875rem] flex items-center ">
         <p className="kreatr-speaker pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
         {soundActive ? (
           <Image
             src={FilledSpeaker}
-            className="h-[19px] w-[19px] cursor-pointer xl:h-34 xl:w-34"
+            className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Active speaker"
             onClick={handleSoundClick}
           />
         ) : (
           <Image
             src={OutlinedSpeaker}
-            className="h-[19px] w-[19px] cursor-pointer xl:h-34 xl:w-34"
+            className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Default speaker"
             onClick={handleSoundClick}
           />
@@ -144,7 +144,7 @@ const LeftSection = () => {
                   </p>
                 </div>
 
-                <div className="flex w-2/4 flex-wrap pl-2 sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="flex w-2/4 flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Community</p>
                   </div>
@@ -178,7 +178,7 @@ const LeftSection = () => {
                     We are not:
                   </p>
                 </div>
-                <div className="flex w-2/4 flex-wrap pl-[3px] sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="flex w-2/4 flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
@@ -198,7 +198,7 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10  hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
+      <div className="mt-10 lg:mt-[1.25rem] lg:mb-[4rem] hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
         <div
           className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] text-white  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
@@ -223,7 +223,7 @@ const LeftSection = () => {
               />
             </div>
           )}
-          <p className=" button-store ml-[26px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ">
+          <p className="button-store ml-[26px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ">
             Get it on Playstore
           </p>
         </div>
