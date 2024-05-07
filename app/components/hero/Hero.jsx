@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:pb-12 lg:pt-5 sm:py-3  md:py-4 ml-3 pt-4 pb-12">
+        <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 xl:pb-[160px] xl:pt-[80px] lg:pb-12 lg:pt-5 sm:py-3  md:py-4 ml-3 pt-4 pb-12">
           <LeftSection />
           <RightSection />
         </div>

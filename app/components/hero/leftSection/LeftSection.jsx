@@ -58,7 +58,7 @@ const LeftSection = () => {
   };
 
   return (
-    <div className="lg:ml-4">
+    <div className="lg:ml-8">
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
@@ -198,7 +198,7 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10 lg:mt-[1.25rem] lg:mb-[4rem] hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
+      <div className="mt-10 lg:mt-[1.25rem] lg:mb-[4rem] hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
         <div
           className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] text-white  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}

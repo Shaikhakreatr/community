@@ -24,7 +24,7 @@ const RightSection = () => {
         <img
           src="/assets/images/home_page/menu_stickers/app-withshadow.svg"
           alt="app"
-          className=" absolute lg:rotate-[2deg] left-[28%] top-[12%] h-[73.86px] w-[123.99px] hover:scale-105 sm:left-[47%] sm:top-[17%] sm:h-[70px] sm:w-[125px] sm:rotate-[-10deg] md:right-[6%] md:top-[12%]  md:h-[90px] md:w-[155px] lg:left-[51%] lg:top-[-3%] lg:h-[120px] lg:w-[12.5rem] xl:left-[42%] xl:top-[24%] xl:h-[10.885rem] xl:w-[16.8319rem] "
+          className=" absolute lg:rotate-[2deg] left-[28%] top-[12%] h-[73.86px] w-[123.99px] hover:scale-105 sm:left-[47%] sm:top-[17%] sm:h-[70px] sm:w-[125px] sm:rotate-[-10deg] md:right-[6%] md:top-[12%]  md:h-[90px] md:w-[155px] lg:left-[51%] lg:top-[-3%] lg:h-[120px] lg:w-[12.5rem] xl:left-[46%] xl:top-[24%] xl:h-[10.885rem] xl:w-[16.8319rem] "
         />
         <img
           src="/assets/images/home_page/menu_stickers/contact-withshadow.svg"
@@ -46,12 +46,12 @@ const RightSection = () => {
         />
         <img
           src="/assets/images/home_page/menu_stickers/menu-withshadow.svg"
-          className=" absolute right-[0] top-[-48%] h-[41.84px] w-[78.99px] sm:right-[14%] sm:top-[128%] sm:h-[40px] sm:w-[80px] md:right-[9%] md:top-[142%] md:h-[60px] md:w-[90px] lg:left-[62%] lg:top-[150%] lg:h-[5.25rem] lg:w-[7.75rem] xl:left-[52%] xl:top-[230%] xl:h-[6.5769rem] xl:w-[10.98rem]"
+          className=" absolute right-[0] top-[-48%] h-[41.84px] w-[78.99px] sm:right-[14%] sm:top-[128%] sm:h-[40px] sm:w-[80px] md:right-[9%] md:top-[142%] md:h-[60px] md:w-[90px] lg:left-[62%] lg:top-[150%] lg:h-[5.25rem] lg:w-[7.75rem] xl:left-[52%] xl:top-[236%] xl:h-[6.5769rem] xl:w-[10.98rem]"
           alt="menu"
         />
         <img
           src="/assets/images/home_page/menu_stickers/explorer-withshadow.svg"
-          className="absolute right-[-4%] top-[-32%] h-[28.12px] w-[53.14px] sm:left-[207px] sm:top-[144%] sm:h-[30px] sm:w-[70px] md:left-[76%] md:top-[164%] md:h-[40px] md:w-[80px] lg:left-[80%] lg:top-[181%] lg:h-[50px] lg:w-[100px] xl:left-[80%] xl:top-[268%] xl:h-[3.6688rem] xl:w-[6.9325rem]"
+          className="absolute right-[-4%] top-[-32%] h-[28.12px] w-[53.14px] sm:left-[207px] sm:top-[144%] sm:h-[30px] sm:w-[70px] md:left-[76%] md:top-[164%] md:h-[40px] md:w-[80px] lg:left-[80%] lg:top-[181%] lg:h-[50px] lg:w-[100px] xl:left-[76%] xl:top-[275%] xl:h-[3.6688rem] xl:w-[6.9325rem]"
           alt="explore"
         />
       </div>
