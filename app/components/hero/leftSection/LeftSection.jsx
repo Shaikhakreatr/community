@@ -62,7 +62,7 @@ const LeftSection = () => {
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="mt-[-1.875rem] flex items-center ">
+      <div className="lg:mt-[-1.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] flex items-center ">
         <p className="kreatr-speaker pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[70%]">
+      <div className=" my-5 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[65%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
@@ -223,7 +223,7 @@ const LeftSection = () => {
               />
             </div>
           )}
-          <p className="button-store ml-[26px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ">
+          <p className="button-store ml-[26px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-5 ">
             Get it on Playstore
           </p>
         </div>
@@ -251,11 +251,11 @@ const LeftSection = () => {
             />
           )}
           <p
-            className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-6 ${
+            className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-5 xl:text-20 xl:leading-5 ${
               logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
             } `}
           >
-            Available on Appstore
+            Available on App Store
           </p>
         </div>
       </div>

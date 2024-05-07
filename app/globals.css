@@ -42,7 +42,7 @@ h1{
 
 .bg-img{
   background: #fffced url(/assets/images/home_page/background-new.svg) no-repeat center/cover;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-ul li{
@@ -50,7 +50,7 @@ h1{
   cursor: pointer;
 }
 .footer-section{
-  color:#2A2A2A;
+  color:black
 }
 
 .button-text{

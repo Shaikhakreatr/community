@@ -75,8 +75,7 @@ module.exports = {
         sm:'640px',
         md: '728px',
         lg: '1024px',
-        xl: '1440px',
-        
+        xl: '1440px',        
       },
       container:{
         center:true,

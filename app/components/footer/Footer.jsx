@@ -18,7 +18,7 @@ const Footer = () => {
                   className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
                   alt="Kreatr Logo"
                 />
-                <div className=" footer-address sm-[80%] mt-4 hidden w-[70%] sm:block sm:text-[12px] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
+                <div className=" footer-address footer-section sm-[80%] sm:opacity-[60%] mt-4 hidden w-[70%] sm:block sm:text-[12px] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
                   <p>
                     18/1, Shariff Square, 1st Block Koramangala, Bengaluru,
                     Karnataka (560034)
@@ -53,50 +53,50 @@ const Footer = () => {
               <div className="flex flex-col items-center justify-around pb-[14px] pt-7 sm:flex-row sm:border-none sm:pt-0 ">
                 <ul className="footer-ul flex flex-row sm:flex-col ">
                   <a href="#">
-                    <li className="footer-section footer-content pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Blogs
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-section footer-content pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-section footer-content text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Careers
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-section footer-content hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
                 </ul>
                 <ul className="footer-ul flex flex-row sm:mt-[-41px] sm:flex-col md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
                   <a href="#">
-                    <li className="footer-content footer-section block pr-5 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] block pr-5 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-content footer-section pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-content footer-section text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Join our Klan
                     </li>
                   </a>
                   <a href="#">
-                    <li className="footer-content footer-section hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
                       Legal
                     </li>
                   </a>
                 </ul>
                 <a href="#">
-                  <li className="footer-section footer-content block  text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
+                  <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] block  text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
                     Legal
                   </li>
                 </a>
@@ -129,8 +129,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="ml-3">
-          <div className="flex text-center mx-auto footer-address sm:hidden w-[70%] text-[12px] leading-4">
+          <div className="ml-[1rem]">
+          <div className="flex text-center mx-auto footer-section footer-address sm:opacity-[60%] opacity-[70%] sm:hidden w-[70%] text-[12px] leading-4">
               <p>
                 18/1, Shariff Square, 1st Block Koramangala,
                 <br />
@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
           </div>
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
-            <p className="footer-copyright footer-section text-[12px] md:text-[12px] xl:text-20 ">
+            <p className="footer-copyright footer-section sm:opacity-[60%] opacity-[70%] text-[12px] md:text-[12px] xl:text-20 ">
               Copyright © 2024 KreatrMinds Pvt Ltd.{" "}
               <a href="#" className="text-blue-700 underline ">
                 Legal
