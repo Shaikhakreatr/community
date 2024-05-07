@@ -26,7 +26,7 @@ const RightSection = () => {
         />
         <img
           src="/assets/images/home_page/menu_stickers/community-withshadow.svg"
-          className="absolute sm:rotate-[-5deg] rotate-0 right-[24%] top-[45%] h-[58.6px] w-[157.56px] hover:scale-105 sm:right-[5%] sm:top-[50%] sm:h-[60px] sm:w-[160px] md:right-[1%] md:top-[56%] md:h-[75px] md:w-[180px] lg:left-[42%] lg:top-[56%] lg:h-[90px]  lg:w-[230px] xl:left-[25%] xl:top-[82%] xl:h-[6.9806rem] xl:w-[18.7694rem]"
+          className="absolute  right-[24%] top-[45%] h-[58.6px] w-[157.56px] hover:scale-105 sm:right-[5%] sm:top-[50%] sm:h-[60px] sm:w-[160px] md:right-[1%] md:top-[56%] md:h-[75px] md:w-[180px] lg:left-[42%] lg:top-[56%] lg:h-[90px]  lg:w-[230px] xl:left-[25%] xl:top-[82%] xl:h-[6.9806rem] xl:w-[18.7694rem]"
           alt="know community"
         />
         <img
