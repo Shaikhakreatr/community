@@ -58,7 +58,7 @@ const LeftSection = () => {
   };
 
   return (
-    <div className="sm:ml-4">
+    <div className="lg:ml-4">
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
@@ -88,7 +88,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               noun
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-30 xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[28px] xl:leading-9 ">
               A group of people who encourage creative thinking, promote
               cross-industry collaboration, and work towards creating a diverse
               community.
@@ -98,7 +98,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               verb
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-30 xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[28px] xl:leading-9 ">
               A group of like-minded creatives nurturing a community to support
               creatives like you.
             </p>
@@ -107,7 +107,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               adjective(s)
             </p>
-            <p className="font-neueMonteral carousel text-16 lg:text-[1.25rem] lg:leading-6 xl:text-30 xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 lg:text-[1.25rem] lg:leading-6 xl:text-[28px] xl:leading-9 ">
               Innovative, creative, dynamic, supportive, knowledge hub,
               inclusive, and lots of fun.
             </p>
@@ -198,7 +198,7 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10  hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] ">
+      <div className="mt-10  hidden gap-x-2 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
         <div
           className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] text-white  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}

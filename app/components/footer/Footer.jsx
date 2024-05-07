@@ -10,15 +10,15 @@ const Footer = () => {
     <>
       <footer className="border-t border-gray-500">
         <div className="container  mx-auto  ">
-          <div className="xl:mt-10 mt-[28px]  lg:mt-8 md:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:ml-4 ">
-            <div className="sm:ml-4">
+          <div className="mt-[28px] grid  grid-cols-1 sm:grid-cols-2 md:mt-8 md:grid-cols-2 lg:ml-4 lg:mt-8 xl:mt-10 ">
+            <div className="lg:ml-4">
               <div>
                 <Image
                   src={KreatrLogo}
                   className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
                   alt="Kreatr Logo"
                 />
-                <div className="footer-address hidden sm:block xl:mt-6 xl:text-[18px] lg:text-[14px] lg:w-[60%] xl:w-[50%] sm-[80%]  sm:text-[12px] md:text-[12px] mt-4 w-[70%]" >
+                <div className=" footer-address sm-[80%] mt-4 hidden w-[70%] sm:block sm:text-[12px] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
                   <p>
                     18/1, Shariff Square, 1st Block Koramangala, Bengaluru,
                     Karnataka (560034)
@@ -68,14 +68,14 @@ const Footer = () => {
                     </li>
                   </a>
                   <a href="#">
-                    <li className="sm:block hidden footer-section footer-content pr-3 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
                 </ul>
-                <ul className="footer-ul flex flex-row sm:flex-col xl:mt-[-52px] lg:mt-[-42px] md:mt-[-40px] sm:mt-[-41px]">
-                <a href="#">
-                    <li className="sm:hidden block footer-content footer-section pr-10 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                <ul className="footer-ul flex flex-row sm:mt-[-41px] sm:flex-col md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
+                  <a href="#">
+                    <li className="footer-content footer-section block pr-10 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
@@ -90,21 +90,22 @@ const Footer = () => {
                     </li>
                   </a>
                   <a href="#">
-                    <li className="sm:block hidden footer-content footer-section pr-3 text-[.875rem] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
                       Legal
                     </li>
                   </a>
                 </ul>
                 <a href="#">
-                    <li className="sm:hidden block footer-section footer-content pr-3 text-[.875rem] lg:text-[1.125rem] xl:text-24">
-                      legal
-                    </li>
-                  </a>
+                  <li className="footer-section footer-content block pr-3 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
+                    legal
+                  </li>
+                </a>
               </div>
             </div>
           </div>
+
           <div className="sm:hidden ">
-            <p className="footer-findus mt-[-10px] text-center text-[1.125rem] text-blue-700">
+            <p className="footer-findus mt-[20px] text-center text-[1.125rem] text-blue-700">
               Find us on
             </p>
             <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
@@ -131,8 +132,15 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center px-10 md:py-5 py-5 text-center sm:px-0">
-            <p className="footer-copyright footer-section md:text-[12px] text-[12px] xl:text-20 ">
+          <div className="flex text-center mx-auto footer-address sm:hidden w-[70%] text-[12px] leading-4">
+              <p>
+                18/1, Shariff Square, 1st Block Koramangala,
+                <br />
+                <span> Bengaluru, Karnataka (560034)</span>
+              </p>
+          </div>
+          <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
+            <p className="footer-copyright footer-section text-[12px] md:text-[12px] xl:text-20 ">
               Copyright © 2024 KreatrMinds Pvt Ltd.{" "}
               <a href="#" className="text-blue-700 underline ">
                 Legal
