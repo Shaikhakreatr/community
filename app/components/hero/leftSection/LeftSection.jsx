@@ -139,7 +139,7 @@ const LeftSection = () => {
             {(transitionStyles) => (
               <div style={transitionStyles} className="flex sm:items-center">
                 <div className="sm:w-[4.625rem] sm:pb-2 xl:w-[8.125rem] ">
-                  <p className="emoji-content text-[1rem] text-blue-700 xl:text-28 ">
+                  <p className="mt-[-5px] sm:mt-0 emoji-content text-[1rem] text-blue-700 xl:text-28 ">
                     We are:
                   </p>
                 </div>
@@ -174,7 +174,7 @@ const LeftSection = () => {
             {(transitionStyles) => (
               <div style={transitionStyles} className="flex sm:items-center">
                 <div className="sm:w-[6.625rem] sm:pb-2 xl:w-[12.125rem]">
-                  <p className="emoji-content text-[1rem] text-red-500 xl:text-28">
+                  <p className="mt-[-5px] sm:mt-0 emoji-content text-[1rem] text-red-500 xl:text-28">
                     We are not:
                   </p>
                 </div>
