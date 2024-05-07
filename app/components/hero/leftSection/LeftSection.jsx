@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[72%]">
+      <div className=" my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[70%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
