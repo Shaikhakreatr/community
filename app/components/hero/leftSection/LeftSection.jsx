@@ -82,13 +82,13 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-2 flex sm:w-[72%] md:w-[84%]">
+      <div className=" my-2 flex sm:w-[72%] md:w-[80%] xl:w-[72%] lg:w-[72%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
               noun
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-32 xl:leading-9 carousel ">
+            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-30 xl:leading-9 carousel ">
               A group of people who encourage creative thinking, promote
               cross-industry collaboration, and work towards creating a diverse
               community.
@@ -98,7 +98,7 @@ const LeftSection = () => {
             <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
               verb
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-32 xl:leading-9 carousel ">
+            <p className="font-neueMonteral text-16 lg:text-[1.25rem] md:leading-6 xl:text-30 xl:leading-9 carousel ">
               A group of like-minded creatives nurturing a community to support
               creatives like you.
             </p>
@@ -107,7 +107,7 @@ const LeftSection = () => {
             <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
               adjective(s)
             </p>
-            <p className="font-neueMonteral text-16 lg:text-[1.25rem] lg:leading-6 xl:text-32 xl:leading-9 carousel ">
+            <p className="font-neueMonteral text-16 lg:text-[1.25rem] lg:leading-6 xl:text-30 xl:leading-9 carousel ">
               Innovative, creative, dynamic, supportive, knowledge hub,
               inclusive, and lots of fun.
             </p>

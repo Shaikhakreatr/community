@@ -19,7 +19,7 @@
   font-family: "Neue Montreal";
   font-weight: bold;
 }
-.carousel,.emoji-content ,.footer-copyright .kreatr-speaker,.bulding-blocks,.error-page {
+.carousel,.emoji-content ,.footer-copyright .kreatr-speaker,.bulding-blocks,.error-page,.footer-address {
   font-family: "Neue Montreal";
 
 }
@@ -46,7 +46,7 @@ h1{
 }
 
 .footer-ul li{
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   cursor: pointer;
 }
 .footer-section{
