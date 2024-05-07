@@ -62,27 +62,27 @@ const LeftSection = () => {
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="flex items-center  ">
-        <p className="pr-2 text-17 kreatr-speaker italic lg:text-[1.25rem] xl:text-30 ">
+      <div className="flex items-center mt-[-12px] ">
+        <p className="pr-3 text-17 kreatr-speaker italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
         {soundActive ? (
           <Image
             src={FilledSpeaker}
-            className="h-22 w-22 xl:h-34 xl:w-34 cursor-pointer"
+            className="h-[19px] w-[19px] xl:h-34 xl:w-34 cursor-pointer"
             alt="Active speaker"
             onClick={handleSoundClick}
           />
         ) : (
           <Image
             src={OutlinedSpeaker}
-            className="h-22 w-22 xl:h-34 xl:w-34 cursor-pointer"
+            className="h-[19px] w-[19px] xl:h-34 xl:w-34 cursor-pointer"
             alt="Default speaker"
             onClick={handleSoundClick}
           />
         )}
       </div>
-      <div className=" my-6 flex">
+      <div className=" my-2 flex sm:w-[72%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
@@ -114,7 +114,7 @@ const LeftSection = () => {
           </Carousel.Slide>
         </Carousel>
       </div>
-      <div className="my-4 flex items-center sm:my-2 md:my-2">
+      <div className="my-2 flex items-center sm:my-2 md:my-2">
         <Image
           src={happyActive ? HappyFilled : HappyOutline}
           onClick={toggleHappy}

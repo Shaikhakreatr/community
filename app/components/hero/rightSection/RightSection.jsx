@@ -8,7 +8,7 @@ import MobArraow from "../../../../public/assets/images/home_page/menu_stickers/
 const RightSection = () => {
   return (
     <>
-      <div className="relative mx-auto grid h-[250px] w-[320px] max-w-[100%] grid-cols-2 gap-0  sm:grid-cols-2 md:grid-cols-2">
+      <div className="relative mx-auto grid h-[200px] w-[320px] max-w-[100%] grid-cols-2 gap-0  sm:grid-cols-2 md:grid-cols-2">
         <img
           src="/assets/images/home_page/menu_stickers/about-layerblur.svg"
           className=" h-[112px] w-[112px] top-[10%] hover:scale-105 absolute sm:left-[12%] sm:top-[-5%] sm:h-[120px] sm:w-[120px] md:left-[12%] md:top-[-5%] md:h-[140px] md:w-[140px] lg:left-[4%] lg:top-[-18%] lg:h-[190px] lg:w-[190px] xl:left-[-18%] xl:top-[-20%] xl:h-[14.8413rem] xl:w-[14.8413rem]"
@@ -53,7 +53,7 @@ const RightSection = () => {
           alt="explore"
         />
       </div>
-      <div className="mt-2 flex justify-center gap-x-4 sm:hidden">
+      <div className="mb-3 ml-[-12px] flex justify-center gap-x-4 sm:hidden">
         <div className=" flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-4 text-black">
           <Image
             className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
