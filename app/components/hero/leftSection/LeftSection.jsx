@@ -58,7 +58,7 @@ const LeftSection = () => {
   };
 
   return (
-    <div className="lg:ml-4">
+    <div className="sm:ml-4">
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-2 flex sm:w-[72%] md:w-[80%] xl:w-[72%] lg:w-[72%]">
+      <div className=" my-2 flex sm:w-[92%] md:w-[80%] xl:w-[72%] lg:w-[72%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24 bulding-blocks">
@@ -114,7 +114,7 @@ const LeftSection = () => {
           </Carousel.Slide>
         </Carousel>
       </div>
-      <div className="my-2 flex items-center sm:my-2 md:my-2">
+      <div className="my-2 flex items-center sm:my-1 md:my-2">
         <Image
           src={happyActive ? HappyFilled : HappyOutline}
           onClick={toggleHappy}
@@ -198,7 +198,7 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10  hidden gap-x-2 sm:mt-0 sm:flex md:mt-[-12px] md:mb-4 ">
+      <div className="mt-10  hidden gap-x-2 sm:mt-[-14px] sm:mb-[16px] sm:flex md:mt-[-12px] md:mb-4 ">
         <div
           className={`flex md:py-2 md:px-1 items-center rounded-full bg-black cursor-pointer  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
@@ -223,7 +223,7 @@ const LeftSection = () => {
               />
             </div>
           )}
-          <p className="ml-[26px] button-store xl:leading-6 lg:leading-5 md:leading-4 sm:leading-4 ">Get it on Playstore</p>
+          <p className="ml-[26px] sm:text-[14px] button-store xl:leading-6 lg:leading-5 md:leading-4 sm:leading-4 ">Get it on Playstore</p>
         </div>
         <div
           className={`flex  items-center rounded-full bg-black py-1 cursor-pointer  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
@@ -248,7 +248,7 @@ const LeftSection = () => {
               alt="App store"
             />
           )}
-          <p className={` button-store xl:leading-6 lg:leading-5 md:leading-4 sm:leading-4 ${
+          <p className={` button-store xl:leading-6 lg:leading-5 md:leading-4 sm:text-[14px] sm:leading-4 ${
             logoAppActive
               ? "ml-[.625rem]"
               : "ml-[.625rem] "

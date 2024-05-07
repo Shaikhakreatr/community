@@ -10,15 +10,15 @@ const Footer = () => {
     <>
       <footer className="border-t border-gray-500">
         <div className="container  mx-auto  ">
-          <div className="xl:mt-10 my-[25px] pb-[15px] lg:mt-8 md:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:ml-4 ">
-            <div className="lg:ml-4">
+          <div className="xl:mt-10 mt-[28px]  lg:mt-8 md:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:ml-4 ">
+            <div className="sm:ml-4">
               <div>
                 <Image
                   src={KreatrLogo}
                   className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
                   alt="Kreatr Logo"
                 />
-                <div className="footer-address hidden sm:block xl:mt-6 xl:text-[18px] lg:text-[14px] lg:w-[60%] xl:w-[50%] md:text-[12px] mt-4 w-[70%]" >
+                <div className="footer-address hidden sm:block xl:mt-6 xl:text-[18px] lg:text-[14px] lg:w-[60%] xl:w-[50%] sm-[80%]  sm:text-[12px] md:text-[12px] mt-4 w-[70%]" >
                   <p>
                     18/1, Shariff Square, 1st Block Koramangala, Bengaluru,
                     Karnataka (560034)
@@ -73,7 +73,7 @@ const Footer = () => {
                     </li>
                   </a>
                 </ul>
-                <ul className="footer-ul flex flex-row sm:flex-col xl:mt-[-52px] lg:mt-[-42px] md:mt-[-40px]">
+                <ul className="footer-ul flex flex-row sm:flex-col xl:mt-[-52px] lg:mt-[-42px] md:mt-[-40px] sm:mt-[-41px]">
                 <a href="#">
                     <li className="sm:hidden block footer-content footer-section pr-10 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       FAQs
