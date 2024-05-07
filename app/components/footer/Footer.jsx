@@ -132,12 +132,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          <div className="ml-3">
           <div className="flex text-center mx-auto footer-address sm:hidden w-[70%] text-[12px] leading-4">
               <p>
                 18/1, Shariff Square, 1st Block Koramangala,
                 <br />
                 <span> Bengaluru, Karnataka (560034)</span>
               </p>
+          </div>
           </div>
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
             <p className="footer-copyright footer-section text-[12px] md:text-[12px] xl:text-20 ">
