@@ -129,8 +129,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="ml-[1rem]">
-          <div className="flex text-center mx-auto footer-section footer-address sm:opacity-[60%] opacity-[70%] sm:hidden w-[70%] text-[12px] leading-4">
+          <div >
+          <div className="flex justify-center text-center mx-auto footer-section footer-address sm:opacity-[60%] opacity-[70%] sm:hidden w-[70%] text-[12px] leading-4">
               <p>
                 18/1, Shariff Square, 1st Block Koramangala,
                 <br />

@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 const NotFound = () => {
   return (
     <>
-      <div className="bg-img bg-contain fixed h-[100%] ">
+      <main className="bg-img bg-contain fixed h-[100%] ">
         <Header />
         <div className="container mx-auto sm:mt-[100px] mb-[6.25rem] mt-[8.75rem] lg:mt-[60px]">
           <div className=" mt-[3rem] grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 lg:ml-4">
@@ -30,7 +30,7 @@ const NotFound = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

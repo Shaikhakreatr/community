@@ -62,7 +62,7 @@ const LeftSection = () => {
       <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="lg:mt-[-1.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] flex items-center ">
+      <div className="lg:mt-[-1.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] mt-[-15px] flex items-center ">
         <p className="kreatr-speaker pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-5 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[65%]">
+      <div className=" sm:mt-0 my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[65%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
@@ -178,7 +178,7 @@ const LeftSection = () => {
                     We are not:
                   </p>
                 </div>
-                <div className="flex w-2/4 flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="flex w-[52%] flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
