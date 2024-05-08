@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 const App = () => {
   return (
     <>
-      <main className='bg-img md:min-h-[100vh] xl:min-h-[auto]'>
+      <main className='bg-img md:min-h-[100vh] xl:min-h-[auto] flex flex-col overflow-x-hidden md:justify-between'>
           <Header />  
           <Hero />
           <Footer />
