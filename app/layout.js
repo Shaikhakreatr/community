@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body><MantineProvider>{children}</MantineProvider></body>
+      <body  className='bg-img md:min-h-[100vh] xl:min-h-[100vh]'><MantineProvider>{children}</MantineProvider></body>
     </html>
   );
 }

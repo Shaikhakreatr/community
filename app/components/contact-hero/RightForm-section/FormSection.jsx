@@ -2,7 +2,7 @@ import React from 'react'
 
 const FormSection = () => {
   return (
-    <main className=' h-[100%]'>
+    <main className=' min-h-[100%]'>
       <h1>hello world</h1>
     </main>
   )

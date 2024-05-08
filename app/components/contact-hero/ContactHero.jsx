@@ -1,18 +1,21 @@
-import React from 'react'
-import RightImageSection from './rightImage-section/RightImageSection'
-import FormSection from './leftForm-section/FormSection'
+import React from "react";
+import LeftImageSection from './leftImage-section/leftImageSection'
+import FormSection from './RightForm-section/FormSection'
 
 const ContactHero = () => {
   return (
-    <section>
-      <div className="container mx-auto h-[100%]">
-        <div className="grid sm:grid-cols-2 grid-cols-1 ">
-          <RightImageSection />
-          <FormSection />
-        </div>
+    <section className="h-[90vh]" >
+      <div className="container max-w-[700px] w-[100%] m-auto h-[50vh] flex items-center justify-center ">
+      <div className=" bg-green-300">
+         <div className=" bg-red-200 flex">
+           <LeftImageSection />
+           <FormSection />
+         </div>
+       </div>
       </div>
     </section>
   )
 }
 
 export default ContactHero
+

@@ -1,14 +1,14 @@
 import React from "react";
 
-const RightImageSection = () => {
+const LeftImageSection = () => {
   return (
-    <main className="lg:ml-4 flex flex-col h-[100%] ">
+    <main className=" lg:ml-4 flex flex-col min-h-[100%] ">
       <div className="contact-heading xl:text-[110px] lg:text-[90px]">
         <h1>Get In Touch-</h1>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="content-neue">
-          <p className="contact-text xl:text-[18px] xl:w-[90%]" >
+      <div className="flex justify-center  items-center">
+        <div className="content-neue xl:mt-10">
+          <p className=" contact-text xl:text-[18px] xl:w-[55%]" >
             For all your ‘I have a doubt!’, ‘Can I…’, ‘What if…’, or simply want
             to grab a coffee…?
           </p>
@@ -18,11 +18,11 @@ const RightImageSection = () => {
           </ul>
         </div>
         <div>
-          <img className="xl:h-[191] xl:w-[418]" src="/assets/images/contact_page/form-img.svg" alt="form img" />
+          <img className="xl:h-[191px] xl:w-[418px]" src="/assets/images/contact_page/form-img.svg" alt="form img" />
         </div>
       </div>
     </main>
   );
 };
 
-export default RightImageSection;
+export default LeftImageSection;
