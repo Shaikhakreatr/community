@@ -12,14 +12,14 @@
   src: url('/assets/fonts/NeueMontreal-Regular.otf') format('truetype');
 }
 
-.kreatr-heading{
+.kreatr-heading,.contact-heading{
   font-family: 'vina-sans', sans-serif;
 }
 .footer-findus{
   font-family: "Neue Montreal";
   font-weight: bold;
 }
-.carousel,.emoji-content ,.footer-copyright .kreatr-speaker,.bulding-blocks,.error-page,.footer-address {
+.content-neue,.carousel,.emoji-content ,.footer-copyright .kreatr-speaker,.bulding-blocks,.error-page,.footer-address {
   font-family: "Neue Montreal";
 
 }
@@ -69,4 +69,10 @@ h1{
   background-color: #DE033E;
   color:#FFFDEE;
   border-radius: 1.875rem;
+}
+
+/* contact-page css */
+
+.contact-text{
+  color: #A87956;
 }

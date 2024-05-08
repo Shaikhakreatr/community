@@ -7,8 +7,8 @@ const ContactHero = () => {
     <section>
       <div className="container mx-auto h-[100%]">
         <div className="grid sm:grid-cols-2 grid-cols-1 ">
-          <RightImageSection className="w-[60%]" />
-          <FormSection  className="w-[40%]" />
+          <RightImageSection />
+          <FormSection />
         </div>
       </div>
     </section>
