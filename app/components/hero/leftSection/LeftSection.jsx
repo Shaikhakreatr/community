@@ -59,7 +59,7 @@ const LeftSection = () => {
 
   return (
     <div className="lg:ml-4">
-      <h1 className="kreatr-heading text-64 lg:text-[5rem] xl:text-110">
+      <h1 className="kreatr-heading text-64 lg:mb-0 md:mb-[15px] lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
       <div className="lg:mt-[-1.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] mt-[-15px] flex items-center ">
@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" sm:mt-0 my-2 flex sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[65%]">
+      <div className=" sm:mt-[12px] my-3 flex w-[103%] sm:w-[92%] md:w-[80%] lg:w-[72%] xl:w-[65%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
@@ -132,7 +132,7 @@ const LeftSection = () => {
         <div className={happyActive ? "my-2  sm:items-center" : "hidden"}>
           <Transition
             mounted={happyActive}
-            transition="slide-right"
+            transition="slide-left"
             duration={600}
             timingFunction="ease"
           >
@@ -255,7 +255,7 @@ const LeftSection = () => {
               logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
             } `}
           >
-            Available on App Store
+            Available on<br /> App Store
           </p>
         </div>
       </div>
