@@ -1,13 +1,7 @@
 "use client";
-import {
-  useForm,
-  isNotEmpty,
-  isEmail,
-  isInRange,
-  hasLength,
-  matches,
-} from "@mantine/form";
-import { Button, Group, TextInput, NumberInput } from "@mantine/core";
+import { useForm, isEmail, hasLength, matches } from "@mantine/form";
+import { Button, TextInput, NumberInput } from "@mantine/core";
+import { Textarea } from "@mantine/core";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
@@ -15,25 +9,13 @@ const FormSection = () => {
     mode: "uncontrolled",
     initialValues: {
       name: "",
-      job: "",
       email: "",
-      favoriteColor: "",
-      age: 18,
       phoneNumber: "",
     },
 
     validate: {
-      name: hasLength({ min: 2, max: 10 }, "Name must be 2-10 characters long"),
-      job: isNotEmpty("Enter your current job"),
+      name: hasLength({ min: 2, max: 20 }, "Name must be 2-10 characters long"),
       email: isEmail("Invalid email"),
-      favoriteColor: matches(
-        /^#([0-9a-f]{3}){1,2}$/,
-        "Enter a valid hex color",
-      ),
-      age: isInRange(
-        { min: 18, max: 99 },
-        "You must be 18-99 years old to register",
-      ),
       phoneNumber: matches(
         /^(\+\d{1,3}[-\.\s]??)?\d{10}$/,
         "Enter a valid phone number",
@@ -42,61 +24,55 @@ const FormSection = () => {
   });
 
   return (
-    <div className="col-span-2 w-[75%]">
+    <div className="col-span-2 w-[75%] mb-5">
       <form className={styles.formWrap} onSubmit={form.onSubmit(() => {})}>
+        <label>Name<span className="text-red-500 text-18">*</span></label>
         <TextInput
-          label="Name"
-          placeholder="Name"
+          placeholder="Your name here"
+          className={styles.formInput}
+          variant="unstyled"
           withAsterisk
           key={form.key("name")}
           {...form.getInputProps("name")}
         />
+        <br />
+        <label>Phone Number<span className="text-red-500  text-18">*</span></label>
         <TextInput
-          label="Your job"
-          placeholder="Your job"
+          placeholder="Your phone number here"
+          className={styles.formInput}
+          variant="unstyled"
           withAsterisk
-          mt="md"
-          key={form.key("job")}
-          {...form.getInputProps("job")}
-        />
-        <TextInput
-          label="Your email"
-          placeholder="Your email"
-          withAsterisk
-          mt="md"
-          key={form.key("email")}
-          {...form.getInputProps("email")}
-        />
-        <TextInput
-          label="Your favorite color"
-          placeholder="Your favorite color"
-          withAsterisk
-          mt="md"
-          key={form.key("favoriteColor")}
-          {...form.getInputProps("favoriteColor")}
-        />
-        <NumberInput
-          label="Your age"
-          placeholder="Your age"
-          withAsterisk
-          mt="md"
-          key={form.key("age")}
-          {...form.getInputProps("age")}
-        />
-        <TextInput
-          label="Your phone number"
-          placeholder="Your phone number"
-          withAsterisk
-          mt="md"
           key={form.key("phoneNumber")}
           {...form.getInputProps("phoneNumber")}
           inputMode="numeric"
         />
+        <br />
+        <label>Email<span className="text-red-500  text-18">*</span></label>
+        <TextInput
+          placeholder="Your email here"
+          className={styles.formInput}
+          variant="unstyled"
+          withAsterisk
+          key={form.key("email")}
+          {...form.getInputProps("email")}
+        />
+        <br />
+        <label className=" text-18">Message</label>
+        <Textarea
+          resize="vertical"
+          className={styles.formInput}
+          variant="unstyled"
+          placeholder="Your message here"
+          rows={1} 
+        />
+        <br />
         <Button
           className={styles.formButton}
           color="black.0"
           type="submit"
           mt="sm"
+          
+          fz={16}
         >
           Submit
         </Button>

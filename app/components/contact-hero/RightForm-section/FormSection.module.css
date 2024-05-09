@@ -1,6 +1,30 @@
 .formWrap{
     font-family: "Neue Montreal";
+    font-weight: 500;
+}
+
+.formButton{
+    border-radius: 20px;
+    height:40.16px;
+    width:133.87px
 }
 .formButton:hover {
-      background-color: red;
+      background-color: black;
+}
+.formInput{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-left: 15px;  
+   
+}
+
+/* .formInput input &:placeholder {
+    color: var(--mantine-color-red-5);
+  }  */
+
+  @media only screen and (max-width: 640px) {
+    .formButton {
+        height: 40px;
+        min-width: 275px;
+    }
 }

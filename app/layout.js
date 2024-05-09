@@ -10,11 +10,11 @@ export const metadata = {
   description: "Kreatr Website description",
 };
 const theme = createTheme({
-  
   colors: {
     primaryColor: ['#000000'],
     black:['#000000'],
   },
+  
 
 });
 
