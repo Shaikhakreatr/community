@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import FAQSection from '../components/FAQ-section/FAQSection';
 
-const FAQPage = () => {
+const FAQ = () => {
   return (
     <main className='bg-img'>
       <Header />
@@ -13,4 +13,4 @@ const FAQPage = () => {
   )
 }
 
-export default FAQPage;
+export default FAQ;

@@ -12,7 +12,7 @@
   src: url('/assets/fonts/NeueMontreal-Regular.otf') format('truetype');
 }
 
-.kreatr-heading,.contact-heading{
+.page-heading{
   font-family: 'vina-sans', sans-serif;
 }
 .footer-findus{

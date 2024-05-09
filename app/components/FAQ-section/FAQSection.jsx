@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
+import SearchSection from "./search-section/SearchSection";
+import AccordianSection from "./accordian-section/AccordianSection";
 
 const FAQSection = () => {
   return (
     <section>
-        <div className='container'>
-            <div>
-                <h1>Frequently Asked Questions</h1>
-                <p>Everything you need to know about us.</p>
-            </div>
-        </div>
+      <div className="container mx-auto gap-5">
+        <SearchSection />
+        <AccordianSection />
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQSection
+export default FAQSection;

@@ -59,7 +59,7 @@ const LeftSection = () => {
 
   return (
     <div className="lg:ml-4">
-      <h1 className="kreatr-heading text-64 lg:mb-0 md:mb-[15px] lg:text-[5rem] xl:text-110">
+      <h1 className="page-heading text-64 lg:mb-0 md:mb-[15px] lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
       <div className="lg:mt-[-1.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] mt-[-15px] flex items-center ">
