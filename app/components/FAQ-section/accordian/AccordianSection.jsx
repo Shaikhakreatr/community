@@ -59,15 +59,15 @@ const AccordianSection = () => {
   const rightItems = rightAccordion.map((item) => (
     <Accordion.Item className={styles.accordionBox} p={10} m={20} key={item.value} value={item.value}>
       <Accordion.Control icon={item.emoji}>{item.value}</Accordion.Control>
-      <Accordion.Panel>{item.description}</Accordion.Panel>
+      <Accordion.Panel className={styles.accordionPanel} >{item.description}</Accordion.Panel>
     </Accordion.Item>
   ));
   return (
     <div className="my-10 sm:flex justify-center gap-24">
-      <Accordion  variant="filled" w={500}>
+      <Accordion className={styles.accordionWrap} variant="separated" radius="xs"  w={500}>
         {leftItems}
       </Accordion>
-      <Accordion variant="filled" w={500}>
+      <Accordion variant="separated" radius="xs"  w={500}>
         {rightItems}
       </Accordion>
     </div>

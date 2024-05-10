@@ -1,0 +1,11 @@
+.accordionWrap{
+    background-color: transparent;
+}
+.accordionBox{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.accordionPanel{
+    background: red;
+}
