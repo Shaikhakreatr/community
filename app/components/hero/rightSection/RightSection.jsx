@@ -8,7 +8,7 @@ import MobArraow from "../../../../public/assets/images/home_page/menu_stickers/
 const RightSection = () => {
   return (
     <>
-      <div className="relative mx-auto grid h-[200px] w-[320px] max-w-[100%] grid-cols-2 gap-0  sm:grid-cols-2 md:grid-cols-2">
+      <div className="relative  mx-auto grid h-[200px] w-[320px] max-w-[100%] grid-cols-2 gap-0  sm:grid-cols-2 md:grid-cols-2">
         
         
         <img
