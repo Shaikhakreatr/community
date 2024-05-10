@@ -7,7 +7,9 @@ import Footer from '../components/footer/Footer'
 const ContactPage = () => {
   return (
     <main className='bg-img'>
+      <Header />
       <ContactHero />
+      <Footer />
     </main>
   )
 }

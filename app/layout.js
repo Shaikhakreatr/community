@@ -33,9 +33,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body  className='bg-img md:min-h-[100vh] xl:min-h-[100vh]'><MantineProvider theme={theme}  >
-      <Header />
+      
         {children}
-        <Footer />
+        
         </MantineProvider></body>
       
     </html>

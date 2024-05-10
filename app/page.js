@@ -8,7 +8,9 @@ const App = () => {
   return (
     <>
       <main className='bg-img md:min-h-[100vh] xl:min-h-[auto] flex flex-col overflow-x-hidden md:justify-between'>        
-          <Hero />          
+      <Header />
+          <Hero /> 
+          <Footer />         
       </main>
     </>
   )
