@@ -40,11 +40,10 @@ h1{
   padding: 0px;
 }
 
-.bg-img{
+.bg-img {
   background: #fffced url(/assets/images/home_page/background-new.svg) no-repeat center/cover;
   width: 100%;
 }
-
 .footer-ul li{
   padding-bottom: 15px;
   cursor: pointer;

@@ -63,11 +63,11 @@ const AccordianSection = () => {
     </Accordion.Item>
   ));
   return (
-    <div className="my-10 sm:flex justify-center gap-24">
-      <Accordion  className={styles.accordionWrap} variant="separated" radius="xs"  w={500}>
+    <div className="my-10 sm:flex justify-center gap-[10rem]">
+      <Accordion className={styles.accordionWrap} variant="separated" radius="xs" >
         {leftItems}
       </Accordion>
-      <Accordion variant="separated" radius="xs"  w={500}>
+      <Accordion className={styles.accordionWrap} variant="separated" radius="xs" >
         {rightItems}
       </Accordion>
     </div>

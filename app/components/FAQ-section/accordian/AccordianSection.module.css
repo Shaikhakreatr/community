@@ -18,6 +18,9 @@
             font-weight: bold;
             padding: 10px;
             }
+            .accordionWrap{
+                width: 500px;
+            }
     }   
     @media only screen and (min-width: 1024px) {
         .controlBox{
@@ -25,6 +28,9 @@
             font-family: "Neue Montreal";
             font-size: 18px;
             font-weight: bold;
+            }
+            .accordionWrap{
+                width: 400px;
             }
     }
     @media only screen and (max-width: 639px) {}

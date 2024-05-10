@@ -36,7 +36,7 @@ const FormSection = () => {
   };
 
   return (
-    <div className="col-span-2 mb-5 w-[75%]">
+    <div className=" col-span-2 z-30 mb-5 lg:w-[75%] sm:w-[115%] w-[75%]">
       <form className={styles.formWrap} onSubmit={form.onSubmit(() => {setSubmitted(true)
         console.log("submitted");;})}>
         <TextInput
