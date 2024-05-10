@@ -52,19 +52,19 @@ const AccordianSection = () => {
 
   const leftItems = leftAccordion.map((item) => (
     <Accordion.Item className={styles.accordionBox} p={10} m={20} key={item.value} value={item.value}>
-      <Accordion.Control icon={item.emoji}>{item.value}</Accordion.Control>
-      <Accordion.Panel>{item.description}</Accordion.Panel>
+      <Accordion.Control className={styles.controlBox} >{item.value}</Accordion.Control>
+      <Accordion.Panel className={styles.accordionPanel}>{item.description}</Accordion.Panel>
     </Accordion.Item>
   ));
   const rightItems = rightAccordion.map((item) => (
     <Accordion.Item className={styles.accordionBox} p={10} m={20} key={item.value} value={item.value}>
-      <Accordion.Control icon={item.emoji}>{item.value}</Accordion.Control>
-      <Accordion.Panel className={styles.accordionPanel} >{item.description}</Accordion.Panel>
+      <Accordion.Control className={styles.controlBox} >{item.value}</Accordion.Control>
+      <Accordion.Panel className={styles.accordionPanel}>{item.description}</Accordion.Panel>
     </Accordion.Item>
   ));
   return (
     <div className="my-10 sm:flex justify-center gap-24">
-      <Accordion className={styles.accordionWrap} variant="separated" radius="xs"  w={500}>
+      <Accordion  className={styles.accordionWrap} variant="separated" radius="xs"  w={500}>
         {leftItems}
       </Accordion>
       <Accordion variant="separated" radius="xs"  w={500}>

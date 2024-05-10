@@ -1,11 +1,30 @@
-.accordionWrap{
-    background-color: transparent;
-}
+
 .accordionBox{
     border: 1px solid black;
     border-radius: 20px;
     background-color: transparent;
 }
 .accordionPanel{
-    background: red;
+    font-family: "Neue Montreal";
+    font-size: 17px;
+    color: black;
+    opacity: 70%;
+    /* background-color: #EADAFF; */
 }
+    @media only screen and (min-width: 1440px) {
+        .controlBox{
+            font-family: "Neue Montreal";
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            }
+    }   
+    @media only screen and (min-width: 1024px) {
+        .controlBox{
+            
+            font-family: "Neue Montreal";
+            font-size: 18px;
+            font-weight: bold;
+            }
+    }
+    @media only screen and (max-width: 639px) {}
