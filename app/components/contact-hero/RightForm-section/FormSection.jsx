@@ -1,27 +1,36 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import { useForm, isEmail, hasLength, matches, isNotEmpty } from "@mantine/form";
+import {
+  useForm,
+  isEmail,
+  hasLength,
+  matches,
+  isNotEmpty,
+} from "@mantine/form";
 import { Button, TextInput, Textarea } from "@mantine/core";
 import styles from "./FormSection.module.css";
 
 const FormSection = () => {
+  const BACKEND_CONTACT_URI="https://7kmtq0boqc.execute-api.ap-south-1.amazonaws.com/dev/contactUs"
   const [submitted, setSubmitted] = useState(false); // State to track form submission status
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
       name: "",
-      email: "",
       phoneNumber: "",
+      senderEmail: "",
+      message:""
     },
 
     validate: {
       name: hasLength({ min: 2, max: 20 }, "Please write your name"),
-      email: isEmail("Please enter a valid email"),
-      message: isNotEmpty("Please write your message"),
       phoneNumber: matches(
         /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
         "Please enter a valid phone number",
       ),
+      senderEmail: isEmail("Please enter a valid email"),
+      message: isNotEmpty("Please write your message"),
+      
     },
   });
 
@@ -35,10 +44,40 @@ const FormSection = () => {
     setMessageRows(1);
   };
 
+ 
+  const sendFormData = async (data) => {
+    console.log(data);
+   if(BACKEND_CONTACT_URI){
+    try {
+      const response = await fetch(BACKEND_CONTACT_URI, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if(response.ok){
+        console.log("data sent successfully");
+        setSubmitted(true);
+        form.reset()
+      }else{
+        throw new Error('Failed to send data')
+      }
+    } catch (error) {
+      console.error(error);
+    }
+   }else{
+    console.error("BACKEND_CONTACT_URI is not defined");
+   }
+  };
+
   return (
-    <div className=" col-span-2 z-30 mb-5 lg:w-[75%] sm:w-[115%] w-[75%]">
-      <form className={styles.formWrap} onSubmit={form.onSubmit(() => {setSubmitted(true)
-        console.log("submitted");;})}>
+    <div className=" col-span-2 mb-5 flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
+      <form
+        className={`${styles.formWrap} w-full`}
+        onSubmit={form.onSubmit((values) => {
+         sendFormData(values)
+         
+        })}
+      >
         <TextInput
           label="Name"
           radius={50}
@@ -46,7 +85,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.errorText,
+            error: styles.error,
           }}
           withAsterisk
           key={form.key("name")}
@@ -60,7 +99,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.errorText,
+            error: styles.error,
           }}
           withAsterisk
           key={form.key("phoneNumber")}
@@ -75,11 +114,11 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.errorText,
+            error: styles.error,
           }}
           withAsterisk
-          key={form.key("email")}
-          {...form.getInputProps("email")}
+          key={form.key("senderEmail")}
+          {...form.getInputProps("senderEmail")}
         />
         <br />
         <Textarea
@@ -90,7 +129,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.errorText,
+            error: styles.error,
           }}
           placeholder="Your message here"
           rows={messageRows}
@@ -98,7 +137,7 @@ const FormSection = () => {
           {...form.getInputProps("message")}
         />
         <br />
-        <div className="sm:flex xl:gap-5 lg:gap-3 text-center  items-center">
+        <div className="items-center text-center sm:flex lg:gap-3  xl:gap-5">
           <Button
             className={styles.formButton}
             radius={50}
@@ -110,7 +149,9 @@ const FormSection = () => {
             Submit
           </Button>
           {submitted && (
-            <p className={styles.sentMessage}>Sent! We will reach out to you soon.</p>
+            <p className={styles.sentMessage}>
+              Sent! We will reach out to you soon.
+            </p>
           )}
         </div>
       </form>

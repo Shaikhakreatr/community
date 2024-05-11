@@ -13,19 +13,20 @@
     margin-left: 40px;
     font-family: "Neue Montreal";
 }
+.transparentInput [data-error] {
+    border-color: green;
+  }
 .inputLabel{
     color: black;
     font-size: 1.125rem;
 }
-.errorText{
-    color: #DE033E;
-}
+
 
 
 @media only screen and (max-width: 639px) {
     .formButton {
         height: 40px;
-        width: 275px;
+        width: 258px;
     }
     .transparentInput::placeholder{
         color:black;
