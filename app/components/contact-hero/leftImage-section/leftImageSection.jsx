@@ -3,11 +3,11 @@ import React from "react";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute xl:left-[2%] xl:top-[17%] top-[28%] left-[14%] lg:top-[16%] lg:left-[5%] sm:left-[-43px] sm:top-[90px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
+      <div className="absolute xl:left-[2%] xl:top-[17%] top-[28%] left-[14%] lg:top-[23%] lg:left-[5%] sm:left-[-43px] sm:top-[90px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 xl:gap-12 lg:gap-10 lg:mt-[60px]  ">
-        <div className="sm:block hidden content-neue col-span-2 xl:ml-[9%] xl:mt-[20%] lg:mt-[40px] lg:ml-[24px] sm:mt-[60px] sm:ml-[-45px]">
+        <div className="sm:block hidden content-neue col-span-2 xl:ml-[9%] xl:mt-[20%] lg:mt-[40px] lg:ml-[34px] sm:mt-[60px] sm:ml-[-45px]">
           <p className=" contact-text sm:text-[14px] lg:text-[16px] xl:text-[18px] leading-5">
             For all your ‘I have a doubt!’,<br /> ‘Can I…’, ‘What if…’, or simply<br /> want
             to grab a coffee…?
