@@ -43,6 +43,7 @@ h1{
 .bg-img {
   background: #fffced url(/assets/images/home_page/background-new.svg) no-repeat center/cover;
   width: 100%;
+  background-attachment: fixed;
 }
 .footer-ul li{
   padding-bottom: 15px;

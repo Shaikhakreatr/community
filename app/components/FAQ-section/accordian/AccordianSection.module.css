@@ -1,15 +1,34 @@
 
-.accordionBox{
+.accordionBox{  
     border: 1px solid black;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: transparent;   
+}
+.accordionBox{
+    &[data-active]{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:rgb(234, 218, 255);
+    }
+}
+.accordionContent{
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
 }
 .accordionPanel{
     font-family: "Neue Montreal";
     font-size: 17px;
     color: black;
+
     opacity: 70%;
+    /* background-color: yellow; */
     /* background-color: #EADAFF; */
+}
+@media (min-width: 640px) {
+    .accordionBox{
+        margin: calc(0.5rem* var(--mantine-scale)) !important;
+        padding: calc(0.625rem* var(--mantine-scale));
+    }
 }
     @media only screen and (min-width: 1440px) {
         .controlBox{
@@ -19,18 +38,17 @@
             padding: 10px;
             }
             .accordionWrap{
-                width: 500px;
+        
             }
     }   
     @media only screen and (min-width: 1024px) {
         .controlBox{
-            
             font-family: "Neue Montreal";
             font-size: 18px;
             font-weight: bold;
             }
             .accordionWrap{
-                width: 400px;
+                width: 100%;
             }
     }
     @media only screen and (max-width: 639px) {}

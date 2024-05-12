@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className="border-t border-gray-500">
         <div className="container  mx-auto  ">
           <div className="mt-[28px] grid  grid-cols-1 sm:grid-cols-2 md:mt-8 md:grid-cols-2 lg:ml-4 lg:mt-8 xl:mt-10 ">
-            <div className="lg:ml-6 ml-0">
+            <div className="lg:ml-14 ml-0">
               <div>
                 <Image
                   src={KreatrLogo}
