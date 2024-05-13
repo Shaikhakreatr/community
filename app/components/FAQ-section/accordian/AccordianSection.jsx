@@ -38,8 +38,6 @@ const AccordianSection = () => {
       className={styles.accordionBox}
       key={item.title}
       value={item.title}
-      m={15}
-      p={10}
     >
       <Accordion.Control className={styles.controlBox2}>
         {item.title}

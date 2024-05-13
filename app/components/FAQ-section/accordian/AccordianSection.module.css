@@ -31,6 +31,18 @@
         /* background-color: yellow; */
         /* background-color: #EADAFF; */
     }
+    .controlBox1{
+        font-family: 'Neue Montreal Bold';
+        font-size: 12px;
+        padding: 10px;
+
+        }
+        .controlBox2{
+            font-family: 'Neue Montreal Bold';
+            font-size: 12px;
+            padding: 7px;
+
+            }
 }
     @media only screen and (min-width: 1440px) {
         .controlBox1{
