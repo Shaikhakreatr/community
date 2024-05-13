@@ -10,8 +10,8 @@ import { rightAccordion } from "@/constants/constants";
 const AccordianSection = () => {
   console.log(leftAccordion);
 
-  const leftItems = leftAccordion.map((item) => (
-    <div className="sm:mb-[17px]">
+  const leftItems = leftAccordion.map((item,index) => (
+    <div className="sm:mb-[17px]" key={index}>
       <Accordion.Item 
     className={`${styles.accordionBox}`}
       classNames={{ accordionBox: styles.accordionPanel }}
@@ -32,8 +32,8 @@ const AccordianSection = () => {
     </div>
     
   ));
-  const rightItems = rightAccordion.map((item) => (
-    <div className="sm:mb-4">
+  const rightItems = rightAccordion.map((item,index) => (
+    <div className="sm:mb-4" key={index}>
       <Accordion.Item
       className={styles.accordionBox}
       key={item.title}
