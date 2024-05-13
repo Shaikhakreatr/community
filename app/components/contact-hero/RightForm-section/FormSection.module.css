@@ -5,28 +5,55 @@
 
 .transparentInput{
     background-color: transparent;
+    padding-bottom: 2px;
 }
+
 .transparentInput::placeholder{
     color:black;
     opacity: 40%;
     font-size: 16px;
     margin-left: 40px;
     font-family: "Neue Montreal";
+    
+    
 }
-.transparentInput [data-error] {
-    border-color: green;
-  }
+.transparentInputArea::placeholder{
+    color:black;
+    opacity: 40%;
+    font-size: 16px;
+    margin-left: 40px;
+    font-family: "Neue Montreal";
+    
+    
+}
+.transparentInput{
+    &[data-error] {
+        border-color: black;
+      }
+} 
+.transparentInputArea{
+    &[data-error] {
+        border-color: black;
+      }
+} 
+.inputError{
+    color: #DE033E;
+    margin-top: 6px;
+}
+
 .inputLabel{
     color: black;
     font-size: 1.125rem;
+    margin-bottom: 4px;
+    
 }
-
-
 
 @media only screen and (max-width: 639px) {
     .formButton {
         height: 40px;
         width: 260px;
+        color: #FFFDEE;
+        letter-spacing: 2px;
     }
     .transparentInput::placeholder{
         color:black;
@@ -34,6 +61,15 @@
         font-size: 12px;
         margin-left: 40px;
         font-family: "Neue Montreal";
+        
+    }
+    .transparentInputArea::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 12px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+        
     }
     .inputLabel{
         color: black;
@@ -47,6 +83,10 @@
         color:black;
         opacity:70%
     }
+    .transparentInputArea{
+        background-color: transparent;
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -56,10 +96,21 @@
         font-size: 14px;
         margin-left: 40px;
         font-family: "Neue Montreal";
+
+    }
+    .transparentInputArea::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 14px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+
     }
     .formButton {
         height: 40.16px;
         width: 133.87px;
+        color: #FFFDEE;
+        letter-spacing: 2px;
     }
     .sentMessage{
         font-family: "Neue Montreal";
@@ -69,12 +120,18 @@
         opacity:70%;
         font-weight: 500;
     }
+    .transparentInputArea{
+        background-color: transparent;
+        padding-top: 7px;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
     .formButton {
         height: 40.16px;
-        width: 133.87px;
+        width: 133.87px;  
+        color: #FFFDEE;
+        letter-spacing: 2px;
     }
     .sentMessage{
         font-family: "Neue Montreal";

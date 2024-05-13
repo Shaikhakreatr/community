@@ -59,7 +59,7 @@ const FormSection = () => {
         setSubmitted(true);
         form.reset()
       }else{
-        throw new Error('Failed to send data')
+        throw new Error('Failed to send data');
       }
     } catch (error) {
       console.error(error);
@@ -85,7 +85,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.error,
+            error: styles.inputError,
           }}
           withAsterisk
           key={form.key("name")}
@@ -99,7 +99,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.error,
+            error: styles.inputError,
           }}
           withAsterisk
           key={form.key("phoneNumber")}
@@ -114,7 +114,7 @@ const FormSection = () => {
           classNames={{
             input: styles.transparentInput,
             label: styles.inputLabel,
-            error: styles.error,
+            error: styles.inputError,
           }}
           withAsterisk
           key={form.key("senderEmail")}
@@ -127,9 +127,9 @@ const FormSection = () => {
           onFocus={handleTextareaFocus}
           onBlur={handleTextareaBlur}
           classNames={{
-            input: styles.transparentInput,
+            input: styles.transparentInputArea,
             label: styles.inputLabel,
-            error: styles.error,
+            error: styles.inputError,
           }}
           placeholder="Your message here"
           rows={messageRows}
