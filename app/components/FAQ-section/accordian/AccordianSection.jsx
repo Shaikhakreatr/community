@@ -11,7 +11,7 @@ const AccordianSection = () => {
   console.log(leftAccordion);
 
   const leftItems = leftAccordion.map((item) => (
-    <div className="sm:mb-[14px]">
+    <div className="sm:mb-[17px]">
       <Accordion.Item 
     className={`${styles.accordionBox}`}
       classNames={{ accordionBox: styles.accordionPanel }}
@@ -33,7 +33,7 @@ const AccordianSection = () => {
     
   ));
   const rightItems = rightAccordion.map((item) => (
-    <div className="sm:mb-3">
+    <div className="sm:mb-4">
       <Accordion.Item
       className={styles.accordionBox}
       key={item.title}
