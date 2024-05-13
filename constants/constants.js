@@ -1,7 +1,7 @@
 export const leftAccordion = [
     {
       title: "What is Kreatr?",
-      description: <>We are a special design community made just for creative people like you. It's a place where you can connect, network, and collaborate with others who share your passion. Together, we aim to create awesome designs that can make a difference in the real world. We are more than a design community. We believe in cross-industry collaboration and are dedicated to building a digital space where creatives can unite and take the design industry to new levels through a more standardized approach.</>
+      description: <>We are a special design community made just for creative people like you. It's a place where you can connect, network, and<strong className="content neue italic"> collaborate with others</strong> who share your passion. Together, we aim to create awesome designs that can make a difference in the real world. We are more than a design community. We believe in cross-industry collaboration and are dedicated to building a digital space where creatives can unite and take the design industry to new levels through a more standardized approach.</>
     },
     {
       title: "Who can join Kreatr?",

@@ -8,47 +8,109 @@
     &[data-active]{
     border: 1px solid black;
     border-radius: 20px;
-    background-color:rgb(234, 218, 255);
+    background-color:rgba(234, 218, 255,0.5);
+    background-blend-mode: multiply;
     }
 }
 .accordionContent{
     padding-right: 0.75rem;
     padding-left: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
 }
-.accordionPanel{
-    font-family: "Neue Montreal";
-    font-size: 17px;
-    color: black;
 
-    opacity: 70%;
-    /* background-color: yellow; */
-    /* background-color: #EADAFF; */
-}
 @media (min-width: 640px) {
     .accordionBox{
         margin: calc(0.5rem* var(--mantine-scale)) !important;
         padding: calc(0.625rem* var(--mantine-scale));
     }
+    .accordionPanel{
+        font-family: "Neue Montreal";
+        font-size: 17px;
+        color: black;
+        opacity: 70%;
+        /* background-color: yellow; */
+        /* background-color: #EADAFF; */
+    }
 }
     @media only screen and (min-width: 1440px) {
-        .controlBox{
-            font-family: "Neue Montreal";
+        .controlBox1{
+            font-family: 'Neue Montreal Bold';
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 200;
             padding: 10px;
             }
-            .accordionWrap{
-        
+            .controlBox2{
+                font-family: 'Neue Montreal Bold';
+                font-size: 24px;
+                font-weight: 200;
+                padding: 10px;
+                }
+            .accordionPanel{
+                font-family: "Neue Montreal";
+                font-size: 17px;
+                color: black;
+                opacity: 70%;
+                /* background-color: yellow; */
+                /* background-color: #EADAFF; */
+            }
+            .accordionBox{
+                margin:15px;
+                padding:10px;
             }
     }   
     @media only screen and (min-width: 1024px) {
-        .controlBox{
-            font-family: "Neue Montreal";
+        .controlBox1{
+            font-family: 'Neue Montreal Bold';
             font-size: 18px;
-            font-weight: bold;
+            padding: 10px;
+
             }
+            .controlBox2{
+                font-family: 'Neue Montreal Bold';
+                font-size: 18px;
+                padding: 7px;
+    
+                }
             .accordionWrap{
                 width: 100%;
             }
+            .accordionPanel{
+                font-family: "Neue Montreal";
+                font-size: 17px;
+                color: black;
+                opacity: 70%;
+                /* background-color: yellow; */
+                /* background-color: #EADAFF; */
+            }
     }
-    @media only screen and (max-width: 639px) {}
+    @media only screen and (max-width: 639px) {
+        .controlBox1{
+            font-family: 'Neue Montreal Bold';
+            font-size: 16px;
+            font-weight:bolder;
+            color: black;
+            padding: 0px 10px;
+            }
+            .controlBox2{
+                font-family: 'Neue Montreal Bold';
+                font-size: 16px;
+                font-weight:bolder;
+                color: black;
+                padding: 0px 10px;
+                }
+        .accordionWrap2{
+            margin-top: -10px;
+        }
+        .accordionBox{
+            margin:15px;
+            padding:10px;
+        }
+        .accordionPanel{
+            font-family: 'Neue Montreal';
+            font-size: 14px;
+            color: black;
+            opacity: 70%;
+            /* background-color: yellow; */
+            /* background-color: #EADAFF; */
+        }
+    }

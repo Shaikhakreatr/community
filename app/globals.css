@@ -11,6 +11,10 @@
   font-family: 'Neue Montreal';
   src: url('/assets/fonts/NeueMontreal-Regular.otf') format('truetype');
 }
+@font-face {
+  font-family: 'Neue Montreal Bold';
+  src: url('/assets/fonts/NeueMontreal-Bold.otf') format('truetype');
+}
 
 .page-heading{
   font-family: 'vina-sans', sans-serif;

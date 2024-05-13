@@ -11,15 +11,15 @@ const AccordianSection = () => {
   console.log(leftAccordion);
 
   const leftItems = leftAccordion.map((item) => (
-    <Accordion.Item 
-    className={`${styles.accordionBox} sm:top-0`}
+    <div className="sm:mb-[14px]">
+      <Accordion.Item 
+    className={`${styles.accordionBox}`}
       classNames={{ accordionBox: styles.accordionPanel }}
-      p={10}
-      m={20}
       key={item.title}
       value={item.title}
+      
     >
-      <Accordion.Control className={styles.controlBox}>
+      <Accordion.Control className={styles.controlBox1}>
         {item.title}
       </Accordion.Control>
       <Accordion.Panel
@@ -29,16 +29,19 @@ const AccordianSection = () => {
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
+    </div>
+    
   ));
   const rightItems = rightAccordion.map((item) => (
-    <Accordion.Item
+    <div className="sm:mb-3">
+      <Accordion.Item
       className={styles.accordionBox}
-      p={10}
-      m={20}
       key={item.title}
       value={item.title}
+      m={15}
+      p={10}
     >
-      <Accordion.Control className={styles.controlBox}>
+      <Accordion.Control className={styles.controlBox2}>
         {item.title}
       </Accordion.Control>
       <Accordion.Panel
@@ -48,9 +51,10 @@ const AccordianSection = () => {
         {item.description}
       </Accordion.Panel>
     </Accordion.Item>
+    </div>
   ));
   return (
-    <div className="my-10 justify-center gap-1 lg:gap-32 grid grid-cols-1 sm:grid-cols-2">
+    <div className="my-10 justify-center xl:mx-16 lg:mx-[3rem] gap-1 xl:gap-[5rem] lg:gap-[2rem] grid grid-cols-1 sm:grid-cols-2">
       <Accordion
         className={styles.accordionWrap}
         variant="separated"
@@ -59,7 +63,7 @@ const AccordianSection = () => {
         {leftItems}
       </Accordion>
       <Accordion
-        className={styles.accordionWrap}
+        className={styles.accordionWrap2}
         variant="separated"
         radius="xs"
       >

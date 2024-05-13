@@ -3,19 +3,17 @@ import React from "react";
 const SearchSection = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center lg:my-14 xl:my-12">
-        {/* <h1 className="text-center page-heading xl:text-[96px] lg:text-[70px] relative sm:text-[3.75rem]  after:content-[url('/assets/images/FAQ_page/FAQ-sticker.svg')]">Frequently Asked Questions</h1> */}
-        <h1 className="page-heading relative text-center sm:text-[3.75rem] lg:text-[70px] xl:text-[96px]">
-          Frequently Asked Questions
-          <span className="absolute bottom-0 right-0">
+      <div className="flex flex-col items-center sm:mb-0 mb-[50px] justify-center lg:mt-[3.5rem] lg:mb-[6.5rem] xl:mt-[4rem] xl:mb-[7rem]">
+        <h1 className="page-heading leading-4 sm:mt-0 mt-[45px] relative text-center sm:text-[3.75rem] lg:text-[70px] xl:text-[96px] text-[36px]">
+          Frequently Asked<span className="sm:hidden block"><br /></span> Questions
+          <span className="absolute xl:top-[40%] xl:right-[-43%] lg:top-[168%] lg:right-[-12%] right-[22%] bottom-[-90%]">
             <img
+            className="xl:w-[192.74px] xl:h-[72.27px] lg:w-[185px] lg:h-[65px] sm:w-[160px] sm:h-[55px] w-[109.81px] h-[41.17px]"
               src="/assets/images/FAQ_page/FAQ-sticker.svg"
               alt="FAQ Sticker"
             />
           </span>
         </h1>
-
-        {/* <img className="absolute xl:top-[24%] xl:right-[12%] lg:top-[21%] lg:right-[19%] " src="/assets/images/FAQ_page/FAQ-sticker.svg" alt="FAQ-sticker" /> */}
       </div>
     </div>
   );
