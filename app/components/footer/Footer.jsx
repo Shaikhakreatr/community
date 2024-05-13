@@ -139,8 +139,8 @@ const Footer = () => {
           </div>
           </div>
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
-            <p className="footer-copyright footer-section sm:opacity-[60%] opacity-[70%] text-[12px] md:text-[12px] xl:text-20 ">
-              Copyright © 2024 KreatrMinds Pvt Ltd.{" "}
+            <p className="content-neue footer-section sm:opacity-[60%] opacity-[70%] text-[12px] md:text-[12px] xl:text-20 ">
+              Copyright © 2024 KreatrMinds Pvt Ltd. |{" "}
               <a href="#" className="text-blue-700 underline ">
                 Legal
               </a>{" "}

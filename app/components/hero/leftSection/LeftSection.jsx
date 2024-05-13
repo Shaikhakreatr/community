@@ -63,7 +63,7 @@ const LeftSection = () => {
         KReaTR
       </h1>
       <div className="lg:mt-[-0.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] mt-[-15px] flex items-center ">
-        <p className="kreatr-speaker pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
+        <p className="content-neue pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
         {soundActive ? (
