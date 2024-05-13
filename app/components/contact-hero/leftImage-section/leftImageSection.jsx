@@ -3,8 +3,11 @@ import React from "react";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute xl:left-[2%] xl:top-[17%] top-[28%] left-[14%] lg:top-[23%] lg:left-[5%] sm:left-[-43px] sm:top-[90px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
+      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[17%]  lg:top-[23%] lg:left-[5%] sm:left-[-43px] sm:top-[90px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
+      </div>
+      <div className="absolute sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
+        <h1>Get In Touch</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 xl:gap-12 lg:gap-10 lg:mt-[60px]  ">
         <div className="sm:block hidden content-neue col-span-2 xl:ml-[9%] xl:mt-[20%] lg:mt-[40px] lg:ml-[34px] sm:mt-[60px] sm:ml-[-45px]">
