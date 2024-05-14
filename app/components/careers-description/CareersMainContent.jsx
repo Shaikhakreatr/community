@@ -17,9 +17,9 @@ const CareersMainContent = () => {
           </div>
         </div>
       </div>
-      <div className="mx-[86px]">
+      <div className="mx-[100px]">
         <div className="flex items-center">
-          <h4 className="content-neue-medium mr-[30px] lg:text-[28px] xl:text-[33px]">
+          <h4 className="content-neue-medium sm:mr-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px]">
             Graphic Designer
           </h4>
           <div className="mr-[15px] rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[96px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
@@ -31,7 +31,7 @@ const CareersMainContent = () => {
         </div>
         <br />
         <div className="mb-4">
-          <p className="content-neue xl:text-[24px]">
+          <p className="content-neue lg:text-[18px] xl:text-[24px]">
             We are seeking a talented and creative Graphic Designer to join our
             team. The ideal candidate will have a strong portfolio of design
             work that demonstrates expertise in various graphic design tools and
@@ -40,10 +40,12 @@ const CareersMainContent = () => {
             inform, or captivate our clients and customers.
           </p>
           <br />
-          <p className="content-neue-medium text-[28px]">Responsibilities</p>
+          <p className="content-neue-medium lg:text-[22px] xl:text-[28px]">
+            Responsibilities
+          </p>
           <br />
           <div>
-            <ul className="content-neue list-disc xl:text-[24px]">
+            <ul className="content-neue ml-10 list-disc lg:text-[18px] xl:text-[24px]">
               <li>
                 Develop and conceptualize a comprehensive array of designs and
                 layouts for various media including websites, social media,
@@ -64,10 +66,12 @@ const CareersMainContent = () => {
             </ul>
           </div>
           <br />
-          <p className="content-neue-medium xl:text-[28px]">Qualifications</p>
+          <p className="content-neue-medium lg:text-[22px] xl:text-[28px]">
+            Qualifications
+          </p>
           <br />
           <div>
-            <ul className="content-neue list-disc xl:text-[24px]">
+            <ul className="content-neue ml-10 list-disc lg:text-[18px] xl:text-[24px]">
               <li>
                 Proven graphic designing experience with a strong portfolio.
               </li>
@@ -87,10 +91,12 @@ const CareersMainContent = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center mt-[50px]">
-          <div className="content-neue-medium bg-black text-white h-[42px] w-[280px] rounded-[24px] text-[20px] text-center pt-3">Apply Now</div>
+        <div className="mt-[50px] flex justify-center">
+          <div className="content-neue-medium h-[42px] w-[280px] rounded-[24px] bg-black text-center text-[20px] text-white sm:pt-[5px]">
+            Apply Now
+          </div>
         </div>
-        <div className="content-neue mb-[50px] mt-[50px] text-center lg:text-[22px] xl:text-[28px]">
+        <div className="content-neue mb-[50px] mt-[50px] text-center lg:text-[20px] xl:text-[28px]">
           <p>
             Can’t find any suitable vacancy? Drop us a line{" "}
             <a className="text-blue-700" href="#">
