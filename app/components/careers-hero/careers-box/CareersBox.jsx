@@ -51,7 +51,7 @@ const CareersBox = () => {
     <div className="flex flex-wrap items-center justify-center ">
       {jobVacancies.map((item, index) => (
         <a
-          href="/careers/careers-description"
+          href="/careers-description"
           key={index}
           className={`${styles.jobBox} m-[10px] h-[98px] w-[320px] rounded-[10px] border border-black p-[10px] sm:m-[25px] sm:rounded-[15px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
         >
