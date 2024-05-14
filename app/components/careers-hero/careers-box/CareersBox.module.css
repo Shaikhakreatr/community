@@ -1,0 +1,13 @@
+.jobBox {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .jobBox:hover {
+    background-color: rgba(234, 218, 255, 0.5);
+    transform: scale(1.1);
+  }
+  
+  .jobBox:hover .subBox {
+    background-color: black;
+    color: white;
+  }
