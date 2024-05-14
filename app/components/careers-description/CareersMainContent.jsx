@@ -92,7 +92,7 @@ const CareersMainContent = () => {
           </div>
         </div>
         <div className="sm:mt-[50px] mt-[2.5rem] flex justify-center">
-          <div className="career-btn content-neue-medium w-[128px] h-[36px] text-[15px] sm:h-[42px] sm:w-[280px] rounded-[24px] bg-black text-center sm:text-[20px] pt-[5px] sm:pt-[5px]">
+          <div className=" cursor-pointer career-btn content-neue-medium w-[128px] h-[36px] text-[15px] sm:h-[42px] sm:w-[280px] rounded-[24px] bg-black text-center sm:text-[20px] pt-[5px] sm:pt-[5px]">
             Apply Now
           </div>
         </div>

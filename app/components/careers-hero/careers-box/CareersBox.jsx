@@ -53,7 +53,7 @@ const CareersBox = () => {
         <a
           href="/careers-description"
           key={index}
-          className={`${styles.jobBox} m-[10px] h-[98px] w-[320px] rounded-[10px] border border-black p-[10px] sm:m-[25px] sm:rounded-[15px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
+          className={`${styles.jobBox} cursor-pointer m-[10px] h-[98px] w-[320px] rounded-[10px] border border-black p-[10px] sm:m-[25px] sm:rounded-[15px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
         >
           <div className="items-center justify-center sm:flex">
             <h4 className="careers-box text-[18px] lg:text-[30px] lg:leading-[30px] xl:text-[40px] xl:leading-[40px]">
@@ -91,7 +91,7 @@ const CareersBox = () => {
           </div>
         </a>
       ))}
-      <div className="content-neue my-[14px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[20px] xl:text-[28px]">
+      <div className="  content-neue my-[14px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[20px] xl:text-[28px]">
         <p>
           Can’t find any suitable vacancy? Drop us a line{" "}
           <a className="text-blue-700" href="#">
