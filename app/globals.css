@@ -83,7 +83,27 @@ h1{
 .contact-text{
   color: #A87956;
 }
-
+/* careers-page css */
 .career-btn{
   color: #FFFDEE;
+}
+
+/* join-our-klan page css */
+
+.instagram-img {
+  background-color: #FE31EE; /* Background color */
+  background-image: url(/assets/images/home_page/background-new.svg); /* Background image */
+  background-blend-mode: multiply; /* Blend mode */
+  background-size: cover;
+}
+
+.whatsapp-img{
+  background-color: rgba(79,255,79);
+}
+.linkdin-img{
+  background-color: rgba(73,93,245);
+  color: #FFFCEE;
+}
+.JOK-content{
+  color:#FE31EE
 }
