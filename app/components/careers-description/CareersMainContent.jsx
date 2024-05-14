@@ -22,10 +22,10 @@ const CareersMainContent = () => {
           <h4 className="content-neue-medium sm:mr-[18px] mr-3 text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px]">
             Graphic Designer
           </h4>
-          <div className="sm:mr-[15px] mr-[8px] rounded-[24px] border border-black text-center w-[53px] h-[17px] text-[10px] lg:h-[28px] lg:w-[96px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
+          <div className="sm:mr-[15px] mr-[8px] rounded-[24px] border border-black text-center w-[53px] h-[17px] text-[10px] lg:h-[28px] lg:w-[96px] xl:h-[34px] xl:w-[95px] lg:text-[16px] xl:text-[19px]">
             Full-time
           </div>
-          <div className=" rounded-[24px] border border-black text-center w-[53px] h-[17px] text-[10px] lg:h-[28px] lg:w-[96px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
+          <div className=" rounded-[24px] border border-black text-center w-[53px] h-[17px] text-[10px] lg:h-[28px] lg:w-[96px] xl:h-[34px] xl:w-[95px] lg:text-[16px] xl:text-[19px]">
             In-office
           </div>
         </div>
@@ -96,7 +96,7 @@ const CareersMainContent = () => {
             Apply Now
           </div>
         </div>
-        <div className="content-neue text-center my-[16px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[22px] xl:text-[28px]">
+        <div className="content-neue text-center my-[16px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[20px] xl:text-[28px]">
           <p>
             Can’t find any suitable vacancy? Drop us a line{" "}
             <a className="text-blue-700" href="#">

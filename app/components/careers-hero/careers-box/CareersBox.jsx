@@ -91,7 +91,7 @@ const CareersBox = () => {
           </div>
         </a>
       ))}
-      <div className="content-neue my-[14px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[22px] xl:text-[28px]">
+      <div className="content-neue my-[14px] sm:mb-[50px] sm:mt-[30px] text-[11px] lg:text-[20px] xl:text-[28px]">
         <p>
           Can’t find any suitable vacancy? Drop us a line{" "}
           <a className="text-blue-700" href="#">
