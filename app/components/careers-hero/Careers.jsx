@@ -6,7 +6,7 @@ export const CareersHero = () => {
   return (
     <section>
       <div className="container mx-auto lg:py-0 md:py-[50px] ">
-        <div className="">
+        <div>
             <CareersHeading />
             <CareersBox />
         </div>
