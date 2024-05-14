@@ -3,7 +3,7 @@ import React from "react";
 const CareersHeading = () => {
   return (
     <div className="  flex flex-col items-center justify-center border-b border-black mb-[30px] xl:mx-[135px] lg:mx-[148px] ">
-      <div className="relative xl:mb-[150px] lg:mb-[80px] xl:mt-[40px] lg:mt-0">
+      <div className="relative xl:mb-[150px] lg:mb-[80px] xl:mt-0 lg:mt-0">
         <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
           Careers
         </h1>
