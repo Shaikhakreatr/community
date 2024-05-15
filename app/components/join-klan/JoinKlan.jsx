@@ -31,71 +31,73 @@ const JoinKlan = () => {
           JoIn our Klan
         </h1>
         <p className="content-neue text-center text-[16px] italic text-blue-700 sm:text-[18px] lg:text-[20px] xl:text-[24px]">
-          (Note: We use the word “Klan”<br className="sm:hidden" /> to replace “clan.”)
+          (Note: We use the word “Klan”
+          <br className="sm:hidden" /> to replace “clan.”)
         </p>
       </div>
       <div className="relative flex h-[80px] w-auto justify-center">
         <img
           src="/assets/images/JOK_page/left-arrow.svg"
-          className="absolute left-[26%] hidden xl:h-[108.82px] xl:w-[92.99px] sm:block"
+          className="absolute left-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="left arrow"
         />
         <img
           src="/assets/images/JOK_page/center-arrow.svg"
-          className="absolute xl:right-[47%] xl:top-[30%] top-[12%]  xl:h-[46.2px] xl:w-[14.26px] w-[13px] h-[40px]"
+          className="absolute top-[12%] h-[40px] w-[13px]  lg:h-[46.2px] lg:w-[14.26px] xl:right-[47%] xl:top-[30%] xl:h-[46.2px] xl:w-[14.26px]"
           alt="center arrow"
         />
         <img
           src="/assets/images/JOK_page/right-arrow.svg"
-          className="absolute sm:block hidden xl:right-[26%] xl:h-[108.82px] xl:w-[92.99px] w-[13px] h-[40px]"
+          className="absolute right-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="right arrow"
         />
       </div>
-      <div className="relative xl:mt-[95px] flex h-[70px] w-auto justify-center">
-        <div className="instagram-img absolute p-[18px] top-[-13%] left-[10%] xl:left-[17%] xl:top-[-38%] xl:h-[272px]  xl:w-[255px] w-[195.69px] h-[201.31px] rotate-[-6deg] rounded-[15px] border border-black xl:p-[30px] sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black shadow-md shadow-black">
+      <div className="relative flex h-[70px] w-auto justify-center xl:mt-[95px]">
+        <div className="instagram-img absolute lg:top-[80%] lg:left-[18%] left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] lg:p-[25px]  border border-black  p-[18px] shadow-md shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:h-[242px] lg:w-[225px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
           <img
             src="/assets/images/JOK_page/instagram-JOK.svg"
-            className="xl:h-[101px] xl:w-[101px] w-[77.33px] h-[77.33px] rotate-[8deg]"
+            className="h-[77.33px] w-[77.33px] rotate-[8deg] xl:h-[101px] xl:w-[101px]"
             alt="instagram"
           />
-          <p className="page-subhead mt-[18px] leading-[20px] xl:mt-[2.25rem] text-[20px] xl:text-[24px] xl:leading-[25px]">
+          <p className="page-subhead lg:mt-[40px] mt-[18px] text-[20px] leading-[20px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
             “Pop” goes our hearts when you leave one!
           </p>
         </div>
-        <div className="whatsapp-img absolute p-[18px] top-[225px] right-[20px] xl:top-[-134%] xl:h-[272px]  xl:w-[255px] w-[195.69px] h-[201.31px] rotate-[6deg] rounded-[15px] border border-black xl:p-[30px] sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black shadow-md shadow-black">
+        <div className="whatsapp-img absolute lg:right-[41%] lg:top-[-20%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg]  rounded-[15px] lg:p-[25px] border  border-black p-[18px] shadow-md shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:h-[242px] lg:w-[225px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
           <img
             src="/assets/images/JOK_page/whatsapp-JOK.svg"
-            className="xl:h-[112px] xl:w-[112px] w-[85px] h-[85px]"
+            className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
             alt="whatsapp"
           />
-          <p className="page-subhead mt-[18px] leading-[20px] xl:my-[22px] text-[20px] xl:text-[24px] xl:leading-[25px]">
+          <p className="page-subhead lg:mt-[40px] mt-[18px] text-[20px] leading-[20px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
             The biggest green flag you will ever see.
           </p>
         </div>
-        <div className="linkdin-img absolute p-[18px] top-[456px] left-[10%] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] w-[195.69px] h-[201.31px] rotate-[-6deg] rounded-[15px] border border-black xl:p-[30px] sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black shadow-md shadow-black">
+        <div className="linkdin-img absolute lg:left-[64%] lg:top-[78%] left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] lg:p-[25px] border border-black  p-[18px] shadow-md shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:h-[242px] lg:w-[225px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
           <img
             src="/assets/images/JOK_page/linkdin-JOK.svg"
-            className="xl:h-[92px] xl:w-[92px] h-[69px] w-[69px] rotate-[8deg]"
+            className="h-[69px] w-[69px] rotate-[8deg] xl:h-[92px] xl:w-[92px]"
             alt="linkdin"
           />
-          <p className="page-subhead mt-[26px] leading-[20px] xl:mt-[44px] text-[20px] xl:text-[24px] xl:leading-[25px]">
+          <p className="page-subhead lg:mt-[50px] mt-[26px] text-[20px] leading-[20px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
             For your professional needs!
           </p>
         </div>
       </div>
-      <div className="relative xl:mt-[160px] mt-[635px]">
-        <h1 className=" page-heading absolute right-[20%] top-[-18%] xl:right-[37%] xl:top-[-12%] text-center text-[35px] xl:text-[64px]">
+      <div className="relative lg:mt-[226px] mt-[635px] xl:mt-[160px]">
+        <h1 className=" page-heading absolute lg:right-[37%] right-[20%] top-[-18%] text-center text-[35px] xl:right-[37%] xl:top-[-12%] lg:text-[55px] xl:text-[64px]">
           WE CELEBRATE THE
         </h1>
-        <h1 className="JOK-content page-heading xl:mt-[50px] rotate-[-1deg] text-center text-[48px] xl:text-[110px] ">
+        <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] xl:mt-[50px] lg:text-[95px] xl:text-[110px] ">
           BEAUTY of CreatIon
         </h1>
-        <h1 className="page-heading mt-[-18px] xl:mt-[-58px] sm:leading-[0px] leading-[28px] text-center text-[35px] xl:text-[64px]">
+        <h1 className="page-heading lg:mt-[-12px] mt-[-18px] text-center text-[35px] leading-[28px] sm:leading-[0px] xl:mt-[-58px] lg:text-[55px] xl:text-[64px]">
           {" "}
-          In all Its<br className="sm:hidden block" /> wonderful forms
+          In all Its
+          <br className="block sm:hidden" /> wonderful forms
         </h1>
       </div>
-      <div className="mt-10 hidden justify-center gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[3.25rem] xl:mb-[4.5rem] ">
+      <div className="mt-10 hidden justify-center gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[4.25rem] xl:mt-[3.25rem] xl:mb-[4.5rem] ">
         <div
           className={`career-btn flex cursor-pointer items-center rounded-full bg-black text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
@@ -157,14 +159,17 @@ const JoinKlan = () => {
           </p>
         </div>
       </div>
-      <div className="mb-[2.25rem] mt-[2.5rem] ml-[-12px] flex justify-center gap-x-4 sm:hidden">
+      <div className="mb-[2.25rem] ml-[-12px] mt-[2.5rem] flex justify-center gap-x-4 sm:hidden">
         <div className=" flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
           <Image
             className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
             src={DarkPlayStore}
             alt="Play store"
           />
-          <p className="mx-[10px] button-store">Get it on <br />Play store</p>
+          <p className="button-store mx-[10px]">
+            Get it on <br />
+            Play store
+          </p>
         </div>
         <div className="flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
           <Image
@@ -172,7 +177,7 @@ const JoinKlan = () => {
             className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
             alt="App store"
           />
-          <p className="mx-[10px] button-store">Available on App store</p>
+          <p className="button-store mx-[10px]">Available on App store</p>
         </div>
       </div>
     </div>
