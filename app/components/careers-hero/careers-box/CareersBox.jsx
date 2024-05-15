@@ -61,7 +61,7 @@ const CareersBox = () => {
             </h4>
             <img
               className="hidden h-[18.61px] w-[18.61px] sm:block lg:h-[44px] lg:w-[44px] xl:h-[56px] xl:w-[56px]"
-              src="/assets/images/careers_page/careers-arrow.svg"
+              src="/assets/images/careers_page/arrow.svg"
               alt="arrow img"
             />
           </div>
