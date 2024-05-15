@@ -200,7 +200,7 @@ const LeftSection = () => {
       <br></br>
       <div className="mt-10 lg:mt-[0.25rem] lg:mb-[4rem] hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
         <div
-          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] text-white  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] career-btn  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
           onMouseEnter={handlePlayStoreEnter}
           onMouseLeave={handlePlayStoreLeave}
@@ -228,7 +228,7 @@ const LeftSection = () => {
           </p>
         </div>
         <div
-          className={`flex  cursor-pointer items-center rounded-full bg-black py-1  text-[1rem] text-white sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+          className={`flex  cursor-pointer items-center rounded-full bg-black py-1  text-[1rem] career-btn sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
               ? "button-text border border-black bg-transparent"

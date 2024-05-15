@@ -16,7 +16,7 @@
   src: url('/assets/fonts/NeueMontreal-Bold.otf') format('truetype');
 }
 
-.careers-subhead{
+.careers-subhead,.page-subhead{
   font-family:'Neue Montreal Bold' ;
 }
 .page-heading{
@@ -92,8 +92,8 @@ h1{
 
 .instagram-img {
   background-color: #FE31EE; /* Background color */
-  background-image: url(/assets/images/home_page/background-new.svg); /* Background image */
-  background-blend-mode: multiply; /* Blend mode */
+  /* background-image: url(/assets/images/home_page/background-new.svg); /* Background image */
+  /* background-blend-mode: multiply; Blend mode */ 
   background-size: cover;
 }
 
@@ -107,3 +107,4 @@ h1{
 .JOK-content{
   color:#FE31EE
 }
+
