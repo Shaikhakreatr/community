@@ -27,10 +27,10 @@ const JoinKlan = () => {
   return (
     <div className="container mx-auto">
       <div>
-        <h1 className="page-heading mb-[-15px] mt-[20px] text-center text-[48px] sm:text-[65px] lg:text-[86px] xl:text-[96px]">
+        <h1 className="page-heading mb-[-2px] mt-[20px] text-center text-[48px] sm:text-[65px] lg:text-[86px] xl:text-[96px]">
           JoIn our Klan
         </h1>
-        <p className="content-neue text-center text-[16px] italic text-blue-700 sm:text-[18px] lg:text-[20px] xl:text-[24px]">
+        <p className="content-neue text-center sm:lead-[0px] leading-[18px] text-[16px] italic text-blue-700 sm:text-[18px] lg:text-[20px] xl:text-[24px]">
           (Note: We use the word “Klan”
           <br className="sm:hidden" /> to replace “clan.”)
         </p>
@@ -99,8 +99,8 @@ const JoinKlan = () => {
       </div>
       <div className="mt-10 hidden justify-center gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[4.25rem] xl:mt-[3.25rem] xl:mb-[4.5rem] ">
         <div
-          className={`career-btn flex cursor-pointer items-center rounded-full bg-black text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
-                    ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
+          className={` flex cursor-pointer items-center rounded-full bg-black text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+                    ${logoPlayActive ? "button-text text-black border border-black bg-transparent" : "career-btn"}`}
           onMouseEnter={handlePlayStoreEnter}
           onMouseLeave={handlePlayStoreLeave}
         >
@@ -127,11 +127,11 @@ const JoinKlan = () => {
           </p>
         </div>
         <div
-          className={`career-btn  flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+          className={` flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
-              ? "button-text border border-black bg-transparent"
-              : ""
+              ? "button-text text-black border border-black bg-transparent"
+              : "career-btn "
           }`}
           onMouseEnter={handleAppStoreEnter}
           onMouseLeave={handleAppStoreLeave}
