@@ -34,7 +34,7 @@ const CollabrationSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-[40px] my-[100px] flex items-center justify-center">
+              <div className="mx-[40px] my-[100px] flex items-start justify-center">
                 <div className="border-r border-black  px-[50px] sm:w-[50%]">
                   {speakers.map((item, index) => (
                     <div key={index}>
@@ -66,7 +66,7 @@ const CollabrationSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-[40px] my-[100px] flex items-center justify-center">
+              <div className="mx-[40px] my-[100px] flex items-start justify-center">
                 <div className="border-r border-black  px-[50px] sm:w-[50%]">
                   {sponsors.map((item, index) => (
                     <div key={index}>
@@ -99,7 +99,7 @@ const CollabrationSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-[40px] my-[100px] flex items-center justify-center">
+              <div className="mx-[40px] my-[100px] flex items-start justify-center">
                 <div className="border-r border-black  px-[50px] sm:w-[50%]">
                   {spaces.map((item, index) => (
                     <div key={index}>
@@ -132,7 +132,7 @@ const CollabrationSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-[40px] my-[100px] flex items-center justify-center">
+              <div className="mx-[40px] my-[100px] flex items-start justify-center">
                 <div className="border-r border-black  px-[50px] sm:w-[50%]">
                   {sellers.map((item, index) => (
                     <div key={index}>
