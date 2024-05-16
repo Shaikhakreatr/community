@@ -44,25 +44,25 @@ const EventsHero = () => {
         {/* upcoming heading section */}
 
         <Tabs.Panel value="upcoming">
-          <div className="page-heading relative text-[110px]">
-            <h1 className="text-center">Kreatr’s very own</h1>
-            <h1 className="absolute right-[20%] top-[40%] rotate-[-1deg] text-center text-red-600">
-              events and Workshops
+          <div className="page-heading relative sm:mt-[70px] sm:h-[50px] mt-[40px]">
+            <h1 className="text-center xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[40px] sm:leading-[0px] leading-[32px] ">Kreatr’s<br className="sm:hidden" /> very own</h1>
+            <h1 className="absolute sm:leading-[0px] leading-[38px] xl:right-[20%] xl:top-[142%] lg:top-[118%] lg:right-[22%] top-[90%] right-[17%] rotate-[-1deg] text-center text-red-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
+              events and<br className="sm:hidden" /> Workshops
             </h1>
           </div>
         </Tabs.Panel>
         {/* past heading section */}
         <Tabs.Panel value="past">
-          <div className="page-heading relative text-[110px]">
-            <h1 className="text-center">TAKE A LOOK AT OUR</h1>
-            <h1 className="absolute right-[34%] top-[43%]  rotate-[-1deg] text-center text-blue-600">
-              PAST EVENTS
+          <div className="page-heading relative  sm:mt-[70px] mt-[40px] sm:mb-0  mb-[-40px] ">
+            <h1 className="text-center xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[40px] sm:leading-[0px] leading-[33px] ">Take a look<br className="sm:hidden" /> at our</h1>
+            <h1 className="absolute xl:right-[34%] xl:top-[43%] top-[60%] right-[18%] rotate-[-1deg] text-center text-blue-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
+              past Events
             </h1>
           </div>
         </Tabs.Panel>
 
         {/* toggle section */}
-        <div className="mt-[80px] flex justify-center">
+        <div className="xl:mt-[148px] lg:mt-[148px] mb-[34px] mt-[105px] flex justify-center">
           <Tabs.List>
             <Tabs.Tab value="upcoming">Upcoming</Tabs.Tab>
             <Tabs.Tab value="past">Past</Tabs.Tab>
@@ -74,30 +74,30 @@ const EventsHero = () => {
         {/* upcoming hero section */}
 
         <Tabs.Panel value="upcoming">
-          <div className=" my-[50px] flex flex-wrap justify-center">
+          <div className=" sm:my-[50px] sm:ml-0  flex sm:flex-row flex-col flex-wrap justify-center items-center">
             {upcomingEvents.map((events) => (
               <div
                 key={events.id}
                 className="
-                upcoming-box mr-[45px] h-[521px] w-[381px] rounded-[15px] border border-black p-5"
+                upcoming-box sm:mr-[45px] sm:mb-0 mb-[30px] xl:h-[521px] xl:w-[381px] lg:h-[400px] lg:w-[321px] h-[357px] w-[290px] rounded-[15px] border border-black lg:p-[18px] xl:p-5 p-[18px]"
               >
                 <img
-                  className="h-[319.77px] w-[348px] rounded-[15px]"
+                  className="xl:h-[319.77px] xl:w-[348px] lg:h-[250px] lg:w-[280px] h-[225.63px] w-[261.18px] rounded-[15px]"
                   src={events.image}
                   alt="upcoming img"
                 />
-                <div className="my-[20px] flex items-center justify-between">
-                  <p className="page-subhead text-[32px] leading-[35px]">
+                <div className="lg:my-[20px] my-[12px] flex items-center justify-between">
+                  <p className="page-subhead xl:text-[32px] lg:text-[28px] sm:text-[26px] text-[24px] xl:leading-[35px] lg:leading-[25px] leading-[21px]">
                     {events.title}
                   </p>
                   <img
-                    className="h-[36px] w-[36px]"
+                    className="lg:h-[36px] lg:w-[36px] h-[24px] w-[24px]"
                     src="/assets/images/events_page/arrow.svg"
                     alt=""
                   />
                 </div>
                 <a>
-                  <div className="upcoming-sub content-neue-medium h-[40.16px] w-[133.87px] rounded-[30px] border border-black pt-[7px] text-center text-[16px]">
+                  <div className="upcoming-sub my-[14px] sm:my-0 lg:my-[16px] lg:mt-[-8px] content-neue-medium xl:h-[40.16px] xl:w-[133.87px] lg:h-[38.16px] lg:w-[123.87px] h-[28.34px] w-[92.54px] rounded-[30px] border border-black sm:pt-[7px] pt-[5px] text-center xl:text-[16px] lg:text-[15px] sm:text-[13px] text-[12px]">
                     Register now
                   </div>
                 </a>
@@ -108,29 +108,29 @@ const EventsHero = () => {
 
         {/* past hero section */}
         <Tabs.Panel value="past">
-          <div className=" my-[50px] flex flex-wrap justify-center">
+          <div className=" my-[35px] sm:ml-0 flex sm:flex-row flex-col flex-wrap justify-center items-center">
             {pastEvents.map((events) => (
               <div
                 key={events.id}
-                className="past-box mr-[45px] h-[521px] w-[381px] rounded-[15px] border border-black p-5"
+                className="past-box sm:mr-[45px] sm:mb-0 mb-[30px] xl:h-[521px] xl:w-[381px] lg:h-[400px] lg:w-[321px] h-[357px] w-[290px] rounded-[15px] border border-black lg:p-[18px] xl:p-5 p-[18px]"
               >
                 <img
-                  className="h-[319.77px] w-[348px] rounded-[15px]"
+                  className="xl:h-[319.77px] xl:w-[348px] lg:h-[250px] lg:w-[280px] h-[225.63px] w-[261.18px] rounded-[15px]"
                   src={events.image}
                   alt="past img"
                 />
-                <div className="my-[20px] flex items-center justify-between">
-                  <p className="page-subhead text-[32px] leading-[35px]">
+                <div className="xl:my-[20px] lg:mt-[12px] lg:mb-[10px] my-[12px] flex items-center justify-between">
+                  <p className="page-subhead xl:text-[32px] lg:text-[28px] sm:text-[26px] text-[24px] xl:leading-[35px] lg:leading-[25px] leading-[21px]">
                     {events.title}
                   </p>
                   <img
-                    className="h-[36px] w-[36px]"
+                    className="lg:h-[36px] lg:w-[36px] h-[24px] w-[24px]"
                     src="/assets/images/events_page/arrow.svg"
                     alt=""
                   />
                 </div>
                 <a>
-                  <div className="past-sub content-neue-medium h-[40.16px] w-[162px] rounded-[30px] border border-black pt-[7px] text-center text-[16px]">
+                  <div className="past-sub content-neue-medium my-[14px] sm:my-0 lg:my-[16px]  lg:h-[40.16px] lg:w-[162px] w-[115px] h-[28px] rounded-[30px] border border-black sm:pt-[7px] pt-[5px] text-center xl:text-[16px] lg:text-[15px] sm:text-[13px] text-[12px]">
                     Explore the event
                   </div>
                 </a>
