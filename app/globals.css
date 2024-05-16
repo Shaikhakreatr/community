@@ -108,3 +108,40 @@ h1{
   color:#FE31EE
 }
 
+/* events page */
+.upcoming-box:hover{
+  background-color: #DFE5FF;
+  transform: scale(1.1);
+}
+
+.upcoming-box,.past-box {
+  transition: transform 0.5s ease-in-out;
+}
+.upcoming-box:hover .upcoming-sub {
+  background-color: black;
+  color: white;
+}
+.upcoming-box:hover .upcoming-arrow {
+  background-color: black;
+  color: white;
+}
+
+.past-box:hover{
+  background-color: #F1E9C3;
+  transform: scale(1.1);
+}
+
+.past-box,.past-box {
+  transition: transform 0.5s ease-in-out;
+}
+.past-box:hover .past-sub {
+  background-color: black;
+  color: white;
+}
+.past-box:hover .past-arrow {
+  background-color: black;
+  color: white;
+}
+
+
+
