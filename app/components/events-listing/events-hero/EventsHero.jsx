@@ -46,23 +46,23 @@ const EventsHero = () => {
         <Tabs.Panel value="upcoming">
           <div className="page-heading relative sm:mt-[70px] sm:h-[50px] mt-[40px]">
             <h1 className="text-center xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[40px] sm:leading-[0px] leading-[32px] ">Kreatr’s<br className="sm:hidden" /> very own</h1>
-            <h1 className="absolute sm:leading-[0px] leading-[38px] xl:right-[20%] xl:top-[142%] lg:top-[118%] lg:right-[22%] top-[90%] right-[17%] rotate-[-1deg] text-center text-red-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
+            <h1 className="absolute sm:leading-[0px] leading-[38px] xl:right-[20%] xl:top-[142%] lg:top-[118%] lg:right-[22%] top-[90%] right-[24%] rotate-[-1deg] text-center text-red-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
               events and<br className="sm:hidden" /> Workshops
             </h1>
           </div>
         </Tabs.Panel>
         {/* past heading section */}
         <Tabs.Panel value="past">
-          <div className="page-heading relative  sm:mt-[70px] mt-[40px] sm:mb-0  mb-[-40px] ">
+          <div className="page-heading relative  sm:mt-[70px] mt-[40px] sm:h-[50px] sm:mb-0  mb-[-40px] ">
             <h1 className="text-center xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[40px] sm:leading-[0px] leading-[33px] ">Take a look<br className="sm:hidden" /> at our</h1>
-            <h1 className="absolute xl:right-[34%] xl:top-[43%] top-[60%] right-[18%] rotate-[-1deg] text-center text-blue-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
+            <h1 className="absolute lg:top-[-15%] lg:right-[35%]  xl:right-[34%] xl:top-[-18%] top-[60%] right-[18%] rotate-[-1deg] text-center text-blue-600 xl:text-[110px] lg:text-[90px] sm:text-[70px] text-[48px]">
               past Events
             </h1>
           </div>
         </Tabs.Panel>
 
         {/* toggle section */}
-        <div className="xl:mt-[148px] lg:mt-[148px] mb-[34px] mt-[105px] flex justify-center">
+        <div className="xl:mt-[120px] lg:mt-[98px] mb-[34px] mt-[105px] flex justify-center">
           <Tabs.List>
             <Tabs.Tab value="upcoming">Upcoming</Tabs.Tab>
             <Tabs.Tab value="past">Past</Tabs.Tab>
@@ -108,7 +108,7 @@ const EventsHero = () => {
 
         {/* past hero section */}
         <Tabs.Panel value="past">
-          <div className=" my-[35px] sm:ml-0 flex sm:flex-row flex-col flex-wrap justify-center items-center">
+          <div className=" mt-[35px] mb-[50px] sm:ml-0 flex sm:flex-row flex-col flex-wrap justify-center items-center">
             {pastEvents.map((events) => (
               <div
                 key={events.id}
