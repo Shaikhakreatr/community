@@ -1,3 +1,5 @@
+// Accordion page data
+
 export const leftAccordion = [
     {
       title: "What is Kreatr?",
@@ -36,3 +38,86 @@ export const leftAccordion = [
       description: <>Kreatr App is accessible on both iOS and Android platforms. Simply visit the App Store or the Play Store, and enjoy all that we have to offer!</>
     },
   ];
+
+// collabration page data
+
+export const speakers = [
+    {
+      title: "Expertise Expo Speaker",
+      description: "Join us for a showcase of expertise where seasoned professionals share insights and captivate the audience with years of experience."
+    },
+    {
+      title: "Networking Mixer Speaker",
+      description: "Rub elbows with a community of influencers and industry leaders. Gain invaluable insight, support, and exposure through real-life connections."
+    },
+    {
+      title: "Collaboration Summit Speaker",
+      description: "Team up with us to tackle real-world challenges alongside our vibrant community. Together, we can create impactful solutions that make a difference."
+    },
+    {
+      title: "Design Transformation Speaker",
+      description: "Elevate your design game by networking with experts and gaining game-changing advice and insights during our collaborative sessions."
+    }
+  ];
+  
+export const sponsors = [
+    {
+      title: "Access to Design Communities",
+      description: "Gain exposure to a pool of talented design communities! You will be able to advertise to a fun-filled and quirky community passionate about design and creativity!"
+    },
+    {
+      title: "Sponsorship Recognition",
+      description: "Receive recognition as a main sponsor, associate sponsor, or award sponsor, with mentions on our social media pages and email newsletters."
+    },
+    {
+      title: "Sample Distribution",
+      description: "Distribute samples of your products to event attendees, enhancing brand visibility and engagement."
+    },
+    {
+      title: "Keynote Mentions",
+      description: "Enjoy mentions of your brand during keynote presentations, further improving your visibility and reputation."
+    },
+    {
+      title: "Gratitude Acknowledgment",
+      description: "Receive thank-you messages in our emails and newsletters, where we express our appreciation for your support."
+    }
+  ];
+
+export const spaces = [
+    {
+      title: "Promotion Opportunities",
+      description: "Your venue's name will be prominently featured in our promotional materials, including Instagram posts and Book My Show posters."
+    },
+    {
+      title: "Testimonials",
+      description: "Two testimonials featuring your establishment alongside our event will be published in our newsletter and shared across our promotional platforms."
+    },
+    {
+      title: "Increased Footfall",
+      description: "Partnering with us promises to drive foot traffic to your venue, ensuring greater visibility and potential business growth!"
+    },
+    {
+      title: "Long-Term Collaboration",
+      description: "A successful partnership with us will lead to ongoing collaboration for future events in your neighbourhood."
+    }
+  ];
+
+export const sellers = [
+    {
+      title: "Access to a Larger Audience",
+      description: "Gain access to a larger audience of potential customers, increasing your reach and exposure."
+    },
+    {
+      title: "Increased Sales Opportunities",
+      description: "Reach a larger pool of potential customers, improving sales and revenue."
+    },
+    {
+      title: "Brand Exposure and Credibility",
+      description: "Be featured on a reputable platform like ours and enhance your brand exposure and credibility, as customers trust our platform and are more likely to purchase from sellers listed on it."
+    },
+    {
+      title: "Opportunities for Collaboration",
+      description: "Collaborate with other sellers on the platform to cross-promote products, participate in joint marketing campaigns, or explore other partnership opportunities."
+    }
+  ];
+  

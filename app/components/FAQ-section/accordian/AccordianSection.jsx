@@ -8,7 +8,6 @@ import { leftAccordion } from "@/constants/constants";
 import { rightAccordion } from "@/constants/constants";
 
 const AccordianSection = () => {
-  console.log(leftAccordion);
 
   const leftItems = leftAccordion.map((item,index) => (
     <div className="sm:mb-[17px]" key={index}>
