@@ -1,0 +1,12 @@
+import React from 'react'
+
+const CollabrationHeader = () => {
+  return (
+    <div className='flex flex-col justify-center items-center relative'>
+        <h1 className='page-heading xl:text-[110px] lg:text-[90px] sm:text-[75px] text-[40px]'>Partner WIth Us</h1>
+        <img className='absolute top-[72%] xl:h-[84.57px] xl:w-[352.37px] lg:w-[330px] lg:h-[70px] sm:h-[60px] sm:w-[300px] h-[34.5px] w-[143.75px]' src="/assets/images/collabration_page/collabration-img.svg" alt="partner with us" />
+    </div>
+  )
+}
+
+export default CollabrationHeader;
