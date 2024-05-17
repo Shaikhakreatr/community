@@ -59,10 +59,10 @@ const LeftSection = () => {
 
   return (
     <div className="lg:ml-14">
-      <h1 className="page-heading text-64 lg:mb-0 md:mb-[15px] lg:text-[5rem] xl:text-110">
+      <h1 className="page-heading text-64 md:mb-[15px] lg:mb-0 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
-      <div className="lg:mt-[-0.875rem] xl:mt-[-1.875rem] sm:mt-[-15px] mt-[-15px] flex items-center ">
+      <div className="mt-[-15px] flex items-center sm:mt-[-15px] lg:mt-[-0.875rem] xl:mt-[-1.875rem] ">
         <p className="content-neue pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
@@ -82,7 +82,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" sm:mt-[12px] my-3 flex w-[103%] sm:w-[92%] md:w-[80%] lg:w-[58%] xl:w-[73%]">
+      <div className=" my-3 flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[58%] xl:w-[73%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
@@ -139,12 +139,12 @@ const LeftSection = () => {
             {(transitionStyles) => (
               <div style={transitionStyles} className="flex sm:items-center">
                 <div className="sm:w-[4.625rem] sm:pb-2 xl:w-[8.125rem] ">
-                  <p className="mt-[-5px] sm:mt-0 emoji-content text-[1rem] text-blue-700 xl:text-28 ">
+                  <p className="emoji-content mt-[-5px] text-[1rem] text-blue-700 sm:mt-0 xl:text-28 ">
                     We are:
                   </p>
                 </div>
 
-                <div className="flex w-2/4 flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="ml-2 flex w-2/4 flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Community</p>
                   </div>
@@ -174,11 +174,11 @@ const LeftSection = () => {
             {(transitionStyles) => (
               <div style={transitionStyles} className="flex sm:items-center">
                 <div className="sm:w-[6.625rem] sm:pb-2 xl:w-[12.125rem]">
-                  <p className="mt-[-5px] sm:mt-0 emoji-content text-[1rem] text-red-500 xl:text-28">
+                  <p className="emoji-content mt-[-5px] text-[1rem] text-red-500 sm:mt-0 xl:text-28">
                     We are not:
                   </p>
                 </div>
-                <div className="flex w-[52%] flex-wrap ml-2 sm:w-full sm:flex-nowrap sm:pl-0">
+                <div className="ml-2 flex w-[52%] flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
                   <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
@@ -198,10 +198,11 @@ const LeftSection = () => {
         </div>
       </div>
       <br></br>
-      <div className="mt-10 lg:mt-[0.25rem] lg:mb-[4rem] hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex xl:mb-6 md:mb-4 md:mt-[-12px] ">
+      <div className="mt-10 hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[0.25rem] xl:mb-6 ">
+        <a href="https://apps.apple.com/in/app/kreatr/id6474967284">
         <div
-          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem] career-btn  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
-                    ${logoPlayActive ? "button-text border border-black bg-transparent" : ""}`}
+          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+                    ${logoPlayActive ? "button-text text-black border border-black bg-transparent" : "career-btn"}`}
           onMouseEnter={handlePlayStoreEnter}
           onMouseLeave={handlePlayStoreLeave}
         >
@@ -227,12 +228,15 @@ const LeftSection = () => {
             Get it on Playstore
           </p>
         </div>
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.kreatr">
         <div
-          className={`flex  cursor-pointer items-center rounded-full bg-black py-1  text-[1rem] career-btn sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+          className={`flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
-              ? "button-text border border-black bg-transparent"
-              : ""
+              ? "button-text border border-black bg-transparent text-black"
+              : "career-btn "
           }`}
           onMouseEnter={handleAppStoreEnter}
           onMouseLeave={handleAppStoreLeave}
@@ -255,9 +259,11 @@ const LeftSection = () => {
               logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
             } `}
           >
-            Available on<br /> App Store
+            Available on
+            <br /> App Store
           </p>
         </div>
+        </a>
       </div>
     </div>
   );

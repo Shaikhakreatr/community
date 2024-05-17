@@ -13,11 +13,13 @@ const Footer = () => {
           <div className="mt-[28px] grid  grid-cols-1 sm:grid-cols-2 md:mt-8 md:grid-cols-2 lg:ml-4 lg:mt-8 xl:mt-10 ">
             <div className="lg:ml-14 ml-0">
               <div>
+                <a href="/">
                 <Image
                   src={KreatrLogo}
                   className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
                   alt="Kreatr Logo"
                 />
+                </a>
                 <div className=" footer-address footer-section sm-[80%] sm:opacity-[60%] mt-4 hidden w-[70%] sm:block sm:text-[12px] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
                   <p>
                     18/1, Shariff Square, 1st Block Koramangala, Bengaluru,
@@ -25,21 +27,21 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="my-5 hidden items-center justify-start sm:flex xl:mt-6">
-                  <a href="#">
+                  <a href="7204004953">
                     <Image
                       src={Whatsapp}
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Whatsapp"
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
                     <Image
                       src={Instagram}
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Instagram"
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/the-kreatr/">
                     <Image
                       src={Linkedin}
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
@@ -57,34 +59,34 @@ const Footer = () => {
                       Blogs
                     </li>
                   </a>
-                  <a href="#">
+                  <a href="/collabration">
                     <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>
                   </a>
-                  <a href="#">
+                  <a href="/careers">
                     <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Careers
                     </li>
                   </a>
-                  <a href="#">
+                  <a href="/FAQ">
                     <li className="footer-section footer-content sm:opacity-[60%] opacity-[70%] hidden pr-3 text-[.875rem] sm:block lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
                 </ul>
                 <ul className="footer-ul flex flex-row sm:mt-[-41px] sm:flex-col md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
-                  <a href="#">
+                  <a href="/FAQ">
                     <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] block pr-5 text-[.875rem] sm:hidden lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </a>
-                  <a href="#">
+                  <a href="/Contact">
                     <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] pr-5 text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
                   </a>
-                  <a href="#">
+                  <a href="/join-our-klan">
                     <li className="footer-content footer-section sm:opacity-[60%] opacity-[70%] text-[.875rem] lg:text-[1.125rem] xl:text-24">
                       Join our Klan
                     </li>

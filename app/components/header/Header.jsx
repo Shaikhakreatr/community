@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <header className="">
         <div className="flex items-center justify-center border-b border-gray-500 p-2">
-          <Image className="my-3 xl:h-32.79 xl:w-181 lg:w-[10rem] lg:h-[1.6875rem] w-124 h-22"  src={KreatrLogo} alt="Kreatr Logo" />
+          <a href="/"><Image className="my-3 xl:h-32.79 xl:w-181 lg:w-[10rem] lg:h-[1.6875rem] w-124 h-22"  src={KreatrLogo} alt="Kreatr Logo" /></a>
         </div>
       </header>
     </>
