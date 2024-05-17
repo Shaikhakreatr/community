@@ -148,3 +148,10 @@ h1{
 .partner-text{
   color:#3C9E3C;
 }
+
+/* Upcoming events main page */
+
+.upcoming-btn{
+  background-color: #3C9E3C;
+  color: #FFFDEE;
+}

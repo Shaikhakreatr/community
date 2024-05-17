@@ -1,0 +1,155 @@
+.formWrap{
+    font-family: "Neue Montreal";
+    font-weight: 500;
+}
+
+.transparentInput{
+    background-color: transparent;
+    padding-bottom: 2px;
+    border-color: black;
+}
+
+.transparentInput::placeholder{
+    color:black;
+    opacity: 40%;
+    font-size: 16px;
+    margin-left: 40px;
+    font-family: "Neue Montreal";
+    
+    
+}
+.transparentInputArea::placeholder{
+    color:black;
+    opacity: 40%;
+    font-size: 16px;
+    margin-left: 40px;
+    font-family: "Neue Montreal";
+    
+    
+}
+.transparentInput{
+    &[data-error] {
+        border-color: black;
+      }
+} 
+.transparentInputArea{
+    &[data-error] {
+        border-color: black;
+      }
+} 
+.inputError{
+    color: #DE033E;
+    margin-top: 6px;
+}
+
+.inputLabel{
+    color: black;
+    font-size: 1.125rem;
+    margin-bottom: 4px;
+    
+}
+.dropDown{ 
+    background-color: transparent;
+    border: 1px solid black;
+}
+.dropDownStar{
+    color: #DE033E;
+}
+
+
+@media only screen and (max-width: 639px) {
+    .formButton {
+        height: 40px;
+        width: 260px;
+        color: #FFFDEE;
+        background-color:#3C9E3C ;
+        letter-spacing: 2px;
+    }
+    .transparentInput::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 12px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+        
+    }
+    .transparentInputArea::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 12px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+        
+    }
+    .inputLabel{
+        color: black;
+        font-size: 1rem;
+    }
+    .sentMessage{
+        font-family: "Neue Montreal";
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 25px;
+        color:black;
+        opacity:70%
+    }
+    .transparentInputArea{
+        background-color: transparent;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .transparentInput::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 14px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+
+    }
+    .transparentInputArea::placeholder{
+        color:black;
+        opacity: 40%;
+        font-size: 14px;
+        margin-left: 40px;
+        font-family: "Neue Montreal";
+
+    }
+    .formButton {
+        height: 40.16px;
+        width: 133.87px;
+        color: #FFFDEE;
+        background-color:#3C9E3C ;
+    }
+    .sentMessage{
+        font-family: "Neue Montreal";
+        font-size: 12px;
+        margin-top: 12px;
+        color:black;
+        opacity:70%;
+        font-weight: 500;
+    }
+    .transparentInputArea{
+        background-color: transparent;
+        padding-top: 7px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .formButton {
+        height: 67px;
+        width: 291px;  
+        color: #FFFDEE;
+        background-color:#3C9E3C ;
+        font-size: 24px;
+    }
+    .sentMessage{
+        font-family: "Neue Montreal";
+        font-size: 15px;
+        margin-top: 10px;
+        color:black;
+        opacity:70%;
+        font-weight: 500;
+    }
+}
