@@ -33,9 +33,9 @@ const CollabrationForm = () => {
   });
 
   return (
-    <div className="px-[95px] py-[50px]">
+    <div className="sm:px-[95px] sm:py-[50px] px-[30px] py-[35px]">
       <div className="">
-        <h1 className="content-neue-medium text-center text-[34px]">
+        <h1 className="content-neue-medium text-center xl:text-[34px] lg:text-[28px] sm:text-[24px] text-[18px]">
           Fill in the details
         </h1>
       </div>
@@ -75,7 +75,7 @@ const CollabrationForm = () => {
             key={form.key("name")}
             {...form.getInputProps("name")}
           />
-          <br />
+          <br className="sm:block hidden"/>
           <TextInput
             label="Phone Number"
             mt={15}
@@ -91,7 +91,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("phoneNumber")}
             inputMode="numeric"
           />
-          <br />
+          <br className="sm:block hidden"/>
           <TextInput
             label="Email"
             mt={15}
@@ -106,7 +106,7 @@ const CollabrationForm = () => {
             key={form.key("senderEmail")}
             {...form.getInputProps("senderEmail")}
           />
-          <br />
+          <br className="sm:block hidden"/>
           <div className="mt-[25px] items-center justify-center text-center sm:flex lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
