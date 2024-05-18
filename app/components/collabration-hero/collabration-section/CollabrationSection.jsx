@@ -30,7 +30,7 @@ const CollabrationSection = () => {
                     speaker?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Here’s what happens when you collaborate with us!
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const CollabrationSection = () => {
                     Turbocharge your brand's<br className="sm:hidden" /> visibility through sponsorship!
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Here’s what happens when you collaborate with us!
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const CollabrationSection = () => {
                     Got a great space to offer?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Here’s what happens when you collaborate with us!
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const CollabrationSection = () => {
                     Wish to sell your products<br className="sm:hidden" /> or services as a seller?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Here’s what happens when you collaborate with us!
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
