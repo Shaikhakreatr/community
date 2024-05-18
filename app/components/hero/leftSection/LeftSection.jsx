@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import FilledSpeaker from "@/public/assets/images/home_page/filled-speaker.svg";
 import OutlinedSpeaker from "@/public/assets/images/home_page/outlined-speaker.svg";
 import HappyOutline from "@/public/assets/images/home_page/Outlined-happy-emoji.svg";
@@ -199,7 +200,8 @@ const LeftSection = () => {
       </div>
       <br></br>
       <div className="mt-10 hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[0.25rem] xl:mb-6 ">
-        <a href="https://apps.apple.com/in/app/kreatr/id6474967284">
+        <Link target="blank" href="https://play.google.com/store/apps/details?id=com.kreatr">
+        
         <div
           className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text text-black border border-black bg-transparent" : "career-btn"}`}
@@ -228,9 +230,9 @@ const LeftSection = () => {
             Get it on Playstore
           </p>
         </div>
-        </a>
+        </Link>
 
-        <a href="https://play.google.com/store/apps/details?id=com.kreatr">
+        <Link target="blank" href="https://apps.apple.com/in/app/kreatr/id6474967284">
         <div
           className={`flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
@@ -263,7 +265,7 @@ const LeftSection = () => {
             <br /> App Store
           </p>
         </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
