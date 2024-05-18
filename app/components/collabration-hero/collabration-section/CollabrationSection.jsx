@@ -30,8 +30,8 @@ const CollabrationSection = () => {
                     <br className="sm:hidden" /> and igniting minds as a
                     speaker?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Heres what happens when you collaborate with us!
+                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -39,8 +39,8 @@ const CollabrationSection = () => {
                 <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[50px]">
                   {speakers.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px]  xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc ">
+                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                        <li className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </li>
                       </ul>
@@ -60,20 +60,20 @@ const CollabrationSection = () => {
               <div className="mt-[35px] sm:mt-[50px]">
                 <div>
                   <h1 className="page-subhead partner-text text-center text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[34px]">
-                    Turbocharge your brands
+                    Turbocharge your brand&apos;s
                     <br className="sm:hidden" /> visibility through sponsorship!
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Heres what happens when you collaborate with us!
+                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
               <div className="items-start justify-center sm:mx-[40px] sm:my-[100px] sm:flex">
-                <div className="border-black px-[20px] sm:w-[50%]  sm:border-r sm:px-[50px]">
+                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[50px]">
                   {sponsors.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px]  xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc ">
+                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                        <li className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </li>
                       </ul>
@@ -96,17 +96,17 @@ const CollabrationSection = () => {
                   <h1 className="page-subhead partner-text text-center text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[34px]">
                     Got a great space to offer?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Heres what happens when you collaborate with us!
+                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
               <div className="items-start justify-center sm:mx-[40px] sm:my-[100px] sm:flex">
-                <div className="border-black px-[20px] sm:w-[50%]  sm:border-r sm:px-[50px]">
+                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[50px]">
                   {spaces.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px]  xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc ">
+                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                        <li className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </li>
                       </ul>
@@ -130,17 +130,17 @@ const CollabrationSection = () => {
                     Wish to sell your products
                     <br className="sm:hidden" /> or services as a seller?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px] ">
-                    Heres what happens when you collaborate with us!
+                  <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                    Here&apos;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
               <div className="items-start justify-center sm:mx-[40px] sm:my-[100px] sm:flex">
-                <div className="border-black px-[20px] sm:w-[50%]  sm:border-r sm:px-[50px]">
+                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[50px]">
                   {sellers.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px]  xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc ">
+                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                        <li className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </li>
                       </ul>
