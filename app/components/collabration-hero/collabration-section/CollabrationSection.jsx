@@ -31,7 +31,7 @@ const CollabrationSection = () => {
                     speaker?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                    Here&apos;s what happens when you collaborate with us!
+                    {`Here's what happens when you collaborate with us!`}
                   </p>
                 </div>
               </div>
