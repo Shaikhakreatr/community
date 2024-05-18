@@ -55,7 +55,10 @@
 .dropDownStar{
     color: #DE033E;
 }
-
+.selectInput{
+    background: transparent;
+    border-color: black;
+}
 
 @media only screen and (max-width: 639px) {
     .formButton {
