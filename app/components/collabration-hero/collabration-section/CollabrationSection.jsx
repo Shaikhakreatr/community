@@ -41,11 +41,11 @@ const CollabrationSection = () => {
                     <div key={index}>
                       <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
                         <li className="partner-text mb-2 mt-6 list-disc">
-                          {item.title}
+                          Hello Title
                         </li>
                       </ul>
                       <p className="content-neue-medium text-[14px] leading-[17px] sm:text-[20px] lg:text-[24px] lg:leading-[28px] xl:text-[26px]">
-                        {item.description}
+                        Hello Description
                       </p>
                     </div>
                   ))}
