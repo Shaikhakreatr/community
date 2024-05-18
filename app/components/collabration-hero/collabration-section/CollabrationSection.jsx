@@ -16,9 +16,9 @@ const CollabrationSection = () => {
             <div className="flex justify-center">
               <Tabs.List>
                 <Tabs.Tab value="speakers">Speakers</Tabs.Tab>
-                {/* <Tabs.Tab value="sponsors">Sponsors</Tabs.Tab>
+                <Tabs.Tab value="sponsors">Sponsors</Tabs.Tab>
                 <Tabs.Tab value="spaces">Spaces</Tabs.Tab>
-                <Tabs.Tab value="sellers">Sellers</Tabs.Tab> */}
+                <Tabs.Tab value="sellers">Sellers</Tabs.Tab>
               </Tabs.List>
             </div>
 
