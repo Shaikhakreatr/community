@@ -41,11 +41,11 @@ const CollabrationSection = () => {
                     <div key={index}>
                       <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
                         <li className="partner-text mb-2 mt-6 list-disc">
-                          Hello Title
+                          {item.title}
                         </li>
                       </ul>
                       <p className="content-neue-medium text-[14px] leading-[17px] sm:text-[20px] lg:text-[24px] lg:leading-[28px] xl:text-[26px]">
-                        Hello Description
+                        {item.description}
                       </p>
                     </div>
                   ))}
@@ -56,7 +56,7 @@ const CollabrationSection = () => {
               </div>
             </Tabs.Panel>
 
-            {/* <Tabs.Panel value="sponsors">
+            <Tabs.Panel value="sponsors">
               <div className="mt-[35px] sm:mt-[50px]">
                 <div>
                   <h1 className="page-subhead partner-text text-center text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[34px]">
@@ -150,7 +150,7 @@ const CollabrationSection = () => {
                   <CollabrationForm />
                 </div>
               </div>
-            </Tabs.Panel> */}
+            </Tabs.Panel>
           </div>
         </Tabs>
       </div>
