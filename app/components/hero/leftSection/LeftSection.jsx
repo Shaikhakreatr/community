@@ -200,71 +200,78 @@ const LeftSection = () => {
       </div>
       <br></br>
       <div className="mt-10 hidden gap-x-5 sm:mb-[16px] sm:mt-[-14px] sm:flex md:mb-4 md:mt-[-12px] lg:mb-[4rem] lg:mt-[0.25rem] xl:mb-6 ">
-        <Link target="blank" href="https://play.google.com/store/apps/details?id=com.kreatr">
-        
-        <div
-          className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
-                    ${logoPlayActive ? "button-text text-black border border-black bg-transparent" : "career-btn"}`}
-          onMouseEnter={handlePlayStoreEnter}
-          onMouseLeave={handlePlayStoreLeave}
+        <Link
+          target="_blank"
+          rel="noreferrer"
+          href="https://play.google.com/store/apps/details?id=com.kreatr"
         >
-          {logoPlayActive ? (
-            <div>
-              {/* <img src="/assets/images/Dark-playstore.svg" alt="" /> */}
-              <Image
-                className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
-                src={DarkPlayStore}
-                alt="Play store"
-              />
-            </div>
-          ) : (
-            <div>
-              <Image
-                className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
-                src={LightPlayStore}
-                alt="Play store"
-              />
-            </div>
-          )}
-          <p className="button-store ml-[22px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
-            Get it on Playstore
-          </p>
-        </div>
+          <div
+            className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+                    ${logoPlayActive ? "button-text border border-black bg-transparent text-black" : "career-btn"}`}
+            onMouseEnter={handlePlayStoreEnter}
+            onMouseLeave={handlePlayStoreLeave}
+          >
+            {logoPlayActive ? (
+              <div>
+                {/* <img src="/assets/images/Dark-playstore.svg" alt="" /> */}
+                <Image
+                  className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
+                  src={DarkPlayStore}
+                  alt="Play store"
+                />
+              </div>
+            ) : (
+              <div>
+                <Image
+                  className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
+                  src={LightPlayStore}
+                  alt="Play store"
+                />
+              </div>
+            )}
+            <p className="button-store ml-[22px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
+              Get it on Playstore
+            </p>
+          </div>
         </Link>
 
-        <Link target="blank" href="https://apps.apple.com/in/app/kreatr/id6474967284">
-        <div
-          className={`flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+        <Link
+          target="_blank"
+          rel="noreferrer"
+          href="https://apps.apple.com/in/app/kreatr/id6474967284"
+        >
+          <div
+            className={`flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
               ? "button-text border border-black bg-transparent text-black"
               : "career-btn "
           }`}
-          onMouseEnter={handleAppStoreEnter}
-          onMouseLeave={handleAppStoreLeave}
-        >
-          {logoAppActive ? (
-            <Image
-              src={DarkAppStore}
-              className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
-              alt="App store"
-            />
-          ) : (
-            <Image
-              src={LightAppStore}
-              className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
-              alt="App store"
-            />
-          )}
-          <p
-            className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ${
-              logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
-            } `}
+            onMouseEnter={handleAppStoreEnter}
+            onMouseLeave={handleAppStoreLeave}
           >
-            Available on
-            <br /> App Store
-          </p>
-        </div>
+            {logoAppActive ? (
+              <Image
+                src={DarkAppStore}
+                className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
+                alt="App store"
+              />
+            ) : (
+              <Image
+                src={LightAppStore}
+                className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
+                alt="App store"
+              />
+            )}
+            <p
+              className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ${
+                logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
+              } `}
+            >
+              Available on
+              <br /> App Store
+            </p>
+          </div>
         </Link>
       </div>
     </div>

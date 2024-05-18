@@ -58,7 +58,11 @@ const RightSection = () => {
         />
       </div>
       <div className="mb-1 ml-[-12px] flex justify-center gap-x-4 sm:hidden">
-        <Link target="blank" href="https://play.google.com/store/apps/details?id=com.kreatr">
+        <Link
+          target="_blank"
+          rel="noreferrer"
+          href="https://play.google.com/store/apps/details?id=com.kreatr"
+        >
           <div className=" flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
             <Image
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
@@ -71,16 +75,20 @@ const RightSection = () => {
             </p>
           </div>
         </Link>
-       <Link target="blank" href="https://apps.apple.com/in/app/kreatr/id6474967284">
-       <div className="flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
-          <Image
-            src={DarkAppStore}
-            className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
-            alt="App store"
-          />
-          <p className="button-store mx-[10px]">Available on App store</p>
-        </div>
-       </Link>
+        <Link
+          target="_blank"
+          rel="noreferrer"
+          href="https://apps.apple.com/in/app/kreatr/id6474967284"
+        >
+          <div className="flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
+            <Image
+              src={DarkAppStore}
+              className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
+              alt="App store"
+            />
+            <p className="button-store mx-[10px]">Available on App store</p>
+          </div>
+        </Link>
       </div>
     </>
   );
