@@ -16,9 +16,9 @@ const CollabrationSection = () => {
             <div className="flex justify-center">
               <Tabs.List>
                 <Tabs.Tab value="speakers">Speakers</Tabs.Tab>
-                <Tabs.Tab value="sponsors">Sponsors</Tabs.Tab>
+                {/* <Tabs.Tab value="sponsors">Sponsors</Tabs.Tab>
                 <Tabs.Tab value="spaces">Spaces</Tabs.Tab>
-                <Tabs.Tab value="sellers">Sellers</Tabs.Tab>
+                <Tabs.Tab value="sellers">Sellers</Tabs.Tab> */}
               </Tabs.List>
             </div>
 
@@ -56,7 +56,7 @@ const CollabrationSection = () => {
               </div>
             </Tabs.Panel>
 
-            <Tabs.Panel value="sponsors">
+            {/* <Tabs.Panel value="sponsors">
               <div className="mt-[35px] sm:mt-[50px]">
                 <div>
                   <h1 className="page-subhead partner-text text-center text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[34px]">
@@ -150,7 +150,7 @@ const CollabrationSection = () => {
                   <CollabrationForm />
                 </div>
               </div>
-            </Tabs.Panel>
+            </Tabs.Panel> */}
           </div>
         </Tabs>
       </div>
