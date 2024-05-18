@@ -29,12 +29,10 @@ const PastHero = () => {
               alt="main-img"
             />
             <div className="content-neue-medium mt-[18px] flex items-center justify-center text-[13px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
-              <div className="border-r border-black pr-[40px] mr-3">
+              <div className="mr-3 border-r border-black pr-[40px]">
                 Sat 12 Jan, 2024
               </div>
-              <div>
-                Slay Coffee, Koramangala
-              </div>
+              <div>Slay Coffee, Koramangala</div>
             </div>
           </div>
           <div className="mx-[166px] mt-[60px]">
@@ -51,10 +49,10 @@ const PastHero = () => {
               </p>
               <br />
               <p>
-                This Refund and Cancellation Policy (this "policy") is a binding
+                {`This Refund and Cancellation Policy (this "policy") is a binding
                 policy between you, as an individual or entity ("End User" or
                 "you"), and Kreatrminds Private Limited, its subsidiaries and
-                affiliates (collectively, the “Company," “we" or “our").
+                affiliates (collectively, the “Company," “we" or “our").`}
                 <br />
                 <br />
                 To ensure compliance with our refund and cancellation policy,
@@ -77,21 +75,21 @@ const PastHero = () => {
             </div>
             <div className="mt-[40px] flex items-center justify-center">
               <img
-                className=" h-[354px] w-[378px] mr-3"
+                className=" mr-3 h-[354px] w-[378px]"
                 src="/assets/images/events_page/events1.jpg"
                 alt="events img"
               />
-              <div className="flex flex-col items-center mr-3">
-              <img
-                className=" h-[170px] w-[269px] mb-3"
-                src="/assets/images/events_page/events2.jpg"
-                alt="events img"
-              />
-              <img
-                className="h-[170px] w-[269px]"
-                src="/assets/images/events_page/events3.jpg"
-                alt="events img"
-              />
+              <div className="mr-3 flex flex-col items-center">
+                <img
+                  className=" mb-3 h-[170px] w-[269px]"
+                  src="/assets/images/events_page/events2.jpg"
+                  alt="events img"
+                />
+                <img
+                  className="h-[170px] w-[269px]"
+                  src="/assets/images/events_page/events3.jpg"
+                  alt="events img"
+                />
               </div>
               <img
                 className="h-[354px] w-[378px]"
@@ -102,7 +100,7 @@ const PastHero = () => {
           </div>
           <div>
             <h1 className="page-subhead text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
-              Happy Folks' Words!
+              Happy Folks&apos; Words!
             </h1>
             <div></div>
           </div>

@@ -11,37 +11,34 @@ import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
 const UpcomingHero = () => {
-    const form = useForm({
-        mode: "uncontrolled",
-        initialValues: {
-          name: "",
-          phoneNumber: "",
-          senderEmail: "",
-          message: "",
-        },
-    
-        validate: {
-          name: hasLength({ min: 2, max: 20 }, "Please write your name"),
-          phoneNumber: matches(
-            /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
-            "Please enter a valid phone number",
-          ),
-          senderEmail: isEmail("Please enter a valid email"),
-          message: isNotEmpty("Please write your message"),
-        },
-      });
-    
+  const form = useForm({
+    mode: "uncontrolled",
+    initialValues: {
+      name: "",
+      phoneNumber: "",
+      senderEmail: "",
+      message: "",
+    },
+
+    validate: {
+      name: hasLength({ min: 2, max: 20 }, "Please write your name"),
+      phoneNumber: matches(
+        /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
+        "Please enter a valid phone number",
+      ),
+      senderEmail: isEmail("Please enter a valid email"),
+      message: isNotEmpty("Please write your message"),
+    },
+  });
+
   const [forms, setForms] = useState([
     {
-      form
+      form,
     },
   ]);
 
   const addForm = () => {
-    setForms([
-      ...forms,
-      { form },
-    ]);
+    setForms([...forms, { form }]);
   };
 
   const removeForm = () => {
@@ -115,10 +112,10 @@ const UpcomingHero = () => {
               </p>
               <br />
               <p>
-                This Refund and Cancellation Policy (this "policy") is a binding
+                {`This Refund and Cancellation Policy (this "policy") is a binding
                 policy between you, as an individual or entity ("End User" or
                 "you"), and Kreatrminds Private Limited, its subsidiaries and
-                affiliates (collectively, the “Company," “we" or “our").
+                affiliates (collectively, the “Company," “we" or “our").`}
                 <br />
                 <br />
                 To ensure compliance with our refund and cancellation policy,
@@ -169,7 +166,9 @@ const UpcomingHero = () => {
             <div className="mt-[20px]">
               {forms.map((form, index) => (
                 <div key={index}>
-                  <p className="page-subhead text-[24px] mt-[50px]">Person {index + 1}</p>
+                  <p className="page-subhead mt-[50px] text-[24px]">
+                    Person {index + 1}
+                  </p>
                   <form className={`${styles.formWrap} w-full`}>
                     <TextInput
                       label="Name"
