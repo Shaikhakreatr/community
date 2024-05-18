@@ -31,7 +31,7 @@ const CollabrationSection = () => {
                     speaker?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                    {`Here&#39;s what happens when you collaborate with us!`}
+                   Here&#39;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -60,11 +60,11 @@ const CollabrationSection = () => {
               <div className="mt-[35px] sm:mt-[50px]">
                 <div>
                   <h1 className="page-subhead partner-text text-center text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[34px]">
-                    {`Turbocharge your brand&#39;s`}
+                   Turbocharge your brand&#39;s
                     <br className="sm:hidden" /> visibility through sponsorship!
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                    {`Here&#39;s what happens when you collaborate with us!`}
+                   Here&#39;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const CollabrationSection = () => {
                     Got a great space to offer?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                   {`Here&#39;s what happens when you collaborate with us!`}
+                  Here&#39;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const CollabrationSection = () => {
                     <br className="sm:hidden" /> or services as a seller?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                    {`Here&#39;s what happens when you collaborate with us!`}
+                   Here&#39;s what happens when you collaborate with us!
                   </p>
                 </div>
               </div>
