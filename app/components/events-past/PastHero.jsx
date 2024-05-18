@@ -100,7 +100,7 @@ const PastHero = () => {
           </div>
           <div>
             <h1 className="page-subhead text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
-              Happy Folks&apos; Words!
+              {`Happy Folks' Words!`}
             </h1>
             <div></div>
           </div>
