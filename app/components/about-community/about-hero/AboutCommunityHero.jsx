@@ -6,11 +6,16 @@ import Community3 from "../../../../public/assets/images/about_community/about-c
 import Community4 from "../../../../public/assets/images/about_community/about-community-4.jpg";
 import playstore from "../../../../public/assets/images/about_community/playstore-community.svg";
 import appstore from "../../../../public/assets/images/about_community/appstore-community.svg";
+import appstoreYellow from "../../../../public/assets/images/about_community/appstore-yellow.svg";
+import playstoreYellow from "../../../../public/assets/images/about_community/playstore-yellow.svg";
+
+
+
 
 const AboutCommunityHero = () => {
   return (
     <div className="my-[60px]">
-      <div className="relative mt-[250px] grid-cols-2 sm:mt-0 sm:grid lg:gap-[288px] xl:gap-[240px]">
+      <div className="relative mt-[250px] grid-cols-2 sm:mt-0 sm:grid lg:gap-[170px] xl:gap-[240px]">
         <div className="box1 h-[329px] w-[390px] pb-[45px] pl-[45px] pr-[64px] pt-[95px] lg:h-[426px] lg:w-[750px] lg:p-[100px] xl:h-[466px] xl:w-[803px] xl:p-[100px]">
           <h1 className="page-heading text-center text-[40px] lg:leading-[56px] leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] xl:text-[80px] xl:leading-[67px]">
             Who Is the
@@ -32,7 +37,7 @@ const AboutCommunityHero = () => {
         </div>
       </div>
       <div className="relative grid-cols-2 sm:mt-[50px] sm:grid">
-        <div className="absolute left-[11%] top-[-50%] sm:static lg:ml-[85px] xl:ml-[158px]">
+        <div className="absolute left-[11%] top-[-50%] sm:static lg:ml-[155px] xl:ml-[158px]">
           <Image
             className="h-[317px] w-[302px] rounded-[15px] lg:h-[526px] lg:w-[500px] xl:h-[624px] xl:w-[518px]"
             src={Community2}
@@ -62,7 +67,7 @@ const AboutCommunityHero = () => {
           </ul>
         </div>
       </div>
-      <div className="relative mt-[300px] grid-cols-2 sm:mt-[50px] sm:grid sm:gap-[240px] lg:gap-[288px]">
+      <div className="relative mt-[300px] grid-cols-2 sm:mt-[50px] sm:grid sm:gap-[240px] lg:gap-[170px]">
         <div className="box3 h-[329px] w-[390px] p-[45px] sm:p-[85px] lg:h-[426px] lg:w-[750px] lg:p-[74px] xl:h-[466px] xl:w-[803px]">
           <h1 className="page-heading text-center text-[40px]  lg:leading-[56px] leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] xl:text-[80px] xl:leading-[67px]">
             WHY SHOULD YOU
@@ -87,7 +92,7 @@ const AboutCommunityHero = () => {
         </div>
       </div>
       <div className="relative mt-[280px] grid-cols-2 sm:mt-[50px] sm:grid">
-        <div className="absolute left-[11%] top-[-68%] sm:static xl:ml-[158px] lg:ml-[85px]">
+        <div className="absolute left-[11%] top-[-68%] sm:static xl:ml-[158px] lg:ml-[155px]">
           <Image
             className="h-[271px] w-[302px] rounded-[15px] lg:h-[426px] lg:w-[500px] xl:h-[466px] xl:w-[518px]"
             src={Community4}
@@ -108,12 +113,12 @@ const AboutCommunityHero = () => {
               Join our Klan
             </div>
             <Image
-              className="mr-1 h-[40px] w-[40px] sm:mr-3 lg:h-[55px] lg:w-[55px]"
+              className="mr-1 h-[40px] w-[40px] sm:mr-3 lg:h-[55px] lg:w-[55px] playstore"
               src={playstore}
               alt="play store icon"
             />
             <Image
-              className="h-[40px] w-[40px] lg:h-[55px] lg:w-[55px]"
+              className="h-[40px] w-[40px] lg:h-[55px] lg:w-[55px] appstore"
               src={appstore}
               alt="play store icon"
             />
