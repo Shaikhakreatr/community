@@ -5,7 +5,7 @@ import AboutAppHero from './about-app-hero/AboutAppHero'
 const AboutCommunityMain = () => {
   return (
     <section>
-      <div className="">
+      <div >
         <div>
             <AboutAppHeader />
             <AboutAppHero />

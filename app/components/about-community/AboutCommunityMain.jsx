@@ -5,7 +5,7 @@ import AboutCommunityHero from './about-hero/AboutCommunityHero'
 const AboutCommunityMain = () => {
   return (
     <section>
-      <div className="">
+      <div>
         <div>
             <AboutCommunityHeader />
             <AboutCommunityHero />
