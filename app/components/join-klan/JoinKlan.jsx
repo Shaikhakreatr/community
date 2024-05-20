@@ -91,7 +91,7 @@ const JoinKlan = () => {
         <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] xl:mt-[50px] lg:text-[95px] xl:text-[110px] ">
           BEAUTY of CreatIon
         </h1>
-        <h1 className="page-heading lg:mt-[-12px] mt-[-18px] text-center text-[35px] leading-[28px] sm:leading-[0px] xl:mt-[-58px] lg:text-[55px] xl:text-[64px]">
+        <h1 className="page-heading lg:mt-[-12px] mt-[-18px] text-center text-[35px] leading-[28px] sm:leading-[0px] xl:mt-[-12px] lg:text-[55px] xl:text-[64px]">
           {" "}
           In all Its
           <br className="block sm:hidden" /> wonderful forms
