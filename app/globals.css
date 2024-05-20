@@ -165,9 +165,23 @@ h1{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.box1:hover{
+  background-color: #000000;
+  color: #FF8AF6;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .box2{
   background-color: #A1ADFF;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.box2:hover{
+  background-color: #000000;
+  color: #A1ADFF;
   border: 1px solid black;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -179,6 +193,13 @@ h1{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.box3:hover{
+  background-color: #000000;
+  color: #A4FFA4;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .box4{
   background-color: #FFF985;
@@ -186,9 +207,15 @@ h1{
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-
-
+.box4:hover{
+  background-color: #000000;
+  color: #FFF985;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 } 
+
 .JOK-btn{
   background-color: black;
   color:#FFF985 ;
