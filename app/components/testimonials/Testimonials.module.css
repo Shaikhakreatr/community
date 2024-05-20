@@ -1,0 +1,10 @@
+.mantine-Carousel-slide{
+  width: 12px;
+  height: 4px;
+  transition: width 250ms ease;
+
+  &[data-active] {
+    width: 40px;
+    background-color: red;
+  }
+}

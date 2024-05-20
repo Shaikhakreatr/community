@@ -136,3 +136,38 @@ export const sellers = [
     description: "Collaborate with other sellers on the platform to cross-promote products, participate in joint marketing campaigns, or explore other partnership opportunities.",
   },
 ];
+
+export const testimonials =[
+  {
+    title: "Access to a Larger Audience 1",
+    description: "Gain access to a larger audience of potential customers, increasing your reach and exposure.",
+  },
+  {
+    title: "Increased Sales Opportunities 2",
+    description: "Reach a larger pool of potential customers, improving sales and revenue.",
+  },
+  {
+    title: "Brand Exposure and Credibility 3",
+    description: "Be featured on a reputable platform like ours and enhance your brand exposure and credibility, as customers trust our platform and are more likely to purchase from sellers listed on it.",
+  },
+  {
+    title: "Opportunities for Collaboration 4",
+    description: "Collaborate with other sellers on the platform to cross-promote products, participate in joint marketing campaigns, or explore other partnership opportunities.",
+  },
+  {
+    title: "Access to a Larger Audience 5",
+    description: "Gain access to a larger audience of potential customers, increasing your reach and exposure.",
+  },
+  {
+    title: "Increased Sales Opportunities 6",
+    description: "Reach a larger pool of potential customers, improving sales and revenue.",
+  },
+  {
+    title: "Brand Exposure and Credibility 7",
+    description: "Be featured on a reputable platform like ours and enhance your brand exposure and credibility, as customers trust our platform and are more likely to purchase from sellers listed on it.",
+  },
+  {
+    title: "Opportunities for Collaboration 8",
+    description: "Collaborate with other sellers on the platform to cross-promote products, participate in joint marketing campaigns, or explore other partnership opportunities.",
+  },
+]
