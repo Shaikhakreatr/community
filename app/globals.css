@@ -271,3 +271,52 @@ h1{
     padding-top: 8px;
   }
 }
+
+/* about kreatr */
+
+.kreatr-btn{
+  color: #FFFCEE;
+}
+
+@media only screen and (min-width : 639px){
+  .kreatr-box1{
+    color: white;
+    background-color: #FF8AF6;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  /* .box1:hover{
+    background-color: #000000;
+    color: #FF8AF6;
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  } */
+  .kreatr-box2{
+    background-color: #A1ADFF;
+    color: white;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  /* .box2:hover{
+    background-color: #000000;
+    color: #A1ADFF;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  } */
+}
+
+@media only screen and (max-width: 639px){
+  .kreatr-box1{
+    background-color:#FF8AF6;
+
+  }
+  
+  .kreatr-box2{
+    background-color: #A1ADFF;
+  
+  }
+}
