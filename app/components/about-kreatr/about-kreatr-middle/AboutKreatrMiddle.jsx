@@ -15,11 +15,11 @@ const AboutKreatrMiddle = () => {
           We Are Guided By 3C’s
         </p>
       </div>
-      <div className="mt-[55px] flex items-center justify-center sm:mt-[50px] sm:mb-0 mb-[30px]">
-        <div className="relative flex w-[50%] items-center justify-center sm:h-0 h-[60px]">
-          <Image className="absolute top-[-50%] left-[-15%] xl:left-[-24%] lg:left-[-17%] h-[49px] w-[122px] lg:h-[125px] lg:w-[340px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
-          <Image className="absolute top-[-45%] right-[-25%] xl:top-[10px] xl:right-[8%] lg:top-[10px] lg:right-[12%] h-[42px] w-[145px] lg:h-[110px] lg:w-[400px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
-          <Image className="absolute top-[25%] h-[45px] w-[103px] lg:h-[121px] lg:w-[320px] lg:left-[82%] xl:left-[90%] xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
+      <div className="mt-[55px]  flex items-center justify-center sm:mt-[50px] sm:mb-0 mb-[30px]">
+        <div className="mt-24 elative flex  bg-red-400 items-center justify-center sm:h-0">
+          <Image className="top-[-50%] left-[-15%] xl:left-[-24%] lg:left-[-17%] h-[49px] w-[122px] lg:h-[125px] lg:w-[340px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
+          <Image className="top-[-45%] right-[-25%] xl:top-[10px] xl:right-[8%] lg:top-[10px] lg:right-[12%] h-[42px] w-[145px] lg:h-[110px] lg:w-[400px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
+          <Image className="top-[25%] h-[45px] w-[103px] lg:h-[121px] lg:w-[320px] lg:left-[82%] xl:left-[90%] xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
         </div>
       </div>
       <div className="mt-[30px] flex justify-center sm:mt-[190px]">

@@ -274,6 +274,10 @@ h1{
 
 /* about kreatr */
 
+.dictonary-link{
+  color: #FD03E9;
+  text-decoration:underline;
+}
 .kreatr-btn{
   color: #FFFCEE;
 }
@@ -312,11 +316,9 @@ h1{
 @media only screen and (max-width: 639px){
   .kreatr-box1{
     background-color:#FF8AF6;
-
   }
   
   .kreatr-box2{
     background-color: #A1ADFF;
-  
   }
 }

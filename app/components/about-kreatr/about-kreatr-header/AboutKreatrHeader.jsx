@@ -16,6 +16,7 @@ const AboutKreatrHeader = () => {
           <br className="block sm:hidden" /> creators like you.
         </p>
       </div>
+      <div className="flex justify-center">
       <div className="mx-[20px] mt-[45px] flex items-start justify-center gap-[28px] sm:mx-[60px] sm:mt-[100px] sm:gap-[90px]">
         <div className="items-center sm:flex">
           <h1 className="page-heading mb-[16px] text-[32px] leading-[28px] sm:mb-0 sm:text-[48px] lg:text-[58px] lg:leading-[48px] xl:text-[64px] xl:leading-[52px]">
@@ -28,7 +29,7 @@ const AboutKreatrHeader = () => {
             alt="arrow img"
           />
         </div>
-        <div className="content-neue w-[56%] text-[14px] leading-[18px] sm:w-[60%] lg:text-[26px] lg:leading-[32px] xl:text-[28px]">
+        <div className="content-neue w-[56%] text-[14px] leading-[18px] sm:w-[60%] lg:text-[24px] lg:leading-[32px] xl:text-[28px]">
           <p>
             {`It all started when we, Megha and Abdul—the co-founders of
             Kreatr—sought a creative community that matched our vibe.`}
@@ -49,6 +50,7 @@ const AboutKreatrHeader = () => {
             we've built a digital ecosystem where creatives from all backgrounds
             can learn, collaborate, and inspire each other.`}</p>
         </div>
+      </div>
       </div>
       <div className="ml-[56px] mt-[20px] flex justify-center sm:ml-0 sm:mt-[50px] lg:mr-[130px]">
         <div className="page-subhead kreatr-btn h-[32px] w-[114px] rounded-[40px] bg-black lg:pt-[14px] pt-[7px] text-center text-[12px] lg:h-[58px] lg:w-[251px] lg:text-[18px] xl:text-[24px]">

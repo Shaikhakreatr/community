@@ -137,6 +137,8 @@ export const sellers = [
   },
 ];
 
+// events past main page data
+
 export const testimonials =[
   {
     title: "Access to a Larger Audience 1",
@@ -170,4 +172,48 @@ export const testimonials =[
     title: "Opportunities for Collaboration 8",
     description: "Collaborate with other sellers on the platform to cross-promote products, participate in joint marketing campaigns, or explore other partnership opportunities.",
   },
+]
+
+// about kreatr data
+
+export const peopleAtKreatr =[
+  {
+    imageSrc: 'Abdul-img.svg',
+    alt:'abdul image',
+    name:'Abdul Rahiman',
+    position:'CO-FOUNDER',
+    description:'Conceptualiser | Detail Freak | Leader | Gym Rat'
+  },
+  {
+    imageSrc: 'Megha-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Jevin-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Chanchal-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Abdul-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Megha-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Jevin-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Chanchal-img.svg',
+    alt:'abdul image'
+  },
+  {
+    imageSrc: 'Abdul-img.svg',
+    alt:'abdul image'
+  }
 ]
