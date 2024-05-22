@@ -63,13 +63,13 @@ const AboutKreatrBottom = () => {
       <div className={styles.cardContainer} onClick={handleYouImageFlip}>
         <div className={`${styles.card} ${isYouImageFlipped ? styles.flipped : ""}`}>
           <div className={styles.cardFront}>
-            <Image src={YouImage} width={300} height={300} alt="you img" />
+            <Image src={YouImage} width={300} height={250} alt="you img" />
           </div>
           <div className={styles.cardBack}>
             <div className={styles.cardBackContent}>
               <p className="name-people page-subhead text-[23px]">Insert ‘Role’</p>
               <p className="name-people xl:text-[44px] text-[16px] page-heading lg:text-[38px]">THIS COULD BE YOU</p>
-              <div className={`${styles.btnPeople} page-subhead text-[18px] h-[44px] w-[192px]`} >Join our team</div>
+              <Link href='/careers' ><div className={`${styles.btnPeople} page-subhead text-[18px] h-[44px] w-[192px]`} >Join our team</div></Link>
             </div>
           </div>
         </div>
