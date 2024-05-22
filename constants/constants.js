@@ -171,42 +171,59 @@ export const testimonials =[
 
 export const peopleAtKreatr =[
   {
-    imageSrc: 'Abdul-img.svg',
+    imageSrc: 'abdul-img.svg',
     alt:'abdul image',
-    name:'Abdul Rahiman',
+    name:'Abdul RahIman',
+    position:'CO-FOUNDER',
+    description:'Traveller | Change Visualiser | Astrophile | Free Spirited'
+  },
+  {
+    imageSrc: 'megha-img.svg',
+    alt:'megha image',
+    name:'Megha SatIsh',
     position:'CO-FOUNDER',
     description:'Conceptualiser | Detail Freak | Leader | Gym Rat'
   },
   {
-    imageSrc: 'Megha-img.svg',
-    alt:'abdul image'
+    imageSrc: 'jevin-img.svg',
+    alt:'jevin image',
+    name:'JevIn Mary',
+    position:'PROJECT MANAGER',
+    description:'Colours | Cats | Quills | Cine'
   },
   {
-    imageSrc: 'Jevin-img.svg',
-    alt:'abdul image'
+    imageSrc: 'nilanka-img.svg',
+    alt:'nilanka image',
+    name:'NIlanka Anna ChrIsty',
+    position:'CONTENT EDITOR',
+    description:'Cryptid | Artsy | Nerdy | Chronically Online'
   },
   {
-    imageSrc: 'Chanchal-img.svg',
-    alt:'abdul image'
+    imageSrc: 'chanchal-img.svg',
+    alt:'chanchal image',
+    name:'Chanchal Verma',
+    position:'GRAPHIC DESIGNER',
+    description:'Maximalist | Fashion Enthusiast | Coffee Expert | Sanrio Curator'
   },
   {
-    imageSrc: 'Abdul-img.svg',
-    alt:'abdul image'
+    imageSrc: 'prithvi-img.svg',
+    alt:'prithvi image',
+    name:'PrIthvI Charan R',
+    position:'GRAPHIC DESIGNER',
+    description:'Gym Rat | Sports Junkie | Biophilic | Kind'
   },
   {
-    imageSrc: 'Megha-img.svg',
-    alt:'abdul image'
+    imageSrc: 'aava-img.svg',
+    alt:'aava image',
+    name:'Aava Anna WIlson ',
+    position:'GRAPHIC DESIGNER',
+    description:'Dogs | Books | Cakes | Creative'
   },
   {
-    imageSrc: 'Jevin-img.svg',
-    alt:'abdul image'
+    imageSrc: 'arnav-img.svg',
+    alt:'arnav image',
+    name:'Arnav Kulshrestha',
+    position:'DEVELOPER',
+    description:'Scintillating | Quick-Witted | Coder | Driven'
   },
-  {
-    imageSrc: 'Chanchal-img.svg',
-    alt:'abdul image'
-  },
-  {
-    imageSrc: 'Abdul-img.svg',
-    alt:'abdul image'
-  }
 ]

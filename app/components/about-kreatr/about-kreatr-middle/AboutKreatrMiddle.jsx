@@ -15,14 +15,14 @@ const AboutKreatrMiddle = () => {
           We Are Guided By 3C’s
         </p>
       </div>
-      <div className="mt-[85px] h-[50px]  relative  flex items-center justify-center sm:mt-[15px] sm:mb-0 mb-[50px]">
+      <div className="mt-[85px] h-[50px]  relative  flex items-center justify-center sm:mt-[50px] sm:mb-0 mb-[50px]">
         <div className="sm:mt-24 flex items-center justify-center sm:h-0">
-          <Image className=" absolute bottom-[98%] left-[20%] h-[49px] w-[122px] lg:h-[125px] lg:w-[340px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
-          <Image className=" absolute top-[-82%] right-[12%] xl:mr-[-10px] xl:ml-[-20px] lg:mx-[-45px] h-[42px] w-[145px] lg:h-[110px] lg:w-[400px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
-          <Image className="absolute top-[-5%] h-[45px] w-[103px] lg:h-[121px] lg:w-[320px]  xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
+          <Image className=" absolute bottom-[98%] left-[20%] lg:top-[2%] xl:left-[10%] lg:left-[16%] h-[49px] w-[122px] lg:h-[105px] lg:w-[310px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
+          <Image className=" absolute top-[-82%] right-[12%] lg:left-[35%] lg:top-[10%]  h-[42px] w-[145px] lg:h-[100px] lg:w-[350px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
+          <Image className="absolute top-[-5%] lg:top-[6%] lg:left-[56%] xl:left-[66%] h-[45px] w-[103px] lg:h-[105px] lg:w-[320px]  xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
         </div>
       </div>
-      <div className="mt-[30px] flex justify-center sm:mt-[130px]">
+      <div className="mt-[30px] flex justify-center sm:mt-[150px]">
         <p className="content-neue-medium text-center lg:leading-[30px] xl:leading-[32px] leading-[18px] text-[14px] lg:text-[26px] xl:text-[28px]">
           Our mission is to build a sustainable community of<br className="sm:hidden" /> creatives
           <br className="sm:block hidden" /> who aspire to change the world through<br className="sm:hidden" /> their designs and
