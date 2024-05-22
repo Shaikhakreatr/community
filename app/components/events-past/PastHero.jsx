@@ -29,14 +29,14 @@ const PastHero = () => {
                 src="/assets/images/events_page/events-main-page.jpg"
                 alt="main-img"
               />
-              <div className="content-neue-medium mt-[18px] flex items-center justify-center text-[13px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
-                <div className="mr-3 border-r border-black pr-[40px]">
+              <div className="content-neue-medium sm:mt-[18px] mt-[10px] flex items-center justify-center text-[13px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
+                <div className="sm:mr-3 mr-1 border-r border-black sm:pr-[40px] pr-[10px]">
                   Sat 12 Jan, 2024
                 </div>
                 <div>Slay Coffee, Koramangala</div>
               </div>
             </div>
-            <div className="mx-[166px] mt-[60px]">
+            <div className="sm:mx-[166px] sm:mt-[60px] mt-[30px] mx-[10px]">
               <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
                 About
               </h3>
@@ -69,38 +69,38 @@ const PastHero = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-[50px]">
+            <div className="sm:mt-[50px] mt-[20px]">
               <div className="flex items-center justify-center">
                 <h1 className="page-subhead mr-[20px] text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                   Behold, Snapshots!
                 </h1>
               </div>
-              <div className="mt-[40px] flex items-center justify-center">
+              <div className="sm:mt-[40px] mt-[25px] flex items-center justify-center">
                 <img
-                  className=" mr-3 h-[354px] w-[378px]"
+                  className=" sm:mr-3 mr-1 xl:h-[354px] xl:w-[378px] h-[175px] w-[187px]"
                   src="/assets/images/events_page/events1.jpg"
                   alt="events img"
                 />
-                <div className="mr-3 flex flex-col items-center">
+                <div className="sm:mr-3  flex flex-col items-center">
                   <img
-                    className=" mb-3 h-[170px] w-[269px]"
+                    className=" sm:mb-3 mb-1 xl:h-[170px] xl:w-[269px] h-[84px] w-[133px]"
                     src="/assets/images/events_page/events2.jpg"
                     alt="events img"
                   />
                   <img
-                    className="h-[170px] w-[269px]"
+                    className="xl:h-[170px] xl:w-[269px] h-[84px] w-[133px] "
                     src="/assets/images/events_page/events3.jpg"
                     alt="events img"
                   />
                 </div>
                 <img
-                  className="h-[354px] w-[378px]"
+                  className="h-[354px] w-[378px] sm:block hidden"
                   src="/assets/images/events_page/events3.jpg"
                   alt="events img"
                 />
               </div>
             </div>
-            <div className="w-full my-[40px]">
+            <div className="w-full sm:my-[40px] my-[25px]">
               <h1 className="page-subhead text-center text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 {`Happy Folks' Words!`}
               </h1>
