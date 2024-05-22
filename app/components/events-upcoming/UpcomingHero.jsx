@@ -64,7 +64,7 @@ const UpcomingHero = () => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="lg:mt-[70px] mt-[25px]">
+          <div className="lg:mt-[50px] mt-[25px]">
             <h1 className="page-subhead text-[22px] lg:leading-[55px] leading-[24px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
               Design Thinking Workshop-
               <br /> Extended Version
@@ -103,7 +103,7 @@ const UpcomingHero = () => {
               </div>
             </div>
           </div>
-          <div className="sm:mx-[166px] sm:mt-[60px] mt-[30px] mx-[10px]">
+          <div className="xl:mx-[166px] lg:mx-[126px] sm:mt-[60px] mt-[25px] mx-[20px]">
             <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
@@ -148,17 +148,17 @@ const UpcomingHero = () => {
             </div>
             <div className="sm:mt-[40px] mt-[20px] flex items-center justify-center">
               <img
-                className="sm:mr-4 mr-1 xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
+                className="sm:mr-4 mr-1 xl:h-[354px] xl:w-[354px] lg:h-[310px] lg:w-[310px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events1.jpg"
                 alt="events img"
               />
               <img
-                className="sm:mr-4  mr-1 xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
+                className="sm:mr-4  mr-1 xl:h-[354px] xl:w-[354px] lg:h-[310px] lg:w-[310px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events2.jpg"
                 alt="events img"
               />
               <img
-                className="xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
+                className="xl:h-[354px] xl:w-[354px] lg:h-[310px] lg:w-[310px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events3.jpg"
                 alt="events img"
               />

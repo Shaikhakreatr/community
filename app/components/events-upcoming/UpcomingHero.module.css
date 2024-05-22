@@ -75,6 +75,13 @@
         background-color:#3C9E3C ;
         font-size: 10px;
     }
+    .formButton:hover {
+        height: 26px;
+        width: 118px;
+        color: #FFFDEE;
+        background-color:#3C9E3C ;
+        font-size: 10px;
+    }
     .transparentInput::placeholder{
         color:black;
         opacity: 40%;
@@ -129,9 +136,17 @@
 
     }
     .formButton {
-        height: 40.16px;
-        width: 133.87px;
+        height: 47px;
+        width: 250px;  
         color: #FFFDEE;
+        font-size: 20px;
+        background-color:#3C9E3C ;
+    }
+    .formButton:hover {
+        height: 47px;
+        width: 250px;  
+        color: #FFFDEE;
+        font-size: 20px;
         background-color:#3C9E3C ;
     }
     .sentMessage{
@@ -150,6 +165,13 @@
 
 @media only screen and (min-width: 1440px) {
     .formButton {
+        height: 67px;
+        width: 291px;  
+        color: #FFFDEE;
+        background-color:#3C9E3C ;
+        font-size: 24px;
+    }
+    .formButton:hover {
         height: 67px;
         width: 291px;  
         color: #FFFDEE;

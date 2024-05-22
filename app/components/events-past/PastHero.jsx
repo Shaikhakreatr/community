@@ -8,7 +8,7 @@ const PastHero = () => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="lg:mt-[70px] mt-[25px]">
+            <div className="lg:mt-[50px] mt-[25px]">
               <h1 className="page-subhead text-[22px] leading-[24px] lg:leading-[55px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
                 Design Thinking Workshop-
                 <br /> Extended Version
@@ -36,7 +36,7 @@ const PastHero = () => {
                 <div>Slay Coffee, Koramangala</div>
               </div>
             </div>
-            <div className="sm:mx-[166px] sm:mt-[60px] mt-[30px] mx-[10px]">
+            <div className="xl:mx-[166px] lg:mx-[126px] sm:mt-[60px] mt-[25px] mx-[20px]">
               <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
                 About
               </h3>
@@ -77,24 +77,24 @@ const PastHero = () => {
               </div>
               <div className="sm:mt-[40px] mt-[25px] flex items-center justify-center">
                 <img
-                  className=" sm:mr-3 mr-1 xl:h-[354px] xl:w-[378px] h-[175px] w-[187px]"
+                  className=" sm:mr-3 mr-1 xl:h-[354px] xl:w-[378px] lg:h-[310px] lg:w-[338px] h-[175px] w-[187px]"
                   src="/assets/images/events_page/events1.jpg"
                   alt="events img"
                 />
                 <div className="sm:mr-3  flex flex-col items-center">
                   <img
-                    className=" sm:mb-3 mb-1 xl:h-[170px] xl:w-[269px] h-[84px] w-[133px]"
+                    className=" sm:mb-3 mb-1 xl:h-[170px] xl:w-[269px] lg:h-[150px] lg:w-[249px] h-[84px] w-[133px]"
                     src="/assets/images/events_page/events2.jpg"
                     alt="events img"
                   />
                   <img
-                    className="xl:h-[170px] xl:w-[269px] h-[84px] w-[133px] "
+                    className="xl:h-[170px] xl:w-[269px] lg:h-[150px] lg:w-[249px] h-[84px] w-[133px] "
                     src="/assets/images/events_page/events3.jpg"
                     alt="events img"
                   />
                 </div>
                 <img
-                  className="h-[354px] w-[378px] sm:block hidden"
+                  className="xl:h-[354px] xl:w-[378px] lg:h-[310px] lg:w-[338px] sm:block hidden"
                   src="/assets/images/events_page/events3.jpg"
                   alt="events img"
                 />
