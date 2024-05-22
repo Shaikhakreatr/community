@@ -9,20 +9,20 @@ import Commas from "../../../../public/assets/images/about-kreatr/inverted-comma
 
 const AboutKreatrMiddle = () => {
   return (
-    <div className="relative">
+    <div className="">
       <div>
         <p className="page-subhead mt-[30px] text-center text-[16px] sm:mt-[50px] lg:text-[28px] xl:text-[35px]">
           We Are Guided By 3C’s
         </p>
       </div>
-      <div className="mt-[55px]  flex items-center justify-center sm:mt-[50px] sm:mb-0 mb-[30px]">
-        <div className="mt-24 elative flex  bg-red-400 items-center justify-center sm:h-0">
-          <Image className="top-[-50%] left-[-15%] xl:left-[-24%] lg:left-[-17%] h-[49px] w-[122px] lg:h-[125px] lg:w-[340px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
-          <Image className="top-[-45%] right-[-25%] xl:top-[10px] xl:right-[8%] lg:top-[10px] lg:right-[12%] h-[42px] w-[145px] lg:h-[110px] lg:w-[400px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
-          <Image className="top-[25%] h-[45px] w-[103px] lg:h-[121px] lg:w-[320px] lg:left-[82%] xl:left-[90%] xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
+      <div className="mt-[85px] h-[50px]  relative  flex items-center justify-center sm:mt-[15px] sm:mb-0 mb-[50px]">
+        <div className="sm:mt-24 flex items-center justify-center sm:h-0">
+          <Image className=" absolute bottom-[98%] left-[20%] h-[49px] w-[122px] lg:h-[125px] lg:w-[340px] xl:h-[155px] xl:w-[389px] rotate-[-2deg]" src={Connect} alt="connect image" />
+          <Image className=" absolute top-[-82%] right-[12%] xl:mr-[-10px] xl:ml-[-20px] lg:mx-[-45px] h-[42px] w-[145px] lg:h-[110px] lg:w-[400px] xl:h-[135px] xl:w-[461px] rotate-[2deg]" src={Collaborate} alt="collaborate image" />
+          <Image className="absolute top-[-5%] h-[45px] w-[103px] lg:h-[121px] lg:w-[320px]  xl:h-[145px] xl:w-[328px] rotate-[-2deg]" src={Create} alt="create image" />
         </div>
       </div>
-      <div className="mt-[30px] flex justify-center sm:mt-[190px]">
+      <div className="mt-[30px] flex justify-center sm:mt-[130px]">
         <p className="content-neue-medium text-center lg:leading-[30px] xl:leading-[32px] leading-[18px] text-[14px] lg:text-[26px] xl:text-[28px]">
           Our mission is to build a sustainable community of<br className="sm:hidden" /> creatives
           <br className="sm:block hidden" /> who aspire to change the world through<br className="sm:hidden" /> their designs and
@@ -32,7 +32,7 @@ const AboutKreatrMiddle = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center">
           <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:grid sm:gap-[240px] lg:gap-[90px] xl:gap-[0px]">
-            <div className="kreatr-box1 h-[323px] w-[392px] pt-[150px] px-[52px]  sm:p-[85px] lg:h-[340px] lg:w-[650px] lg:p-[78px] xl:h-[364px] xl:w-[669px]">
+            <div className="kreatr-box1 h-[323px] w-[390px] pt-[150px] px-[52px]  sm:p-[85px] lg:h-[340px] lg:w-[650px] lg:p-[78px] xl:h-[364px] xl:w-[669px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DIRECTION
               </h1>
@@ -42,7 +42,7 @@ const AboutKreatrMiddle = () => {
                 establish a global standard for creativity.
               </p>
             </div>
-            <div className="absolute left-[11%] top-[-46%] sm:static">
+            <div className="absolute left-[9%] top-[-46%] sm:static">
               <Image
                 className="h-[271px] w-[320px] rounded-[15px] lg:h-[340px] lg:w-[550px] xl:h-[364px] xl:w-[650px]"
                 src={AboutKreatrImg1}
@@ -51,14 +51,14 @@ const AboutKreatrMiddle = () => {
             </div>
           </div>
           <div className="relative mt-[195px] justify-end sm:mt-[50px] sm:flex xl:gap-[50px] lg:gap-[50px]">
-            <div className="absolute left-[11%] top-[-46%] sm:static">
+            <div className="absolute left-[9%] top-[-46%] sm:static">
               <Image
                 className="h-[271px] w-[320px] rounded-[15px] lg:h-[340px] lg:w-[650px] xl:h-[364px] xl:w-[727px]"
                 src={AboutKreatrImg2}
                 alt="Kreatr image"
               />
             </div>
-            <div className="kreatr-box2 h-[323px] w-[392px] px-[52px] pt-[150px] sm:p-[96px] lg:h-[340px] lg:w-[520px] lg:p-[72px] xl:h-[364px] xl:w-[690px]">
+            <div className="kreatr-box2 h-[323px] w-[390px] px-[52px] pt-[150px] sm:p-[96px] lg:h-[340px] lg:w-[520px] lg:p-[72px] xl:h-[364px] xl:w-[690px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DESTINY
               </h1>

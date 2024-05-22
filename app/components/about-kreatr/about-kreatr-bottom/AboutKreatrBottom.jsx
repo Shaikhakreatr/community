@@ -17,7 +17,7 @@ const AboutKreatrBottom = () => {
   };
 
   return (
-    <div className="mb-[40px]">
+    <div className="mb-[40px] mt-[40px]">
       <div>
         <h1 className="page-heading text-center text-[40px] lg:text-[86px] xl:text-[96px]">
           Meet the Humans of
@@ -31,17 +31,17 @@ const AboutKreatrBottom = () => {
         </div>
       </div>
       <div className="flex sm:mt-[40px] flex-col justify-center items-center content-neue xl:leading-[36px] lg:leading-[32px] leading-[18px] xl:text-[30px] lg:text-[26px] text-[14px]">
-        <p>
-          {`PS: Can't figure out what their descriptions mean?`} {`Here's a link to
+        <p className="text-center">
+          {`PS: Can't figure out what their descriptions mean?`}<br /> {`Here's a link to
           the`} <Link className="dictonary-link" href="https://www.dictionary.com/">dictionary!</Link>
         </p>
       </div>
-      <div className="flex flex-wrap items-center justify-center">
+      <div className="flex ml-[35px] sm:ml-0 flex-wrap items-center justify-center">
         {peopleAtKreatr.map((item, index) => (
           <div key={index} className={styles.cardContainer} onClick={() => handleFlip(index)}>
             <div className={`${styles.card} ${flippedIndices[index] ? styles.flipped : ""}`}>
               <div className={styles.cardFront}>
-                <Image width={321} height={385} src={`/assets/images/about-kreatr/${item.imageSrc}`} alt={item.alt} />
+                <Image width={300} height={300} src={`/assets/images/about-kreatr/${item.imageSrc}`} alt={item.alt} />
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
