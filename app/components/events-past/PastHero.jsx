@@ -1,7 +1,6 @@
-// "use client";
+
 import React from "react";
-// import styles from "./UpcomingHero.module.css";
-import Testimonials from "../testimonials/Testimonials";
+// import Testimonials from "../testimonials/Testimonials";
 
 const PastHero = () => {
   return (
@@ -9,19 +8,19 @@ const PastHero = () => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="mt-[70px]">
-              <h1 className="page-subhead text-[22px] leading-[55px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
+            <div className="lg:mt-[70px] mt-[25px]">
+              <h1 className="page-subhead text-[22px] leading-[24px] lg:leading-[55px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
                 Design Thinking Workshop-
                 <br /> Extended Version
               </h1>
-              <div className="mb-[20px] mt-[20px] flex">
-                <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
+              <div className="sm:mb-[20px] sm:mt-[20px] my-[10px] flex">
+                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[46px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
                   Design
                 </div>
-                <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
+                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[36px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
                   3 hrs
                 </div>
-                <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[110px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                   Speaker: Megha Satish
                 </div>
               </div>
@@ -101,11 +100,11 @@ const PastHero = () => {
                 />
               </div>
             </div>
-            <div className="w-full">
-              <h1 className="page-subhead text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
+            <div className="w-full my-[40px]">
+              <h1 className="page-subhead text-center text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 {`Happy Folks' Words!`}
               </h1>
-              <Testimonials />
+              {/* <Testimonials /> */}
             </div>
           </div>
         </div>

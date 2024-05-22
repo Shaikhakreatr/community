@@ -58,17 +58,27 @@
 
 
 @media only screen and (max-width: 639px) {
+    .formWrap{
+        font-family: "Neue Montreal";
+        font-weight: 500;
+        width: 300px;
+    }
+    .transparentInput{
+        background-color: transparent;
+        border-color: black;
+
+    }    
     .formButton {
-        height: 40px;
-        width: 260px;
+        height: 26px;
+        width: 118px;
         color: #FFFDEE;
         background-color:#3C9E3C ;
-        letter-spacing: 2px;
+        font-size: 10px;
     }
     .transparentInput::placeholder{
         color:black;
         opacity: 40%;
-        font-size: 12px;
+        font-size: 9px;
         margin-left: 40px;
         font-family: "Neue Montreal";
         
@@ -76,14 +86,14 @@
     .transparentInputArea::placeholder{
         color:black;
         opacity: 40%;
-        font-size: 12px;
+        font-size: 9px;
         margin-left: 40px;
         font-family: "Neue Montreal";
         
     }
     .inputLabel{
         color: black;
-        font-size: 1rem;
+        font-size: 10px;
     }
     .sentMessage{
         font-family: "Neue Montreal";
@@ -96,6 +106,8 @@
     .transparentInputArea{
         background-color: transparent;
         padding-top: 10px;
+        height: 19px;
+        width: 323px;
     }
 }
 

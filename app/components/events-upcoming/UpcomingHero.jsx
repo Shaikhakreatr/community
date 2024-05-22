@@ -64,19 +64,19 @@ const UpcomingHero = () => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-[70px]">
-            <h1 className="page-subhead text-[22px] leading-[55px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
+          <div className="lg:mt-[70px] mt-[25px]">
+            <h1 className="page-subhead text-[22px] lg:leading-[55px] leading-[24px] sm:text-[44px] lg:text-[54px] xl:text-[64px]">
               Design Thinking Workshop-
               <br /> Extended Version
             </h1>
-            <div className="mb-[20px] mt-[20px] flex">
-              <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
+            <div className="sm:mb-[20px] sm:mt-[20px] my-[10px] flex">
+              <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[46px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
                 Design
               </div>
-              <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
+              <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[36px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
                 3 hrs
               </div>
-              <div className="content-neue mr-3 rounded-[24px] border border-black text-center lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[110px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: Megha Satish
               </div>
             </div>
@@ -85,20 +85,25 @@ const UpcomingHero = () => {
               src="/assets/images/events_page/events-main-page.jpg"
               alt="main-img"
             />
-            <div className="content-neue-medium mt-[18px] flex items-center justify-between text-[13px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
-              <div className="border-r border-black pr-[40px]">
+            <div className="content-neue-medium mt-[10px] sm:mt-[18px] flex items-center justify-between text-[13px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
+              <div className="border-r border-black pr-[10px] sm:pr-[40px]">
                 Sat 12 Jan, 2024
               </div>
-              <div className="border-r border-black pr-[40px]">
+              <div className="border-r border-black pr-[10px] sm:pr-[40px]">
                 Slay Coffee, Koramangala
               </div>
-              <div className="border-r border-black pr-[40px]">₹1499</div>
-              <div className="upcoming-btn h-[24.52px] w-[128.12px] rounded-[40px] pt-[5px] text-center text-[13px] sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
+              <div className="sm:border-r border-black pr-[10px] sm:pr-[40px]">₹1499</div>
+              <div className="sm:block hidden upcoming-btn h-[24.52px] w-[128.12px] rounded-[40px] pt-[5px] text-center text-[13px] sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
+                Book Now
+              </div>
+            </div>
+            <div className="flex justify-center items-center"> 
+            <div className="sm:hidden mt-[20px] flex items-center justify-center pb-[6px] upcoming-btn h-[24.52px] w-[128.12px] rounded-[40px] pt-[5px] text-center text-[13px] sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
                 Book Now
               </div>
             </div>
           </div>
-          <div className="mx-[166px] mt-[60px]">
+          <div className="sm:mx-[166px] sm:mt-[60px] mt-[30px] mx-[10px]">
             <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
@@ -130,7 +135,7 @@ const UpcomingHero = () => {
               </p>
             </div>
           </div>
-          <div className="mt-[50px]">
+          <div className="sm:mt-[50px] mt-[30px]">
             <div className="flex items-center justify-center">
               <h1 className="content-neue-medium mr-[20px] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore our past events
@@ -141,38 +146,38 @@ const UpcomingHero = () => {
                 alt="arrow img"
               />
             </div>
-            <div className="mt-[40px] flex items-center justify-center">
+            <div className="sm:mt-[40px] mt-[20px] flex items-center justify-center">
               <img
-                className="mr-4 h-[354px] w-[354px]"
+                className="sm:mr-4 mr-1 xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events1.jpg"
                 alt="events img"
               />
               <img
-                className="mr-4 h-[354px] w-[354px]"
+                className="sm:mr-4  mr-1 xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events2.jpg"
                 alt="events img"
               />
               <img
-                className="h-[354px] w-[354px]"
+                className="xl:h-[354px] xl:w-[354px] lg:h-[290px] lg:w-[290px] h-[106px] w-[106px]"
                 src="/assets/images/events_page/events3.jpg"
                 alt="events img"
               />
             </div>
           </div>
-          <div className="mt-[50px]">
-            <h1 className="page-subhead text-center text-[13px] sm:text-[22px] lg:text-[26px] xl:text-[34px]">
+          <div className="sm:mt-[50px] mt-[30px]">
+            <h1 className="page-subhead text-center text-[16px] sm:text-[22px] lg:text-[26px] xl:text-[34px]">
               Fill in the details
             </h1>
-            <div className="mt-[20px]">
+            <div className="sm:mt-[20px] mt-[10px]">
               {forms.map((form, index) => (
                 <div key={index}>
-                  <p className="page-subhead mt-[50px] text-[24px]">
+                  <p className="page-subhead sm:mt-[50px] mt-[30px] xl:text-[24px] lg:text-[20px] sm:text-[16px] text-[10px]">
                     Person {index + 1}
                   </p>
                   <form className={`${styles.formWrap} w-full`}>
                     <TextInput
                       label="Name"
-                      mt={15}
+                      mt={10}
                       radius={50}
                       placeholder="Your name here"
                       classNames={{
@@ -190,10 +195,10 @@ const UpcomingHero = () => {
                         )
                       }
                     />
-                    <br />
+                    <br className='sm:block hidden' />
                     <TextInput
                       label="Phone Number"
-                      mt={15}
+                      mt={10}
                       radius={50}
                       placeholder="Your phone number here"
                       classNames={{
@@ -212,10 +217,10 @@ const UpcomingHero = () => {
                       }
                       inputMode="numeric"
                     />
-                    <br />
+                    <br className='sm:block hidden' />
                     <TextInput
                       label="Email"
-                      mt={15}
+                      mt={10}
                       radius={50}
                       placeholder="Your email here"
                       classNames={{
@@ -236,26 +241,26 @@ const UpcomingHero = () => {
                   </form>
                 </div>
               ))}
-              <div className="mt-[20px] flex items-center justify-center">
+              <div className="mt-[20px]  flex items-center justify-center">
                 <button
-                  className="h-[32px] w-[32px] rounded-full border border-black pt-[2px] text-center"
+                  className="xl:h-[32px] pb-[4px] sm:pb-0 flex items-center justify-center xl:w-[32px] lg:h-[28px] lg:w-[28px] h-[16px] w-[16px] rounded-full border border-black sm:pt-[2px] text-center"
                   onClick={removeForm}
                 >
                   -
                 </button>
-                <h1 className="mx-[10px] text-[28px]">{forms.length}</h1>
+                <h1 className="mx-[10px] content-neue-medium xl:text-[28px] lg:text-[24px] text-[12px]">{forms.length}</h1>
                 <button
-                  className="h-[32px] w-[32px] rounded-full border border-black pt-[2px] text-center"
+                  className="xl:h-[32px] pb-[4px] sm:pb-0 flex items-center justify-center xl:w-[32px] lg:h-[28px] lg:w-[28px] h-[16px] w-[16px] rounded-full border border-black sm:pt-[2px] text-center"
                   onClick={addForm}
                 >
                   +
                 </button>
               </div>
-              <div className="mx-[150px] mt-[40px] ">
+              <div className="sm:mx-[150px]  sm:mt-[40px] mt-[10px] ">
                 <div>
                   <p className="content-neue-medium text-center text-[8px] sm:text-[12px] lg:text-[18px] xl:text-[20px]">
                     By clicking on proceed, I agree that I have read and
-                    <br />
+                    <br  />
                     understood the{" "}
                     <a href="#" className=" text-blue-700">
                       TnC
@@ -267,15 +272,15 @@ const UpcomingHero = () => {
                   </p>
                 </div>
               </div>
-              <div className="mt-[30px]">
-                <h1 className="content-neue-medium text-center text-[34px]">
+              <div className="sm:mt-[30px] mt-[10px]">
+                <h1 className="content-neue-medium text-center xl:text-[34px] lg:text-[30px] text-[14px] sm:text-[26px]">
                   Total Amount :{" "}
-                  <span className="page-subhead text-[34px]">
+                  <span className="page-subhead xl:text-[34px] lg:text-[30px] text-[14px] sm:text-[26px]">
                     INR {forms.length * 1499}.00
                   </span>
                 </h1>
               </div>
-              <div className="mb-[65px] mt-[10px] items-center justify-center text-center  sm:flex lg:gap-3  xl:gap-5">
+              <div className="sm:mb-[65px] sm:mt-[10px] mb-[30px] items-center justify-center text-center  sm:flex lg:gap-3  xl:gap-5">
                 <Button
                   className={styles.formButton}
                   radius={50}
