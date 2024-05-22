@@ -27,14 +27,14 @@ const Testimonials = () => {
   return (
     <div className={styles.carouselContainer}>
       <Carousel
-        withIndicators
         loop
         slideSize={{ base: "33%", sm: "33%" }}
-        slideGap={{ base: rem(2), sm: "xl" }}
+        slideGap={{ base: rem(2), sm: "xs" }}
         align="center"
         slidesToScroll={mobile ? 1 : 1}
         onSlideChange={handleSlideChange}
-        classNames={styles}
+        classNames={{ ...styles, root:styles.sliderContainer }}
+      
       >
         {slides}
       </Carousel>

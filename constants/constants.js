@@ -141,27 +141,27 @@ export const sellers = [
 
 export const testimonials =[
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“1It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   },
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“2It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   },
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“3It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   },
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“4It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   },
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“5It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   },
   {
-    description: "“It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
+    description: "“6It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
     peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
   }
   
@@ -227,3 +227,54 @@ export const peopleAtKreatr =[
     description:'Scintillating | Quick-Witted | Coder | Driven'
   },
 ]
+
+
+
+
+
+  // const [flippedIndices, setFlippedIndices] = useState({});
+  // const [isYouImageFlipped, setIsYouImageFlipped] = useState(false);
+
+  // const handleFlip = (index) => {
+  //   setFlippedIndices((prev) => ({
+  //     ...prev,
+  //     [index]: !prev[index],
+  //   }));
+  // };
+
+  // const handleYouImageFlip = () => {
+  //   setIsYouImageFlipped((prev) => !prev);
+  // };
+
+      {/* <div className="flex ml-[35px] sm:ml-0 flex-wrap items-center justify-center">
+        {peopleAtKreatr.map((item, index) => (
+          <div key={index} className={styles.cardContainer} onClick={() => handleFlip(index)}>
+            <div className={`${styles.card} ${flippedIndices[index] ? styles.flipped : ""}`}>
+              <div className={styles.cardFront}>
+                <Image width={300} height={250} src={`/assets/images/about-kreatr/${item.imageSrc}`} alt={item.alt} />
+              </div>
+              <div className={styles.cardBack}>
+                <div className={styles.cardBackContent}>
+                  <p className="name-people xl:text-[44px] text-[16px] page-heading leading-[30px] lg:text-[38px]">{item.name}</p>
+                  <p className="position-people mt-[10px] page-subhead xl:text-[23px] lg:text-[21px]">{item.position}</p>
+                  <p className="description-people content-neue xl:text-[22px] lg:text-[20px] leading-[24px]">{item.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div> */}
+      {/* <div className={styles.cardContainer} onClick={handleYouImageFlip}>
+        <div className={`${styles.card} ${isYouImageFlipped ? styles.flipped : ""}`}>
+          <div className={styles.cardFront}>
+            <Image src={YouImage} width={300} height={250} alt="you img" />
+          </div>
+          <div className={styles.cardBack}>
+            <div className={styles.cardBackContent}>
+              <p className="name-people page-subhead text-[23px]">Insert ‘Role’</p>
+              <p className="name-people xl:text-[44px] text-[16px] page-heading lg:text-[38px]">THIS COULD BE YOU</p>
+              <Link href='/careers' ><div className={`${styles.btnPeople} page-subhead text-[18px] h-[44px] w-[192px]`} >Join our team</div></Link>
+            </div>
+          </div>
+        </div>
+      </div> */}

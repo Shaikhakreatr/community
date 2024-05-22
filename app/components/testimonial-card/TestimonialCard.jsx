@@ -9,7 +9,7 @@ const TestimonialCard = ({ peoples, description, isActive }) => {
   return (
     <div
     className={`${
-      isActive ? `${styles.card} ${styles.cardRed}` : styles.card
+      isActive ? `${styles.card} ${styles.cardCenter}` : styles.card
     } shadow-md pt-12 rounded-md bg-white`}
     >
       <Image src={Star} alt="star image" />
