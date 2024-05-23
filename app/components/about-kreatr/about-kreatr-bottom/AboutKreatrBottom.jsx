@@ -27,7 +27,7 @@ const AboutKreatrBottom = () => {
         ...prev,
         [index]: false,
       }));
-    }, 3000);
+    }, 2000);
   };
 
   return (
