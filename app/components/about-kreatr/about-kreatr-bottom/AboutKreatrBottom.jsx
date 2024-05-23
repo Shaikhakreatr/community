@@ -445,7 +445,7 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront2}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[136px] w-[112px] "
-                  src={Prithvi}
+                  src={Chanchal}
                   alt="prithvi image"
                 />
               </div>
