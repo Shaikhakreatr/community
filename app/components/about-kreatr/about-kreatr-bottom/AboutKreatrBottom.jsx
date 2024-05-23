@@ -9,7 +9,7 @@ import Megha from "../../../../public/assets/images/about-kreatr/Megha.png";
 import Jevin from "../../../../public/assets/images/about-kreatr/Jevin.png";
 import Nilanka from "../../../../public/assets/images/about-kreatr/Nilanka.png";
 import Chanchal from "../../../../public/assets/images/about-kreatr/Chanchal.png";
-import Prithvi from "../../../../public/assets/images/about-kreatr/Prithvi.png"
+import Prithvi from "../../../../public/assets/images/about-kreatr/Prithvi.png";
 import Aava from "../../../../public/assets/images/about-kreatr/Aava.svg";
 import Arnav from "../../../../public/assets/images/about-kreatr/Arnav.png";
 import styles from "./AboutKreatrBottom.module.css";
