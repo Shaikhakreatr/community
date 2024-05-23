@@ -2,7 +2,7 @@ import React from 'react'
 import AboutAppHeader from './about-app-header/AboutAppHeader'
 import AboutAppHero from './about-app-hero/AboutAppHero'
 
-const AboutCommunityMain = () => {
+const AboutAppMain = () => {
   return (
     <section>
       <div >
@@ -15,4 +15,4 @@ const AboutCommunityMain = () => {
   )
 }
 
-export default AboutCommunityMain
+export default AboutAppMain;
