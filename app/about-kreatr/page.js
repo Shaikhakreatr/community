@@ -3,7 +3,7 @@ import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import AboutKreatrMain from '../components/about-kreatr/AboutKreatrMain'
 
-const page = () => {
+const AboutKreatr = () => {
   return (
     <main className='bg-img'>
       <Header />
@@ -14,4 +14,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AboutKreatr;
