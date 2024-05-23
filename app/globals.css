@@ -323,7 +323,8 @@ h1{
   }
 }
 
-.name-people{
+.join-team-btn{
+  background-color: #DA2465;
   color: #D9D9D9;
 }
 
@@ -331,6 +332,3 @@ h1{
   color: #FE3131;
 }
 
-.description-people{
-  color: #D9D9D9;
-}
