@@ -361,3 +361,16 @@ h1{
   gap: 20px;
 }
 
+/* legal page css */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.legal_page_h{
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+
+
