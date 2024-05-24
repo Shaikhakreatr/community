@@ -90,7 +90,7 @@ const LeftSection = () => {
         </p>
         {soundActive ? (
           <Image
-            src="/assets/images/home_page/filled-speaker.svg" // Update this with your filled speaker image path
+            src="/assets/images/home_page/filled-speaker.svg" 
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Active speaker"
             height={30}
@@ -99,7 +99,7 @@ const LeftSection = () => {
           />
         ) : (
           <Image
-            src="/assets/images/home_page/outlined-speaker.svg" // Update this with your outlined speaker image path
+            src="/assets/images/home_page/outlined-speaker.svg" 
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Default speaker"
             height={30}
