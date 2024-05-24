@@ -65,7 +65,7 @@ const Footer = () => {
             <div>
               <div className="flex flex-col items-center justify-around pb-[14px] pt-7 sm:flex-row sm:border-none sm:pt-0 ">
                 <ul className="footer-ul flex flex-row sm:flex-col ">
-                  <Link href="#">
+                  <Link href="/blogs">
                     <li className="footer-section footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Blogs
                     </li>
