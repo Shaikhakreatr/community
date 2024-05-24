@@ -15,6 +15,7 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Transition } from "@mantine/core";
 
+
 const LeftSection = () => {
   const [happyActive, setHappyActive] = useState(true);
   const [sadActive, setSadActive] = useState(false);
