@@ -1,8 +1,7 @@
-import { useState } from "react";
+"use client";
+import { useState, useEffect , useRef} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import FilledSpeaker from "@/public/assets/images/home_page/filled-speaker.svg";
-import OutlinedSpeaker from "@/public/assets/images/home_page/outlined-speaker.svg";
 import HappyOutline from "@/public/assets/images/home_page/Outlined-happy-emoji.svg";
 import HappyFilled from "@/public/assets/images/home_page/Filled-happy-emoji.svg";
 import SadOutline from "@/public/assets/images/home_page/Outlined-sad-emoji.svg";
@@ -24,6 +23,32 @@ const LeftSection = () => {
   const [logoAppActive, setLogoAppActive] = useState(false);
   const autoplay = Autoplay({ delay: 4000 });
 
+  const audioRef = useRef(new Audio("/assets/audio/kreatr-audio.mpeg"));
+
+  const handleSoundClick = () => {
+    if (soundActive) {
+      audioRef.current.pause();
+      audioRef.current.currentTime=0;
+      setSoundActive(false);
+    } else {
+      audioRef.current.play();
+      setSoundActive(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleAudioEnd = () => {
+      setSoundActive(false);
+    };
+    
+    const audio = audioRef.current;
+    audio.addEventListener("ended", handleAudioEnd);
+
+    return () => {
+      audio.removeEventListener("ended", handleAudioEnd);
+    };
+  },[]);
+
   const toggleHappy = () => {
     if (!happyActive) {
       setHappyActive(true);
@@ -36,10 +61,6 @@ const LeftSection = () => {
       setSadActive(true);
       setHappyActive(false);
     }
-  };
-
-  const handleSoundClick = () => {
-    setSoundActive(!soundActive);
   };
 
   const handlePlayStoreEnter = () => {
@@ -69,16 +90,20 @@ const LeftSection = () => {
         </p>
         {soundActive ? (
           <Image
-            src={FilledSpeaker}
+            src="/assets/images/home_page/filled-speaker.svg" // Update this with your filled speaker image path
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Active speaker"
+            height={30}
+            width={30}
             onClick={handleSoundClick}
           />
         ) : (
           <Image
-            src={OutlinedSpeaker}
+            src="/assets/images/home_page/outlined-speaker.svg" // Update this with your outlined speaker image path
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Default speaker"
+            height={30}
+            width={30}
             onClick={handleSoundClick}
           />
         )}

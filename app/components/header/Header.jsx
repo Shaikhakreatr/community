@@ -87,6 +87,7 @@ const Header = () => {
                 />
               </div>
               <div className="absolute left-[12%] top-[53%] lg:left-[18%] lg:top-[50%] xl:left-[19%] xl:top-[56%]">
+                <Link href="/about-kreatr">
                 <Image
                   className="h-[134px] w-[134px] lg:h-[141px] lg:w-[141px]  xl:h-[181px] xl:w-[181px]"
                   src={"/assets/images/home_page/menu_stickers/about-layerblur.svg"}
@@ -94,8 +95,10 @@ const Header = () => {
                   height={141}
                   width={141}
                 />
+                </Link>
               </div>
               <div className="absolute left-[41%] top-[53%] lg:left-[42%] lg:top-[54%] xl:left-[50%] xl:top-[60%]">
+                <Link href="/about-app">
                 <Image
                   className="h-[92px] w-[152px] lg:h-[90px] lg:w-[160px] xl:h-[110px] xl:w-[185px]"
                   src={"/assets/images/home_page/menu_stickers/app-withshadow.svg"}
@@ -103,8 +106,10 @@ const Header = () => {
                   height={90}
                   width={160}
                 />
+                </Link>
               </div>
               <div className="absolute left-[12%] top-[73%] lg:left-[15%] lg:top-[78%] xl:left-[20%] xl:top-[80%]">
+                <Link href="/events">
                 <Image
                   className="h-[48px] w-[172px]  lg:h-[54px] lg:w-[200px] xl:h-[85px] xl:w-[236px]"
                   src={"/assets/images/home_page/menu_stickers/events-withshadow.svg"}
@@ -112,8 +117,10 @@ const Header = () => {
                   height={54}
                   width={200}
                 />
+                </Link>
               </div>
               <div className="absolute left-[39%] top-[67%] lg:left-[32%] lg:top-[68%] xl:left-[37%] xl:top-[70%]">
+                <Link href="/about-community">
                 <Image
                   className="h-[50px] w-[118px] lg:h-[65px] lg:w-[170px] xl:h-[100px] xl:w-[190px]"
                   src={"/assets/images/home_page/menu_stickers/community-withshadow.svg"}
@@ -121,8 +128,10 @@ const Header = () => {
                   height={65}
                   width={170}
                 />
+                </Link>
               </div>
               <div className="absolute left-[68%] top-[63%] lg:left-[63%] lg:top-[65%] xl:left-[64%] xl:top-[70%]">
+                <Link href="/contact">
                 <Image
                   className="h-[102px] w-[79px] lg:h-[124px] lg:w-[95px] xl:h-[154px] xl:w-[120px]"
                   src={"/assets/images/home_page/menu_stickers/contact-withshadow.svg"}
@@ -130,6 +139,7 @@ const Header = () => {
                   height={124}
                   width={95}
                 />
+                </Link>
               </div>
               <Image
                 className="relative mt-[15px] h-[450px] w-[352px] rotate-[-3deg] lg:h-[430px] lg:w-[340px] xl:h-[676px] xl:w-[466px]"
