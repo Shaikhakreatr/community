@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Tabs } from "@mantine/core";
+import Link from "next/link";
 
 const EventsHero = () => {
   const upcomingEvents = [
@@ -76,7 +77,8 @@ const EventsHero = () => {
         <Tabs.Panel value="upcoming">
           <div className=" sm:my-[50px] sm:ml-0  flex sm:flex-row flex-col flex-wrap justify-center items-center">
             {upcomingEvents.map((events) => (
-              <div
+              <Link href="/events-upcoming" key={events.id}>
+                  <div
                 key={events.id}
                 className="
                 upcoming-box sm:mr-[45px] sm:mb-0 mb-[30px] xl:h-[521px] xl:w-[381px] lg:h-[400px] lg:w-[321px] h-[357px] w-[290px] rounded-[15px] border border-black lg:p-[18px] xl:p-5 p-[18px]"
@@ -96,12 +98,11 @@ const EventsHero = () => {
                     alt=""
                   />
                 </div>
-                <a>
                   <div className="upcoming-sub my-[14px] sm:my-0 lg:my-[16px] lg:mt-[-8px] content-neue-medium xl:h-[40.16px] xl:w-[133.87px] lg:h-[38.16px] lg:w-[123.87px] h-[28.34px] w-[92.54px] rounded-[30px] border border-black sm:pt-[7px] pt-[5px] text-center xl:text-[16px] lg:text-[15px] sm:text-[13px] text-[12px]">
                     Register now
                   </div>
-                </a>
               </div>
+              </Link>
             ))}
           </div>
         </Tabs.Panel>
@@ -110,7 +111,8 @@ const EventsHero = () => {
         <Tabs.Panel value="past">
           <div className=" mt-[35px] mb-[50px] sm:ml-0 flex sm:flex-row flex-col flex-wrap justify-center items-center">
             {pastEvents.map((events) => (
-              <div
+              <Link href="/events-past" key={events.id}>
+                  <div
                 key={events.id}
                 className="past-box sm:mr-[45px] sm:mb-0 mb-[30px] xl:h-[521px] xl:w-[381px] lg:h-[400px] lg:w-[321px] h-[357px] w-[290px] rounded-[15px] border border-black lg:p-[18px] xl:p-5 p-[18px]"
               >
@@ -135,6 +137,7 @@ const EventsHero = () => {
                   </div>
                 </a>
               </div>
+              </Link>
             ))}
           </div>
         </Tabs.Panel>

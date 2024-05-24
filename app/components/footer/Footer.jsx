@@ -102,13 +102,13 @@ const Footer = () => {
                       Join our Klan
                     </li>
                   </Link>
-                  <Link href="#">
+                  <Link href="/legal">
                     <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Legal
                     </li>
                   </Link>
                 </ul>
-                <Link href="#">
+                <Link href="/legal">
                   <li className="footer-section footer-content block text-[.875rem] opacity-[70%]  sm:hidden sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                     Legal
                   </li>
@@ -166,7 +166,7 @@ const Footer = () => {
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
             <p className="content-neue footer-section text-[12px] opacity-[70%] sm:opacity-[60%] md:text-[12px] xl:text-20 ">
               Copyright © 2024 KreatrMinds Pvt Ltd. |{" "}
-              <Link href="#" className="text-blue-700 underline ">
+              <Link href="/legal" className="text-blue-700 underline ">
                 Legal
               </Link>{" "}
             </p>
