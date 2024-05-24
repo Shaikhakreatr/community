@@ -68,8 +68,25 @@ module.exports = {
         '20':'1.25rem',
         '17':'1.0625rem',
         '16':'1rem',
-        '64':'4rem'
+        '64':'4rem',
+        '70':'4.375rem',
+        '110':"6.875rem"
 
+      },
+      backgroundColor:{
+        'selected': '#2A2A2A',  
+      },
+       textColor:{
+        'selectedText':'#D9D9D9',
+        'nonSelectedText':'#2A2A2A',
+        'hyperLink':"#1B2BEF",
+        "loadMore":"#FFF641"
+       },
+       borderColor:{
+        'selectedBorder':'#2A2A2A'
+       },
+       rotate:{
+        '-4':"-4deg"
       },
       screens:{
         sm:'640px',

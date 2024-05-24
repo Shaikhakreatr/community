@@ -19,10 +19,10 @@
 .careers-subhead,.page-subhead{
   font-family:'Neue Montreal Bold' ;
 }
-.page-heading{
+.page-heading, .heading{
   font-family: 'vina-sans', sans-serif;
 }
-.footer-findus{
+.footer-findus, .content{
   font-family: "Neue Montreal";
   font-weight: bold;
 }
@@ -330,5 +330,34 @@ h1{
 
 .position-people{
   color: #FE3131;
+}
+
+/* blog page css */
+
+
+/* styles.module.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.first-column {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+
+.second-column {
+  grid-column: 2 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
 }
 
