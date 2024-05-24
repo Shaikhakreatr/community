@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ArrowImage from "../../../../public/assets/images/about-kreatr/about-kreatr-arrow.svg";
+
 
 const AboutKreatrHeader = () => {
   return (
@@ -25,8 +25,10 @@ const AboutKreatrHeader = () => {
           </h1>
           <Image
             className="h-[44px] w-[44px] lg:h-[96px] lg:w-[99px]"
-            src={ArrowImage}
+            src={"/assets/images/about-kreatr/about-kreatr-arrow.svg"}
             alt="arrow img"
+            height={96}
+            width={99}
           />
         </div>
         <div className="content-neue w-[56%] text-[14px] leading-[18px] sm:w-[60%] lg:text-[24px] lg:leading-[32px] xl:text-[28px]">

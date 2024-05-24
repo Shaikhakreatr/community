@@ -1,10 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import KreatrLogo from "@/public/assets/images/home_page/logo/Kreatr-logo.svg";
-import Whatsapp from "@/public/assets/images/home_page/social_media_icons/Twitter.svg";
-import Instagram from "@/public/assets/images/home_page/social_media_icons/Instagram.svg";
-import Linkedin from "@/public/assets/images/home_page/social_media_icons/LinkedIn.svg";
 
 const Footer = () => {
   return (
@@ -16,9 +12,11 @@ const Footer = () => {
               <div>
                 <Link href="/">
                   <Image
-                    src={KreatrLogo}
+                    src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
                     className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
                     alt="Kreatr Logo"
+                    height={32}
+                    width={160}
                   />
                 </Link>
                 <div className=" footer-address footer-section sm-[80%] mt-4 hidden w-[70%] sm:block sm:text-[12px] sm:opacity-[60%] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
@@ -30,23 +28,35 @@ const Footer = () => {
                 <div className="my-5 hidden items-center justify-start sm:flex xl:mt-6">
                   <Link href="7204004953">
                     <Image
-                      src={Whatsapp}
+                      src={
+                        "/assets/images/home_page/social_media_icons/Whatsapp.svg"
+                      }
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Whatsapp"
+                      height={36}
+                      width={36}
                     />
                   </Link>
                   <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
                     <Image
-                      src={Instagram}
+                      src={
+                        "/assets/images/home_page/social_media_icons/Instagram.svg"
+                      }
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Instagram"
+                      height={36}
+                      width={36}
                     />
                   </Link>
                   <Link href="https://www.linkedin.com/company/the-kreatr/">
                     <Image
-                      src={Linkedin}
+                      src={
+                        "/assets/images/home_page/social_media_icons/LinkedIn.svg"
+                      }
                       className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Linkedin"
+                      height={36}
+                      width={36}
                     />
                   </Link>
                 </div>
@@ -111,23 +121,35 @@ const Footer = () => {
             <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
               <Link href="7204004953">
                 <Image
-                  src={Whatsapp}
+                  src={
+                    "/assets/images/home_page/social_media_icons/Whatsapp.svg"
+                  }
                   className="h-[1.9375rem] w-[1.9375rem] pr-2"
                   alt="Whatsapp"
+                  height={31}
+                  width={31}
                 />
               </Link>
               <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
                 <Image
-                  src={Instagram}
+                  src={
+                    "/assets/images/home_page/social_media_icons/Instagram.svg"
+                  }
                   className="h-[1.9375rem] w-[1.9375rem] pr-2"
                   alt="Instagram"
+                  height={31}
+                  width={31}
                 />
               </Link>
               <Link href="https://www.linkedin.com/company/the-kreatr/">
                 <Image
-                  src={Linkedin}
+                  src={
+                    "/assets/images/home_page/social_media_icons/LinkedIn.svg"
+                  }
                   className="h-[1.9375rem] w-[1.9375rem] pr-2"
                   alt="Linkedin"
+                  height={31}
+                  width={31}
                 />
               </Link>
             </div>

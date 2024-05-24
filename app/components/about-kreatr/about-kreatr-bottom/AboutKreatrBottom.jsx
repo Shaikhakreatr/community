@@ -2,16 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import KreatrAbout from "../../../../public/assets/images/about-kreatr/Kreatr_About.svg";
-import YouImage from "../../../../public/assets/images/about-kreatr/you-img.png";
-import Abdul from "../../../../public/assets/images/about-kreatr/Abdul.png";
-import Megha from "../../../../public/assets/images/about-kreatr/Megha.png";
-import Jevin from "../../../../public/assets/images/about-kreatr/Jevin.png";
-import Nilanka from "../../../../public/assets/images/about-kreatr/Nilanka.png";
-import Chanchal from "../../../../public/assets/images/about-kreatr/Chanchal.png";
-import Prithvi from "../../../../public/assets/images/about-kreatr/Prithvi.png";
-import Aava from "../../../../public/assets/images/about-kreatr/Aava.svg";
-import Arnav from "../../../../public/assets/images/about-kreatr/Arnav.png";
 import styles from "./AboutKreatrBottom.module.css";
 
 const AboutKreatrBottom = () => {
@@ -39,8 +29,10 @@ const AboutKreatrBottom = () => {
         <div className="relative h-[50px]">
           <Image
             className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] rotate-[-4deg] lg:right-[42%] lg:top-[-78%] lg:h-[70px] lg:w-[238px] xl:h-[80px] xl:w-[248px]"
-            src={KreatrAbout}
+            src={'/assets/images/about-kreatr/Kreatr_About.svg'}
             alt="about kreatr image"
+            width={238}
+            height={70}
           />
         </div>
       </div>
@@ -62,8 +54,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront1}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Abdul}
+                  src={"/assets/images/about-kreatr/Abdul.svg"}
                   alt="abdul image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -88,8 +82,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront2}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Megha}
+                  src={"/assets/images/about-kreatr/Megha.svg"}
                   alt="Megha image"
+                  width={250}
+                  height={290}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -114,8 +110,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront3}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Jevin}
+                  src={"/assets/images/about-kreatr/Jevin.svg"}
                   alt="Jevin image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -142,8 +140,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront4}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Nilanka}
+                  src={"/assets/images/about-kreatr/Nilanka.svg"}
                   alt="Nilanka image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -168,8 +168,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront1}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Chanchal}
+                  src={"/assets/images/about-kreatr/Chanchal.svg"}
                   alt="Chanchal image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -195,8 +197,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront2}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Prithvi}
+                  src={"/assets/images/about-kreatr/Prithvi.svg"}
                   alt="prithvi image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -223,8 +227,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront3}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Aava}
+                  src={"/assets/images/about-kreatr/Aava.svg"}
                   alt="aava image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -249,8 +255,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront4}>
                 <Image
                   className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
-                  src={Arnav}
+                  src={"/assets/images/about-kreatr/Arnav.svg"}
                   alt="arnav image"
+                  height={290}
+                  width={250}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -275,8 +283,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront5}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[103px] w-[103px] sm:left-[10%] sm:top-[-12%] sm:h-[160px] sm:w-[160px] lg:left-[12%] lg:top-[-10%] lg:h-[200px] lg:w-[200px] xl:left-[7%] xl:top-[-12%] xl:h-[266px] xl:w-[264px]"
-                  src={YouImage}
+                  src={"/assets/images/about-kreatr/you-img.svg"}
                   alt="you image"
+                  height={200}
+                  width={200}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -309,8 +319,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront1}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[145px] w-[120px]"
-                  src={Abdul}
+                  src={"/assets/images/about-kreatr/Abdul.svg"}
                   alt="abdul image"
+                  height={145}
+                  width={120}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -335,8 +347,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront2}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[144px] w-[120px] "
-                  src={Megha}
+                  src={"/assets/images/about-kreatr/Megha.svg"}
                   alt="Megha image"
+                  height={145}
+                  width={120}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -364,8 +378,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront3}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[136px] w-[109px] "
-                  src={Jevin}
+                  src={"/assets/images/about-kreatr/Jevin.svg"}
                   alt="Jevin image"
+                  height={136}
+                  width={109}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -390,8 +406,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront4}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[136px] w-[109px]"
-                  src={Nilanka}
+                  src={"/assets/images/about-kreatr/Nilanka.svg"}
                   alt="Nilanka image"
+                  height={136}
+                  width={109}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -418,8 +436,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront1}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[142px] w-[112px]"
-                  src={Chanchal}
+                  src={"/assets/images/about-kreatr/Chanchal.svg"}
                   alt="Chanchal image"
+                  height={142}
+                  width={112}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -445,8 +465,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront2}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[136px] w-[112px] "
-                  src={Chanchal}
+                  src={"/assets/images/about-kreatr/Prithvi.svg"}
                   alt="prithvi image"
+                  height={136}
+                  width={112}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -473,8 +495,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront3}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[136px] w-[112px]"
-                  src={Aava}
+                  src={"/assets/images/about-kreatr/Aava.svg"}
                   alt="aava image"
+                  height={136}
+                  width={112}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -499,8 +523,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront4}>
                 <Image
                   className="absolute left-[2%] top-[-38%] h-[142px] w-[112px]"
-                  src={Arnav}
+                  src={"/assets/images/about-kreatr/Arnav.svg"}
                   alt="arnav image"
+                  height={142}
+                  width={112}
                 />
               </div>
               <div className={styles.cardBack}>
@@ -527,8 +553,10 @@ const AboutKreatrBottom = () => {
               <div className={styles.cardFront5}>
                 <Image
                   className="absolute left-[8%] top-[-12%] h-[100px] w-[100px]"
-                  src={YouImage}
+                  src={"/assets/images/about-kreatr/you-img.svg"}
                   alt="you image"
+                  height={100}
+                  width={100}
                 />
               </div>
               <div className={styles.cardBack}>
