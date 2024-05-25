@@ -5,7 +5,7 @@ import EventsListing from '../components/events-listing/EventsListing'
 
 const EventsPage = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
       <EventsListing />
       <Footer />

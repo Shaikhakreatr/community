@@ -5,7 +5,7 @@ import LegalMainSection from '../components/legal-section/LegalMainSection'
 
 const LegalPage = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
         <Header />
             <LegalMainSection />
         <Footer />

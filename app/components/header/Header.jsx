@@ -1,19 +1,37 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const handleScroll = () => {
+    const offset = 25; 
+    const threshold = 16 + offset;
+    if (window.scrollY > threshold) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   return (
     <>
-      <header>
+      <header className={`fixed w-full top-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-[#f7f3e6]' : 'bg-transparent'}`}>
         <div className="relative flex items-center justify-center border-b border-gray-500 p-2">
           <Link href="/">
             <Image

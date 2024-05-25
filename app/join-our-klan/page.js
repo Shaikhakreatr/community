@@ -5,7 +5,7 @@ import JoinKlan from '../components/join-klan/JoinKlan'
 
 const JoinOurKlanPage = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
         <Header />
         <JoinKlan />
         <Footer />

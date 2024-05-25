@@ -5,7 +5,7 @@ import UpcomingHero from '../components/events-upcoming/UpcomingHero';
 
 const EventsUpoming = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
       <UpcomingHero />
       <Footer />

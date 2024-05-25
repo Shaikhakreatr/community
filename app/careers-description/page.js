@@ -5,7 +5,7 @@ import CareersMainContent from '@/app/components/careers-description/CareersMain
 
 const CareersDescription = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
         <Header />
         <CareersMainContent />
         <Footer />

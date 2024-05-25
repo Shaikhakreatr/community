@@ -5,7 +5,7 @@ import AboutKreatrMain from '../components/about-kreatr/AboutKreatrMain'
 
 const AboutKreatr = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
       <AboutKreatrMain />
       <Footer />

@@ -5,7 +5,7 @@ import { CareersHero } from '../components/careers-hero/Careers'
 
 const CareersPage = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
         <CareersHero />
       <Footer />

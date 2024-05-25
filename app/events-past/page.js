@@ -5,7 +5,7 @@ import PastHero from '../components/events-past/PastHero';
 
 const EventsPast = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
       <PastHero />
       <Footer />

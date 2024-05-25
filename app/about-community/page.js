@@ -5,7 +5,7 @@ import AboutCommunityMain from '../components/about-community/AboutCommunityMain
 
 const AboutCommunity = () => {
   return (
-    <main className='bg-img'>
+    <main className='pt-[6.25rem] bg-img'>
       <Header />
         <AboutCommunityMain />
       <Footer />
