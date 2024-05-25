@@ -15,4 +15,4 @@ const AboutCommunityMain = () => {
   )
 }
 
-export default AboutCommunityMain
+export default AboutCommunityMain;
