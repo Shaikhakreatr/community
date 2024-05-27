@@ -26,7 +26,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="my-5 hidden items-center justify-start sm:flex xl:mt-6">
-                  <Link href="7204004953">
+                  <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
                     <Image
                       src={
                         "/assets/images/home_page/social_media_icons/Whatsapp.svg"
@@ -119,7 +119,7 @@ const Footer = () => {
 
           <div className="sm:hidden ">
             <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
-              <Link href="7204004953">
+              <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
                 <Image
                   src={
                     "/assets/images/home_page/social_media_icons/Whatsapp.svg"
