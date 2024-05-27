@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect , useRef} from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HappyOutline from "@/public/assets/images/home_page/Outlined-happy-emoji.svg";
@@ -15,7 +15,6 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Transition } from "@mantine/core";
 
-
 const LeftSection = () => {
   const [happyActive, setHappyActive] = useState(true);
   const [sadActive, setSadActive] = useState(false);
@@ -24,12 +23,18 @@ const LeftSection = () => {
   const [logoAppActive, setLogoAppActive] = useState(false);
   const autoplay = Autoplay({ delay: 4000 });
 
-  const audioRef = useRef(new Audio("/assets/audio/kreatr-audio.mpeg"));
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof Audio !== "undefined") {
+      audioRef.current = new Audio("/assets/audio/kreatr-audio.mpeg");
+    }
+  });
 
   const handleSoundClick = () => {
     if (soundActive) {
       audioRef.current.pause();
-      audioRef.current.currentTime=0;
+      audioRef.current.currentTime = 0;
       setSoundActive(false);
     } else {
       audioRef.current.play();
@@ -41,14 +46,14 @@ const LeftSection = () => {
     const handleAudioEnd = () => {
       setSoundActive(false);
     };
-    
+
     const audio = audioRef.current;
     audio.addEventListener("ended", handleAudioEnd);
 
     return () => {
       audio.removeEventListener("ended", handleAudioEnd);
     };
-  },[]);
+  }, []);
 
   const toggleHappy = () => {
     if (!happyActive) {
@@ -91,7 +96,7 @@ const LeftSection = () => {
         </p>
         {soundActive ? (
           <Image
-            src="/assets/images/home_page/filled-speaker.svg" 
+            src="/assets/images/home_page/filled-speaker.svg"
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Active speaker"
             height={30}
@@ -100,7 +105,7 @@ const LeftSection = () => {
           />
         ) : (
           <Image
-            src="/assets/images/home_page/outlined-speaker.svg" 
+            src="/assets/images/home_page/outlined-speaker.svg"
             className="h-[19px] w-[19px] cursor-pointer xl:h-[30px] xl:w-[30px]"
             alt="Default speaker"
             height={30}
