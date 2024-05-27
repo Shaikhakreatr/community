@@ -40,7 +40,7 @@ const CollabrationForm = () => {
         </h1>
       </div>
       <div>
-        <div className="">
+        <div className="w-[50%] mt-[20px]">
           <label>
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
@@ -48,6 +48,7 @@ const CollabrationForm = () => {
             radius={50}
             className={{
               input: styles.dropDown,
+              
             }}
             classNames={{ input: styles.selectInput }}
             defaultValue="Speakers"
@@ -56,7 +57,7 @@ const CollabrationForm = () => {
           />
         </div>
       </div>
-      <div className="mt-[100px]">
+      <div className="">
         <form
           className={`${styles.formWrap} w-full`}
           onSubmit={form.onSubmit((values) => {
