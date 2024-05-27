@@ -92,7 +92,7 @@ const Footer = () => {
                       FAQs
                     </li>
                   </Link>
-                  <Link href="/Contact">
+                  <Link href="/contact">
                     <li className="footer-content footer-section pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
