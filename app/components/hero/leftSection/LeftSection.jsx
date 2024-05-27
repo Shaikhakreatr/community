@@ -29,7 +29,10 @@ const LeftSection = () => {
     if (typeof Audio !== "undefined") {
       audioRef.current = new Audio("/assets/audio/kreatr-audio.mpeg");
     }
-  });
+    if(audioRef.current.pause()){
+      setSoundActive(false);
+    }
+  },[audioRef]);
 
   const handleSoundClick = () => {
     if (soundActive) {
