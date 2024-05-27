@@ -29,7 +29,7 @@ const AboutKreatrBottom = () => {
         <div className="relative h-[50px]">
           <Image
             className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] rotate-[-4deg] lg:right-[42%] lg:top-[-78%] lg:h-[70px] lg:w-[238px] xl:h-[80px] xl:w-[248px]"
-            src={'/assets/images/about-kreatr/Kreatr_About.svg'}
+            src={"/assets/images/about-kreatr/Kreatr_About.svg"}
             alt="about kreatr image"
             width={238}
             height={70}
@@ -45,8 +45,8 @@ const AboutKreatrBottom = () => {
           </Link>
         </p>
       </div>
-      <div className="hidden sm:block mt-[80px]">
-        <div className="xl:mt-[80px] lg:mt-[60px] sm:mt-[50px] flex items-center justify-center gap-[50px]">
+      <div className="mt-[80px] hidden sm:block">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
@@ -61,17 +61,19 @@ const AboutKreatrBottom = () => {
                 />
               </div>
               <div className={styles.cardBack}>
-                <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
-                    Abdul RahIman
-                  </p>
-                  <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                    CO-FOUNDER
-                  </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Traveller | Change Visualiser | Astrophile | Free Spirited
-                  </p>
-                </div>
+                <Link href="https://www.linkedin.com/in/abdulrahimandsgnmkrs/">
+                  <div className={styles.cardBackContent}>
+                    <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                      Abdul RahIman
+                    </p>
+                    <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                      CO-FOUNDER
+                    </p>
+                    <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
+                      Traveller | Change Visualiser | Astrophile | Free Spirited
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -88,19 +90,21 @@ const AboutKreatrBottom = () => {
                   height={290}
                 />
               </div>
-              <div className={styles.cardBack}>
-                <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
-                    Megha SatIsh
-                  </p>
-                  <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                    CO-FOUNDER
-                  </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Conceptualiser | Detail Freak | Leader | Gym Rat
-                  </p>
+                <div className={styles.cardBack}>
+              <Link href="https://www.linkedin.com/in/meghasatish/">
+                  <div className={styles.cardBackContent}>
+                    <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                      Megha SatIsh
+                    </p>
+                    <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                      CO-FOUNDER
+                    </p>
+                    <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
+                      Conceptualiser | Detail Freak | Leader | Gym Rat
+                    </p>
+                  </div>
+              </Link>
                 </div>
-              </div>
             </div>
           </div>
           <div className={styles.cardContainer} onClick={() => handleFlip(2)}>
@@ -132,7 +136,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="xl:mt-[80px] lg:mt-[60px] sm:mt-[50px] flex items-center justify-center gap-[50px]">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(3)}>
             <div
               className={`${styles.card} ${flippedIndices[3] ? styles.flipped : ""}`}
@@ -219,7 +223,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="xl:mt-[80px] lg:mt-[60px] sm:mt-[50px] flex items-center justify-center gap-[50px]">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}
@@ -297,10 +301,12 @@ const AboutKreatrBottom = () => {
                   <p className=" page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
                     THIS COULD BE YOU
                   </p>
-                  <div className="flex justify-center items-center">
-                  <div className="page-subhead text-[8px] mt-[10px] pt-[8px] rounded-[30px] join-team-btn xl:h-[44px] xl:w-[192px] lg:h-[38px] lg:w-[162px] sm:h-[35px] sm:w-[152px] h-[30px] w-[132px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
-                    Join our team
-                  </div>
+                  <div className="flex items-center justify-center">
+                    <Link href="/careers">
+                      <div className="page-subhead join-team-btn mt-[10px] h-[30px] w-[132px] rounded-[30px] pt-[8px] text-[8px] sm:h-[35px] sm:w-[152px] sm:text-[14px] lg:h-[38px] lg:w-[162px] lg:text-[16px]  xl:h-[44px]  xl:w-[192px]  xl:text-[18px] ">
+                        Join our team
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -309,9 +315,8 @@ const AboutKreatrBottom = () => {
         </div>
       </div>
 
-
-      <div className="sm:hidden mt-[52px]">
-        <div className="mt-[28px] flex items-center gap-[20px] justify-center">
+      <div className="mt-[52px] sm:hidden">
+        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
@@ -325,19 +330,19 @@ const AboutKreatrBottom = () => {
                   width={120}
                 />
               </div>
-              <div className={styles.cardBack}>
-                <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px]">
-                    Abdul RahIman
-                  </p>
-                  <p className="page-subhead position-people text-[8px] ">
-                    CO-FOUNDER
-                  </p>
-                  <p className="content-neue text-[8px] leading-[10px]">
-                    Traveller | Change Visualiser | Astrophile | Free Spirited
-                  </p>
+                <div className={styles.cardBack}>
+              <Link href="https://www.linkedin.com/in/abdulrahimandsgnmkrs/ ">
+                  <div className={styles.cardBackContent}>
+                    <p className="page-heading text-[16px]">Abdul RahIman</p>
+                    <p className="page-subhead position-people text-[8px] ">
+                      CO-FOUNDER
+                    </p>
+                    <p className="content-neue text-[8px] leading-[10px]">
+                      Traveller | Change Visualiser | Astrophile | Free Spirited
+                    </p>
+                  </div>
+              </Link>
                 </div>
-              </div>
             </div>
           </div>
           <div className={styles.cardContainer} onClick={() => handleFlip(1)}>
@@ -353,25 +358,24 @@ const AboutKreatrBottom = () => {
                   width={120}
                 />
               </div>
-              <div className={styles.cardBack}>
-                <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] ">
-                    Megha SatIsh
-                  </p>
-                  <p className="page-subhead position-people text-[8px] ">
-                    CO-FOUNDER
-                  </p>
-                  <p className="content-neue text-[8px] leading-[10px]">
-                    Conceptualiser | Detail Freak | Leader | Gym Rat
-                  </p>
+                <div className={styles.cardBack}>
+              <Link href="https://www.linkedin.com/in/meghasatish/  ">
+                  <div className={styles.cardBackContent}>
+                    <p className="page-heading text-[16px] ">Megha SatIsh</p>
+                    <p className="page-subhead position-people text-[8px] ">
+                      CO-FOUNDER
+                    </p>
+                    <p className="content-neue text-[8px] leading-[10px]">
+                      Conceptualiser | Detail Freak | Leader | Gym Rat
+                    </p>
+                  </div>
+              </Link>
                 </div>
-              </div>
             </div>
           </div>
-          
         </div>
-        <div className="mt-[28px] flex items-center gap-[20px] justify-center">
-        <div className={styles.cardContainer} onClick={() => handleFlip(2)}>
+        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+          <div className={styles.cardContainer} onClick={() => handleFlip(2)}>
             <div
               className={`${styles.card} ${flippedIndices[2] ? styles.flipped : ""}`}
             >
@@ -428,8 +432,8 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center gap-[20px] justify-center">
-        <div className={styles.cardContainer} onClick={() => handleFlip(4)}>
+        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+          <div className={styles.cardContainer} onClick={() => handleFlip(4)}>
             <div
               className={`${styles.card} ${flippedIndices[4] ? styles.flipped : ""}`}
             >
@@ -487,8 +491,8 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center gap-[20px] justify-center">
-        <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
+        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+          <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}
             >
@@ -545,8 +549,8 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center gap-[20px] justify-center">
-        <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
+        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+          <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
             <div
               className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
             >
@@ -567,10 +571,12 @@ const AboutKreatrBottom = () => {
                   <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
                     THIS COULD BE YOU
                   </p>
-                  <div className="flex justify-center items-center">
-                  <div className="page-subhead text-[8px] mt-[8px] pt-[4px] rounded-[30px] join-team-btn  h-[20px] w-[70px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
-                    Join our team
-                  </div>
+                  <div className="flex items-center justify-center">
+                    <Link href="/careers">
+                      <div className="page-subhead join-team-btn pointer-events-auto mt-[8px] h-[20px] w-[70px] rounded-[30px]  pt-[4px] text-[8px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
+                        Join our team
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
