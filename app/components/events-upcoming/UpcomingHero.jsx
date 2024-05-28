@@ -10,7 +10,7 @@ import {
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
-const UpcomingHero = () => {
+const UpcomingHero = ({upcomingData}) => {
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
@@ -71,34 +71,33 @@ const UpcomingHero = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mt-[25px] lg:mt-[50px]">
             <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[44px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
-              Design Thinking Workshop-
-              <br /> Extended Version
+              {upcomingData.heading}
             </h1>
             <div className="my-[10px] flex sm:mb-[20px] sm:mt-[20px]">
               <div className="content-neue mr-3 h-[14px] w-[46px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
-                Design
+                {upcomingData.sessionType}
               </div>
               <div className="content-neue mr-3 h-[14px] w-[36px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
-                3 hrs
+                {upcomingData.duration}
               </div>
               <div className="content-neue mr-3 h-[14px] w-[110px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
-                Speaker: Megha Satish
+                Speaker: {upcomingData.speakerName}
               </div>
             </div>
             <img
               className="h-[148px] w-[320px] lg:h-[350px] lg:w-[980px] xl:h-[398px] xl:w-[1064px]"
-              src="/assets/images/events_page/events-main-page.jpg"
+              src={upcomingData.coverImg}
               alt="main-img"
             />
             <div className="content-neue-medium mt-[10px] flex items-center justify-between text-[13px] sm:mt-[18px] sm:text-[20px] lg:text-[22px] xl:text-[30px]">
               <div className="border-r border-black pr-[10px] sm:pr-[40px]">
-                Sat 12 Jan, 2024
+                {upcomingData.date}
               </div>
               <div className="border-r border-black pr-[10px] sm:pr-[40px]">
-                Slay Coffee, Koramangala
+                {upcomingData.location}
               </div>
               <div className="border-black pr-[10px] sm:border-r sm:pr-[40px]">
-                ₹1499
+                {upcomingData.price}
               </div>
               <div onClick={scrollToDiv} className=" cursor-pointer upcoming-btn hidden h-[24.52px] w-[128.12px] rounded-[40px] pt-[5px] text-center text-[13px] sm:block sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
                 Book Now
@@ -117,28 +116,7 @@ const UpcomingHero = () => {
             <br />
             <div className="content-neue text-[14px] leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
               <p>
-                Explore the practice of upcycling materials in architecture and
-                its profound impact on the environment, society, and economics.
-                By repurposing and reusing materials, construction, and
-                demolition can be transformed into a sustainable process.
-              </p>
-              <br />
-              <p>
-                {`This Refund and Cancellation Policy (this "policy") is a binding
-                policy between you, as an individual or entity ("End User" or
-                "you"), and Kreatrminds Private Limited, its subsidiaries and
-                affiliates (collectively, the “Company," “we" or “our").`}
-                <br />
-                <br />
-                To ensure compliance with our refund and cancellation policy,
-                individuals under the age of 18 must use our app with explicit
-                consent from a legal parent or guardian. By accessing and
-                purchasing our services through the app, you confirm that you
-                are either 18 years of age or older, or you have obtained the
-                necessary legal parental or guardian consent. You also affirm
-                that you possess the full capacity and competence to abide by
-                the terms, conditions, representations, and warranties outlined
-                in this policy related to the purchase of our services.
+                {upcomingData.description}
               </p>
             </div>
           </div>
@@ -154,21 +132,14 @@ const UpcomingHero = () => {
               />
             </div>
             <div className="mt-[20px] flex items-center justify-center sm:mt-[40px]">
-              <img
+              {upcomingData.images.map((item,index)=>(
+                <img
+                key={index}
                 className="mr-1 h-[106px] w-[106px] sm:mr-4 lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                src="/assets/images/events_page/events1.jpg"
+                src={item}
                 alt="events img"
               />
-              <img
-                className="mr-1  h-[106px] w-[106px] sm:mr-4 lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                src="/assets/images/events_page/events2.jpg"
-                alt="events img"
-              />
-              <img
-                className="h-[106px] w-[106px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                src="/assets/images/events_page/events3.jpg"
-                alt="events img"
-              />
+              ))}
             </div>
           </div>
           <div ref={targetRef} id="target-section" className="mt-[30px] sm:mt-[50px]">
