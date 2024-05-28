@@ -7,7 +7,7 @@ const BlogListingMobView = ({ blogsDataMob }) => {
   return (
     <div className=" w-full flex flex-col justify-center items-center gap-4">
       {blogsDataMob.map((item, index) => (
-        <Link key={index} href={`/blogs-details/${item.id}`}>
+        <Link key={index} href='/blogs-details'>
         <div  className=" w-[21rem] h-[14.375rem] rounded-[7.13px] border border-selectedBorder">
           <div
             className="w-full h-[9.8125rem] rounded-t-[7.13px]"

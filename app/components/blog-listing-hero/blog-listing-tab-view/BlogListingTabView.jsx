@@ -6,7 +6,7 @@ const BlogListingTabView = ({ blogsData }) => {
     <div className=" flex h-full  w-full flex-col items-center justify-center">
       <div className="mt-4 flex w-fit gap-2">
         <div className="first-column">
-          <Link href={`/blogs-details/${blogsData.id}`}>
+          <Link href='/blogs-details'>
             <div className=" h-[600px] w-[21.875rem] rounded-[24px] border border-selectedBorder">
               <div
                 className="h-[25.9375rem] w-full rounded-t-[24px]"
@@ -41,7 +41,7 @@ const BlogListingTabView = ({ blogsData }) => {
               </div>
             </div>
           </Link>
-          <Link href={`/blogs-details/${blogsData.id}`}>
+          <Link href='/blogs-details'>
             <div className=" h-[810px] w-[350px] rounded-[24px] border border-selectedBorder">
               <div
                 className="h-[39rem] w-full rounded-t-[24px]"
@@ -83,7 +83,7 @@ const BlogListingTabView = ({ blogsData }) => {
           </Link>
         </div>
         <div className="second-column w-fit ">
-          <Link href={`/blogs-details/${blogsData.id}`}>
+          <Link href='/blogs-details'>
             <div className=" h-[500px] w-[350px] rounded-[24px] border border-selectedBorder">
               <div
                 className="h-[20.25rem] w-full rounded-t-[24px]"
@@ -118,7 +118,7 @@ const BlogListingTabView = ({ blogsData }) => {
               </div>
             </div>
           </Link>
-          <Link href={`/blogs-details/${blogsData.id}`}>
+          <Link href='/blogs-details'>
             <div className=" h-[450px] w-[350px] rounded-[24px] border border-selectedBorder">
               <div
                 className="h-[16.0625rem] w-full rounded-t-[24px]"
@@ -153,7 +153,7 @@ const BlogListingTabView = ({ blogsData }) => {
               </div>
             </div>
           </Link>
-          <Link href={`/blogs-details/${blogsData.id}`}>
+          <Link href='/blogs-details'>
             <div className=" h-[430px] w-[350px] rounded-[24px] border border-selectedBorder">
               <div
                 className=" h-[16.0625rem] w-full rounded-t-[24px]"
@@ -191,7 +191,7 @@ const BlogListingTabView = ({ blogsData }) => {
         </div>
       </div>
 
-      <Link href={`/blogs-details/${blogsData.id}`}>
+      <Link href='/blogs-details'>
         <div className=" mt-[20px] h-[37.5rem] w-[710px] rounded-[24px] border border-selectedBorder ">
           <div
             className=" h-[25.5625rem] w-full rounded-t-[24px] "

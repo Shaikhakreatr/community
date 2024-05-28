@@ -11,6 +11,7 @@ import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
 const UpcomingHero = ({upcomingData}) => {
+  
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
@@ -64,7 +65,21 @@ const UpcomingHero = ({upcomingData}) => {
   const scrollToDiv = () => {
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-  
+  const isDataAvailable = upcomingData && 
+    upcomingData.heading && 
+    upcomingData.sessionType && 
+    upcomingData.duration && 
+    upcomingData.speakerName && 
+    upcomingData.date && 
+    upcomingData.coverImg &&
+    upcomingData.location && 
+    upcomingData.price &&  
+    upcomingData.description && 
+    Array.isArray(upcomingData.images);
+
+  if (!isDataAvailable) {
+    return <div>No Data Available</div>;
+  }
   return (
     <section>
       <div className="container mx-auto">

@@ -3,6 +3,20 @@ import React from "react";
 import Testimonials from "../testimonials/Testimonials";
 
 const PastHero = ({pastData}) => {
+  const isDataAvailable = pastData && 
+    pastData.heading && 
+    pastData.sessionType && 
+    pastData.duration && 
+    pastData.speakerName && 
+    pastData.date && 
+    pastData.coverImg &&
+    pastData.location && 
+    pastData.description && 
+    Array.isArray(pastData.images);
+
+  if (!isDataAvailable) {
+    return <div>No Data Available</div>;
+  }
   return (
     <>
       <section>

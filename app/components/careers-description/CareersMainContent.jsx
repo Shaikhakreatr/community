@@ -1,9 +1,19 @@
 'use client'
 import React from "react";
 
+const CareersMainContent = ({ careerData }) => {
+  // Check if careerData is defined and has all required fields
+  const isDataAvailable = careerData && 
+    careerData.title && 
+    careerData.type && 
+    careerData.location && 
+    careerData.description && 
+    Array.isArray(careerData.responsibilities) && 
+    Array.isArray(careerData.qualifications);
 
-
-const CareersMainContent = ({careerData}) => {
+  if (!isDataAvailable) {
+    return <div>No Data Available</div>;
+  }
 
   return (
     <div>
@@ -24,19 +34,19 @@ const CareersMainContent = ({careerData}) => {
       <div className="mx-[25px] mb-[10px] mt-[62px] sm:mx-[100px] sm:mb-0 sm:mt-0">
         <div className="flex items-center">
           <h4 className="content-neue-medium mr-3 text-[18px] sm:mr-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px] capitalize">
-            {careerData?.title}
+            {careerData.title}
           </h4>
           <div className="mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
-            {careerData?.type}
+            {careerData.type}
           </div>
           <div className=" h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
-            {careerData?.location}
+            {careerData.location}
           </div>
         </div>
         <br />
         <div className="mt-[-10px] sm:mb-4">
           <p className="content-neue text-[12px] lg:text-[18px] xl:text-[24px]">
-            {careerData?.description}
+            {careerData.description}
           </p>
           <br />
           <p className="content-neue-medium mt-[-10px] text-[14px] sm:mt-0 lg:text-[22px] xl:text-[28px]">
@@ -45,7 +55,7 @@ const CareersMainContent = ({careerData}) => {
           <br />
           <div>
             <ul className="content-neue ml-5 mt-[-15px] list-disc text-[12px] sm:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
-              {careerData?.responsibilities.map((item, index) => (
+              {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
@@ -57,7 +67,7 @@ const CareersMainContent = ({careerData}) => {
           <br />
           <div>
             <ul className="content-neue ml-5 mt-[-15px] list-disc text-[12px] sm:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
-              {careerData?.qualifications.map((item, index) => (
+              {careerData.qualifications.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
