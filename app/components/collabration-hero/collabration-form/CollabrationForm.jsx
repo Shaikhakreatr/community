@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import {
   useForm,
   isEmail,
@@ -12,13 +12,14 @@ import { Button, TextInput } from "@mantine/core";
 import styles from "./CollabrationForm.module.css";
 
 const CollabrationForm = () => {
+  const [submitted, setSubmitted] = useState(false);
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
       name: "",
       phoneNumber: "",
-      senderEmail: "",
-      message: "",
+      email: "",
+      collaborationType: "Speakers",
     },
 
     validate: {
@@ -27,10 +28,33 @@ const CollabrationForm = () => {
         /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
         "Please enter a valid phone number",
       ),
-      senderEmail: isEmail("Please enter a valid email"),
-      message: isNotEmpty("Please write your message"),
+      email: isEmail("Please enter a valid email"),
     },
   });
+  const sendFormData = async (values) => {
+    try {
+      const response = await fetch(
+        "https://l6qi6kuo7c.execute-api.ap-south-1.amazonaws.com/dev/collaboration_request",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const data = await response.json();
+      console.log("Form submitted successfully:", data);
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
 
   return (
     <div className="px-[30px] py-[35px] sm:px-[95px] sm:py-[50px]">
@@ -40,7 +64,7 @@ const CollabrationForm = () => {
         </h1>
       </div>
       <div>
-        <div className="w-[50%] mt-[20px]">
+        <div className="mt-[20px] w-[50%]">
           <label>
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
@@ -48,12 +72,12 @@ const CollabrationForm = () => {
             radius={50}
             className={{
               input: styles.dropDown,
-              
             }}
             classNames={{ input: styles.selectInput }}
             defaultValue="Speakers"
             data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
-            searchable
+
+            {...form.getInputProps("collaborationType")}
           />
         </div>
       </div>
@@ -106,11 +130,11 @@ const CollabrationForm = () => {
               error: styles.inputError,
             }}
             withAsterisk
-            key={form.key("senderEmail")}
-            {...form.getInputProps("senderEmail")}
+            key={form.key("email")}
+            {...form.getInputProps("email")}
           />
           <br className="hidden sm:block" />
-          <div className="mt-[25px] items-center justify-center text-center sm:flex lg:gap-3  xl:gap-5">
+          <div className="mt-[25px] items-center  text-center sm:flex lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}
@@ -120,6 +144,11 @@ const CollabrationForm = () => {
             >
               Submit
             </Button>
+            {submitted && (
+              <p className={styles.sentMessage}>
+                Sent! We will reach out to you soon.
+              </p>
+            )}
           </div>
         </form>
       </div>
