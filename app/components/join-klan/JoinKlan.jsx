@@ -54,42 +54,42 @@ const JoinKlan = () => {
         />
       </div>
       <div className="relative flex h-[70px] w-auto justify-center xl:mt-[95px]">
-        <div className="instagram-img absolute left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px]  shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-          <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
+        <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
+          <div className="instagram-img absolute left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px]  shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/instagram-JOK.svg"
               className="h-[77.33px] w-[77.33px] rotate-[8deg] xl:h-[101px] xl:w-[101px]"
               alt="instagram"
             />
-          </Link>
-          <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
-            “Pop” goes our hearts when you leave one!
-          </p>
-        </div>
-        <div className="whatsapp-img absolute right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-          <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
+              “Pop” goes our hearts when you leave one!
+            </p>
+          </div>
+        </Link>
+        <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
+          <div className="whatsapp-img absolute right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
               className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
               alt="whatsapp"
             />
-          </Link>
-          <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
-            The biggest green flag you will ever see.
-          </p>
-        </div>
-        <div className="linkdin-img absolute left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-          <Link href="https://www.linkedin.com/company/the-kreatr/">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
+              The biggest green flag you will ever see.
+            </p>
+          </div>
+        </Link>
+        <Link href="https://www.linkedin.com/company/the-kreatr/">
+          <div className="linkdin-img absolute left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/linkdin-JOK.svg"
               className="h-[69px] w-[69px] rotate-[8deg] xl:h-[92px] xl:w-[92px]"
               alt="linkdin"
             />
-          </Link>
-          <p className="page-subhead mt-[26px] text-[20px] leading-[20px] lg:mt-[50px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
-            For your professional needs!
-          </p>
-        </div>
+            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] lg:mt-[50px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
+              For your professional needs!
+            </p>
+          </div>
+        </Link>
       </div>
       <div className="relative mt-[635px] lg:mt-[226px] xl:mt-[160px]">
         <h1 className=" page-heading absolute right-[20%] top-[-18%] text-center text-[35px] lg:right-[37%] lg:text-[55px] xl:right-[37%] xl:top-[-12%] xl:text-[64px]">

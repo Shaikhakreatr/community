@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./CareersOpening.module.css";
+import Link from "next/link";
+import { useSelector,useDispatch } from "react-redux";
+import careersSlice from "@/app/redux/careersSlice";
 
-const CareerOpening = ({ jobVacancies }) => {
+const CareerOpening = () => {
+
+  const careersData = useSelector((state) => state.careers.careersData);
+ 
   return (
     <div>
-      <div className="  mb-[6px] flex flex-col items-center justify-center sm:mb-[30px] ">
+      <div className="mb-[6px] flex flex-col items-center justify-center sm:mb-[30px]">
         <div className="relative mb-[46px] lg:mb-[80px] lg:mt-0 xl:mb-[150px] xl:mt-0">
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
@@ -18,17 +24,17 @@ const CareerOpening = ({ jobVacancies }) => {
           </div>
         </div>
       </div>
-      <h3 className="careers-subhead border-black text-center text-[18px]  sm:mb-5 sm:border-b sm:text-[25px] lg:mx-[148px] lg:text-[30px] xl:mx-[135px] xl:text-[36px]">
+      <h3 className="careers-subhead border-black text-center text-[18px] sm:mb-5 sm:border-b sm:text-[25px] lg:mx-[148px] lg:text-[30px] xl:mx-[135px] xl:text-[36px]">
         Current Openings
       </h3>
-      <div className="flex flex-wrap items-center justify-center ">
-        {jobVacancies.map((item, index) => (
-          <a
-            href="/careers-description"
+      <div className="flex flex-wrap items-center justify-center">
+        {careersData.map((item, index) => (
+          <Link
+            href={`/careers/${item.id}`}
             key={index}
             className={`${styles.jobBox} m-[10px] h-[98px] w-[320px] cursor-pointer rounded-[10px] border border-black p-[10px] sm:m-[25px] sm:rounded-[15px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
           >
-            <div className="items-center justify-center sm:flex">
+            <div className="items-center justify-between sm:flex">
               <h4 className="careers-box text-[18px] lg:text-[30px] lg:leading-[30px] xl:text-[40px] xl:leading-[40px]">
                 {item.title}
               </h4>
@@ -38,11 +44,11 @@ const CareerOpening = ({ jobVacancies }) => {
                 alt="arrow img"
               />
             </div>
-            <div className="block sm:hidden ">
+            <div className="block sm:hidden">
               <p className="content-neue text-[10px]">{item.description}</p>
             </div>
             <div className="mt-3 flex items-center justify-between sm:block">
-              <div className=" flex items-center sm:block  lg:mt-[38px] xl:mt-[50px]">
+              <div className="flex items-center sm:block lg:mt-[38px] xl:mt-[50px]">
                 <div
                   className={`${styles.subBox} mr-2 h-[19px] w-[57px] rounded-[24px] border border-black text-center text-[10px] sm:mr-0 lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[106px] xl:text-[20px]`}
                 >
@@ -62,16 +68,16 @@ const CareerOpening = ({ jobVacancies }) => {
                 />
               </div>
             </div>
-          </a>
+          </Link>
         ))}
-        <div className="  content-neue my-[14px] text-[11px] sm:mb-[50px] sm:mt-[30px] lg:text-[20px] xl:text-[28px]">
-          <p>
-            Can’t find any suitable vacancy? Drop us a line{" "}
-            <a className="text-blue-700" href="#">
-              hr@thekreatr.com
-            </a>{" "}
-          </p>
-        </div>
+      </div>
+      <div className="content-neue my-[14px] text-[11px] sm:mb-[50px] sm:mt-[30px] lg:text-[20px] xl:text-[28px]">
+        <p className="text-center">
+          Can’t find any suitable vacancy? Drop us a line{" "}
+          <a className="text-blue-700" href="#">
+            hr@thekreatr.com
+          </a>{" "}
+        </p>
       </div>
     </div>
   );
