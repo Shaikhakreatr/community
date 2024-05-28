@@ -26,7 +26,7 @@ const EventsHero = () => {
 
     fetchEvents();
   }, []);
-
+  const [tab,setTab] = useState("upcoming");
   return (
     <div>
       <Tabs variant="pills" radius="lg" defaultValue="upcoming">
@@ -61,15 +61,15 @@ const EventsHero = () => {
         {/* toggle section */}
         <div className="mb-[34px] mt-[105px] flex justify-center lg:mt-[98px] xl:mt-[120px]">
           <Tabs.List>
-            <Tabs.Tab value="upcoming">Upcoming</Tabs.Tab>
-            <Tabs.Tab value="past">Past</Tabs.Tab>
+            <Tabs.Tab  onClick={()=>(setTab('upcoming'))} value="upcoming">Upcoming</Tabs.Tab>
+            <Tabs.Tab onClick={()=>(setTab('past'))} value="past">Past</Tabs.Tab>
           </Tabs.List>
         </div>
 
         {/* hero section */}
 
         {/* upcoming hero section */}
-        <Tabs.Panel value="upcoming">
+        {upcomingEvents.length===0 && tab!== "past" ? <div className="page-subhead text-[30px] text-center my-[35px]">No upcoming events</div> : <Tabs.Panel value="upcoming">
           <div className="flex flex-col flex-wrap items-center justify-center sm:my-[50px] sm:ml-0 sm:flex-row">
             {upcomingEvents.map((event) => (
               <Link href={`/events-upcoming/${event.id}`} key={event.id}>
@@ -96,7 +96,7 @@ const EventsHero = () => {
               </Link>
             ))}
           </div>
-        </Tabs.Panel>
+        </Tabs.Panel>}
 
         {/* past hero section */}
         <Tabs.Panel value="past">

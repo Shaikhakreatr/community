@@ -1,31 +1,40 @@
-import React from 'react'
+import React from "react";
 
 const LegalPage1 = () => {
   return (
     <div>
-          {`This Agreement governs your use of this mobile application for
+      {`This Agreement governs your use of this mobile application for
           Android, iOS (collectively, including all related documentation, the
-          "Application"). The Application is licensed, not sold, to you. <br/><br/>
-          <h1 className='legal_page_h pb-2'><u>Agreement Structure</u></h1>
-          This Agreement includes General Terms, and what
-          segment means for us and our end users.`}
-          <div className='pb-2'/>
-        <h1 className='legal_page_h pb-2'><u> GENERAL TERMS </u></h1>
-         {`This End User License Agreement (this "Agreement") is a binding agreement between
+          "Application"). The Application is licensed, not sold, to you.`}{" "}
+      <br />
+      <br />
+      <h1 className="legal_page_h pb-2">
+        <u>Agreement Structure</u>
+      </h1>
+      This Agreement includes General Terms, and what segment means for us and
+      our end users.
+      <div className="pb-2" />
+      <h1 className="legal_page_h pb-2">
+        <u> GENERAL TERMS </u>
+      </h1>
+      {`This End User License Agreement (this "Agreement") is a binding agreement between
           you, as an individual or entity ("End User" or "you"), and Kreatrminds
           Private Limited, Shariff square, 18/1, Sarjapur - Marathahalli Rd,
           Jakkasandra, 1st Block Koramangala, Bengaluru, Karnataka 560034, its
           subsidiaries and affiliates (collectively, the “ Company," “we" or
           “our").`}
-          <br/><br/>
-           BY DOWNLOADING, INSTALLING OR USING THE APPLICATION, YOU (A)
-          ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT; (B)
-          REPRESENT THAT YOU ARE OF LEGAL AGE TO ENTER INTO A BINDING AGREEMENT;
-          AND (C) ACCEPT THIS AGREEMENT AND AGREE THAT YOU ARE LEGALLY BOUND BY
-          ITS TERMS. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT DOWNLOAD,
-          INSTALL OR USE THE APPLICATION AND DELETE IT FROM YOUR DEVICE. 
-          <br/><br/>
-          <u>License Grant</u>:{` Subject to the terms of this Agreement, the Company grants you
+      <br />
+      <br />
+      BY DOWNLOADING, INSTALLING OR USING THE APPLICATION, YOU (A) ACKNOWLEDGE
+      THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT; (B) REPRESENT THAT YOU
+      ARE OF LEGAL AGE TO ENTER INTO A BINDING AGREEMENT; AND (C) ACCEPT THIS
+      AGREEMENT AND AGREE THAT YOU ARE LEGALLY BOUND BY ITS TERMS. IF YOU DO NOT
+      AGREE TO THESE TERMS, DO NOT DOWNLOAD, INSTALL OR USE THE APPLICATION AND
+      DELETE IT FROM YOUR DEVICE.
+      <br />
+      <br />
+      <u>License Grant</u>:
+      {` Subject to the terms of this Agreement, the Company grants you
           a limited, non-exclusive and nontransferable license to: (a) download,
           install and use the Application for your personal, non-commercial use
           on a single mobile device owned or otherwise controlled by you ("
@@ -35,52 +44,54 @@ const LegalPage1 = () => {
           available in or otherwise accessible through the Application, strictly
           in accordance with this Agreement and the Terms of Use applicable to
           such Content and Services as set forth in Section 5.`}
-          <br/><br/>
-           <u>License Restrictions</u>: Licensee shall not: (a) copy the Application, except as
-          expressly permitted by this license; (b) modify, translate, adapt or
-          otherwise create derivative works or improvements, whether or not
-          patentable, of the Application; (c) reverse engineer, disassemble,
-          decompile, decode or otherwise attempt to derive or gain access to the
-          source code of the Application or any part thereof; (d) remove,
-          delete, alter or obscure any copyright, trademark, patent or other
-          intellectual property or proprietary rights notices from the
-          Application, including any copy thereof; (e) rent, lease, lend, sell,
-          sublicense, assign, distribute, publish, transfer or otherwise make
-          available the Application or any features or functionality of the
-          Application, to any third party for any reason, including by making
-          the Application available on a network where it is capable of being
-          accessed by more than one device at any time; or (f) remove, disable,
-          circumvent or otherwise create or implement any workaround to any copy
-          protection, rights management or security features in or protecting
-          the Application.
-          <br/><br/>
-          <u>Reservation of Rights</u>: You acknowledge and agree that
-          the Application is provided under license, and not sold, to you. You
-          do not acquire any ownership interest in the Application under this
-          Agreement, or any other rights thereto other than to use the
-          Application in accordance with the license granted, and subject to all
-          terms, conditions and restrictions, under this Agreement. The Company
-          reserves and shall retain its entire right, title and interest in and
-          to the Application, including all copyrights, trademarks and other
-          intellectual property rights therein or relating thereto, except as
-          expressly granted to you in this Agreement.
-          <br/><br/>
-          <u>Collection and Use of Your Information</u> : You acknowledge that when you download, install or use
-          the Application, the Company may use automatic means (including, for
-          example, cookies and web beacons) to collect information about your
-          Mobile Device and about your use of the Application. You also may be
-          required to provide certain information about yourself as a condition
-          to downloading, installing or using the Application or certain of its
-          features or functionality, and the Application may provide you with
-          opportunities to share information about yourself with others. All
-          information we collect through or in connection with this Application
-          is subject to our Privacy Policy. By downloading, installing, using
-          and providing information to or through this Application, you consent
-          to all actions taken by us with respect to your information in
-          compliance with the Privacy Policy.
-          <br/><br/>
-          <u>Content and Services</u>: The
-         {` Application may provide you with access to the Company's website
+      <br />
+      <br />
+      <u>License Restrictions</u>: Licensee shall not: (a) copy the Application,
+      except as expressly permitted by this license; (b) modify, translate,
+      adapt or otherwise create derivative works or improvements, whether or not
+      patentable, of the Application; (c) reverse engineer, disassemble,
+      decompile, decode or otherwise attempt to derive or gain access to the
+      source code of the Application or any part thereof; (d) remove, delete,
+      alter or obscure any copyright, trademark, patent or other intellectual
+      property or proprietary rights notices from the Application, including any
+      copy thereof; (e) rent, lease, lend, sell, sublicense, assign, distribute,
+      publish, transfer or otherwise make available the Application or any
+      features or functionality of the Application, to any third party for any
+      reason, including by making the Application available on a network where
+      it is capable of being accessed by more than one device at any time; or
+      (f) remove, disable, circumvent or otherwise create or implement any
+      workaround to any copy protection, rights management or security features
+      in or protecting the Application.
+      <br />
+      <br />
+      <u>Reservation of Rights</u>: You acknowledge and agree that the
+      Application is provided under license, and not sold, to you. You do not
+      acquire any ownership interest in the Application under this Agreement, or
+      any other rights thereto other than to use the Application in accordance
+      with the license granted, and subject to all terms, conditions and
+      restrictions, under this Agreement. The Company reserves and shall retain
+      its entire right, title and interest in and to the Application, including
+      all copyrights, trademarks and other intellectual property rights therein
+      or relating thereto, except as expressly granted to you in this Agreement.
+      <br />
+      <br />
+      <u>Collection and Use of Your Information</u> : You acknowledge that when
+      you download, install or use the Application, the Company may use
+      automatic means (including, for example, cookies and web beacons) to
+      collect information about your Mobile Device and about your use of the
+      Application. You also may be required to provide certain information about
+      yourself as a condition to downloading, installing or using the
+      Application or certain of its features or functionality, and the
+      Application may provide you with opportunities to share information about
+      yourself with others. All information we collect through or in connection
+      with this Application is subject to our Privacy Policy. By downloading,
+      installing, using and providing information to or through this
+      Application, you consent to all actions taken by us with respect to your
+      information in compliance with the Privacy Policy.
+      <br />
+      <br />
+      <u>Content and Services</u>: The
+      {` Application may provide you with access to the Company's website
           located at www.thekreatr.com (the "Website") and products and services
           accessible thereon, and certain features, functionality and content
           accessible on or through the Application may be hosted on the Website
@@ -91,8 +102,10 @@ const LegalPage1 = () => {
           acknowledge your acceptance of such Terms of Use and Privacy Policy.
           Any violation of such Terms of Use will also be deemed a violation of
           this Agreement.`}
-          <br/><br/>
-          <u> Updates </u>{`: The Company may from time to time in its sole
+      <br />
+      <br />
+      <u> Updates </u>
+      {`: The Company may from time to time in its sole
           discretion develop and provide Application updates, which may include
           upgrades, bug fixes, patches and other error corrections and/or new
           features (collectively, including related documentation, " Updates").
@@ -108,8 +121,10 @@ const LegalPage1 = () => {
           thereof may not properly operate should you fail to do so. You further
           agree that all Updates will be deemed part of the Application and be
           subject to all terms and conditions of this Agreement. `}
-          <br/><br/>
-          <u>Third Party Materials</u> {`: The Application may display, include or make available
+      <br />
+      <br />
+      <u>Third Party Materials</u>{" "}
+      {`: The Application may display, include or make available
           third-party content (including data, information, applications and
           other products, services and/or materials) or provide links to
           third-party websites or services, including through third-party
@@ -123,8 +138,9 @@ const LegalPage1 = () => {
           are provided solely as a convenience to you and you access and use
           them entirely at your own risk and subject to such third parties'
           terms and conditions.`}
-          <br/><br/>
-           {`Term and Termination: (a) The term of the
+      <br />
+      <br />
+      {`Term and Termination: (a) The term of the
           Agreement commences when you download the Application and will
           continue in effect until terminated by you or the Company as set forth
           in this Section 8. (b) You may terminate this Agreement by deleting
@@ -138,8 +154,10 @@ const LegalPage1 = () => {
           you must cease all use of the Application and delete all copies of the
           Application from your Mobile Device and account. (e) Termination will
           not limit any of the Company's rights or remedies at law or in equity.`}
-          <br/><br/>
-          <u>Disclaimer of Warranties</u> {`: THE APPLICATION IS PROVIDED TO LICENSEE "AS
+      <br />
+      <br />
+      <u>Disclaimer of Warranties</u>{" "}
+      {`: THE APPLICATION IS PROVIDED TO LICENSEE "AS
           IS" AND WITH ALL FAULTS AND DEFECTS WITHOUT WARRANTY OF ANY KIND. TO
           THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, THE COMPANY, ON ITS
           OWN BEHALF AND ON BEHALF OF ITS AFFILIATES AND ITS AND THEIR
@@ -159,25 +177,27 @@ const LegalPage1 = () => {
           EXCLUSION OF OR LIMITATIONS ON IMPLIED WARRANTIES OR THE LIMITATIONS
           ON THE APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO SOME OR ALL OF
           THE ABOVE EXCLUSIONS AND LIMITATIONS MAY NOT APPLY TO YOU.`}
-          <br/><br/>
-          <u>Limitation of Liability </u>: TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO
-          EVENT WILL THE COMPANY OR ITS AFFILIATES, OR ANY OF ITS OR THEIR
-          RESPECTIVE LICENSORS OR SERVICE PROVIDERS, HAVE ANY LIABILITY ARISING
-          FROM OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APPLICATION OR
-          THE CONTENT AND SERVICES FOR: (a) PERSONAL INJURY, PROPERTY DAMAGE,
-          LOST PROFITS, COST OF SUBSTITUTE GOODS OR SERVICES, LOSS OF DATA, LOSS
-          OF GOODWILL, BUSINESS INTERRUPTION, COMPUTER FAILURE OR MALFUNCTION OR
-          ANY OTHER CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL OR
-          PUNITIVE DAMAGES (b) DIRECT DAMAGES IN AMOUNTS THAT IN THE AGGREGATE
-          EXCEED THE AMOUNT ACTUALLY PAID BY YOU FOR THE APPLICATION. THE
-          FOREGOING LIMITATIONS WILL APPLY WHETHER SUCH DAMAGES ARISE OUT OF
-          BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE AND
-          REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE OR THE COMPANY WAS
-          ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT
-          ALLOW CERTAIN LIMITATIONS OF LIABILITY SO SOME OR ALL OF THE ABOVE
-          LIMITATIONS OF LIABILITY MAY NOT APPLY TO YOU. 
-          <br/><br/> 
-          <u>Indemnification</u> {`: You
+      <br />
+      <br />
+      <u>Limitation of Liability </u>: TO THE FULLEST EXTENT PERMITTED BY
+      APPLICABLE LAW, IN NO EVENT WILL THE COMPANY OR ITS AFFILIATES, OR ANY OF
+      ITS OR THEIR RESPECTIVE LICENSORS OR SERVICE PROVIDERS, HAVE ANY LIABILITY
+      ARISING FROM OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APPLICATION
+      OR THE CONTENT AND SERVICES FOR: (a) PERSONAL INJURY, PROPERTY DAMAGE,
+      LOST PROFITS, COST OF SUBSTITUTE GOODS OR SERVICES, LOSS OF DATA, LOSS OF
+      GOODWILL, BUSINESS INTERRUPTION, COMPUTER FAILURE OR MALFUNCTION OR ANY
+      OTHER CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL OR PUNITIVE
+      DAMAGES (b) DIRECT DAMAGES IN AMOUNTS THAT IN THE AGGREGATE EXCEED THE
+      AMOUNT ACTUALLY PAID BY YOU FOR THE APPLICATION. THE FOREGOING LIMITATIONS
+      WILL APPLY WHETHER SUCH DAMAGES ARISE OUT OF BREACH OF CONTRACT, TORT
+      (INCLUDING NEGLIGENCE) OR OTHERWISE AND REGARDLESS OF WHETHER SUCH DAMAGES
+      WERE FORESEEABLE OR THE COMPANY WAS ADVISED OF THE POSSIBILITY OF SUCH
+      DAMAGES. SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS OF LIABILITY
+      SO SOME OR ALL OF THE ABOVE LIMITATIONS OF LIABILITY MAY NOT APPLY TO YOU.
+      <br />
+      <br />
+      <u>Indemnification</u>{" "}
+      {`: You
           agree to indemnify, defend and hold harmless the Company and its
           officers, directors, employees, agents, affiliates, successors and
           assigns from and against any and all losses, damages, liabilities,
@@ -187,59 +207,64 @@ const LegalPage1 = () => {
           use or misuse of the Application or your breach of this Agreement.
           Furthermore, you agree that the Company assumes no responsibility for
           the content you submit or make available through this Application.`}
-          <br/><br/>
-          <u>Export Regulation</u>: The Application may be subject to certain export
-          control laws. You shall not, directly or indirectly, export, re-export
-          or release the Application to, or make the Application accessible
-          from, any jurisdiction or country to which export, re-export or
-          release is prohibited by law, rule or regulation. You shall comply
-          with all applicable laws, regulations and rules, and complete all
-          required undertakings (including obtaining any necessary export
-          license or other governmental approval), prior to exporting,
-          re-exporting, releasing or otherwise making the Application available.
-          <br/><br/>
-          <u>Severability</u> : If any provision of this Agreement is illegal or
-          unenforceable under applicable law, the remainder of the provision
-          will be amended to achieve as closely as possible the effect of the
-          original term and all other provisions of this Agreement will continue
-          in full force and effect. 
-          <br/><br/>
-          <u>Governing Law</u> : This Agreement is governed by
-          and construed in accordance with the laws of Bengaluru, Karnataka,
-          without giving effect to any choice or conflict of law provision or
-          rule. Any legal suit, action or proceeding arising out of or related
-          to this Agreement or the Application shall be instituted exclusively
-          in the courts of the Bengaluru, Karnataka, although we retain the
-          right to bring any suit, action or proceeding against you for breach
-          of the Agreement in your jurisdiction of residence or any other
-          relevant jurisdiction. You waive any and all objections to the
-          exercise of jurisdiction over you by such courts and to venue in such
-          courts.
-          <br/><br/>
-          <u>Limitation of Time to File Claims</u> : ANY CAUSE OF ACTION OR
-          CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE
-          APPLICATION MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF
-          ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS
-          PERMANENTLY BARRED.
-          <br/><br/>
-           <u>Entire Agreement</u> : This End User Licence Agreement,
-          our Terms & Conditions, Terms of Sale, Refund and Cancellation Policy,
-          and our Privacy Policy constitute the entire agreement between you and
-          the Company with respect to the Application and supersede all prior or
-          contemporaneous understandings and agreements, whether written or
-          oral, with respect to the Application. 
-          <br/><br/>
-          <u>Waiver</u> : No failure to exercise,
-          and no delay in exercising, on the part of either party, any right or
-          any power hereunder shall operate as a waiver thereof, nor shall any
-          single or partial exercise of any right or power hereunder preclude
-          further exercise of that or any other right hereunder. In the event of
-          a conflict between this Agreement and any applicable purchase or other
-          terms, the terms of this Agreement shall govern.
-          <br/><br/>
-           © Kreatr All rights reserved | Last Modified: 1 November 2023
-        </div>
-  )
-}
+      <br />
+      <br />
+      <u>Export Regulation</u>: The Application may be subject to certain export
+      control laws. You shall not, directly or indirectly, export, re-export or
+      release the Application to, or make the Application accessible from, any
+      jurisdiction or country to which export, re-export or release is
+      prohibited by law, rule or regulation. You shall comply with all
+      applicable laws, regulations and rules, and complete all required
+      undertakings (including obtaining any necessary export license or other
+      governmental approval), prior to exporting, re-exporting, releasing or
+      otherwise making the Application available.
+      <br />
+      <br />
+      <u>Severability</u> : If any provision of this Agreement is illegal or
+      unenforceable under applicable law, the remainder of the provision will be
+      amended to achieve as closely as possible the effect of the original term
+      and all other provisions of this Agreement will continue in full force and
+      effect.
+      <br />
+      <br />
+      <u>Governing Law</u> : This Agreement is governed by and construed in
+      accordance with the laws of Bengaluru, Karnataka, without giving effect to
+      any choice or conflict of law provision or rule. Any legal suit, action or
+      proceeding arising out of or related to this Agreement or the Application
+      shall be instituted exclusively in the courts of the Bengaluru, Karnataka,
+      although we retain the right to bring any suit, action or proceeding
+      against you for breach of the Agreement in your jurisdiction of residence
+      or any other relevant jurisdiction. You waive any and all objections to
+      the exercise of jurisdiction over you by such courts and to venue in such
+      courts.
+      <br />
+      <br />
+      <u>Limitation of Time to File Claims</u> : ANY CAUSE OF ACTION OR CLAIM
+      YOU MAY HAVE ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE
+      APPLICATION MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF
+      ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY
+      BARRED.
+      <br />
+      <br />
+      <u>Entire Agreement</u> : This End User Licence Agreement, our Terms &
+      Conditions, Terms of Sale, Refund and Cancellation Policy, and our Privacy
+      Policy constitute the entire agreement between you and the Company with
+      respect to the Application and supersede all prior or contemporaneous
+      understandings and agreements, whether written or oral, with respect to
+      the Application.
+      <br />
+      <br />
+      <u>Waiver</u> : No failure to exercise, and no delay in exercising, on the
+      part of either party, any right or any power hereunder shall operate as a
+      waiver thereof, nor shall any single or partial exercise of any right or
+      power hereunder preclude further exercise of that or any other right
+      hereunder. In the event of a conflict between this Agreement and any
+      applicable purchase or other terms, the terms of this Agreement shall
+      govern.
+      <br />
+      <br />© Kreatr All rights reserved | Last Modified: 1 November 2023
+    </div>
+  );
+};
 
-export default LegalPage1
+export default LegalPage1;

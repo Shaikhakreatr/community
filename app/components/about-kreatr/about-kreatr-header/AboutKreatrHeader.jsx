@@ -56,7 +56,7 @@ const AboutKreatrHeader = () => {
       </div>
       <div className="ml-[56px] mt-[20px] flex justify-center sm:ml-0 sm:mt-[50px] lg:mr-[130px]">
         <Link href="/join-our-klan">
-        <div className="page-subhead kreatr-btn h-[32px] w-[114px] rounded-[40px] bg-black pt-[7px] text-center text-[12px] hover:border hover:border-black hover:bg-transparent hover:text-black lg:h-[58px] lg:w-[251px] lg:pt-[14px] lg:text-[18px] xl:text-[24px]">
+        <div className="page-subhead flex justify-center items-center kreatr-btn h-[32px] w-[114px] rounded-[40px] bg-black  text-center text-[12px] hover:border hover:border-black hover:bg-transparent hover:text-black lg:h-[58px] lg:w-[251px]  lg:text-[18px] xl:text-[24px]">
           Join Our Initiative
         </div>
         </Link>

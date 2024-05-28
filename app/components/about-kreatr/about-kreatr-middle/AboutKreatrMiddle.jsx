@@ -12,7 +12,7 @@ const AboutKreatrMiddle = () => {
       <div className="relative mb-[50px]  mt-[85px]  flex h-[50px] items-center justify-center sm:mb-0 sm:mt-[50px]">
         <div className="flex items-center justify-center sm:mt-24 sm:h-0">
           <Image
-            className=" absolute bottom-[98%] left-[20%] h-[49px] w-[122px] rotate-[-2deg] lg:left-[16%] lg:top-[2%] lg:h-[105px] lg:w-[310px] xl:left-[10%] xl:h-[155px] xl:w-[389px]"
+            className=" absolute bottom-[98%] left-[20%] h-[49px] w-[122px] rotate-[-2deg] lg:left-[14%] lg:top-[2%] lg:h-[105px] lg:w-[310px] xl:left-[10%] xl:h-[155px] xl:w-[389px]"
             src={"/assets/images/about-kreatr/connect-kreatr.svg"}
             alt="connect image"
             height={105}
@@ -26,7 +26,7 @@ const AboutKreatrMiddle = () => {
             width={350}
           />
           <Image
-            className="absolute top-[-5%] h-[45px] w-[103px] rotate-[-2deg] lg:left-[56%] lg:top-[6%] lg:h-[105px] lg:w-[320px]  xl:left-[66%] xl:h-[145px] xl:w-[328px]"
+            className="absolute top-[-5%] h-[45px] w-[103px] rotate-[-2deg] lg:left-[58%] lg:top-[6%] lg:h-[105px] lg:w-[320px]  xl:left-[66%] xl:h-[145px] xl:w-[328px]"
             src={"/assets/images/about-kreatr/create-kreatr.svg"}
             alt="create image"
             height={105}

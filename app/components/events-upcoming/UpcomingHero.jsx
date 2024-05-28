@@ -89,13 +89,13 @@ const UpcomingHero = ({upcomingData}) => {
               {upcomingData.heading}
             </h1>
             <div className="my-[10px] flex sm:mb-[20px] sm:mt-[20px]">
-              <div className="content-neue mr-3 h-[14px] w-[46px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
+              <div className="content-neue mr-3 h-[14px] w-[46px] rounded-[24px] border border-black flex justify-center items-center text-center text-[10px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 h-[14px] w-[36px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
+              <div className="content-neue mr-3 h-[14px] w-[36px] rounded-[24px] border border-black flex justify-center items-center text-center text-[10px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 h-[14px] w-[110px] rounded-[24px] border border-black pb-[16px] text-center text-[10px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-3 h-[14px] w-[110px] rounded-[24px] border border-black flex justify-center items-center text-center text-[10px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>

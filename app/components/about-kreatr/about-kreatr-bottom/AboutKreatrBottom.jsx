@@ -46,7 +46,7 @@ const AboutKreatrBottom = () => {
         </p>
       </div>
       <div className="mt-[80px] hidden sm:block">
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
@@ -136,7 +136,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(3)}>
             <div
               className={`${styles.card} ${flippedIndices[3] ? styles.flipped : ""}`}
@@ -223,7 +223,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
+        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}

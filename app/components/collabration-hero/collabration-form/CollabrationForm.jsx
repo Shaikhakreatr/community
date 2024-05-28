@@ -19,7 +19,7 @@ const CollabrationForm = () => {
       name: "",
       phoneNumber: "",
       email: "",
-      collaborationType: "Speakers",
+      collaborationType: "",
     },
 
     validate: {
@@ -74,7 +74,7 @@ const CollabrationForm = () => {
               input: styles.dropDown,
             }}
             classNames={{ input: styles.selectInput }}
-            defaultValue="Speakers"
+            placeholder="Choose type"
             data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
 
             {...form.getInputProps("collaborationType")}

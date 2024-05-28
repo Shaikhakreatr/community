@@ -27,13 +27,13 @@ const PastHero = ({pastData}) => {
                 {pastData.heading}
               </h1>
               <div className="sm:mb-[20px] sm:mt-[20px] my-[10px] flex">
-                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[46px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
+                <div className="content-neue flex justify-center items-center mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[46px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
                   {pastData.sessionType}
                 </div>
-                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[36px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
+                <div className="content-neue flex justify-center items-center mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[36px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
                   {pastData.duration}
                 </div>
-                <div className="content-neue pb-[16px] mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[110px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+                <div className="content-neue flex justify-center items-center mr-3 rounded-[24px] border border-black text-center text-[10px] h-[14px] w-[110px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                   Speaker: {pastData.speakerName}
                 </div>
               </div>
