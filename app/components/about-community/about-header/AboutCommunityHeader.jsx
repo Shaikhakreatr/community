@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutCommunityHeader = () => {
   return (
-    <div className="mt-[30px]">
+    <div className="lg:mt-[30px]">
       <h1 className="page-heading text-center text-[48px] sm:text-[64px] lg:text-[86px] xl:text-[96px]">
         KNOW OUR COMMUNITY
       </h1>
