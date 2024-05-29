@@ -48,7 +48,7 @@ const AboutKreatrMiddle = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center">
           <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:gap-[68px] sm:grid  xl:gap-[100px]">
-            <div className="kreatr-box1 h-[323px] w-[390px] px-[52px] pt-[150px] sm:p-[35px] sm:h-[240px] sm:w-[350px] lg:h-[340px] lg:w-[650px] lg:p-[78px] xl:h-[364px] xl:w-[669px]">
+            <div className="kreatr-box1 h-[323px] w-[390px] px-[52px] pt-[150px] sm:p-[35px] sm:h-[240px] sm:w-[350px] lg:h-[340px] lg:w-[620px] lg:p-[78px] xl:h-[364px] xl:w-[669px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DIRECTION
               </h1>
@@ -69,16 +69,16 @@ const AboutKreatrMiddle = () => {
             </div>
           </div>
           <div className="relative mt-[195px] justify-end sm:mt-[50px]  sm:gap-[68px]  sm:flex  xl:gap-[100px]">
-            <div className="absolute left-[9%] top-[-46%] sm:top-0 sm:left-[5%] lg:left-[10%] xl:left-[4%]">
+            <div className="absolute left-[9%] top-[-46%] sm:top-0 sm:left-[5%] lg:left-[4%] xl:left-[4%]">
               <Image
-                className="h-[271px] w-[320px] rounded-[15px]  sm:h-[240px] sm:w-[350px] object-cover object-center lg:h-[340px] lg:w-[650px] xl:h-[364px] xl:w-[650px]"
+                className="h-[271px] w-[320px] rounded-[15px]  sm:h-[240px] sm:w-[350px] object-cover object-center lg:h-[340px] lg:w-[550px] xl:h-[364px] xl:w-[650px]"
                 src={"/assets/images/about-kreatr/kreatr-img2.jpg"}
                 alt="Kreatr image"
                 height={650}
                 width={340}
               />
             </div>
-            <div className="kreatr-box2 h-[323px] w-[390px] sm:p-[35px]  sm:h-[240px] sm:w-[350px] px-[52px] pt-[150px] lg:h-[340px] lg:w-[520px] lg:p-[72px] xl:h-[364px] xl:w-[690px]">
+            <div className="kreatr-box2 h-[323px] w-[390px] sm:p-[35px]  sm:h-[240px] sm:w-[350px] px-[52px] pt-[150px] lg:h-[340px] lg:w-[620px] lg:p-[72px] xl:h-[364px] xl:w-[690px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DESTINY
               </h1>
