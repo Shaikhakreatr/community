@@ -137,35 +137,6 @@ export const sellers = [
   },
 ];
 
-// events past main page data
-
-export const testimonials =[
-  {
-    description: "“1It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  },
-  {
-    description: "“2It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  },
-  {
-    description: "“3It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  },
-  {
-    description: "“4It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  },
-  {
-    description: "“5It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  },
-  {
-    description: "“6It was very creative problem finding and problem solving, making a prototype for the final presentation all were nicely presented and explained, we had fun interacting with others!”",
-    peoples:' Kalpak, Design Thinking Workshop at SJB School of Architecture'
-  }
-  
-]
 
 // about kreatr data
 

@@ -21,7 +21,7 @@ const AboutKreatrBottom = () => {
   };
 
   return (
-    <div className="mb-[40px] mt-[40px]">
+    <div className="mb-[40px] mt-[40px] sm:mt-0 sm:mb-[50px]">
       <div>
         <h1 className="page-heading text-center text-[40px] lg:text-[86px] xl:text-[96px]">
           Meet the Humans of
@@ -36,7 +36,7 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className="content-neue flex flex-col items-center justify-center text-[14px] leading-[18px] sm:mt-[40px] lg:text-[26px] lg:leading-[32px] xl:text-[30px] xl:leading-[36px]">
+      <div className="content-neue flex flex-col items-center justify-center text-[14px] leading-[18px] lg:mt-[40px] lg:text-[26px] lg:leading-[32px] xl:text-[30px] xl:leading-[36px]">
         <p className="text-center">
           {`PS: Can't figure out what their descriptions mean?`}
           <br /> {`Here's a link to the`}{" "}
@@ -46,7 +46,7 @@ const AboutKreatrBottom = () => {
         </p>
       </div>
       <div className="mt-[80px] hidden sm:block">
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
@@ -136,7 +136,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(3)}>
             <div
               className={`${styles.card} ${flippedIndices[3] ? styles.flipped : ""}`}
@@ -223,7 +223,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-[50px] sm:mt-[50px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}

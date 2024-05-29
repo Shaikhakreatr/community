@@ -18,7 +18,7 @@ const BlogListingHero = () => {
         throw new Error('Failed to fetch data');
       }
       const data = await response.json();
-      console.log(data[0].coverLetter)
+      console.log(data[0].coverImg)
       setBlogsData(data[0]);
       setBlogsDataMob(data)
     } catch (error) {
@@ -56,12 +56,12 @@ const BlogListingHero = () => {
         <div className="flex w-fit gap-5 mt-4">
         <div className="first-column">
         
-          <Link href='/blogs-details'>
+          <Link href={`/blogs/${blogsData.id}`}>
           <div className=" w-[37.1875rem] h-[39.3125rem] rounded-[24px] border border-selectedBorder">
             <div
               className="w-full h-[25.9375rem] rounded-t-[24px]"
               style={{
-                backgroundImage: `url(${blogsData.coverLetter})`,
+                backgroundImage: `url(${blogsData.coverImg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -87,12 +87,12 @@ const BlogListingHero = () => {
           </div>
           </Link>
 
-          <Link href='/blogs-details'>
+          <Link href={`/blogs/${blogsData.id}`}>
           <div className=" w-[37.1875rem] h-[53.5rem] rounded-[24px] border border-selectedBorder">
             <div
               className="w-full h-[39rem] rounded-t-[24px]"
               style={{
-                backgroundImage: `url(${blogsData.coverLetter})`,
+                backgroundImage: `url(${blogsData.coverImg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -125,12 +125,12 @@ const BlogListingHero = () => {
 
         </div>
         <div className="second-column w-fit ">
-          <Link href='/blogs-details'>
+          <Link href={`/blogs/${blogsData.id}`}>
           <div className=" w-[31.375rem] h-[32.8125rem] rounded-[24px] border border-selectedBorder">
             <div
               className="w-full h-[20.25rem] rounded-t-[24px]"
               style={{
-                backgroundImage: `url(${blogsData.coverLetter})`,
+                backgroundImage: `url(${blogsData.coverImg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -155,12 +155,12 @@ const BlogListingHero = () => {
             </div>
           </div>
           </Link>
-          <Link href='/blogs-details'>
+          <Link href={`/blogs/${blogsData.id}`}>
           <div className=" w-[31.375rem] h-[29.0625rem] rounded-[24px] border border-selectedBorder">
             <div
               className="w-full h-[16.0625rem] rounded-t-[24px]"
               style={{
-                backgroundImage: `url(${blogsData.coverLetter})`,
+                backgroundImage: `url(${blogsData.coverImg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -185,12 +185,12 @@ const BlogListingHero = () => {
             </div>
           </div>
           </Link>
-          <Link href='/blogs-details'>
+          <Link href={`/blogs/${blogsData.id}`}>
           <div className=" w-[31.375rem] h-[29.0625rem] border border-selectedBorder rounded-[24px]">
             <div
               className=" w-full h-[16.0625rem] rounded-t-[24px]"
               style={{
-                backgroundImage: `url(${blogsData.coverLetter})`,
+                backgroundImage: `url(${blogsData.coverImg})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -217,12 +217,12 @@ const BlogListingHero = () => {
           </Link>
         </div>
       </div>
-      <Link href='/blogs-details'>
+      <Link href={`/blogs/${blogsData.id}`}>
       <div className=" h-[37.5rem] w-[70.5625rem] rounded-[24px] border border-selectedBorder mt-[20px] ">
         <div
           className=" w-full h-[25.5625rem] rounded-t-[24px] "
           style={{
-            backgroundImage: `url(${blogsData.coverLetter})`,
+            backgroundImage: `url(${blogsData.coverImg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",

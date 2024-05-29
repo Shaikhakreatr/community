@@ -381,5 +381,41 @@ h1{
   font-weight: 800;
 }
 
+/* events past main page testimonials section */
 
+/* Add this to your globals.css or in the component's CSS if you prefer */
 
+/* globals.css */
+
+/* globals.css */
+
+.carousel-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.carousel-inner {
+  display: flex;
+  transform: translateX(calc(-33.33% * var(--current-index, 0)));
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  background-color: #F1E9C3;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.center-item {
+  height: 283px;
+  width: 468px;
+}
+
+.side-item {
+  height: 187px;
+  width: 310px;
+  opacity: 0.7;
+}
