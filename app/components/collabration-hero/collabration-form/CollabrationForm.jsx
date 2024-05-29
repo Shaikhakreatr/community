@@ -57,7 +57,7 @@ const CollabrationForm = () => {
   };
 
   return (
-    <div className="px-[30px] py-[35px] sm:px-[95px] sm:py-[50px]">
+    <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
       <div className="">
         <h1 className="content-neue-medium text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
@@ -134,7 +134,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden sm:block" />
-          <div className="mt-[25px] items-center  text-center sm:flex lg:gap-3  xl:gap-5">
+          <div className="mt-[25px] sm:mt-[10px] lg:mt-[25px] items-center  text-center sm:flex lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}
