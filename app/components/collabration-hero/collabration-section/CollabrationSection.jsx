@@ -1,24 +1,27 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import { Tabs } from "@mantine/core";
 import { speakers } from "@/constants/constants";
 import { sponsors } from "@/constants/constants";
 import { spaces } from "@/constants/constants";
 import { sellers } from "@/constants/constants";
 import CollabrationForm from "../collabration-form/CollabrationForm";
+import styles from './CollabrationSection.module.css'
 
 const CollabrationSection = () => {
+  const [tab, setTab] = useState("speakers");
+
   return (
     <div>
       <div>
         <Tabs variant="pills" radius="lg" defaultValue="speakers">
           <div className="mt-[50px] flex flex-col items-center justify-center sm:mt-[80px]">
             <div className="flex justify-center">
-              <Tabs.List>
-                <Tabs.Tab value="speakers">Speakers</Tabs.Tab>
-                <Tabs.Tab value="sponsors">Sponsors</Tabs.Tab>
-                <Tabs.Tab value="spaces">Spaces</Tabs.Tab>
-                <Tabs.Tab value="sellers">Sellers</Tabs.Tab>
+              <Tabs.List >
+                <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'speakers' && styles.activeTab}`} onClick={()=>(setTab('speakers'))} value="speakers">Speakers</Tabs.Tab>
+                <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'sponsors' && styles.activeTab}`} onClick={()=>(setTab('sponsors'))} value="sponsors">Sponsors</Tabs.Tab>
+                <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'spaces' && styles.activeTab}`} onClick={()=>(setTab('spaces'))} value="spaces">Spaces</Tabs.Tab>
+                <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'sellers' && styles.activeTab}`} onClick={()=>(setTab('sellers'))} value="sellers">Sellers</Tabs.Tab>
               </Tabs.List>
             </div>
 

@@ -1,0 +1,17 @@
+.notActiveTab {
+    border: 1px solid #2A2A2A;
+    background-color: transparent;
+    color: #2A2A2A;
+    font-family: 'Neue Montreal';;
+    margin-right: 10px;
+  }
+  
+  .activeTab {
+    border: none;
+    margin-right: 10px;
+    border: 1px solid black;
+    background-color: #ABF4AB;
+    color: black;
+    font-family: 'Neue Montreal';
+  }
+  
