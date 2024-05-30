@@ -577,7 +577,7 @@ const BlogListingHero = () => {
         {isLoadMoreAvailable && (
           <div
             onClick={loadMoreData}
-            className=" flex h-[3.8125rem] w-[13.5625rem] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center text-loadMore"
+            className=" flex lg:h-[3.8125rem] lg:w-[13.5625rem] sm:h-[50px] sm:w-[180px] h-[40px] w-[150px] content-neue-medium xl:text-[30px] lg:text-[28px] sm:text-[24px] text-[18px] text-[#FFF641] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center"
           >
             Load more
           </div>

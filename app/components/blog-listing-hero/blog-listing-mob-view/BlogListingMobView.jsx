@@ -7,12 +7,12 @@ const BlogListingMobView = ({ blogsData }) => {
   return (
     <div className=" w-full flex flex-col justify-center items-center gap-4">
       {blogsData.map((item, index) => (
-        <Link key={index} href='/blogs-details'>
+        <Link key={index} href={`/blogs/${item.id}`}>
         <div  className=" w-[21rem] h-[14.375rem] rounded-[7.13px] border border-selectedBorder">
           <div
             className="w-full h-[9.8125rem] rounded-t-[7.13px]"
             style={{
-              backgroundImage: `url(${item.coverLetter})`,
+              backgroundImage: `url(${item.coverImg})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -24,7 +24,7 @@ const BlogListingMobView = ({ blogsData }) => {
             </h1>
             <div className="flex items-center justify-between">
               <div className="flex gap-2 justify-center items-center text-center">
-                <p className="content text-[8px]">Jevin Mary | {item.date}</p>
+                <p className="content text-[8px]">{item.writer} | {item.date}</p>
               </div>
               <div className="">
                 <Image
