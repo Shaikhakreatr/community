@@ -39,7 +39,7 @@ const JoinKlan = () => {
       <div className="relative flex h-[80px] w-auto justify-center">
         <img
           src="/assets/images/JOK_page/left-arrow.svg"
-          className="absolute sm:left-[10%] left-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
+          className="absolute sm:left-[10%] lg:left-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="left arrow"
         />
         <img
@@ -49,7 +49,7 @@ const JoinKlan = () => {
         />
         <img
           src="/assets/images/JOK_page/right-arrow.svg"
-          className="absolute sm:right-[10%] right-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
+          className="absolute sm:right-[10%] lg:right-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="right arrow"
         />
       </div>
@@ -67,7 +67,7 @@ const JoinKlan = () => {
           </div>
         </Link>
         <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
-          <div className="whatsapp-img absolute sm:top-[-8%] sm:left-[37%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
+          <div className="whatsapp-img absolute sm:top-[-8%] sm:left-[37%] lg:left-[40%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
               className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
@@ -92,7 +92,7 @@ const JoinKlan = () => {
         </Link>
       </div>
       <div className="relative mt-[635px] sm:mt-[174px] lg:mt-[226px] xl:mt-[160px]">
-        <h1 className=" page-heading absolute right-[20%] top-[-18%] sm:top-[-25%] sm:left-[20%] text-center text-[35px] lg:right-[37%] lg:text-[55px] xl:right-[37%] xl:top-[-12%] xl:text-[64px]">
+        <h1 className=" page-heading absolute right-[20%] top-[-18%] sm:top-[-25%] sm:left-[20%] text-center text-[35px] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
           WE CELEBRATE THE
         </h1>
         <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] lg:text-[95px] xl:mt-[50px] xl:text-[110px] ">

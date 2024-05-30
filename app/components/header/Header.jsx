@@ -85,7 +85,7 @@ const Header = () => {
                 width={26}
               />
             </div>
-            <div className="flex items-center justify-center lg:mt-[20px] xl:mt-10">
+            <div className="flex items-center justify-center mt-[-4px] sm:mt-[-5px]  lg:mt-[20px] xl:mt-10">
               <div className="absolute left-[29%] sm:top-[32%] sm:left-[37%] top-[24%] lg:left-[35%] lg:top-[28%] xl:left-[35%] xl:top-[30%] ">
                 <Image
                   className="h-[68px] w-[130px] sm:h-[98px] sm:w-[160px] lg:h-[68px] lg:w-[120px]  xl:h-[88px] xl:w-[150px]"
@@ -160,7 +160,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="relative pointer-events-none mt-[15px] sm:mt-[100px] h-[500px] w-[352px] sm:h-[640px] sm:w-[480px] rotate-[-3deg] lg:h-[430px] lg:w-[340px] xl:h-[676px] xl:w-[466px]"
+                className="relative pointer-events-none mt-[15px] sm:mt-[100px] lg:mt-0 h-[500px] w-[352px] sm:h-[640px] sm:w-[480px] rotate-[-3deg] lg:h-[430px] lg:w-[340px] xl:h-[676px] xl:w-[466px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}
