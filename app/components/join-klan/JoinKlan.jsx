@@ -67,7 +67,7 @@ const JoinKlan = () => {
           </div>
         </Link>
         <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
-          <div className="whatsapp-img absolute sm:top-0 sm:left-[37%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
+          <div className="whatsapp-img absolute sm:top-[-8%] sm:left-[37%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
               className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
