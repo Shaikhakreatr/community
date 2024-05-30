@@ -1,5 +1,6 @@
 "use client";
 import React, { useState,useRef } from "react";
+import { useParams } from 'next/navigation';
 import {
   useForm,
   isEmail,
@@ -11,7 +12,8 @@ import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
 const UpcomingHero = ({upcomingData}) => {
-  
+  const { id } = useParams();
+
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
@@ -55,10 +57,24 @@ const UpcomingHero = ({upcomingData}) => {
     setForms(newForms);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
+    console.log(id);
     // Add form submission logic here
     console.log("Submitted forms:", forms);
+    try {
+      const res = await fetch(`https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`,{
+        method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(forms),
+      })
+      
+      
+    } catch (error) {
+      
+    }
   };
   const targetRef = useRef(null);
 
@@ -294,3 +310,4 @@ const UpcomingHero = ({upcomingData}) => {
 };
 
 export default UpcomingHero;
+
