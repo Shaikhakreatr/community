@@ -71,14 +71,14 @@
 @media (min-width: 1280px) and (max-width: 1439px){
     .controlBox1{
         font-family: 'Neue Montreal Bold';
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 200;
         padding: 10px;
-        min-height: 98px;
+        min-height: 88px;
         }
         .controlBox2{
             font-family: 'Neue Montreal Bold';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 200;
             padding: 10px;
             }
