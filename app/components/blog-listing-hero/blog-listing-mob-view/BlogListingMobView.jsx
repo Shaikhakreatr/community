@@ -2,11 +2,11 @@ import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
 
-const BlogListingMobView = ({ blogsDataMob }) => {
-  console.log(blogsDataMob);
+const BlogListingMobView = ({ blogsData }) => {
+  console.log(blogsData);
   return (
     <div className=" w-full flex flex-col justify-center items-center gap-4">
-      {blogsDataMob.map((item, index) => (
+      {blogsData.map((item, index) => (
         <Link key={index} href='/blogs-details'>
         <div  className=" w-[21rem] h-[14.375rem] rounded-[7.13px] border border-selectedBorder">
           <div
