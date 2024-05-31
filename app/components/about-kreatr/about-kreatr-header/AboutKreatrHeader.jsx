@@ -17,20 +17,12 @@ const AboutKreatrHeader = () => {
         </p>
       </div>
       <div className="flex justify-center">
-        <div className="mx-[20px] mt-[45px] flex items-start justify-center gap-[28px] sm:mx-[60px] lg:mt-[100px] sm:mt-[55px] sm:gap-[90px]">
+        <div className="mx-[20px] mt-[45px] flex items-start justify-center gap-[28px] sm:mx-[60px] lg:mt-[50px] sm:mt-[55px] sm:gap-[90px]">
           <div className="items-center sm:flex">
             <h1 className="page-heading mb-[16px] text-[32px] leading-[28px] sm:leading-[38px] sm:mb-0 sm:text-[48px] lg:text-[58px] lg:leading-[48px] xl:text-[64px] xl:leading-[52px]">
               How DId
               <br /> We Start?
             </h1>
-            {/* removed this image */}
-            {/* <Image
-              className="h-[44px] w-[44px] lg:h-[96px] lg:w-[99px]"
-              src={"/assets/images/about-kreatr/about-kreatr-arrow.svg"}
-              alt="arrow img"
-              height={96}
-              width={99}
-            /> */}
           </div>
           <div className="content-neue w-[56%] text-[14px] leading-[18px] sm:w-[60%] lg:text-[24px] lg:leading-[32px] xl:text-[28px]">
             <p>
@@ -57,7 +49,7 @@ const AboutKreatrHeader = () => {
       </div>
       <div className="ml-[56px] mt-[20px] flex justify-center sm:ml-[70px] sm:mt-[50px] lg:mr-[130px]">
         <Link href="/join-our-klan">
-        <div className="page-subhead xl:mr-[80px] lg:mr-0  flex justify-center items-center kreatr-btn h-[32px] w-[114px] rounded-[40px] bg-black  text-center text-[12px] hover:border hover:border-black hover:bg-transparent hover:text-black sm:h-[45px] sm:text-[16px] sm:w-[180px] lg:h-[58px] lg:w-[251px]  lg:text-[18px] xl:text-[24px]">
+        <div className="page-subhead xl:mr-[80px] lg:mr-0  flex justify-center items-center kreatr-btn h-[32px] w-[114px] rounded-[40px] bg-black  text-center text-[12px] sm:hover:border sm:hover:border-black sm:hover:bg-transparent sm:hover:text-black sm:h-[45px] sm:text-[16px] sm:w-[180px] lg:h-[58px] lg:w-[251px]  lg:text-[18px] xl:text-[24px]">
           Join Our Initiative
         </div>
         </Link>

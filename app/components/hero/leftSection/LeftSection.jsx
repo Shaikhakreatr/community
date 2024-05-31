@@ -142,7 +142,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               adjective(s)
             </p>
-            <p className="font-neueMonteral carousel text-16 lg:text-[1.25rem] lg:leading-6 xl:text-[28px] xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 lg:text-[1.25rem] lg:leading-6 xl:text-[24px] xl:leading-9 ">
               Innovative, creative, dynamic, supportive, knowledge hub,
               inclusive, and lots of fun.
             </p>
