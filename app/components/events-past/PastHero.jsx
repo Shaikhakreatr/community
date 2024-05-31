@@ -70,7 +70,7 @@ const PastHero = ({pastData}) => {
               {pastData.images.map((item,index)=>(
                 <img
                 key={index}
-                className="mr-1 h-[106px] w-[106px] sm:h-[250px] sm:w-[250px] sm:mr-4 lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                className="mr-1 h-[106px] object-cover object-center w-[106px] sm:h-[250px] sm:w-[250px] sm:mr-4 lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
                 src={item}
                 alt="events img"
               />
