@@ -36,7 +36,7 @@ const EventsHero = () => {
         {/* upcoming heading section */}
 
         <Tabs.Panel value="upcoming">
-          <div className="page-heading relative mt-[40px] sm:mt-[70px] sm:h-[50px]">
+          <div className="page-heading relative mt-[40px] sm:mt-[70px] sm:h-[50px] text-center">
             <h1 className="text-center text-[40px] leading-[32px] sm:text-[70px] sm:leading-[0px] lg:text-[90px] xl:text-[110px] ">
               Kreatr’s
               <br className="sm:hidden" /> very own

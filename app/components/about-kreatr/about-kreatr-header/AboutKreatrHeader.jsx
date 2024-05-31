@@ -12,7 +12,7 @@ const AboutKreatrHeader = () => {
         <p className="content-neue text-center text-[16px] italic leading-[18px] sm:text-[18px] lg:text-[22px] lg:leading-[26px] xl:text-[24px]">
           We are a digital ecosystem that encourages
           <br className="block sm:hidden" /> cross-industry
-          <br className="hidden sm:block" /> collaboration and empowers
+           collaboration<br className="hidden sm:block" /> and empowers
           <br className="block sm:hidden" /> creators like you.
         </p>
       </div>
@@ -23,13 +23,14 @@ const AboutKreatrHeader = () => {
               How DId
               <br /> We Start?
             </h1>
-            <Image
+            {/* removed this image */}
+            {/* <Image
               className="h-[44px] w-[44px] lg:h-[96px] lg:w-[99px]"
               src={"/assets/images/about-kreatr/about-kreatr-arrow.svg"}
               alt="arrow img"
               height={96}
               width={99}
-            />
+            /> */}
           </div>
           <div className="content-neue w-[56%] text-[14px] leading-[18px] sm:w-[60%] lg:text-[24px] lg:leading-[32px] xl:text-[28px]">
             <p>

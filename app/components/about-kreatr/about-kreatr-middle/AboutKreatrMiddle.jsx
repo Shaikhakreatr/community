@@ -35,7 +35,8 @@ const AboutKreatrMiddle = () => {
         </div>
       </div>
       <div className="mt-[30px] flex justify-center sm:mt-[70px] lg:mt-[150px]">
-        <p className="content-neue-medium text-center text-[14px] leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[28px] xl:leading-[32px]">
+        {/* remove text */}
+        {/* <p className="content-neue-medium text-center text-[14px] leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[28px] xl:leading-[32px]">
           Our mission is to build a sustainable community of
           <br className="sm:hidden" /> creatives
           <br className="hidden sm:block" /> who aspire to change the world
@@ -43,7 +44,7 @@ const AboutKreatrMiddle = () => {
           <br className="sm:hidden" /> their designs and
           <br className="hidden sm:block" /> empower fellow creatives from
           <br className="sm:hidden" /> all backgrounds to do the same.
-        </p>
+        </p> */}
       </div>
       <div className="flex justify-center">
         <div className="flex flex-col justify-center">
@@ -97,7 +98,7 @@ const AboutKreatrMiddle = () => {
         </h1>
         <div className="mt-[40px] flex items-start justify-between px-[18px] sm:px-0 lg:mt-[40px] lg:gap-[30px]">
           <div>
-            <p className="page-subhead text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
+            <p className="content-neue text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
               “As designers, we have been hiding
               <br className="sm:hidden" /> our true
               <br className="hidden sm:block" /> potential for too long. It is
@@ -110,22 +111,23 @@ const AboutKreatrMiddle = () => {
             </p>
           </div>
           <div className="sm:mr-[80px]">
-            <Image
+            {/* remove the image */}
+            {/* <Image
               className="h-[40px] w-[60px] lg:h-[80px] lg:w-[80px]"
               src={"/assets/images/about-kreatr/inverted-commas.svg"}
               alt="inverted commas"
               height={80}
               width={80}
-            />
+            /> */}
           </div>
         </div>
         <div className="mt-[20px] flex justify-end sm:mt-0">
           <div className="w-[64%] sm:w-[56%]">
-            <p className="page-subhead text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
-              {`“We're a bunch of crazy people who want to show you”`}
+            <p className="content-neue text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
+              {`“We're a bunch of crazy people who want to show you`}
             </p>
-            <p className="page-subhead text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">{`what we can do.
-            Welcome to the community!`}</p>
+            <p className="content-neue text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">{`what we can do.
+            Welcome to the community!"`}</p>
             <p className="page-subhead mt-[10px] text-[14px] leading-[18px] lg:mt-[20px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
               – Megha Satish
               <br /> Co-founder & Creative Director

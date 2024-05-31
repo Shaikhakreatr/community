@@ -123,7 +123,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               noun
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[28px] xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[24px] xl:leading-9 ">
               A group of people who encourage creative thinking, promote
               cross-industry collaboration, and work towards creating a diverse
               community.
@@ -133,7 +133,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
               verb
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[28px] xl:leading-9 ">
+            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.25rem] xl:text-[24px] xl:leading-9 ">
               A group of like-minded creatives nurturing a community to support
               creatives like you.
             </p>
