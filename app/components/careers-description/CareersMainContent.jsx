@@ -43,30 +43,30 @@ const CareersMainContent = ({ careerData }) => {
             {careerData.location}
           </div>
         </div>
-        <br />
-        <div className="mt-[-10px] sm:mb-4">
+        <br className="sm:block hidden" />
+        <div className="mt-[10px] sm:mt-0 sm:mb-4">
           <p className="content-neue text-[12px] sm:text-[16px] lg:text-[18px] xl:text-[24px]">
             {careerData.description}
           </p>
-          <br />
-          <p className="content-neue-medium mt-[-10px] text-[14px] sm:text-[18px] sm:mt-0 lg:text-[22px] xl:text-[28px]">
+          <br  className="sm:block hidden" />
+          <p className="content-neue-medium mt-[10px]  text-[14px] sm:text-[18px] sm:mt-0 lg:text-[22px] xl:text-[28px]">
             Responsibilities
           </p>
-          <br />
+          <br  className="sm:block hidden" />
           <div>
-            <ul className="content-neue ml-5 mt-[-15px] list-disc text-[12px] sm:text-[16px] sm:ml-5 lg:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:text-[16px] sm:ml-5 lg:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
               {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
-          <br />
-          <p className="content-neue-medium mt-[-10px] text-[14px] sm:text-[18px] sm:mt-0 lg:text-[22px] xl:text-[28px]">
+          <br  className="sm:block hidden" />
+          <p className="content-neue-medium mt-[10px] text-[14px] sm:text-[18px] sm:mt-0 lg:text-[22px] xl:text-[28px]">
             Qualifications
           </p>
-          <br />
+          <br  className="sm:block hidden" />
           <div>
-            <ul className="content-neue ml-5 mt-[-15px] list-disc text-[12px] sm:text-[16px] sm:ml-5 lg:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:text-[16px] sm:ml-5 lg:ml-10 sm:mt-0 lg:text-[18px] xl:text-[24px]">
               {careerData.qualifications.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
