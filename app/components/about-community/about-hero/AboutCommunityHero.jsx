@@ -107,7 +107,7 @@ const AboutCommunityHero = () => {
           </p>
           <div className="mt-[18px] flex items-center justify-center lg:mt-[40px] sm:justify-start">
             <Link href="/join-our-klan">
-              <div className="content-neue-medium JOK-btn mr-2 h-[40px] w-[160px] text-[16px] sm:mr-3 lg:h-[51px] lg:w-[185px] lg:text-[20px] xl:text-[24px]">
+              <div className="content-neue-medium flex justify-center items-center JOK-btn mr-2 h-[40px] w-[160px] text-[16px] sm:mr-3 lg:h-[51px] lg:w-[185px] lg:text-[20px] xl:text-[24px]">
                 Join our Klan
               </div>
             </Link>

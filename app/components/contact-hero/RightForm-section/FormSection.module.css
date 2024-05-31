@@ -47,6 +47,22 @@
     margin-bottom: 4px;
     
 }
+@media (min-width: 640px) and (max-width: 1279px){
+    .formButton {
+        height: 40px;
+        width: 100px;
+        color: #FFFDEE;
+        letter-spacing: 1px;
+    }
+    .formButton:hover {
+        height: 40px;
+        width: 100px;
+        color: black;
+        letter-spacing: 1px;
+        background: transparent;
+        border: 1px solid black;
+    }
+}
 
 
 @media only screen and (max-width: 639px) {
@@ -54,15 +70,7 @@
         height: 40px;
         width: 260px;
         color: #FFFDEE;
-        letter-spacing: 2px;
-    }
-    .formButton:hover{
-        height: 40px;
-        width: 260px;
-        color: black;
-        letter-spacing: 2px;
-        background-color: transparent;
-        border: 1px solid black;
+        letter-spacing: 1px;
     }
     .transparentInput::placeholder{
         color:black;
@@ -119,12 +127,12 @@
         height: 40.16px;
         width: 133.87px;
         color: #FFFDEE;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .formButton:hover {
         height: 40.16px;
         width: 133.87px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         color: black;
         background-color: transparent;
         border: 1px solid black;
@@ -148,12 +156,12 @@
         height: 40.16px;
         width: 133.87px;  
         color: #FFFDEE;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .formButton:hover {
         height: 40.16px;
         width: 133.87px;  
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         color: black;
         background-color: transparent;
         border: 1px solid black;
