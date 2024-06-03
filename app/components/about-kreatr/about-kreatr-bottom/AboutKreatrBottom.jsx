@@ -21,7 +21,7 @@ const AboutKreatrBottom = () => {
   };
 
   return (
-    <div className="mb-[40px] mt-[40px] sm:mt-0 sm:mb-[50px]">
+    <div className="mb-[40px] mt-[40px] sm:mb-[50px] sm:mt-0">
       <div>
         <h1 className="page-heading text-center text-[40px] lg:text-[86px] xl:text-[96px]">
           Meet the Humans of
@@ -36,7 +36,7 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className="content-neue flex flex-col items-center justify-center text-[14px] leading-[18px] lg:mt-[40px] lg:text-[26px] lg:leading-[32px] xl:text-[30px] xl:leading-[36px]">
+      <div className="content-neue sm:flex hidden flex-col items-center justify-center text-[14px] leading-[18px] lg:mt-[40px] lg:text-[26px] lg:leading-[32px] xl:text-[30px] xl:leading-[36px]">
         <p className="text-center">
           {`PS: Can't figure out what their descriptions mean?`}
           <br /> {`Here's a link to the`}{" "}
@@ -46,7 +46,7 @@ const AboutKreatrBottom = () => {
         </p>
       </div>
       <div className="mt-[80px] hidden sm:block">
-        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
@@ -61,19 +61,17 @@ const AboutKreatrBottom = () => {
                 />
               </div>
               <div className={styles.cardBack}>
-                <Link href="https://www.linkedin.com/in/abdulrahimandsgnmkrs/">
-                  <div className={styles.cardBackContent}>
-                    <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
-                      Abdul RahIman
-                    </p>
-                    <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                      CO-FOUNDER
-                    </p>
-                    <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                      Traveller | Change Visualiser | Astrophile | Free Spirited
-                    </p>
-                  </div>
-                </Link>
+                <div className={styles.cardBackContent}>
+                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                    Abdul RahIman
+                  </p>
+                  <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                    CO-FOUNDER
+                  </p>
+                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
+                    Traveller | Change Visualiser | Astrophile | Free Spirited
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -90,21 +88,19 @@ const AboutKreatrBottom = () => {
                   height={290}
                 />
               </div>
-                <div className={styles.cardBack}>
-              <Link href="https://www.linkedin.com/in/meghasatish/">
-                  <div className={styles.cardBackContent}>
-                    <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
-                      Megha SatIsh
-                    </p>
-                    <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                      CO-FOUNDER
-                    </p>
-                    <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                      Conceptualiser | Detail Freak | Leader | Gym Rat
-                    </p>
-                  </div>
-              </Link>
+              <div className={styles.cardBack}>
+                <div className={styles.cardBackContent}>
+                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                    Megha SatIsh
+                  </p>
+                  <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                    CO-FOUNDER
+                  </p>
+                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
+                    Conceptualiser | Detail Freak | Leader | Gym Rat
+                  </p>
                 </div>
+              </div>
             </div>
           </div>
           <div className={styles.cardContainer} onClick={() => handleFlip(2)}>
@@ -136,7 +132,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(3)}>
             <div
               className={`${styles.card} ${flippedIndices[3] ? styles.flipped : ""}`}
@@ -223,7 +219,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center sm:gap-[25px] lg:gap-[50px] sm:mt-[60px] lg:mt-[100px] xl:mt-[140px]">
+        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}
@@ -330,19 +326,14 @@ const AboutKreatrBottom = () => {
                   width={120}
                 />
               </div>
-                <div className={styles.cardBack}>
-              <Link href="https://www.linkedin.com/in/abdulrahimandsgnmkrs/ ">
-                  <div className={styles.cardBackContent}>
-                    <p className="page-heading text-[16px]">Abdul RahIman</p>
-                    <p className="page-subhead position-people text-[8px] ">
-                      CO-FOUNDER
-                    </p>
-                    <p className="content-neue text-[8px] leading-[10px]">
-                      Traveller | Change Visualiser | Astrophile | Free Spirited
-                    </p>
-                  </div>
-              </Link>
+              <div className={styles.cardBack}>
+                <div className={styles.cardBackContent}>
+                  <p className="page-heading text-[16px]">Abdul RahIman</p>
+                  <p className="page-subhead position-people text-[8px] ">
+                    CO-FOUNDER
+                  </p>
                 </div>
+              </div>
             </div>
           </div>
           <div className={styles.cardContainer} onClick={() => handleFlip(1)}>
@@ -358,19 +349,15 @@ const AboutKreatrBottom = () => {
                   width={120}
                 />
               </div>
-                <div className={styles.cardBack}>
-              <Link href="https://www.linkedin.com/in/meghasatish/  ">
-                  <div className={styles.cardBackContent}>
-                    <p className="page-heading text-[16px] ">Megha SatIsh</p>
-                    <p className="page-subhead position-people text-[8px] ">
-                      CO-FOUNDER
-                    </p>
-                    <p className="content-neue text-[8px] leading-[10px]">
-                      Conceptualiser | Detail Freak | Leader | Gym Rat
-                    </p>
-                  </div>
-              </Link>
+              <div className={styles.cardBack}>
+                <div className={styles.cardBackContent}>
+                  <p className="page-heading text-[16px] ">Megha SatIsh</p>
+                  <p className="page-subhead position-people text-[8px] ">
+                    CO-FOUNDER
+                  </p>
+                  
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -396,9 +383,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     PROJECT MANAGER
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Colours | Cats | Quills | Cine
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -424,9 +409,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
                     CONTENT EDITOR
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Cryptid | Artsy | Nerdy | Chronically Online
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -454,10 +437,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Maximalist | Fashion Enthusiast | Coffee Expert | Sanrio
-                    Curator
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -483,9 +463,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Gym Rat | Sports Junkie | Biophilic | Kind
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -513,9 +491,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Dogs | Books | Cakes | Creative
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -541,9 +517,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
                     DEVELOPER
                   </p>
-                  <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
-                    Scintillating | Quick-Witted | Coder | Driven
-                  </p>
+                  
                 </div>
               </div>
             </div>

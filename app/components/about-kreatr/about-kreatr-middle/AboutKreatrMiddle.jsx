@@ -96,8 +96,8 @@ const AboutKreatrMiddle = () => {
                 now
                 <br className="sm:hidden" /> time to be that change.”
               </p>
-              <p className="page-subhead mt-[10px] text-[14px] leading-[18px] lg:mt-[20px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
-                – Abdul Rahiman
+              <p className="page-subhead mt-[10px] text-[14px] leading-[18px] lg:mt-[20px] lg:text-[20px] lg:leading-[30px] xl:text-[26px] xl:leading-[32px]">
+                 Abdul Rahiman
                 <br /> Co-founder & CEO
               </p>
             </div>
@@ -110,8 +110,8 @@ const AboutKreatrMiddle = () => {
               </p>
               <p className="content-neue text-[14px] italic leading-[18px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">{`what we can do.
             Welcome to the community!"`}</p>
-              <p className="page-subhead mt-[10px] text-[14px] leading-[18px] lg:mt-[20px] lg:text-[26px] lg:leading-[30px] xl:text-[30px] xl:leading-[32px]">
-                – Megha Satish
+              <p className="page-subhead mt-[10px] text-[14px] leading-[18px] lg:mt-[20px] lg:text-[20px] lg:leading-[30px] xl:text-[26px] xl:leading-[32px]">
+                 Megha Satish
                 <br /> Co-founder & Creative Director
               </p>
             </div>
