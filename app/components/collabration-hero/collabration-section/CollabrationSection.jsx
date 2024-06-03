@@ -14,7 +14,7 @@ const CollabrationSection = () => {
   return (
     <div>
       <div>
-        <Tabs variant="pills" radius="lg" defaultValue="speakers">
+        <Tabs variant="pills" radius="xl" defaultValue="speakers">
           <div className="mt-[50px] flex flex-col items-center justify-center sm:mt-[80px]">
             <div className="flex justify-center">
               <Tabs.List className={` ${styles.noWrap}`} >

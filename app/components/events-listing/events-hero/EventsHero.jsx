@@ -31,20 +31,22 @@ const EventsHero = () => {
   const [tab, setTab] = useState("upcoming");
   return (
     <div>
-      <Tabs variant="pills" radius="lg" defaultValue="upcoming">
+      <Tabs variant="pills" radius="xl" defaultValue="upcoming">
         {/* heading section */}
         {/* upcoming heading section */}
 
         <Tabs.Panel value="upcoming">
-          <div className="page-heading relative mt-[40px] sm:mt-[70px] sm:h-[50px] text-center">
+          <div className="page-heading relative mt-[40px] sm:mt-[70px] text-center">
             <h1 className="text-center text-[40px] leading-[32px] sm:text-[70px] sm:leading-[0px] lg:text-[90px] xl:text-[110px] ">
               Kreatr’s
               <br className="sm:hidden" /> very own
             </h1>
-            <h1 className="absolute sm:top-[95%] sm:left-[1%] sm:right-0 sm:leading-[0px] right-[24%] top-[90%] rotate-[-1deg] text-center text-[48px] leading-[38px] text-red-600 sm:text-[70px]  lg:right-[22%] lg:top-[118%] lg:text-[90px] xl:right-[20%] xl:top-[142%] xl:text-[110px]">
+            <div className="relative sm:h-[50px]">
+            <h1 className="absolute sm:top-[95%] sm:left-[1%] sm:right-0 sm:leading-[0px] right-[27%] top-[90%] rotate-[-1deg] text-center text-[48px] leading-[38px] text-red-600 sm:text-[70px]  lg:right-[2%] lg:top-[118%] lg:text-[90px] xl:right-[2%] xl:top-[142%] xl:text-[110px]">
               events and
               <br className="sm:hidden block" /> Workshops
             </h1>
+            </div>
           </div>
         </Tabs.Panel>
         {/* past heading section */}
