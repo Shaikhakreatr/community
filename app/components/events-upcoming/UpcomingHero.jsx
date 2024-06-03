@@ -164,7 +164,7 @@ const UpcomingHero = ({ upcomingData }) => {
               <h1 className="content-neue-medium mr-[20px] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
-              <img src="/images/scroll.png" alt="scroll icon" />
+              <img src="/assets/images/events_page/arrow.svg" alt="arrow image" className="w-[24px] h-[24px]" />
             </div>
             <div className="mt-[15px] flex flex-wrap items-center justify-center gap-2 sm:gap-3 lg:gap-5 xl:gap-10">
               {upcomingData.images.map((item, index) => (
