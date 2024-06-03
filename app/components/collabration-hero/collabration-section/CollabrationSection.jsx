@@ -47,7 +47,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </div>
-                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[26px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -76,11 +76,11 @@ const CollabrationSection = () => {
                   {sponsors.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
-                        </li>
+                        </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[20px] lg:text-[24px] lg:leading-[28px] xl:text-[26px]">
+                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -107,11 +107,11 @@ const CollabrationSection = () => {
                   {spaces.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
-                        </li>
+                        </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[20px] lg:text-[24px] lg:leading-[28px] xl:text-[26px]">
+                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -139,11 +139,11 @@ const CollabrationSection = () => {
                   {sellers.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <li className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
-                        </li>
+                        </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[20px] lg:text-[24px] lg:leading-[28px] xl:text-[26px]">
+                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>

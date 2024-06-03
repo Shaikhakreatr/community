@@ -36,7 +36,7 @@ const LegalMainSection = () => {
 
       </div>
       </div>
-      <div className="text-nonSelectedText content  pt-10 pb-10  font-extralight">
+      <div className="text-nonSelectedText content-neue sm:mx-[50px]  pt-10 pb-10  font-extralight">
         {
             legalBarData[currentIndex]==='End User License Agreement'? <LegalPage1/>:
             legalBarData[currentIndex]==='Privacy Policy'?<LegalPage2/>:

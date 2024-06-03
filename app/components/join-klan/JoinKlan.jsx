@@ -39,7 +39,7 @@ const JoinKlan = () => {
       <div className="relative flex h-[80px] w-auto justify-center">
         <img
           src="/assets/images/JOK_page/left-arrow.svg"
-          className="absolute sm:left-[10%] lg:left-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
+          className="absolute hidden sm:left-[10%] sm:block lg:left-[26%] lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="left arrow"
         />
         <img
@@ -49,13 +49,17 @@ const JoinKlan = () => {
         />
         <img
           src="/assets/images/JOK_page/right-arrow.svg"
-          className="absolute sm:right-[10%] lg:right-[26%] hidden sm:block lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
+          className="absolute hidden sm:right-[10%] sm:block lg:right-[26%] lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="right arrow"
         />
       </div>
       <div className="relative flex h-[70px] w-auto justify-center xl:mt-[95px]">
-        <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1">
-          <div className="instagram-img absolute sm:top-[70%] sm:left-[3%] left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px]  shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
+        <Link
+          href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="instagram-img absolute left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:left-[3%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/instagram-JOK.svg"
               className="h-[77.33px] w-[77.33px] rotate-[8deg] xl:h-[101px] xl:w-[101px]"
@@ -66,8 +70,12 @@ const JoinKlan = () => {
             </p>
           </div>
         </Link>
-        <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM">
-          <div className="whatsapp-img absolute sm:top-[-8%] sm:left-[37%] lg:left-[40%] right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border  border-black p-[18px] shadow-md  shadow-black sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
+        <Link
+          href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="whatsapp-img absolute right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border border-black p-[18px] shadow-md  shadow-black sm:left-[37%] sm:top-[-8%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[40%] lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
               className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
@@ -78,8 +86,12 @@ const JoinKlan = () => {
             </p>
           </div>
         </Link>
-        <Link href="https://www.linkedin.com/company/the-kreatr/">
-          <div className="linkdin-img absolute sm:top-[70%] sm:left-[71%] left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
+        <Link
+          href="https://www.linkedin.com/company/the-kreatr/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="linkdin-img absolute left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black sm:left-[71%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/linkdin-JOK.svg"
               className="h-[69px] w-[69px] rotate-[8deg] xl:h-[92px] xl:w-[92px]"
@@ -92,19 +104,19 @@ const JoinKlan = () => {
         </Link>
       </div>
       <div className="relative mt-[635px] sm:mt-[174px] lg:mt-[226px] xl:mt-[160px]">
-        <h1 className=" page-heading absolute right-[20%] top-[-18%] sm:top-[-25%] sm:left-[20%] text-center text-[35px] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
+        <h1 className=" page-heading absolute right-[20%] top-[-18%] text-center text-[35px] sm:left-[20%] sm:top-[-25%] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
           WE CELEBRATE THE
         </h1>
         <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] lg:text-[95px] xl:mt-[50px] xl:text-[110px] ">
           BEAUTY of CreatIon
         </h1>
-        <h1 className="page-heading mt-[-18px] text-center text-[35px] leading-[28px] lg:leading-[0px] lg:mt-[-12px] lg:text-[55px] xl:mt-[-12px] xl:text-[64px]">
+        <h1 className="page-heading mt-[-18px] text-center text-[35px] leading-[28px] lg:mt-[-12px] lg:text-[55px] lg:leading-[0px] xl:mt-[-12px] xl:text-[64px]">
           {" "}
           In all Its
           <br className="block sm:hidden" /> wonderful forms
         </h1>
       </div>
-      <div className="mt-10 hidden justify-center gap-x-5  sm:mt-[30px] sm:flex sm:mb-[50px]  lg:mb-[4rem] lg:mt-[4.25rem] xl:mb-[4.5rem] xl:mt-[3.25rem] ">
+      <div className="mt-10 hidden justify-center gap-x-5  sm:mb-[50px] sm:mt-[30px] sm:flex  lg:mb-[4rem] lg:mt-[4.25rem] xl:mb-[4.5rem] xl:mt-[6.25rem] ">
         <Link
           href="https://play.google.com/store/apps/details?id=com.kreatr"
           target="_blank"
@@ -186,7 +198,7 @@ const JoinKlan = () => {
               src={DarkPlayStore}
               alt="Play store"
             />
-            <p className="button-store tracking-tight mx-[10px]">
+            <p className="button-store mx-[10px] tracking-tight">
               Get it on <br />
               Playstore
             </p>
@@ -199,7 +211,10 @@ const JoinKlan = () => {
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
               alt="App store"
             />
-            <p className="button-store tracking-tight mx-[10px]">Available on<br /> App Store</p>
+            <p className="button-store mx-[10px] tracking-tight">
+              Available on
+              <br /> App Store
+            </p>
           </div>
         </Link>
       </div>

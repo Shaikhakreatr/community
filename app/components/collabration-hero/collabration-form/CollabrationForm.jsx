@@ -65,7 +65,7 @@ const CollabrationForm = () => {
       </div>
       <div>
         <div className="mt-[20px] w-[50%]">
-          <label>
+          <label className="content-neue-medium mb-[10px]">
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
           <Select
