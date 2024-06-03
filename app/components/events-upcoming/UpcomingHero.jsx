@@ -1,7 +1,13 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { useParams } from 'next/navigation';
-import { useForm, isEmail, hasLength, matches, isNotEmpty } from '@mantine/form';
+import { useParams } from "next/navigation";
+import {
+  useForm,
+  isEmail,
+  hasLength,
+  matches,
+  isNotEmpty,
+} from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
@@ -10,27 +16,37 @@ const UpcomingHero = ({ upcomingData }) => {
   const targetRef = useRef(null);
 
   const form = useForm({
-    mode:'controlled',
+    mode: "controlled",
     initialValues: {
-      forms: [{ name: '', phoneNumber: '', senderEmail: '', message: '' }],
+      forms: [{ name: "", phoneNo: "", email: "" }],
     },
     validate: {
       forms: {
-        name: hasLength({ min: 2, max: 20 }, 'Please write your name', { isNotEmpty: true }),
-        phoneNumber: matches(/^(\+\d{1,3}[-.\s]??)?\d{10}$/, 'Please enter a valid phone number', { isNotEmpty: true }),
-        senderEmail: isEmail('Please enter a valid email', { isNotEmpty: true }),
-        message: isNotEmpty('Please write your message', { isNotEmpty: true }),
+        name: hasLength({ min: 2, max: 20 }, "Please write your name", {
+          isNotEmpty: true,
+        }),
+        phoneNo: matches(
+          /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
+          "Please enter a valid phone number",
+          { isNotEmpty: true },
+        ),
+        email: isEmail("Please enter a valid email", {
+          isNotEmpty: true,
+        }),
       },
     },
   });
 
   const addForm = () => {
-    form.setFieldValue('forms', [...form.values.forms, { name: '', phoneNumber: '', senderEmail: '', message: '' }]);
+    form.setFieldValue("forms", [
+      ...form.values.forms,
+      { name: "", phoneNo: "", email: "" },
+    ]);
   };
 
   const removeForm = () => {
     if (form.values.forms.length > 1) {
-      form.setFieldValue('forms', form.values.forms.slice(0, -1));
+      form.setFieldValue("forms", form.values.forms.slice(0, -1));
     }
   };
 
@@ -39,25 +55,36 @@ const UpcomingHero = ({ upcomingData }) => {
     if (!form.validate().hasErrors) {
       console.log(form.values.forms);
       try {
-        const res = await fetch(`https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`, {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
+        const res = await fetch(
+          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              newFormInfoList: form.values.forms.map(formInstance => ({
+                name: formInstance.name,
+                phoneNo: formInstance.phoneNo,
+                email: formInstance.email
+              }))
+            }),
           },
-          body: JSON.stringify(form.values.forms),
-        });
+        );
         // Handle the response if needed
       } catch (error) {
         console.error("Error submitting forms:", error);
       }
     }
   };
-
+  
+ 
   const scrollToDiv = () => {
-    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const isDataAvailable = upcomingData &&
+  const isDataAvailable =
+    upcomingData &&
     upcomingData.heading &&
     upcomingData.sessionType &&
     upcomingData.duration &&
@@ -82,13 +109,13 @@ const UpcomingHero = ({ upcomingData }) => {
               {upcomingData.heading}
             </h1>
             <div className="my-[10px] flex sm:mb-[20px] sm:mt-[20px]">
-              <div className="content-neue mr-3 h-[14px] w-[46px] rounded-[24px] border border-black flex sm:text-[15px] justify-center sm:h-[24px] sm:w-[66px] items-center text-center text-[10px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 h-[14px] w-[36px] rounded-[24px] border border-black flex sm:text-[15px] justify-center sm:h-[24px] sm:w-[50px] items-center text-center text-[10px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 h-[14px] w-[110px] rounded-[24px] border border-black flex sm:text-[15px] justify-center items-center text-center sm:h-[24px] sm:w-[180px] text-[10px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
@@ -107,25 +134,29 @@ const UpcomingHero = ({ upcomingData }) => {
               <div className="border-black pr-[10px] sm:border-r lg:pr-[40px]">
                 {upcomingData.price}
               </div>
-              <div onClick={scrollToDiv} className=" cursor-pointer upcoming-btn sm:flex justify-center items-center hidden h-[24.52px] w-[128.12px] rounded-[40px] text-center text-[13px] sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
+              <div
+                onClick={scrollToDiv}
+                className=" upcoming-btn hidden h-[24.52px] w-[128.12px] cursor-pointer items-center justify-center rounded-[40px] text-center text-[13px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
+              >
                 Book Now
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <div onClick={scrollToDiv} className=" cursor-pointer upcoming-btn mt-[20px] flex h-[24.52px] w-[128.12px] items-center justify-center rounded-[40px] text-center text-[13px] sm:hidden sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]">
+              <div
+                onClick={scrollToDiv}
+                className=" upcoming-btn mt-[20px] flex h-[24.52px] w-[128.12px] cursor-pointer items-center justify-center rounded-[40px] text-center text-[13px] sm:hidden sm:h-[38px] sm:w-[241px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
+              >
                 Book Now
               </div>
             </div>
           </div>
-          <div className="mx-[20px] mt-[25px] :mt-[60px] lg:mx-[126px] xl:mx-[166px]">
+          <div className=":mt-[60px] mx-[20px] mt-[25px] lg:mx-[126px] xl:mx-[166px]">
             <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
             <br />
             <div className="content-neue text-[14px] leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
-              <p>
-                {upcomingData.description}
-              </p>
+              <p>{upcomingData.description}</p>
             </div>
           </div>
           <div className="mt-[30px] lg:mt-[50px]">
@@ -139,14 +170,18 @@ const UpcomingHero = ({ upcomingData }) => {
               {upcomingData.images.map((item, index) => (
                 <img
                   key={index}
-                  className={`mr-1 h-[106px] w-[106px] sm:h-[250px] sm:w-[250px] sm:mr-4 lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                  className={`mr-1 h-[106px] w-[106px] sm:mr-4 sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
                 />
               ))}
             </div>
           </div>
-          <div ref={targetRef} id="target-section" className="mt-[30px] sm:mt-[50px]">
+          <div
+            ref={targetRef}
+            id="target-section"
+            className="mt-[30px] sm:mt-[50px]"
+          >
             <h1 className="page-subhead text-center text-[16px] sm:text-[22px] lg:text-[26px] xl:text-[34px]">
               Fill in the details
             </h1>
@@ -183,7 +218,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       }}
                       withAsterisk
                       inputMode="numeric"
-                      {...form.getInputProps(`forms.${index}.phoneNumber`)}
+                      {...form.getInputProps(`forms.${index}.phoneNo`)}
                     />
                     <br className="hidden sm:block" />
                     <TextInput
@@ -197,28 +232,14 @@ const UpcomingHero = ({ upcomingData }) => {
                         error: styles.inputError,
                       }}
                       withAsterisk
-                      {...form.getInputProps(`forms.${index}.senderEmail`)}
-                    />
-                    <br className="hidden sm:block" />
-                    <TextInput
-                      label="Message"
-                      mt={10}
-                      radius={50}
-                      placeholder="Your message here"
-                      classNames={{
-                        input: styles.transparentInput,
-                        label: styles.inputLabel,
-                        error: styles.inputError,
-                      }}
-                      withAsterisk
-                      {...form.getInputProps(`forms.${index}.message`)}
+                      {...form.getInputProps(`forms.${index}.email`)}
                     />
                   </div>
                 </div>
               ))}
               <div className="mt-[20px] flex items-center justify-center">
                 <button
-                  className="flex h-[16px] w-[16px] sm:h-[22px] sm:w-[22px] items-center justify-center rounded-full border border-black text-center lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
+                  className="flex h-[16px] w-[16px] items-center justify-center rounded-full border border-black text-center sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
                   onClick={removeForm}
                   type="button"
                 >
@@ -228,7 +249,7 @@ const UpcomingHero = ({ upcomingData }) => {
                   {form.values.forms.length}
                 </h1>
                 <button
-                  className="flex h-[16px] w-[16px] sm:h-[22px] sm:w-[22px] items-center justify-center rounded-full border border-black text-center lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
+                  className="flex h-[16px] w-[16px] items-center justify-center rounded-full border border-black text-center sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
                   onClick={addForm}
                   type="button"
                 >
@@ -255,7 +276,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 <h1 className="content-neue-medium text-center text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
                   Total Amount :{" "}
                   <span className="page-subhead text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
-                    INR {form.values.forms.length * 1499}.00
+                    INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>
               </div>
