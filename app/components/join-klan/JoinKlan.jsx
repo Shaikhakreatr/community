@@ -186,9 +186,9 @@ const JoinKlan = () => {
               src={DarkPlayStore}
               alt="Play store"
             />
-            <p className="button-store mx-[10px]">
+            <p className="button-store tracking-tight mx-[10px]">
               Get it on <br />
-              Play store
+              Playstore
             </p>
           </div>
         </Link>
@@ -199,7 +199,7 @@ const JoinKlan = () => {
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
               alt="App store"
             />
-            <p className="button-store mx-[10px]">Available on App store</p>
+            <p className="button-store tracking-tight mx-[10px]">Available on<br /> App Store</p>
           </div>
         </Link>
       </div>

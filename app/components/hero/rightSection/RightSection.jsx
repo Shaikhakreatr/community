@@ -91,7 +91,7 @@ const RightSection = () => {
               height={26}
               width={23}
             />
-            <p className="button-store mx-[10px]">
+            <p className="button-store tracking-tight mx-[10px]">
               Get it on <br />
               Playstore
             </p>
@@ -108,7 +108,7 @@ const RightSection = () => {
               height={26}
               width={23}
             />
-            <p className="button-store mx-[10px]">Available on App Store</p>
+            <p className="button-store tracking-tight mx-[10px]">Available on<br /> App Store</p>
           </div>
         </Link>
       </div>
