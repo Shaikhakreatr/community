@@ -21,7 +21,7 @@ const AboutKreatrBottom = () => {
   };
 
   return (
-    <div className="mb-[40px] mt-[40px] sm:mb-[50px] sm:mt-0">
+    <div className="mb-[40px] mt-[40px] sm:mb-[50px] sm:mt-[40px]">
       <div>
         <h1 className="page-heading text-center text-[40px] lg:text-[86px] xl:text-[96px]">
           Meet the Humans of
@@ -36,24 +36,15 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className="content-neue sm:flex hidden flex-col items-center justify-center text-[14px] leading-[18px] lg:mt-[40px] lg:text-[26px] lg:leading-[32px] xl:text-[30px] xl:leading-[36px]">
-        <p className="text-center">
-          {`PS: Can't figure out what their descriptions mean?`}
-          <br /> {`Here's a link to the`}{" "}
-          <Link className="dictonary-link" href="https://www.dictionary.com/">
-            dictionary!
-          </Link>
-        </p>
-      </div>
-      <div className="mt-[80px] hidden sm:block">
-        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
+      <div className="mt-[40px] hidden flex-col items-center justify-center sm:flex sm:w-[100%] ">
+        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[60px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
             >
               <div className={styles.cardFront1}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-26%] sm:top-[-26%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Abdul.svg"}
                   alt="abdul image"
                   height={290}
@@ -81,7 +72,7 @@ const AboutKreatrBottom = () => {
             >
               <div className={styles.cardFront2}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-26%] sm:top-[-26%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Megha.svg"}
                   alt="Megha image"
                   width={250}
@@ -109,7 +100,7 @@ const AboutKreatrBottom = () => {
             >
               <div className={styles.cardFront3}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-26%] sm:top-[-26%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Jevin.svg"}
                   alt="Jevin image"
                   height={290}
@@ -131,15 +122,13 @@ const AboutKreatrBottom = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(3)}>
             <div
               className={`${styles.card} ${flippedIndices[3] ? styles.flipped : ""}`}
             >
               <div className={styles.cardFront4}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Nilanka.svg"}
                   alt="Nilanka image"
                   height={290}
@@ -148,7 +137,7 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] leading-[38px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
                     NIlanka Anna ChrIsty
                   </p>
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
@@ -161,13 +150,15 @@ const AboutKreatrBottom = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[60px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(4)}>
             <div
               className={`${styles.card} ${flippedIndices[4] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront1}>
+              <div className={styles.cardFront5}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[0%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Chanchal.svg"}
                   alt="Chanchal image"
                   height={290}
@@ -194,9 +185,9 @@ const AboutKreatrBottom = () => {
             <div
               className={`${styles.card} ${flippedIndices[5] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront2}>
+              <div className={styles.cardFront6}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Prithvi.svg"}
                   alt="prithvi image"
                   height={290}
@@ -218,15 +209,13 @@ const AboutKreatrBottom = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[100px] lg:gap-[50px] xl:mt-[140px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront3}>
+              <div className={styles.cardFront7}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Aava.svg"}
                   alt="aava image"
                   height={290}
@@ -252,9 +241,9 @@ const AboutKreatrBottom = () => {
             <div
               className={`${styles.card} ${flippedIndices[7] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront4}>
+              <div className={styles.cardFront8}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[290px] lg:w-[250px] xl:left-[1%] xl:top-[-36%] xl:h-[360px] xl:w-[300px]"
+                  className="absolute left-[2%] top-[-38%] sm:top-[-38%] sm:h-[240px] sm:w-[200px] lg:left-[4%] lg:top-[-32%] lg:h-[220px] lg:w-[250px] xl:left-[1%] xl:top-[-20%] xl:h-[228px] xl:w-[300px]"
                   src={"/assets/images/about-kreatr/Arnav.svg"}
                   alt="arnav image"
                   height={290}
@@ -263,7 +252,7 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] leading-[38px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
+                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
                     Arnav Kulshrestha
                   </p>
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
@@ -276,13 +265,15 @@ const AboutKreatrBottom = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-start sm:mt-[60px] sm:gap-[25px] lg:mt-[40px] lg:w-[86%] lg:gap-[25px] xl:mt-[60px] xl:w-[82%]">
           <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
             <div
               className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront5}>
+              <div className={styles.cardFront9}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[103px] w-[103px] sm:left-[10%] sm:top-[-12%] sm:h-[160px] sm:w-[160px] lg:left-[12%] lg:top-[-10%] lg:h-[200px] lg:w-[200px] xl:left-[7%] xl:top-[-12%] xl:h-[266px] xl:w-[264px]"
+                  className="absolute left-[2%] top-[-38%] h-[103px] w-[103px] sm:left-[10%] sm:top-[-12%] sm:h-[160px] sm:w-[160px] lg:left-[6%] lg:top-[-10%] lg:h-[180px] lg:w-[200px] xl:left-[0%] xl:top-[-12%] xl:h-[200px] xl:w-[264px]"
                   src={"/assets/images/about-kreatr/you-img.svg"}
                   alt="you image"
                   height={200}
@@ -291,9 +282,6 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-subhead   text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                    Insert ‘Role’
-                  </p>
                   <p className=" page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
                     THIS COULD BE YOU
                   </p>
@@ -312,14 +300,14 @@ const AboutKreatrBottom = () => {
       </div>
 
       <div className="mt-[52px] sm:hidden">
-        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+        <div className="mt-[28px] flex items-center justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
               className={`${styles.card} ${flippedIndices[0] ? styles.flipped : ""}`}
             >
               <div className={styles.cardFront1}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[145px] w-[120px]"
+                  className="absolute left-[12%] top-[-26%] h-[145px] w-[120px]"
                   src={"/assets/images/about-kreatr/Abdul.svg"}
                   alt="abdul image"
                   height={145}
@@ -342,7 +330,7 @@ const AboutKreatrBottom = () => {
             >
               <div className={styles.cardFront2}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[144px] w-[120px] "
+                  className="absolute left-[12%] top-[-26%] h-[144px] w-[120px] "
                   src={"/assets/images/about-kreatr/Megha.svg"}
                   alt="Megha image"
                   height={145}
@@ -355,20 +343,19 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] ">
                     CO-FOUNDER
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+        <div className="mt-[28px] flex items-center justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(2)}>
             <div
               className={`${styles.card} ${flippedIndices[2] ? styles.flipped : ""}`}
             >
               <div className={styles.cardFront3}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[136px] w-[109px] "
+                  className="absolute left-[12%] top-[-26%] h-[136px] w-[109px] "
                   src={"/assets/images/about-kreatr/Jevin.svg"}
                   alt="Jevin image"
                   height={136}
@@ -383,7 +370,6 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     PROJECT MANAGER
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -394,7 +380,7 @@ const AboutKreatrBottom = () => {
             >
               <div className={styles.cardFront4}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[136px] w-[109px]"
+                  className="absolute left-[12%] top-[-26%] h-[136px] w-[109px]"
                   src={"/assets/images/about-kreatr/Nilanka.svg"}
                   alt="Nilanka image"
                   height={136}
@@ -409,20 +395,19 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
                     CONTENT EDITOR
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+        <div className="mt-[28px] flex items-center justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(4)}>
             <div
               className={`${styles.card} ${flippedIndices[4] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront1}>
+              <div className={styles.cardFront5}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[142px] w-[112px]"
+                  className="absolute left-[12%] top-[-26%] h-[142px] w-[112px]"
                   src={"/assets/images/about-kreatr/Chanchal.svg"}
                   alt="Chanchal image"
                   height={142}
@@ -437,7 +422,6 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -446,9 +430,9 @@ const AboutKreatrBottom = () => {
             <div
               className={`${styles.card} ${flippedIndices[5] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront2}>
+              <div className={styles.cardFront6}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[136px] w-[112px] "
+                  className="absolute left-[12%] top-[-26%] h-[136px] w-[112px] "
                   src={"/assets/images/about-kreatr/Prithvi.svg"}
                   alt="prithvi image"
                   height={136}
@@ -463,20 +447,19 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+        <div className="mt-[28px] flex items-center justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(6)}>
             <div
               className={`${styles.card} ${flippedIndices[6] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront3}>
+              <div className={styles.cardFront7}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[136px] w-[112px]"
+                  className="absolute left-[12%] top-[-26%] h-[136px] w-[112px]"
                   src={"/assets/images/about-kreatr/Aava.svg"}
                   alt="aava image"
                   height={136}
@@ -491,7 +474,6 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -500,9 +482,9 @@ const AboutKreatrBottom = () => {
             <div
               className={`${styles.card} ${flippedIndices[7] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront4}>
+              <div className={styles.cardFront8}>
                 <Image
-                  className="absolute left-[2%] top-[-38%] h-[142px] w-[112px]"
+                  className="absolute left-[12%] top-[-26%] h-[142px] w-[112px]"
                   src={"/assets/images/about-kreatr/Arnav.svg"}
                   alt="arnav image"
                   height={142}
@@ -517,20 +499,20 @@ const AboutKreatrBottom = () => {
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
                     DEVELOPER
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[28px] flex items-center justify-center gap-[20px]">
+        <div className="flex w-[64%] items-center justify-center">
+        <div className="mt-[28px] flex items-start justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
             <div
               className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
             >
-              <div className={styles.cardFront5}>
+              <div className={styles.cardFront9}>
                 <Image
-                  className="absolute left-[8%] top-[-12%] h-[100px] w-[100px]"
+                  className="absolute left-[10%] top-[-28%] h-[150px] w-[120px]"
                   src={"/assets/images/about-kreatr/you-img.svg"}
                   alt="you image"
                   height={100}
@@ -539,9 +521,6 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-subhead   text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
-                    Insert ‘Role’
-                  </p>
                   <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
                     THIS COULD BE YOU
                   </p>
@@ -557,6 +536,16 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
+        </div>
+      </div>
+      <div className="content-neue hidden flex-col items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[40px] lg:text-[20px] lg:leading-[24px] xl:text-[24px] xl:leading-[27px]">
+        <p className="text-center">
+          {`PS: Can't figure out what their descriptions mean?`}
+          <br /> {`Here's a link to the`}{" "}
+          <Link className="dictonary-link" href="https://www.dictionary.com/">
+            dictionary!
+          </Link>
+        </p>
       </div>
     </div>
   );

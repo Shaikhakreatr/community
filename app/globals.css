@@ -285,42 +285,40 @@ h1{
 
 @media only screen and (min-width : 639px){
   .kreatr-box1{
-    color: black;
-    background-color: #FF8AF6;
-    border: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    color: #2A2A2A;
+    background-color: #EAA2CD;
+    border: 1px solid #2A2A2A;
+    border-radius: 15px;
   }
   .kreatr-box1:hover{
-    background-color: #000000;
-    color: #FF8AF6;
-    border: 1px solid black;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color: #2A2A2A;
+    color: #EAA2CD;
+    border: 1px solid #2A2A2A;
+    border-radius: 15px;
   }
   .kreatr-box2{
-    background-color: #A1ADFF;
-    color: black;
-    border: 1px solid black;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    background-color: #A0A9EB;
+    color: #2A2A2A;
+    border: 1px solid #2A2A2A;
+    border-radius: 15px;
   }
   .kreatr-box2:hover{
-    background-color: #000000;
-    color: #A1ADFF;
-    border: 1px solid black;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: #2A2A2A;
+    color: #A0A9EB;
+    border: 1px solid #2A2A2A;
+    border-radius: 15px;
   }
 }
 
 @media only screen and (max-width: 639px){
   .kreatr-box1{
-    background-color:#FF8AF6;
+    background-color:#EAA2CD;
+    border-radius: 15px;
   }
   
   .kreatr-box2{
-    background-color: #A1ADFF;
+    background-color: #A0A9EB;
+    border-radius: 15px;
   }
 }
 

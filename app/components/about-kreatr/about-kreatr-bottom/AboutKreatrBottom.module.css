@@ -1,17 +1,29 @@
 .cardFront1{
-  background-color:#EBD35A ;
+  background-color:#B8B8B8 ;
 }
 .cardFront2{
-  background-color:#5AC8EB ;
+  background-color:#E08790 ;
 }
 .cardFront3{
-  background-color:#5AEB60 ;
+  background-color:#FF8F91 ;
 }
 .cardFront4{
-  background-color:#BC5AEB ;
+  background-color:#A3D7E3 ;
 }
 .cardFront5{
-  background-color:#EB5AB1 ;
+  background-color:#FFA8CB ;
+}
+.cardFront6{
+  background-color:#A09F9D ;
+}
+.cardFront7{
+  background-color:#FFB2C8 ;
+}
+.cardFront8{
+  background-color:#A3D7E3 ;
+}
+.cardFront9{
+  background-color:#FFEEB2 ;
 }
 
 /* mob screen */
@@ -23,8 +35,8 @@
   }
   
   .card {
-    width: 120px;
-    height: 108px;
+    width: 149px;
+    height: 132px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
@@ -36,7 +48,7 @@
     transform: rotateY(180deg);
   }
   
-  .cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5, .cardBack {
+  .cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5,.cardFront6,.cardFront7,.cardFront8,.cardFront9,.cardBack {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -49,8 +61,8 @@
 
   
   .cardBack {
-    height:108px ;
-    width:120px ;
+    height:132px ;
+    width:149px ;
     background: #2A2A2A;
     color: #D9D9D9;
     transform: rotateY(180deg);
@@ -75,8 +87,8 @@
   }
   
   .card {
-    width: 200px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
@@ -88,7 +100,7 @@
     transform: rotateY(180deg);
   }
   
-  .cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5, .cardBack  {
+  .cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5,.cardFront6,.cardFront7,.cardFront8,.cardFront9,.cardBack   {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -102,8 +114,8 @@
   
   .cardBack {
 
-    height:180px ;
-    width:200px ;
+    height:140px ;
+    width:180px ;
     background: #2A2A2A;
     color: #D9D9D9;
     transform: rotateY(180deg);
@@ -128,8 +140,8 @@
 }
 
 .card {
-  width: 260px;
-  height: 230px;
+  width: 230px;
+  height: 200px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -141,7 +153,7 @@
   transform: rotateY(180deg);
 }
 
-.cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5, .cardBack {
+.cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5,.cardFront6,.cardFront7,.cardFront8,.cardFront9,.cardBack  {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -154,12 +166,12 @@
 
 
 .cardBack {
-  height:230px ;
-  width:260px ;
+  height:200px ;
+  width:230px ;
   background: #2A2A2A;
   color: #D9D9D9;
   transform: rotateY(180deg);
-  padding: 26px;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -181,8 +193,8 @@
 }
 
 .card {
-  width: 300px;
-  height: 280px;
+  width: 256px;
+  height: 226px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -194,7 +206,7 @@
   transform: rotateY(180deg);
 }
 
-.cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5, .cardBack  {
+.cardFront1,.cardFront2,.cardFront3,.cardFront4,.cardFront5,.cardFront6,.cardFront7,.cardFront8,.cardFront9,.cardBack  {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -205,15 +217,13 @@
   border-radius: 10px;
 }
 
-
-
 .cardBack {
-  height:280px ;
-  width:300px ;
+  height:226px ;
+  width:256px ;
   background: #2A2A2A;
   color: #D9D9D9;
   transform: rotateY(180deg);
-  padding: 25px;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
