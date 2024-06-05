@@ -5,12 +5,8 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
   const handleScroll = () => {
     const offset = 25; 
     const threshold = 16 + offset;
@@ -43,17 +39,11 @@ const Header = () => {
             />
           </Link>
           <div className="absolute right-[5%]">
-            <Image
-              height={12}
-              width={26}
-              src={"/assets/images/home_page/logo/Menu.svg"}
-              alt="menu img"
-              onClick={toggleMenu}
-              className="h-[9px] w-[21px] cursor-pointer sm:h-[11px] sm:w-[24px] lg:h-[12px] lg:w-[26px] xl:h-[13px] xl:w-[29px]"
-            />
+              <div className="bg-black rounded sm:h-[2px] sm:w-[25px] mb-[10px]"></div>
+              <div className="bg-black rounded sm:h-[2px] sm:w-[25px] "></div>
           </div>
         </div>
-        <div
+        {/* <div
           className={`fixed right-0 top-0 z-50 h-[100%] w-[100%] transition-transform duration-700 lg:h-[630px] lg:w-[500px] xl:h-[921px] xl:w-[668px] ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
@@ -65,26 +55,6 @@ const Header = () => {
               opacity: menuOpen ? 1 : 0,
             }}
           >
-            <div className=" hidden sm:mt-[30px] sm:mr-[30px] lg:mt-0 lg:mr-0 justify-end sm:flex">
-              <Image
-                src={"/assets/images/home_page/logo/close-btn.svg"}
-                alt="close button image"
-                onClick={toggleMenu}
-                className="cursor-pointer sm:h-[32px] sm:w-[75px] lg:h-[22px] lg:w-[75px] xl:h-[32px] xl:w-[85px]"
-                height={22}
-                width={75}
-              />
-            </div>
-            <div className="flex justify-end sm:hidden">
-              <Image
-                src={"/assets/images/home_page/logo/close-mob.svg"}
-                alt="close button mobile image"
-                onClick={toggleMenu}
-                className="mt-[-15px] h-[26px] w-[26px] cursor-pointer"
-                height={26}
-                width={26}
-              />
-            </div>
             <div className="flex relative items-center justify-center mt-[-4px] sm:mt-[-5px]  lg:mt-[20px] xl:mt-10">
               <div className="absolute left-[29%] sm:top-[32%] sm:left-[37%] top-[24%] lg:left-[35%] lg:top-[28%] xl:left-[35%] xl:top-[30%] ">
                 <Image
@@ -168,7 +138,7 @@ const Header = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
     </>
   );

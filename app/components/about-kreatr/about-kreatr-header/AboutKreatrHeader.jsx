@@ -7,11 +7,11 @@ const AboutKreatrHeader = () => {
     <div className="mt-[30px] sm:mt-0 lg:mt-[30px]">
       <div>
         <h1 className="page-heading text-center text-[48px] sm:text-[74px] lg:text-[96px] xl:text-[110px]">
-          About Kreatr
+        Let’s Understand Kreatr
         </h1>
       </div>
       <div className="flex flex-col justify-center">
-        <div className="mx-[20px] mt-[45px] flex items-start justify-center gap-[28px] sm:mx-[60px] sm:mt-[55px] sm:gap-[90px] lg:mt-[50px]">
+        <div className="mx-[20px] mt-[45px] flex flex-col items-start justify-center gap-[28px] sm:mx-[60px] sm:mt-[55px] sm:gap-[90px] lg:mt-[50px]">
           <div className="items-center sm:flex">
             <h1 className="page-heading mb-[16px] mr-[20px] sm:mr-[30px] xl:mr-[46px] text-[32px] leading-[28px] sm:mb-0 sm:text-[48px] sm:leading-[38px] lg:text-[58px] lg:leading-[48px] xl:text-[64px] xl:leading-[52px]">
               What
@@ -25,7 +25,7 @@ const AboutKreatrHeader = () => {
             </p>
           </div>
         </div>
-        <div className="mx-[20px] mt-[45px] flex items-start justify-center gap-[28px] sm:mx-[60px] sm:mt-[55px] sm:gap-[90px] lg:mt-[50px]">
+        <div className="mx-[20px] mt-[45px] flex flex-col items-start justify-center gap-[28px] sm:mx-[60px] sm:mt-[55px] sm:gap-[90px] lg:mt-[50px]">
           <div className="items-center sm:flex">
             <h1 className="page-heading mb-[16px] text-[32px] leading-[28px] sm:mb-0 sm:text-[48px] sm:leading-[38px] lg:text-[58px] lg:leading-[48px] xl:text-[64px] xl:leading-[52px]">
               How DId

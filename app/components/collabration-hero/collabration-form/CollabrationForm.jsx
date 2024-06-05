@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import {
   useForm,
   isEmail,
@@ -29,6 +29,7 @@ const CollabrationForm = () => {
         "Please enter a valid phone number",
       ),
       email: isEmail("Please enter a valid email"),
+      collaborationType: isNotEmpty("please select any type"),
     },
   });
   const sendFormData = async (values) => {
@@ -76,7 +77,6 @@ const CollabrationForm = () => {
             classNames={{ input: styles.selectInput }}
             placeholder="Choose type"
             data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
-
             {...form.getInputProps("collaborationType")}
           />
         </div>
@@ -134,7 +134,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden sm:block" />
-          <div className="mt-[25px] sm:mt-[10px] lg:mt-[25px] items-center  text-center sm:flex lg:gap-3  xl:gap-5">
+          <div className="mt-[25px] items-center text-center sm:mt-[10px]  sm:flex lg:mt-[25px] lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}
