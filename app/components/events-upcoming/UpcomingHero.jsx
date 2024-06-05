@@ -63,22 +63,26 @@ const UpcomingHero = ({ upcomingData }) => {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              newFormInfoList: form.values.forms.map(formInstance => ({
+              newFormInfoList: form.values.forms.map((formInstance) => ({
                 name: formInstance.name,
                 phoneNo: formInstance.phoneNo,
-                email: formInstance.email
-              }))
+                email: formInstance.email,
+              })),
             }),
           },
         );
-        // Handle the response if needed
+
+        // Handle the response
+        if (res.status === 200) {
+          console.log("data sent");
+          form.reset();
+        }
       } catch (error) {
         console.error("Error submitting forms:", error);
       }
     }
   };
-  
- 
+
   const scrollToDiv = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -136,7 +140,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
               <div
                 onClick={scrollToDiv}
-                className=" upcoming-btn hidden  sm:mx-[8px] h-[24.52px] w-[128.12px] cursor-pointer items-center justify-center rounded-[40px] text-center text-[13px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
+                className=" upcoming-btn hidden  h-[24.52px] w-[128.12px] cursor-pointer items-center justify-center rounded-[40px] text-center text-[13px] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
               >
                 Book Now
               </div>
@@ -150,7 +154,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
             </div>
           </div>
-          <div className="sm:mt-[60px] mx-[20px] mt-[25px] lg:mx-[130px] xl:mx-[176px]">
+          <div className="mx-[20px] mt-[25px] sm:mt-[60px] lg:mx-[130px] xl:mx-[176px]">
             <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
@@ -164,7 +168,11 @@ const UpcomingHero = ({ upcomingData }) => {
               <h1 className="content-neue-medium mr-[20px] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
-              <img src="/assets/images/events_page/arrow.svg" alt="arrow image" className="w-[24px] h-[24px]" />
+              <img
+                src="/assets/images/events_page/arrow.svg"
+                alt="arrow image"
+                className="h-[24px] w-[24px]"
+              />
             </div>
             <div className="mt-[15px] flex flex-wrap items-center justify-center gap-2 sm:gap-3 lg:gap-5 xl:gap-10">
               {upcomingData.images.map((item, index) => (

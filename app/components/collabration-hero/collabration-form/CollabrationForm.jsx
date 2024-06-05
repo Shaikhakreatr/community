@@ -52,6 +52,7 @@ const CollabrationForm = () => {
       const data = await response.json();
       console.log("Form submitted successfully:", data);
       setSubmitted(true);
+      form.reset()
     } catch (error) {
       console.error("Error submitting form:", error);
     }

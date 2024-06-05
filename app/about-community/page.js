@@ -14,4 +14,4 @@ const AboutCommunity = () => {
   )
 }
 
-export default AboutCommunity
+export default AboutCommunity;
