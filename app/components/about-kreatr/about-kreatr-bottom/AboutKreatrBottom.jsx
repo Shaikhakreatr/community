@@ -36,7 +36,7 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className="mt-[40px] hidden flex-col items-center justify-center sm:flex sm:w-[100%] ">
+      <div className="mt-[40px] sm:flex hidden flex-col items-center justify-center sm:w-[100%]">
         <div className="flex items-center justify-center sm:mt-[60px] sm:gap-[25px] lg:mt-[60px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
@@ -266,7 +266,7 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-start sm:mt-[60px] sm:gap-[25px] lg:mt-[40px] lg:w-[86%] lg:gap-[25px] xl:mt-[60px] xl:w-[82%]">
+        <div className="grid grid-cols-4  items-center justify-start sm:mt-[60px] sm:gap-[25px] lg:mt-[60px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
             <div
               className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
@@ -505,37 +505,37 @@ const AboutKreatrBottom = () => {
           </div>
         </div>
         <div className="flex w-[64%] items-center justify-center">
-        <div className="mt-[28px] flex items-start justify-center gap-[4px]">
-          <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
-            <div
-              className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
-            >
-              <div className={styles.cardFront9}>
-                <Image
-                  className="absolute left-[10%] top-[-28%] h-[150px] w-[120px]"
-                  src={"/assets/images/about-kreatr/you-img.svg"}
-                  alt="you image"
-                  height={100}
-                  width={100}
-                />
-              </div>
-              <div className={styles.cardBack}>
-                <div className={styles.cardBackContent}>
-                  <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
-                    THIS COULD BE YOU
-                  </p>
-                  <div className="flex items-center justify-center">
-                    <Link href="/careers">
-                      <div className="page-subhead join-team-btn pointer-events-auto mt-[8px] h-[20px] w-[70px] rounded-[30px]  pt-[4px] text-[8px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
-                        Join our team
-                      </div>
-                    </Link>
+          <div className="mt-[28px] flex items-start justify-center gap-[4px]">
+            <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
+              <div
+                className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
+              >
+                <div className={styles.cardFront9}>
+                  <Image
+                    className="absolute left-[10%] top-[-28%] h-[150px] w-[120px]"
+                    src={"/assets/images/about-kreatr/you-img.svg"}
+                    alt="you image"
+                    height={100}
+                    width={100}
+                  />
+                </div>
+                <div className={styles.cardBack}>
+                  <div className={styles.cardBackContent}>
+                    <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
+                      THIS COULD BE YOU
+                    </p>
+                    <div className="flex items-center justify-center">
+                      <Link href="/careers">
+                        <div className="page-subhead join-team-btn pointer-events-auto mt-[8px] h-[20px] w-[70px] rounded-[30px]  pt-[4px] text-[8px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
+                          Join our team
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       <div className="content-neue hidden flex-col items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[40px] lg:text-[20px] lg:leading-[24px] xl:text-[24px] xl:leading-[27px]">

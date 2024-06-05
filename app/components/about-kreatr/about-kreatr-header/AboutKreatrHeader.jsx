@@ -6,18 +6,19 @@ const AboutKreatrHeader = () => {
   return (
     <div className="mt-[30px] sm:mt-0 lg:mt-[30px]">
       <div className="mb-[30px] sm:mb-0">
-        <h1 className="page-heading text-center leading-[40px]  text-[#2A2A2A] text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
-          Let’s Understand<br className="sm:hidden" /> Kreatr
+        <h1 className="page-heading text-center text-[40px]  leading-[40px] text-[#2A2A2A] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
+          Let’s Understand
+          <br className="sm:hidden" /> Kreatr
         </h1>
       </div>
       <div className="flex flex-col justify-center  sm:mt-[70px]">
         <div className="items-center justify-center sm:ml-[-14px] sm:flex">
-          <h1 className="page-heading mb-[8px] text-[#2A2A2A] text-center text-[24px] leading-[28px] sm:mb-[15px] sm:mr-[30px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:mr-[46px] xl:text-[48px] xl:leading-[52px]">
+          <h1 className="page-heading mb-[8px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:mr-[30px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:mr-[46px] xl:text-[48px] xl:leading-[52px]">
             What we are?
           </h1>
         </div>
-        <div className="mx-[-78px] flex flex-col items-center sm:items-end justify-center  sm:mx-[60px] ">
-          <div className="content-neue w-[56%] text-[#2A2A2A] text-[14px] leading-[18px] sm:w-[60%] lg:text-[18px] lg:leading-[27px] xl:text-[24px]">
+        <div className=" flex flex-col items-center justify-center sm:mx-[60px]  sm:items-end ">
+          <div className="content-neue px-6  text-[14px] leading-[18px] text-[#2A2A2A] sm:w-[60%] lg:text-[18px] lg:leading-[27px] xl:text-[24px]">
             <p className="text-center sm:text-start">
               We are a digital ecosystem that encourages cross-industry
               collaboration and empowers creators like you.
@@ -26,25 +27,25 @@ const AboutKreatrHeader = () => {
         </div>
         <br />
         <div className="items-center justify-center sm:ml-[18px] sm:flex">
-          <h1 className="page-heading mb-[8px] text-[#2A2A2A] text-center text-[24px] leading-[28px] sm:mb-[15px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:text-[48px] xl:leading-[52px]">
+          <h1 className="page-heading mb-[8px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:text-[48px] xl:leading-[52px]">
             How DId We Start?
           </h1>
         </div>
-        <div className="mx-[-78px] flex flex-col items-center sm:items-end justify-center sm:mx-[60px] ">
-          <div className="content-neue w-[56%] text-[#2A2A2A] text-[14px] leading-[18px] sm:w-[60%] lg:text-[18px] lg:leading-[27px] xl:text-[22px]">
-            <p  className="text-center sm:text-start">
+        <div className=" flex flex-col items-center justify-center sm:mx-[60px] sm:items-end ">
+          <div className="content-neue px-6  text-[14px] leading-[18px] text-[#2A2A2A] sm:w-[60%] lg:text-[18px] lg:leading-[27px] xl:text-[22px]">
+            <p className="text-center sm:text-start">
               It all started when we, Megha and Abdul—the co-founders of
               Kreatr—sought a creative community that matched our vibe. 
             </p>
             <br />
-            <p  className="text-center sm:text-start">
+            <p className="text-center sm:text-start">
               Eager to connect with like-minded individuals across diverse
               design fields, we struggled to find a space that celebrated the
               joy of creation. So, we took a leap of faith and launched Kreatr
               with a vision to unite a klan of similar-minded creatives. 
             </p>
             <br />
-            <p  className="text-center sm:text-start">
+            <p className="text-center sm:text-start">
               {`Our mission goes beyond borders; we're committed to spotlighting
               Indian designers globally and acknowledging their talent and
               contributions. Through Kreatr, we've built a digital ecosystem
@@ -61,9 +62,8 @@ const AboutKreatrHeader = () => {
           </div>
         </Link>
       </div>
-      <div className="flex justify-center items-center mt-[50px]">
-      <div className="h-[0.5px] xl:w-[1125px] lg:w-[1070px] w-[323px] bg-[#2A2A2A]">
-      </div>
+      <div className="mt-[50px] flex items-center justify-center">
+        <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
     </div>
   );

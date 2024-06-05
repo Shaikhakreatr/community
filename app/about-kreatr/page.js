@@ -7,7 +7,7 @@ const AboutKreatr = () => {
   return (
     <main className='pt-[6.25rem] bg-img'>
       <Header />
-      <AboutKreatrMain />
+       <AboutKreatrMain />
       <Footer />
       
     </main>
@@ -15,3 +15,6 @@ const AboutKreatr = () => {
 }
 
 export default AboutKreatr;
+
+
+
