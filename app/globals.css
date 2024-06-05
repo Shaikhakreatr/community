@@ -320,6 +320,9 @@ h1{
     background-color: #A0A9EB;
     border-radius: 15px;
   }
+  .kreatr-container{
+    align-items: center;
+  }
 }
 
 .join-team-btn{

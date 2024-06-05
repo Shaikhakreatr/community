@@ -45,7 +45,7 @@ const AboutKreatrMiddle = () => {
             OUR MISSION AND VISION
           </p>
         </div>
-        <div className="container mx-auto flex flex-col justify-center items-center">
+        <div className="container mx-auto flex flex-col justify-center kreatr-container">
           <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:grid">
             <div className="kreatr-box1 xl:ml-[142px] lg:ml-[80px] h-[264px] w-[317px] px-[52px] pt-[90px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:p-[45px] xl:h-[295px] xl:w-[584px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
