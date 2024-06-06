@@ -28,7 +28,7 @@ const CollabrationSection = () => {
             <Tabs.Panel value="speakers">
               <div className="mt-[35px] lg:mt-[50px]">
                 <div>
-                  <h1 className="page-subhead partner-text xl:mt-[65px]  lg:mt-[65px] text-center text-[20px] sm:leading-[30px] lg:leading-[0px] sm:text-[26px] lg:text-[32px] xl:text-[34px]">
+                  <h1 className="page-subhead partner-text xl:mt-[65px] leading-[25px] mb-[20px] sm:mb-0 lg:mt-[65px] text-center text-[20px] sm:leading-[30px] lg:leading-[0px] sm:text-[26px] lg:text-[32px] xl:text-[34px]">
                     Do you love spreading knowledge
                     <br className="sm:hidden" /> and igniting minds as a
                     speaker?
@@ -62,7 +62,7 @@ const CollabrationSection = () => {
             <Tabs.Panel value="sponsors">
               <div className="mt-[35px] lg:mt-[50px]">
                 <div>
-                  <h1 className="page-subhead partner-text text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
+                  <h1 className="page-subhead partner-text leading-[25px] mb-[20px] sm:mb-0 text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
                     {`Turbocharge your brand's`}
                     <br className="sm:hidden" /> visibility through sponsorship!
                   </h1>
@@ -75,12 +75,12 @@ const CollabrationSection = () => {
                 <div className="border-black px-[20px] sm:px-[10px] sm:w-[50%] sm:border-r lg:px-[50px]">
                   {sponsors.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                      <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
                         <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -94,7 +94,7 @@ const CollabrationSection = () => {
             <Tabs.Panel value="spaces">
               <div className="mt-[35px] lg:mt-[50px]">
                 <div>
-                  <h1 className="page-subhead partner-text text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
+                  <h1 className="page-subhead partner-text leading-[25px] mb-[20px] sm:mb-0 text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
                     Got a great space to offer?
                   </h1>
                   <p className="content-neue-medium text-center text-[14px] italic sm:mt-[5px] lg:mt-0  sm:text-[20px] lg:text-[26px] xl:text-[28px]">
@@ -106,12 +106,12 @@ const CollabrationSection = () => {
                 <div className="border-black px-[20px] sm:px-[10px] sm:w-[50%] sm:border-r lg:px-[50px]">
                   {spaces.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                      <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
                         <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -125,7 +125,7 @@ const CollabrationSection = () => {
             <Tabs.Panel value="sellers">
               <div className="mt-[35px] lg:mt-[50px]">
                 <div>
-                  <h1 className="page-subhead partner-text text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
+                  <h1 className="page-subhead leading-[25px] mb-[20px] sm:mb-0 partner-text text-center text-[20px] sm:leading-[30px] sm:text-[24px] lg:text-[32px] xl:text-[34px]">
                     Wish to sell your products
                     <br className="sm:hidden" /> or services as a seller?
                   </h1>
@@ -138,12 +138,12 @@ const CollabrationSection = () => {
                 <div className="border-black px-[20px] sm:px-[10px] sm:w-[50%] sm:border-r lg:px-[50px]">
                   {sellers.map((item, index) => (
                     <div key={index}>
-                      <ul className="page-subhead text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
+                      <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
                         <div className="partner-text mb-2 mt-6 list-disc">
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>

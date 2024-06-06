@@ -1,3 +1,18 @@
+/* .noWrap {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.scrollbarHide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.scrollbarHide::-webkit-scrollbar {
+  display: none;  
+} */
+
 .notActiveTab {
     border: 1px solid #2A2A2A;
     background-color: transparent;

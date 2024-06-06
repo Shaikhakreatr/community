@@ -60,18 +60,19 @@ const CollabrationForm = () => {
 
   return (
     <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
-      <div className="">
+      <div className="lg:mt-[-8px]">
         <h1 className="content-neue-medium text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
         </h1>
       </div>
-      <div>
-        <div className="mt-[20px] w-[50%]">
-          <label className="content-neue-medium mb-[10px]">
+      <div className="sm:block flex flex-col justify-center items-center">
+        <div className="mt-[20px] lg:mb-[25px] w-[100%] lg:w-[50%] ">
+          <label className="content-neue sm:text-[18px] text-[16px]">
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
           <Select
             radius={50}
+            mt={5}
             className={{
               input: styles.dropDown,
             }}
@@ -82,7 +83,7 @@ const CollabrationForm = () => {
           />
         </div>
       </div>
-      <div className="">
+      <div className="flex justify-center items-center sm:block">
         <form
           className={`${styles.formWrap} w-full`}
           onSubmit={form.onSubmit((values) => {
@@ -91,7 +92,7 @@ const CollabrationForm = () => {
         >
           <TextInput
             label="Name"
-            mt={15}
+            mt={13}
             radius={50}
             placeholder="Your name here"
             classNames={{
@@ -103,7 +104,7 @@ const CollabrationForm = () => {
             key={form.key("name")}
             {...form.getInputProps("name")}
           />
-          <br className="hidden sm:block" />
+          <br className="hidden lg:block" />
           <TextInput
             label="Phone Number"
             mt={15}
@@ -119,7 +120,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("phoneNumber")}
             inputMode="numeric"
           />
-          <br className="hidden sm:block" />
+          <br className="hidden lg:block" />
           <TextInput
             label="Email"
             mt={15}
@@ -134,7 +135,7 @@ const CollabrationForm = () => {
             key={form.key("email")}
             {...form.getInputProps("email")}
           />
-          <br className="hidden sm:block" />
+          <br className="hidden lg:block" />
           <div className="mt-[25px] items-center text-center sm:mt-[10px]  sm:flex lg:mt-[25px] lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
