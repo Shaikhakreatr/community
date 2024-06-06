@@ -91,21 +91,19 @@ h1{
 /* join-our-klan page css */
 
 .instagram-img {
-  background-color: #FE31EE; /* Background color */
-  /* background-image: url(/assets/images/home_page/background-new.svg); /* Background image */
-  /* background-blend-mode: multiply; Blend mode */ 
+  background-color: #EAA2CD; 
   background-size: cover;
 }
 
 .whatsapp-img{
-  background-color: rgba(79,255,79);
+  background-color: #9DE29D;
 }
 .linkdin-img{
-  background-color: rgba(73,93,245);
+  background-color: #A0A9EB;
   color: #FFFCEE;
 }
 .JOK-content{
-  color:#FE31EE
+  color:#A0A9EB
 }
 
 /* events page */

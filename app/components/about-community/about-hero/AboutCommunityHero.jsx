@@ -102,7 +102,7 @@ const AboutCommunityHero = () => {
               <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?
             </h1>
             <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[22px] lg:leading-[24px] xl:text-[24px] xl:leading-[23px]">
-              Follow us on our socials or Download the Kreatr app!
+              Follow us on our socials and Download the Kreatr app!
             </p>
             <div className="mt-[18px] flex items-center justify-center sm:justify-start lg:mt-[30px]">
               <Link href="/join-our-klan">

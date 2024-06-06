@@ -65,7 +65,7 @@ const JoinKlan = () => {
               className="h-[77.33px] w-[77.33px] rotate-[8deg] xl:h-[101px] xl:w-[101px]"
               alt="instagram"
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[40px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
               “Pop” goes our hearts when you leave one!
             </p>
           </div>
@@ -81,7 +81,7 @@ const JoinKlan = () => {
               className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
               alt="whatsapp"
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] lg:mt-[40px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[40px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
               The biggest green flag you will ever see.
             </p>
           </div>
@@ -97,26 +97,21 @@ const JoinKlan = () => {
               className="h-[69px] w-[69px] rotate-[8deg] xl:h-[92px] xl:w-[92px]"
               alt="linkdin"
             />
-            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] lg:mt-[50px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[50px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
               For your professional needs!
             </p>
           </div>
         </Link>
       </div>
-      <div className="relative mt-[635px] sm:mt-[174px] lg:mt-[226px] xl:mt-[160px]">
-        <h1 className=" page-heading absolute right-[20%] top-[-18%] text-center text-[35px] sm:left-[20%] sm:top-[-25%] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
+      <div className="relative mt-[635px] sm:mt-[200px] lg:mt-[250px] xl:mt-[220px]">
+        <h1 className=" page-heading absolute right-[20%] top-[-26%] text-center text-[35px] sm:left-[20%] sm:top-[-25%] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
           WE CELEBRATE THE
         </h1>
         <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] lg:text-[95px] xl:mt-[50px] xl:text-[110px] ">
           BEAUTY of CreatIon
         </h1>
-        <h1 className="page-heading mt-[-18px] text-center text-[35px] leading-[28px] lg:mt-[-12px] lg:text-[55px] lg:leading-[0px] xl:mt-[-12px] xl:text-[64px]">
-          {" "}
-          In all Its
-          <br className="block sm:hidden" /> wonderful forms
-        </h1>
       </div>
-      <div className="mt-10 hidden justify-center gap-x-5  sm:mb-[50px] sm:mt-[30px] sm:flex  lg:mb-[4rem] lg:mt-[4.25rem] xl:mb-[4.5rem] xl:mt-[6.25rem] ">
+      <div className="mt-[10px] hidden justify-center gap-x-5  sm:mb-[50px] sm:mt-[30px] sm:flex  lg:mb-[4rem] lg:mt-[2.25rem] xl:mb-[4.5rem] xl:mt-[2.25rem] ">
         <Link
           href="https://play.google.com/store/apps/details?id=com.kreatr"
           target="_blank"
