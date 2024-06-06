@@ -87,7 +87,7 @@
   }
   
   .card {
-    width: 180px;
+    width: 160px;
     height: 140px;
     position: relative;
     transform-style: preserve-3d;
@@ -115,11 +115,11 @@
   .cardBack {
 
     height:140px ;
-    width:180px ;
+    width:160px ;
     background: #2A2A2A;
     color: #D9D9D9;
     transform: rotateY(180deg);
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

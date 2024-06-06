@@ -11,9 +11,12 @@ const AboutKreatrHeader = () => {
           <br className="sm:hidden" /> Kreatr
         </h1>
       </div>
-      <div className="flex flex-col justify-center  sm:mt-[70px]">
-        <div className="items-center justify-center sm:ml-[-14px] sm:flex">
-          <h1 className="page-heading mb-[8px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:mr-[30px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:mr-[46px] xl:text-[48px] xl:leading-[52px]">
+      <div className="flex justify-center items-center sm:mt-[40px] lg:mt-[80px] mt-[20px]">
+        <Image className="xl:h-[632px] xl:w-[1125px] lg:h-[450px] h-[178px] w-[317px] sm:h-[400px] sm:w-[700px]  rounded-[15px] object-cover object-center lg:w-[968px]" src="/assets/images/about-kreatr/about-kreatr-gif.gif" alt="kreatr gif" height={632} width={1125} />
+      </div>
+      <div className="flex flex-col justify-center  sm:mt-[40px] mt-[20px]">
+        <div className="items-center justify-center sm:ml-[25px] sm:flex">
+          <h1 className="page-heading mb-[8px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:mr-[5px] lg:mr-[32px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:mr-[46px] xl:text-[48px] xl:leading-[52px]">
             What we are?
           </h1>
         </div>
@@ -26,8 +29,8 @@ const AboutKreatrHeader = () => {
           </div>
         </div>
         <br />
-        <div className="items-center justify-center sm:ml-[18px] sm:flex">
-          <h1 className="page-heading mb-[8px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:text-[48px] xl:leading-[52px]">
+        <div className="items-center justify-center sm:ml-[60px] sm:flex">
+          <h1 className="page-heading mb-[8px] sm:ml-[12px] lg:ml-0 text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px] xl:text-[48px] xl:leading-[52px]">
             How DId We Start?
           </h1>
         </div>
@@ -63,7 +66,7 @@ const AboutKreatrHeader = () => {
         </Link>
       </div>
       <div className="mt-[50px] flex items-center justify-center">
-        <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] lg:w-[1070px] xl:w-[1125px]"></div>
+        <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
     </div>
   );
