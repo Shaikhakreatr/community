@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Accordion } from "@mantine/core";
 import styles from "./AccordianSection.module.css";
 
@@ -8,6 +8,23 @@ import { leftAccordion } from "@/constants/constants";
 import { rightAccordion } from "@/constants/constants";
 
 const AccordianSection = () => {
+  const [firstAccordion, setFirstAccordion] = useState("");
+  const [secondAccordion, setSecondAccordion] = useState("");
+
+  const handleFirstAccordion = (value) => {
+    console.log(value);
+    console.log("Close second accordion if it's open");
+    setFirstAccordion(value);
+    setSecondAccordion(""); // Close second accordion
+  };
+
+  const handleSecondAccordion = (value) => {
+    console.log(value);
+    console.log("Close first accordion if it's open");
+    setSecondAccordion(value);
+    setFirstAccordion(""); // Close first accordion
+  };
+
   // Merge left and right accordion items into one array
   const combinedItems = [...leftAccordion, ...rightAccordion];
 
@@ -44,6 +61,8 @@ const AccordianSection = () => {
           className={styles.accordionWrap}
           variant="separated"
           radius="xs"
+          value={secondAccordion}
+          onChange={handleSecondAccordion}
         >
           {renderAccordionItems(leftColumnItems, styles.controlBox1)}
         </Accordion>
@@ -53,6 +72,8 @@ const AccordianSection = () => {
           className={styles.accordionWrap2}
           variant="separated"
           radius="xs"
+          value={firstAccordion}
+          onChange={handleFirstAccordion}
         >
           {renderAccordionItems(rightColumnItems, styles.controlBox2)}
         </Accordion>
