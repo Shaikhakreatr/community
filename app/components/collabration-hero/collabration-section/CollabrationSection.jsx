@@ -16,7 +16,7 @@ const CollabrationSection = () => {
       <div>
         <Tabs variant="pills" radius="xl" defaultValue="speakers">
           <div className="mt-[50px] flex flex-col items-center justify-center sm:mt-[80px]">
-            <div className="flex justify-center">
+            <div className={`flex justify-start sm:justify-center w-full overflow-x-auto flex-nowrap ${styles.scrollbarHide}`}>
               <Tabs.List className={` ${styles.noWrap}`} >
                 <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'speakers' && styles.activeTab}`} onClick={()=>(setTab('speakers'))} value="speakers">Speakers</Tabs.Tab>
                 <Tabs.Tab className={`${styles.notActiveTab} ${tab === 'sponsors' && styles.activeTab}`} onClick={()=>(setTab('sponsors'))} value="sponsors">Sponsors</Tabs.Tab>
