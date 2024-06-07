@@ -112,7 +112,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
                     JevIn Mary
                   </p>
-                  <p className="page-subhead sm:leading-[15px] lg:leading-[0px] position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                  <p className="page-subhead  position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     PROJECT MANAGER
                   </p>
                   <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
@@ -170,7 +170,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
                     Chanchal Verma
                   </p>
-                  <p className="page-subhead sm:leading-[15px] lg:leading-[0px] position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                  <p className="page-subhead  position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
                   <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
@@ -199,7 +199,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
                     PrIthvI Charan R
                   </p>
-                  <p className="page-subhead sm:leading-[15px] lg:leading-[0px] position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                  <p className="page-subhead  position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
                   <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">
@@ -227,7 +227,7 @@ const AboutKreatrBottom = () => {
                   <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px]">
                     Aava Anna WIlson
                   </p>
-                  <p className="page-subhead sm:leading-[15px] lg:leading-[0px] position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
+                  <p className="page-subhead  position-people text-[8px] sm:text-[14px] lg:mt-[-6px] lg:text-[18px] xl:text-[22px]">
                     GRAPHIC DESIGNER
                   </p>
                   <p className="content-neue text-[8px] leading-[10px] sm:text-[14px] sm:leading-[16px] lg:text-[18px] lg:leading-[24px] xl:text-[22px] xl:leading-[28px]">

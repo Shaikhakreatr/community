@@ -38,10 +38,12 @@ const UpcomingHero = ({ upcomingData }) => {
   });
 
   const addForm = () => {
-    form.setFieldValue("forms", [
-      ...form.values.forms,
-      { name: "", phoneNo: "", email: "" },
-    ]);
+    if (form.values.forms.length < 10) {
+      form.setFieldValue("forms", [
+        ...form.values.forms,
+        { name: "", phoneNo: "", email: "" },
+      ]);
+    }
   };
 
   const removeForm = () => {
@@ -136,11 +138,11 @@ const UpcomingHero = ({ upcomingData }) => {
                 {upcomingData.location}
               </div>
               <div className="border-black px-[8px] sm:border-r lg:px-[25px]">
-                {upcomingData.price}
+                {`₹  ${upcomingData.price}`}
               </div>
               <div
                 onClick={scrollToDiv}
-                className=" upcoming-btn hidden  h-[24.52px] w-[128.12px] cursor-pointer items-center justify-center rounded-[40px] text-center text-[13px] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
+                className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
               >
                 Book Now
               </div>
@@ -197,7 +199,7 @@ const UpcomingHero = ({ upcomingData }) => {
               {form.values.forms.map((formInstance, index) => (
                 <div key={index}>
                   <p className="page-subhead mt-[30px] text-[10px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
-                    Person {index + 1}
+                    {`Person  ${index + 1}`}
                   </p>
                   <div className={`${styles.formWrap} w-full`}>
                     <TextInput
@@ -247,19 +249,29 @@ const UpcomingHero = ({ upcomingData }) => {
               ))}
               <div className="mt-[20px] flex items-center justify-center">
                 <button
-                  className="flex h-[16px] w-[16px] items-center justify-center rounded-full border border-black text-center sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
-                  onClick={removeForm}
+                  className={`flex flex-col h-[16px] w-[16px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                    form.values.forms.length <= 1
+                      ? "border border-gray-400 text-gray-400"
+                      : "border border-black"
+                  }`}
+                  onClick={form.values.forms.length > 1 ? removeForm : null}
                   type="button"
+                  disabled={form.values.forms.length <= 1}
                 >
                   -
                 </button>
-                <h1 className="content-neue-medium mx-[10px] text-[12px] lg:text-[24px] xl:text-[28px]">
+                <div className="content-neue-medium flex flex-col justify-center items-center mx-[10px] h-[30px] w-[30px] text-[12px] lg:text-[24px] xl:text-[28px]">
                   {form.values.forms.length}
-                </h1>
+                </div>
                 <button
-                  className="flex h-[16px] w-[16px] items-center justify-center rounded-full border border-black text-center sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px]"
-                  onClick={addForm}
+                  className={`flex flex-col h-[16px] w-[16px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                    form.values.forms.length >= 10
+                      ? "border border-gray-400 text-gray-400"
+                      : "border border-black"
+                  }`}
+                  onClick={form.values.forms.length < 10 ? addForm : null}
                   type="button"
+                  disabled={form.values.forms.length >= 10}
                 >
                   +
                 </button>
@@ -270,11 +282,11 @@ const UpcomingHero = ({ upcomingData }) => {
                     By clicking on proceed, I agree that I have read and
                     <br />
                     understood the{" "}
-                    <a href="#" className=" text-blue-700">
-                      TnC
+                    <a href="/legal" className=" text-blue-700">
+                      t&c
                     </a>{" "}
                     and the{" "}
-                    <a href="#" className=" text-blue-700">
+                    <a href="/legal" className=" text-blue-700">
                       Privacy Policy
                     </a>
                   </p>

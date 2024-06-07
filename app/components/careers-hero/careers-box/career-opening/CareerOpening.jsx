@@ -25,7 +25,7 @@ const CareerOpening = () => {
         </div>
       </div>
       <div className="flex  justify-center items-center sm:w-[100%] lg:w-[90%] ">
-      <div className="flex flex-wrap items-center lg:mt-[25px] xl:mt-[15px] justify-start lg:ml-[60px] xl:ml-[50px]">
+      <div className="flex flex-wrap items-center lg:mt-[25px] xl:mt-[15px] justify-center lg:justify-start lg:ml-[60px] xl:ml-[50px]">
         {careersData.map((item, index) => (
           <Link
             href={`/careers/${item.id}`}

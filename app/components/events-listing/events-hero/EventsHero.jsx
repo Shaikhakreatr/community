@@ -91,10 +91,10 @@ const EventsHero = () => {
           </div>
         ) : (
           <Tabs.Panel value="upcoming">
-            <div className="flex flex-col flex-wrap items-center justify-center sm:my-[50px] sm:ml-0 sm:flex-row">
+            <div className="flex flex-col flex-wrap items- sm:gap-[30px] justify-center sm:my-[50px] sm:ml-0 sm:flex-row">
               {upcomingEvents.map((event) => (
                 <Link href={`/events-upcoming/${event.id}`} key={event.id}>
-                  <div className="upcoming-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px] sm:mr-[45px] lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
+                  <div className="upcoming-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px]  lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
                     <img
                       className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-center lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
                       src={event.coverImg}
@@ -122,10 +122,10 @@ const EventsHero = () => {
 
         {/* past hero section */}
         <Tabs.Panel value="past">
-          <div className="mb-[50px] mt-[35px] flex flex-col flex-wrap items-center justify-center sm:ml-0 sm:flex-row">
+          <div className="mb-[50px] mt-[35px] flex flex-col flex-wrap sm:gap-[30px] sm:mt-[50px] items-center justify-center sm:ml-0 sm:flex-row">
             {pastEvents.map((event) => (
               <Link href={`/events-past/${event.id}`} key={event.id}>
-                <div className="past-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px] sm:mr-[45px] lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
+                <div className="past-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px]  lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
                   <img
                     className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-center lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
                     src={event.coverImg}
