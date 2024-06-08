@@ -1,12 +1,12 @@
 import React from "react";
 import { PacmanLoader } from "react-spinners";
 
-const Loader = () => {
+const Spinner = ({loading}) => {
   return (
     <div className="loaderMainDiv">
-      <PacmanLoader color="#000000"  />
+      <PacmanLoader color="#000000" loading={loading} />
     </div>
   );
 };
 
-export default Loader;
+export default Spinner;

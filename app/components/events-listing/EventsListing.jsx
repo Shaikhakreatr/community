@@ -7,7 +7,6 @@ const EventsListing = () => {
   return (
     <div className='container mx-auto'>
       <EventsHero />
-      {/* <Loader /> */}
     </div>
   )
 }

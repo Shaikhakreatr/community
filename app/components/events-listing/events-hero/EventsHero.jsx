@@ -3,8 +3,10 @@ import React, { useEffect, useState } from "react";
 import { Tabs } from "@mantine/core";
 import Link from "next/link";
 import styles from "./EventsHero.module.css";
+import Spinner from "../../spinner/Spinner";
 
 const EventsHero = () => {
+  const [loading,setLoading]=useState(true);
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const [pastEvents, setPastEvents] = useState([]);
 
@@ -23,13 +25,17 @@ const EventsHero = () => {
         setPastEvents(past);
       } catch (error) {
         console.error("Error fetching events data:", error);
+      }finally{
+        setLoading(false);
       }
     };
 
     fetchEvents();
   }, []);
   const [tab, setTab] = useState("upcoming");
-  return (
+
+  return <>
+  {loading?(<Spinner loading={loading}/>):(
     <div>
       <Tabs variant="pills" radius="xl" defaultValue="upcoming">
         {/* heading section */}
@@ -91,7 +97,7 @@ const EventsHero = () => {
           </div>
         ) : (
           <Tabs.Panel value="upcoming">
-            <div className="flex flex-col flex-wrap items- sm:gap-[30px] justify-center sm:my-[50px] sm:ml-0 sm:flex-row">
+            <div className="flex flex-col flex-wrap items-center sm:gap-[30px] justify-center sm:my-[50px] sm:ml-0 sm:flex-row">
               {upcomingEvents.map((event) => (
                 <Link href={`/events-upcoming/${event.id}`} key={event.id}>
                   <div className="upcoming-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px]  lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
@@ -151,7 +157,8 @@ const EventsHero = () => {
         </Tabs.Panel>
       </Tabs>
     </div>
-  );
+  )}
+  </>
 };
 
 export default EventsHero;

@@ -1,11 +1,12 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
-import Footer from '@/app/components/footer/Footer';
-import Header from '@/app/components/header/Header';
-import React from 'react';
-import CareersMainContent from '@/app/components/careers-description/CareersMainContent';
+import { useState, useEffect } from "react";
+import { useParams } from "next/navigation";
+import Footer from "@/app/components/footer/Footer";
+import Header from "@/app/components/header/Header";
+import React from "react";
+import CareersMainContent from "@/app/components/careers-description/CareersMainContent";
+import Spinner from "@/app/components/spinner/Spinner";
 
 const CareerDetails = () => {
   const { id } = useParams();
@@ -17,19 +18,21 @@ const CareerDetails = () => {
   useEffect(() => {
     const fetchCareerData = async () => {
       try {
-        const response = await fetch('https://pcfja54uwi.execute-api.ap-south-1.amazonaws.com/dev/career/');
+        const response = await fetch(
+          "https://pcfja54uwi.execute-api.ap-south-1.amazonaws.com/dev/career/",
+        );
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        const careerData = data.find(career => career.id === id);
+        const careerData = data.find((career) => career.id === id);
         if (careerData) {
           setCareerData(careerData);
         } else {
-          setError(new Error('Career not found'));
+          setError(new Error("Career not found"));
         }
       } catch (error) {
-        console.error('Error fetching career data:', error);
+        console.error("Error fetching career data:", error);
         setError(error);
       } finally {
         setLoading(false);
@@ -41,25 +44,22 @@ const CareerDetails = () => {
     }
   }, [id]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // }
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
+  // if (!careerData) {
+  //   return <div>Career not found</div>;
+  // }
 
-  if (!careerData) {
-    return <div>Career not found</div>;
-  }
-
-  console.log(careerData);
   return (
-    <main className='pt-[6.25rem] bg-img'>
-      <Header />
-      <CareersMainContent careerData={careerData}/>
-      <Footer />
-    </main>
+    <>
+      <main className="bg-img pt-[6.25rem]">
+        <Header />
+        {loading ? <Spinner /> : <CareersMainContent careerData={careerData} />}
+        <Footer />
+      </main>
+    </>
   );
 };
 
