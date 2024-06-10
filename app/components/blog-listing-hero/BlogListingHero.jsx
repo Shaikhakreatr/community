@@ -64,9 +64,6 @@ const BlogListingHero = () => {
                   <p className="content text-[12px]"> {data[j - 1].writer} </p>
                   <div className="flex items-center justify-between pt-6">
                     <div className="flex items-center justify-center gap-2 text-center">
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
@@ -98,9 +95,6 @@ const BlogListingHero = () => {
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between pt-3">
                     <div className="flex items-center justify-center gap-2 text-center">
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
@@ -126,7 +120,7 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="flex p-3">
+                <div className="p-3">
                   <div className="">
                     <h1 className="content mr-24 text-[20px] font-[800]">
                       {data[j - 1].heading}
@@ -138,9 +132,6 @@ const BlogListingHero = () => {
                     <div className="flex flex-col items-end justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
-                      </div>
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
                       </div>
                     </div>
                     <div className="pt-6">
@@ -165,7 +156,7 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-6 flex pl-6 pr-6">
+                <div className="mt-6 pl-6 pr-6">
                   <div className="">
                     <h1 className="content mr-24 text-[34px] font-[800]">
                       {data[j - 1].heading}
@@ -173,16 +164,13 @@ const BlogListingHero = () => {
                     <p className="content pt-2"> {data[j - 1].writer}ter</p>
                   </div>
 
-                  <div className="flex flex-col  items-end">
-                    <div className="flex flex-col items-end justify-center gap-2 text-center">
+                  <div className="flex gap-2 justify-between">
+                    <div className="flex  items-end justify-center  text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                     </div>
-                    <div className="pt-6">
+                    <div>
                       <img
                         src="/assets/images/blog-page/arrow.svg"
                         alt="arrow"
@@ -217,9 +205,6 @@ const BlogListingHero = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
@@ -251,9 +236,6 @@ const BlogListingHero = () => {
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
@@ -288,9 +270,6 @@ const BlogListingHero = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-5">
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
@@ -322,9 +301,6 @@ const BlogListingHero = () => {
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
@@ -359,9 +335,6 @@ const BlogListingHero = () => {
                   </p>
                   <div className="flex items-center justify-between ">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
@@ -393,9 +366,6 @@ const BlogListingHero = () => {
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between ">
                     <div className="flex items-center justify-center gap-2 text-center">
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
@@ -436,9 +406,6 @@ const BlogListingHero = () => {
                       </div>
                     </div>
                     <div className="flex items-center justify-between gap-6">
-                      <div className="content flex h-[34px] w-[80px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
@@ -472,9 +439,6 @@ const BlogListingHero = () => {
                       </div>
                     </div>
                     <div className="flex items-center justify-between gap-6">
-                      <div className="content flex h-[34px] w-[123px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].readTime}
-                      </div>
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
@@ -569,7 +533,7 @@ const BlogListingHero = () => {
           }
         >
           <img
-            src="/assets/images/blog-page/blog_sticker.svg"
+            src="/assets/images/blog-page/Blog_sticker.svg"
             alt=" blog sticker"
             height={isMobile ? 35 : isTabletView ? 50 : 105.78}
             width={isMobile ? 109.33 : isTabletView ? 210 : 331.05}
