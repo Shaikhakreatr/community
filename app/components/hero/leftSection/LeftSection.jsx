@@ -27,7 +27,7 @@ const LeftSection = () => {
 
   useEffect(() => {
     if (typeof Audio !== "undefined") {
-      audioRef.current = new Audio("/assets/audio/kreatr-audio.mpeg");
+      audioRef.current = new Audio("/assets/audio/kreatr-audio.mp3");
     }
     if(audioRef.current.pause()){
       setSoundActive(false);
