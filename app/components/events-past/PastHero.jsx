@@ -37,11 +37,13 @@ const PastHero = ({pastData}) => {
                   Speaker: {pastData.speakerName}
                 </div>
               </div>
+              <div className="flex justify-center items-center">
               <img
-                className="h-[148px] w-[320px] object-cover object-center sm:h-[250px] sm:w-[650px] lg:h-[350px] lg:w-[980px] xl:h-[398px] xl:w-[1064px]"
+                className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px]"
                 src={pastData.coverImg}
                 alt="main-img"
               />
+              </div>
               <div className="content-neue-medium lg:gap-[18px] gap-[5px] sm:mt-[18px] mt-[10px] flex items-center justify-center text-[13px] sm:text-[18px] lg:text-[22px] xl:text-[30px]">
                 <div >
                   {pastData.date}
