@@ -17,7 +17,7 @@ const LeftImageSection = () => {
           </p>
           <ul>
             <li>
-              <a className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] sm:text-[13px]">
+              <a href="" className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] sm:text-[13px]">
                 <img
                   className="xl:h-[20px] mr-1 xl:w-[20px] lg:h-[20px] lg:w-[20px] sm:h-[15px] sm:w-[15px]"
                   src="/assets/images/contact_page/Email-form.svg"

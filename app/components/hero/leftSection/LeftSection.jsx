@@ -89,7 +89,7 @@ const LeftSection = () => {
   };
 
   return (
-    <div className="lg:ml-14">
+    <div>
       <h1 className="page-heading text-64 md:mb-[15px] lg:mb-0 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
@@ -117,7 +117,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-3 flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[58%] xl:w-[73%]">
+      <div className=" my-3 flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[70%] xl:w-[73%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">

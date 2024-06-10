@@ -229,11 +229,11 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="pl-6 pr-6 mt-[20px]">
-                  <h1 className="content mr-20 leading-[40px] text-[34px] font-[800]">
+                <div className="pl-6 pr-6 mt-[6px]">
+                  <h1 className="content leading-[40px] text-[34px] font-[800]">
                     {data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2"> {data[j - 1].writer}</p>
+                  <p className="content"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">

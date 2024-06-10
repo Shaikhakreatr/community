@@ -1,82 +1,38 @@
-"use client";
+"use client"
 import React, { useState } from "react";
+import Image from "next/image";
 import {
-  useForm,
-  isEmail,
-  hasLength,
-  matches,
-  isNotEmpty,
-} from "@mantine/form";
-import { Button, TextInput, Textarea } from "@mantine/core";
-import styles from "./FormSection.module.css";
-import BugReportForm from "../../bug-report/BugReportForm";
+    useForm,
+    isEmail,
+    hasLength,
+    matches,
+    isNotEmpty,
+  } from "@mantine/form";
+  import { Button, TextInput, Textarea } from "@mantine/core";
+//   import styles from "./FormSection.module.css";
 
-const FormSection = () => {
-  const BACKEND_CONTACT_URI="https://7kmtq0boqc.execute-api.ap-south-1.amazonaws.com/dev/contactUs"
-  const [submitted, setSubmitted] = useState(false); // State to track form submission status
-  const form = useForm({
-    mode: "uncontrolled",
-    initialValues: {
-      name: "",
-      phoneNumber: "",
-      senderEmail: "",
-      message:""
-    },
+const BugReportForm = () => {
+  const [formToggle, setFormToggle] = useState(false);
 
-    validate: {
-      name: hasLength({ min: 2, max: 20 }, "Please write your name"),
-      phoneNumber: matches(
-        /^(\+\d{1,3}[-.\s]??)?\d{10}$/,
-        "Please enter a valid phone number",
-      ),
-      senderEmail: isEmail("Please enter a valid email"),
-      message: isNotEmpty("Please write your message"),
-      
-    },
-  });
-
-  const [messageRows, setMessageRows] = useState(1);
-
-  const handleTextareaFocus = () => {
-    setMessageRows(3);
-  };
-
-  const handleTextareaBlur = () => {
-    setMessageRows(1);
-  };
-
- 
-  const sendFormData = async (data) => {
-    console.log(data);
-   if(BACKEND_CONTACT_URI){
-    try {
-      const response = await fetch(BACKEND_CONTACT_URI, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if(response.ok){
-        console.log("data sent successfully");
-        setSubmitted(true);
-        form.reset()
-      }else{
-        throw new Error('Failed to send data');
-      }
-    } catch (error) {
-      console.error(error);
-    }
-   }else{
-    console.error("BACKEND_CONTACT_URI is not defined");
-   }
+  const handleClick = () => {
+    setFormToggle(!formToggle);
   };
 
   return (
-    <>
-    <div className="relative col-span-2 mb-5 flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
-      <div>
-        <BugReportForm />
+    <div>
+      <div className="" onClick={handleClick}>
+        <Image
+          src="/assets/images/home_page/bug-black.svg"
+          width={50}
+          height={50}
+          className="bug-color-change"
+          alt="bug image"
+        />
       </div>
-      <form
+      <div className="w-full flex justify-center items-center">
+        {formToggle ? (
+          <div className="h-[400px] w-[500px] bg-[#FFFDEE] text-[20px]">
+            <form
         className={`${styles.formWrap} w-full`}
         onSubmit={form.onSubmit((values) => {
          sendFormData(values)
@@ -160,9 +116,13 @@ const FormSection = () => {
           )}
         </div>
       </form>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
-    </>
   );
 };
 
-export default FormSection;
+export default BugReportForm;

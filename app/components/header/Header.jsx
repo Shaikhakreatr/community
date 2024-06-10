@@ -64,10 +64,10 @@ const Header = () => {
           </Link>
           <div className="absolute cursor-pointer right-[3%] nav-bar pointer-events-auto" onClick={toggleMenu}>
             <div
-              className={`bg-black rounded-[20px] nav-line1 h-[2.8px] w-[25px] sm:h-[2.8px] lg:h-[2.8px] sm:w-[30px] mb-[8px] transition-transform duration-300 ${menuOpen ? 'transform  rotate-45 translate-y-1.5' : 'transform  rotate-0 translate-y-0'}`}
+              className={`bg-black rounded-[20px] nav-line1 h-[2px] w-[25px] sm:h-[2px] lg:h-[2.8px] sm:w-[30px] mb-[8px] transition-transform duration-300 ${menuOpen ? 'transform  rotate-45 translate-y-1.5' : 'transform  rotate-0 translate-y-0'}`}
             ></div>
             <div
-              className={`bg-black rounded-[20px] nav-line2 h-[2.5px] w-[25px] sm:h-[2.5px] lg:h-[2.5px] sm:w-[30px] transition-transform duration-300 ${menuOpen ? 'transform -rotate-45 -translate-y-1' : 'transform rotate-0 translate-y-0'}`}
+              className={`bg-black rounded-[20px] nav-line2 h-[2px] w-[25px] sm:h-[2px] lg:h-[2.5px] sm:w-[30px] transition-transform duration-300 ${menuOpen ? 'transform -rotate-45 -translate-y-1' : 'transform rotate-0 translate-y-0'}`}
             ></div>
           </div>
         </div>

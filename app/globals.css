@@ -420,3 +420,9 @@ h1{
   width: 310px;
   opacity: 0.7;
 }
+
+/* bug report form */
+
+.bug-color-change:hover {
+  content: url(/assets/images/home_page/bug-pink.svg);
+}
