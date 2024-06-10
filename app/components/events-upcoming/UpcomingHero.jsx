@@ -130,16 +130,19 @@ const UpcomingHero = ({ upcomingData }) => {
               src={upcomingData.coverImg}
               alt="main-img"
             />
-            <div className="content-neue-medium  mt-[10px] flex items-center justify-between text-[13px] sm:mt-[18px] sm:text-[15px] lg:text-[22px] xl:text-[30px]">
-              <div className="border-r border-black px-[8px] lg:px-[25px]">
+            <div className="content-neue-medium lg:gap-[18px] gap-[5px]  mt-[10px] flex items-center justify-center text-[13px] sm:mt-[18px] sm:text-[15px] lg:text-[22px] xl:text-[30px]">
+              <div>
                 {upcomingData.date}
               </div>
-              <div className="border-r border-black px-[8px] lg:px-[25px]">
+              <div className="border-r border-black sm:h-[35px] h-[20px]"></div>
+              <div>
                 {upcomingData.location}
               </div>
-              <div className="border-black px-[8px] sm:border-r lg:px-[25px]">
+              <div className="border-r border-black sm:h-[35px] h-[20px]"></div>
+              <div>
                 {`₹  ${upcomingData.price}`}
               </div>
+              <div className="sm:border-r sm:border-black sm:h-[35px] h-[20px]"></div>
               <div
                 onClick={scrollToDiv}
                 className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
@@ -249,7 +252,7 @@ const UpcomingHero = ({ upcomingData }) => {
               ))}
               <div className="mt-[20px] flex items-center justify-center">
                 <button
-                  className={`flex flex-col h-[16px] w-[16px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                  className={`flex pb-[3px] h-[20px] w-[20px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length <= 1
                       ? "border border-gray-400 text-gray-400"
                       : "border border-black"
@@ -260,11 +263,11 @@ const UpcomingHero = ({ upcomingData }) => {
                 >
                   -
                 </button>
-                <div className="content-neue-medium flex flex-col justify-center items-center mx-[10px] h-[30px] w-[30px] text-[12px] lg:text-[24px] xl:text-[28px]">
+                <div className="content-neue-medium flex flex-col justify-center items-center sm:mx-[10px] h-[30px] w-[30px] text-[12px] lg:text-[24px] xl:text-[28px]">
                   {form.values.forms.length}
                 </div>
                 <button
-                  className={`flex flex-col h-[16px] w-[16px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                  className={`flex pb-[3px] h-[20px] w-[20px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length >= 10
                       ? "border border-gray-400 text-gray-400"
                       : "border border-black"

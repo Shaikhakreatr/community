@@ -42,10 +42,11 @@ const PastHero = ({pastData}) => {
                 src={pastData.coverImg}
                 alt="main-img"
               />
-              <div className="content-neue-medium sm:mt-[18px] mt-[10px] flex items-center justify-center text-[13px] sm:text-[18px] lg:text-[22px] xl:text-[30px]">
-                <div className="sm:mr-3 mr-1 border-r border-black sm:pr-[40px] pr-[10px]">
+              <div className="content-neue-medium lg:gap-[18px] gap-[5px] sm:mt-[18px] mt-[10px] flex items-center justify-center text-[13px] sm:text-[18px] lg:text-[22px] xl:text-[30px]">
+                <div >
                   {pastData.date}
                 </div>
+                <div className="border-r border-black sm:h-[35px] h-[20px]"></div>
                 <div>{pastData.location}</div>
               </div>
             </div>
