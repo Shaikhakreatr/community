@@ -1,0 +1,35 @@
+import React from "react";
+
+const LeftGifSection = () => {
+  return (
+    <div className="relative col-span-3 flex  min-h-[100%] items-center sm:ml-0 lg:mr-[85px] lg:mt-[-32px] xl:mr-0">
+      <div className="page-heading absolute hidden text-[50px] sm:left-[-50px]  sm:top-[126px] sm:block sm:text-[70px] lg:left-[5%] lg:top-[21%] lg:text-[90px] xl:left-[2%] xl:top-[17%] xl:text-[110px]">
+        <h1>Report a Pest</h1>
+      </div>
+      <div className="page-heading absolute left-[6%]  top-[44%] block  text-[59px]  sm:hidden ">
+        <h1>Report a Pest</h1>
+      </div>
+      <div className="sm:grid sm:grid-cols-5 lg:mt-[60px] lg:gap-10 xl:gap-12  ">
+        <div className="content-neue col-span-2 hidden sm:ml-[-45px] sm:mt-[60px] sm:block lg:ml-[34px] lg:mt-[40px] xl:ml-[9%] xl:mt-[20%]">
+          <p className=" contact-text leading-5 sm:text-[14px] lg:text-[16px] xl:text-[18px]">
+            We consistently strive to make your experience better.
+          </p>
+        </div>
+        <div className="sm:col-span-3 ">
+          <img
+            className="h-[8.5625rem] object-cover object-center w-[19.625rem] rounded-xl sm:h-[130px] sm:w-[365px] lg:h-[171px] lg:w-[400px] xl:h-[191px] xl:w-[418px]"
+            src="/assets/images/bug-report-page/bug-gif.gif"
+            alt="form img"
+          />
+        </div>
+        <div className="content-neue mt-[50px] flex flex-col items-center justify-center sm:hidden ">
+          <p className=" contact-text  text-center text-[17px] leading-5">
+            We consistently strive to<br /> make your experience better.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LeftGifSection;
