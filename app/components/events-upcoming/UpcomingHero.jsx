@@ -132,7 +132,7 @@ const UpcomingHero = ({ upcomingData }) => {
               alt="main-img"
             />
             </div>
-            <div className="content-neue-medium lg:gap-[18px] gap-[5px]  mt-[10px] flex items-center justify-center text-[13px] sm:mt-[18px] sm:text-[15px] lg:text-[22px] xl:text-[30px]">
+            <div className="content-neue-medium lg:gap-[18px] sm:gap-[18px] gap-[5px]  mt-[10px] flex items-center justify-center text-[11px] sm:mt-[18px] sm:text-[15px] lg:text-[22px] xl:text-[30px]">
               <div>
                 {upcomingData.date}
               </div>
@@ -162,11 +162,11 @@ const UpcomingHero = ({ upcomingData }) => {
             </div>
           </div>
           <div className="mx-[20px] mt-[25px] sm:mt-[60px] lg:mx-[130px] xl:mx-[176px]">
-            <h3 className="content-neue-medium text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
+            <h3 className="content-neue-medium sm:text-start text-center text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
             <br />
-            <div className="content-neue text-[14px] leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
+            <div className="content-neue text-[14px] sm:text-start text-center leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>

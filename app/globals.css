@@ -117,39 +117,113 @@ h1{
 }
 
 /* events page */
-.upcoming-box:hover{
-  background-color: #DFE5FF;
-  transform: scale(1.1);
+
+@media (min-width: 640px) and (max-width: 1279px){
+  .upcoming-box:hover{
+    background-color: #DFE5FF;
+    transform: scale(1.1);
+  }
+  
+  .upcoming-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .upcoming-box:hover .upcoming-sub {
+    background-color: black;
+    color: white;
+  }
+  .upcoming-box:hover .upcoming-arrow {
+    background-color: black;
+    color: white;
+  }
+  
+  .past-box:hover{
+    background-color: #F1E9C3;
+    transform: scale(1.1);
+  }
+  
+  .past-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .past-box:hover .past-sub {
+    background-color: black;
+    color: white;
+  }
+  .past-box:hover .past-arrow {
+    background-color: black;
+    color: white;
+  }
+}
+@media only screen and (min-width: 1280px){
+  .upcoming-box:hover{
+    background-color: #DFE5FF;
+    transform: scale(1.1);
+  }
+  
+  .upcoming-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .upcoming-box:hover .upcoming-sub {
+    background-color: black;
+    color: white;
+  }
+  .upcoming-box:hover .upcoming-arrow {
+    background-color: black;
+    color: white;
+  }
+  
+  .past-box:hover{
+    background-color: #F1E9C3;
+    transform: scale(1.1);
+  }
+  
+  .past-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .past-box:hover .past-sub {
+    background-color: black;
+    color: white;
+  }
+  .past-box:hover .past-arrow {
+    background-color: black;
+    color: white;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .upcoming-box:hover{
+    background-color: #DFE5FF;
+    transform: scale(1.1);
+  }
+  
+  .upcoming-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .upcoming-box:hover .upcoming-sub {
+    background-color: black;
+    color: white;
+  }
+  .upcoming-box:hover .upcoming-arrow {
+    background-color: black;
+    color: white;
+  }
+  
+  .past-box:hover{
+    background-color: #F1E9C3;
+    transform: scale(1.1);
+  }
+  
+  .past-box,.past-box {
+    transition: transform 0.5s ease-in-out;
+  }
+  .past-box:hover .past-sub {
+    background-color: black;
+    color: white;
+  }
+  .past-box:hover .past-arrow {
+    background-color: black;
+    color: white;
+  }
 }
 
-.upcoming-box,.past-box {
-  transition: transform 0.5s ease-in-out;
-}
-.upcoming-box:hover .upcoming-sub {
-  background-color: black;
-  color: white;
-}
-.upcoming-box:hover .upcoming-arrow {
-  background-color: black;
-  color: white;
-}
-
-.past-box:hover{
-  background-color: #F1E9C3;
-  transform: scale(1.1);
-}
-
-.past-box,.past-box {
-  transition: transform 0.5s ease-in-out;
-}
-.past-box:hover .past-sub {
-  background-color: black;
-  color: white;
-}
-.past-box:hover .past-arrow {
-  background-color: black;
-  color: white;
-}
 
 /* partner with us */
 

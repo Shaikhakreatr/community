@@ -9,7 +9,7 @@ import {
 } from "@mantine/form";
 import { Button, TextInput, Textarea } from "@mantine/core";
 import styles from "./FormSection.module.css";
-import BugReportForm from "../../bug-report/BugReportForm";
+
 
 const FormSection = () => {
   const BACKEND_CONTACT_URI="https://7kmtq0boqc.execute-api.ap-south-1.amazonaws.com/dev/contactUs"
@@ -73,9 +73,6 @@ const FormSection = () => {
   return (
     <>
     <div className="relative col-span-2 mb-5 flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
-      <div>
-        <BugReportForm />
-      </div>
       <form
         className={`${styles.formWrap} w-full`}
         onSubmit={form.onSubmit((values) => {

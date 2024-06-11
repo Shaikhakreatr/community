@@ -100,7 +100,7 @@
     .transparentInput::placeholder{
         color:black;
         opacity: 40%;
-        font-size: 9px;
+        font-size: 12px;
         margin-left: 40px;
         font-family: "Neue Montreal";
         
