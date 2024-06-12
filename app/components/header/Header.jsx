@@ -66,7 +66,7 @@ const Header = () => {
                 {Array.from({ length: 10 }).map((index) => (
                   <div key={index} className="flex items-center gap-8">
                     <div className="flex items-center gap-4">
-                      <p className="content-neue text-[#EAA2CD] group-hover:text-[#2A2A2A]">
+                      <p className="content-neue italic text-[#EAA2CD] group-hover:text-[#2A2A2A]">
                         Report a Bug!
                       </p>
                       <Image
@@ -77,7 +77,7 @@ const Header = () => {
                       />
                     </div>
                     <div className="flex items-center gap-4">
-                      <p className="content-neue text-[#EAA2CD] group-hover:text-[#2A2A2A]">
+                      <p className="content-neue italic text-[#EAA2CD] group-hover:text-[#2A2A2A]">
                         Report a Bug!
                       </p>
                       <Image
