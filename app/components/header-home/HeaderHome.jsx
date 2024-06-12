@@ -30,7 +30,7 @@ const HeaderHome = () => {
       >
         <div className="group flex w-full flex-col items-center  justify-center bg-[#2A2A2A]  pt-1 sm:hover:bg-[#EAA2CD]">
           <Link href="/bug-report">
-            <marquee behavior="scroll" direction="left">
+            <marquee behavior="scroll"  direction="left">
               <div className="flex items-center space-x-4 ">
                 {Array.from({ length: 10 }).map((index) => (
                   <div key={index} className="flex items-center gap-8 ">

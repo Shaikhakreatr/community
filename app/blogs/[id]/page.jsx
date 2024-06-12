@@ -27,12 +27,12 @@ const BlogDetailsHero = () => {
   }, [id]);
 
   return (
-    <main className='pt-[6.25rem] bg-img'>
+    <main className='pt-[6.25rem] bg-img h-full w-full'>
       <Header />
       {loading ? (
         <Spinner loading={loading} />
       ) : (
-        <div dangerouslySetInnerHTML={{ __html: htmlData?.htmlPage || '<p>No content available</p>' }} />
+        <div className='w-full h-full flex flex-col justify-center items-center' dangerouslySetInnerHTML={{ __html: htmlData?.htmlPage || '<p>No content available</p>' }} />
       )}
       <Footer />
     </main>

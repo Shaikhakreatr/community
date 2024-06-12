@@ -123,13 +123,13 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`absolute inset-0 top-[68px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
+            className={`absolute inset-0 top-[68px] lg:mt-[30px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
             }}
           >
-            <div className="relative mt-[-4px] flex items-center justify-center sm:mt-[-5px] lg:mt-[20px] xl:mt-10">
+            <div className="relative mt-[-4px] flex items-center justify-center sm:mt-[-5px] lg:mt-[0px] xl:mt-10">
               <div className="absolute left-[29%] top-[30%] sm:left-[37%] sm:top-[35%] lg:left-[33%] lg:top-[20%] xl:left-[35%] xl:top-[30%]">
                 <Image
                   className="h-[68px]  w-[130px] sm:h-[98px] sm:w-[160px] lg:h-[65px] lg:w-[120px] xl:h-[88px] xl:w-[150px]"
@@ -218,7 +218,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[100px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[460px] lg:w-[340px] xl:h-[676px] xl:w-[466px]"
+                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[460px] lg:w-[340px] xl:h-[676px] xl:w-[466px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}
