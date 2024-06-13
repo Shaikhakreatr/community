@@ -88,12 +88,12 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="pl-6 pr-6 mt-[20px]">
-                  <h1 className="content leading-[40px] mr-20 text-[34px] font-[800]">
+                <div className="mt-[20px] pl-6 pr-6">
+                  <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading}
                   </h1>
                   <p className="content mt-4"> {data[j - 1].writer}</p>
-                  <div className="flex items-center justify-between mt-2 mb-[15px]">
+                  <div className="mb-[15px] mt-2 flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -158,10 +158,10 @@ const BlogListingHero = () => {
                 />
                 <div className="mt-6 pl-6 pr-6">
                   <div className="">
-                    <h1 className="content leading-[40px] mr-24 text-[34px] font-[800]">
+                    <h1 className="content mr-24 text-[34px] font-[800] leading-[40px]">
                       {data[j - 1].heading}
                     </h1>
-                    <p className="content pt-2"> {data[j - 1].writer}ter</p>
+                    <p className="content pt-2"> {data[j - 1].writer}</p>
                   </div>
 
                   <div className="flex  justify-between">
@@ -229,8 +229,8 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="pl-6 pr-6 mt-[6px]">
-                  <h1 className="content leading-[40px] text-[34px] font-[800]">
+                <div className="mt-[6px] pl-6 pr-6">
+                  <h1 className="content text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading}
                   </h1>
                   <p className="content"> {data[j - 1].writer}</p>
@@ -294,8 +294,8 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="pl-6 pr-6 mt-6">
-                  <h1 className="content mr-20 leading-[40px] text-[34px] font-[800]">
+                <div className="mt-6 pl-6 pr-6">
+                  <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading}
                   </h1>
                   <p className="content pt-2"> {data[j - 1].writer}</p>
@@ -359,8 +359,8 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="pl-6 pr-6 mt-6">
-                  <h1 className="content mr-20 leading-[40px] text-[34px] font-[800]">
+                <div className="mt-6 pl-6 pr-6">
+                  <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading}
                   </h1>
                   <p className="content pt-2"> {data[j - 1].writer}</p>
@@ -429,9 +429,9 @@ const BlogListingHero = () => {
                       backgroundPosition: "center",
                     }}
                   />
-                  <div className="flex justify-between pl-6 pr-6 mt-6">
+                  <div className="mt-6 flex justify-between pl-6 pr-6">
                     <div className="flex w-[50%] items-center  ">
-                      <div className="content leading-[40px] mr-20 text-[34px] font-[800]">
+                      <div className="content mr-20 text-[34px] font-[800] leading-[40px]">
                         {data[j - 1].heading}
                         <div className="content pt-2 text-[16px] font-[100]">
                           {data[j - 1].writer}
