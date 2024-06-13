@@ -8,6 +8,8 @@ import Community4 from "../../../../public/assets/images/about_community/about-c
 import playstore from "../../../../public/assets/images/about_community/playstore-community.svg";
 import appstore from "../../../../public/assets/images/about_community/appstore-community.svg";
 
+
+
 const AboutCommunityHero = () => {
   return (
     <div className="flex w-full items-center justify-center">

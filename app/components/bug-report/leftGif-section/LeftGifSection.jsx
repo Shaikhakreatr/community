@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const LeftGifSection = () => {
   return (
@@ -16,10 +17,13 @@ const LeftGifSection = () => {
           </p>
         </div>
         <div className="sm:col-span-3 ">
-          <img
+          <Image
             className="h-[8.5625rem] object-cover object-center w-[19.625rem] rounded-xl sm:h-[130px] sm:w-[365px] lg:h-[171px] lg:w-[400px] xl:h-[191px] xl:w-[418px]"
             src="/assets/images/bug-report-page/bug-gif.gif"
             alt="form img"
+            height={171}
+            width={400}
+            unoptimized
           />
         </div>
         <div className="content-neue mt-[50px] flex flex-col items-center justify-center sm:hidden ">

@@ -62,7 +62,7 @@ const EventsHero = () => {
               Take a look
               <br className="sm:hidden" /> at our
             </h1>
-            <h1 className="absolute sm:right-[28%] sm:top-[-5%] right-[18%] top-[60%] rotate-[-1deg] text-center text-[48px] text-blue-600 sm:text-[70px] lg:right-[35%] lg:top-[-15%] lg:text-[90px] xl:right-[34%] xl:top-[-18%] xl:text-[110px]">
+            <h1 className="absolute sm:right-[28%] sm:top-[-5%] right-[25%] top-[64%] rotate-[-1deg] text-center text-[48px] text-blue-600 sm:text-[70px] lg:right-[35%] lg:top-[-15%] lg:text-[90px] xl:right-[34%] xl:top-[-18%] xl:text-[110px]">
               past Events
             </h1>
           </div>

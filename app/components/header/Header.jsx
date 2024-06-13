@@ -123,7 +123,7 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`absolute inset-0 top-[68px] lg:mt-[30px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
+            className={`absolute inset-0 top-[68px] sm:mt-[30px] mt-[29px] lg:mt-[30px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,

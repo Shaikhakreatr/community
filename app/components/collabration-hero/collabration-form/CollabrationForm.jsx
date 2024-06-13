@@ -52,7 +52,7 @@ const CollabrationForm = () => {
       const data = await response.json();
       console.log("Form submitted successfully:", data);
       setSubmitted(true);
-      form.reset()
+      form.reset();
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -65,9 +65,9 @@ const CollabrationForm = () => {
           Fill in the details
         </h1>
       </div>
-      <div className="sm:block flex flex-col justify-center items-center">
-        <div className="mt-[20px] lg:mb-[25px] w-[100%] lg:w-[50%] ">
-          <label className="content-neue sm:text-[18px] text-[16px]">
+      <div className="flex flex-col items-center justify-center sm:block">
+        <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%] ">
+          <label className="content-neue text-[16px] sm:text-[18px]">
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
           <Select
@@ -75,6 +75,7 @@ const CollabrationForm = () => {
             mt={5}
             className={{
               input: styles.dropDown,
+              error: styles.dropDownError
             }}
             classNames={{ input: styles.selectInput }}
             placeholder="Choose type"
@@ -83,7 +84,7 @@ const CollabrationForm = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center sm:block">
+      <div className="flex items-center justify-center sm:block">
         <form
           className={`${styles.formWrap} w-full`}
           onSubmit={form.onSubmit((values) => {

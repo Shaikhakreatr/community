@@ -41,6 +41,10 @@
     color: #DE033E;
     margin-top: 6px;
 }
+/* .dropDownError{
+    color: #DE033E;
+    margin-top: 6px;
+} */
 
 .inputLabel{
     color: black;
@@ -167,7 +171,7 @@
         background-color: transparent;
         color:#3C9E3C ;
         border: 1px solid #3C9E3C;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     
     .sentMessage{
@@ -198,7 +202,7 @@
         background-color: transparent;
         color:#3C9E3C ;
         border: 1px solid #3C9E3C;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .sentMessage{
         font-family: "Neue Montreal";
