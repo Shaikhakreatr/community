@@ -125,7 +125,7 @@ const BlogListingHero = () => {
                     <h1 className="content mr-24 text-[20px] font-[800]">
                       {data[j - 1].heading}
                     </h1>
-                    <p className="content pt-2"> {data[j - 1].writer}ter</p>
+                    <p className="content pt-2"> {data[j - 1].writer}</p>
                   </div>
 
                   <div className="flex flex-col  items-end">
