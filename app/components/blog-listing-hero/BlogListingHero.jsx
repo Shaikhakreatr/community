@@ -12,7 +12,6 @@ const BlogListingHero = () => {
   const [data, setData] = useState([]);
   const [isLoadMoreAvailable, setIsLoadMoreAvailable] = useState(false);
   const [backendData, setBackendData] = useState([]);
-
   const [elements, setElements] = useState([]);
 
   const fetchBlogsData = async () => {
@@ -33,6 +32,7 @@ const BlogListingHero = () => {
       setLoading(false);
     }
   };
+
   const renderColumns = useCallback(() => {
     let column1 = [];
     let column2 = [];
@@ -59,7 +59,9 @@ const BlogListingHero = () => {
                 />
                 <div className="pl-3 pr-3 pt-3">
                   <h1 className="content mr-20 text-[20px] font-[800]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content text-[12px]"> {data[j - 1].writer} </p>
                   <div className="flex items-center justify-between pt-6">
@@ -90,7 +92,9 @@ const BlogListingHero = () => {
                 />
                 <div className="mt-[20px] pl-6 pr-6">
                   <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content mt-4"> {data[j - 1].writer}</p>
                   <div className="mb-[15px] mt-2 flex items-center justify-between">
@@ -123,7 +127,9 @@ const BlogListingHero = () => {
                 <div className="p-3">
                   <div className="">
                     <h1 className="content mr-24 text-[20px] font-[800]">
-                      {data[j - 1].heading}
+                      {data[j - 1].heading.length > 50
+                        ? `${data[j - 1].heading.slice(0, 50)}...`
+                        : data[j - 1].heading}
                     </h1>
                     <p className="content pt-2"> {data[j - 1].writer}</p>
                   </div>
@@ -159,7 +165,9 @@ const BlogListingHero = () => {
                 <div className="mt-6 pl-6 pr-6">
                   <div className="">
                     <h1 className="content mr-24 text-[34px] font-[800] leading-[40px]">
-                      {data[j - 1].heading}
+                      {data[j - 1].heading.length > 50
+                        ? `${data[j - 1].heading.slice(0, 50)}...`
+                        : data[j - 1].heading}
                     </h1>
                     <p className="content pt-2"> {data[j - 1].writer}</p>
                   </div>
@@ -198,7 +206,9 @@ const BlogListingHero = () => {
                 />
                 <div className="pl-6 pr-6 pt-3">
                   <h1 className="content mr-20 text-[20px] font-[800]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content pt-2 text-[12px]">
                     {data[j - 1].writer}
@@ -231,7 +241,9 @@ const BlogListingHero = () => {
                 />
                 <div className="mt-[6px] pl-6 pr-6">
                   <h1 className="content text-[34px] font-[800] leading-[40px]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between">
@@ -263,7 +275,9 @@ const BlogListingHero = () => {
                 />
                 <div className="pl-6 pr-6 pt-3">
                   <h1 className="content mr-20 text-[20px] font-[800]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content pt-2 text-[12px]">
                     {data[j - 1].writer}
@@ -295,8 +309,10 @@ const BlogListingHero = () => {
                   }}
                 />
                 <div className="mt-6 pl-6 pr-6">
-                  <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
-                    {data[j - 1].heading}
+                  <h1 className="content text-[34px] font-[800] leading-[40px]">
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between">
@@ -328,7 +344,9 @@ const BlogListingHero = () => {
                 />
                 <div className="pl-6 pr-6 pt-3">
                   <h1 className="content mr-20 text-[20px] font-[800]">
-                    {data[j - 1].heading}
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content pt-2 text-[12px]">
                     {data[j - 1].writer}
@@ -360,8 +378,10 @@ const BlogListingHero = () => {
                   }}
                 />
                 <div className="mt-6 pl-6 pr-6">
-                  <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
-                    {data[j - 1].heading}
+                  <h1 className="content text-[34px] font-[800] leading-[40px]">
+                    {data[j - 1].heading.length > 50
+                      ? `${data[j - 1].heading.slice(0, 50)}...`
+                      : data[j - 1].heading}
                   </h1>
                   <p className="content pt-2"> {data[j - 1].writer}</p>
                   <div className="flex items-center justify-between ">
@@ -399,7 +419,9 @@ const BlogListingHero = () => {
                   <div className="flex justify-between pl-6 pr-6 pt-6">
                     <div className="flex w-[50%] items-center  ">
                       <div className="content mr-20 text-[25px] font-[800]">
-                        {data[j - 1].heading}
+                        {data[j - 1].heading.length > 50
+                          ? `${data[j - 1].heading.slice(0, 50)}...`
+                          : data[j - 1].heading}
                         <div className="content pt-2 text-[12px] font-[100]">
                           {data[j - 1].writer}
                         </div>
@@ -432,7 +454,9 @@ const BlogListingHero = () => {
                   <div className="mt-6 flex justify-between pl-6 pr-6">
                     <div className="flex w-[50%] items-center  ">
                       <div className="content mr-20 text-[34px] font-[800] leading-[40px]">
-                        {data[j - 1].heading}
+                        {data[j - 1].heading.length > 50
+                          ? `${data[j - 1].heading.slice(0, 50)}...`
+                          : data[j - 1].heading}
                         <div className="content pt-2 text-[16px] font-[100]">
                           {data[j - 1].writer}
                         </div>
