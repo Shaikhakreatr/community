@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useParams } from "next/navigation";
 import {
   useForm,
@@ -10,10 +10,21 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
+import PaymentSuccessMain from "../payment-success/PaymentSuccessMain";
+import PaymentFailureMain from "../payment-failure/PaymentFailureMain";
 
 const UpcomingHero = ({ upcomingData }) => {
   const { id } = useParams();
   const targetRef = useRef(null);
+  const [totalAmount, setTotalAmount] = useState(upcomingData.price);
+
+  const newAmount = totalAmount * 100;
+  const [rzp1, setRzp1] = useState(null); // State variable for Razorpay instance
+  const [orderId, setOrderId] = useState(null); // State variable for order ID
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
 
   const form = useForm({
     mode: "controlled",
@@ -37,52 +48,139 @@ const UpcomingHero = ({ upcomingData }) => {
     },
   });
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    script.onload = () => {
+      const options = {
+        key: process.env.REACT_APP_RAZORPAY_KEY_ID,
+        amount: newAmount,
+        currency: "INR",
+        name: "Kreatr",
+        description: "Test Transaction",
+        image: "/assets/images/home_page/logo/Kreatr-logo.svg",
+        order_id: orderId,
+        handler: async function (response) {
+          const body = {
+            ...response,
+          };
+          try {
+            const validateRes = await fetch(
+              "https://xbhfkqpomc.execute-api.ap-south-1.amazonaws.com/dev/order/validate",
+              {
+                method: "POST",
+                body: JSON.stringify(body),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              },
+            );
+            const jsonRes = await validateRes.json();
+            console.log(jsonRes);
+          } catch (error) {
+            console.error("Error validating payment:", error);
+            // Handle error appropriately
+          }
+        },
+        prefill: {
+          name: name,
+          email: email,
+          phone: phoneNo,
+        },
+        notes: {
+          address: "Razorpay Corporate Office",
+        },
+        theme: {
+          color: "#000000",
+        },
+      };
+
+      // Set Razorpay instance
+      const rzpInstance = new window.Razorpay(options);
+      setRzp1(rzpInstance);
+    };
+
+    document.body.appendChild(script);
+
+    // Clean-up function
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []); // Empty dependency array ensures this runs only once
+
   const addForm = () => {
     if (form.values.forms.length < 10) {
       form.setFieldValue("forms", [
         ...form.values.forms,
         { name: "", phoneNo: "", email: "" },
       ]);
+      setTotalAmount((form.values.forms.length + 1) * upcomingData.price);
     }
   };
 
   const removeForm = () => {
     if (form.values.forms.length > 1) {
       form.setFieldValue("forms", form.values.forms.slice(0, -1));
+      setTotalAmount((form.values.forms.length - 1) * upcomingData.price);
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!form.validate().hasErrors) {
-      console.log(form.values.forms);
-      try {
-        const res = await fetch(
-          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`,
-          {
-            method: "PATCH",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              newFormInfoList: form.values.forms.map((formInstance) => ({
-                name: formInstance.name,
-                phoneNo: formInstance.phoneNo,
-                email: formInstance.email,
-              })),
-            }),
-          },
-        );
+    const { name, phoneNo, email } = form.values.forms[0];
+    setName(name);
+    setEmail(email);
+    setPhoneNo(phoneNo);
 
-        // Handle the response
-        if (res.status === 200) {
-          console.log("data sent");
-          form.reset();
-        }
-      } catch (error) {
-        console.error("Error submitting forms:", error);
-      }
+    if (!form.validate().hasErrors) {
+      paymentHandler();
     }
+  };
+
+  const fetchOrderId = async () => {
+    try {
+      const response = await fetch(
+        "https://xbhfkqpomc.execute-api.ap-south-1.amazonaws.com/dev/order",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            amount: amount,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch order ID");
+      }
+
+      const orderData = await response.json();
+      setOrderId(orderData.id);
+    } catch (error) {
+      console.error("Error fetching order ID:", error);
+      // Handle error appropriately, e.g., display an error message to the user
+    }
+  };
+  const paymentHandler = async () => {
+    if (!rzp1) {
+      console.error(
+        "Razorpay instance not yet created. Waiting for script to load.",
+      );
+      return;
+    }
+
+    if (!orderId) {
+      console.error("Order ID not yet fetched. Cannot proceed with payment.");
+      return;
+    }
+
+    const options = { ...rzp1.options };
+    options.order_id = orderId;
+
+    rzp1.open(options);
   };
 
   const scrollToDiv = () => {
@@ -105,7 +203,6 @@ const UpcomingHero = ({ upcomingData }) => {
   if (!isDataAvailable) {
     return <div>No Data Available</div>;
   }
-
   return (
     <section>
       <div className="container mx-auto">
@@ -125,26 +222,20 @@ const UpcomingHero = ({ upcomingData }) => {
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
-            <div className="flex justify-center items-center">
-            <img
-              className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px] "
-              src={upcomingData.coverImg}
-              alt="main-img"
-            />
+            <div className="flex items-center justify-center">
+              <img
+                className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px] "
+                src={upcomingData.coverImg}
+                alt="main-img"
+              />
             </div>
-            <div className="content-neue-medium lg:gap-[18px] sm:gap-[18px] gap-[5px]  mt-[10px] flex items-center justify-center text-[11px] sm:mt-[18px] sm:text-[15px] lg:text-[22px] xl:text-[30px]">
-              <div>
-                {upcomingData.date}
-              </div>
-              <div className="border-r border-black sm:h-[35px] h-[20px]"></div>
-              <div>
-                {upcomingData.location}
-              </div>
-              <div className="border-r border-black sm:h-[35px] h-[20px]"></div>
-              <div>
-                {`₹  ${upcomingData.price}`}
-              </div>
-              <div className="sm:border-r sm:border-black sm:h-[35px] h-[20px]"></div>
+            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[5px] text-[11px] sm:mt-[18px] sm:gap-[18px] sm:text-[15px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
+              <div>{upcomingData.date}</div>
+              <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
+              <div>{upcomingData.location}</div>
+              <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
+              <div>{`₹  ${upcomingData.price}`}</div>
+              <div className="h-[20px] sm:h-[35px] sm:border-r sm:border-black"></div>
               <div
                 onClick={scrollToDiv}
                 className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
@@ -162,11 +253,11 @@ const UpcomingHero = ({ upcomingData }) => {
             </div>
           </div>
           <div className="mx-[20px] mt-[25px] sm:mt-[60px] lg:mx-[130px] xl:mx-[176px]">
-            <h3 className="content-neue-medium sm:text-start text-center text-[16px] sm:text-[24px] lg:text-[26px] xl:text-[34px]">
+            <h3 className="content-neue-medium text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[26px] xl:text-[34px]">
               About
             </h3>
             <br />
-            <div className="content-neue text-[14px] sm:text-start text-center leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
+            <div className="content-neue text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>
@@ -254,7 +345,7 @@ const UpcomingHero = ({ upcomingData }) => {
               ))}
               <div className="mt-[20px] flex items-center justify-center">
                 <button
-                  className={`flex pb-[3px] h-[20px] w-[20px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                  className={`flex h-[20px] w-[20px] items-center justify-center rounded-full pb-[3px] text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length <= 1
                       ? "border border-gray-400 text-gray-400"
                       : "border border-black"
@@ -265,11 +356,11 @@ const UpcomingHero = ({ upcomingData }) => {
                 >
                   -
                 </button>
-                <div className="content-neue-medium flex flex-col justify-center items-center sm:mx-[10px] h-[30px] w-[30px] text-[12px] lg:text-[24px] xl:text-[28px]">
+                <div className="content-neue-medium flex h-[30px] w-[30px] flex-col items-center justify-center text-[12px] sm:mx-[10px] lg:text-[24px] xl:text-[28px]">
                   {form.values.forms.length}
                 </div>
                 <button
-                  className={`flex pb-[3px] h-[20px] w-[20px] items-center justify-center rounded-full text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
+                  className={`flex h-[20px] w-[20px] items-center justify-center rounded-full pb-[3px] text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length >= 10
                       ? "border border-gray-400 text-gray-400"
                       : "border border-black"
@@ -301,7 +392,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 <h1 className="content-neue-medium text-center text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
                   Total Amount :{" "}
                   <span className="page-subhead text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
-                    INR {form.values.forms.length * upcomingData.price}.00
+                    INR {totalAmount}.00
                   </span>
                 </h1>
               </div>
