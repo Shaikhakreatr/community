@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useParams } from "next/navigation";
 import {
   useForm,
@@ -16,15 +16,6 @@ import PaymentFailureMain from "../payment-failure/PaymentFailureMain";
 const UpcomingHero = ({ upcomingData }) => {
   const { id } = useParams();
   const targetRef = useRef(null);
-  const [totalAmount, setTotalAmount] = useState(upcomingData.price);
-
-  const newAmount = totalAmount * 100;
-  const [rzp1, setRzp1] = useState(null); // State variable for Razorpay instance
-  const [orderId, setOrderId] = useState(null); // State variable for order ID
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNo, setPhoneNo] = useState("");
 
   const form = useForm({
     mode: "controlled",
@@ -48,139 +39,52 @@ const UpcomingHero = ({ upcomingData }) => {
     },
   });
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    script.onload = () => {
-      const options = {
-        key: process.env.REACT_APP_RAZORPAY_KEY_ID,
-        amount: newAmount,
-        currency: "INR",
-        name: "Kreatr",
-        description: "Test Transaction",
-        image: "/assets/images/home_page/logo/Kreatr-logo.svg",
-        order_id: orderId,
-        handler: async function (response) {
-          const body = {
-            ...response,
-          };
-          try {
-            const validateRes = await fetch(
-              "https://xbhfkqpomc.execute-api.ap-south-1.amazonaws.com/dev/order/validate",
-              {
-                method: "POST",
-                body: JSON.stringify(body),
-                headers: {
-                  "Content-Type": "application/json",
-                },
-              },
-            );
-            const jsonRes = await validateRes.json();
-            console.log(jsonRes);
-          } catch (error) {
-            console.error("Error validating payment:", error);
-            // Handle error appropriately
-          }
-        },
-        prefill: {
-          name: name,
-          email: email,
-          phone: phoneNo,
-        },
-        notes: {
-          address: "Razorpay Corporate Office",
-        },
-        theme: {
-          color: "#000000",
-        },
-      };
-
-      // Set Razorpay instance
-      const rzpInstance = new window.Razorpay(options);
-      setRzp1(rzpInstance);
-    };
-
-    document.body.appendChild(script);
-
-    // Clean-up function
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []); // Empty dependency array ensures this runs only once
-
   const addForm = () => {
     if (form.values.forms.length < 10) {
       form.setFieldValue("forms", [
         ...form.values.forms,
         { name: "", phoneNo: "", email: "" },
       ]);
-      setTotalAmount((form.values.forms.length + 1) * upcomingData.price);
     }
   };
 
   const removeForm = () => {
     if (form.values.forms.length > 1) {
       form.setFieldValue("forms", form.values.forms.slice(0, -1));
-      setTotalAmount((form.values.forms.length - 1) * upcomingData.price);
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { name, phoneNo, email } = form.values.forms[0];
-    setName(name);
-    setEmail(email);
-    setPhoneNo(phoneNo);
-
     if (!form.validate().hasErrors) {
-      paymentHandler();
-    }
-  };
-
-  const fetchOrderId = async () => {
-    try {
-      const response = await fetch(
-        "https://xbhfkqpomc.execute-api.ap-south-1.amazonaws.com/dev/order",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            amount: amount,
-          }),
-          headers: {
-            "Content-Type": "application/json",
+      console.log(form.values.forms);
+      try {
+        const res = await fetch(
+          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              newFormInfoList: form.values.forms.map((formInstance) => ({
+                name: formInstance.name,
+                phoneNo: formInstance.phoneNo,
+                email: formInstance.email,
+              })),
+            }),
           },
-        },
-      );
+        );
 
-      if (!response.ok) {
-        throw new Error("Failed to fetch order ID");
+        // Handle the response
+        if (res.status === 200) {
+          console.log("data sent");
+          form.reset();
+        }
+      } catch (error) {
+        console.error("Error submitting forms:", error);
       }
-
-      const orderData = await response.json();
-      setOrderId(orderData.id);
-    } catch (error) {
-      console.error("Error fetching order ID:", error);
-      // Handle error appropriately, e.g., display an error message to the user
     }
-  };
-  const paymentHandler = async () => {
-    if (!rzp1) {
-      console.error(
-        "Razorpay instance not yet created. Waiting for script to load.",
-      );
-      return;
-    }
-
-    if (!orderId) {
-      console.error("Order ID not yet fetched. Cannot proceed with payment.");
-      return;
-    }
-
-    const options = { ...rzp1.options };
-    options.order_id = orderId;
-
-    rzp1.open(options);
   };
 
   const scrollToDiv = () => {
@@ -203,6 +107,7 @@ const UpcomingHero = ({ upcomingData }) => {
   if (!isDataAvailable) {
     return <div>No Data Available</div>;
   }
+
   return (
     <section>
       <div className="container mx-auto">
@@ -392,7 +297,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 <h1 className="content-neue-medium text-center text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
                   Total Amount :{" "}
                   <span className="page-subhead text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
-                    INR {totalAmount}.00
+                    INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>
               </div>
