@@ -13,12 +13,12 @@ const PastDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const BACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+
   useEffect(() => {
     const fetchPastData = async () => {
       try {
-        const response = await fetch(
-          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/`,
-        );
+        const response = await fetch(BACKEND_EVENT_INFO_URI);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -27,19 +27,20 @@ const PastDetails = () => {
         if (pastData) {
           setPastData(pastData);
         } else {
-          setError(new Error("Upcoming data not found"));
+          setError(new Error("Past data not found"));
         }
       } catch (error) {
-        console.error("Error fetching upcoming data:", error);
+        console.error("Error fetching past data:", error);
         setError(error);
       } finally {
         setLoading(false);
       }
     };
+
     if (id) {
       fetchPastData();
     }
-  }, [id]);
+  }, [id, BACKEND_EVENT_INFO_URI]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -50,9 +51,9 @@ const PastDetails = () => {
   }
 
   if (!pastData) {
-    return <div>Career not found</div>;
+    return <div>Past event not found</div>;
   }
-
+  
   return (
     <main className="bg-img pt-[6.25rem]">
       <Header />

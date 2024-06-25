@@ -29,32 +29,33 @@ const CollabrationForm = () => {
         "Please enter a valid phone number",
       ),
       email: isEmail("Please enter a valid email"),
-      collaborationType: isNotEmpty("please select any type"),
+      collaborationType: isNotEmpty("Please select any type"),
     },
   });
-  const sendFormData = async (values) => {
-    try {
-      const response = await fetch(
-        "https://l6qi6kuo7c.execute-api.ap-south-1.amazonaws.com/dev/collaboration_request",
-        {
+
+  const BACKEND_COLLABORATION_URI = process.env.NEXT_PUBLIC_BACKEND_COLLABORATION_URI;
+
+  const sendFormData = async (data) => {
+    console.log(data);
+    if (BACKEND_COLLABORATION_URI) {
+      try {
+        const response = await fetch(BACKEND_COLLABORATION_URI, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        },
-      );
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        if (response.ok) {
+          console.log("Data sent successfully");
+          setSubmitted(true);
+          form.reset();
+        } else {
+          throw new Error("Failed to send data");
+        }
+      } catch (error) {
+        console.error("Error sending data:", error);
       }
-
-      const data = await response.json();
-      console.log("Form submitted successfully:", data);
-      setSubmitted(true);
-      form.reset();
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    } else {
+      console.error("BACKEND_COLLABORATION_URI is not defined");
     }
   };
 
@@ -66,7 +67,7 @@ const CollabrationForm = () => {
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center sm:block">
-        <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%] ">
+        <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%]">
           <label className="content-neue text-[16px] sm:text-[18px]">
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
@@ -75,7 +76,7 @@ const CollabrationForm = () => {
             mt={5}
             className={{
               input: styles.dropDown,
-              error: styles.dropDownError
+              error: styles.dropDownError,
             }}
             classNames={{ input: styles.selectInput }}
             placeholder="Choose type"

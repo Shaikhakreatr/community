@@ -12,7 +12,7 @@ import styles from "./FormSection.module.css";
 
 
 const FormSection = () => {
-  const BACKEND_CONTACT_URI="https://7kmtq0boqc.execute-api.ap-south-1.amazonaws.com/dev/contactUs"
+  const BACKEND_CONTACT_URI= process.env.NEXT_PUBLIC_BACKEND_CONTACT_URI;
   const [submitted, setSubmitted] = useState(false); // State to track form submission status
   const form = useForm({
     mode: "uncontrolled",

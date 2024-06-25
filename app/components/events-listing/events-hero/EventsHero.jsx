@@ -10,12 +10,12 @@ const EventsHero = () => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const [pastEvents, setPastEvents] = useState([]);
 
+  const BACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+  
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch(
-          "https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/",
-        ); // Replace with your actual API endpoint
+        const response = await fetch(BACKEND_EVENT_INFO_URI);// Replace with your actual API endpoint
         const data = await response.json();
 
         const upcoming = data.filter((event) => event.eventType === "upcoming");

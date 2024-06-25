@@ -15,12 +15,12 @@ const CareerDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const BACKEND_CAREER_URI = process.env.NEXT_PUBLIC_BACKEND_CAREER_URI;
+
   useEffect(() => {
     const fetchCareerData = async () => {
       try {
-        const response = await fetch(
-          "https://pcfja54uwi.execute-api.ap-south-1.amazonaws.com/dev/career/",
-        );
+        const response = await fetch(`${BACKEND_CAREER_URI}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -42,15 +42,7 @@ const CareerDetails = () => {
     if (id) {
       fetchCareerData();
     }
-  }, [id]);
-
-  // if (error) {
-  //   return <div>Error: {error.message}</div>;
-  // }
-
-  // if (!careerData) {
-  //   return <div>Career not found</div>;
-  // }
+  }, [id, BACKEND_CAREER_URI]);
 
   return (
     <>

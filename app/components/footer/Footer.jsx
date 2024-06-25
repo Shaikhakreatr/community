@@ -73,7 +73,7 @@ const Footer = () => {
                       Blogs
                     </li>
                   </Link>
-                  <Link href="/collabration">
+                  <Link href="/collaboration">
                     <li className="footer-section sm:hover:italic footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>

@@ -11,8 +11,7 @@ import { Button, TextInput, Textarea } from "@mantine/core";
 import styles from "./RightFormSection.module.css";
 
 const RightFormSection = () => {
-  const BACKEND_BUG_URI =
-    "https://py72i58lia.execute-api.ap-south-1.amazonaws.com/dev/reportBug";
+  const BACKEND_BUG_URI = process.env.NEXT_PUBLIC_BACKEND_BUG_URI;
   const [submitted, setSubmitted] = useState(false);
   const form = useForm({
     mode: "uncontrolled",
@@ -115,12 +114,12 @@ const RightFormSection = () => {
               label: styles.inputLabel,
               error: styles.inputError,
             }}
-            placeholder="Your fedback here"
+            placeholder="Your feedback here"
             key={form.key("feedback")}
             {...form.getInputProps("feedback")}
           />
           <br />
-          <div className="items-center text-center sm:flex lg:gap-3  xl:gap-5">
+          <div className="items-center text-center sm:flex lg:gap-3 xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}

@@ -1,7 +1,7 @@
 // careersSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const BACKEND_CAREER_URI = "https://pcfja54uwi.execute-api.ap-south-1.amazonaws.com/dev/career";
+const BACKEND_CAREER_URI = process.env.NEXT_PUBLIC_BACKEND_CAREER_URI;
 
 export const fetchCareers = createAsyncThunk(
   'careers/fetchCareers',

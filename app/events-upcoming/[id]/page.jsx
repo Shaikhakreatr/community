@@ -13,12 +13,12 @@ const UpcomingDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const BACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+
   useEffect(() => {
     const fetchUpcomingData = async () => {
       try {
-        const response = await fetch(
-          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/`,
-        );
+        const response = await fetch(BACKEND_EVENT_INFO_URI);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
