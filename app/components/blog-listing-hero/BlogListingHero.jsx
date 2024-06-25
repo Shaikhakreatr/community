@@ -14,9 +14,14 @@ const BlogListingHero = () => {
   const [backendData, setBackendData] = useState([]);
   const [elements, setElements] = useState([]);
 
-  const BACKEND_BLOG_URI = process.env.NEXT_PUBLIC_BACKEND_BLOG_URI;
+  const BACKEND_BLOG_URI = process.env.NEXT_PUBLIC_BACKEND_BLOG_URI || null;
   const fetchBlogsData = async () => {
+    
     try {
+      if(!BACKEND_BLOG_URI){
+        return [];
+      }
+
       const response = await fetch(BACKEND_BLOG_URI);
       if (!response.ok) {
         throw new Error("Failed to fetch data");
