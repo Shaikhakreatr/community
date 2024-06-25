@@ -28,7 +28,7 @@ const AboutKreatrBottom = () => {
         </h1>
         <div className="relative h-[50px]">
           <Image
-            className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] sm:left-[44%] rotate-[-4deg] lg:right-[42%] lg:top-[-78%] lg:h-[70px] lg:w-[238px] xl:h-[80px] xl:w-[248px]"
+            className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] rotate-[-4deg] sm:left-[44%] lg:right-[42%] lg:top-[-78%] lg:h-[70px] lg:w-[238px] xl:h-[80px] xl:w-[248px]"
             src={"/assets/images/about-kreatr/Kreatr_About.svg"}
             alt="about kreatr image"
             width={238}
@@ -36,7 +36,7 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className=" sm:flex hidden flex-col items-center justify-center sm:w-[100%]">
+      <div className=" hidden flex-col items-center justify-center sm:flex sm:w-[100%]">
         <div className="grid grid-cols-4 items-center justify-center sm:mt-[30px] sm:gap-[5px] lg:mt-[60px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
@@ -137,7 +137,7 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] sm:text-[20px] lg:text-[34px] sm:leading-[20px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
+                  <p className="page-heading text-[16px] sm:text-[20px] sm:leading-[20px] lg:text-[34px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
                     NIlanka Anna ChrIsty
                   </p>
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
@@ -252,7 +252,7 @@ const AboutKreatrBottom = () => {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardBackContent}>
-                  <p className="page-heading text-[16px] sm:leading-[20px] sm:text-[20px] lg:text-[34px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
+                  <p className="page-heading text-[16px] sm:text-[20px] sm:leading-[20px] lg:text-[34px] lg:leading-[28px] xl:text-[40px] xl:leading-[34px]">
                     Arnav Kulshrestha
                   </p>
                   <p className="page-subhead position-people text-[8px] sm:text-[14px] lg:mt-[5px] lg:text-[18px] xl:text-[22px]">
@@ -287,7 +287,7 @@ const AboutKreatrBottom = () => {
                   </p>
                   <div className="flex items-center justify-center">
                     <Link href="/careers">
-                      <div className="page-subhead join-team-btn mt-[10px] h-[30px] w-[132px] rounded-[30px] flex justify-center items-center text-[8px] sm:h-[30px] sm:w-[132px] sm:text-[14px] lg:h-[38px] lg:w-[162px] lg:text-[16px]  xl:h-[44px]  xl:w-[192px]  xl:text-[18px] ">
+                      <div className="page-subhead join-team-btn mt-[10px] flex h-[30px] w-[132px] items-center justify-center rounded-[30px] text-[8px] sm:h-[30px] sm:w-[132px] sm:text-[14px] lg:h-[38px] lg:w-[162px] lg:text-[16px]  xl:h-[44px]  xl:w-[192px]  xl:text-[18px] ">
                         Join our team
                       </div>
                     </Link>
@@ -299,7 +299,7 @@ const AboutKreatrBottom = () => {
         </div>
       </div>
 
-      <div className="mt-[52px] sm:hidden flex flex-col justify-center items-center w-[100%] ">
+      <div className="mt-[52px] flex w-[100%] flex-col items-center justify-center sm:hidden ">
         <div className="mt-[28px] flex items-center justify-center gap-[4px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
@@ -504,43 +504,48 @@ const AboutKreatrBottom = () => {
             </div>
           </div>
         </div>
-          <div className="mt-[28px] grid grid-cols-2 gap-[4px]">
-            <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
-              <div
-                className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
-              >
-                <div className={styles.cardFront9}>
-                  <Image
-                    className="absolute left-[10%] top-[-28%] h-[150px] w-[120px]"
-                    src={"/assets/images/about-kreatr/you-img.svg"}
-                    alt="you image"
-                    height={100}
-                    width={100}
-                  />
-                </div>
-                <div className={styles.cardBack}>
-                  <div className={styles.cardBackContent}>
-                    <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
-                      THIS COULD BE YOU
-                    </p>
-                    <div className="flex items-center justify-center">
-                      <Link href="/careers">
-                        <div className="page-subhead join-team-btn pointer-events-auto mt-[8px] h-[20px] w-[70px] rounded-[30px]  pt-[4px] text-[8px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
-                          Join our team
-                        </div>
-                      </Link>
-                    </div>
+        <div className="mt-[28px] grid grid-cols-2 gap-[4px]">
+          <div className={styles.cardContainer} onClick={() => handleFlip(8)}>
+            <div
+              className={`${styles.card} ${flippedIndices[8] ? styles.flipped : ""}`}
+            >
+              <div className={styles.cardFront9}>
+                <Image
+                  className="absolute left-[10%] top-[-28%] h-[150px] w-[120px]"
+                  src={"/assets/images/about-kreatr/you-img.svg"}
+                  alt="you image"
+                  height={100}
+                  width={100}
+                />
+              </div>
+              <div className={styles.cardBack}>
+                <div className={styles.cardBackContent}>
+                  <p className=" page-heading text-[16px] leading-[16px] sm:text-[20px] lg:text-[34px] xl:text-[40px] ">
+                    THIS COULD BE YOU
+                  </p>
+                  <div className="flex items-center justify-center">
+                    <Link href="/careers">
+                      <div className="page-subhead join-team-btn pointer-events-auto mt-[8px] h-[20px] w-[70px] rounded-[30px]  pt-[4px] text-[8px]  sm:text-[14px]  lg:text-[16px]  xl:text-[18px] ">
+                        Join our team
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
       <div className="content-neue hidden flex-col items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[40px] lg:text-[20px] lg:leading-[24px] xl:text-[24px] xl:leading-[27px]">
         <p className="text-center">
           {`PS: Can't figure out what their descriptions mean?`}
           <br /> {`Here's a link to the`}{" "}
-          <Link className="dictonary-link" href="https://www.dictionary.com/">
+          <Link
+            className="dictonary-link"
+            href="https://www.dictionary.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             dictionary!
           </Link>
         </p>

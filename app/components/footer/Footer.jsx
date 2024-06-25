@@ -21,13 +21,16 @@ const Footer = () => {
                 </Link>
                 <div className=" footer-address footer-section sm-[80%] mt-4 hidden w-[70%] sm:block sm:text-[12px] sm:opacity-[60%] md:text-[12px] lg:w-[60%]  lg:text-[14px] xl:mt-6 xl:w-[50%] xl:text-[18px]">
                   <p>
-                    18/1, Shariff Square, 1st Block Koramangala,<br /> Bengaluru,
-                    Karnataka (560034)
+                    18/1, Shariff Square, 1st Block Koramangala,
+                    <br /> Bengaluru, Karnataka (560034)
                   </p>
                 </div>
                 <div className="my-5 hidden items-center justify-start sm:flex xl:mt-6">
-                  <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM" target="_blank"
-          rel="noreferrer" >
+                  <Link
+                    href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       src={
                         "/assets/images/home_page/social_media_icons/Whatsapp.svg"
@@ -38,8 +41,11 @@ const Footer = () => {
                       width={36}
                     />
                   </Link>
-                  <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1" target="_blank"
-          rel="noreferrer" >
+                  <Link
+                    href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       src={
                         "/assets/images/home_page/social_media_icons/Instagram.svg"
@@ -50,8 +56,11 @@ const Footer = () => {
                       width={36}
                     />
                   </Link>
-                  <Link href="https://www.linkedin.com/company/the-kreatr/" target="_blank"
-          rel="noreferrer">
+                  <Link
+                    href="https://www.linkedin.com/company/the-kreatr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       src={
                         "/assets/images/home_page/social_media_icons/LinkedIn.svg"
@@ -67,52 +76,52 @@ const Footer = () => {
             </div>
             <div>
               <div className="flex flex-col items-center justify-around pb-[14px] pt-7 sm:flex-row sm:border-none sm:pt-0 ">
-                <ul className="footer-ul flex flex-row sm:flex-col sm:tracking-normal tracking-tight ">
+                <ul className="footer-ul flex flex-row tracking-tight sm:flex-col sm:tracking-normal ">
                   <Link href="/blogs">
-                    <li className="footer-section hover:italic footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content pr-5 text-[.875rem] opacity-[70%] hover:italic sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Blogs
                     </li>
                   </Link>
                   <Link href="/collaboration">
-                    <li className="footer-section sm:hover:italic footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>
                   </Link>
                   <Link href="/careers">
-                    <li className="footer-section sm:hover:italic footer-content text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Careers
                     </li>
                   </Link>
                   <Link href="/FAQ">
-                    <li className="footer-section sm:hover:italic footer-content hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </Link>
                 </ul>
-                <ul className="footer-ul sm:tracking-normal tracking-tight flex flex-row sm:mt-[-41px] sm:flex-col md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
+                <ul className="footer-ul flex flex-row tracking-tight sm:mt-[-41px] sm:flex-col sm:tracking-normal md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
                   <Link href="/FAQ">
-                    <li className="footer-content sm:hover:italic footer-section block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </Link>
                   <Link href="/contact">
-                    <li className="footer-content sm:hover:italic footer-section pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
                   </Link>
                   <Link href="/join-our-klan">
-                    <li className="footer-content sm:hover:italic footer-section text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Join our Klan
                     </li>
                   </Link>
                   <Link href="/legal">
-                    <li className="footer-content sm:hover:italic footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Legal
                     </li>
                   </Link>
                 </ul>
                 <Link href="/legal">
-                  <li className="footer-section sm:hover:italic footer-content block text-[.875rem] opacity-[70%]  sm:hidden sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                  <li className="footer-section footer-content block text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                     Legal
                   </li>
                 </Link>
@@ -122,8 +131,11 @@ const Footer = () => {
 
           <div className="sm:hidden ">
             <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
-              <Link href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM" target="_blank"
-          rel="noreferrer">
+              <Link
+                href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={
                     "/assets/images/home_page/social_media_icons/Whatsapp.svg"
@@ -134,8 +146,11 @@ const Footer = () => {
                   width={31}
                 />
               </Link>
-              <Link href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1" target="_blank"
-          rel="noreferrer">
+              <Link
+                href="https://www.instagram.com/thekreatr?igsh=Ymdwenl2bmlvanI1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={
                     "/assets/images/home_page/social_media_icons/Instagram.svg"
@@ -146,8 +161,11 @@ const Footer = () => {
                   width={31}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/company/the-kreatr/" target="_blank"
-          rel="noreferrer">
+              <Link
+                href="https://www.linkedin.com/company/the-kreatr/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={
                     "/assets/images/home_page/social_media_icons/LinkedIn.svg"

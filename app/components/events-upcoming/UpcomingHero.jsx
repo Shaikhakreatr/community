@@ -319,4 +319,5 @@ const UpcomingHero = ({ upcomingData }) => {
   );
 };
 
+
 export default UpcomingHero;
