@@ -17,7 +17,7 @@ const LeftImageSection = () => {
           </p>
           <ul>
             <li>
-              <a href="" className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] sm:text-[13px]">
+              <a href="mailto:marketing@thekreatr.com" className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] sm:text-[13px]">
                 <img
                   className="xl:h-[20px] mr-1 xl:w-[20px] lg:h-[20px] lg:w-[20px] sm:h-[15px] sm:w-[15px]"
                   src="/assets/images/contact_page/Email-form.svg"
@@ -27,7 +27,7 @@ const LeftImageSection = () => {
               </a>
             </li>
             <li>
-              <a className="items-center  flex xl:text-[18px] lg:text-[16px] lg:mt-0 sm:mt-[0px] sm:text-[13px]">
+              <a href="tel:+91 72040 04953" className="items-center  flex xl:text-[18px] lg:text-[16px] lg:mt-0 sm:mt-[0px] sm:text-[13px]">
                 <img
                   className="xl:h-[20px] mr-1 xl:w-[20px] lg:h-[20px] lg:w-[20px] sm:h-[15px] sm:w-[15px]"
                   src="/assets/images/contact_page/Phone-form.svg"
@@ -52,7 +52,7 @@ const LeftImageSection = () => {
           </p>
           <ul>
             <li>
-              <a className="flex items-center gap-1  mt-[15px] text-[14px]">
+              <a href="mailto:marketing@thekreatr.com" className="flex items-center gap-1  mt-[15px] text-[14px]">
                 <img
                   className="xl:h-[15px] mr-1 xl:w-[15px]"
                   src="/assets/images/contact_page/Email-form.svg"
@@ -62,7 +62,7 @@ const LeftImageSection = () => {
               </a>
             </li>
             <li>
-              <a className="items-center justify-center  mt-[5px] flex text-[14px]">
+              <a href="tel:+91 72040 04953" className="items-center justify-center  mt-[5px] flex text-[14px]">
                 <img
                   className="xl:h-[15px] mr-1 xl:w-[15px]"
                   src="/assets/images/contact_page/Phone-form.svg"

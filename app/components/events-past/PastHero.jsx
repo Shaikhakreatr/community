@@ -2,6 +2,7 @@
 import React from "react";
 import Testimonials from "../testimonials/Testimonials";
 
+
 const PastHero = ({pastData}) => {
   const isDataAvailable = pastData && 
     pastData.heading && 
@@ -84,7 +85,7 @@ const PastHero = ({pastData}) => {
               <h1 className="page-subhead text-center text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 {`Happy Folks' Words!`}
               </h1>
-              {/* <Testimonials /> */}
+              <Testimonials />
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
 
 const UpcomingHero = ({ upcomingData }) => {
+  const BBACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
   const targetRef = useRef(null);
 
@@ -58,7 +59,7 @@ const UpcomingHero = ({ upcomingData }) => {
       console.log(form.values.forms);
       try {
         const res = await fetch(
-          `${process.env.BACKEND_EVENT_INFO_URI}/${id}`,
+          `${BBACKEND_EVENT_INFO_URI}/${id}`,
           {
             method: "PATCH",
             headers: {
