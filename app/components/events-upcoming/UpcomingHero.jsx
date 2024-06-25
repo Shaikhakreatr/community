@@ -10,8 +10,6 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
-import PaymentSuccessMain from "../payment-success/PaymentSuccessMain";
-import PaymentFailureMain from "../payment-failure/PaymentFailureMain";
 
 const UpcomingHero = ({ upcomingData }) => {
   const { id } = useParams();
@@ -60,7 +58,7 @@ const UpcomingHero = ({ upcomingData }) => {
       console.log(form.values.forms);
       try {
         const res = await fetch(
-          `https://erfaz8h6s3.execute-api.ap-south-1.amazonaws.com/dev/eventInfo/${id}`,
+          `${process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI}/${id}`,
           {
             method: "PATCH",
             headers: {
@@ -77,12 +75,14 @@ const UpcomingHero = ({ upcomingData }) => {
         );
 
         // Handle the response
-        if (res.status === 200) {
-          console.log("data sent");
+        if (res.ok) {
+          console.log("Data sent successfully");
           form.reset();
+        } else {
+          throw new Error("Failed to update event information");
         }
       } catch (error) {
-        console.error("Error submitting forms:", error);
+        console.error("Error updating event information:", error);
       }
     }
   };

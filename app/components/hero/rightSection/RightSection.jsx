@@ -15,6 +15,7 @@ const RightSection = () => {
             width={200}
           />
         </Link>
+          <Link href="/about-app">
           <Image
             src="/assets/images/home_page/menu_stickers/app-withshadow.svg"
             alt="app"
@@ -22,6 +23,7 @@ const RightSection = () => {
             width={200}
             className=" absolute left-[35%] top-[24%] h-[4.4863rem] w-[6.9375rem] rotate-[-6deg] hover:scale-105 sm:left-[47%] sm:top-[17%] sm:h-[70px] sm:w-[125px] sm:rotate-[-10deg] md:right-[6%] md:top-[12%] md:h-[90px]  md:w-[155px] lg:left-[52%] lg:top-[18%] lg:h-[120px] lg:w-[12.5rem] lg:rotate-[2deg] xl:left-[46%] xl:top-[24%] xl:h-[10.885rem] xl:w-[16.8319rem] "
           />
+          </Link>
       
         <Link href="/contact">
         <Image
