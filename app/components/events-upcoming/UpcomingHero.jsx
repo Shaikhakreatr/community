@@ -58,7 +58,7 @@ const UpcomingHero = ({ upcomingData }) => {
       console.log(form.values.forms);
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI}/${id}`,
+          `${process.env.BACKEND_EVENT_INFO_URI}/${id}`,
           {
             method: "PATCH",
             headers: {

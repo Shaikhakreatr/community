@@ -33,7 +33,8 @@ const CollabrationForm = () => {
     },
   });
 
-  const BACKEND_COLLABORATION_URI = process.env.NEXT_PUBLIC_BACKEND_COLLABORATION_URI;
+  const BACKEND_COLLABORATION_URI =
+    process.env.NEXT_PUBLIC_BACKEND_COLLABORATION_URI;
 
   const sendFormData = async (data) => {
     console.log(data);
