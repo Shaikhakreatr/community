@@ -81,11 +81,13 @@ const PastHero = ({pastData}) => {
               ))}
             </div>
             </div>
-            <div className="w-full sm:my-[40px] my-[25px]">
+            <div className="w-full sm:my-[40px] my-[25px] ">
               <h1 className="page-subhead text-center text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 {`Happy Folks' Words!`}
               </h1>
-              {/* <Testimonials /> */}
+              <div className="lg:mx-[50px] mt-[30px]">
+              <Testimonials />
+              </div>
             </div>
           </div>
         </div>
