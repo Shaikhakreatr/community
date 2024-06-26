@@ -73,9 +73,9 @@ const CareerOpening = () => {
       <div className="content-neue my-[14px] sm:text-[16px] text-[11px] sm:mb-[30px] lg:mb-[50px] sm:mt-[30px] lg:text-[20px] xl:text-[28px]">
         <p className="text-center">
           Can’t find any suitable vacancy? Drop us a line{" "}
-          <a className="text-blue-700" href="#">
+          <Link className="text-blue-700" href="mailto:hr@thekreatr.com">
             hr@thekreatr.com
-          </a>{" "}
+          </Link>{" "}
         </p>
       </div>
     </div>

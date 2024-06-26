@@ -30,7 +30,7 @@ const CareersEmpty = () => {
         </div>
         <div className="my-[40px]">
           <p className="content-neue xl:text-[28px] lg:text-[22px] text-[14px]">
-            Drop us a line <Link className="careers-link" href="#">hr@thekreatr.com</Link>
+            Drop us a line <Link className="careers-link" href="mailto:hr@thekreatr.com">hr@thekreatr.com</Link>
           </p>
         </div>
       </div>
