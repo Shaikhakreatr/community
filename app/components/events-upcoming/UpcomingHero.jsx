@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import {
   useForm,
   isEmail,
@@ -10,10 +10,13 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
+import PaymentSuccess from "@/app/payment-success/page";
+import PaymentFailure from "@/app/payment-failure/page";
 
 const UpcomingHero = ({ upcomingData }) => {
   const BBACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
+  const router = useRouter();
   const targetRef = useRef(null);
 
   const form = useForm({
@@ -79,11 +82,13 @@ const UpcomingHero = ({ upcomingData }) => {
         if (res.ok) {
           console.log("Data sent successfully");
           form.reset();
+          router.push("/payment-success");
         } else {
           throw new Error("Failed to update event information");
         }
       } catch (error) {
         console.error("Error updating event information:", error);
+        router.push("/payment-failure");
       }
     }
   };

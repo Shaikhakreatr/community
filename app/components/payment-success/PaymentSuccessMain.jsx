@@ -10,8 +10,8 @@ const PaymentSuccessMain = () => {
     <div
       className={
         isMobile
-          ? "w-full h-[94vh]  flex flex-col items-center"
-          : "w-full h-[94vh]   flex flex-col justify-center items-center"
+          ? "w-full h-[94vh] mt-[30px] flex flex-col items-center"
+          : "w-full h-[94vh] mt-[50px]  flex flex-col justify-center items-center"
       }
     >
       {isMobile ? (
