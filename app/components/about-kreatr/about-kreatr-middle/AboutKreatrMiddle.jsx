@@ -47,7 +47,7 @@ const AboutKreatrMiddle = () => {
         </div>
         <div className="kreatr-container container mx-auto flex flex-col justify-center">
           <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:grid">
-            <div className="kreatr-box1 h-[264px] w-[317px] px-[52px] pt-[90px] sm:ml-[-28px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:ml-[80px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:ml-[185px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
+            <div className="kreatr-box1 h-[264px] w-[317px] px-[52px] pt-[90px] sm:ml-[-28px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:ml-[80px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:ml-[150px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DIRECTION
               </h1>
@@ -68,7 +68,7 @@ const AboutKreatrMiddle = () => {
             </div>
           </div>
           <div className="relative mt-[195px] justify-end sm:mt-[50px] sm:flex sm:gap-[68px]  lg:mt-[30px]  xl:mt-[50px]  xl:gap-[100px]">
-            <div className="absolute left-[9%] top-[-55%] sm:left-[-4%] sm:top-0 lg:left-[7%] xl:left-[13%]">
+            <div className="absolute left-[9%] top-[-55%] sm:left-[-4%] sm:top-0 lg:left-[7%] xl:left-[10%]">
               <Image
                 className="h-[219px] w-[255px] rounded-[15px]  object-cover object-center sm:h-[280px] sm:w-[350px] lg:h-[280px] lg:w-[480px] xl:h-[295px] xl:w-[511px]"
                 src={"/assets/images/about-kreatr/kreatr-img2.jpg"}
@@ -77,7 +77,7 @@ const AboutKreatrMiddle = () => {
                 width={340}
               />
             </div>
-            <div className="kreatr-box2 h-[264px] w-[317px] px-[30px] pt-[90px] sm:mr-[-15px] sm:h-[280px]  sm:w-[370px] sm:p-[50px] lg:mr-[80px] lg:h-[280px] lg:w-[554px] lg:p-[50px] xl:mr-[170px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
+            <div className="kreatr-box2 h-[264px] w-[317px] px-[30px] pt-[90px] sm:mr-[-15px] sm:h-[280px]  sm:w-[370px] sm:p-[50px] lg:mr-[80px] lg:h-[280px] lg:w-[554px] lg:p-[50px] xl:mr-[140px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DESTINY
               </h1>
