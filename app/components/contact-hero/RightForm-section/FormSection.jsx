@@ -79,7 +79,7 @@ const FormSection = () => {
           <TextInput
             label="Name"
             radius={50}
-            placeholder="Your name here"
+            placeholder="Bob Ross"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -93,7 +93,7 @@ const FormSection = () => {
           <TextInput
             label="Phone Number"
             radius={50}
-            placeholder="Your phone number here"
+            placeholder="+00 1234 5678"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -108,7 +108,7 @@ const FormSection = () => {
           <TextInput
             label="Email"
             radius={50}
-            placeholder="Your email here"
+            placeholder="happyaccidents@gmail.com"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -129,7 +129,7 @@ const FormSection = () => {
               label: styles.inputLabel,
               error: styles.inputError,
             }}
-            placeholder="Your message here"
+            placeholder="I would like to speak to the team."
             rows={messageRows}
             key={form.key("message")}
             {...form.getInputProps("message")}

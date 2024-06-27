@@ -41,9 +41,9 @@ const CollabrationSection = () => {
               <div className="items-start justify-center lg:mx-[40px] lg:mb-[100px] lg:mt-[60px] sm:my-[40px] sm:flex">
                 <div className="border-black px-[20px] sm:px-[10px] sm:w-[50%] sm:border-r lg:px-[50px]">
                   {speakers.map((item, index) => (
-                    <div key={index}>
+                    <div key={index} >
                       <div className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <div className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-[10px] mt-6 list-disc">
                           {item.title}
                         </div>
                       </div>

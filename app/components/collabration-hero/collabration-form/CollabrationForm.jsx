@@ -63,7 +63,7 @@ const CollabrationForm = () => {
   return (
     <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
       <div className="lg:mt-[-8px]">
-        <h1 className="content-neue-medium text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
+        <h1 className="content-neue-medium text-start text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
         </h1>
       </div>
@@ -98,7 +98,7 @@ const CollabrationForm = () => {
             label="Name"
             mt={13}
             radius={50}
-            placeholder="Your name here"
+            placeholder="Bob Ross"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -113,7 +113,7 @@ const CollabrationForm = () => {
             label="Phone Number"
             mt={15}
             radius={50}
-            placeholder="Your phone number here"
+            placeholder="+00 1234 5678"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -129,7 +129,7 @@ const CollabrationForm = () => {
             label="Email"
             mt={15}
             radius={50}
-            placeholder="Your email here"
+            placeholder="happyaccidents@gmail.com"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,

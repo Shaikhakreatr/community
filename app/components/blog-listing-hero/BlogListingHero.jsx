@@ -67,19 +67,13 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content text-[12px]"> {data[j - 1].writer} </p>
+                  
                   <div className="flex items-center justify-between pt-6">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <Image
-                      src="/assets/images/blog-page/arrow.svg"
-                      alt="arrow"
-                      width={35}
-                      height={35}
-                    />
                   </div>
                 </div>
               </div>
@@ -94,20 +88,19 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-[20px] pl-6 pr-6">
+                <div className="mt-[35px] pl-6 pr-6">
                   <h1 className="content mr-20 text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading.length > 50
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content mt-4"> {data[j - 1].writer}</p>
-                  <div className="mb-[15px] mt-2 flex items-center justify-between">
+                  
+                  <div className="mb-[15px]  flex items-center justify-between mt-[30px]">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <img src="/assets/images/blog-page/arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
@@ -135,7 +128,7 @@ const BlogListingHero = () => {
                         ? `${data[j - 1].heading.slice(0, 50)}...`
                         : data[j - 1].heading}
                     </h1>
-                    <p className="content pt-2"> {data[j - 1].writer}</p>
+                    
                   </div>
 
                   <div className="flex flex-col  items-end">
@@ -143,14 +136,6 @@ const BlogListingHero = () => {
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
-                    </div>
-                    <div className="pt-6">
-                      <Image
-                        src="/assets/images/blog-page/arrow.svg"
-                        alt="arrow"
-                        width={35}
-                        height={35}
-                      />
                     </div>
                   </div>
                 </div>
@@ -166,27 +151,21 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-6 pl-6 pr-6">
+                <div className="mt-[35px] pl-6 pr-6">
                   <div className="">
                     <h1 className="content mr-24 text-[34px] font-[800] leading-[40px]">
                       {data[j - 1].heading.length > 50
                         ? `${data[j - 1].heading.slice(0, 50)}...`
                         : data[j - 1].heading}
                     </h1>
-                    <p className="content pt-2"> {data[j - 1].writer}</p>
+                    
                   </div>
 
-                  <div className="flex  justify-between">
+                  <div className="flex  justify-between mt-[30px]">
                     <div className="flex  items-end justify-center  text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
-                    </div>
-                    <div>
-                      <img
-                        src="/assets/images/blog-page/arrow.svg"
-                        alt="arrow"
-                      />
                     </div>
                   </div>
                 </div>
@@ -214,21 +193,13 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2 text-[12px]">
-                    {data[j - 1].writer}
-                  </p>
+                  
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <Image
-                      src="/assets/images/blog-page/arrow.svg"
-                      alt="arrow"
-                      width={35}
-                      height={35}
-                    />
                   </div>
                 </div>
               </div>
@@ -243,20 +214,19 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-[6px] pl-6 pr-6">
+                <div className="mt-[35px] pl-6 pr-6">
                   <h1 className="content text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading.length > 50
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content"> {data[j - 1].writer}</p>
-                  <div className="flex items-center justify-between">
+                  
+                  <div className="flex items-center justify-between mt-[30px]">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <img src="/assets/images/blog-page/arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
@@ -283,21 +253,13 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2 text-[12px]">
-                    {data[j - 1].writer}
-                  </p>
+                  
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-5">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <Image
-                      src="/assets/images/blog-page/arrow.svg"
-                      alt="arrow"
-                      width={35}
-                      height={35}
-                    />
                   </div>
                 </div>
               </div>
@@ -312,20 +274,19 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-6 pl-6 pr-6">
+                <div className="mt-[35px] pl-6 pr-6">
                   <h1 className="content text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading.length > 50
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2"> {data[j - 1].writer}</p>
-                  <div className="flex items-center justify-between">
+                
+                  <div className="flex items-center justify-between mt-[30px]">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <img src="/assets/images/blog-page/arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
@@ -352,21 +313,13 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2 text-[12px]">
-                    {data[j - 1].writer}
-                  </p>
+                  
                   <div className="flex items-center justify-between ">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <Image
-                      src="/assets/images/blog-page/arrow.svg"
-                      alt="arrow"
-                      width={35}
-                      height={35}
-                    />
                   </div>
                 </div>
               </div>
@@ -381,20 +334,19 @@ const BlogListingHero = () => {
                     backgroundPosition: "center",
                   }}
                 />
-                <div className="mt-6 pl-6 pr-6">
+                <div className="mt-[35px] pl-6 pr-6">
                   <h1 className="content text-[34px] font-[800] leading-[40px]">
                     {data[j - 1].heading.length > 50
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  <p className="content pt-2"> {data[j - 1].writer}</p>
-                  <div className="flex items-center justify-between ">
+                
+                  <div className="flex items-center justify-between mt-[30px]">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
                     </div>
-                    <img src="/assets/images/blog-page/arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
@@ -426,21 +378,11 @@ const BlogListingHero = () => {
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
-                        <div className="content pt-2 text-[12px] font-[100]">
-                          {data[j - 1].writer}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between gap-6">
-                      <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
+                        
+                        <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
                         {data[j - 1].date}
                       </div>
-                      <Image
-                        src="/assets/images/blog-page/arrow.svg"
-                        alt="arrow"
-                        width={35}
-                        height={35}
-                      />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -455,26 +397,19 @@ const BlogListingHero = () => {
                       backgroundPosition: "center",
                     }}
                   />
-                  <div className="mt-6 flex justify-between pl-6 pr-6">
+                  <div className="mt-[35px] flex justify-between pl-6 pr-6">
                     <div className="flex w-[50%] items-center  ">
                       <div className="content mr-20 text-[34px] font-[800] leading-[40px]">
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
-                        <div className="content pt-2 text-[16px] font-[100]">
-                          {data[j - 1].writer}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between gap-6">
-                      <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
+                  
+                        <div className="content mt-[20px] flex h-[34px] w-[151px] items-center justify-center text-[16px] rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
-                      <img
-                        src="/assets/images/blog-page/arrow.svg"
-                        alt="arrow"
-                      />
+                      </div>
                     </div>
+
                   </div>
                 </div>
               )}
@@ -538,7 +473,7 @@ const BlogListingHero = () => {
   }
 
   return backendData.length !== 0 ? (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <div className="flex h-full w-full flex-col items-center justify-center xl:mt-[100px] lg:mt-[80px] sm:mt-[60px] mt-[44px]">
       <div>
         <h1
           className={

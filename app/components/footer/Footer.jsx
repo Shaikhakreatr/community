@@ -79,7 +79,7 @@ const Footer = () => {
                 <ul className="footer-ul flex flex-row tracking-tight sm:flex-col sm:tracking-normal ">
                   <li className="footer-section footer-content inline-block  pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                     <Link
-                      className="sm:inline-block  sm:hover:italic"
+                      className="sm:inline-block cursor-pointer sm:hover:italic"
                       href="/blogs"
                     >
                       Blogs
@@ -87,57 +87,57 @@ const Footer = () => {
                   </li>
 
                   <li className="footer-section footer-content inline-block pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
-                    <Link href="/collaboration">Become a partner</Link>
+                    <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/collaboration">Become a partner</Link>
                   </li>
-                  <Link href="/careers">
                     <li className="footer-section footer-content inline-block text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/careers">
                       Careers
-                    </li>
                   </Link>
-                  <Link href="/FAQ">
+                    </li>
                     <li className="footer-section footer-content  hidden pr-3 text-[.875rem] opacity-[70%] sm:inline-block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/FAQ">
                       FAQs
-                    </li>
                   </Link>
+                    </li>
                 </ul>
                 <ul className="footer-ul flex flex-row tracking-tight sm:mt-[0px] sm:flex-col sm:tracking-normal md:mt-[0px] lg:mt-[0px] xl:mt-[0px]">
-                  <Link href="/FAQ">
                     <li className="footer-content footer-section inline-block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/FAQ">
                       FAQs
-                    </li>
                   </Link>
-                  <Link href="/contact">
+                    </li>
                     <li className="footer-content footer-section inline-block pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/contact">
                       Contact Us
-                    </li>
                   </Link>
-                  <Link href="/join-our-klan">
+                    </li>
                     <li className="footer-content footer-section inline-block text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/join-our-klan">
                       Join our Klan
-                    </li>
                   </Link>
-                  <Link href="/legal">
+                    </li>
                     <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:inline-block  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/legal">
                       Legal
-                    </li>
                   </Link>
-                  <Link href="/studio">
+                    </li>
                     <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:inline-block  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/studio">
                       Studio
-                    </li>
                   </Link>
+                    </li>
                 </ul>
                 <ul className="flex items-center justify-center gap-4">
-                  <Link href="/legal">
                     <li className="footer-section footer-content inline-block text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/legal">
                       Legal
-                    </li>
                   </Link>
-                  <Link href="/studio">
+                    </li>
                     <li className="footer-section footer-content inline-block text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <Link className="sm:inline-block cursor-pointer sm:hover:italic" href="/studio">
                       Studio
-                    </li>
                   </Link>
+                    </li>
                 </ul>
               </div>
             </div>

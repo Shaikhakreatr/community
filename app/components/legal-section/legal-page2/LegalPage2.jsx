@@ -18,7 +18,6 @@ const LegalPage2 = () => {
     "communications with us via social media platforms, email, electronic messages and other electronic and non-electronic communications;",
     "third party partner information related to how you use our third party partners, such as your reviews of our merchant partners or other service providers.",
     "your networks and connections made available to us, depending on the permissions you have granted, from your mobile and desktop devices' address book contacts, and other social media such as Facebook, Instagram, Pinterest and Twitter.",
-    "Marketing and Communications Data includes your preferences in receiving marketing from us and our third parties and your communication preferences",
   ];
   const yourLegalRights = [
     'Request access to your personal data (commonly known as a "data subject access request"). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.',
@@ -49,23 +48,23 @@ const LegalPage2 = () => {
       protects you.
       <br />
       <div className="legal_page_h pb-2 pt-2">
-        <u>1. IMPORTANT INFORMATION AND WHO WE ARE </u>
+        1.Important Information and Who We Are
       </div>
-      <div className="pb-2">
-        <u>PURPOSE OF THIS PRIVACY POLICY</u>{" "}
-      </div>
+      <div className="pb-2 text-[18px]">Purpose of this Privacy Policy </div>
       This Privacy Policy aims to give you information on how the Company
       collects and processes your personal data through your use of any of its
       Sites, including any data you may provide through this Site when you
       register or sign in on any of our Sites, purchase a product or service or
-      take part in a competition. It is important that you read this Privacy
-      Policy together with any other privacy notice or fair processing notice we
-      may provide on specific occasions when we are collecting or processing
-      personal data about you so that you are fully aware of how and why we are
-      using your data. This Privacy Policy supplements these other notices and
-      is not intended to override them.
-      <div className="pb-2 pt-2">
-        <u>PERSONS UNDER AGE OF 13 YEARS</u>{" "}
+      take part in a competition.
+      <br />
+      <br /> It is important that you read this Privacy Policy together with any
+      other privacy notice or fair processing notice we may provide on specific
+      occasions when we are collecting or processing personal data about you so
+      that you are fully aware of how and why we are using your data. This
+      Privacy Policy supplements these other notices and is not intended to
+      override them.
+      <div className="pb-2 pt-2 text-[18px]">
+        Persons Under the Age of 13 Years
       </div>
       The Sites are not intended for children and we do not knowingly collect
       data relating to children. Our Sites are not intended for use by persons
@@ -73,42 +72,43 @@ const LegalPage2 = () => {
       under age 13 may provide any personal information to or on our Sites
       without legal parental or guardian consent. We do not knowingly collect
       personal information from persons under 13 if such information is provided
-      without legal parental or guardian consent. If you are under 13, do not
-      use or provide any information on our Sites, or on or through any of their
-      features register on the Sites, make any purchases through our Sites, use
-      any of the interactive or public comment features of our Sites or provide
-      any information about yourself to us, including your name, address,
-      telephone number, e-mail address or any screen name or user name you may
-      use without legal parental or guardian consent. If we learn we have
-      collected or received personal information from a person under 13 without
-      verification of parental consent, we will delete that information. If you
-      believe we might have any information from or about a person under 13 for
-      which there is no legal parental or guardian consent, please contact us.
-      <div className="pb-2 pt-2">
-        <u>CONTROLLER</u>
-      </div>
+      without legal parental or guardian consent.
+      <br />
+      <br /> If you are under 13, do not use or provide any information on our
+      Sites, or on or through any of their features register on the Sites, make
+      any purchases through our Sites, use any of the interactive or public
+      comment features of our Sites or provide any information about yourself to
+      us, including your name, address, telephone number, e-mail address or any
+      screen name or user name you may use without legal parental or guardian
+      consent. If we learn we have collected or received personal information
+      from a person under 13 without verification of parental consent, we will
+      delete that information. If you believe we might have any information from
+      or about a person under 13 for which there is no legal parental or
+      guardian consent, please contact us.
+      <div className="pb-2 pt-2 text-[18px]">Controller</div>
       {`The Company is made up of different legal entities. This Privacy Policy is
       issued on behalf of the Company so when we mention "Company", "KREATR",
       "we", "us" or "our" in this Privacy Policy, we are referring to the
-      relevant company responsible for processing your data. You have the right
-      to make a complaint at any time to the relevant supervisory authority for
-      data protection issues. We would, however, appreciate the chance to deal
-      with your concerns before you approach the relevant supervisory authority
-      so please contact us in the first instance. For any questions or comments
-      relating to this Privacy Policy or the manner in which we collect and use
-      your personal data, please contact us.`}
-      <div className="pb-2 pt-2">
-        <u>
-          CHANGES TO THE PRIVACY POLICY AND YOUR DUTY TO INFORM US OF CHANGES
-        </u>
+      relevant company responsible for processing your data.`}
+      <br />
+      <br /> You have the right to make a complaint at any time to the relevant
+      supervisory authority for data protection issues. We would, however,
+      appreciate the chance to deal with your concerns before you approach the
+      relevant supervisory authority so please contact us in the first instance.
+      For any questions or comments relating to this Privacy Policy or the
+      manner in which we collect and use your personal data, please contact us.
+      <br />
+      <div className="pb-2 pt-2 text-[18px]">
+        Changes to the Privacy Policy and Your Duty to Inform Us of Changes
       </div>
       This version was last updated on 1 November 2023 and historic versions can
-      be obtained by contacting us. It is important that the personal data we
-      hold about you is accurate and current. Please keep us informed if your
-      personal data changes during your relationship with us.
-      <div className="pb-2 pt-2">
-        <u>THIRD-PARTY LINKS</u>
-      </div>
+      be obtained by contacting us.
+      <br />
+      <br /> It is important that the personal data we hold about you is
+      accurate and current. Please keep us informed if your personal data
+      changes during your relationship with us.
+      <br />
+      <div className="pb-2 pt-2">Third-Party Links</div>
       The Sites may include links to third-party websites, plug-ins and
       applications. Clicking on those links or enabling those connections may
       allow third parties to collect or share data about you. We do not control
@@ -116,7 +116,7 @@ const LegalPage2 = () => {
       statements. When you leave our Sites, we encourage you to read the privacy
       policy of every website or other site you visit.
       <div className="legal_page_h pb-2 pt-2">
-        2.THE DATA WE COLLECT ABOUT YOU
+        2.The Data We Collect About You
       </div>
       Personal data, or personal information, means any information about an
       individual from which that person can be identified. It does not include
@@ -125,15 +125,28 @@ const LegalPage2 = () => {
       our Sites, we collect different kinds of information from or about you. We
       may collect, use, store and transfer different kinds of personal data
       about you which we have grouped together follows:
-      <ul className="list-disc pl-4">
+      <br />
+      <br />
+      <ul className="mb-[10px] ml-[40px] list-disc">
         {aboutYouBullets.map((value, index) => (
-          <li key={index}>{value}</li>
+          <li className="mb-[10px]" key={index}>
+            {value}
+          </li>
         ))}
       </ul>
-      <ul className="list-disc pl-8">
+      <ul className="mb-[10px] ml-[70px] list-disc">
         {otherBullets.map((value, index) => (
-          <li key={index}>{value}</li>
+          <li className="mb-[10px]" key={index}>
+            {value}
+          </li>
         ))}
+      </ul>
+      <ul className="mb-[10px] ml-[40px] list-disc">
+        <li>
+          Marketing and Communications Data includes your preferences in
+          receiving marketing from us and our third parties and your
+          communication preferences
+        </li>
       </ul>
       We also collect, use and share aggregated data such as statistical or
       demographic data for any purpose. Aggregated Data may be derived from your
@@ -143,15 +156,19 @@ const LegalPage2 = () => {
       specific Site feature. However, if we combine or connect aggregated data
       with your personal data so that it can directly or indirectly identify
       you, we treat the combined data as personal data which will be used in
-      accordance with this Privacy Policy. We do not collect the following
-      Special Categories of Personal Data: your philosophical beliefs, sex life,
-      political opinions, trade union membership, information about your health
-      and genetic and biometric data. Nor do we collect any information about
-      criminal convictions and offences.
-      <div className=" pb-2 pt-2">
-        {" "}
-        <u>IF YOU FAIL TO PROVIDE PERSONAL DATA</u>
-      </div>
+      accordance with this Privacy Policy.<br></br>
+      <br />
+      We do not collect the following Special Categories of Personal Data:
+      <ul className="mb-[10px] ml-[40px] list-disc">
+        <li>your philosophical beliefs,</li>
+        <li>sex life,</li>
+        <li>political opinions,</li>
+        <li>trade union membership,</li>
+        <li>information about your health </li>
+        <li>genetic and biometric data</li>
+        <li>any information about criminal convictions and offences.</li>
+      </ul>
+      <div className=" pb-2 pt-2"> If You Fail to Provide Personal Data</div>
       Where we need to collect personal data by law, or under the terms of a
       contract we have with you and you fail to provide that data when
       requested, we may not be able to perform the contract we have or are
@@ -159,389 +176,347 @@ const LegalPage2 = () => {
       services). In this case, we may have to cancel a product or service you
       have with us but we will notify you if this is the case at the time.
       <div className="legal_page_h pb-2 pt-2">
-        <u>3. HOW IS YOUR PERSONAL DATA COLLECTED?</u>
+        3. How Is Your Personal Data Collected?
       </div>
-      We use different methods to collect data from and about you including
-      through: Direct interactions. You may give us your Identity, Contact and
-      Financial Data by filling in forms or by corresponding with us by post,
-      phone, email or otherwise. This includes personal data you provide when
-      you: apply for or purchase our products or services; create an account or
-      register on our Sites; subscribe to our service or publications; request
-      marketing to be sent to you or further services to be provided to you;
-      enter a competition, promotion or survey; correspond with us (online or
-      offline including via email addresses and phone numbers), if you contact
-      us; post material on our Sites; or give us some feedback.
+      <ul className="mb-[10px] ml-[40px] list-disc">
+        <li>
+          Direct interactions. You may give us your Identity, Contact, and
+          Financial Data by filling out forms or by corresponding with us by
+          post, phone, email, or otherwise. This includes personal data you
+          provide when you
+          <br />
+          <br />
+          <ul className="mb-[10px] ml-[70px] list-disc">
+            <li>apply for or purchase our products or services;</li>
+            <li>create an account or register on our Sites;</li>
+            <li>subscribe to our service or publications;</li>
+            <li>
+              request marketing to be sent to you or further services to be
+              provided to you;
+            </li>
+            <li>enter a competition, promotion, or survey;</li>
+            <li>
+              correspond with us (online or offline, including via email
+              addresses and phone numbers) if you contact us;
+            </li>
+            <li>post material on our Sites;</li>
+            <li>or give us some feedback.</li>
+          </ul>
+        </li>
+        <li>{`You also may provide information to be published or displayed
+(hereinafter, "posted") on public areas of our Sites or
+transmitted to other users of our Sites or third parties
+(collectively, "User Contributions"). Your User Contributions are
+posted on and transmitted to others at your own risk. Although
+we limit access to certain pages, you may set certain privacy
+settings for such information by logging into your account
+profile or by contacting us. Please be aware that no security
+measures are perfect or impenetrable. Additionally, we cannot
+control the actions of other users of our Sites with whom you
+may choose to share your User Contributions. Therefore, we
+cannot and do not guarantee that your User Contributions will
+not be viewed by unauthorized persons.`}</li>
+        <br />
+        <li>
+          Automated technologies or interactions. As you interact with our
+          Sites, we may automatically collect Technical Data about your
+          equipment, browsing actions, and patterns. We collect this personal
+          data using cookies, server logs, web beacons, and other similar
+          technologies. We may also receive Technical Data about you if you
+          visit other Sites employing our cookies.
+          <br />
+          <br />
+          <ul className="mb-[10px] ml-[70px] list-disc">
+            <li>
+              Cookies: We automatically capture some information through the use
+              of cookies. A cookie is a small file that is placed on your
+              desktop or mobile device when you visit our Sites in order to
+              enable certain features and functionality of our Sites. Our
+              cookies can be categorized into four types, each of which is
+              outlined below:
+              <br />
+              <br />
+              <ul className="mb-[10px] ml-[90px] list-disc">
+                <li>
+                  Category 1: Strictly necessary cookies. These cookies are
+                  essential for enabling our Sites to provide certain of your
+                  requested services, such as retaining your shopping bag items.
+                </li>
+                <br />
+                <li>
+                  {`Category 2: Performance cookies. Performance cookies collect
+                  anonymous information on the users of our Sites to enable us
+                  to improve the operation of our Sites. For example, we utilize
+                  cookies to help us understand how customers arrive at and
+                  browse or use our Sites and highlight improvement areas such
+                  as navigation, shopping experience, and marketing. The data
+                  stored by these cookies does not include personal details from
+                  which an individual's identity can be established.`}
+                </li>
+                <br />
+                <li>
+                  Category 3: Functionality cookies. These cookies retain
+                  choices you make, such as member ID, email ID, and other
+                  preferences, in order to help you avoid having to re-enter the
+                  information as you navigate through our Sites, including the
+                  shopping cart.
+                </li>
+                <br />
+                <li>
+                  Category 4: Targeting or advertising cookies. These cookies
+                  collect information about your browsing habits to allow us to
+                  provide advertising relevant to you and your interests. The
+                  cookies retain information about the websites you have
+                  visited. This information is shared with other parties, such
+                  as advertisers, on an anonymous basis. Your personally
+                  identifiable information, such as your name and address, is
+                  not shared with such third parties. For example, we use
+                  third-party companies to provide you with more personalized
+                  advertisements when you visit certain third-party websites.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              Web beacons: Pages of our Sites and our e-mails may contain small
+              electronic files known as web beacons (also referred to as clear
+              gifs, pixel tags, and single-pixel gifs) that permit the Company,
+              for example, to count users who have visited those pages or opened
+              an e-mail and collect other related website and app statistics
+              (for example, recording the popularity of certain app content and
+              verifying system and server integrity).
+            </li>
+            <br />
+            <li>
+              We do not collect personal information automatically, but we may
+              tie this information to personal information about you that we
+              collect from other sources or that you provide to us.
+            </li>
+            <br />
+            <li>
+              Log files: We may use log files to capture your activities on our
+              apps as they interact with our Sites. Information captured in such
+              log files may include the types of content you view or engage with
+              and the frequency or duration of your activities.
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          Third parties or publicly available sources. We may receive personal
+          data about you from various third parties and public sources, as set
+          out below:
+          <br />
+          <br />
+          <ul className="mb-[10px] ml-[70px] list-disc">
+            <li>
+              Technical Data from the following parties:
+              <br />
+              <br />
+              <ul className="mb-[10px] ml-[90px] list-disc">
+                <li>
+                  analytics providers based either inside or outside the EU;
+                </li>
+                <li>
+                  advertising networks based either inside or outside the EU;
+                </li>
+                <li>
+                  search information providers based either inside or outside
+                  the EU;
+                </li>
+                <li>
+                  or third parties we contract with and/or their subsidiaries
+                  and affiliates to provide you with a service based either
+                  inside or outside the EU.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              Contact, Financial, and Transaction Data from providers of
+              technical, payment, and delivery services based either inside or
+              outside the EU.
+            </li>
+            <br />
+            <li>
+              Identity and Contact Data from data brokers or aggregators based
+              either inside or outside the EU.
+            </li>
+            <br />
+            <li>
+              Identity and Contact Data from publicly available sources based
+              either inside or outside the EU.
+            </li>
+          </ul>
+        </li>
+      </ul>
       <br />
-      {`You also may provide information to be published or displayed
-      (hereinafter, "posted") on public areas of our Sites or transmitted to
-      other users of our Sites or third parties (collectively, "User
-      Contributions"). Your User Contributions are posted on and transmitted to
-      others at your own risk. Although we limit access to certain pages, you
-      may set certain privacy settings for such information by logging into your
-      account profile or by contacting us. Please be aware that no security
-      measures are perfect or impenetrable. Additionally, we cannot control the
-      actions of other users of our Sites with whom you may choose to share your
-      User Contributions. Therefore, we cannot and do not guarantee that your
-      User Contributions will not be viewed by unauthorized persons.Automated
-      technologies or interactions. As you interact with our Sites, we may
-      automatically collect Technical Data about your equipment, browsing
-      actions and patterns. We collect this personal data by using cookies,
-      server logs, web beacons, and other similar technologies. We may also
-      receive Technical Data about you if you visit other Sites employing our
-      cookies. Cookies: We automatically capture some information through the
-      use of cookies. A cookie is a small file that is placed onto your desktop
-      or mobile device when you visit our Sites in order to enable certain
-      features and functionality of our Sites. Our cookies can be categorized
-      into four types, each of which is outlined below Category 1: Strictly
-      necessary cookies. These cookies are essential for enabling our Sites to
-      provide certain of your requested services such as retaining your shopping
-      bag items. Category 2: Performance cookies. Performance cookies collect
-      anonymous information on the users of our Sites to enable us to improve
-      the operation of our Sites. For example, we utilise cookies to help us
-      understand how customers arrive at and browse or use our Sites, and
-      highlight improvement areas such as navigation, shopping experience and
-      marketing. The data stored by these cookies does not include personal
-      details from which an individual's identity can be established. Category
-      3: Functionality cookies. These cookies retain choices you make such as
-      member ID, email ID and other preferences in order to help you avoid
-      having to re-enter the information as you navigate through our Sites,
-      including the shopping cart. Category 4: Targeting or advertising cookies.
-      These cookies collect information about your browsing habits to allow us
-      to provide advertising relevant to you and your interests. The cookies
-      retain information about the websites you have visited. This information
-      is shared with other parties such as advertisers on an anonymous basis.
-      Your personally identifiable information such as your name and address is
-      not shared with such third parties. For example, we use third party
-      companies to provide you with more personalised advertisements when you
-      visit certain third party websites.`}
+      <div className="legal_page_h  pt-2">4. How We Use Your Personal Data</div>
       <br />
-      Web beacons: Pages of our Sites and our e-mails may contain small
-      electronic files known as web beacons (also referred to as clear gifs,
-      pixel tags and single-pixel gifs) that permit the Company, for example, to
-      count users who have visited those pages or opened an e-mail and collect
-      other related website and app statistics (for example, recording the
-      popularity of certain app content and verifying system and server
-      integrity).
-      <br /> <br />
-      We do not collect personal information automatically, but we may tie this
-      information to personal information about you that we collect from other
-      sources or you provide to us.Log files: We may use log files to capture
-      your activities on our apps as they interact with our Sites. Information
-      captured in such log files may include the types of content you view or
-      engage with and the frequency or duration of your activities. Third
-      parties or publicly available sources. We may receive personal data about
-      you from various third parties and public sources as set out below:
-      Technical Data from the following parties: analytics providers based
-      either inside or outside the EU; advertising networks based either inside
-      or outside the EU; search information providers based either inside or
-      outside the EU; or third parties we contract with and/or their
-      subsidiaries and affiliates to provide you a service based either inside
-      or outside the EU Contact, Financial and Transaction Data from providers
-      of technical, payment and delivery services based either inside or outside
-      the EU. Identity and Contact Data from data brokers or aggregators based
-      either inside or outside the EU. Identity and Contact Data from publicly
-      available sources based either inside or outside the EU.
-      <br /> <br />
-      4.HOW WE USE YOUR PERSONAL DATA
-      <br /> <br />
       We will only use your personal data when the law allows us to. Most
       commonly, we will use your personal data in the following circumstances:
-      Where we need to perform the contract we are about to enter into or have
-      entered into with you. Where we need to perform a contract we have with a
-      third party to provide you a product or service. Where it is necessary for
-      our legitimate interests (or those of a third party) and your interests
-      and fundamental rights do not override those interests. Where we need to
-      comply with a legal or regulatory obligation. Generally, we do not rely on
-      consent as a legal basis for processing your personal data other than in
-      relation to sending third party direct marketing communications to you via
-      email, text message or other means. You have the right to withdraw consent
-      to marketing at any time by contacting us. PURPOSES FOR WHICH WE WILL USE
-      YOUR PERSONAL DATA We have set out below, in a table format, a description
-      of all the ways we plan to use your personal data, and which of the legal
-      bases we rely on to do so. We have also identified what our legitimate
-      interests are where appropriate. Note that we may process your personal
-      data for more than one lawful ground depending on the specific purpose for
-      which we are using your data. Please contact us.
+      <br />
+      <br />
+      <ul className="mb-[10px] ml-[40px] list-disc">
+        <li>
+          Where we need to perform the contract we are about to enter into or
+          have entered into with you.
+        </li>
+        <li>
+          Where we need to perform the contract we are about to enter into or
+          have entered into with you.
+        </li>
+        <li>
+          Where it is necessary for our legitimate interests (or those of a
+          third party), and your interests and fundamental rights do not
+          override those interests.
+        </li>
+        <li>Where we need to comply with a legal or regulatory obligation.</li>
+      </ul>
+      Generally, we do not rely on consent as a legal basis for processing your
+      personal data other than in relation to sending third party direct
+      marketing communications to you via email, text message or other means.
+      You have the right to withdraw consent to marketing at any time by
+      contacting us.
+      <div className="legal_page_h  pt-2">
+        Purposes for Which We Will Use Your Personal Data
+      </div>
+      <br />
+      We have set out below, in a table format, a description of all the ways we
+      plan to use your personal data, and which of the legal bases we rely on to
+      do so. We have also identified what our legitimate interests are where
+      appropriate.
+      <br />
+      <br /> Note that we may process your personal data for more than one
+      lawful ground depending on the specific purpose for which we are using
+      your data. Please contact us.
       <br />
       if you need details about the specific legal ground we are relying on to
       process your personal data where more than one ground has been set out in
-      the table below. Purpose/Activity
-      <br />
-      Type of data
-      <br />
-      Lawful basis for processing including basis of legitimate interest
-      <br />
-      To register you as a new customer/user
-      <br />
-      (a) Identity <br />
-      (b) Contact <br />
-      (c) Profile <br />
-      (d) Special Categories of Personal Data <br />
-      Performance of a contract with you <br />
-      (b) Necessary to comply with a legal obligation <br />
-      To process and deliver your order including:
-      <br />
-      (a) Manage payments, fees and charges
-      <br />
-      (b) Collect and recover money owed to us
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Financial
-      <br />
-      (d) Transaction
-      <br />
-      (e) Marketing and Communications
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      (b) Necessary for our legitimate interests (to recover debts due to us)
-      <br />
-      To manage our relationship with you which will include:
-      <br />
-      (a) Notifying you about changes to our terms or privacy policy
-      <br />
-      (b) Asking you to leave a review or take a survey
-      <br />
-      (c) communicate with you about our products and services and respond to
-      you when you contact us
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Profile
-      <br />
-      (d) Marketing and Communications
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      (b) Necessary to comply with a legal obligation
-      <br />
-      (c) Necessary for our legitimate interests (to keep our records updated
-      and to study how customers use our products/services)
-      <br />
-      To enable you to partake in a prize draw, competition or complete a survey
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Profile
-      <br />
-      (d) Usage
-      <br />
-      (e) Marketing and Communications
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      (b) Necessary for our legitimate interests (to study how customers use our
-      products/services, to develop them and grow our business)
-      <br />
-      To administer and protect our business and the Sites (including
-      troubleshooting, improvement, data analysis, testing, system maintenance,
-      security, support, reporting and hosting of data)
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Technical
-      <br />
-      (a) Necessary for our legitimate interests (for running our business,
-      provision of administration and IT services, network security, to prevent
-      fraud and in the context of a business reorganisation or group
-      restructuring exercise)
-      <br />
-      (b) Necessary to comply with a legal obligation
-      <br />
-      To deliver relevant Site content and advertisements to you and measure or
-      understand the effectiveness of the advertising we serve to you
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Profile
-      <br />
-      (d) Usage
-      <br />
-      (e) Marketing and Communications
-      <br />
-      (f) Technical
-      <br />
-      Necessary for our legitimate interests (to study how customers use our
-      products/services, to develop them, to grow our business and to inform our
-      marketing strategy)
-      <br />
-      To deliver better and more personalised Site content so that you have a
-      beneficial and valuable experience when using our Sites, products and/or
-      services
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Profile
-      <br />
-      (d) Usage
-      <br />
-      (e) Marketing and Communications
-      <br />
-      (f) Technical
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      To enable you to utilize a feature of a product or service provided to
-      you.
-      <br />
-      Identity
-      <br />
-      Contact
-      <br />
-      Profile
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      To use data analytics to improve our Sites, products/services, marketing,
-      customer relationships and experiences
-      <br />
-      (a) Identity
-      <br />
-      (b) Technical
-      <br />
-      (c) Usage
-      <br />
-      (d) Transaction
-      <br />
-      (e) Special Categories of Personal Data
-      <br />
-      (a) Necessary for our legitimate interests (to define types of customers
-      for our products and services, to keep our Sites updated and relevant, to
-      develop our business and to inform our marketing strategy)
-      <br />
-      (b) Necessary to comply with a legal obligation
-      <br />
-      To make suggestions and recommendations to you about goods or services
-      that may be of interest to you
-      <br />
-      (a) Identity
-      <br />
-      (b) Contact
-      <br />
-      (c) Technical
-      <br />
-      (d) Usage
-      <br />
-      (e) Profile
-      <br />
-      Necessary for our legitimate interests (to develop our products/services
-      and grow our business)
-      <br />
-      Any other purpose disclosed by us when you provide the personal data
-      <br />
-      As applicable
-      <br />
-      (a) Performance of a contract with you
-      <br />
-      (b) Necessary to comply with a legal obligation
-      <br />
-      <div className=" pb-2 pt-2">
-        <u>MARKETING</u>
-      </div>
+      the table below.
+      <table>
+        <thead>
+          <tr>
+            <th>Purpose/Activity</th>
+            <th>Types of data</th>
+            <th>
+              Lawful basis for processing, including basis of legitimate
+              interest
+            </th>
+          </tr>
+        </thead>
+      </table>
+      <br />
+      <div className=" pb-2 pt-2">Marketing</div>
       {`We strive to provide you with choices regarding certain personal data
-      uses, particularly around marketing and advertising. Direct Marketing by
+      uses, particularly around marketing and advertising.`}
+      <br />
+      <br />{" "}
+      {`Direct Marketing by
       the Company If you do not wish to have your personal data used by the
       Company to promote our own or third parties' products or services, you can
       opt-out by contacting us. If we have sent you a promotional e-mail, you
       may send us a return e-mail asking to be omitted from future e-mail
       distributions. This opt out does not apply to information provided to the
       Company as a result of a product or service purchase, product service
-      experience or other transactions. Targeted Advertising. If you do not want
+      experience or other transactions.`}
+      <br />
+      <br />
+      {` Targeted Advertising. If you do not want
       us to use information that we collect or that you provide to us to deliver
       advertisements according to our advertisers' target-audience preferences,
       you can opt-out by Contacting us.`}
-      <div className=" pb-2 pt-2">
-        <u>PROMOTIONAL OFFERS FROM US</u>
-      </div>
+      <div className=" pb-2 pt-2">Promotional Offers from Us</div>
       We may use your Identity, Contact, Technical, Usage and Profile Data and
       Special Categories of Personal Data to form a view on what we think you
       may want or need, or what may be of interest to you. This is how we decide
       which products, services and offers may be relevant for you (we call this
-      marketing). You will receive marketing communications from us if you have
+      marketing).
+      <br />
+      <br /> You will receive marketing communications from us if you have
       requested information from us or purchased goods or services from us or if
       you provided us with your details when you entered a competition or
       registered for a promotion and, in each case, you have not opted out of
       receiving that marketing.
-      <div className="pb-2 pt-2">
-        <u>THIRD-PARTY MARKETING</u>
-      </div>
+      <div className="pb-2 pt-2">Third-Party Marketing</div>
       {`We will get your express opt-in consent before we share your personal data
       with any company outside the Company for marketing purposes. We do not
       control third parties' collection or use of your information to serve
       interest-based advertising. However, these third parties may provide you
       with ways to choose not to have your information collected or used in this
       way.`}
-      <div className="pb-2 pt-2">
-        <u>OPTING OUT</u>
-      </div>
+      <div className="pb-2 pt-2">Opting Out</div>
       You can ask us or third parties to stop sending you marketing messages at
       any time by logging into the website and checking or unchecking relevant
       boxes to adjust your marketing preferences or by following the opt-out
       links on any marketing message sent to you or by contacting us at any
-      time. Where you opt out of receiving these marketing messages, this will
-      not apply to personal data provided to us as a result of a product/service
+      time.
+      <br />
+      Where you opt out of receiving these marketing messages, this will not
+      apply to personal data provided to us as a result of a product/service
       purchase, warranty registration, product/service experience or other
       transactions.
-      <div className="pb-2 pt-2">
-        <u>COOKIES</u>
-      </div>
+      <div className="pb-2 pt-2">Cookies</div>
       You can set your browser to refuse all or some browser cookies, or to
       alert you when websites set or access cookies. If you disable or refuse
       cookies, please note that some parts of our Sites may become inaccessible
       or not function properly. For more information about the cookies we use,
       please see Section 3 – How is your Personal Data collected above.
-      <div className="pb-2 pt-2">
-        <u>LOCATION INFORMATION</u>
-      </div>
+      <div className="pb-2 pt-2">Location Information</div>
       {`You can choose whether or not to allow our Sites to collect and use
       real-time information about your device's location through the device's
       privacy settings. If you block the use of location information, some parts
       of our Sites may then be inaccessible or not function properly.`}
-      <div className="pb-2 pt-2">
-        <u>CHANGE OF PURPOSE</u>
-      </div>
+      <div className="pb-2 pt-2">Change of Purpose</div>
       We will only use your personal data for the purposes for which we
       collected it, unless we reasonably consider that we need to use it for
       another reason and that reason is compatible with the original purpose. If
       you wish to get an explanation as to how the processing for the new
-      purpose is compatible with the original purpose, please contact us. If we
-      need to use your personal data for an unrelated purpose, we will notify
-      you and we will explain the legal basis which allows us to do so. Please
-      note that we may process your personal data without your knowledge or
-      consent, in compliance with the above rules, where this is required or
-      permitted by law.
+      purpose is compatible with the original purpose, please contact us.
+      <br />
+      <br /> If we need to use your personal data for an unrelated purpose, we
+      will notify you and we will explain the legal basis which allows us to do
+      so.
+      <br />
+      <br /> Please note that we may process your personal data without your
+      knowledge or consent, in compliance with the above rules, where this is
+      required or permitted by law.
       <div className="legal_page_h pb-2 pt-2">
-        <u>5.DISCLOSURES OF YOUR PERSONAL DATA</u>
+        5. Disclosures of Your Personal Data
       </div>
       We may have to share your personal data with the parties set out below for
-      the purposes set out in the table in paragraph 4 above. Internal Third
-      Parties as set out in Section 10 – Glossary below. External Third Parties
-      as set out in Section 10 – Glossary below. Third parties listed in the
-      table in Section 4 – How we use your Personal Data above; Third parties to
-      whom we may choose to sell, transfer, or merge parts of our business or
-      our assets. Alternatively, we may seek to acquire other businesses or
-      merge with them. If a change happens to our business, then the new owners
-      may use your personal data in the same way as set out in this Privacy
-      Policy. We require all third parties to respect the security of your
-      personal data and to treat it in accordance with the law. We do not allow
-      our third-party service providers to use your personal data for their own
+      the purposes set out in the table in paragraph 4 above.
+      <br />
+      <br />
+      <ul className="mb-[10px] ml-[40px] list-disc">
+        <li>
+          {" "}
+          Internal Third Parties as set out in Section 10 – Glossary below.
+        </li>
+        <li>
+          External Third Parties as set out in Section 10 – Glossary below.
+        </li>
+        <li>
+          Third parties listed in the table in Section 4 – How we use your
+          Personal Data above;
+        </li>
+        <li>
+          Third parties to whom we may choose to sell, transfer, or merge parts
+          of our business or our assets. Alternatively, we may seek to acquire
+          other businesses or merge with them. If a change happens to our
+          business, then the new owners may use your personal data in the same
+          way as set out in this Privacy Policy.
+        </li>
+      </ul>
+      <br />
+      <br />
+      We require all third parties to respect the security of your personal data
+      and to treat it in accordance with the law. We do not allow our
+      third-party service providers to use your personal data for their own
       purposes and only permit them to process your personal data for specified
       purposes and in accordance with our instructions.
       <div className="legal_page_h pb-2 pt-2">
-        <u>6.INTERNATIONAL TRANSFERS</u>
+      6. International Transfers
       </div>
       We share your personal data within the Company. This will involve
       transferring your data outside the European Economic Area (EEA). We ensure

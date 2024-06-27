@@ -66,7 +66,7 @@ const RightFormSection = () => {
           <TextInput
             label="Name"
             radius={50}
-            placeholder="Your name here"
+            placeholder="Bob Ross"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -80,7 +80,7 @@ const RightFormSection = () => {
           <TextInput
             label="Email"
             radius={50}
-            placeholder="Your email here"
+            placeholder="happyaccidents@gmail.com"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -94,7 +94,7 @@ const RightFormSection = () => {
           <TextInput
             label="Device name"
             radius={50}
-            placeholder="Your device name here"
+            placeholder="Iphone14"
             classNames={{
               input: styles.transparentInput,
               label: styles.inputLabel,
@@ -114,7 +114,7 @@ const RightFormSection = () => {
               label: styles.inputLabel,
               error: styles.inputError,
             }}
-            placeholder="Your feedback here"
+            placeholder="I would like to speak to the team."
             key={form.key("feedback")}
             {...form.getInputProps("feedback")}
           />

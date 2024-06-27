@@ -4,7 +4,7 @@ import  ParnterWithUs  from '../../../../public/assets/images/collabration_page/
 
 const CollabrationHeader = () => {
   return (
-    <div className='flex flex-col justify-center items-center relative'>
+    <div className='flex flex-col justify-center items-center relative xl:mt-[100px] lg:mt-[80px] sm:mt-[60px] mt-[44px]'>
         <h1 className='page-heading xl:text-[110px] lg:text-[90px] sm:text-[75px] text-[40px]'>Partner WIth Us</h1>
         <Image src={ ParnterWithUs } className='absolute top-[72%] xl:h-[84.57px] xl:w-[352.37px] lg:w-[330px] lg:h-[70px] sm:h-[60px] sm:w-[300px] h-[34.5px] w-[143.75px]' alt="partner with us" />
     </div>

@@ -213,7 +213,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       label="Name"
                       mt={10}
                       radius={50}
-                      placeholder="Your name here"
+                      placeholder="Bob Ross"
                       classNames={{
                         input: styles.transparentInput,
                         label: styles.inputLabel,
@@ -227,7 +227,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       label="Phone Number"
                       mt={10}
                       radius={50}
-                      placeholder="Your phone number here"
+                      placeholder="+00 1234 5678"
                       classNames={{
                         input: styles.transparentInput,
                         label: styles.inputLabel,
@@ -242,7 +242,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       label="Email"
                       mt={10}
                       radius={50}
-                      placeholder="Your email here"
+                      placeholder="happyaccidents@gmail.com"
                       classNames={{
                         input: styles.transparentInput,
                         label: styles.inputLabel,

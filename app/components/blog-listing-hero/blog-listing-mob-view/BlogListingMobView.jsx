@@ -27,16 +27,8 @@ const BlogListingMobView = ({ blogsData }) => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center justify-center gap-2 text-center">
                   <p className="content text-[8px]">
-                    {item.writer} | {item.date}
+                   {item.date}
                   </p>
-                </div>
-                <div className="">
-                  <Image
-                    src="/assets/images/blog-page/arrow.svg"
-                    alt="arrow"
-                    width={18.45}
-                    height={18.45}
-                  />
                 </div>
               </div>
             </div>

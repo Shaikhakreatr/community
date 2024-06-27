@@ -54,7 +54,6 @@ h1{
 }
 .footer-ul li{
   margin-bottom: 12px;
-  cursor: pointer;
 }
 .footer-section{
   color:black
@@ -357,6 +356,12 @@ h1{
 
 /* about kreatr */
 
+/* @media (min-width: 1700px) and (max-width:3000px){
+  .pink-box{
+    margin-left:188px;
+  }
+} */
+
 .dictonary-link{
   color: #FD03E9;
   text-decoration:underline;
@@ -416,30 +421,7 @@ h1{
   color: #FE3131;
 }
 
-/* about kreatr text animation */
 
-/* global.css or a suitable CSS file */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.word-animation span {
-  display: inline-block;
-  opacity: 0;
-}
-
-.word-animation span.show {
-  opacity: 1;
-  animation: fadeInUp 1s forwards;
-  animation-delay: var(--delay);
-}
 
 
 

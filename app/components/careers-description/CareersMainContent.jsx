@@ -20,7 +20,7 @@ const CareersMainContent = ({ careerData }) => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
-        <div className="relative lg:mb-[80px] lg:mt-0 xl:mb-[150px] xl:mt-0">
+        <div className="relative mt-[44px] lg:mb-[80px] xl:mb-[150px] lg:mt-[90px] sm:mt-[60px] xl:mt-[100px]">
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
@@ -34,8 +34,8 @@ const CareersMainContent = ({ careerData }) => {
         </div>
       </div>
       <div className="mx-[25px] mb-[10px] mt-[62px] sm:mx-[80px] sm:mb-[50px] sm:mt-[80px] lg:mx-[100px] lg:mb-0 lg:mt-0">
-        <div className="flex items-center">
-          <h4 className="content-neue-medium mr-3 text-[18px] capitalize sm:mr-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px]">
+        <div className="flex items-center xl:mb-[24px] lg:mb-[24px] sm:mb-[20px]">
+          <h4 className="content-neue-medium mr-3 lg:mt-[-6] sm:mt-[-4px] mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px]">
             {careerData.title}
           </h4>
           <div className="mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
@@ -45,28 +45,27 @@ const CareersMainContent = ({ careerData }) => {
             {careerData.location}
           </div>
         </div>
-        <br className="hidden sm:block" />
-        <div className="mt-[10px] sm:mb-4 sm:mt-0">
-          <p className="content-neue text-[12px] sm:text-[16px] lg:text-[18px] xl:text-[24px]">
+        <div className="mt-[10px] sm:mb-4  sm:mt-0">
+          <p className="content-neue xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[12px] sm:text-[16px] lg:text-[18px] xl:text-[24px]">
             {careerData.description}
           </p>
-          <br className="hidden sm:block" />
-          <p className="content-neue-medium mt-[10px]  text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
+
+          <p className="content-neue-medium mt-[10px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
             Responsibilities
           </p>
-          <br className="hidden sm:block" />
+
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[24px]">
               {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
-          <br className="hidden sm:block" />
-          <p className="content-neue-medium mt-[10px] text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
+
+          <p className="content-neue-medium mt-[10px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
             Qualifications
           </p>
-          <br className="hidden sm:block" />
+
           <div>
             <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[24px]">
               {careerData.qualifications.map((item, index) => (
@@ -75,7 +74,7 @@ const CareersMainContent = ({ careerData }) => {
             </ul>
           </div>
         </div>
-        <div className="mt-[2.5rem] flex justify-center sm:mt-[50px]">
+        <div className="mt-[24px] flex justify-center lg:mt-[24px] sm:mt-[50px]">
           <Link
             href="https://www.linkedin.com/company/the-kreatr/"
             target="_blank"
@@ -88,9 +87,9 @@ const CareersMainContent = ({ careerData }) => {
         <div className="content-neue my-[16px] text-center text-[11px] sm:mb-[50px] sm:mt-[30px] sm:text-[16px] lg:text-[20px] xl:text-[28px]">
           <p>
             Can’t find any suitable vacancy? Drop us a line{" "}
-            <a className="text-blue-700" href="#">
+            <Link className="text-blue-700" href="mailto:hr@thekreatr.com">
               hr@thekreatr.com
-            </a>{" "}
+            </Link>{" "}
           </p>
         </div>
       </div>

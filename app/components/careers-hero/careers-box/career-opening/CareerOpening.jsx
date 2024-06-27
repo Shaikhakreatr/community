@@ -11,7 +11,7 @@ const CareerOpening = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="mb-[6px] flex flex-col items-center justify-center  sm:mb-0">
-        <div className="relative mb-[46px] sm:mb-0 lg:mt-0  xl:mt-0">
+        <div className="relative mb-[46px] lg:mb-[54px] xl:mb-[64px] sm:mt-[60px] mt-[44px] lg:mt-[90px]  xl:mt-[100px]">
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
@@ -25,7 +25,7 @@ const CareerOpening = () => {
         </div>
       </div>
       <div className="flex  justify-center items-center sm:w-[100%] lg:w-[90%] ">
-      <div className="flex flex-wrap items-center lg:mt-[25px] xl:mt-[15px] justify-center lg:justify-start lg:ml-[60px] xl:ml-[50px]">
+      <div className="flex flex-wrap items-center justify-center lg:justify-start lg:ml-[60px] xl:ml-[50px]">
         {careersData.map((item, index) => (
           <Link
             href={`/careers/${item.id}`}
@@ -36,11 +36,6 @@ const CareerOpening = () => {
               <h4 className="careers-box text-[18px] sm:text-[26px] sm:leading-[25px] lg:text-[30px] lg:leading-[30px] xl:text-[40px] xl:leading-[40px]">
                 {item.title}
               </h4>
-              <img
-                className="hidden h-[18.61px] w-[18.61px] sm:block sm:h-[24px] sm:w-[24px] lg:h-[44px] lg:w-[44px] xl:h-[56px] xl:w-[56px]"
-                src="/assets/images/careers_page/arrow.svg"
-                alt="arrow img"
-              />
             </div>
             <div className="block sm:hidden">
               <p className="content-neue text-[10px]">{item.description}</p>
@@ -58,19 +53,12 @@ const CareerOpening = () => {
                   {item.location}
                 </div>
               </div>
-              <div>
-                <img
-                  className="block h-[18.61px] w-[18.61px] sm:hidden lg:h-[44px] lg:w-[44px] xl:h-[56px] xl:w-[56px]"
-                  src="/assets/images/careers_page/arrow.svg"
-                  alt="arrow img"
-                />
-              </div>
             </div>
           </Link>
         ))}
       </div>
       </div>
-      <div className="content-neue my-[14px] sm:text-[16px] text-[11px] sm:mb-[30px] lg:mb-[50px] sm:mt-[30px] lg:text-[20px] xl:text-[28px]">
+      <div className="content-neue my-[14px] sm:text-[16px] text-[11px] sm:mb-[30px] lg:mb-[64px] xl:mb-[72px] sm:mt-[30px] lg:text-[20px] xl:text-[28px]">
         <p className="text-center">
           Can’t find any suitable vacancy? Drop us a line{" "}
           <Link className="text-blue-700" href="mailto:hr@thekreatr.com">
