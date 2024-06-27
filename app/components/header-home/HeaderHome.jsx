@@ -28,10 +28,10 @@ const HeaderHome = () => {
       <header
         className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8]" : "bg-transparent"}`}
       >
-        <div className="relative flex items-center justify-center border-b border-gray-500 p-2 xl:h-[180px] lg:h-[90px] sm:h-[120px] h-[110px]">
+        <div className="relative flex items-center justify-center border-b border-gray-500 p-2 xl:h-[140px] lg:h-[90px] sm:h-[120px] h-[90px]">
           <Link href="/">
             <Image
-              className="h-22 my-3 w-124 lg:h-[1.6875rem] lg:w-[10rem] xl:h-[32px] xl:w-[181px]"
+              className="h-[25px] my-3 w-124 lg:h-[30px] lg:w-[10rem] xl:h-[38px] xl:w-[181px]"
               src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
               alt="Kreatr Logo"
               height={27}
