@@ -4,13 +4,8 @@ import Image from "next/image";
 const AboutKreatrMiddle = () => {
   return (
     <div>
-      {/* <div className="mt-[30px]">
-        <p className="page-heading  mb-[16px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px]  sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px]  xl:text-[48px] xl:leading-[52px]">
-          We Are GuIded By 3C’s
-        </p>
-      </div> */}
       <div className="mb-[60px] flex flex-col items-center justify-center sm:mb-0">
-        <div className="relative mb-[15px] mt-[85px] flex h-[50px] w-[350px]  items-center justify-center  sm:mb-[90px] sm:mt-[20px]  sm:w-[700px] lg:mt-[50px] xl:mb-[130px]">
+        <div className="relative flex h-[50px] w-[350px]  items-center justify-center mt-[74px] sm:mt-0 sm:mb-[40px] lg:mb-[40px] xl:mb-[72px]  sm:w-[700px] ">
           <div className="flex items-center justify-center  sm:h-0">
             <Image
               className=" absolute bottom-[120%] left-[33%] h-[65px] w-[122px]  sm:left-[2%] sm:top-[22%] sm:h-[90px] sm:w-[300px] lg:left-[-8%] lg:top-[-16%] lg:h-[100px] lg:w-[310px] xl:left-[-20%] xl:top-[-20%] xl:h-[135px] xl:w-[389px]"
@@ -36,7 +31,7 @@ const AboutKreatrMiddle = () => {
           </div>
         </div>
       </div>
-      <div className=" flex items-center justify-center">
+      <div className="lg:mt-[72px] lg:mb-[72px] sm:my-[40px] my-[24px] flex items-center justify-center">
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
       <div className="mt-[0px] flex flex-col justify-center">
@@ -46,7 +41,7 @@ const AboutKreatrMiddle = () => {
           </p>
         </div> */}
         <div className="kreatr-container container mx-auto flex flex-col justify-center">
-          <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:grid">
+          <div className="relative mt-[164px] grid-cols-2 sm:mt-[0px] sm:grid">
             <div className="kreatr-box1 h-[264px] w-[317px] px-[52px] pt-[90px] sm:ml-[-28px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:ml-[80px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:ml-[150px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DIRECTION
@@ -67,7 +62,7 @@ const AboutKreatrMiddle = () => {
               />
             </div>
           </div>
-          <div className="relative mt-[195px] justify-end sm:mt-[50px] sm:flex sm:gap-[68px]  lg:mt-[30px]  xl:mt-[50px]  xl:gap-[100px]">
+          <div className="relative mt-[186px] justify-end sm:mt-[30px] sm:flex sm:gap-[68px]  lg:mt-[30px]  xl:mt-[25px]  xl:gap-[100px]">
             <div className="absolute left-[9%] top-[-55%] sm:left-[-4%] sm:top-0 lg:left-[7%] xl:left-[10%]">
               <Image
                 className="h-[219px] w-[255px] rounded-[15px]  object-cover object-center sm:h-[280px] sm:w-[350px] lg:h-[280px] lg:w-[480px] xl:h-[295px] xl:w-[511px]"
@@ -90,7 +85,7 @@ const AboutKreatrMiddle = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[50px] flex items-center justify-center">
+      <div className="my-[40px] lg:mt-[64px] lg:mb-[20px] xl:mt-[72px] flex items-center justify-center">
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
     </div>

@@ -100,7 +100,7 @@ const Footer = () => {
                     </li>
                   </Link>
                 </ul>
-                <ul className="footer-ul flex flex-row tracking-tight sm:mt-[-3px] sm:flex-col sm:tracking-normal md:mt-[-3px] lg:mt-[-6px] xl:mt-[0px]">
+                <ul className="footer-ul flex flex-row tracking-tight sm:mt-[0px] sm:flex-col sm:tracking-normal md:mt-[0px] lg:mt-[0px] xl:mt-[0px]">
                   <Link href="/FAQ">
                     <li className="footer-content footer-section inline-block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       FAQs
