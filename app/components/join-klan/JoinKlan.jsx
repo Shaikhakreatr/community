@@ -62,10 +62,10 @@ const JoinKlan = () => {
           <div className="instagram-img absolute left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:left-[3%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/instagram-JOK.svg"
-              className="h-[77.33px] w-[77.33px] rotate-[8deg] xl:h-[101px] xl:w-[101px]"
+              className="h-[77.33px] w-[77.33px] rotate-[8deg] lg:h-[100px] lg:w-[100px] xl:h-[101px] xl:w-[101px]"
               alt="instagram"
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[40px] xl:mt-[2.25rem] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[25px] xl:mt-[28px] xl:text-[24px] xl:leading-[25px]">
               “Pop” goes our hearts when you leave one!
             </p>
           </div>
@@ -78,10 +78,10 @@ const JoinKlan = () => {
           <div className="whatsapp-img absolute right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border border-black p-[18px] shadow-md  shadow-black sm:left-[37%] sm:top-[-8%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[40%] lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
-              className="h-[85px] w-[85px] xl:h-[112px] xl:w-[112px]"
+              className="h-[85px] w-[85px] lg:h-[110px] lg:w-[110px] xl:h-[112px] xl:w-[112px]"
               alt="whatsapp"
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[40px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[20px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
               The biggest green flag you will ever see.
             </p>
           </div>
@@ -94,10 +94,10 @@ const JoinKlan = () => {
           <div className="linkdin-img absolute left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black sm:left-[71%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
             <img
               src="/assets/images/JOK_page/linkdin-JOK.svg"
-              className="h-[69px] w-[69px] rotate-[8deg] xl:h-[92px] xl:w-[92px]"
+              className="h-[69px] w-[69px] rotate-[8deg] lg:h-[92px] lg:w-[92px] xl:h-[92px] xl:w-[92px]"
               alt="linkdin"
             />
-            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[50px] xl:mt-[44px] xl:text-[24px] xl:leading-[25px]">
+            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[30px] xl:mt-[32px] xl:text-[24px] xl:leading-[25px]">
               For your professional needs!
             </p>
           </div>

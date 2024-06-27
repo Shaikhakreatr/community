@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mt-[28px] grid  grid-cols-1 sm:grid-cols-2 md:mt-8 md:grid-cols-2 lg:ml-4 lg:mt-8 xl:mt-10 ">
             <div className="ml-0 lg:ml-14">
               <div>
-                <Link href="/">
+                <Link className="sm:inline-block" href="/">
                   <Image
                     src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
                     className="mx-auto h-[1.375rem] w-[7.875rem] sm:mx-0  lg:h-[2rem] lg:w-[10rem]  xl:h-[2.5rem] xl:w-[14.375rem]"
@@ -78,53 +78,65 @@ const Footer = () => {
               <div className="flex flex-col items-center justify-around pb-[14px] pt-7 sm:flex-row sm:border-none sm:pt-0 ">
                 <ul className="footer-ul flex flex-row tracking-tight sm:flex-col sm:tracking-normal ">
                   <Link href="/blogs">
-                    <li className="footer-section footer-content pr-5 text-[.875rem] opacity-[70%] hover:italic sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content inline-block pr-5 text-[.875rem] opacity-[70%] hover:italic sm:opacity-[60%] lg:text-[1.125rem] xl:text-24">
                       Blogs
                     </li>
                   </Link>
                   <Link href="/collaboration">
-                    <li className="footer-section footer-content pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content inline-block pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Become a partner
                     </li>
                   </Link>
                   <Link href="/careers">
-                    <li className="footer-section footer-content text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content inline-block text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Careers
                     </li>
                   </Link>
                   <Link href="/FAQ">
-                    <li className="footer-section footer-content hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-section footer-content  hidden pr-3 text-[.875rem] opacity-[70%] sm:inline-block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </Link>
                 </ul>
-                <ul className="footer-ul flex flex-row tracking-tight sm:mt-[-41px] sm:flex-col sm:tracking-normal md:mt-[-40px] lg:mt-[-42px] xl:mt-[-52px]">
+                <ul className="footer-ul flex flex-row tracking-tight sm:mt-[-3px] sm:flex-col sm:tracking-normal md:mt-[-3px] lg:mt-[-6px] xl:mt-[-10px]">
                   <Link href="/FAQ">
-                    <li className="footer-content footer-section block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section inline-block pr-5 text-[.875rem] opacity-[70%] sm:hidden sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       FAQs
                     </li>
                   </Link>
                   <Link href="/contact">
-                    <li className="footer-content footer-section pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section inline-block pr-5 text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Contact Us
                     </li>
                   </Link>
                   <Link href="/join-our-klan">
-                    <li className="footer-content footer-section text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section inline-block text-[.875rem] opacity-[70%] sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Join our Klan
                     </li>
                   </Link>
                   <Link href="/legal">
-                    <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:block sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    <li className="footer-content footer-section sm:inline-block hidden pr-3 text-[.875rem] opacity-[70%]  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                       Legal
                     </li>
                   </Link>
+                  <Link href="/studio">
+                    <li className="footer-content footer-section sm:inline-block hidden pr-3 text-[.875rem] opacity-[70%]  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                      Studio
+                    </li>
+                  </Link>
                 </ul>
+                <div className="flex justify-center items-center gap-4">
                 <Link href="/legal">
-                  <li className="footer-section footer-content block text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                  <li className="footer-section inline-block footer-content text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
                     Legal
                   </li>
                 </Link>
+                <Link href="/studio">
+                  <li className="footer-section inline-block footer-content text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%] sm:hover:italic lg:text-[1.125rem] xl:text-24">
+                    Studio
+                  </li>
+                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -189,7 +201,7 @@ const Footer = () => {
           </div>
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
             <p className="content-neue footer-section text-[12px] opacity-[70%] sm:opacity-[60%] md:text-[12px] xl:text-20 ">
-              Copyright © 2024 KreatrMinds Pvt Ltd.
+              Copyright © 2024 KreatrMinds Pvt. Ltd.| <Link href="/bug-report" className="content-neue underline text-blue-800">Report bug</Link>
             </p>
           </div>
         </div>

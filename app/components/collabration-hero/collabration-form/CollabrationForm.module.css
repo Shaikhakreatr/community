@@ -70,6 +70,15 @@
     font-family: "Neue Montreal" ;
     font-size: 12px;
 }
+.selectDropDown{
+    background-color: #2a2a2a;
+    color: #FFFDEE;
+}
+.selectOption:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFDEE;
+
+}
 .formButton {
     height: 40px;
     width: 100px;

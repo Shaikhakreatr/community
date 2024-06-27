@@ -220,9 +220,9 @@ const LeftSection = () => {
                   <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Agency</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  {/* <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Studio</p>
-                  </div>
+                  </div> */}
                   <div className="mb-2  h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Evil-Corp</p>
                   </div>

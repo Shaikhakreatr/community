@@ -78,8 +78,9 @@ const CollabrationForm = () => {
             className={{
               input: styles.dropDown,
               error: styles.dropDownError,
+              
             }}
-            classNames={{ input: styles.selectInput }}
+            classNames={{ input: styles.selectInput ,dropdown:styles.selectDropDown,option:styles.selectOption}}
             placeholder="Choose type"
             data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
             {...form.getInputProps("collaborationType")}

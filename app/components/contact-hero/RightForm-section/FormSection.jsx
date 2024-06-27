@@ -69,7 +69,7 @@ const FormSection = () => {
 
   return (
     <>
-      <div className="relative col-span-2 mb-5 flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
+      <div className="relative col-span-2 sm:mb-[-2.75rem] mb-[10px] flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
         <form
           className={`${styles.formWrap} w-full`}
           onSubmit={form.onSubmit((values) => {

@@ -17,6 +17,13 @@
     padding-left: 0.75rem;
     color: rgba(0, 0, 0, 0.6);
 }
+.accordionIcon svg{
+    transform: scale(2);
+    rotate: 270deg;
+}
+[data-active] .accordionIcon svg {
+    rotate: 180deg;
+}
 
 @media (min-width: 640px) {
     .accordionBox{

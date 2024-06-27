@@ -53,7 +53,7 @@ h1{
   background-attachment: fixed;
 }
 .footer-ul li{
-  padding-bottom: 15px;
+  margin-bottom: 12px;
   cursor: pointer;
 }
 .footer-section{

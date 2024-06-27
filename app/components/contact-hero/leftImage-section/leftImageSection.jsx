@@ -4,7 +4,7 @@ import Link from "next/link";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[17%]  lg:top-[23%] lg:left-[5%] sm:left-[-43px] sm:top-[90px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
+      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[12%]  lg:top-[19%] lg:left-[5%] sm:left-[-43px] sm:top-[77px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
       </div>
       <div className="absolute sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
@@ -18,7 +18,7 @@ const LeftImageSection = () => {
           </p>
           <ul>
             <li>
-              <Link href="mailto:marketing@thekreatr.com" className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] sm:text-[13px]">
+              <Link href="mailto:marketing@thekreatr.com" className="flex items-center  xl:text-[18px] lg:text-[16px] sm:mt-[10px] xl:mt-[20px] lg:mt-[24px] sm:text-[13px]">
                 <img
                   className="xl:h-[20px] mr-1 xl:w-[20px] lg:h-[20px] lg:w-[20px] sm:h-[15px] sm:w-[15px]"
                   src="/assets/images/contact_page/Email-form.svg"

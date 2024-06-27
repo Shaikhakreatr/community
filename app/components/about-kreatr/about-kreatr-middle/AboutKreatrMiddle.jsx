@@ -4,11 +4,11 @@ import Image from "next/image";
 const AboutKreatrMiddle = () => {
   return (
     <div>
-      <div className="mt-[30px]">
+      {/* <div className="mt-[30px]">
         <p className="page-heading  mb-[16px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px]  sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px]  xl:text-[48px] xl:leading-[52px]">
           We Are GuIded By 3C’s
         </p>
-      </div>
+      </div> */}
       <div className="mb-[60px] flex flex-col items-center justify-center sm:mb-0">
         <div className="relative mb-[15px] mt-[85px] flex h-[50px] w-[350px]  items-center justify-center  sm:mb-[90px] sm:mt-[20px]  sm:w-[700px] lg:mt-[50px] xl:mb-[130px]">
           <div className="flex items-center justify-center  sm:h-0">
@@ -40,11 +40,11 @@ const AboutKreatrMiddle = () => {
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
       <div className="mt-[0px] flex flex-col justify-center">
-        <div className="mt-[30px]">
+        {/* <div className="mt-[30px]">
           <p className="page-heading mb-[16px] text-center  text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px]  sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px]  xl:text-[48px] xl:leading-[52px]">
             OUR MISSION AND VISION
           </p>
-        </div>
+        </div> */}
         <div className="kreatr-container container mx-auto flex flex-col justify-center">
           <div className="relative mt-[190px] grid-cols-2 sm:mt-[50px] sm:grid">
             <div className="kreatr-box1 h-[264px] w-[317px] px-[52px] pt-[90px] sm:ml-[-28px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:ml-[80px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:ml-[150px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">
