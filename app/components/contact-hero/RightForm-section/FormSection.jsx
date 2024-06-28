@@ -135,7 +135,7 @@ const FormSection = () => {
             {...form.getInputProps("message")}
           />
           <br />
-          <div className="items-center text-center sm:flex lg:gap-3  xl:gap-5">
+          <div className="items-center text-center sm:flex lg:gap-3  xl:gap-5 ">
             <Button
               className={styles.formButton}
               radius={50}
