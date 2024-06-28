@@ -69,10 +69,10 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div
-              className={`nav-line1 mb-[8px] h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
+              className={`nav-line1 mb-[9px] h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
             ></div>
             <div
-              className={`nav-line2 h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
+              className={`nav-line2 h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
             ></div>
           </div>
         </div>
