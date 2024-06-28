@@ -125,7 +125,7 @@ const FormSection = () => {
             onFocus={handleTextareaFocus}
             onBlur={handleTextareaBlur}
             classNames={{
-              input: styles.transparentInput,
+              input: styles.transparentInputArea,
               label: styles.inputLabel,
               error: styles.inputError,
             }}

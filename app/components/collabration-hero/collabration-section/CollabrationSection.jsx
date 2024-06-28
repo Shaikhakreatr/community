@@ -43,7 +43,7 @@ const CollabrationSection = () => {
                   {speakers.map((item, index) => (
                     <div key={index} >
                       <div className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <div className="partner-text mb-[10px] mt-6 list-disc">
+                        <div className="partner-text mb-[10px] mt-6 ">
                           {item.title}
                         </div>
                       </div>
@@ -76,7 +76,7 @@ const CollabrationSection = () => {
                   {sponsors.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <div className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 ">
                           {item.title}
                         </div>
                       </ul>
@@ -107,7 +107,7 @@ const CollabrationSection = () => {
                   {spaces.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <div className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 ">
                           {item.title}
                         </div>
                       </ul>
@@ -139,7 +139,7 @@ const CollabrationSection = () => {
                   {sellers.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead sm:text-start text-center text-[18px] sm:text-[22px] lg:text-[26px] xl:text-[28px]">
-                        <div className="partner-text mb-2 mt-6 list-disc">
+                        <div className="partner-text mb-2 mt-6 ">
                           {item.title}
                         </div>
                       </ul>

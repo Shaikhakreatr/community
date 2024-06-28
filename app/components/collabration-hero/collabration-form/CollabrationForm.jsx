@@ -62,13 +62,13 @@ const CollabrationForm = () => {
 
   return (
     <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
-      <div className="lg:mt-[-8px]">
+      <div className="lg:mt-[-24px]">
         <h1 className="content-neue-medium sm:text-start text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center sm:block">
-        <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%]">
+        <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%] sm:mt-[40px]">
           <label className="content-neue text-[16px] sm:text-[18px]">
             Collaboration Type<span className={styles.dropDownStar}>*</span>
           </label>
@@ -140,12 +140,11 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden lg:block" />
-          <div className="mt-[25px] items-center text-center sm:mt-[10px]  sm:flex lg:mt-[25px] lg:gap-3  xl:gap-5">
+          <div className="mt-[25px] items-center text-center sm:mt-[10px]  sm:flex xl:mt-[24px] lg:mt-[18px] lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}
               type="submit"
-              mt="sm"
               fz={16}
             >
               Submit

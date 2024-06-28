@@ -8,21 +8,21 @@ const AboutKreatrMiddle = () => {
         <div className="relative flex h-[50px] w-[350px]  items-center justify-center mt-[74px] sm:mt-0 sm:mb-[40px] lg:mb-[40px] xl:mb-[72px]  sm:w-[700px] ">
           <div className="flex items-center justify-center  sm:h-0">
             <Image
-              className=" absolute bottom-[120%] left-[33%] h-[65px] w-[122px]  sm:left-[2%] sm:top-[22%] sm:h-[90px] sm:w-[300px] lg:left-[-8%] lg:top-[-16%] lg:h-[100px] lg:w-[310px] xl:left-[-20%] xl:top-[-20%] xl:h-[135px] xl:w-[389px]"
+              className=" absolute bottom-[120%] left-[33%] h-[65px] w-[122px]  sm:left-[2%] sm:top-[22%] sm:h-[90px] sm:w-[300px] lg:left-[-10%] lg:top-[-9%] lg:h-[100px] lg:w-[390px] xl:left-[-16%] xl:top-[-12%] xl:h-[135px] xl:w-[329px]"
               src={"/assets/images/about-kreatr/connect-kreatr.svg"}
               alt="connect image"
               height={105}
               width={310}
             />
             <Image
-              className=" absolute right-[29%] top-[-50%] h-[65px] w-[145px]  sm:left-[32%] sm:top-[24%] sm:h-[90px] sm:w-[300px] lg:left-[23%] lg:top-[-5%] lg:h-[100px] lg:w-[350px] xl:left-[19%] xl:h-[135px] xl:w-[461px]"
+              className=" absolute right-[29%] top-[-50%] h-[65px] w-[145px]  sm:left-[32%] sm:top-[24%] sm:h-[90px] sm:w-[300px] lg:left-[23%] lg:top-[-5%] lg:h-[100px] lg:w-[390px] xl:left-[18%] xl:h-[135px] xl:w-[478px]"
               src={"/assets/images/about-kreatr/collaborate-kreatr.svg"}
               alt="collaborate image"
               height={100}
               width={350}
             />
             <Image
-              className="absolute top-[50%] h-[65px] w-[103px]  sm:left-[59%] sm:top-[-32%] sm:h-[90px] sm:w-[300px] lg:left-[56%] lg:top-[-46%] lg:h-[100px] lg:w-[320px] xl:left-[69%]  xl:top-[-72%] xl:h-[135px] xl:w-[328px]"
+              className="absolute top-[50%] h-[65px] w-[103px]  sm:left-[59%] sm:top-[-32%] sm:h-[90px] sm:w-[300px] lg:left-[54%] lg:top-[-10%] lg:h-[100px] lg:w-[390px] xl:left-[71%]  xl:top-[-7%] xl:h-[135px] xl:w-[328px]"
               src={"/assets/images/about-kreatr/create-kreatr.svg"}
               alt="create image"
               height={105}
@@ -35,11 +35,6 @@ const AboutKreatrMiddle = () => {
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
       <div className="mt-[0px] flex flex-col justify-center">
-        {/* <div className="mt-[30px]">
-          <p className="page-heading mb-[16px] text-center  text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[15px]  sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[48px]  xl:text-[48px] xl:leading-[52px]">
-            OUR MISSION AND VISION
-          </p>
-        </div> */}
         <div className="kreatr-container container mx-auto flex flex-col justify-center">
           <div className="relative mt-[164px] grid-cols-2 sm:mt-[0px] sm:grid">
             <div className="kreatr-box1 h-[264px] w-[317px] px-[52px] pt-[90px] sm:ml-[-28px] sm:h-[280px] sm:w-[400px] sm:p-[50px] lg:ml-[80px] lg:h-[280px] lg:w-[575px] lg:p-[50px] xl:ml-[150px] xl:h-[295px] xl:w-[584px] xl:p-[45px]">

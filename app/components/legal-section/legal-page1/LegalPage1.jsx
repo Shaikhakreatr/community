@@ -30,12 +30,12 @@ const LegalPage1 = () => {
       DELETE IT FROM YOUR DEVICE.
       <br />
       <br />
-      <p className="ml-[30px]">
-        <u>1. License Grant.</u>: Subject to the terms of this Agreement, the
+      <p className="sm:ml-[30px]">
+      1. <u>  License Grant.</u>: Subject to the terms of this Agreement, the
         Company grants you a limited, non-exclusive and nontransferable license
         to:<br></br>
         <br />
-        <p className="ml-[20px]">
+        <ul className="ml-[20px]">
           {`(a) download,
           install and use the Application for your personal, non-commercial use
           on a single mobile device owned or otherwise controlled by you ("
@@ -48,10 +48,10 @@ const LegalPage1 = () => {
           accessible through the Application, strictly in accordance with this
           Agreement and the Terms of Use applicable to such Content and Services
           as set forth in Section 5.
-        </p>
+        </ul>
         <br />
         <br />
-        <u>2. License Restrictions</u>: Licensee shall not:
+        2. <u>  License Restrictions</u>: Licensee shall not:
         <br />
         <br />
         <p className="ml-[20px]">
@@ -87,7 +87,7 @@ const LegalPage1 = () => {
         </p>
         <br />
         <br />
-        <u>3. Reservation of Rights</u>: You acknowledge and agree that the
+        3. <u> Reservation of Rights</u>: You acknowledge and agree that the
         Application is provided under license, and not sold, to you. You do not
         acquire any ownership interest in the Application under this Agreement,
         or any other rights thereto other than to use the Application in
@@ -99,7 +99,7 @@ const LegalPage1 = () => {
         to you in this Agreement.
         <br />
         <br />
-        <u>4.Collection and Use of Your Information</u> : You acknowledge that
+        4. <u> Collection and Use of Your Information</u> : You acknowledge that
         when you download, install or use the Application, the Company may use
         automatic means (including, for example, cookies and web beacons) to
         collect information about your Mobile Device and about your use of the
@@ -114,7 +114,7 @@ const LegalPage1 = () => {
         your information in compliance with the Privacy Policy.
         <br />
         <br />
-        <u>5. Content and Services</u>: The
+        5. <u> Content and Services</u>: The
         {`Application may provide you with access to the Company's website
           located at`}{" "}
         <Link className="text-blue-800 underline" href="/">
@@ -132,7 +132,7 @@ const LegalPage1 = () => {
           this Agreement.`}
         <br />
         <br />
-        <u>6. Updates :</u>
+        6. <u>Updates :</u>
         {`The Company may from time to time in its sole
           discretion develop and provide Application updates, which may include
           upgrades, bug fixes, patches and other error corrections and/or new
@@ -158,7 +158,7 @@ const LegalPage1 = () => {
         </p>
         <br />
         <br />
-        <u>7. Third Party Materials</u>{" "}
+        7. <u> Third Party Materials</u>{" "}
         {`: The Application may display, include or make available
           third-party content (including data, information, applications and
           other products, services and/or materials) or provide links to
@@ -175,7 +175,7 @@ const LegalPage1 = () => {
           terms and conditions.`}
         <br />
         <br />
-        <u>8. Term and Termination:</u>
+        8. <u> Term and Termination:</u>
         <br />
         <p className="ml-[20px]">
           (a) The term of the Agreement commences when you download the
@@ -211,7 +211,7 @@ const LegalPage1 = () => {
         </p>{" "}
         <br />
         <br />
-        <u>9. Disclaimer of Warranties</u>{" "}
+        9. <u> Disclaimer of Warranties</u>{" "}
         {`: The application is provided to the
 Licensee "as is" and with all faults and defects, without warranty
 of any kind. To the maximum extent permitted under applicable
@@ -237,7 +237,7 @@ some or all of the above exclusions and limitations may not
 apply to you.`}
         <br />
         <br />
-        <u>10. Limitation of Liability </u>:To the fullest extent permitted by
+        10. <u> Limitation of Liability </u>:To the fullest extent permitted by
 applicable law, in no event will the Company or its Affiliates, or
 any of its or their respective Licensors or Service Providers, have
 any liability arising from or related to your use of or inability to
@@ -265,7 +265,7 @@ limitations of liability, so some or all of the above limitations of
 liability may not apply to you.
         <br />
         <br />
-        <u>11. Indemnification</u>{" "}
+        11. <u> Indemnification</u>{" "}
         {`: You
           agree to indemnify, defend and hold harmless the Company and its
           officers, directors, employees, agents, affiliates, successors and
@@ -278,7 +278,7 @@ liability may not apply to you.
           the content you submit or make available through this Application.`}
         <br />
         <br />
-        <u>12. Export Regulation</u>: The Application may be subject to certain
+        12. <u> Export Regulation</u>: The Application may be subject to certain
         export control laws. You shall not, directly or indirectly, export,
         re-export or release the Application to, or make the Application
         accessible from, any jurisdiction or country to which export, re-export
@@ -289,14 +289,14 @@ liability may not apply to you.
         releasing or otherwise making the Application available.
         <br />
         <br />
-        <u>13. Severability</u> : If any provision of this Agreement is illegal or
+        13. <u> Severability</u> : If any provision of this Agreement is illegal or
         unenforceable under applicable law, the remainder of the provision will
         be amended to achieve as closely as possible the effect of the original
         term and all other provisions of this Agreement will continue in full
         force and effect.
         <br />
         <br />
-        <u>14 .Governing Law</u> : This Agreement is governed by and construed in
+        14. <u> Governing Law</u> : This Agreement is governed by and construed in
         accordance with the laws of Bengaluru, Karnataka, without giving effect
         to any choice or conflict of law provision or rule. Any legal suit,
         action or proceeding arising out of or related to this Agreement or the
@@ -308,14 +308,14 @@ liability may not apply to you.
         courts and to venue in such courts.
         <br />
         <br />
-        <u>15. Limitation of Time to File Claims</u> :Any cause of action or claim
+        15. <u> Limitation of Time to File Claims</u> :Any cause of action or claim
 you may have arising out of or relating to this agreement or the
 Application must be commenced within one (1) year after the
 cause of action accrues; otherwise, such cause of action or
 claim is permanently barred.
         <br />
         <br />
-        <u>16. Entire Agreement</u> : This End User Licence Agreement, our Terms &
+        16. <u> Entire Agreement</u> : This End User Licence Agreement, our Terms &
         Conditions, Terms of Sale, Refund and Cancellation Policy, and our
         Privacy Policy constitute the entire agreement between you and the
         Company with respect to the Application and supersede all prior or
@@ -323,7 +323,7 @@ claim is permanently barred.
         with respect to the Application.
         <br />
         <br />
-        <u>17. Waiver</u> : No failure to exercise, and no delay in exercising, on
+        17. <u> Waiver</u> : No failure to exercise, and no delay in exercising, on
         the part of either party, any right or any power hereunder shall operate
         as a waiver thereof, nor shall any single or partial exercise of any
         right or power hereunder preclude further exercise of that or any other

@@ -15,7 +15,7 @@ const LegalMainSection = () => {
   };
   return (
     <div className="container mx-auto">
-      <div className=" justify-center items-center xl:mx-[50px] flex flex-col">
+      <div className=" justify-center items-center xl:mx-[50px] mt-[38px] sm:mt-[60px] lg:mt-[50px] xl:mt-[100px] flex flex-col">
       <h1 className="heading text-70 pt-6">legal</h1>
       <div className=" justify-center  flex items-center w-full">
       <div className="flex gap-3 pt-4 w-full lg:justify-center overflow-x-auto scrollbar-hide ">

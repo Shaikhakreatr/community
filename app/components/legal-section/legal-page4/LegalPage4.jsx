@@ -342,7 +342,7 @@ const LegalPage4 = () => {
       We have the right to:
       <br />
       <br />
-      <ul className="list-disc pl-4">
+      <ul className="list-disc ml-[40px]">
         <li>
           Remove or refuse to post any User Contributions for any or no reason
           in our sole discretion.

@@ -57,7 +57,7 @@ const Header = () => {
         <div className="flex items-center justify-center border-b border-gray-500 p-2 xl:h-[140px] lg:h-[90px] sm:h-[120px] h-[90px]">
           <Link href="/">
             <Image
-              className="h-[25px] my-3 w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[38px] xl:w-[181px]"
+              className="h-[25px] my-3 w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
               src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
               alt="Kreatr Logo"
               height={27}
@@ -83,7 +83,7 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`absolute inset-0 top-[68px] sm:mt-[30px] mt-[29px] lg:mt-[20px] xl:mt-[65px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
+            className={`absolute inset-0 top-[68px] sm:mt-[30px] mt-[29px] lg:mt-[22px] xl:mt-[65px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
@@ -112,7 +112,7 @@ const Header = () => {
                   width={90}
                 />
               </div>
-              <div className="pointer-events-auto absolute left-[8%] top-[64%] sm:left-[22%] sm:top-[62%] lg:left-[14%] lg:top-[56%] xl:left-[16%] xl:top-[54%]">
+              <div className="pointer-events-auto absolute left-[8%] top-[64%] sm:left-[22%] sm:top-[62%] lg:left-[14%] lg:top-[56%] xl:left-[16%] xl:top-[52%]">
                 <Link href="/about-kreatr">
                   <Image
                     className="h-[134px] w-[134px] hover:scale-105 sm:h-[181px] sm:w-[181px] lg:h-[131px] lg:w-[141px] xl:h-[181px] xl:w-[181px]"
@@ -125,8 +125,8 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[59%]">
-                <Link href="/about-app">
+              <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
+                
                   <Image
                     className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[80px] lg:w-[160px] xl:h-[110px] xl:w-[185px]"
                     src={
@@ -136,7 +136,7 @@ const Header = () => {
                     height={90}
                     width={160}
                   />
-                </Link>
+
               </div>
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] lg:left-[10%] lg:top-[85%] xl:left-[19%] xl:top-[84%]">
                 <Link href="/events">
@@ -164,7 +164,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[64%] xl:top-[70%]">
+              <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[66%] xl:top-[70%]">
                 <Link href="/contact">
                   <Image
                     className="h-[102px] w-[79px] hover:scale-105 sm:h-[154px] sm:w-[120px] lg:h-[114px] lg:w-[95px] xl:h-[154px] xl:w-[120px]"
@@ -178,7 +178,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[660px] xl:w-[466px]"
+                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[600px] xl:w-[466px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}

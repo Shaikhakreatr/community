@@ -31,7 +31,7 @@ const HeaderHome = () => {
         <div className="relative flex items-center justify-center border-b border-gray-500 p-2 xl:h-[140px] lg:h-[90px] sm:h-[120px] h-[90px]">
           <Link href="/">
             <Image
-              className="h-[25px] my-3 w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[38px] xl:w-[181px]"
+              className="h-[25px] my-3 w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
               src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
               alt="Kreatr Logo"
               height={27}

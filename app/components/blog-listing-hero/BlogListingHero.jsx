@@ -153,7 +153,7 @@ const BlogListingHero = () => {
                 />
                 <div className="mt-[35px] pl-6 pr-6">
                   <div className="">
-                    <h1 className="content mr-24 text-[34px] font-[800] leading-[40px]">
+                    <h1 className="content  text-[34px] font-[800] leading-[40px]">
                       {data[j - 1].heading.length > 50
                         ? `${data[j - 1].heading.slice(0, 50)}...`
                         : data[j - 1].heading}
@@ -161,7 +161,7 @@ const BlogListingHero = () => {
                     
                   </div>
 
-                  <div className="flex  justify-between mt-[30px]">
+                  <div className="flex  justify-between mt-[50px]">
                     <div className="flex  items-end justify-center  text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -373,8 +373,8 @@ const BlogListingHero = () => {
                     }}
                   />
                   <div className="flex justify-between pl-6 pr-6 pt-6">
-                    <div className="flex w-[50%] items-center  ">
-                      <div className="content mr-20 text-[25px] font-[800]">
+                    <div className="flex  items-start  ">
+                      <div className="content  text-[25px] font-[800]">
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
@@ -398,13 +398,13 @@ const BlogListingHero = () => {
                     }}
                   />
                   <div className="mt-[35px] flex justify-between pl-6 pr-6">
-                    <div className="flex w-[50%] items-center  ">
-                      <div className="content mr-20 text-[34px] font-[800] leading-[40px]">
+                    <div className="flex  items-start  ">
+                      <div className="content  text-[34px] font-[800] leading-[40px]">
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
                   
-                        <div className="content mt-[20px] flex h-[34px] w-[151px] items-center justify-center text-[16px] rounded-[24px] border border-selectedBorder text-center">
+                        <div className="content mt-[50px] flex h-[34px] w-[151px] items-center justify-center text-[16px] rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
                       </div>
                       </div>
@@ -473,7 +473,7 @@ const BlogListingHero = () => {
   }
 
   return backendData.length !== 0 ? (
-    <div className="flex h-full w-full flex-col items-center justify-center xl:mt-[100px] lg:mt-[80px] sm:mt-[60px] mt-[44px]">
+    <div className="flex h-full w-full flex-col items-center justify-center xl:mt-[100px] lg:mt-[60px] sm:mt-[60px] mt-[44px]">
       <div>
         <h1
           className={

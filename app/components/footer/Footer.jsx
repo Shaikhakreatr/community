@@ -145,12 +145,9 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="footer-content footer-section hidden pr-3 text-[.875rem] opacity-[70%] sm:inline-block  sm:opacity-[60%]  lg:text-[1.125rem] xl:text-24">
-                    <Link
-                      className="cursor-pointer sm:inline-block sm:hover:italic"
-                      href="/studio"
-                    >
+                    <div className=" sm:inline-block sm:hover:italic">
                       Studio
-                    </Link>
+                    </div>
                   </li>
                 </ul>
                 <ul className="flex items-center justify-center gap-4">
@@ -163,12 +160,9 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="footer-section footer-content inline-block text-[.875rem] opacity-[70%] sm:hidden  sm:opacity-[60%]  lg:text-[1.125rem] xl:text-24">
-                    <Link
-                      className="cursor-pointer sm:inline-block sm:hover:italic"
-                      href="/studio"
-                    >
+                    <div className=" sm:inline-block sm:hover:italic">
                       Studio
-                    </Link>
+                    </div>
                   </li>
                 </ul>
               </div>

@@ -14,7 +14,8 @@ import PaymentSuccess from "@/app/payment-success/page";
 import PaymentFailure from "@/app/payment-failure/page";
 
 const UpcomingHero = ({ upcomingData }) => {
-  const BBACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+  const BBACKEND_EVENT_INFO_URI =
+    process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
   const router = useRouter();
   const targetRef = useRef(null);
@@ -61,22 +62,19 @@ const UpcomingHero = ({ upcomingData }) => {
     if (!form.validate().hasErrors) {
       console.log(form.values.forms);
       try {
-        const res = await fetch(
-          `${BBACKEND_EVENT_INFO_URI}/${id}`,
-          {
-            method: "PATCH",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              newFormInfoList: form.values.forms.map((formInstance) => ({
-                name: formInstance.name,
-                phoneNo: formInstance.phoneNo,
-                email: formInstance.email,
-              })),
-            }),
+        const res = await fetch(`${BBACKEND_EVENT_INFO_URI}/${id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
           },
-        );
+          body: JSON.stringify({
+            newFormInfoList: form.values.forms.map((formInstance) => ({
+              name: formInstance.name,
+              phoneNo: formInstance.phoneNo,
+              email: formInstance.email,
+            })),
+          }),
+        });
 
         // Handle the response
         if (res.ok) {
@@ -118,7 +116,7 @@ const UpcomingHero = ({ upcomingData }) => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-[25px] lg:mt-[50px]">
+          <div className="mt-[44px] sm:mt-[60px] lg:mt-[80px] xl:mt-[100px]">
             <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
@@ -168,7 +166,7 @@ const UpcomingHero = ({ upcomingData }) => {
               About
             </h3>
             <br />
-            <div className="content-neue text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
+            <div className="content-neue text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[22px] lg:leading-[22px] xl:text-[28px] xl:leading-[33px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>
@@ -324,6 +322,5 @@ const UpcomingHero = ({ upcomingData }) => {
     </section>
   );
 };
-
 
 export default UpcomingHero;

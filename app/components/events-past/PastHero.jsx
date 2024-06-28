@@ -23,7 +23,7 @@ const PastHero = ({pastData}) => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="lg:mt-[50px] mt-[25px]">
+            <div className="lg:mt-[80px] mt-[44px] sm:mt-[60px] xl:mt-[100px]">
               <h1 className="page-subhead text-[22px] leading-[24px] lg:leading-[55px] sm:text-[48px] lg:text-[54px] xl:text-[64px]">
                 {pastData.heading}
               </h1>
@@ -58,7 +58,7 @@ const PastHero = ({pastData}) => {
                 About
               </h3>
               <br />
-              <div className="content-neue sm:text-start text-center text-[14px] leading-[20px] sm:text-[18px] lg:text-[24px] lg:leading-[28px] xl:text-[28px] xl:leading-[33px]">
+              <div className="content-neue sm:text-start text-center text-[14px] leading-[20px] sm:text-[18px] lg:text-[22px] lg:leading-[24px] xl:text-[28px] xl:leading-[33px]">
                 <p>
                   {pastData.description}
                 </p>

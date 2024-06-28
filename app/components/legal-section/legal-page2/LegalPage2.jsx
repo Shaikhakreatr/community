@@ -49,7 +49,7 @@ const LegalPage2 = () => {
       protects you.
       <br />
       <div className="legal_page_h pb-2 pt-2">
-        1.Important Information and Who We Are
+        1.  Important Information and Who We Are
       </div>
       <div className="pb-2 text-[18px]">Purpose of this Privacy Policy </div>
       This Privacy Policy aims to give you information on how the Company
@@ -117,7 +117,7 @@ const LegalPage2 = () => {
       statements. When you leave our Sites, we encourage you to read the privacy
       policy of every website or other site you visit.
       <div className="legal_page_h pb-2 pt-2">
-        2.The Data We Collect About You
+        2. The Data We Collect About You
       </div>
       Personal data, or personal information, means any information about an
       individual from which that person can be identified. It does not include
@@ -177,7 +177,7 @@ const LegalPage2 = () => {
       services). In this case, we may have to cancel a product or service you
       have with us but we will notify you if this is the case at the time.
       <div className="legal_page_h pb-2 pt-2">
-        3. How Is Your Personal Data Collected?
+        3.  How Is Your Personal Data Collected?
       </div>
       <ul className="mb-[10px] ml-[40px] list-disc">
         <li>
@@ -718,7 +718,7 @@ not be viewed by unauthorized persons.`}</li>
       knowledge or consent, in compliance with the above rules, where this is
       required or permitted by law.
       <div className="legal_page_h pb-2 pt-2">
-        5. Disclosures of Your Personal Data
+        5.  Disclosures of Your Personal Data
       </div>
       We may have to share your personal data with the parties set out below for
       the purposes set out in the table in paragraph 4 above.
@@ -753,7 +753,7 @@ not be viewed by unauthorized persons.`}</li>
       third-party service providers to use your personal data for their own
       purposes and only permit them to process your personal data for specified
       purposes and in accordance with our instructions.
-      <div className="legal_page_h pb-2 pt-2">6. International Transfers</div>
+      <div className="legal_page_h pb-2 pt-2">6.  International Transfers</div>
       We share your personal data within the Company. This will involve
       transferring your data outside the European Economic Area (EEA). We ensure
       your personal data is protected by requiring all our group companies to
@@ -790,7 +790,7 @@ not be viewed by unauthorized persons.`}</li>
       mechanism used by us when transferring your personal data out of the EEA.
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2">7. Data Security</div>
+      <div className="legal_page_h pb-2 pt-2">7.  Data Security</div>
       We have put in place appropriate security measures to prevent your
       personal data from being accidentally lost, used or accessed in an
       unauthorised way, altered or disclosed. In addition, we limit access to
@@ -802,7 +802,7 @@ not be viewed by unauthorized persons.`}</li>
       <br /> We have put in place procedures to deal with any suspected personal
       data breach and will notify you and any applicable regulator of a breach
       where we are legally required to do so.
-      <div className="legal_page_h pb-2 pt-2">8. Data Retention</div>
+      <div className="legal_page_h pb-2 pt-2">8.  Data Retention</div>
       <div className="pb-2 pt-2">
         How Long Will You Use My Personal Data For?
       </div>
@@ -823,7 +823,7 @@ not be viewed by unauthorized persons.`}</li>
       further notice to you.
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2">9. Your Legal Rights</div>
+      <div className="legal_page_h pb-2 pt-2">9.  Your Legal Rights</div>
       Under certain circumstances, you have rights under data protection laws in
       relation to your personal data. These include the following (see section
       10 – Glossary below):

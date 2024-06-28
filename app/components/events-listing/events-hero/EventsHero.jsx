@@ -45,7 +45,7 @@ const EventsHero = () => {
             {/* upcoming heading section */}
 
             <Tabs.Panel value="upcoming">
-              <div className="page-heading relative mt-[40px] text-center sm:mt-[70px]">
+              <div className="page-heading relative mt-[44px] text-center sm:mt-[100px] xl:mt-[150px] lg:mt-[80px]">
                 <h1 className="text-center text-[40px] leading-[32px] sm:text-[70px] sm:leading-[0px] lg:text-[90px] xl:text-[110px] ">
                   Kreatr’s
                   <br className="sm:hidden" /> very own
@@ -60,7 +60,7 @@ const EventsHero = () => {
             </Tabs.Panel>
             {/* past heading section */}
             <Tabs.Panel value="past">
-              <div className="page-heading relative mb-[-40px] mt-[40px] sm:mb-0 sm:mt-[70px] sm:h-[50px] ">
+              <div className="page-heading relative mb-[-40px] mt-[44px] sm:mb-0 sm:mt-[100px] xl:mt-[150px] lg:mt-[80px] sm:h-[50px] ">
                 <h1 className="text-center text-[40px] leading-[33px] sm:text-[70px] sm:leading-[0px] lg:text-[90px] xl:text-[110px] ">
                   Take a look
                   <br className="sm:hidden" /> at our
@@ -72,7 +72,7 @@ const EventsHero = () => {
             </Tabs.Panel>
 
             {/* toggle section */}
-            <div className="mb-[34px] mt-[105px] flex justify-center  lg:mt-[98px] xl:mt-[120px]">
+            <div className="mb-[34px] sm:mb-0 mt-[105px] flex justify-center  lg:mt-[98px] xl:mt-[120px]">
               <Tabs.List>
                 <Tabs.Tab
                   className={`${styles.notActiveTab} ${tab === "upcoming" && styles.activeTab}`}
@@ -101,7 +101,7 @@ const EventsHero = () => {
             ) : (
               <Tabs.Panel value="upcoming">
                 <div className="flex flex-col justify-center items-center">
-                <div className="grid grid-cols-1 gap-8 sm:my-[50px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
                   {upcomingEvents.map((event) => (
                     <Link href={`/events-upcoming/${event.id}`} key={event.id}>
                       <div className="upcoming-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
@@ -110,7 +110,7 @@ const EventsHero = () => {
                           src={event.coverImg}
                           alt="upcoming img"
                         />
-                        <div className="my-[12px] flex items-center justify-between lg:mb-[20px] lg:mt-[10px] lg:min-h-[56px] xl:my-[25px] xl:min-h-[68px]">
+                        <div className="my-[12px] flex items-start justify-between lg:mb-[20px] lg:mt-[10px] lg:min-h-[56px] xl:my-[25px] xl:min-h-[68px]">
                           <p className="page-subhead text-[24px] leading-[21px] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
                             {event.heading}
                           </p>
@@ -129,7 +129,7 @@ const EventsHero = () => {
             {/* past hero section */}
             <Tabs.Panel value="past">
               <div className="flex flex-col justify-center items-center">
-              <div className="grid grid-cols-1 gap-8 sm:my-[50px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
                 {pastEvents.map((event) => (
                   <Link href={`/events-past/${event.id}`} key={event.id}>
                     <div className="past-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px]  lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
@@ -138,7 +138,7 @@ const EventsHero = () => {
                         src={event.coverImg}
                         alt="past img"
                       />
-                      <div className="my-[12px] flex items-center justify-between lg:mb-[-4px] lg:mt-[9px] lg:min-h-[56px] xl:my-[20px] xl:min-h-[68px]">
+                      <div className="my-[12px] flex items-start justify-between lg:mb-[-4px] lg:mt-[9px] lg:min-h-[56px] xl:my-[20px] xl:min-h-[68px]">
                         <p className="page-subhead text-[24px] leading-[21px] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
                           {event.heading}
                         </p>
