@@ -4,7 +4,7 @@ import Link from "next/link";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[12%]  lg:top-[19%] lg:left-[5%] sm:left-[-43px] sm:top-[77px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
+      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[10%]  lg:top-[17%] lg:left-[5%] sm:left-[-43px] sm:top-[77px] page-heading lg:text-[90px] sm:text-[70px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
       </div>
       <div className="absolute sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
