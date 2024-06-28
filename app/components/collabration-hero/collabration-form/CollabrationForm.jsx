@@ -63,7 +63,7 @@ const CollabrationForm = () => {
   return (
     <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
       <div className="lg:mt-[-8px]">
-        <h1 className="content-neue-medium text-start text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
+        <h1 className="content-neue-medium sm:text-start text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
         </h1>
       </div>

@@ -47,7 +47,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </div>
-                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[22px] xl:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -80,7 +80,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[22px] xl:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -111,7 +111,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[22px] xl:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>
@@ -143,7 +143,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[28px] xl:text-[24px]">
+                      <p className="content-neue sm:text-start text-center text-[14px] sm:leading-[20px] leading-[17px] sm:text-[18px] lg:text-[20px] lg:leading-[22px] xl:leading-[28px] xl:text-[24px]">
                         {item.description}
                       </p>
                     </div>

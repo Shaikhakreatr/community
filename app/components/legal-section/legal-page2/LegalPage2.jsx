@@ -1,4 +1,5 @@
 import React from "react";
+import { Table } from "@mantine/core";
 
 const LegalPage2 = () => {
   const aboutYouBullets = [
@@ -394,20 +395,254 @@ not be viewed by unauthorized persons.`}</li>
       if you need details about the specific legal ground we are relying on to
       process your personal data where more than one ground has been set out in
       the table below.
-      <table>
-        <thead>
-          <tr>
-            <th>Purpose/Activity</th>
-            <th>Types of data</th>
-            <th>
-              Lawful basis for processing, including basis of legitimate
-              interest
-            </th>
-          </tr>
-        </thead>
-      </table>
       <br />
-      <div className=" pb-2 pt-2">Marketing</div>
+      <br />
+      <div style={{ overflowX: "auto" }}>
+        <Table
+          withTableBorder
+          withRowBorders
+          withColumnBorders
+          data={{
+            head: [
+              <th key="purpose">Purpose/Activity</th>,
+              <th key="types">Types of Data</th>,
+              <th key="basis">
+                Lawful Basis for Processing, Including Basis of Legitimate
+                Interest
+              </th>,
+            ],
+            body: [
+              [
+                <td key="register">To register you as a new customer/user.</td>,
+                <td key="register-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                  <div>(d) Special Categories of Personal Data</div>
+                </td>,
+                <td key="register-basis">
+                  <div>(a) Performance of a contract with you</div>
+                  <div>(b) Necessary to comply with a legal obligation</div>
+                </td>,
+              ],
+              [
+                <td key="order">
+                  <div>To process and deliver your order, including:</div>
+                  <div>(a) Manage payments, fees, and charges</div>
+                  <div>(b) Collect and recover money owed to us</div>
+                </td>,
+                <td key="order-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Financial</div>
+                  <div>(d) Transaction</div>
+                  <div>(e) Marketing and Communications</div>
+                </td>,
+                <td key="order-basis">
+                  <div>(a) Performance of a contract with you</div>
+                  <div>
+                    (b) Necessary for our legitimate interests (to recover debts
+                    due to us)
+                  </div>
+                </td>,
+              ],
+              [
+                <td key="relationship">
+                  <div>
+                    To manage our relationship with you, which will include:
+                  </div>
+                  <div>
+                    (a) Notifying you about changes to our terms or privacy
+                    policy
+                  </div>
+                  <div>(b) Asking you to leave a review or take a survey</div>
+                  <div>
+                    (c) Communicate with you about our products and services and
+                    respond to you when you contact us
+                  </div>
+                </td>,
+                <td key="relationship-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                  <div>(d) Marketing and Communications</div>
+                </td>,
+                <td key="relationship-basis">
+                  <div>(a) Performance of a contract with you</div>
+                  <div>(b) Necessary to comply with a legal obligation</div>
+                  <div>
+                    (c) Necessary for our legitimate interests (to keep our
+                    records updated and to study how customers use our
+                    products/services)
+                  </div>
+                </td>,
+              ],
+              [
+                <td key="prize">
+                  To enable you to partake in a prize draw or competition or
+                  complete a survey
+                </td>,
+                <td key="prize-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                  <div>(d) Usage</div>
+                  <div>(e) Marketing and Communications</div>
+                </td>,
+                <td key="prize-basis">
+                  <div>(a) Performance of a contract with you</div>
+                  <div>
+                    (b) Necessary for our legitimate interests (to study how
+                    customers use our products/services, to develop them and
+                    grow our business)
+                  </div>
+                </td>,
+              ],
+              [
+                <td key="admin">
+                  <div>
+                    To administer and protect our business and the Sites
+                    (including troubleshooting, improvement, data analysis,
+                    testing, system maintenance, security, support, reporting
+                    and hosting of data)
+                  </div>
+                </td>,
+                <td key="admin-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Technical</div>
+                </td>,
+                <td key="admin-basis">
+                  <div>
+                    (a) Necessary for our legitimate interests (for running our
+                    business, provision of administration and IT services,
+                    network security, to prevent fraud and in the context of a
+                    business reorganization or group restructuring exercise)
+                  </div>
+                  <div>(b) Necessary to comply with a legal obligation</div>
+                </td>,
+              ],
+              [
+                <td key="ads">
+                  <div>
+                    To deliver relevant Site content and advertisements to you
+                    and measure or understand the effectiveness of the
+                    advertising we serve to you
+                  </div>
+                </td>,
+                <td key="ads-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                  <div>(d) Usage</div>
+                  <div>(e) Marketing and Communications</div>
+                  <div>(f) Technical</div>
+                </td>,
+                <td key="ads-basis">
+                  <div>
+                    Necessary for our legitimate interests (to study how
+                    customers use our products/services, to develop them, to
+                    grow our business, and to inform our marketing strategy)
+                  </div>
+                </td>,
+              ],
+              [
+                <td key="personalized">
+                  <div>
+                    To deliver better and more personalized Site content so that
+                    you have a beneficial and valuable experience when using our
+                    Sites, products, and/or services
+                  </div>
+                </td>,
+                <td key="personalized-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                  <div>(d) Usage</div>
+                  <div>(e) Marketing and Communications</div>
+                  <div>(f) Technical</div>
+                </td>,
+                <td key="personalized-basis">
+                  <div>(a) Performance of a contract with you</div>
+                </td>,
+              ],
+              [
+                <td key="feature">
+                  To enable you to utilize a feature of a product or service
+                  provided to you.
+                </td>,
+                <td key="feature-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Profile</div>
+                </td>,
+                <td key="feature-basis">
+                  <div>(a) Performance of a contract with you</div>
+                </td>,
+              ],
+              [
+                <td key="analytics">
+                  <div>
+                    To use data analytics to improve our Sites,
+                    products/services, marketing, customer relationships, and
+                    experiences
+                  </div>
+                </td>,
+                <td key="analytics-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Technical</div>
+                  <div>(c) Usage</div>
+                  <div>(d) Transaction</div>
+                  <div>(e) Special Categories of Personal Data</div>
+                </td>,
+                <td key="analytics-basis">
+                  <div>
+                    (a) Necessary for our legitimate interests (to define types
+                    of customers for our products and services, to keep our
+                    Sites updated and relevant, to develop our business, and to
+                    inform our marketing strategy)
+                  </div>
+                  <div>(b) Necessary to comply with a legal obligation</div>
+                </td>,
+              ],
+              [
+                <td key="suggestions">
+                  <div>
+                    To make suggestions and recommendations to you about goods
+                    or services that may be of interest to you
+                  </div>
+                </td>,
+                <td key="suggestions-data">
+                  <div>(a) Identity</div>
+                  <div>(b) Contact</div>
+                  <div>(c) Technical</div>
+                  <div>(d) Usage</div>
+                  <div>(e) Profile</div>
+                </td>,
+                <td key="suggestions-basis">
+                  <div>
+                    Necessary for our legitimate interests (to develop our
+                    products/services and grow our business)
+                  </div>
+                </td>,
+              ],
+              [
+                <td key="other">
+                  Any other purpose disclosed by us when you provide the
+                  personal data
+                </td>,
+                <td key="other-data">As applicable</td>,
+                <td key="other-basis">
+                  <div>(a) Performance of a contract with you</div>
+                  <div>(b) Necessary to comply with a legal obligation</div>
+                </td>,
+              ],
+            ],
+          }}
+        />
+      </div>
+      <br />
+      <div className=" pb-2 pt-2 text-[20px]">Marketing</div>
       {`We strive to provide you with choices regarding certain personal data
       uses, particularly around marketing and advertising.`}
       <br />
@@ -426,7 +661,7 @@ not be viewed by unauthorized persons.`}</li>
       us to use information that we collect or that you provide to us to deliver
       advertisements according to our advertisers' target-audience preferences,
       you can opt-out by Contacting us.`}
-      <div className=" pb-2 pt-2">Promotional Offers from Us</div>
+      <div className=" pb-2 pt-2 text-[20px]">Promotional Offers from Us</div>
       We may use your Identity, Contact, Technical, Usage and Profile Data and
       Special Categories of Personal Data to form a view on what we think you
       may want or need, or what may be of interest to you. This is how we decide
@@ -438,36 +673,37 @@ not be viewed by unauthorized persons.`}</li>
       you provided us with your details when you entered a competition or
       registered for a promotion and, in each case, you have not opted out of
       receiving that marketing.
-      <div className="pb-2 pt-2">Third-Party Marketing</div>
+      <div className="pb-2 pt-2 text-[20px]">Third-Party Marketing</div>
       {`We will get your express opt-in consent before we share your personal data
       with any company outside the Company for marketing purposes. We do not
       control third parties' collection or use of your information to serve
       interest-based advertising. However, these third parties may provide you
       with ways to choose not to have your information collected or used in this
       way.`}
-      <div className="pb-2 pt-2">Opting Out</div>
+      <div className="pb-2 pt-2 text-[20px]">Opting Out</div>
       You can ask us or third parties to stop sending you marketing messages at
       any time by logging into the website and checking or unchecking relevant
       boxes to adjust your marketing preferences or by following the opt-out
       links on any marketing message sent to you or by contacting us at any
       time.
       <br />
+      <br />
       Where you opt out of receiving these marketing messages, this will not
       apply to personal data provided to us as a result of a product/service
       purchase, warranty registration, product/service experience or other
       transactions.
-      <div className="pb-2 pt-2">Cookies</div>
+      <div className="pb-2 pt-2 text-[20px]">Cookies</div>
       You can set your browser to refuse all or some browser cookies, or to
       alert you when websites set or access cookies. If you disable or refuse
       cookies, please note that some parts of our Sites may become inaccessible
       or not function properly. For more information about the cookies we use,
       please see Section 3 – How is your Personal Data collected above.
-      <div className="pb-2 pt-2">Location Information</div>
+      <div className="pb-2 pt-2 text-[20px]">Location Information</div>
       {`You can choose whether or not to allow our Sites to collect and use
       real-time information about your device's location through the device's
       privacy settings. If you block the use of location information, some parts
       of our Sites may then be inaccessible or not function properly.`}
-      <div className="pb-2 pt-2">Change of Purpose</div>
+      <div className="pb-2 pt-2 text-[20px]">Change of Purpose</div>
       We will only use your personal data for the purposes for which we
       collected it, unless we reasonably consider that we need to use it for
       another reason and that reason is compatible with the original purpose. If
@@ -493,13 +729,16 @@ not be viewed by unauthorized persons.`}</li>
           {" "}
           Internal Third Parties as set out in Section 10 – Glossary below.
         </li>
+        <br />
         <li>
           External Third Parties as set out in Section 10 – Glossary below.
         </li>
+        <br />
         <li>
           Third parties listed in the table in Section 4 – How we use your
           Personal Data above;
         </li>
+        <br />
         <li>
           Third parties to whom we may choose to sell, transfer, or merge parts
           of our business or our assets. Alternatively, we may seek to acquire
@@ -509,104 +748,130 @@ not be viewed by unauthorized persons.`}</li>
         </li>
       </ul>
       <br />
-      <br />
       We require all third parties to respect the security of your personal data
       and to treat it in accordance with the law. We do not allow our
       third-party service providers to use your personal data for their own
       purposes and only permit them to process your personal data for specified
       purposes and in accordance with our instructions.
-      <div className="legal_page_h pb-2 pt-2">
-      6. International Transfers
-      </div>
+      <div className="legal_page_h pb-2 pt-2">6. International Transfers</div>
       We share your personal data within the Company. This will involve
       transferring your data outside the European Economic Area (EEA). We ensure
       your personal data is protected by requiring all our group companies to
-      follow the same rules when processing your personal data. Many of our
-      external third parties are based outside the European Economic Area (EEA)
-      so their processing of your personal data will involve a transfer of data
-      outside the EEA. Whenever we transfer your personal data out of the EEA,
-      we ensure a similar degree of protection is afforded to it by ensuring at
-      least one of the following safeguards is implemented: We will only
-      transfer your personal data to countries that have been deemed to provide
-      an adequate level of protection for personal data by the European
-      Commission. Where we use certain service providers, we may use specific
-      contracts which give personal data the same protection it has in Europe.
-      Where we use providers based in the US, we may transfer data to them if
-      they are part of the Privacy shield which requires them to provide similar
-      protection to personal data shared between Europe and the US. Please
-      contact us if you want further information on the specific mechanism used
-      by us when transferring your personal data out of the EEA.
-      <div className="legal_page_h pb-2 pt-2">
-        <u>7.DATA SECURITY</u>
-      </div>
+      follow the same rules when processing your personal data.
+      <br />
+      <br /> Many of our external third parties are based outside the European
+      Economic Area (EEA) so their processing of your personal data will involve
+      a transfer of data outside the EEA.
+      <br />
+      <br /> Whenever we transfer your personal data out of the EEA, we ensure a
+      similar degree of protection is afforded to it by ensuring at least one of
+      the following safeguards is implemented:
+      <br />
+      <br />
+      <ul className="ml-[40px] list-disc">
+        <li>
+          We will only transfer your personal data to countries that have been
+          deemed to provide an adequate level of protection for personal data by
+          the European Commission.
+        </li>
+        <br />
+        <li>
+          Where we use certain service providers, we may use specific contracts
+          that give personal data the same protection it has in Europe.
+        </li>
+        <br />
+        <li>
+          Where we use providers based in the US, we may transfer data to them
+          if they are part of the Privacy Shield, which requires them to provide
+          similar protection to personal data shared between Europe and the US.
+        </li>
+      </ul>
+      <br /> Please contact us if you want further information on the specific
+      mechanism used by us when transferring your personal data out of the EEA.
+      <br />
+      <br />
+      <div className="legal_page_h pb-2 pt-2">7. Data Security</div>
       We have put in place appropriate security measures to prevent your
       personal data from being accidentally lost, used or accessed in an
       unauthorised way, altered or disclosed. In addition, we limit access to
       your personal data to those employees, agents, contractors and other third
       parties who have a business need to know. They will only process your
       personal data on our instructions and they are subject to a duty of
-      confidentiality. We have put in place procedures to deal with any
-      suspected personal data breach and will notify you and any applicable
-      regulator of a breach where we are legally required to do so.
-      <div className="legal_page_h pb-2 pt-2">
-        <u>8.DATA RETENTION</u>
-      </div>
+      confidentiality.
+      <br />
+      <br /> We have put in place procedures to deal with any suspected personal
+      data breach and will notify you and any applicable regulator of a breach
+      where we are legally required to do so.
+      <div className="legal_page_h pb-2 pt-2">8. Data Retention</div>
       <div className="pb-2 pt-2">
-        HOW LONG WILL YOU USE MY PERSONAL DATA FOR?
+        How Long Will You Use My Personal Data For?
       </div>
       We will only retain your personal data for as long as necessary to fulfil
       the purposes we collected it for, including for the purposes of satisfying
-      any legal, accounting, or reporting requirements. To determine the
-      appropriate retention period for personal data, we consider the amount,
-      nature, and sensitivity of the personal data, the potential risk of harm
-      from unauthorised use or disclosure of your personal data, the purposes
-      for which we process your personal data and whether we can achieve those
-      purposes through other means, and the applicable legal requirements. In
-      some circumstances we may anonymise your personal data (so that it can no
-      longer be associated with you) for research or statistical purposes in
-      which case we may use this information indefinitely without further notice
-      to you.
-      <div className="legal_page_h pb-2 pt-2">
-        <u>9.YOUR LEGAL RIGHTS</u>
-      </div>
+      any legal, accounting, or reporting requirements.
+      <br />
+      <br /> To determine the appropriate retention period for personal data, we
+      consider the amount, nature, and sensitivity of the personal data, the
+      potential risk of harm from unauthorised use or disclosure of your
+      personal data, the purposes for which we process your personal data and
+      whether we can achieve those purposes through other means, and the
+      applicable legal requirements.
+      <br />
+      <br /> In some circumstances we may anonymise your personal data (so that
+      it can no longer be associated with you) for research or statistical
+      purposes in which case we may use this information indefinitely without
+      further notice to you.
+      <br />
+      <br />
+      <div className="legal_page_h pb-2 pt-2">9. Your Legal Rights</div>
       Under certain circumstances, you have rights under data protection laws in
       relation to your personal data. These include the following (see section
-      10 – Glossary below): Request access to your personal data Request
-      correction of your personal data. Request erasure of your personal data.
-      Object to processing of your personal data. Request restriction of
-      processing your personal data. Request transfer of your personal data.
-      Right to withdraw consent. If you wish to exercise any of the rights set
-      out above, please contact us.
-      <div className="pb-2 pt-2">
-        <u>NO FEE USUALLY REQUIRED</u>
-      </div>
+      10 – Glossary below):
+      <br></br>
+      <br />
+      <ul className="ml-[40px] list-disc">
+        <li>Request access to your personal data.</li>
+        <br />
+        <li>Request corrections of your personal data.</li>
+        <br />
+        <li>Request the erasure of your personal data.</li>
+        <br />
+        <li>Object to processing of your personal data.</li>
+        <br />
+        <li>Request restriction on processing your personal data.</li>
+        <br />
+        <li>Request transfer of your personal data.</li>
+        <br />
+        <li>Right to withdraw consent.</li>
+        <br />
+      </ul>
+      <p>
+        If you wish to exercise any of the rights set out above, please contact
+        us.
+      </p>
+      <br />
+      <div className="pb-2 pt-2 text-[20px]">No Fee Usually Required</div>
       You will not have to pay a fee to access your personal data (or to
       exercise any of the other rights). However, we may charge a reasonable fee
       if your request is clearly unfounded, repetitive or excessive.
       Alternatively, we may refuse to comply with your request in these
       circumstances.
-      <div className="pb-2 pt-2">
-        <u>WHAT WE MAY NEED FROM YOU</u>
-      </div>
+      <div className="pb-2 pt-2 text-[20px]">What We May Need From You</div>
       We may need to request specific information from you to help us confirm
       your identity and ensure your right to access your personal data (or to
       exercise any of your other rights). This is a security measure to ensure
       that personal data is not disclosed to any person who has no right to
       receive it. We may also contact you to ask you for further information in
       relation to your request to speed up our response.
-      <div className="pb-2 pt-2">
-        <u>TIME LIMIT TO RESPOND</u>
-      </div>
+      <div className="pb-2 pt-2 text-[20px]">Time Limit to Respond</div>
       We try to respond to all legitimate requests within one month.
       Occasionally it may take us longer than a month if your request is
       particularly complex or you have made a number of requests. In this case,
       we will notify you and keep you updated.
-      <div className="legal_page_h pb-2 pt-2">
-        <u>10.GLOSSARY</u>
-      </div>
-      <div className="pb-2 pt-2">
-        <u>LAWFUL BASIS</u>{" "}
-      </div>
+      <br />
+      <br />
+      <div className="legal_page_h pb-2 pt-2">10. Glossary</div>
+      <div className="pb-2 pt-2">Lawful Basis</div>
       Legitimate Interest means the interest of our business in conducting and
       managing our business to enable us to give you the best service/product
       and the best and most secure experience. We make sure we consider and
@@ -617,52 +882,67 @@ not be viewed by unauthorized persons.`}</li>
       otherwise required or permitted to by law). You can obtain further
       information about how we assess our legitimate interests against any
       potential impact on you in respect of specific activities by contacting
-      us. Performance of Contract means processing your data where it is
+      us.
+      <br />
+      <br /> Performance of Contract means processing your data where it is
       necessary for the performance of a contract to which you are a party or to
-      take steps at your request before entering into such a contract. Comply
-      with a legal or regulatory obligation means processing your personal data
-      where it is necessary for compliance with a legal or regulatory obligation
-      that we are subject to.
-      <div className="pb-2 pt-2">
-        <u>THIRD PARTIES</u>
-      </div>
-      <div className="pb-2 pt-2">
-        <u>INTERNAL THIRD PARTIES</u>
-      </div>
+      take steps at your request before entering into such a contract.
+      <br />
+      <br /> Comply with a legal or regulatory obligation means processing your
+      personal data where it is necessary for compliance with a legal or
+      regulatory obligation that we are subject to.
+      <br />
+      <div className="pb-2 pt-2 text-[20px]">Third Parties</div>
+      <div className="pb-2 pt-2 text-[18px]">Internal Third Parties</div>
       Our companies, their subsidiaries and affiliates acting as joint
       controllers or processors who provide IT and system administration
       services and undertake reporting.
-      <div className="pb-2 pt-2">
-        <u>EXTERNAL THIRD PARTIES</u>
-      </div>
-      Service providers acting as processors who provide IT and system
-      administration services or who we use to support our business and who are
-      bound by contractual obligations to keep personal data confidential and
-      secure and use it only for the purposes for which we disclose it to them.
-      Professional advisers acting as processors or joint controllers including
-      lawyers, bankers, auditors and insurers who provide consultancy, banking,
-      legal, insurance and accounting services. HM Revenue & Customs, regulators
-      and other authorities acting as processors or joint controllers who
-      require reporting of processing activities in certain circumstances. Any
-      other party, their subsidiaries and affiliates which we have contracted
-      with to provide you with a service and/or product.
-      <div className="pb-2 pt-2 ">
-        <u>YOUR LEGAL RIGHTS</u>
-      </div>
-      You have the right to:
-      <ul className="list-disc pl-4">
+      <div className="pb-2 pt-2 text-[18px]">External Third Parties</div>
+      <ul className="ml-[40px] list-disc">
+        <li>
+          Service providers acting as processors who provide IT and system
+          administration services or who we use to support our business and who
+          are bound by contractual obligations to keep personal data
+          confidential and secure and use it only for the purposes for which we
+          disclose it to them.
+        </li>{" "}
+        <br />
+        <li>
+          Professional advisers acting as processors or joint controllers,
+          including lawyers, bankers, auditors, and insurers who provide
+          consultancy, banking, legal, insurance, and accounting services.
+        </li>
+        <br />
+        <li>
+          HM Revenue & Customs, regulators, and other authorities acting as
+          processors or joint controllers who require reporting of processing
+          activities in certain circumstances.
+        </li>
+        <br />
+        <li>
+          Any other party, their subsidiaries, and affiliates that we have
+          contracted with to provide you with a service and/or product.
+        </li>
+      </ul>
+      <br />
+      <div className="legal_page_h pb-2 pt-2 ">Your Legal Rights</div>
+      <p className="text-[18px]">You have the right to:</p>
+      <br />
+      <ul className="ml-[40px] list-disc">
         {yourLegalRights.map((value, index) => (
-          <li key={index}>{value}</li>
+          <li className="mb-[15px]" key={index}>
+            {value}
+          </li>
         ))}
       </ul>
-      <br /> <br />
-      Entire Agreement This Privacy Policy, our End User Licence Agreement ,
-      Terms of Sale, Refund Policy, and our Terms and Conditions constitute the
-      sole and entire agreement between you and the Company with respect to the
-      Website and supersede all prior and contemporaneous understandings,
-      agreements, representations and warranties, both written and oral, with
-      respect to the Website.
-      <br /> <br />© KREATR All rights reserved.
+      <div className="legal_page_h pb-2 pt-2 ">Entire Agreement</div>
+      This Privacy Policy, our End User Licence Agreement , Terms of Sale,
+      Refund Policy, and our Terms and Conditions constitute the sole and entire
+      agreement between you and the Company with respect to the Website and
+      supersede all prior and contemporaneous understandings, agreements,
+      representations and warranties, both written and oral, with respect to the
+      Website.
+      <br /> <br />© 2024 Kreatrminds Private Limited. All rights reserved.
     </div>
   );
 };
