@@ -45,6 +45,7 @@ const CollabrationForm = () => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         });
+        // Handle the response
         if (response.ok) {
           console.log("Data sent successfully");
           setSubmitted(true);
