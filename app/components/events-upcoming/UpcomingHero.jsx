@@ -76,7 +76,7 @@ const UpcomingHero = ({ upcomingData }) => {
           }),
         });
 
-        // Handle the response
+        // Handle the response correctly
         if (res.ok) {
           console.log("Data sent successfully");
           form.reset();
