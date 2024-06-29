@@ -178,7 +178,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[600px] xl:w-[466px]"
+                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[560px] xl:w-[466px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}
