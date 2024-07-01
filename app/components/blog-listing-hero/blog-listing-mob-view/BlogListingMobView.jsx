@@ -5,7 +5,7 @@ import Link from "next/link";
 const BlogListingMobView = ({ blogsData }) => {
   console.log(blogsData);
   return (
-    <div className=" flex w-full flex-col items-center justify-center gap-4">
+    <div className=" mt-[24px] flex w-full flex-col items-center justify-center gap-4 sm:mt-[40px] lg:mt-[64px] xl:mt-[72px]">
       {blogsData.map((item, index) => (
         <Link key={index} href={`/blogs/${item.id}`}>
           <div className=" h-[14.375rem] w-[21rem] rounded-[7.13px] border border-selectedBorder">
@@ -19,17 +19,13 @@ const BlogListingMobView = ({ blogsData }) => {
               }}
             />
             <div className="pl-2 pr-2 ">
-              <h1 className="content mr-20 mt-2 text-[12px] font-[800]">
+              <h1 className="content mt-[12px] text-[14px] font-[800] leading-[15px]">
                 {item.heading.length > 50
                   ? `${item.heading.slice(0, 50)}...`
                   : item.heading}
               </h1>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center justify-center gap-2 text-center">
-                  <p className="content text-[8px]">
-                   {item.date}
-                  </p>
-                </div>
+              <div className="flex items-end mt-[8px] ">
+                <p className="content text-[12px]">{item.date}</p>
               </div>
             </div>
           </div>
