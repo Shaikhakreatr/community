@@ -35,42 +35,44 @@ const CollabrationForm = () => {
   const BACKEND_COLLABORATION_URI =
     process.env.NEXT_PUBLIC_BACKEND_COLLABORATION_URI;
 
-    const sendFormData = async (data) => {
-      console.log(data);
-      if (BACKEND_COLLABORATION_URI) {
-        try {
-          const response = await fetch(BACKEND_COLLABORATION_URI, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
+  const sendFormData = async (data) => {
+    console.log(data);
+    if (BACKEND_COLLABORATION_URI) {
+      try {
+        const response = await fetch(BACKEND_COLLABORATION_URI, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          console.log("Data sent successfully");
+          setSubmitted(true);
+          form.reset({
+            name: "",
+            phoneNumber: "",
+            email: "",
+            collaborationType: "",
           });
-    
-          if (response.ok) {
-            console.log("Data sent successfully");
-            setSubmitted(true);
-            form.reset();
-          } else {
-            throw new Error("Failed to send data");
-          }
-        } catch (error) {
-          console.error("Error sending data:", error);
+        } else {
+          throw new Error("Failed to send data");
         }
-      } else {
-        console.error("BACKEND_COLLABORATION_URI is not defined");
+      } catch (error) {
+        console.error("Error sending data:", error);
       }
-    };
-    
+    } else {
+      console.error("BACKEND_COLLABORATION_URI is not defined");
+    }
+  };
 
   return (
     <div className="px-[30px] py-[35px] lg:px-[95px] lg:py-[50px]">
       <div className="lg:mt-[-24px]">
-        <h1 className="content-neue-medium sm:text-start text-center text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[34px]">
+        <h1 className="content-neue-medium text-center text-[18px] sm:text-start sm:text-[24px] lg:text-[28px] xl:text-[34px]">
           Fill in the details
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center sm:block">
-
-      </div>
+      <div className="flex flex-col items-center justify-center sm:block"></div>
       <div className="flex items-center justify-center sm:block">
         <form
           className={`${styles.formWrap} w-full`}
@@ -78,27 +80,27 @@ const CollabrationForm = () => {
             sendFormData(values);
           })}
         >
-                  <div className="mt-[20px] w-[100%] lg:mb-[25px] lg:w-[50%] sm:mt-[40px]">
-          <label className="content-neue text-[16px] sm:text-[18px]">
-            Collaboration Type<span className={styles.dropDownStar}>*</span>
-          </label>
-          <Select
-            radius={50}
-          
-            className={{
-              input: styles.dropDown,
-              error: styles.dropDownError,
-            }}
-            classNames={{
-              input: styles.selectInput,
-              dropdown: styles.selectDropDown,
-              option: styles.selectOption,
-            }}
-            placeholder="Choose type"
-            data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
-            {...form.getInputProps("collaborationType")}
-          />
-        </div>
+          <div className="mt-[20px] w-[100%] sm:mt-[40px] lg:mb-[25px] lg:w-[50%]">
+            <label className="content-neue text-[16px] sm:text-[18px]">
+              Collaboration Type<span className={styles.dropDownStar}>*</span>
+            </label>
+            <Select
+              radius={50}
+              className={{
+                input: styles.dropDown,
+                error: styles.dropDownError,
+              }}
+              classNames={{
+                input: styles.selectInput,
+                dropdown: styles.selectDropDown,
+                option: styles.selectOption,
+              }}
+              key={form.key("collaborationType")}
+              placeholder="Choose type"
+              data={["Speakers", "Sponsors", "Spaces", "Sellers"]}
+              {...form.getInputProps("collaborationType")}
+            />
+          </div>
           <TextInput
             label="Name"
             radius={50}
@@ -142,7 +144,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden lg:block" />
-          <div className="mt-[24px] items-center text-center sm:mt-[24px]  sm:flex xl:mt-[24px] lg:mt-[18px] lg:gap-3  xl:gap-5">
+          <div className="mt-[24px] items-center text-center sm:mt-[24px]  sm:flex lg:mt-[18px] lg:gap-3 xl:mt-[24px]  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}

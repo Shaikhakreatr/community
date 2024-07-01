@@ -8,7 +8,6 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const [currentURL, setCurrentURL] = useState("");
 
   const handleScroll = () => {
     const offset = 25;
@@ -50,36 +49,15 @@ const Header = () => {
     };
   }, [menuOpen]);
 
-  useEffect(() => {
-    const handleURLChange = () => {
-      setMenuOpen(false);
-    };
-
-    const handlePopState = () => {
-      handleURLChange();
-    };
-
-    const handleBeforeUnload = () => {
-      handleURLChange();
-    };
-
-    window.addEventListener("popstate", handlePopState);
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, [currentURL]);
   return (
     <>
       <header
         className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8]" : "bg-transparent"}`}
       >
-        <div className="flex h-[90px] items-center justify-center border-b border-gray-500 p-2 sm:h-[120px] lg:h-[90px] xl:h-[140px]">
+        <div className="flex items-center justify-center border-b border-gray-500 p-2 xl:h-[140px] lg:h-[90px] sm:h-[120px] h-[90px]">
           <Link href="/">
             <Image
-              className="my-3 h-[25px] w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
+              className="h-[25px] my-3 w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
               src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
               alt="Kreatr Logo"
               height={27}
@@ -105,7 +83,7 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`pointer-events-auto absolute inset-0 top-[68px] mt-[29px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
+            className={`absolute inset-0 pointer-events-auto top-[68px] sm:mt-[30px] mt-[29px] lg:mt-[22px] xl:mt-[71px] bg-[rgba(190,181,113,0.14)] p-8 sm:backdrop-blur-lg ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
@@ -148,15 +126,17 @@ const Header = () => {
                 </Link>
               </div>
               <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
-                <Image
-                  className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[80px] lg:w-[160px] xl:h-[95px] xl:w-[185px]"
-                  src={
-                    "/assets/images/home_page/menu_stickers/app-withshadow.svg"
-                  }
-                  alt="app image"
-                  height={90}
-                  width={160}
-                />
+                
+                  <Image
+                    className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[80px] lg:w-[160px] xl:h-[95px] xl:w-[185px]"
+                    src={
+                      "/assets/images/home_page/menu_stickers/app-withshadow.svg"
+                    }
+                    alt="app image"
+                    height={90}
+                    width={160}
+                  />
+
               </div>
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
                 <Link href="/events">
