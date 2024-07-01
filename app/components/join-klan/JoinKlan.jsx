@@ -27,8 +27,8 @@ const JoinKlan = () => {
   };
   return (
     <div className="container mx-auto">
-      <div>
-        <h1 className="page-heading mb-[-2px] mt-[20px] text-center text-[48px] sm:text-[65px] lg:text-[86px] xl:text-[96px]">
+      <div className="mt-[44px] sm:mt-[50px] lg:mt-[60px] xl:mt-[90px]">
+        <h1 className="page-heading mb-[-2px]  text-center text-[48px] sm:text-[65px] lg:text-[86px] xl:text-[96px]">
           JoIn our Klan
         </h1>
         <p className="content-neue sm:lead-[0px] text-center text-[16px] italic leading-[18px] text-blue-700 sm:text-[18px] lg:text-[20px] xl:text-[24px]">
@@ -37,20 +37,26 @@ const JoinKlan = () => {
         </p>
       </div>
       <div className="relative flex h-[80px] w-auto justify-center">
-        <img
+        <Image
           src="/assets/images/JOK_page/left-arrow.svg"
           className="absolute hidden sm:left-[10%] sm:block lg:left-[26%] lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="left arrow"
+          height={0}
+          width={0}
         />
-        <img
+        <Image
           src="/assets/images/JOK_page/center-arrow.svg"
           className="absolute top-[12%] h-[40px] w-[13px]  lg:h-[46.2px] lg:w-[14.26px] xl:right-[47%] xl:top-[30%] xl:h-[46.2px] xl:w-[14.26px]"
           alt="center arrow"
+          height={0}
+          width={0}
         />
-        <img
+        <Image
           src="/assets/images/JOK_page/right-arrow.svg"
           className="absolute hidden sm:right-[10%] sm:block lg:right-[26%] lg:h-[98.82px] lg:w-[88.99px] xl:h-[108.82px] xl:w-[92.99px]"
           alt="right arrow"
+          height={0}
+          width={0}
         />
       </div>
       <div className="relative flex h-[70px] w-auto justify-center xl:mt-[95px]">
@@ -60,10 +66,12 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div className="instagram-img absolute left-[10%] top-[-13%] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black  sm:left-[3%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[18%] lg:top-[80%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:left-[17%] xl:top-[-38%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-            <img
+            <Image
               src="/assets/images/JOK_page/instagram-JOK.svg"
               className="h-[77.33px] w-[77.33px] rotate-[8deg] lg:h-[100px] lg:w-[100px] xl:h-[101px] xl:w-[101px]"
               alt="instagram"
+              height={0}
+              width={0}
             />
             <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[25px] xl:mt-[28px] xl:text-[24px] xl:leading-[25px]">
               “Pop” goes our hearts when you leave one!
@@ -76,10 +84,12 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div className="whatsapp-img absolute right-[20px] top-[225px] h-[201.31px] w-[195.69px] rotate-[6deg] rounded-[15px] border border-black p-[18px] shadow-md  shadow-black sm:left-[37%] sm:top-[-8%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[40%] lg:right-[41%] lg:top-[-20%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:top-[-134%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-            <img
+            <Image
               src="/assets/images/JOK_page/whatsapp-JOK.svg"
               className="h-[85px] w-[85px] lg:h-[110px] lg:w-[110px] xl:h-[112px] xl:w-[112px]"
               alt="whatsapp"
+              height={0}
+              width={0}
             />
             <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[20px] xl:my-[22px] xl:text-[24px] xl:leading-[25px]">
               The biggest green flag you will ever see.
@@ -92,10 +102,12 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div className="linkdin-img absolute left-[10%] top-[456px] h-[201.31px] w-[195.69px] rotate-[-6deg] rounded-[15px] border border-black p-[18px] shadow-md shadow-black sm:left-[71%] sm:top-[70%]  sm:shadow-none sm:hover:shadow-md sm:hover:shadow-black lg:left-[64%] lg:top-[78%] lg:h-[242px] lg:w-[225px] lg:p-[25px] xl:right-[17%] xl:top-[-36%] xl:h-[272px] xl:w-[255px] xl:p-[30px]">
-            <img
+            <Image
               src="/assets/images/JOK_page/linkdin-JOK.svg"
               className="h-[69px] w-[69px] rotate-[8deg] lg:h-[92px] lg:w-[92px] xl:h-[92px] xl:w-[92px]"
               alt="linkdin"
+              height={0}
+              width={0}
             />
             <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[30px] xl:mt-[32px] xl:text-[24px] xl:leading-[25px]">
               For your professional needs!
@@ -130,6 +142,8 @@ const JoinKlan = () => {
                   className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
                   src={DarkPlayStore}
                   alt="Play store"
+                  height={0}
+                  width={0}
                 />
               </div>
             ) : (
@@ -138,6 +152,8 @@ const JoinKlan = () => {
                   className="ml-[.875rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72"
                   src={LightPlayStore}
                   alt="Play store"
+                  height={0}
+                  width={0}
                 />
               </div>
             )}
@@ -166,12 +182,16 @@ const JoinKlan = () => {
                 src={DarkAppStore}
                 className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
                 alt="App store"
+                height={0}
+                width={0}
               />
             ) : (
               <Image
                 src={LightAppStore}
                 className="ml-[.5rem] sm:h-[1.875rem] sm:w-[1.5rem] md:h-[1.875rem] md:w-[1.5rem] xl:h-44.09 xl:w-38.72 "
                 alt="App store"
+                height={0}
+                width={0}
               />
             )}
             <p
@@ -192,6 +212,8 @@ const JoinKlan = () => {
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
               src={DarkPlayStore}
               alt="Play store"
+              height={0}
+              width={0}
             />
             <p className="button-store mx-[10px] tracking-tight">
               Get it on <br />
@@ -205,6 +227,8 @@ const JoinKlan = () => {
               src={DarkAppStore}
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
               alt="App store"
+              height={0}
+              width={0}
             />
             <p className="button-store mx-[10px] tracking-tight">
               Available on

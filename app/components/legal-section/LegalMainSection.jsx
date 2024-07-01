@@ -24,8 +24,8 @@ const LegalMainSection = () => {
           <div
             className={
               currentIndex === index
-                ? "bg-selected text-selectedText border-selectedBorder lg:p-[15px] text-[.875rem] p-[8px] text-nowrap flex justify-center items-center cursor-pointer  lg:h-[40px] lg:w-auto rounded-[5.625rem] border"
-                : " text-nonSelectedText border-selectedBorder cursor-pointer lg:p-[15px]  text-[.875rem] p-[8px] text-nowrap flex justify-center lg:h-[40px]  lg:w-auto items-center rounded-[5.625rem] border"
+                ? "bg-selected text-selectedText border-selectedBorder lg:px-[15px]   text-[.875rem] p-[8px] text-nowrap flex justify-center items-center cursor-pointer  lg:h-[40px] lg:w-auto rounded-[5.625rem] border"
+                : " text-nonSelectedText border-selectedBorder cursor-pointer lg:px-[15px]   text-[.875rem] p-[8px] text-nowrap flex justify-center lg:h-[40px]  lg:w-auto items-center rounded-[5.625rem] border"
             }
             key={index}
             onClick={() => handleClick(index)}

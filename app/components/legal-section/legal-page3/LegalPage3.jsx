@@ -72,11 +72,11 @@ const LegalPage3 = () => {
       {`To initiate a cancellation, you can follow these steps:`}
       <br />
       <br />
-      <ul className="list-disc ml-[40px]">
+      <ul className="ml-[40px] list-disc">
         <li> {`Visit the "Setting" page on our App.`}</li>
         <li>{`Go to “Payment and Subscription.”`}</li>
       </ul>
-     <br />
+      <br />
       Follow the necessary steps. Once you cancel your membership, your account
       will automatically close at the conclusion of your ongoing billing cycle.
       <br /> <br />
@@ -92,51 +92,50 @@ const LegalPage3 = () => {
       important to note that you may also be required to revoke any recurring
       payment instructions you have set up with your bank.`}
       <div className="pb-2 pt-2">
-      1.5. Changes to the Price and Subscription Plans
+        1.5. Changes to the Price and Subscription Plans
       </div>
       We may change our subscription plans and the price of our service from
       time to time; Nevertheless, you will be notified in advance of any
       alterations to pricing or changes in our subscription plans.
       <br />
-      <div className="pb-2 pt-2">
-      2. Refund Eligibility
-      </div>
-   
-      <div className="pb-2 pt-2">
-      2.1. Monthly Subscription
-      </div>
+      <div className="pb-2 pt-2">2. Refund Eligibility</div>
+      <div className="pb-2 pt-2">2.1. Monthly Subscription</div>
       {`For customers with a monthly subscription plan, we do not offer refunds
       for any partial month's unused service. The cancellation will be effective
       from the end of the current billing cycle.`}
-      <div className="pb-2 pt-2">
-      2.2. Annual Subscription
-      </div>
+      <div className="pb-2 pt-2">2.2. Annual Subscription</div>
       {`For customers with an annual subscription plan, we do not offer refunds
       for any partial month's unused service. The cancellation will be effective
       from the end of the current annual billing cycle.`}
       <div className="legal_page_h pb-2 pt-2">
-      3. Special Offers and Promotions
+        3. Special Offers and Promotions
       </div>
       If you have taken advantage of any special offers or promotions, please
       note that specific terms and conditions may apply to these offers, and the
       cancellation and refund policies may vary.
-      <div className="legal_page_h pb-2 pt-2">
-      4. Account Deactivation
-      </div>
+      <div className="legal_page_h pb-2 pt-2">4. Account Deactivation</div>
       Upon canceling your subscription, your account will be deactivated at the
       end of the current billing cycle. You can reactivate your account at any
       time.
-      <div className="legal_page_h pb-2 pt-2">
-      5. Entire Agreement
-      </div>
+      <div className="legal_page_h pb-2 pt-2">5. Entire Agreement</div>
       This policy, our End User License Agreement , Terms of Sale, Terms and
       Conditions, and our Privacy Policy constitute the sole and entire
       agreement between you and the Company with respect to the Website and
       supersede all prior and contemporaneous understandings, agreements,
       representations and warranties, both written and oral, with respect to the
-      Website.<br /><br /> For any questions or concerns regarding this policy, please
-      contact us at <Link className="underline text-blue-700" href="mailto:letstalk@thekreatr.com">letstalk@thekreatr.com</Link>.
-      <br /><br />© KREATR All rights reserved | Last Modified: 1 November 2023
+      Website.
+      <br />
+      <br /> For any questions or concerns regarding this policy, please contact
+      us at{" "}
+      <Link
+        className="text-blue-700 underline"
+        href="mailto:letstalk@thekreatr.com"
+      >
+        letstalk@thekreatr.com
+      </Link>
+      .
+      <br />
+      <br />© KREATR All rights reserved | Last Modified: 1 November 2023
     </div>
   );
 };

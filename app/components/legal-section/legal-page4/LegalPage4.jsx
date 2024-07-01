@@ -172,13 +172,13 @@ const LegalPage4 = () => {
       <br />
       <br /> If you wish to make any use of material on the Website other than
       that set out in this section, please address your request to
-      <Link
+      <a
         className="text-blue-700 underline"
         href="mailto:letstalk@thekreatr.com"
       >
         {" "}
         letstalk@thekreatr.com
-      </Link>{" "}
+      </a>{" "}
       .<br />
       <br /> If you print, copy, modify, download or otherwise use or provide
       any other person with access to any part of the Website in breach of the
@@ -459,13 +459,13 @@ const LegalPage4 = () => {
       <div className="legal_page_h pb-2 pt-2">Copyright Infringement</div>
       If you believe that any User Contributions violate your copyright, please
       send us a notice of copyright infringement to
-      <Link
+      <a
         href="mailto:letstalk@thekreatr.com"
         className="text-blue-700 underline"
       >
         {" "}
         letstalk@thekreatr.com
-      </Link>{" "}
+      </a>{" "}
       . It is the policy of the Company to terminate the user accounts of repeat
       infringers.
       <div className="legal_page_h pb-2 pt-2">

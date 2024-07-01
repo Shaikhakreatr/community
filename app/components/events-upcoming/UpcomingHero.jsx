@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -136,6 +137,8 @@ const UpcomingHero = ({ upcomingData }) => {
                 className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px] "
                 src={upcomingData.coverImg}
                 alt="main-img"
+                height={0}
+                width={0}
               />
             </div>
             <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[5px] text-[11px] sm:mt-[18px] sm:gap-[18px] sm:text-[15px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
@@ -172,13 +175,15 @@ const UpcomingHero = ({ upcomingData }) => {
           </div>
           <div className="mt-[30px] lg:mt-[50px]">
             <div className="flex items-center justify-center">
-              <h1 className="content-neue-medium mr-[20px] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
+              <h1 className="content-neue-medium sm:mr-[20px] mr-[10px]  text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
               <img
                 src="/assets/images/events_page/arrow.svg"
                 alt="arrow image"
                 className="h-[24px] w-[24px]"
+                height={0}
+                width={0}
               />
             </div>
             <div className="mt-[15px] flex flex-wrap items-center justify-center gap-2 sm:gap-3 lg:gap-5 xl:gap-10">
@@ -188,6 +193,8 @@ const UpcomingHero = ({ upcomingData }) => {
                   className={`mr-1 h-[106px] w-[106px] object-cover object-center sm:mr-4 sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
+                  height={0}
+                width={0}
                 />
               ))}
             </div>
