@@ -10,6 +10,7 @@
     color: #2A2A2A;
     font-family: 'Neue Montreal';;
     margin-right: 10px;
+    padding: 7px 24px;
   }
   
   .activeTab {
@@ -19,6 +20,7 @@
     background-color: #ABF4AB;
     color: black;
     font-family: 'Neue Montreal';
+    padding: 7px 24px;
   }
   
   @media only screen and (max-width: 639px){

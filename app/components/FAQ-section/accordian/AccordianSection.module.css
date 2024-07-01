@@ -1,3 +1,6 @@
+.accordionTitle span:nth-of-type(2) {
+    padding-right: 20px;
+  }
 
 .accordionBox{  
     border: 1px solid black;
@@ -17,6 +20,7 @@
     padding-left: 0.75rem;
     color: rgba(0, 0, 0, 0.6);
 }
+
 .accordionIcon svg{
     transform: scale(2);
     rotate: 270deg;

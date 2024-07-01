@@ -33,7 +33,7 @@ const AboutKreatrHeader = () => {
           <div
             className={`content-neue px-6 lg:px-2  text-[14px] leading-[18px] text-[#2A2A2A] sm:w-[60%] lg:text-[18px] lg:leading-[22px] xl:leading-[27px] xl:text-[24px] ${styles.paraMargin1} `}
           >
-            <p className="text-center sm:pr-[16px] sm:text-start">
+            <p className="text-center sm:pr-[48px] sm:text-start">
               We are a digital ecosystem that encourages cross-industry
               collaboration and empowers creators like you.
             </p>
@@ -75,7 +75,7 @@ const AboutKreatrHeader = () => {
           className={` mt-[24px] flex justify-center sm:ml-[45px] sm:mt-[24px] lg:ml-[0px] lg:mt-[44px] xl:ml-[0px] ${styles.buttonBig} "`}
         >
           <Link href="/join-our-klan">
-            <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-black sm:hover:bg-transparent lg:mr-0 lg:h-[42px] lg:w-[220px] xl:h-[58px] xl:w-[251px] lg:text-[18px] xl:text-[24px]">
+            <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-black sm:hover:bg-transparent lg:mr-0 lg:h-[48px] lg:w-[220px] xl:h-[58px] xl:w-[251px] lg:text-[18px] xl:text-[24px]">
               Join Our Initiative
             </div>
           </Link>

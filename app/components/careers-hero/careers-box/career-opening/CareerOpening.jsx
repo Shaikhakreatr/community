@@ -11,13 +11,13 @@ const CareerOpening = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="mb-[6px] flex flex-col items-center justify-center  sm:mb-0">
-        <div className="relative mb-[46px] lg:mb-[54px] xl:mb-[64px] sm:mt-[60px] mt-[44px] lg:mt-[50px]  xl:mt-[100px]">
+        <div className="relative mb-[46px] lg:mb-[54px] xl:mb-[64px] sm:mt-[60px] mt-[44px] lg:mt-[50px]  xl:mt-[100px] ">
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
-          <div className="absolute right-[-33%] top-[60%] sm:top-[30px] sm:right-[-66px] rotate-[10deg] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
+          <div className= "absolute right-[-33%] top-[60%] sm:top-[30px] sm:right-[-66px] rotate-[10deg] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]" >
             <img
-              className="h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
+              className= "h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
               src="/assets/images/careers_page/careers-img.svg"
               alt="careers image"
             />

@@ -161,7 +161,7 @@ const BlogListingHero = () => {
                     
                   </div>
 
-                  <div className="flex  justify-between mt-[50px]">
+                  <div className="flex  justify-between mt-[55px]">
                     <div className="flex  items-end justify-center  text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}

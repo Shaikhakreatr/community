@@ -40,7 +40,7 @@ const AccordianSection = () => {
           key={item.title}
           value={item.title}
         >
-          <Accordion.Control  className={`${controlBoxClass} ${styles.accordionIcon}`}>
+          <Accordion.Control className={`${controlBoxClass} ${styles.accordionIcon} ${styles.accordionTitle}`}>
             {item.title}
           </Accordion.Control>
           <Accordion.Panel

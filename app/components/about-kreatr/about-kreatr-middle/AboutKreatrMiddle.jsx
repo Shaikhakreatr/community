@@ -4,34 +4,38 @@ import Image from "next/image";
 const AboutKreatrMiddle = () => {
   return (
     <div>
-      <div className="mb-[60px] flex flex-col items-center justify-center sm:mb-0">
-        <div className="relative flex h-[50px] w-[350px]  items-center justify-center mt-[74px] sm:mt-0 sm:mb-[40px] lg:mb-[40px] xl:mb-[72px]  sm:w-[700px] ">
-          <div className="flex items-center justify-center  sm:h-0">
-            <Image
-              className=" absolute bottom-[120%] left-[33%] h-[65px] w-[122px]  sm:left-[2%] sm:top-[22%] sm:h-[90px] sm:w-[300px] lg:left-[-10%] lg:top-[-9%] lg:h-[100px] lg:w-[390px] xl:left-[-16%] xl:top-[-12%] xl:h-[135px] xl:w-[329px]"
-              src={"/assets/images/about-kreatr/connect-kreatr.svg"}
-              alt="connect image"
-              height={105}
-              width={310}
-            />
-            <Image
-              className=" absolute right-[29%] top-[-50%] h-[65px] w-[145px]  sm:left-[32%] sm:top-[24%] sm:h-[90px] sm:w-[300px] lg:left-[23%] lg:top-[-5%] lg:h-[100px] lg:w-[390px] xl:left-[18%] xl:h-[135px] xl:w-[478px]"
-              src={"/assets/images/about-kreatr/collaborate-kreatr.svg"}
-              alt="collaborate image"
-              height={100}
-              width={350}
-            />
-            <Image
-              className="absolute top-[50%] h-[65px] w-[103px]  sm:left-[59%] sm:top-[-32%] sm:h-[90px] sm:w-[300px] lg:left-[54%] lg:top-[-10%] lg:h-[100px] lg:w-[390px] xl:left-[71%]  xl:top-[-7%] xl:h-[135px] xl:w-[328px]"
-              src={"/assets/images/about-kreatr/create-kreatr.svg"}
-              alt="create image"
-              height={105}
-              width={320}
-            />
-          </div>
+      <div className="container  sm:w-[750px] lg:w-[1070px] xl:w-[1125px] px-0 ">
+        <div className="flex flex-wrap flex-col sm:flex-row justify-center sm:my-[80px] lg:my-[128px] xl:my-[144px] items-center sm:relative">
+          <Image
+            // className="w-[33.333%] bg-green-500"
+            className="lg:w-[calc(33.333%-50px)] sm:w-[calc(33.333%-25px)] w-[calc(33.333%-25px)] z-10 sm:absolute xl:left-[3%] lg:left-[3%] sm:left-[3%]" 
+            src={"/assets/images/about-kreatr/connect-kreatr.svg"}
+            alt="connect image"
+            height={0}
+            width={0}
+            sizes="100vw"
+          />
+          <Image
+            // className="w-[33.333%] bg-blue-500"
+            className="lg:w-[calc(33.333%+70px)] sm:w-[calc(33.333%+50px)] w-[calc(33.333%+30px)] z-20 sm:absolute"
+            src={"/assets/images/about-kreatr/collaborate-kreatr.svg"}
+            alt="collaborate image"
+            height={0}
+            width={0}
+            sizes="100vw"
+          />
+          <Image
+            // className="w-[33.333%] bg-pink-500 "
+            className="lg:w-[calc(33.333%-90px)] sm:w-[calc(33.333%-60px)] w-[calc(33.333%-35px)]  z-40 sm:absolute xl:right-[6%] lg:right-[6%] sm:right-[6%]"
+            src={"/assets/images/about-kreatr/create-kreatr.svg"}
+            alt="create image"
+            height={0}
+            width={0}
+            sizes="100vw"
+          />
         </div>
       </div>
-      <div className="lg:mt-[72px] lg:mb-[72px] sm:my-[40px] my-[24px] flex items-center justify-center">
+      <div className="my-[24px] flex items-center justify-center sm:my-[40px] lg:mb-[72px] lg:mt-[72px]">
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
       <div className="mt-[0px] flex flex-col justify-center">
@@ -80,7 +84,7 @@ const AboutKreatrMiddle = () => {
           </div>
         </div>
       </div>
-      <div className="my-[40px] lg:mt-[64px] lg:mb-[20px] xl:mt-[72px] flex items-center justify-center">
+      <div className="my-[40px] flex items-center justify-center lg:mb-[20px] lg:mt-[64px] xl:mt-[72px]">
         <div className="h-[0.5px] w-[323px] bg-[#2A2A2A] sm:w-[750px] lg:w-[1070px] xl:w-[1125px]"></div>
       </div>
     </div>

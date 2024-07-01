@@ -20,13 +20,13 @@ const CareersMainContent = ({ careerData }) => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
-        <div className="relative mt-[44px] lg:mb-[80px] xl:mb-[150px] lg:mt-[90px] sm:mt-[60px] xl:mt-[100px]">
+        <div className="relative mb-[46px] mt-[44px] sm:mt-[60px] lg:mb-[54px] lg:mt-[50px] xl:mb-[64px]  xl:mt-[100px]">
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
-          <div className="absolute right-[-33%] top-[60%] rotate-[10deg] lg:right-[-98px] lg:top-[64px] xl:right-[-30%] xl:top-[60%]">
+          <div className="absolute right-[-33%] top-[60%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
             <img
-              className="h-[66.47px] w-[66.47px] sm:h-[115.4px] sm:w-[115.4px] lg:h-[140.4px] lg:w-[140.4px] xl:h-[168.4px] xl:w-[168.4px]"
+              className="h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
               src="/assets/images/careers_page/careers-img.svg"
               alt="careers image"
             />
@@ -34,8 +34,8 @@ const CareersMainContent = ({ careerData }) => {
         </div>
       </div>
       <div className="mx-[25px] mb-[10px] mt-[62px] sm:mx-[80px] sm:mb-[50px] sm:mt-[80px] lg:mx-[100px] lg:mb-0 lg:mt-0">
-        <div className="flex items-center xl:mb-[24px] lg:mb-[24px] sm:mb-[20px]">
-          <h4 className="content-neue-medium mr-3 lg:mt-[-6] sm:mt-[-4px] mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:text-[24px] lg:text-[28px] xl:text-[33px]">
+        <div className="flex items-center sm:mb-[20px] lg:mb-[24px] xl:mb-[24px]">
+          <h4 className="content-neue-medium mr-3 mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:mt-[-4px] sm:text-[24px] lg:mt-[-6] lg:text-[28px] xl:text-[33px]">
             {careerData.title}
           </h4>
           <div className="mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
@@ -46,23 +46,23 @@ const CareersMainContent = ({ careerData }) => {
           </div>
         </div>
         <div className="mt-[10px] sm:mb-4  sm:mt-0">
-          <p className="content-neue xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[12px] sm:text-[16px] lg:text-[18px] xl:text-[24px]">
+          <p className="content-neue text-[12px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[24px]">
             {careerData.description}
           </p>
 
-          <p className="content-neue-medium mt-[10px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
+          <p className="content-neue-medium mt-[10px] text-[14px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
             Responsibilities
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[24px]">
               {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
 
-          <p className="content-neue-medium mt-[10px] xl:mb-[24px] lg:mb-[24px] sm:mb-[20px] text-[14px] sm:mt-0 sm:text-[18px] lg:text-[22px] xl:text-[28px]">
+          <p className="content-neue-medium mt-[10px] text-[14px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
             Qualifications
           </p>
 
@@ -74,7 +74,7 @@ const CareersMainContent = ({ careerData }) => {
             </ul>
           </div>
         </div>
-        <div className="mt-[24px] flex justify-center lg:mt-[24px] sm:mt-[50px]">
+        <div className="mt-[24px] flex justify-center sm:mt-[50px] lg:mb-[24px] lg:mt-[24px]">
           <Link
             href="https://www.linkedin.com/company/the-kreatr/"
             target="_blank"
