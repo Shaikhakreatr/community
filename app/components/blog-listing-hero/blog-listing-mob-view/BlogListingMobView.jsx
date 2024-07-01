@@ -8,7 +8,7 @@ const BlogListingMobView = ({ blogsData }) => {
     <div className=" mt-[24px] flex w-full flex-col items-center justify-center gap-4 sm:mt-[40px] lg:mt-[64px] xl:mt-[72px]">
       {blogsData.map((item, index) => (
         <Link key={index} href={`/blogs/${item.id}`}>
-          <div className=" h-[14.375rem] w-[21rem] rounded-[7.13px] mb-[20px] border border-selectedBorder">
+          <div className=" h-[240px] w-[21rem] rounded-[7.13px] mb-[20px] border border-selectedBorder">
             <div
               className="h-[9.8125rem] w-full rounded-t-[7.13px]"
               style={{
