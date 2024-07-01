@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const CareersMainContent = ({ careerData }) => {
   // Check if careerData is defined and has all required fields
@@ -25,17 +26,19 @@ const CareersMainContent = ({ careerData }) => {
             Careers
           </h1>
           <div className="absolute right-[-33%] top-[60%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
-            <img
+            <Image
               className="h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
               src="/assets/images/careers_page/careers-img.svg"
               alt="careers image"
+              height={0}
+              width={0}
             />
           </div>
         </div>
       </div>
       <div className="mx-[25px] mb-[10px] mt-[62px] sm:mx-[80px] sm:mb-[50px] sm:mt-[80px] lg:mx-[100px] lg:mb-0 lg:mt-0">
         <div className="flex items-center sm:mb-[20px] lg:mb-[24px] xl:mb-[24px]">
-          <h4 className="content-neue-medium mr-3 mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:mt-[-4px] sm:text-[24px] lg:mt-[-6] lg:text-[28px] xl:text-[33px]">
+          <h4 className="content-neue-medium mr-3 mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:mt-[-4px] sm:text-[24px] lg:mt-[-6px] lg:text-[28px] xl:text-[33px]">
             {careerData.title}
           </h4>
           <div className="mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">

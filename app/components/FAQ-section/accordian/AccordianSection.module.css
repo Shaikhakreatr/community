@@ -1,6 +1,6 @@
 .accordionTitle span:nth-of-type(2) {
     padding-right: 20px;
-  }
+}
 
 .accordionBox{  
     border: 1px solid black;
@@ -172,7 +172,7 @@
             font-size: 14px;
             color: black;
             opacity: 70%;
-            margin-top: -8px;
+            /* margin-top: -8px; */
             /* background-color: yellow; */
             /* background-color: #EADAFF; */
         }
