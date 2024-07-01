@@ -127,12 +127,12 @@ const LegalPage3 = () => {
       <br />
       <br /> For any questions or concerns regarding this policy, please contact
       us at{" "}
-      <Link
+      <a
         className="text-blue-700 underline"
         href="mailto:letstalk@thekreatr.com"
       >
         letstalk@thekreatr.com
-      </Link>
+      </a>
       .
       <br />
       <br />© KREATR All rights reserved | Last Modified: 1 November 2023
