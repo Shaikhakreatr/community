@@ -86,17 +86,21 @@
         font-weight: 200;
         padding: 10px;
         min-height: 88px;
+        
         }
         .controlBox2{
             font-family: 'Neue Montreal Bold';
             font-size: 20px;
             font-weight: 200;
             padding: 10px;
+            
             }
         .accordionPanel{
             font-family: "Neue Montreal";
             font-size: 18px;
             color: black;
+            
+            line-height: 20px;
             opacity: 70%;
             /* background-color: yellow; */
             /* background-color: #EADAFF; */
@@ -125,6 +129,7 @@
                 font-size: 20px;
                 color: black;
                 opacity: 70%;
+                line-height: 26px;
                 /* background-color: yellow; */
                 /* background-color: #EADAFF; */
             }
