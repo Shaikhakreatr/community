@@ -101,7 +101,6 @@ const CollabrationForm = () => {
         </div>
           <TextInput
             label="Name"
-            
             radius={50}
             placeholder="Bob Ross"
             classNames={{
@@ -116,7 +115,6 @@ const CollabrationForm = () => {
           <br className="hidden lg:block" />
           <TextInput
             label="Phone Number"
-            
             radius={50}
             placeholder="+00 1234 5678"
             classNames={{
@@ -132,7 +130,6 @@ const CollabrationForm = () => {
           <br className="hidden lg:block" />
           <TextInput
             label="Email"
-            
             radius={50}
             placeholder="happyaccidents@gmail.com"
             classNames={{
@@ -145,7 +142,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden lg:block" />
-          <div className="mt-[25px] items-center text-center sm:mt-[10px]  sm:flex xl:mt-[24px] lg:mt-[18px] lg:gap-3  xl:gap-5">
+          <div className="mt-[24px] items-center text-center sm:mt-[24px]  sm:flex xl:mt-[24px] lg:mt-[18px] lg:gap-3  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}

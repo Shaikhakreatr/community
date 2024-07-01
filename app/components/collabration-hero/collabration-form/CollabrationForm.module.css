@@ -3,6 +3,7 @@
     font-weight: 500;
 }
 
+
 .transparentInput{
     background-color: transparent;
     padding-bottom: 2px;
@@ -50,8 +51,6 @@
     color: black;
     font-size: 1.125rem;
     margin-bottom: 4px;
-
-    
 }
 .dropDown{ 
     background-color: transparent;
@@ -94,8 +93,16 @@
     border: 1px solid #3C9E3C;
     letter-spacing: 1px;
 }
-
+@media (min-width: 640px) and (max-width: 1279px){
+    .inputLabel{
+        color: black;
+        font-size: 1.125rem;
+        margin-bottom: 4px;
+        margin-top: 18px;
+    }
+}
 @media only screen and (max-width: 639px) {
+    
     .formButton {
         height: 40px;
         width: 260px;
@@ -129,6 +136,7 @@
     .inputLabel{
         color: black;
         font-size: 1rem;
+        margin-top: 20px;
     }
     .sentMessage{
         font-family: "Neue Montreal";
