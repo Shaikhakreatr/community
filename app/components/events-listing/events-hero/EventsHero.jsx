@@ -101,7 +101,7 @@ const EventsHero = () => {
             ) : (
               <Tabs.Panel value="upcoming">
                 <div className="flex flex-col justify-center items-center">
-                <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-2  sm:gap-[30px] lg:grid-cols-3">
                   {upcomingEvents.map((event) => (
                     <Link href={`/events-upcoming/${event.id}`} key={event.id}>
                       <div className="upcoming-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
@@ -129,7 +129,7 @@ const EventsHero = () => {
             {/* past hero section */}
             <Tabs.Panel value="past">
               <div className="flex flex-col justify-center items-center">
-              <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-3  sm:gap-[30px] lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 sm:my-[60px] sm:ml-0 sm:grid-cols-2  sm:gap-[30px] lg:grid-cols-3">
                 {pastEvents.map((event) => (
                   <Link href={`/events-past/${event.id}`} key={event.id}>
                     <div className="past-box mb-[30px] h-[357px] w-[290px] rounded-[15px] border border-black p-[15px] sm:mb-[30px]  lg:h-[400px] lg:w-[321px] lg:p-[18px] xl:h-[521px] xl:w-[381px] xl:p-5">
