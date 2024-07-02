@@ -154,7 +154,6 @@ h1{
 }
 @media only screen and (min-width: 1280px){
   .upcoming-box:hover{
-    background-color: #DFE5FF;
     transform: scale(1.1);
   }
   
@@ -165,13 +164,8 @@ h1{
     background-color: black;
     color: white;
   }
-  .upcoming-box:hover .upcoming-arrow {
-    background-color: black;
-    color: white;
-  }
   
   .past-box:hover{
-    background-color: #F1E9C3;
     transform: scale(1.1);
   }
   
@@ -182,10 +176,7 @@ h1{
     background-color: black;
     color: white;
   }
-  .past-box:hover .past-arrow {
-    background-color: black;
-    color: white;
-  }
+ 
 }
 @media only screen and (min-width: 1440px){
   .upcoming-box:hover{

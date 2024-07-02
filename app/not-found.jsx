@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/header/Header";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
@@ -13,16 +14,16 @@ const NotFound = () => {
                 Sometimes things<br className="sm:block hidden" /> go missing<br />
                 and that’s okay :)
               </h1>
-              <a
-                className="mb-[4.1875rem] mt-[2.1875rem] sm:my-0 sm:mt-[25px] md:mt-[1.5625rem] xl:mt-[25px] "
+              <Link
+                className="back-home pointer-events-auto mb-[4.1875rem] mt-[2.1875rem] sm:my-0 sm:mt-[25px] md:mt-[1.5625rem] xl:mt-[25px] "
                 href="/"
               >
-                <button className="back-home error-page h-[2.5rem] w-[9.1875rem] text-[1.125rem] md:h-[2.8rem] md:w-[12.1875rem] md:text-[20px]  xl:h-[3.46rem] xl:w-[14rem] xl:text-[1.875rem]">
+                <button className=" error-page h-[2.5rem] w-[9.1875rem] text-[1.125rem] md:h-[2.8rem] md:w-[12.1875rem] md:text-[20px]  xl:h-[3.46rem] xl:w-[14rem] xl:text-[1.875rem]">
                   Back to home
                 </button>
-              </a>
+              </Link>
             </div>
-            <div className="static order-1 sm:relative sm:order-2 sm:col-span-4 sm:mx-0">
+            <div className="static pointer-events-none order-1 sm:relative sm:order-2 sm:col-span-4 sm:mx-0">
               <img
                 src="/assets/images/404_page/404.svg "
                 className="static mx-auto h-[12.8469rem] w-[20rem] sm:absolute  sm:left-[15px] sm:top-[-75px] sm:h-[400px] sm:w-[450px] md:left-[45px] md:top-[-75px] md:h-[410px] md:w-[500px] lg:left-[170px] lg:top-[-35px] lg:h-[400px] lg:w-[800px] xl:left-[5.375rem] xl:top-[-1.25rem] xl:h-[40.3862rem] xl:w-[62.8719rem]"
