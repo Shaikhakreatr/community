@@ -4,14 +4,14 @@ import Image from "next/image";
 const LeftGifSection = () => {
   return (
     <div className="relative col-span-3 flex  min-h-[100%] items-center sm:ml-0 lg:mr-[85px] lg:mt-[-32px] xl:mr-0">
-      <div className="page-heading absolute hidden text-[50px] sm:left-[-50px]  sm:top-[126px] sm:block sm:text-[70px] lg:left-[5%] lg:top-[22%] lg:text-[90px] xl:left-[7%] xl:top-[17%] xl:text-[110px]">
+      <div className="page-heading absolute hidden text-[50px] sm:left-[-50px]  sm:top-[126px] sm:block sm:text-[70px] lg:left-[5%] lg:top-[22%] lg:text-[90px] xl:left-[2%] xl:top-[17%] xl:text-[110px]">
         <h1>Report a Pest</h1>
       </div>
       <div className="page-heading absolute left-[6%]  top-[44%] block  text-[59px]  sm:hidden ">
         <h1>Report a Pest</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 lg:mt-[60px] lg:gap-10 xl:gap-12  ">
-        <div className="content-neue col-span-2 hidden sm:ml-[-45px] sm:mt-[60px] sm:block lg:ml-[31px] lg:mt-[40px] xl:ml-[56px] xl:mt-[20%]">
+        <div className="content-neue col-span-2 hidden sm:ml-[-45px] sm:mt-[60px] sm:block lg:ml-[31px] lg:mt-[40px] xl:ml-[5.4%] xl:mt-[20%]">
           <p className=" contact-text leading-5 sm:text-[14px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
             We consistently strive to make your experience better.
           </p>
