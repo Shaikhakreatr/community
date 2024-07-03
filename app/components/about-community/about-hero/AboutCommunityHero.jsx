@@ -8,8 +8,6 @@ import Community4 from "../../../../public/assets/images/about_community/about-c
 import playstore from "../../../../public/assets/images/about_community/playstore-community.svg";
 import appstore from "../../../../public/assets/images/about_community/appstore-community.svg";
 
-
-
 const AboutCommunityHero = () => {
   return (
     <div className="flex w-full items-center justify-center">
@@ -44,7 +42,7 @@ const AboutCommunityHero = () => {
                 alt="Community image"
               />
             </div>
-            <div className="box2 mt-[265px] h-[470px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[460px] lg:w-[590px] lg:p-[58px] xl:ml-[-85px] xl:h-[534px] xl:w-[697px] xl:p-[80px]">
+            <div className="box2 mt-[265px] h-[470px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[460px] lg:w-[586px] lg:p-[58px] xl:ml-[-85px] xl:h-[534px] xl:w-[690px] xl:p-[80px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 JOIN US IF YOU
               </h1>
@@ -98,7 +96,7 @@ const AboutCommunityHero = () => {
                 alt="Community image"
               />
             </div>
-            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[290px] sm:w-[410px] sm:p-[24px] lg:ml-[-70px] lg:h-[390px] lg:w-[600px] lg:px-[40px] lg:py-[65px] xl:ml-[-85px] xl:h-[425px] xl:w-[697px] xl:p-[50px]">
+            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[290px] sm:w-[410px] sm:p-[24px] lg:ml-[-70px] lg:h-[390px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[425px] xl:w-[690px] xl:p-[50px]">
               <h1 className="page-heading text-center  text-[40px] leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 hOW CAN YOU BE A PART
                 <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?

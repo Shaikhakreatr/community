@@ -151,7 +151,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="pointer-events-auto absolute left-[70%] top-[8%] sm:left-[65%] sm:top-[12%] lg:left-[61%] lg:top-[15%] xl:left-[61%] xl:top-[12%]">
-                <Link href="/community">
+                <Link href="/about-community">
                   <Image
                     className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
