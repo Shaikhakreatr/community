@@ -70,7 +70,7 @@ const Header = () => {
             />
           </Link>
           <div
-            className="nav-bar pointer-events-auto absolute right-[3%] cursor-pointer"
+            className="nav-bar  pointer-events-auto  absolute right-[3%] cursor-pointer py-[5px]"
             onClick={toggleMenu}
           >
             <div

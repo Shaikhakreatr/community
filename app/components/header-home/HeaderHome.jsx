@@ -26,7 +26,7 @@ const HeaderHome = () => {
   return (
     <>
       <header
-        className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8]" : "bg-transparent"}`}
+        className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8] " : "bg-transparent"}`}
       >
         <div className="relative flex items-center justify-center border-b border-gray-500 p-2 xl:h-[140px] lg:h-[90px] sm:h-[120px] h-[90px]">
           <Link href="/">
