@@ -4,6 +4,23 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import { usePathname } from "next/navigation";
+
+const CustomLink = ({ href, children, closeMenu, menuOpen }) => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === href && menuOpen) {
+      closeMenu();
+    }
+  }, [pathname]);
+
+  return (
+    <Link href={href} onClick={closeMenu}>
+      {children}
+    </Link>
+  );
+};
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,6 +47,9 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   const handleClickOutside = (event) => {
@@ -60,7 +80,7 @@ const Header = () => {
         className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8]" : "bg-transparent"}`}
       >
         <div className="flex h-[90px] items-center justify-center border-b border-gray-500 p-2 sm:h-[120px] lg:h-[90px] xl:h-[140px]">
-          <Link href="/">
+          <CustomLink href="/" closeMenu={closeMenu} menuOpen={menuOpen}>
             <Image
               className="my-3 h-[25px] w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
               src={"/assets/images/home_page/logo/Kreatr-logo.svg"}
@@ -68,7 +88,7 @@ const Header = () => {
               height={27}
               width={160}
             />
-          </Link>
+          </CustomLink>
           <div
             className="nav-bar  pointer-events-auto  absolute right-[3%] cursor-pointer py-[5px]"
             onClick={toggleMenu}
@@ -118,7 +138,7 @@ const Header = () => {
                 />
               </div>
               <div className="pointer-events-auto absolute left-[8%] top-[62%] sm:left-[18%] sm:top-[62%] md:left-[27%] lg:left-[14%] lg:top-[53%] xl:left-[16%] xl:top-[49%]">
-                <Link href="/about-kreatr">
+                <CustomLink href="/about-kreatr" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
                     className="h-[134px] w-[134px] hover:scale-105 sm:h-[181px] sm:w-[181px] lg:h-[131px] lg:w-[141px] xl:h-[175px] xl:w-[181px]"
                     src={
@@ -128,7 +148,7 @@ const Header = () => {
                     height={141}
                     width={141}
                   />
-                </Link>
+                </CustomLink>
               </div>
               {/* <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
                 <Image
@@ -142,7 +162,7 @@ const Header = () => {
                 />
               </div> */}
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] md:left-[27%] md:top-[86%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
-                <Link href="/events">
+                <CustomLink href="/events" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
                     className="h-[48px] w-[172px] hover:scale-105 sm:h-[85px] sm:w-[236px] lg:h-[50px] lg:w-[200px] xl:h-[66px] xl:w-[236px]"
                     src={
@@ -152,10 +172,10 @@ const Header = () => {
                     height={66}
                     width={200}
                   />
-                </Link>
+                </CustomLink>
               </div>
               <div className="pointer-events-auto absolute left-[36.5%] top-[79%] sm:left-[41%] sm:top-[76%] md:left-[42%] lg:left-[35%] lg:top-[74%] xl:left-[38%] xl:top-[72%]">
-                <Link href="/about-community">
+                <CustomLink href="/about-community" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
                     className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] md:w-[190px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
@@ -165,10 +185,10 @@ const Header = () => {
                     height={65}
                     width={170}
                   />
-                </Link>
+                </CustomLink>
               </div>
               <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[66%] xl:top-[68%]">
-                <Link href="/contact">
+                <CustomLink href="/contact" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
                     className="h-[102px] w-[79px] hover:scale-105 sm:h-[154px] sm:w-[120px] lg:h-[114px] lg:w-[95px] xl:h-[150px] xl:w-[120px]"
                     src={
@@ -178,7 +198,7 @@ const Header = () => {
                     height={124}
                     width={95}
                   />
-                </Link>
+                </CustomLink>
               </div>
               <Image
                 className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] md:w-[496px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[500px] xl:w-[450px]"
