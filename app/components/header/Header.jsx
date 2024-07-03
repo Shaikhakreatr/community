@@ -117,7 +117,7 @@ const Header = () => {
                   width={90}
                 />
               </div>
-              <div className="pointer-events-auto absolute left-[8%] top-[62%] sm:left-[22%] sm:top-[62%] md:left-[27%] lg:left-[14%] lg:top-[53%] xl:left-[16%] xl:top-[49%]">
+              <div className="pointer-events-auto absolute left-[8%] top-[62%] sm:left-[18%] sm:top-[62%] md:left-[27%] lg:left-[14%] lg:top-[53%] xl:left-[16%] xl:top-[49%]">
                 <Link href="/about-kreatr">
                   <Image
                     className="h-[134px] w-[134px] hover:scale-105 sm:h-[181px] sm:w-[181px] lg:h-[131px] lg:w-[141px] xl:h-[175px] xl:w-[181px]"
@@ -181,7 +181,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] md:w-[496px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[540px] xl:w-[450px]"
+                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] md:w-[496px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[500px] xl:w-[450px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}
