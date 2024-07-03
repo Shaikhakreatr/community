@@ -45,13 +45,13 @@ const AboutKreatrMiddle = () => {
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DIRECTION
               </h1>
-              <p className="content-neue mt-[15px] text-center text-[16px] leading-[18px]  sm:mt-[28px] sm:text-start sm:text-[20px]  sm:leading-[20px] lg:text-[22px] lg:leading-[24px] xl:text-[24px] xl:leading-[32px]">
+              <p className="content-neue mt-[15px] text-center text-[16px] leading-[18px]  sm:mt-[28px] sm:text-start sm:text-[20px]  sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 To ignite a revolution in the design industry through
                 cross-industry collaborations that raise the bar and to
                 establish a global standard for creativity.
               </p>
             </div>
-            <div className="absolute left-[9%] top-[-55%] sm:left-[56%] sm:top-0 lg:left-[56%] xl:left-[54%]">
+            <div className="absolute left-[9%] top-[-55%] sm:left-[56%] sm:top-0 lg:left-[56.1%] xl:left-[53.5%]">
               <Image
                 className="h-[219px] w-[255px] rounded-[15px] object-cover object-center sm:h-[280px] sm:w-[320px] lg:h-[280px] lg:w-[460px] xl:h-[295px] xl:w-[511px]"
                 src={"/assets/images/about-kreatr/kreatr-img1.jpg"}
@@ -61,8 +61,8 @@ const AboutKreatrMiddle = () => {
               />
             </div>
           </div>
-          <div className="relative mt-[186px] justify-end sm:mt-[30px] sm:flex sm:gap-[68px]  lg:mt-[30px]  xl:mt-[25px]  xl:gap-[100px]">
-            <div className="absolute left-[9%] top-[-55%] sm:left-[-4%] sm:top-0 lg:left-[7%] xl:left-[10%]">
+          <div className="relative mt-[186px] justify-end sm:mt-[30px] sm:flex sm:gap-[68px]  lg:mt-[35px]  xl:mt-[25px]  xl:gap-[100px]">
+            <div className="absolute left-[9%] top-[-55%] sm:left-[-4%] sm:top-0 lg:left-[6.5%] xl:left-[10.8%]">
               <Image
                 className="h-[219px] w-[255px] rounded-[15px]  object-cover object-center sm:h-[280px] sm:w-[350px] lg:h-[280px] lg:w-[480px] xl:h-[295px] xl:w-[511px]"
                 src={"/assets/images/about-kreatr/kreatr-img2.jpg"}
@@ -75,7 +75,7 @@ const AboutKreatrMiddle = () => {
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[60px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 DESTINY
               </h1>
-              <p className="content-neue mt-[15px] list-disc text-center text-[16px] leading-[18px]  sm:mt-[28px] sm:text-start sm:text-[20px] sm:leading-[20px] lg:text-[22px] lg:leading-[24px] xl:text-[24px] xl:leading-[32px]">
+              <p className="content-neue mt-[15px] list-disc text-center text-[16px] leading-[18px]  sm:mt-[28px] sm:text-start sm:text-[20px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 To create a unique digital ecosystem for high-spirited creatives
                 where they can unleash their imagination, grow their skills, and
                 share their talents with other creatives.

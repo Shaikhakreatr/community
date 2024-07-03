@@ -536,12 +536,12 @@ const AboutKreatrBottom = () => {
           </div>
         </div>
       </div>
-      <div className="content-neue hidden flex-col xl:mt-[72px] xl:mb-[72px] lg:my-[64px] sm:my-[40px] items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[64px] lg:text-[20px] lg:leading-[24px] xl:text-[24px] xl:leading-[27px]">
+      <div className="content-neue hidden flex-col xl:mt-[72px] xl:mb-[72px] lg:my-[64px] sm:my-[40px] items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[64px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
         <p className="text-center">
           {`PS: Can't figure out what their descriptions mean?`}
           <br /> {`Here's a link to the`}{" "}
           <Link
-            className="dictonary-link"
+            className="underline text-blue-800"
             href="https://www.dictionary.com/"
             target="_blank"
             rel="noreferrer"
