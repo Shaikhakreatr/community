@@ -16,7 +16,9 @@ const LegalMainSection = () => {
   return (
     <div className="container mx-auto">
       <div className=" mt-[38px] flex flex-col items-center justify-center sm:mt-[60px] lg:mt-[50px] xl:mx-[50px] xl:mt-[100px]">
-        <h1 className="heading pt-6 text-70">legal</h1>
+        <h1 className="heading pt-6 text-[36px] sm:text-[3.75rem] lg:text-[70px] xl:text-[96px] xl:mb-[44px] lg:mb-[38px] sm:mb-[26px] mb-[22px]">
+          legal
+        </h1>
         <div className=" flex  w-full items-center justify-center">
           <div className="scrollbar-hide flex w-full gap-3 overflow-x-auto pt-4 lg:justify-center ">
             {legalBarData.map((item, index) => (
