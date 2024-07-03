@@ -56,11 +56,11 @@ h1{
   margin-bottom: 12px;
 }
 .footer-section{
-  color:black
+  color:#2A2A2A
 }
 
 .button-text{
-  color: black;
+  color: #2A2A2A;
 }
 
 /*loader css */
@@ -127,11 +127,11 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .upcoming-box:hover .upcoming-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   .upcoming-box:hover .upcoming-arrow {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   
@@ -144,11 +144,11 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .past-box:hover .past-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   .past-box:hover .past-arrow {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
 }
@@ -161,7 +161,7 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .upcoming-box:hover .upcoming-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   
@@ -173,7 +173,7 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .past-box:hover .past-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
  
@@ -188,11 +188,11 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .upcoming-box:hover .upcoming-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   .upcoming-box:hover .upcoming-arrow {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   
@@ -205,11 +205,11 @@ h1{
     transition: transform 0.5s ease-in-out;
   }
   .past-box:hover .past-sub {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
   .past-box:hover .past-arrow {
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
   }
 }
@@ -224,7 +224,7 @@ h1{
 /* Upcoming events main page */
 
 .upcoming-btn{
-  background-color: #3C9E3C;
+  background-color: #2A2A2A;
   color: #FFFDEE;
 }
 /* Careers Empty */
@@ -297,7 +297,7 @@ h1{
 }
 .box4:hover .JOK-btn{
   background-color:#FFFBA8;
-  color:black ;
+  color:#2A2A2A ;
   border-radius: 40px;
   text-align: center;
 }

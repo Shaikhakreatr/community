@@ -1,13 +1,13 @@
 .notActiveTab {
-    border: 1px solid black;
+    border: 1px solid #2A2A2A;
     background-color: transparent;
-    color: black;
+    color: #2A2A2A;
     font-family: 'Neue Montreal';;
   }
   
   .activeTab {
     border: none;
-    background-color: black;
+    background-color: #2A2A2A;
     color: #FFFCEE;
     font-family: 'Neue Montreal';
   }

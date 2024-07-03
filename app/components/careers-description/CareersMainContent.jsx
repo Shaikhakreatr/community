@@ -22,10 +22,10 @@ const CareersMainContent = ({ careerData }) => {
     <div>
       <div className="flex flex-col items-center justify-center">
         <div className="relative mb-[46px] mt-[44px] sm:mt-[60px] lg:mb-[54px] lg:mt-[50px] xl:mb-[64px]  xl:mt-[100px]">
-          <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
+          <h1 className="page-heading text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
             Careers
           </h1>
-          <div className="absolute right-[-33%] top-[60%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
+          <div className="absolute right-[-54%] top-[6%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
             <Image
               className="h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
               src="/assets/images/careers_page/careers-img.svg"
@@ -36,15 +36,15 @@ const CareersMainContent = ({ careerData }) => {
           </div>
         </div>
       </div>
-      <div className="mx-[25px] mb-[10px] mt-[62px] sm:mx-[80px] sm:mb-[50px] sm:mt-[80px] lg:mx-[100px] lg:mb-0 lg:mt-0">
+      <div className="mx-[25px] mb-[10px] mt-[14px] sm:mx-[80px] sm:mb-[50px] sm:mt-[80px] lg:mx-[100px] lg:mb-0 lg:mt-0">
         <div className="flex items-center sm:mb-[20px] lg:mb-[24px] xl:mb-[24px]">
           <h4 className="content-neue-medium mr-3 mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:mt-[-4px] sm:text-[24px] lg:mt-[-6px] lg:text-[28px] xl:text-[33px]">
             {careerData.title}
           </h4>
-          <div className="content-neue flex justify-center items-center mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
+          <div className="content-neue flex justify-center items-center mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
             {careerData.type}
           </div>
-          <div className="content-neue flex justify-center items-center h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
+          <div className="content-neue flex justify-center items-center h-[17px] w-[53px] rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
             {careerData.location}
           </div>
         </div>
@@ -82,7 +82,7 @@ const CareersMainContent = ({ careerData }) => {
             href="https://www.linkedin.com/company/the-kreatr/"
             target="_blank"
             rel="noreferrer"
-            className=" career-btn content-neue-medium flex h-[36px] w-[128px] cursor-pointer items-center justify-center rounded-[24px] bg-black text-center text-[15px] hover:border hover:border-black  hover:bg-transparent hover:text-black sm:h-[38px] sm:w-[220px] sm:text-[18px] lg:h-[42px] lg:w-[280px]  lg:text-[20px]"
+            className=" career-btn content-neue-medium flex h-[36px] w-[128px] cursor-pointer items-center justify-center rounded-[24px] bg-[#2A2A2A] text-center text-[15px] hover:border hover:border-[#2A2A2A]  hover:bg-transparent hover:text-[#2A2A2A] sm:h-[38px] sm:w-[220px] sm:text-[18px] lg:h-[42px] lg:w-[280px]  lg:text-[20px]"
           >
             Apply Now
           </Link>

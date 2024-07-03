@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LegalPage3 = () => {
   return (
-    <div className="content-neue text-[14px] leading-[16px] sm:text-[16px] sm:leading-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] xl:mt-[72px] lg:mt-[58px] sm:mt-[48px] mt-[32px]">
+    <div className="content-neue text-[14px] leading-[16px] sm:text-[16px] sm:leading-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] xl:mt-[72px] lg:mt-[58px] sm:mt-[48px] mt-[20px]">
       {`This Refund and Cancellation Policy (this "policy") is a binding policy
       between you, as an individual or entity ("End User" or "you"), and
       Kreatrminds Private Limited, its subsidiaries and affiliates

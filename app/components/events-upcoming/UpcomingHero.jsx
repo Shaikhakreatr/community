@@ -122,13 +122,13 @@ const UpcomingHero = ({ upcomingData }) => {
               {upcomingData.heading}
             </h1>
             <div className="mt-[22px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
-              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
@@ -137,20 +137,18 @@ const UpcomingHero = ({ upcomingData }) => {
                 className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px] "
                 src={upcomingData.coverImg}
                 alt="main-img"
-                height={0}
-                width={0}
               />
             </div>
-            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
+            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[1.9px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
-              <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
+              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
-              <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
+              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{`₹  ${upcomingData.price}`}</div>
-              <div className="h-[20px] sm:h-[35px] sm:border-r sm:border-black"></div>
+              <div className="h-[20px] sm:h-[35px] sm:border-r sm:border-[#2A2A2A]"></div>
               <div
                 onClick={scrollToDiv}
-                className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[38px] lg:w-[221px] lg:rounded-[80px] lg:text-[22px] xl:h-[45px] xl:w-[251px] xl:text-[30px]"
+                className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#2A2A2A] hover:bg-transparent hover:text-[#2A2A2A] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[38px] lg:w-[221px] lg:rounded-[80px] lg:text-[22px] xl:h-[45px] xl:w-[251px] xl:text-[30px]"
               >
                 Book Now
               </div>
@@ -182,8 +180,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 src="/assets/images/events_page/arrow.svg"
                 alt="arrow image"
                 className="h-[24px] w-[24px]"
-                height={0}
-                width={0}
+                
               />
             </div>
             <div className="mt-[20px] flex flex-wrap items-center justify-center gap-1 sm:gap-4 lg:gap-[30px]">
@@ -193,8 +190,7 @@ const UpcomingHero = ({ upcomingData }) => {
                   className={` h-[106px] w-[106px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
-                  height={0}
-                  width={0}
+                  
                 />
               ))}
             </div>
@@ -264,7 +260,7 @@ const UpcomingHero = ({ upcomingData }) => {
                   className={`flex h-[20px] w-[20px] items-center justify-center rounded-full pb-[3px] text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length <= 1
                       ? "border border-gray-400 text-gray-400"
-                      : "border border-black"
+                      : "border border-[#2A2A2A]"
                   }`}
                   onClick={form.values.forms.length > 1 ? removeForm : null}
                   type="button"
@@ -279,7 +275,7 @@ const UpcomingHero = ({ upcomingData }) => {
                   className={`flex h-[20px] w-[20px] items-center justify-center rounded-full pb-[3px] text-center text-[20px] sm:h-[22px] sm:w-[22px] lg:h-[28px] lg:w-[28px] xl:h-[32px] xl:w-[32px] ${
                     form.values.forms.length >= 10
                       ? "border border-gray-400 text-gray-400"
-                      : "border border-black"
+                      : "border border-[#2A2A2A]"
                   }`}
                   onClick={form.values.forms.length < 10 ? addForm : null}
                   type="button"

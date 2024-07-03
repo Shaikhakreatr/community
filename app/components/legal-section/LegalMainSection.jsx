@@ -16,7 +16,7 @@ const LegalMainSection = () => {
   return (
     <div className="container mx-auto">
       <div className=" mt-[38px] flex flex-col items-center justify-center sm:mt-[60px] lg:mt-[50px] xl:mx-[50px] xl:mt-[100px]">
-        <h1 className="heading pt-6 text-[36px] sm:text-[3.75rem] lg:text-[70px] xl:text-[96px] xl:mb-[44px] lg:mb-[38px] sm:mb-[26px] mb-[22px]">
+        <h1 className="heading pt-6 text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px] xl:mb-[44px] lg:mb-[38px] sm:mb-[26px] mb-[22px]">
           legal
         </h1>
         <div className=" flex  w-full items-center justify-center">
@@ -25,8 +25,8 @@ const LegalMainSection = () => {
               <div
                 className={
                   currentIndex === index
-                    ? "content-neue flex cursor-pointer items-center   justify-center text-nowrap rounded-[5.625rem] border border-selectedBorder bg-selected p-[8px] text-[16px]  text-selectedText lg:h-[40px] lg:w-auto lg:px-[15px]"
-                    : " content-neue flex cursor-pointer items-center   justify-center text-nowrap rounded-[5.625rem] border border-selectedBorder p-[8px] text-[16px]  text-nonSelectedText lg:h-[40px] lg:w-auto lg:px-[15px]"
+                    ? "content-neue flex cursor-pointer items-center   justify-center text-nowrap rounded-[5.625rem] border border-selectedBorder bg-selected p-[8px] text-[14px] sm:text-[16px]  text-selectedText lg:h-[40px] lg:w-auto lg:px-[15px]"
+                    : " content-neue flex cursor-pointer items-center   justify-center text-nowrap rounded-[5.625rem] border border-selectedBorder p-[8px] text-[14px] sm:text-[16px]  text-nonSelectedText lg:h-[40px] lg:w-auto lg:px-[15px]"
                 }
                 key={index}
                 onClick={() => handleClick(index)}

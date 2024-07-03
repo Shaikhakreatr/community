@@ -3,13 +3,13 @@
 }
 
 .accordionBox{  
-    border: 1px solid black;
+    border: 1px solid #2A2A2A;
     border-radius: 15px;
     background-color: transparent;   
 }
 .accordionBox{
     &[data-active]{
-    border: 1px solid black;
+    border: 1px solid #2A2A2A;
     border-radius: 15px;
     background-color:rgba(234, 218, 255,0.5);
     background-blend-mode: multiply;
@@ -37,7 +37,7 @@
     .accordionPanel{
         font-family: "Neue Montreal";
         font-size: 17px;
-        color: black;
+        color: #2A2A2A;
         opacity: 70%;
         /* background-color: yellow; */
         /* background-color: #EADAFF; */
@@ -62,7 +62,7 @@
     .accordionPanel{
         font-family: "Neue Montreal";
         font-size: 14px;
-        color: black;
+        color: #2A2A2A;
         opacity: 70%;
     }
     .controlBox1{
@@ -98,7 +98,7 @@
         .accordionPanel{
             font-family: "Neue Montreal";
             font-size: 18px;
-            color: black;
+            color: #2A2A2A;
             
             line-height: 20px;
             opacity: 70%;
@@ -127,7 +127,7 @@
             .accordionPanel{
                 font-family: "Neue Montreal";
                 font-size: 20px;
-                color: black;
+                color: #2A2A2A;
                 opacity: 70%;
                 line-height: 26px;
                 /* background-color: yellow; */
@@ -144,14 +144,14 @@
             font-family: 'Neue Montreal Bold';
             font-size: 16px;
             font-weight:bolder;
-            color: black;
+            color: #2A2A2A;
             padding: 0px 10px;
             }
             .controlBox2{
                 font-family: 'Neue Montreal Bold';
                 font-size: 16px;
                 font-weight:bolder;
-                color: black;
+                color: #2A2A2A;
                 padding: 0px 10px;
                 }
         .accordionWrap2{
@@ -160,13 +160,13 @@
         .accordionBox{
             margin:15px;
             padding:10px; 
-            border: 1px solid black;
+            border: 1px solid #2A2A2A;
             border-radius: 10px;
             background-color: transparent; 
         }
         .accordionBox{
             &[data-active]{
-            border: 1px solid black;
+            border: 1px solid #2A2A2A;
             border-radius: 10px;
             background-color:rgba(234, 218, 255,0.5);
             background-blend-mode: multiply;
@@ -175,7 +175,7 @@
         .accordionPanel{
             font-family: 'Neue Montreal';
             font-size: 14px;
-            color: black;
+            color: #2A2A2A;
             opacity: 70%;
             /* margin-top: -8px; */
             /* background-color: yellow; */

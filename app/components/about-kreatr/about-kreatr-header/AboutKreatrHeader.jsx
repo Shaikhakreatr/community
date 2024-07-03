@@ -21,38 +21,45 @@ const AboutKreatrHeader = () => {
           width={1125}
         />
       </div>
-      <div className="flex items-center justify-center xl:mt-[72px] lg:mt-[58px] sm:mt-[48px] mt-[44px]">
+      <div className="mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
         <div className="bg-red flex items-center justify-center sm:w-[700px] lg:w-[968px] xl:w-[1125px]">
           <div className="hidden w-[50%] items-center justify-center  sm:flex"></div>
           <div className="flex flex-col items-center justify-start sm:w-[50%]">
-            <div>
-              <h4 className="page-heading sm:mb-[24px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
+            <div className="mb-[24px] sm:mb-0">
+              <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
                 What are we?
               </h4>
-              <p className="content-neue sm:mb-[24px] text-[14px] leading-[18px] text-[#2A2A2A]  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+              <p className="content-neue text-center text-[14px] leading-[18px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 We are a digital ecosystem that encourages cross-industry
                 collaboration and empowers creators like you.
               </p>
             </div>
             <div>
-              <h4 className="page-heading sm:mb-[24px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
+              <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
                 HOW DID WE START?
               </h4>
-              <p className="content-neue sm:mb-[24px]  text-[14px] leading-[18px] text-[#2A2A2A]  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+              <p className="content-neue text-center text-[14px] leading-[18px]  text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 It all started when we, Megha and Abdul—the co-founders of
-                Kreatr—sought a creative community that matched our vibe. <br /><br />Eager
-                to connect with like-minded individuals across diverse design
-                fields, we struggled to find a space that celebrated the joy of
-                creation. So, we took a leap of faith and launched Kreatr with a
-                vision to unite a klan of similar-minded creatives.<br /><br />{` Our mission
+                Kreatr—sought a creative community that matched our vibe. <br />
+                <br />
+                Eager to connect with like-minded individuals across diverse
+                design fields, we struggled to find a space that celebrated the
+                joy of creation. So, we took a leap of faith and launched Kreatr
+                with a vision to unite a klan of similar-minded creatives.
+                <br />
+                <br />
+                {` Our mission
                 goes beyond borders; we're committed to spotlighting Indian
                 designers globally and acknowledging their talent and
-                contributions.`}<br /><br />{`Through Kreatr, we've built a digital ecosystem
+                contributions.`}
+                <br />
+                <br />
+                {`Through Kreatr, we've built a digital ecosystem
                 where creatives from all backgrounds can learn, collaborate, and
                 inspire each other.`}
               </p>
             </div>
-            <div className=" mt-[24px] w-full  sm:mt-[24px]  lg:mt-[24px] ">
+            <div className=" mt-[24px] flex w-full justify-center sm:mt-[24px]  sm:block  lg:mt-[24px] ">
               <Link href="/join-our-klan">
                 <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent  lg:h-[48px] lg:w-[220px] lg:text-[18px] xl:h-[58px] xl:w-[251px] xl:text-[24px]">
                   Join Our Initiative

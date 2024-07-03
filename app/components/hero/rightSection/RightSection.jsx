@@ -85,7 +85,7 @@ const RightSection = () => {
         <Link
           href="https://play.google.com/store/apps/details?id=com.kreatr"
         >
-          <div className=" flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
+          <div className=" flex h-[50px] w-[140px] items-center rounded-full border border-[#2A2A2A]  text-[.875rem] font-medium leading-[14px] text-[#2A2A2A]">
             <Image
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"
               src="/assets/images/home_page/Dark-playstore.svg"
@@ -102,7 +102,7 @@ const RightSection = () => {
         <Link
           href="https://apps.apple.com/in/app/kreatr/id6474967284"
         >
-          <div className="flex h-[50px] w-[140px] items-center rounded-full border border-black  text-[.875rem] font-medium leading-[14px] text-black">
+          <div className="flex h-[50px] w-[140px] items-center rounded-full border border-[#2A2A2A]  text-[.875rem] font-medium leading-[14px] text-[#2A2A2A]">
             <Image
               src="/assets/images/home_page/Dark-applestore.svg"
               className="ml-[.9375rem] h-[1.625rem] w-[1.4375rem]"

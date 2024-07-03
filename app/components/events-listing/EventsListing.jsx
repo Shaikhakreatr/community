@@ -5,7 +5,7 @@ import EventsHero from './events-hero/EventsHero'
 
 const EventsListing = () => {
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto '>
       <EventsHero />
     </div>
   )

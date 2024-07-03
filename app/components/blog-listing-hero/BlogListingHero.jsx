@@ -480,8 +480,8 @@ const BlogListingHero = () => {
             isMobile
               ? " heading text-[2.5rem]"
               : isTabletView
-                ? " heading text-70"
-                : "heading text-110 "
+                ? " heading text-74"
+                : "heading lg:text-[94px] xl:text-110 "
           }
         >
           Explore The

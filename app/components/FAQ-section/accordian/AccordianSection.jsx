@@ -55,7 +55,7 @@ const AccordianSection = () => {
   };
 
   return (
-    <div className="my-10 justify-center xl:mx-16 lg:mx-[3rem] gap-1 xl:gap-[5rem] lg:gap-[2rem] grid grid-cols-1 sm:grid-cols-2">
+    <div className="my-10 lg:my-[72px] justify-center xl:mx-16 lg:mx-[3rem] gap-1 xl:gap-[5rem] lg:gap-[2rem] grid grid-cols-1 sm:grid-cols-2 ">
       <div>
         <Accordion
           className={styles.accordionWrap}

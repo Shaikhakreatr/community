@@ -9,7 +9,7 @@
 }
 
 .transparentInput::placeholder{
-    color:black;
+    color:#2A2A2A;
     opacity: 40%;
     font-size: 16px;
     margin-left: 40px;
@@ -18,7 +18,7 @@
     
 }
 .transparentInputArea::placeholder{
-    color:black;
+    color:#2A2A2A;
     opacity: 40%;
     font-size: 16px;
     margin-left: 40px;
@@ -28,12 +28,12 @@
 }
 .transparentInput{
     &[data-error] {
-        border-color: black;
+        border-color: #2A2A2A;
       }
 } 
 .transparentInputArea{
     &[data-error] {
-        border-color: black;
+        border-color: #2A2A2A;
       }
 } 
 .inputError{
@@ -42,7 +42,7 @@
 }
 
 .inputLabel{
-    color: black;
+    color: #2A2A2A;
     font-size: 1.125rem;
     margin-bottom: 4px;
     
@@ -57,10 +57,10 @@
     .formButton:hover {
         height: 40px;
         width: 100px;
-        color: black;
+        color: #2A2A2A;
         letter-spacing: 1px;
         background: transparent;
-        border: 1px solid black;
+        border: 1px solid #2A2A2A;
     }
 }
 
@@ -73,7 +73,7 @@
         letter-spacing: 1px;
     }
     .transparentInput::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 12px;
         margin-left: 40px;
@@ -81,7 +81,7 @@
         
     }
     .transparentInputArea::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 12px;
         margin-left: 40px;
@@ -89,7 +89,7 @@
         
     }
     .inputLabel{
-        color: black;
+        color: #2A2A2A;
         font-size: 1rem;
     }
     .sentMessage{
@@ -97,7 +97,7 @@
         font-weight: 500;
         font-size: 16px;
         margin-top: 25px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%
     }
     .transparentInputArea{
@@ -108,7 +108,7 @@
 
 @media only screen and (min-width: 1280px) {
     .transparentInput::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 14px;
         margin-left: 40px;
@@ -116,7 +116,7 @@
 
     }
     .transparentInputArea::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 14px;
         margin-left: 40px;
@@ -133,15 +133,15 @@
         height: 40.16px;
         width: 133.87px;
         letter-spacing: 1px;
-        color: black;
+        color: #2A2A2A;
         background-color: transparent;
-        border: 1px solid black;
+        border: 1px solid #2A2A2A;
     }
     .sentMessage{
         font-family: "Neue Montreal";
         font-size: 12px;
         margin-top: 12px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%;
         font-weight: 500;
     }
@@ -162,15 +162,15 @@
         height: 40.16px;
         width: 133.87px;  
         letter-spacing: 1px;
-        color: black;
+        color: #2A2A2A;
         background-color: transparent;
-        border: 1px solid black;
+        border: 1px solid #2A2A2A;
     }
     .sentMessage{
         font-family: "Neue Montreal";
         font-size: 15px;
         margin-top: 10px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%;
         font-weight: 500;
     }

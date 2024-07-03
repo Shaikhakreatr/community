@@ -15,7 +15,7 @@ const CareerOpening = () => {
           <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
-          <div className="absolute right-[-33%] top-[60%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
+          <div className="absolute right-[-54%] top-[6%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">
             <Image
               className="h-[66.47px] w-[66.47px] sm:h-[76px] sm:w-[76px] lg:h-[110px] lg:w-[110px] xl:h-[120px] xl:w-[120px]"
               src="/assets/images/careers_page/careers-img.svg"
@@ -32,25 +32,25 @@ const CareerOpening = () => {
             <Link
               href={`/careers/${item.id}`}
               key={index}
-              className={`${styles.jobBox} m-[10px] flex h-auto w-[320px] cursor-pointer flex-col justify-center rounded-[10px] border border-black p-[10px] sm:m-[25px] sm:h-[180px] sm:w-[250px] sm:rounded-[15px] sm:p-[30px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
+              className={`${styles.jobBox} m-[10px] flex h-auto w-[320px] cursor-pointer flex-col justify-center rounded-[10px] border border-[#2A2A2A] p-[10px] sm:m-[25px] sm:h-[180px] sm:w-[250px] sm:rounded-[15px] sm:p-[30px] lg:h-[230px] lg:w-[280px] lg:p-[36px] xl:h-[277px] xl:w-[345px] xl:p-[30px]`}
             >
               <div className="items-center justify-between sm:flex">
                 <h4 className="careers-box text-[18px] sm:text-[26px] sm:leading-[25px] lg:text-[30px] lg:leading-[30px] xl:text-[40px] xl:leading-[40px]">
                   {item.title}
                 </h4>
               </div>
-              <div className="block sm:hidden">
+              {/* <div className="block sm:hidden">
                 <p className="content-neue text-[10px]">{item.description}</p>
-              </div>
+              </div> */}
               <div className="mt-3 flex  items-center justify-between sm:block">
                 <div className="flex items-center sm:mt-[24px] sm:block lg:mt-[38px] xl:mt-[50px]">
                   <div
-                    className={`${styles.subBox} content-neue mr-2 h-[19px] w-[57px] rounded-[24px] border border-black text-center text-[10px] sm:mr-0 sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[106px] xl:text-[20px]`}
+                    className={`${styles.subBox} content-neue mr-2 h-[19px] w-[57px] rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:mr-0 sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[106px] xl:text-[20px]`}
                   >
                     {item.type}
                   </div>
                   <div
-                    className={`${styles.subBox} content-neue h-[19px] w-[57px] rounded-[24px] border border-black text-center text-[10px] sm:mt-[6px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:mt-[10px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[106px] xl:text-[20px]`}
+                    className={`${styles.subBox} content-neue h-[19px] w-[57px] rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:mt-[6px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:mt-[10px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[106px] xl:text-[20px]`}
                   >
                     {item.location}
                   </div>

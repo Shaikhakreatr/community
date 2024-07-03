@@ -65,7 +65,7 @@ const CollabrationSection = () => {
                 </div>
               </div>
               <div className="items-start justify-center sm:my-[40px] sm:flex lg:mx-[40px] lg:mb-[100px] lg:mt-[60px]">
-                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
+                <div className="border-[#2A2A2A] px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
                   {speakers.map((item, index) => (
                     <div key={index}>
                       <div className="page-subhead text-center text-[18px] sm:text-start sm:text-[22px] lg:text-[26px] xl:text-[28px]">
@@ -98,7 +98,7 @@ const CollabrationSection = () => {
                 </div>
               </div>
               <div className="items-start justify-center sm:my-[40px] sm:flex lg:mx-[40px] lg:mb-[100px] lg:mt-[60px]">
-                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
+                <div className="border-[#2A2A2A] px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
                   {sponsors.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-center text-[18px] sm:text-start sm:text-[22px] lg:text-[26px] xl:text-[28px]">
@@ -129,7 +129,7 @@ const CollabrationSection = () => {
                 </div>
               </div>
               <div className="items-start justify-center sm:my-[40px] sm:flex lg:mx-[40px] lg:mb-[100px] lg:mt-[60px]">
-                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
+                <div className="border-[#2A2A2A] px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
                   {spaces.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-center text-[18px] sm:text-start sm:text-[22px] lg:text-[26px] xl:text-[28px]">
@@ -161,7 +161,7 @@ const CollabrationSection = () => {
                 </div>
               </div>
               <div className="items-start justify-center sm:my-[40px] sm:flex lg:mx-[40px] lg:mb-[100px] lg:mt-[60px]">
-                <div className="border-black px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
+                <div className="border-[#2A2A2A] px-[20px] sm:w-[50%] sm:border-r sm:px-[10px] lg:px-[50px]">
                   {sellers.map((item, index) => (
                     <div key={index}>
                       <ul className="page-subhead text-center text-[18px] sm:text-start sm:text-[22px] lg:text-[26px] xl:text-[28px]">

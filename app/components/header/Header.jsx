@@ -33,7 +33,11 @@ const Header = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.closest('.nav-bar a')) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      !event.target.closest(".nav-bar a")
+    ) {
       setMenuOpen(false);
     }
   };
@@ -70,10 +74,10 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div
-              className={`nav-line1 mb-[9px] h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
+              className={`nav-line1 mb-[9px] h-[2px] w-[25px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
             ></div>
             <div
-              className={`nav-line2 h-[2px] w-[25px] rounded-[20px] bg-black transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
+              className={`nav-line2 h-[2px] w-[25px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
             ></div>
           </div>
         </div>
@@ -84,7 +88,7 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`pointer-events-auto absolute inset-0 top-[68px] mt-[29px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
+            className={`pointer-events-auto absolute inset-0 top-[68px] mt-[21px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
@@ -113,7 +117,7 @@ const Header = () => {
                   width={90}
                 />
               </div>
-              <div className="pointer-events-auto absolute left-[8%] top-[64%] sm:left-[22%] sm:top-[62%] lg:left-[14%] lg:top-[56%] xl:left-[16%] xl:top-[49%]">
+              <div className="pointer-events-auto absolute left-[8%] top-[62%] sm:left-[22%] sm:top-[62%] md:left-[27%] lg:left-[14%] lg:top-[53%] xl:left-[16%] xl:top-[49%]">
                 <Link href="/about-kreatr">
                   <Image
                     className="h-[134px] w-[134px] hover:scale-105 sm:h-[181px] sm:w-[181px] lg:h-[131px] lg:w-[141px] xl:h-[175px] xl:w-[181px]"
@@ -137,7 +141,7 @@ const Header = () => {
                   width={160}
                 />
               </div> */}
-              <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
+              <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] md:left-[27%] md:top-[86%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
                 <Link href="/events">
                   <Image
                     className="h-[48px] w-[172px] hover:scale-105 sm:h-[85px] sm:w-[236px] lg:h-[50px] lg:w-[200px] xl:h-[66px] xl:w-[236px]"
@@ -150,10 +154,10 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="pointer-events-auto absolute left-[70%] top-[8%] sm:left-[65%] sm:top-[12%] lg:left-[61%] lg:top-[15%] xl:left-[61%] xl:top-[12%]">
+              <div className="pointer-events-auto absolute left-[36.5%] top-[79%] sm:left-[41%] sm:top-[76%] md:left-[42%] lg:left-[35%] lg:top-[74%] xl:left-[38%] xl:top-[72%]">
                 <Link href="/about-community">
                   <Image
-                    className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
+                    className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] md:w-[190px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
                       "/assets/images/home_page/menu_stickers/community-withshadow.svg"
                     }
@@ -177,7 +181,7 @@ const Header = () => {
                 </Link>
               </div>
               <Image
-                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[540px] xl:w-[450px]"
+                className="pointer-events-none relative mt-[50px] h-[500px] w-[352px] rotate-[-3deg] sm:mt-[50px] sm:h-[710px] sm:w-[480px] md:w-[496px] lg:mt-0 lg:h-[430px] lg:w-[340px] xl:h-[540px] xl:w-[450px]"
                 src={"/assets/images/home_page/logo/ziplock-cover.png"}
                 alt="Ziplock cover image"
                 height={430}

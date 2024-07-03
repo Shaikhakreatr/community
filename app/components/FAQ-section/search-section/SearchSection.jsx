@@ -5,7 +5,7 @@ const SearchSection = () => {
   return (
     <div>
       <div className="flex flex-col items-center sm:mb-0 mb-[50px] justify-center mt-[44px] sm:mt-[60px] lg:mt-[80px] lg:mb-[3.5rem] xl:mt-[100px] xl:mb-[7rem]">
-        <h1 className="page-heading leading-4 sm:mt-[45px] sm:mb-[45px] mt-[45px] relative text-center sm:text-[3.75rem] lg:text-[70px] xl:text-[96px] text-[36px]">
+        <h1 className="page-heading leading-4 sm:mt-[45px] sm:mb-[45px] mt-[45px] relative text-center sm:text-[73px] lg:text-[94px] xl:text-[110px] text-[40px]">
           Frequently Asked<span className="sm:hidden block"><br /></span> QuestIons
           <span className="absolute xl:top-[246%] xl:right-[-7%] lg:top-[168%] lg:right-[-12%] sm:top-[150%] sm:right-[-10%] right-[22%] bottom-[-90%]">
             <Image

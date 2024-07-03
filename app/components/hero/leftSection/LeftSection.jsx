@@ -180,16 +180,16 @@ const LeftSection = () => {
                 </div>
 
                 <div className="ml-2 flex w-2/4 flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Community</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Klan</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Collective</p>
                   </div>
-                  <div className="mb-2 mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2 mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Alliance</p>
                   </div>
                 </div>
@@ -214,16 +214,16 @@ const LeftSection = () => {
                   </p>
                 </div>
                 <div className="ml-2 flex w-[52%] flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Agency</p>
                   </div>
-                  {/* <div className="mb-2  mr-2 h-fit rounded-3xl border  border-black px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  {/* <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Studio</p>
                   </div> */}
-                  <div className="mb-2  h-fit rounded-3xl border border-black  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Evil-Corp</p>
                   </div>
                 </div>
@@ -240,8 +240,8 @@ const LeftSection = () => {
           href="https://play.google.com/store/apps/details?id=com.kreatr"
         >
           <div
-            className={`flex cursor-pointer items-center rounded-full bg-black text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
-                    ${logoPlayActive ? "button-text border border-black bg-transparent text-black" : "career-btn"}`}
+            className={`flex cursor-pointer items-center rounded-full bg-[#2A2A2A] text-[1rem]   sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+                    ${logoPlayActive ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]" : "career-btn"}`}
             onMouseEnter={handlePlayStoreEnter}
             onMouseLeave={handlePlayStoreLeave}
           >
@@ -275,10 +275,10 @@ const LeftSection = () => {
           href="https://apps.apple.com/in/app/kreatr/id6474967284"
         >
           <div
-            className={`flex cursor-pointer items-center rounded-full bg-black  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+            className={`flex cursor-pointer items-center rounded-full bg-[#2A2A2A]  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
-              ? "button-text border border-black bg-transparent text-black"
+              ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]"
               : "career-btn "
           }`}
             onMouseEnter={handleAppStoreEnter}
