@@ -61,7 +61,7 @@ const AboutKreatrHeader = () => {
             </div>
             <div className=" mt-[24px] flex w-full justify-center sm:mt-[24px]  sm:block  lg:mt-[24px] ">
               <Link href="/join-our-klan">
-                <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent  lg:h-[48px] lg:w-[220px] lg:text-[18px] xl:h-[58px] xl:w-[251px] xl:text-[24px]">
+                <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  sm:hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent  lg:h-[48px] lg:w-[220px] lg:text-[18px] xl:h-[58px] xl:w-[251px] xl:text-[24px]">
                   Join Our Initiative
                 </div>
               </Link>
