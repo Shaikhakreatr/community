@@ -38,21 +38,21 @@ const PastHero = ({ pastData }) => {
                   Speaker: {pastData.speakerName}
                 </div>
               </div>
-              <div className="mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
+              <div className=" flex items-center justify-center mt-[44px] sm:mt-[48px] lg:mt-[58px] xl:mt-[72px] ">
                 <img
                   className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px]"
                   src={pastData.coverImg}
                   alt="main-img"
                 />
               </div>
-              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[13px] sm:mt-[18px] sm:text-[18px] lg:mt-[24px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
+              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
                 <div>{pastData.date}</div>
                 <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
                 <div>{pastData.location}</div>
               </div>
             </div>
             <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
-              <h3 className="content-neue-medium mb-[14px]  text-center text-[17px] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[36px]">
+              <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
                 About
               </h3>
 
@@ -60,9 +60,9 @@ const PastHero = ({ pastData }) => {
                 <p>{pastData.description}</p>
               </div>
             </div>
-            <div className="mt-[20px] sm:mt-[50px] xl:mt-[72px]">
+            <div className="mt-[20px] sm:mt-[50px] xl:mt-[72px] ">
               <div className="flex items-center justify-center">
-                <h1 className="content-neue-medium mr-[20px]  text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px] ">
+                <h1 className="content-neue-medium mr-[20px]  text-[17px] sm:text-[20px] lg:text-[30px] xl:text-[34px] ">
                   Behold, Snapshots!
                 </h1>
               </div>

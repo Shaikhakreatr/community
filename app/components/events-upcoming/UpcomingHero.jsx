@@ -121,7 +121,7 @@ const UpcomingHero = ({ upcomingData }) => {
             <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
-            <div className="my-[10px] flex sm:mb-[20px] sm:mt-[20px]">
+            <div className="mt-[22px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
               <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-black text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
@@ -132,7 +132,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
               <img
                 className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px] "
                 src={upcomingData.coverImg}
@@ -141,7 +141,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 width={0}
               />
             </div>
-            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[5px] text-[11px] sm:mt-[18px] sm:gap-[18px] sm:text-[15px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
+            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
               <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
@@ -150,7 +150,7 @@ const UpcomingHero = ({ upcomingData }) => {
               <div className="h-[20px] sm:h-[35px] sm:border-r sm:border-black"></div>
               <div
                 onClick={scrollToDiv}
-                className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[48px] lg:w-[261px] lg:rounded-[80px] lg:text-[22px] xl:h-[54px] xl:w-[281px] xl:text-[30px]"
+                className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#3C9E3C] hover:bg-transparent hover:text-[#3C9E3C] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[38px] lg:w-[221px] lg:rounded-[80px] lg:text-[22px] xl:h-[45px] xl:w-[251px] xl:text-[30px]"
               >
                 Book Now
               </div>
@@ -164,18 +164,18 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
             </div>
           </div>
-          <div className="mx-[20px] mt-[25px] sm:mt-[60px] lg:mx-[130px] xl:mx-[176px]">
-            <h3 className="content-neue-medium text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[26px] xl:text-[34px]">
+          <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+            <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
               About
             </h3>
             <br />
-            <div className="content-neue text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[22px] lg:leading-[22px] xl:text-[28px] xl:leading-[33px]">
+            <div className="content-neue whitespace-pre-line text-center text-[14px] leading-[20px] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>
-          <div className="mt-[30px] lg:mt-[50px]">
+          <div className="mt-[20px] lg:mt-[50px] xl:mt-[72px]">
             <div className="flex items-center justify-center">
-              <h1 className="content-neue-medium sm:mr-[20px] mr-[10px]  text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
+              <h1 className="content-neue-medium mr-[10px] text-[16px]  sm:mr-[20px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
               <img
@@ -186,15 +186,15 @@ const UpcomingHero = ({ upcomingData }) => {
                 width={0}
               />
             </div>
-            <div className="mt-[15px] flex flex-wrap items-center justify-center gap-2 sm:gap-3 lg:gap-5 xl:gap-10">
+            <div className="mt-[20px] flex flex-wrap items-center justify-center gap-1 sm:gap-4 lg:gap-[30px]">
               {upcomingData.images.map((item, index) => (
                 <img
                   key={index}
-                  className={`mr-1 h-[106px] w-[106px] object-cover object-center sm:mr-4 sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                  className={` h-[106px] w-[106px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
                   height={0}
-                width={0}
+                  width={0}
                 />
               ))}
             </div>
@@ -204,7 +204,7 @@ const UpcomingHero = ({ upcomingData }) => {
             id="target-section"
             className="mt-[30px] sm:mt-[50px]"
           >
-            <h1 className="page-subhead text-center text-[16px] sm:text-[22px] lg:text-[26px] xl:text-[34px]">
+            <h1 className="content-neue-medium text-center text-[16px] sm:text-[22px] lg:text-[30px] xl:text-[34px]">
               Fill in the details
             </h1>
             <form onSubmit={handleSubmit} className="mt-[10px] sm:mt-[20px]">
