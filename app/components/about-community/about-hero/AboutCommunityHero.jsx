@@ -21,7 +21,7 @@ const AboutCommunityHero = () => {
                 Who Is the
                 <br /> communIty for?
               </h1>
-              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px]  sm:text-start sm:text-[20px] lg:mt-[28px] lg:text-[22px] lg:leading-[24px] xl:mt-[38px] xl:text-[24px] xl:leading-[23px] ">
+              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px]  sm:text-start sm:text-[20px] lg:mt-[28px] lg:text-[18px] lg:leading-[22px] xl:mt-[38px] xl:text-[22px] xl:leading-[26px] ">
                 Our exclusive community caters to creative minds and designers
                 committed to making a positive impact through their work. It
                 provides a secure environment for continuous learning and growth
@@ -44,11 +44,11 @@ const AboutCommunityHero = () => {
                 alt="Community image"
               />
             </div>
-            <div className="box2 mt-[265px] h-[470px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[460px] lg:w-[590px] lg:p-[48px] xl:ml-[-85px] xl:h-[534px] xl:w-[697px] xl:p-[80px]">
+            <div className="box2 mt-[265px] h-[470px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[460px] lg:w-[590px] lg:p-[58px] xl:ml-[-85px] xl:h-[534px] xl:w-[697px] xl:p-[80px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 JOIN US IF YOU
               </h1>
-              <ul className="content-neue ml-[26px] mt-[15px]  list-disc text-[16px] leading-[18px] sm:text-[20px] lg:mt-[28px] lg:text-[22px] lg:leading-[24px] xl:mt-[38px] xl:text-[24px] xl:leading-[23px]">
+              <ul className="content-neue ml-[26px] mt-[15px]  list-disc text-[16px] leading-[18px] sm:text-[20px] lg:mt-[28px] lg:text-[18px] lg:leading-[22px] xl:mt-[38px] xl:text-[22px] xl:leading-[26px]">
                 <li>Are a creative or a designer.</li>
                 <li> Stare at a blank canvas for way too long.</li>
                 <li> Are seeking guidance on creative projects.</li>
@@ -72,11 +72,11 @@ const AboutCommunityHero = () => {
                 WHY SHOULD YOU
                 <br /> JOIN US?
               </h1>
-              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px] sm:mt-[20px] sm:text-start sm:text-[20px] sm:leading-[23px]  lg:mt-[38px] lg:text-[22px] lg:leading-[24px] xl:text-[24px]">
+              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px] sm:mt-[20px] sm:text-start sm:text-[20px] sm:leading-[23px]  lg:mt-[38px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 Joining our community allows you to connect with fellow
                 creatives, collaborate, and find inspiration.
               </p>
-              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px] sm:text-start sm:text-[20px] sm:leading-[23px] lg:text-[22px] lg:leading-[24px] xl:text-[24px]">
+              <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px] sm:text-start sm:text-[20px] sm:leading-[23px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 With us, you can build relationships with like-minded
                 individuals, share ideas, and enhance your design skills in a
                 supportive environment.
@@ -103,7 +103,7 @@ const AboutCommunityHero = () => {
                 hOW CAN YOU BE A PART
                 <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?
               </h1>
-              <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[22px] lg:leading-[24px] xl:text-[24px] xl:leading-[23px]">
+              <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 Follow us on our socials and Download the Kreatr app!
               </p>
               <div className="mt-[18px] flex items-center justify-center sm:justify-start lg:mt-[30px]">
