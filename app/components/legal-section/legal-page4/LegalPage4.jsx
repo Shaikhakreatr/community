@@ -3,7 +3,7 @@ import React from "react";
 
 const LegalPage4 = () => {
   return (
-    <div>
+    <div className="content-neue text-[14px] leading-[16px] sm:text-[16px] sm:leading-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] xl:mt-[72px] lg:mt-[58px] sm:mt-[48px] mt-[32px]">
       {`This Agreement governs your use of this mobile application for Android,
       iOS (collectively, including all related documentation, the
       "Application"). The Application is licensed, not sold, to you.`}
@@ -342,7 +342,7 @@ const LegalPage4 = () => {
       We have the right to:
       <br />
       <br />
-      <ul className="list-disc ml-[40px]">
+      <ul className="ml-[40px] list-disc">
         <li>
           Remove or refuse to post any User Contributions for any or no reason
           in our sole discretion.

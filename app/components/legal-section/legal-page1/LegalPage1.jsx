@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LegalPage1 = () => {
   return (
-    <div className="content-neue xl:text-[22px] xl:leading-[26px] lg:leading-[22px] lg:text-[18px] sm:text-[16px] sm:leading-[18px] text-[14px] leading-[16px]">
+    <div className="content-neue mt-[32px] text-[14px] leading-[16px] sm:mt-[48px] sm:text-[16px] sm:leading-[18px] lg:mt-[58px] lg:text-[18px] lg:leading-[22px] xl:mt-[72px] xl:text-[22px] xl:leading-[26px]">
       {`This Agreement governs your use of this mobile application for
           Android, iOS (collectively, including all related documentation, the
           "Application"). The Application is licensed, not sold, to you.`}{" "}
@@ -31,7 +31,7 @@ const LegalPage1 = () => {
       <br />
       <br />
       <p className="sm:ml-[30px]">
-      1. <u>  License Grant.</u>: Subject to the terms of this Agreement, the
+        1. <u> License Grant.</u>: Subject to the terms of this Agreement, the
         Company grants you a limited, non-exclusive and nontransferable license
         to:<br></br>
         <br />
@@ -51,7 +51,7 @@ const LegalPage1 = () => {
         </ul>
         <br />
         <br />
-        2. <u>  License Restrictions</u>: Licensee shall not:
+        2. <u> License Restrictions</u>: Licensee shall not:
         <br />
         <br />
         <p className="ml-[20px]">
@@ -238,31 +238,31 @@ apply to you.`}
         <br />
         <br />
         10. <u> Limitation of Liability </u>:To the fullest extent permitted by
-applicable law, in no event will the Company or its Affiliates, or
-any of its or their respective Licensors or Service Providers, have
-any liability arising from or related to your use of or inability to
-use the application or the content and services for:
-<br /><br />
-<p className="ml-[20px]">
-(a) personal injury, property damage, lost profits, cost of
-substitute goods or services, loss of data, loss of goodwill,
-business interruption, computer failure or malfunction, or
-any other consequential, incidental, indirect, exemplary,
-special, or punitive damages;
-<br /><br />
-(b) direct damages in amounts that, in the aggregate,
-exceed the amount actually paid by you for the
-application.
-
-  </p><br /><br />
-The foregoing limitations will apply whether such damages
-arise out of breach of contract, tort (including negligence), or
-
-otherwise, regardless of whether such damages were
-foreseeable or the company was advised of the possibility of
-such damages. Some jurisdictions do not allow certain
-limitations of liability, so some or all of the above limitations of
-liability may not apply to you.
+        applicable law, in no event will the Company or its Affiliates, or any
+        of its or their respective Licensors or Service Providers, have any
+        liability arising from or related to your use of or inability to use the
+        application or the content and services for:
+        <br />
+        <br />
+        <p className="ml-[20px]">
+          (a) personal injury, property damage, lost profits, cost of substitute
+          goods or services, loss of data, loss of goodwill, business
+          interruption, computer failure or malfunction, or any other
+          consequential, incidental, indirect, exemplary, special, or punitive
+          damages;
+          <br />
+          <br />
+          (b) direct damages in amounts that, in the aggregate, exceed the
+          amount actually paid by you for the application.
+        </p>
+        <br />
+        <br />
+        The foregoing limitations will apply whether such damages arise out of
+        breach of contract, tort (including negligence), or otherwise,
+        regardless of whether such damages were foreseeable or the company was
+        advised of the possibility of such damages. Some jurisdictions do not
+        allow certain limitations of liability, so some or all of the above
+        limitations of liability may not apply to you.
         <br />
         <br />
         11. <u> Indemnification</u>{" "}
@@ -289,18 +289,18 @@ liability may not apply to you.
         releasing or otherwise making the Application available.
         <br />
         <br />
-        13. <u> Severability</u> : If any provision of this Agreement is illegal or
-        unenforceable under applicable law, the remainder of the provision will
-        be amended to achieve as closely as possible the effect of the original
-        term and all other provisions of this Agreement will continue in full
-        force and effect.
+        13. <u> Severability</u> : If any provision of this Agreement is illegal
+        or unenforceable under applicable law, the remainder of the provision
+        will be amended to achieve as closely as possible the effect of the
+        original term and all other provisions of this Agreement will continue
+        in full force and effect.
         <br />
         <br />
-        14. <u> Governing Law</u> : This Agreement is governed by and construed in
-        accordance with the laws of Bengaluru, Karnataka, without giving effect
-        to any choice or conflict of law provision or rule. Any legal suit,
-        action or proceeding arising out of or related to this Agreement or the
-        Application shall be instituted exclusively in the courts of the
+        14. <u> Governing Law</u> : This Agreement is governed by and construed
+        in accordance with the laws of Bengaluru, Karnataka, without giving
+        effect to any choice or conflict of law provision or rule. Any legal
+        suit, action or proceeding arising out of or related to this Agreement
+        or the Application shall be instituted exclusively in the courts of the
         Bengaluru, Karnataka, although we retain the right to bring any suit,
         action or proceeding against you for breach of the Agreement in your
         jurisdiction of residence or any other relevant jurisdiction. You waive
@@ -308,27 +308,27 @@ liability may not apply to you.
         courts and to venue in such courts.
         <br />
         <br />
-        15. <u> Limitation of Time to File Claims</u> :Any cause of action or claim
-you may have arising out of or relating to this agreement or the
-Application must be commenced within one (1) year after the
-cause of action accrues; otherwise, such cause of action or
-claim is permanently barred.
+        15. <u> Limitation of Time to File Claims</u> :Any cause of action or
+        claim you may have arising out of or relating to this agreement or the
+        Application must be commenced within one (1) year after the cause of
+        action accrues; otherwise, such cause of action or claim is permanently
+        barred.
         <br />
         <br />
-        16. <u> Entire Agreement</u> : This End User Licence Agreement, our Terms &
-        Conditions, Terms of Sale, Refund and Cancellation Policy, and our
-        Privacy Policy constitute the entire agreement between you and the
+        16. <u> Entire Agreement</u> : This End User Licence Agreement, our
+        Terms & Conditions, Terms of Sale, Refund and Cancellation Policy, and
+        our Privacy Policy constitute the entire agreement between you and the
         Company with respect to the Application and supersede all prior or
         contemporaneous understandings and agreements, whether written or oral,
         with respect to the Application.
         <br />
         <br />
-        17. <u> Waiver</u> : No failure to exercise, and no delay in exercising, on
-        the part of either party, any right or any power hereunder shall operate
-        as a waiver thereof, nor shall any single or partial exercise of any
-        right or power hereunder preclude further exercise of that or any other
-        right hereunder. In the event of a conflict between this Agreement and
-        any applicable purchase or other terms, the terms of this Agreement
+        17. <u> Waiver</u> : No failure to exercise, and no delay in exercising,
+        on the part of either party, any right or any power hereunder shall
+        operate as a waiver thereof, nor shall any single or partial exercise of
+        any right or power hereunder preclude further exercise of that or any
+        other right hereunder. In the event of a conflict between this Agreement
+        and any applicable purchase or other terms, the terms of this Agreement
         shall govern.
         <br />
         <br />© 2024 Kreatrminds Private Limited. All Rights Reserved.
