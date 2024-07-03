@@ -11,14 +11,14 @@ const LeftGifSection = () => {
         <h1>Report a Pest</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 lg:mt-[60px] lg:gap-10 xl:gap-12  ">
-        <div className="content-neue col-span-2 hidden sm:ml-[-45px] sm:mt-[60px] sm:block lg:ml-[34px] lg:mt-[40px] xl:ml-[9%] xl:mt-[20%]">
-          <p className=" contact-text leading-5 sm:text-[14px] lg:leading-[22px] xl:leading-[26px] lg:text-[18px] xl:text-[22px]">
+        <div className="content-neue col-span-2 hidden sm:ml-[-45px] sm:mt-[60px] sm:block lg:ml-[31px] lg:mt-[40px] xl:ml-[5.4%] xl:mt-[20%]">
+          <p className=" contact-text leading-5 sm:text-[14px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
             We consistently strive to make your experience better.
           </p>
         </div>
         <div className="sm:col-span-3 ">
           <Image
-            className="h-[8.5625rem] object-cover object-center w-[19.625rem] rounded-xl sm:h-[130px] sm:w-[365px] lg:h-[171px] lg:w-[400px] xl:h-[191px] xl:w-[418px]"
+            className="h-[8.5625rem] w-[19.625rem] rounded-xl object-cover object-center sm:h-[130px] sm:w-[365px] lg:h-[171px] lg:w-[400px] xl:h-[191px] xl:w-[418px]"
             src="/assets/images/bug-report-page/bug-gif.gif"
             alt="form img"
             height={171}
@@ -28,7 +28,8 @@ const LeftGifSection = () => {
         </div>
         <div className="content-neue mt-[50px] flex flex-col items-center justify-center sm:hidden ">
           <p className=" contact-text  text-center text-[17px] leading-5">
-            We consistently strive to<br /> make your experience better.
+            We consistently strive to
+            <br /> make your experience better.
           </p>
         </div>
       </div>
