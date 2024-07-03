@@ -80,7 +80,7 @@ const CollabrationForm = () => {
             sendFormData(values);
           })}
         >
-          <div className="mt-[20px] w-[100%] sm:mt-[40px] lg:mb-[25px] lg:w-[50%]">
+          <div className="mt-[20px] w-[100%] sm:mt-[40px] lg:mb-[22px] lg:w-[50%]">
             <label className="content-neue text-[16px] sm:text-[18px] mb-[10px]">
               Collaboration Type<span className={styles.dropDownStar}>*</span>
             </label>
