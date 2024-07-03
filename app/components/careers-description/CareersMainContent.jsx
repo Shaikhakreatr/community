@@ -41,15 +41,15 @@ const CareersMainContent = ({ careerData }) => {
           <h4 className="content-neue-medium mr-3 mt-[-2px] text-[18px] capitalize sm:mr-[18px] sm:mt-[-4px] sm:text-[24px] lg:mt-[-6px] lg:text-[28px] xl:text-[33px]">
             {careerData.title}
           </h4>
-          <div className="mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
+          <div className="content-neue flex justify-center items-center mr-[8px] h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:mr-[15px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
             {careerData.type}
           </div>
-          <div className=" h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[28px] lg:w-[96px] lg:text-[16px] xl:h-[34px] xl:w-[95px] xl:text-[19px]">
+          <div className="content-neue flex justify-center items-center h-[17px] w-[53px] rounded-[24px] border border-black text-center text-[10px] sm:h-[22px] sm:w-[70px] sm:text-[14px] lg:h-[30px] lg:w-[96px] lg:text-[16px] xl:h-[36px] xl:w-[95px] xl:text-[19px]">
             {careerData.location}
           </div>
         </div>
         <div className="mt-[10px] sm:mb-4  sm:mt-0">
-          <p className="content-neue text-[12px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[24px]">
+          <p className="content-neue text-[12px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
             {careerData.description}
           </p>
 
@@ -58,7 +58,7 @@ const CareersMainContent = ({ careerData }) => {
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
               {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -70,14 +70,14 @@ const CareersMainContent = ({ careerData }) => {
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[24px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
               {careerData.qualifications.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="mt-[24px] flex justify-center sm:mt-[50px] lg:mb-[24px] lg:mt-[24px]">
+        <div className="mt-[24px] flex justify-center sm:mt-[50px] lg:mb-[24px] lg:mt-[44px]">
           <Link
             href="https://www.linkedin.com/company/the-kreatr/"
             target="_blank"
