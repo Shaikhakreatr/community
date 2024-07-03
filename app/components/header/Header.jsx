@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +33,7 @@ const Header = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
+    if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.closest('.nav-bar a')) {
       setMenuOpen(false);
     }
   };
@@ -125,7 +126,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
+              {/* <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
                 <Image
                   className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[80px] lg:w-[160px] xl:h-[95px] xl:w-[185px]"
                   src={
@@ -135,7 +136,7 @@ const Header = () => {
                   height={90}
                   width={160}
                 />
-              </div>
+              </div> */}
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
                 <Link href="/events">
                   <Image
@@ -144,15 +145,15 @@ const Header = () => {
                       "/assets/images/home_page/menu_stickers/events-withshadow.svg"
                     }
                     alt="events image"
-                    height={54}
+                    height={66}
                     width={200}
                   />
                 </Link>
               </div>
-              <div className="pointer-events-auto absolute left-[37%] top-[80%] sm:left-[38%] sm:top-[77%] lg:left-[33%] lg:top-[75%] xl:left-[36%] xl:top-[71%]">
-                <Link href="/about-community">
+              <div className="pointer-events-auto absolute left-[70%] top-[8%] sm:left-[65%] sm:top-[12%] lg:left-[61%] lg:top-[15%] xl:left-[61%] xl:top-[12%]">
+                <Link href="/community">
                   <Image
-                    className="h-[50px] w-[118px] hover:scale-105 sm:h-[76px] sm:w-[200px] lg:h-[55px] lg:w-[170px] xl:h-[90px] xl:w-[190px]"
+                    className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
                       "/assets/images/home_page/menu_stickers/community-withshadow.svg"
                     }
