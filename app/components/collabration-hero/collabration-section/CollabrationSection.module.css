@@ -11,6 +11,7 @@
     font-family: 'Neue Montreal';;
     margin-right: 10px;
     padding: 12px 28px;
+    font-size: 16px;
   }
   
   .activeTab {
@@ -21,6 +22,7 @@
     color: #FFFDEE;
     font-family: 'Neue Montreal';
     padding: 12px 28px;
+    font-size: 16px;
   }
   
   @media only screen and (max-width: 639px){
