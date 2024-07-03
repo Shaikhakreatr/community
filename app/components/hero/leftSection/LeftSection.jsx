@@ -263,7 +263,7 @@ const LeftSection = () => {
                 />
               </div>
             )}
-            <p className="button-store ml-[22px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
+            <p className="button-store ml-[20%] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
               Get it on Playstore
             </p>
           </div>
@@ -299,7 +299,7 @@ const LeftSection = () => {
             )}
             <p
               className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ${
-                logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
+                logoAppActive ? "ml-[10%]" : "ml-[10%] "
               } `}
             >
               Available on
