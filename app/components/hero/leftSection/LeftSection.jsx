@@ -29,10 +29,10 @@ const LeftSection = () => {
     if (typeof Audio !== "undefined") {
       audioRef.current = new Audio("/assets/audio/kreatr-audio.mp3");
     }
-    if(audioRef.current.pause()){
+    if (audioRef.current.pause()) {
       setSoundActive(false);
     }
-  },[audioRef]);
+  }, [audioRef]);
 
   const handleSoundClick = () => {
     if (soundActive) {
@@ -117,7 +117,7 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-3 flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[70%] xl:w-[73%]">
+      <div className=" my-[1.75rem] flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[70%] xl:w-[73%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-24">
