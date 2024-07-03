@@ -17,6 +17,7 @@ const PastHero = ({ pastData }) => {
   if (!isDataAvailable) {
     return <div>No Data Available</div>;
   }
+
   return (
     <>
       <section>
@@ -44,18 +45,18 @@ const PastHero = ({ pastData }) => {
                   alt="main-img"
                 />
               </div>
-              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[13px] sm:mt-[18px] lg:mt-[24px] sm:text-[18px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
+              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[13px] sm:mt-[18px] sm:text-[18px] lg:mt-[24px] lg:gap-[18px] lg:text-[22px] xl:text-[30px]">
                 <div>{pastData.date}</div>
                 <div className="h-[20px] border-r border-black sm:h-[35px]"></div>
                 <div>{pastData.location}</div>
               </div>
             </div>
-            <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mt-[72px] xl:mx-[145px]">
-              <h3 className="content-neue-medium text-center  sm:text-start text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px] sm:mb-[24px] mb-[14px]">
+            <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+              <h3 className="content-neue-medium mb-[14px]  text-center text-[17px] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 About
               </h3>
-              
-              <div className="content-neue text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+
+              <div className="content-neue whitespace-pre-line text-center text-[14px] leading-[20px] sm:text-start sm:text-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 <p>{pastData.description}</p>
               </div>
             </div>
@@ -65,7 +66,7 @@ const PastHero = ({ pastData }) => {
                   Behold, Snapshots!
                 </h1>
               </div>
-              <div className="mt-[20px] flex items-center justify-center lg:gap-[30px] gap-1 sm:gap-4 sm:mt-[40px]">
+              <div className="mt-[20px] flex items-center justify-center gap-1 sm:mt-[40px] sm:gap-4 lg:gap-[30px]">
                 {pastData.images.map((item, index) => (
                   <img
                     key={index}

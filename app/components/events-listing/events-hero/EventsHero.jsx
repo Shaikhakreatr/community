@@ -21,7 +21,7 @@ const EventsHero = () => {
 
         const upcoming = data.filter((event) => event.eventType === "upcoming");
         const past = data.filter((event) => event.eventType === "past");
-
+        
         setUpcomingEvents(upcoming);
         setPastEvents(past);
       } catch (error) {
