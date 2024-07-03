@@ -7,11 +7,11 @@
 .transparentInput{
     background-color: transparent;
     padding-bottom: 2px;
-    border-color: black;
+    border-color: #2A2A2A;
 }
 
 .transparentInput::placeholder{
-    color:black;
+    color:#2A2A2A;
     opacity: 40%;
     font-size: 12px;
     margin-left: 40px;
@@ -20,7 +20,7 @@
     
 }
 .transparentInputArea::placeholder{
-    color:black;
+    color:#2A2A2A;
     opacity: 40%;
     font-size: 12px;
     margin-left: 40px;
@@ -30,12 +30,12 @@
 }
 .transparentInput{
     &[data-error] {
-        border-color: black;
+        border-color: #2A2A2A;
       }
 } 
 .transparentInputArea{
     &[data-error] {
-        border-color: black;
+        border-color: #2A2A2A;
       }
 } 
 .inputError{
@@ -48,24 +48,25 @@
 } */
 
 .inputLabel{
-    color: black;
+    color: #2A2A2A;
     font-size: 1.125rem;
     margin-bottom: 4px;
 }
 .dropDown{ 
+    
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid #2A2A2A;
 }
 .dropDownStar{
     color: #DE033E;
 }
 .selectInput{
     background: transparent;
-    border-color: black;
+    border-color: #2A2A2A;
 }
 .selectInput::placeholder{
     background: transparent;
-    border-color: black;
+    border-color: #2A2A2A;
     font-family: "Neue Montreal" ;
     font-size: 12px;
 }
@@ -82,20 +83,20 @@
     height: 40px;
     width: 100px;
     color: #FFFDEE;
-    background-color:#3C9E3C ;
+    background-color:#2A2A2A ;
     letter-spacing: 1px;
 }
 .formButton:hover {
     height: 40px;
     width: 100px;
     background-color: transparent;
-    color:#3C9E3C ;
-    border: 1px solid #3C9E3C;
+    color:#2A2A2A ;
+    border: 1px solid #2A2A2A;
     letter-spacing: 1px;
 }
 @media (min-width: 640px) and (max-width: 1279px){
     .inputLabel{
-        color: black;
+        color: #2A2A2A;
         font-size: 1.125rem;
         margin-bottom: 4px;
         margin-top: 18px;
@@ -107,18 +108,18 @@
         height: 40px;
         width: 260px;
         color: #FFFDEE;
-        background-color:#3C9E3C ;
+        background-color:#2A2A2A ;
         letter-spacing: 1px;
     }
     .formButton:hover {
         height: 40px;
         width: 260px;
         color: #FFFDEE;
-        background-color:#3C9E3C ;
+        background-color:#2A2A2A ;
         letter-spacing: 1px;
     }
     .transparentInput::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 12px;
         margin-left: 40px;
@@ -126,7 +127,7 @@
         
     }
     .transparentInputArea::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 12px;
         margin-left: 40px;
@@ -134,7 +135,7 @@
         
     }
     .inputLabel{
-        color: black;
+        color: #2A2A2A;
         font-size: 1rem;
         margin-top: 20px;
     }
@@ -143,7 +144,7 @@
         font-weight: 500;
         font-size: 16px;
         margin-top: 25px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%
     }
     .transparentInputArea{
@@ -155,12 +156,12 @@
 @media only screen and (min-width: 1280px) {
     .selectInput::placeholder{
         background: transparent;
-        border-color: black;
+        border-color: #2A2A2A;
         font-family: "Neue Montreal" ;
         font-size: 14px;
     }
     .transparentInput::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 14px;
         margin-left: 40px;
@@ -168,7 +169,7 @@
 
     }
     .transparentInputArea::placeholder{
-        color:black;
+        color:#2A2A2A;
         opacity: 40%;
         font-size: 14px;
         margin-left: 40px;
@@ -179,15 +180,15 @@
         height: 40.16px;
         width: 133.87px;
         color: #FFFDEE;
-        background-color:#3C9E3C ;
+        background-color:#2A2A2A ;
         letter-spacing: 1px;
     }
     .formButton:hover {
         height: 40.16px;
         width: 133.87px; 
         background-color: transparent;
-        color:#3C9E3C ;
-        border: 1px solid #3C9E3C;
+        color:#2A2A2A ;
+        border: 1px solid #2A2A2A;
         letter-spacing: 1px;
     }
     
@@ -195,7 +196,7 @@
         font-family: "Neue Montreal";
         font-size: 12px;
         margin-top: 12px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%;
         font-weight: 500;
     }
@@ -210,22 +211,22 @@
         height: 40.16px;
         width: 133.87px;  
         color: #FFFDEE;
-        background-color:#3C9E3C ;
+        background-color:#2A2A2A ;
         letter-spacing: 1px;
     }
     .formButton:hover {
         height: 40.16px;
         width: 133.87px; 
         background-color: transparent;
-        color:#3C9E3C ;
-        border: 1px solid #3C9E3C;
+        color:#2A2A2A ;
+        border: 1px solid #2A2A2A;
         letter-spacing: 1px;
     }
     .sentMessage{
         font-family: "Neue Montreal";
         font-size: 15px;
         margin-top: 10px;
-        color:black;
+        color:#2A2A2A;
         opacity:70%;
         font-weight: 500;
     }

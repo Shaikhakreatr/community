@@ -474,7 +474,7 @@ const BlogListingHero = () => {
 
   return backendData.length !== 0 ? (
     <div className="flex h-full w-full flex-col items-center justify-center xl:mt-[100px] lg:mt-[60px] sm:mt-[60px] mt-[44px]">
-      <div>
+      <div className="xl:mb-[72px] lg:mb-[58px] sm:mb-[48px] mb-[18px]">
         <h1
           className={
             isMobile
