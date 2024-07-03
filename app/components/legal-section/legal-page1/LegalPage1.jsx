@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LegalPage1 = () => {
   return (
-    <div>
+    <div className="content-neue xl:text-[22px] xl:leading-[26px] lg:leading-[22px] lg:text-[18px] sm:text-[16px] sm:leading-[18px] text-[14px] leading-[16px]">
       {`This Agreement governs your use of this mobile application for
           Android, iOS (collectively, including all related documentation, the
           "Application"). The Application is licensed, not sold, to you.`}{" "}
