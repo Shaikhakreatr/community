@@ -47,7 +47,7 @@ const PastHero = ({ pastData }) => {
               </div>
               <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
                 <div>{pastData.date}</div>
-                <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] sm:border-2"></div>
+                <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
                 <div>{pastData.location}</div>
               </div>
             </div>

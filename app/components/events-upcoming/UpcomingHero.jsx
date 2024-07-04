@@ -141,11 +141,11 @@ const UpcomingHero = ({ upcomingData }) => {
             </div>
             <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[1.9px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
-              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] sm:border-2"></div>
+              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
-              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] sm:border-2"></div>
+              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{`₹  ${upcomingData.price}`}</div>
-              <div className="h-[20px] sm:h-[35px] sm:border-2  sm:border-[#2A2A2A]"></div>
+              <div className="h-[20px] sm:h-[35px] sm:border-r  sm:border-[#2A2A2A]"></div>
               <div
                 onClick={scrollToDiv}
                 className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[14px] hover:border hover:border-[#2A2A2A] hover:bg-transparent hover:text-[#2A2A2A]  sm:flex sm:h-[30px] sm:w-[200px] sm:text-[16px] lg:h-[38px] lg:w-[221px] lg:rounded-[80px] lg:text-[18px] xl:h-[45px] xl:w-[251px] xl:text-[22px]"
