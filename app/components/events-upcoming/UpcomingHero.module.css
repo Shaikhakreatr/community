@@ -86,14 +86,14 @@
     }    
     .formButton {
         height: 26px;
-        width: 118px;
+        width: 150px;
         color: #FFFDEE;
         background-color:#2A2A2A ;
         font-size: 12px;
     }
     .formButton:hover {
         height: 26px;
-        width: 118px;
+        width: 150px;
         color: #FFFDEE;
         background-color:#2A2A2A ;
         font-size: 12px;

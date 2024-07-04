@@ -146,7 +146,7 @@ const CollabrationForm = () => {
             {...form.getInputProps("email")}
           />
           <br className="hidden lg:block" />
-          <div className="mt-[24px] items-center text-center sm:mt-[24px]  sm:flex lg:mt-[18px] lg:gap-3 xl:mt-[24px]  xl:gap-5">
+          <div className="mt-[40px] items-center text-center sm:mt-[24px]  sm:flex lg:mt-[18px] lg:gap-3 xl:mt-[24px]  xl:gap-5">
             <Button
               className={styles.formButton}
               radius={50}

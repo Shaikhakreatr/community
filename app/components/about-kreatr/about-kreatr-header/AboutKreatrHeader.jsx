@@ -29,7 +29,7 @@ const AboutKreatrHeader = () => {
               <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
                 What are we?
               </h4>
-              <p className="content-neue text-center text-[14px] leading-[18px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+              <p className="content-neue text-center text-[16px] leading-[18px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 We are a digital ecosystem that encourages cross-industry
                 collaboration and empowers creators like you.
               </p>
@@ -38,7 +38,7 @@ const AboutKreatrHeader = () => {
               <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
                 HOW DID WE START?
               </h4>
-              <p className="content-neue text-center text-[14px] leading-[18px]  text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+              <p className="content-neue text-center text-[16px] leading-[18px]  text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 It all started when we, Megha and Abdul—the co-founders of
                 Kreatr—sought a creative community that matched our vibe. <br />
                 <br />

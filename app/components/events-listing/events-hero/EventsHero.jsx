@@ -46,7 +46,7 @@ const EventsHero = () => {
             {/* upcoming heading section */}
 
             <Tabs.Panel value="upcoming">
-              <div className="page-heading relative mt-[44px] text-center sm:mt-[100px] lg:mt-[80px] xl:mt-[150px]">
+              <div className="page-heading relative mt-[48px] text-center sm:mt-[100px] lg:mt-[105px] xl:mt-[166px]">
                 <h1 className="text-center text-[40px] leading-[32px] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
                   Kreatr’s
                   <br className="sm:hidden" /> very own
@@ -61,7 +61,7 @@ const EventsHero = () => {
             </Tabs.Panel>
             {/* past heading section */}
             <Tabs.Panel value="past">
-              <div className="page-heading relative mb-[-40px] mt-[44px] sm:mb-0 sm:mt-[100px] sm:h-[50px] lg:mt-[80px] xl:mt-[150px] ">
+              <div className="page-heading relative mb-[-40px] mt-[48px] sm:mb-0 sm:mt-[100px] sm:h-[50px] lg:mt-[105px] xl:mt-[166px] ">
                 <h1 className="text-center text-[40px] leading-[33px] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
                   Take a look
                   <br className="sm:hidden" /> at our

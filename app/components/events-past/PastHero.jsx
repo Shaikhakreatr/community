@@ -23,7 +23,7 @@ const PastHero = ({ pastData }) => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="mt-[44px] sm:mt-[60px] lg:mt-[80px] xl:mt-[100px]">
+            <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
               <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
                 {pastData.heading}
               </h1>
@@ -45,7 +45,7 @@ const PastHero = ({ pastData }) => {
                   alt="main-img"
                 />
               </div>
-              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
+              <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[4px] text-[12px] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
                 <div>{pastData.date}</div>
                 <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
                 <div>{pastData.location}</div>
@@ -56,7 +56,7 @@ const PastHero = ({ pastData }) => {
                 About
               </h3>
 
-              <div className="content-neue whitespace-pre-line text-center text-[14px] leading-[20px] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+              <div className="content-neue whitespace-pre-line text-center text-[16px] leading-[20px] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 <p>{pastData.description}</p>
               </div>
             </div>
@@ -81,7 +81,7 @@ const PastHero = ({ pastData }) => {
               <h1 className="content-neue-medium text-center text-[17px] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                 {`Happy Folks' Words!`}
               </h1>
-              <div className="mt-[30px] lg:mx-[50px]">
+              <div className="mt-[30px] lg:mx-[50px] content-neue">
                 <Testimonials />
               </div>
             </div>

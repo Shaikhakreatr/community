@@ -43,7 +43,7 @@ function Card({  title, people }) {
         <div className='text-center content-neue mt-[10px] px-[10px] text-[12px] sm:text-[14px] lg:text-[16px] xl:text-[20px]'>
         {people}
         </div>
-        <div className='absolute  xl:top-[118px] lg:right-[25px] lg:top-[110px] sm:top-[122px] sm:right-[20px] top-[105px] right-[20px]'>
+        <div className='absolute  xl:top-[118px] lg:right-[25px] lg:top-[110px] sm:top-[122px] sm:right-[20px] top-[120px] right-[20px]'>
           <Image src="/assets/images/events_page/inverted-commas.svg" className='xl:h-[110px] xl:w-[70px] lg:h-[70px] lg:w-[60px] sm:h-[50px] sm:w-[50px] h-[40px] w-[35px] ' width={50} height={50}  alt='comma image' />
         </div>
         </div>
@@ -118,7 +118,7 @@ export default function CustomCarousel() {
         slideSize='33.3%'
         align='center'
         slidesToScroll={1}
-        className='grid col-span-5 xl:h-[400px] lg:h-[300px] sm:h-[290px] h-[230px]'
+        className='grid col-span-5 xl:h-[400px] lg:h-[300px] sm:h-[290px] h-[270px]'
         onSlideChange={handleSlideChange}
         initialSlide={activeIndex}
       >

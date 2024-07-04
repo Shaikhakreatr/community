@@ -177,7 +177,7 @@ const Header = () => {
               <div className="pointer-events-auto absolute left-[36.5%] top-[79%] sm:left-[41%] sm:top-[76%] md:left-[42%] lg:left-[35%] lg:top-[74%] xl:left-[38%] xl:top-[72%]">
                 <CustomLink href="/about-community" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
-                    className="h-[65px] w-[110px] hover:scale-105 sm:h-[100px] sm:w-[170px] md:w-[190px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
+                    className="h-[65px] w-[120px] hover:scale-105 sm:h-[100px] sm:w-[170px] md:w-[190px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
                       "/assets/images/home_page/menu_stickers/community-withshadow.svg"
                     }

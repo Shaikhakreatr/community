@@ -142,14 +142,14 @@
     @media only screen and (max-width: 639px) {
         .controlBox1{
             font-family: 'Neue Montreal Bold';
-            font-size: 16px;
+            font-size: 18px;
             font-weight:bolder;
             color: #2A2A2A;
             padding: 0px 10px;
             }
             .controlBox2{
                 font-family: 'Neue Montreal Bold';
-                font-size: 16px;
+                font-size: 18px;
                 font-weight:bolder;
                 color: #2A2A2A;
                 padding: 0px 10px;
@@ -174,7 +174,7 @@
         }
         .accordionPanel{
             font-family: 'Neue Montreal';
-            font-size: 14px;
+            font-size: 16px;
             color: #2A2A2A;
             opacity: 70%;
             /* margin-top: -8px; */

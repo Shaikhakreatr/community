@@ -27,7 +27,7 @@ const JoinKlan = () => {
   };
   return (
     <div className="container mx-auto">
-      <div className="mt-[44px] sm:mt-[50px] lg:mt-[60px] xl:mt-[90px]">
+      <div className="mt-[34px] sm:mt-[50px] lg:mt-[36px] xl:mt-[82px]">
         <h1 className="page-heading mb-[-2px]  text-center text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
           JoIn our Klan
         </h1>

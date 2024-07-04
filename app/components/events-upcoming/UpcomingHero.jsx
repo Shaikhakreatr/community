@@ -117,7 +117,7 @@ const UpcomingHero = ({ upcomingData }) => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-[44px] sm:mt-[60px] lg:mt-[80px] xl:mt-[100px]">
+          <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
             <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
@@ -139,7 +139,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 alt="main-img"
               />
             </div>
-            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[1.9px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
+            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[4px] text-[13px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
               <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
@@ -167,7 +167,7 @@ const UpcomingHero = ({ upcomingData }) => {
               About
             </h3>
             <br />
-            <div className="content-neue whitespace-pre-line text-center text-[14px] leading-[20px] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+            <div className="content-neue whitespace-pre-line text-center text-[16px] leading-[20px] sm:text-start sm:text-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>
@@ -199,7 +199,7 @@ const UpcomingHero = ({ upcomingData }) => {
             <form onSubmit={handleSubmit} className="mt-[10px] sm:mt-[20px]">
               {form.values.forms.map((formInstance, index) => (
                 <div key={index}>
-                  <p className="page-subhead mt-[30px] text-[10px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  <p className="page-subhead mt-[30px] text-[12px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     {`Person  ${index + 1}`}
                   </p>
                   <div className={`${styles.formWrap} w-full`}>
@@ -279,7 +279,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
               <div className="mt-[10px] sm:mx-[150px] sm:mt-[40px]">
                 <div>
-                  <p className="content-neue text-center text-[12px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                  <p className="content-neue text-center text-[14px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                     By clicking on proceed, I agree that I have read and
                     <br />
                     understood the{" "}
@@ -293,15 +293,15 @@ const UpcomingHero = ({ upcomingData }) => {
                   </p>
                 </div>
               </div>
-              <div className="mt-[10px] sm:mt-[30px]">
-                <h1 className="content-neue-medium text-center text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+              <div className="mt-[20px] sm:mt-[30px]">
+                <h1 className="content-neue-medium text-center text-[12px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                   Total Amount :{" "}
                   <span className="page-subhead text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>
               </div>
-              <div className="content-neue mb-[30px] items-center justify-center text-center sm:mb-[65px] sm:mt-[28px] mt-[20px] xl:mt-[44px] lg:mt-[36px]  sm:flex lg:gap-3 xl:gap-5">
+              <div className="content-neue mb-[60px] items-center justify-center text-center sm:mb-[65px] sm:mt-[28px] mt-[20px] xl:mt-[44px] lg:mt-[36px]  sm:flex lg:gap-3 xl:gap-5">
                 <Button
                   className={styles.formButton}
                   radius={50}

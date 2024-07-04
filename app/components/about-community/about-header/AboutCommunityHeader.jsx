@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutCommunityHeader = () => {
   return (
-    <div className="mt-[44px] sm:mt-[40px] lg:mt-[60px] xl:mt-[80px]">
-      <h1 className="page-heading mt-[30px] text-center text-[40px] sm:mt-[50px] sm:text-[74px] lg:mt-[30px] lg:text-[94px] xl:text-[110px]">
+    <div className="mt-[34px] sm:mt-[40px] lg:mt-[36px] xl:mt-[82px]">
+      <h1 className="page-heading mt-[30px] text-center text-[40px] sm:mt-[50px] sm:text-[74px] lg:mt-[0px] lg:text-[94px] xl:text-[110px]">
         KNOW OUR COMMUNITY
       </h1>
       <p className="content-neue text-center text-[16px] italic leading-[18px] sm:text-[18px] lg:mt-[32px] lg:text-[18px] lg:leading-[22px] xl:mt-[44px] xl:mb-[26px] xl:text-[22px] xl:leading-[26px]">

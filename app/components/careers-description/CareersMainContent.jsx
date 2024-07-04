@@ -21,7 +21,7 @@ const CareersMainContent = ({ careerData }) => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
-        <div className="relative mb-[46px] mt-[44px] sm:mt-[60px] lg:mb-[54px] lg:mt-[50px] xl:mb-[64px]  xl:mt-[100px]">
+        <div className="relative mb-[46px] mt-[34px] sm:mt-[60px] lg:mb-[54px] lg:mt-[35px] xl:mb-[64px]  xl:mt-[82px]">
           <h1 className="page-heading text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
             Careers
           </h1>
@@ -49,28 +49,28 @@ const CareersMainContent = ({ careerData }) => {
           </div>
         </div>
         <div className="mt-[10px] sm:mb-4  sm:mt-0">
-          <p className="content-neue text-[12px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
+          <p className="content-neue text-[16px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
             {careerData.description}
           </p>
 
-          <p className="content-neue-medium mt-[10px] text-[14px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
+          <p className="content-neue-medium mt-[10px] text-[16px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
             Responsibilities
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
               {careerData.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
 
-          <p className="content-neue-medium mt-[10px] text-[14px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
+          <p className="content-neue-medium mt-[10px] text-[16px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
             Qualifications
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[12px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
+            <ul className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
               {careerData.qualifications.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -87,7 +87,7 @@ const CareersMainContent = ({ careerData }) => {
             Apply Now
           </Link>
         </div>
-        <div className="content-neue my-[16px] text-center text-[11px] sm:mb-[50px] sm:mt-[30px] sm:text-[16px] lg:text-[20px] xl:text-[28px]">
+        <div className="content-neue mt-[24px] mb-[40px] text-center text-[14px] leading-[18px] sm:mb-[50px] sm:mt-[30px] sm:text-[16px] lg:text-[20px] xl:text-[28px]">
           <p>
             Can’t find any suitable vacancy? Drop us a line{" "}
             <Link className="text-blue-700" href="mailto:hr@thekreatr.com">
