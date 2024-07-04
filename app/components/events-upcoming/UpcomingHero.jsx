@@ -308,7 +308,7 @@ const UpcomingHero = ({ upcomingData }) => {
                   type="submit"
                   mt="sm"
                 >
-                  Proceed to pay
+                  Proceed to Pay
                 </Button>
               </div>
             </form>
