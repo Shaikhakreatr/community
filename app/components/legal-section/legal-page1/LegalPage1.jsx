@@ -179,6 +179,7 @@ const LegalPage1 = () => {
         <br />
         <span className="text-[20px]">8.</span> <u className="text-[20px]"> Term and Termination:</u>
         <br />
+        <br />
         <p className="ml-[20px]">
           (a) The term of the Agreement commences when you download the
           Application and will continue in effect until terminated by you or the
@@ -197,6 +198,7 @@ const LegalPage1 = () => {
           <br />
           <br />
           (d) Upon termination:
+          <br />
           <br />
           <p className="ml-[40px]">
             {`(i) all rights granted to you under this Agreement will
