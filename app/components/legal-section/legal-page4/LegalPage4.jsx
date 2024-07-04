@@ -7,11 +7,13 @@ const LegalPage4 = () => {
       {`This Agreement governs your use of this mobile application for Android,
       iOS (collectively, including all related documentation, the
       "Application"). The Application is licensed, not sold, to you.`}
-      <div className="legal_page_h pb-2 pt-2">Agreement Structure</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Agreement Structure</div>
       This Agreement includes General Terms, and what segment means for us and
       our end users.
-      <div className="legal_page_h pb-2 pt-2">General Terms</div>
-      <div className="pb-2 text-[20px]">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">General Terms</div>
+      <div className="pb-2 text-[20px] mb-[15px]">
         Acceptance of the Terms & Conditions
       </div>
       {`This website or mobile application is operated by the Kreatrminds Private
@@ -45,7 +47,8 @@ const LegalPage4 = () => {
       which are designed to assist you in limiting or blocking access to certain
       types of web content you may feel are harmful to or inappropriate for
       minors.`}
-      <div className="pb-2 pt-2 text-[20px]">
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">
         Changes to the Terms & Conditions
       </div>
       We may revise and update these Terms & Conditions from time to time in our
@@ -56,7 +59,8 @@ const LegalPage4 = () => {
       Terms & Conditions means that you accept and agree to the changes. You are
       expected to check this page each time you access the Website so you are
       aware of any changes, as they are binding on you.
-      <div className="pb-2 pt-2 text-[20px]">
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">
         Accessing the Website and Account Security
       </div>
       We reserve the right to withdraw or amend the Website, and any service or
@@ -111,7 +115,8 @@ const LegalPage4 = () => {
         sole discretion for any or no reason, including if, in our opinion, you
         have violated any provision of these Terms & Conditions.
       </div>
-      <div className="legal_page_h pb-2 pt-2">Intellectual Property Rights</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Intellectual Property Rights</div>
       The Website and its entire contents, features and functionality (including
       but not limited to all information, software, text, displays, images,
       video and audio, and the design, selection and arrangement thereof), are
@@ -189,15 +194,16 @@ const LegalPage4 = () => {
       granted are reserved by the Company. Any use of the Website not expressly
       permitted by these Terms & Conditions is a breach of these Terms &
       Conditions and may violate copyright, trademark and other laws.
-      <br />
-      <div className="legal_page_h pb-2 pt-2">Trademarks</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Trademarks</div>
       The Company name and trademarks, the Company logo and all related names,
       logos, product and service names, designs and slogans are trademarks of
       the Company or its affiliates or licensors. You must not use such marks
       without the prior written permission of the Company. All other names,
       logos, product and service names, designs and slogans on the Website are
       the trademarks of their respective owners.
-      <div className="legal_page_h pb-2 pt-2">Prohibited Uses</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Prohibited Uses</div>
       You may use the Website for lawful purposes and in accordance with these
       Terms & Conditions. You agree not to use the Website:
       <br />
@@ -289,7 +295,8 @@ const LegalPage4 = () => {
         </li>
         <br />
       </ul>
-      <div className="legal_page_h pb-2 pt-2">User Contributions</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">User Contributions</div>
       {`The Website may contain message boards, chat rooms, personal web pages or
       profiles, forums, bulletin boards and other interactive features
       (collectively, “Interactive Services") that allow users to post, submit,
@@ -336,7 +343,8 @@ const LegalPage4 = () => {
       <br /> We are not responsible, or liable to any third party, for the
       content or accuracy of any User Contributions posted by you or any other
       user of the Website.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
         Monitoring and Enforcement; Termination
       </div>
       We have the right to:
@@ -395,7 +403,8 @@ const LegalPage4 = () => {
       provided by any user or third party. We have no liability or
       responsibility to anyone for performance or nonperformance of the
       activities described in this section.
-      <div className="legal_page_h pb-2 pt-2">Content Standards</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Content Standards</div>
       These content standards apply to any and all User Contributions and use of
       Interactive Services. User Contributions must in their entirety comply
       with all applicable federal, state, local and international laws and
@@ -456,7 +465,8 @@ const LegalPage4 = () => {
         </li>
         <br />
       </ul>
-      <div className="legal_page_h pb-2 pt-2">Copyright Infringement</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Copyright Infringement</div>
       If you believe that any User Contributions violate your copyright, please
       send us a notice of copyright infringement to
       <a
@@ -468,7 +478,8 @@ const LegalPage4 = () => {
       </a>{" "}
       . It is the policy of the Company to terminate the user accounts of repeat
       infringers.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
         Reliance on Information Posted
       </div>
       The information presented on or through the Website is made available
@@ -488,18 +499,21 @@ const LegalPage4 = () => {
       reflect the opinion of the Company. We are not responsible, or liable to
       you or any third party, for the content or accuracy of any materials
       provided by any third parties.
-      <div className="legal_page_h pb-2 pt-2">Changes to the Website</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Changes to the Website</div>
       We may update the content on the Website from time to time, but its
       content is not necessarily complete or up-to-date. Any of the material on
       the Website may be out of date at any given time, and we are under no
       obligation to update such material.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px] leading-[26px]">
         Information About You and Your Visits to the Website
       </div>
       All information we collect on the Website is subject to our Privacy
       Policy. By using the Website, you consent to all actions taken by us with
       respect to your information in compliance with the Privacy Policy.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px] leading-[26px]">
         Online Purchases and Other Terms & Conditions
       </div>
       All purchases through our Website or other transactions for the sale of
@@ -511,7 +525,8 @@ const LegalPage4 = () => {
       portions, services or features of the Website. All such additional terms
       and conditions are hereby incorporated by this reference into these Terms
       & Conditions.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 leading-[26px] mb-[15px]">
         Linking to the Website and Social Media Features
       </div>
       You may link to our homepage, provided you do so in a way that is fair and
@@ -575,7 +590,8 @@ const LegalPage4 = () => {
       <br />
       <br /> We may disable all or any social media features and any links at
       any time without notice in our discretion.
-      <div className="legal_page_h pb-2 pt-2">Links from the Website</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Links from the Website</div>
       If the Website contains links to other sites and resources provided by
       third parties, these links are provided for your convenience only. This
       includes links contained in advertisements, including banner
@@ -585,11 +601,13 @@ const LegalPage4 = () => {
       access any of the third party websites linked to the Website, you do so
       entirely at your own risk and subject to the terms and conditions of use
       for such websites.
-      <div className="legal_page_h pb-2 pt-2">Geographic Restrictions</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Geographic Restrictions</div>
       Access to the Website may not be legal in certain countries. If you access
       the Website in such cases, you do so on your own initiative and are
       responsible for compliance with the relevant local laws.
-      <div className="legal_page_h pb-2 pt-2">Disclaimer of Warranties</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Disclaimer of Warranties</div>
       You understand that we cannot and do not guarantee or warrant that files
       available for downloading from the internet or the Website will be free of
       viruses or other destructive code. You are responsible for implementing
@@ -625,7 +643,8 @@ const LegalPage4 = () => {
       WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR PARTICULAR
       PURPOSE. THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE
       EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
-      <div className="legal_page_h pb-2 pt-2">Limitation on Liability</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Limitation on Liability</div>
       IN NO EVENT WILL THE COMPANY, ITS AFFILIATES OR THEIR LICENSORS, SERVICE
       PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR DAMAGES
       OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH
@@ -641,7 +660,8 @@ const LegalPage4 = () => {
       <br />
       <br /> THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE
       EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
-      <div className="legal_page_h pb-2 pt-2">Indemnification</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Indemnification</div>
       {`You agree to defend, indemnify and hold harmless the Company, its
       affiliates, licensors and service providers, and its and their respective
       officers, directors, employees, contractors, agents, licensors, suppliers,
@@ -652,7 +672,8 @@ const LegalPage4 = () => {
       to, your User Contributions, any use of the Website's content, services
       and products other than as expressly authorized in these Terms &
       Conditions or your use of any information obtained from the Website.`}
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
         Governing Law and Jurisdiction
       </div>
       All matters relating to the Website and these Terms & Conditions and any
@@ -669,14 +690,16 @@ const LegalPage4 = () => {
       Conditions in your jurisdiction of residence or any other relevant
       jurisdiction. You waive any and all objections to the exercise of
       jurisdiction over you by such courts and to venue in such courts.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
         Limitation on Time to File Claims
       </div>
       ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO
       THESE TERMS & CONDITIONS OR THE WEBSITE MUST BE COMMENCED WITHIN ONE (1)
       YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR
       CLAIM IS PERMANENTLY BARRED.
-      <div className="legal_page_h pb-2 pt-2">Waiver and Severability</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Waiver and Severability</div>
       No waiver by the Company of any term or condition set forth in these Terms
       & Conditions shall be deemed a further or continuing waiver of such term
       or condition or a waiver of any other term or condition, and any failure
@@ -688,14 +711,16 @@ const LegalPage4 = () => {
       for any reason, such provision shall be eliminated or limited to the
       minimum extent such that the remaining provisions of the Terms &
       Conditions will continue in full force and effect.
-      <div className="legal_page_h pb-2 pt-2">Entire Agreement</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Entire Agreement</div>
       This Terms & Conditions, our End User License Agreement , Terms of Sale,
       Refund Policy, and our Privacy Policy constitute the sole and entire
       agreement between you and the Company with respect to the Website and
       supersede all prior and contemporaneous understandings, agreements,
       representations and warranties, both written and oral, with respect to the
       Website.
-      <div className="legal_page_h pb-2 pt-2">Your Comments and Concerns</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Your Comments and Concerns</div>
       The Website is operated by: <br />
       <br />
       Kreatrminds Private Limited and/or its affiliates <br />

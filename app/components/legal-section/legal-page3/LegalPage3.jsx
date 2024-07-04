@@ -21,9 +21,9 @@ const LegalPage3 = () => {
       through the app. We recommend utilizing any available access controls on
       the app or third-party platforms to help restrict or block access to
       specific content that may be deemed harmful or inappropriate for minors.
-      <br />
-      <div className="legal_page_h pb-2 pt-2">1. Billing and Cancellation</div>
-      <div className="pb-2 pt-2">1.1. Billing Cycle</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">1. Billing and Cancellation</div>
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">1.1. Billing Cycle</div>
       The membership fee for our service and any other charges you may incur in
       connection with your use of the service, such as taxes and possible
       transaction fees, will be charged to your Payment Method on the specific
@@ -43,7 +43,8 @@ const LegalPage3 = () => {
       Company's service using your account with a third party as a Payment
       Method, you can find the billing information about your membership by
       visiting your account with the applicable third party.`}
-      <div className="pb-2 pt-2">1.2. Payment Methods</div>
+      <br /><br />
+      <div className="pb-2 pt-2 mb-[15px] text-[20px]">1.2. Payment Methods</div>
       {`To use the Company's service, you must provide one or more Payment
       Methods. You authorize us to charge any Payment Method associated with
       your account in case your primary Payment Method is declined or no longer
@@ -56,13 +57,15 @@ const LegalPage3 = () => {
       transaction fees or other fees relating to the processing of your Payment
       Method. Local tax charges may vary depending on the Payment Method used.
       Check with your Payment Method service provider for additional details.`}
-      <div className="pb-2 pt-2">1.3. Updating Your Payment Methods</div>
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">1.3. Updating Your Payment Methods</div>
       You can update your Payment Methods by going to the “Payment and
       Subscription” page. We may also update your Payment Methods using
       information provided by the payment service providers. Following any
       update, you authorize us to continue to charge the applicable Payment
       Method(s).
-      <div className="pb-2 pt-2">1.4. Cancellation</div>
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">1.4. Cancellation</div>
       You have the flexibility to cancel your membership with the Company at any
       time, and your access to our service will continue until the end of your
       current billing period. In accordance with applicable law, payments are
@@ -91,33 +94,39 @@ const LegalPage3 = () => {
       mobile app, where you will find detailed cancellation instructions. It's
       important to note that you may also be required to revoke any recurring
       payment instructions you have set up with your bank.`}
-      <div className="pb-2 pt-2">
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">
         1.5. Changes to the Price and Subscription Plans
       </div>
       We may change our subscription plans and the price of our service from
       time to time; Nevertheless, you will be notified in advance of any
       alterations to pricing or changes in our subscription plans.
       <br />
-      <div className="pb-2 pt-2">2. Refund Eligibility</div>
-      <div className="pb-2 pt-2">2.1. Monthly Subscription</div>
+      <br />
+      <div className="pb-2 pt-2 legal_page_h mb-[15px]">2. Refund Eligibility</div>
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">2.1. Monthly Subscription</div>
       {`For customers with a monthly subscription plan, we do not offer refunds
       for any partial month's unused service. The cancellation will be effective
       from the end of the current billing cycle.`}
-      <div className="pb-2 pt-2">2.2. Annual Subscription</div>
+      <br /><br />
+      <div className="pb-2 pt-2 text-[20px] mb-[15px]">2.2. Annual Subscription</div>
       {`For customers with an annual subscription plan, we do not offer refunds
       for any partial month's unused service. The cancellation will be effective
       from the end of the current annual billing cycle.`}
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
         3. Special Offers and Promotions
       </div>
       If you have taken advantage of any special offers or promotions, please
       note that specific terms and conditions may apply to these offers, and the
       cancellation and refund policies may vary.
-      <div className="legal_page_h pb-2 pt-2">4. Account Deactivation</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">4. Account Deactivation</div>
       Upon canceling your subscription, your account will be deactivated at the
       end of the current billing cycle. You can reactivate your account at any
       time.
-      <div className="legal_page_h pb-2 pt-2">5. Entire Agreement</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">5. Entire Agreement</div>
       This policy, our End User License Agreement , Terms of Sale, Terms and
       Conditions, and our Privacy Policy constitute the sole and entire
       agreement between you and the Company with respect to the Website and

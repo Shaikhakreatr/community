@@ -9,11 +9,13 @@ const LegalPage1 = () => {
           "Application"). The Application is licensed, not sold, to you.`}{" "}
       <br />
       <br />
-      <h1 className="legal_page_h pb-2">Agreement Structure</h1>
+      <h1 className="legal_page_h pb-2 mb-[15px]">Agreement Structure</h1>
       This Agreement includes General Terms, and what segment means for us and
       our end users.
+      <br />
+      <br />
       <div className="pb-2" />
-      <h1 className="legal_page_h pb-2">General Terms</h1>
+      <h1 className="legal_page_h pb-2 mb-[15px]">General Terms</h1>
       {`This End User License Agreement (this "Agreement") is a binding agreement between
           you, as an individual or entity ("End User" or "you"), and Kreatrminds
           Private Limited, Shariff square, 18/1, Sarjapur - Marathahalli Rd,
@@ -31,7 +33,7 @@ const LegalPage1 = () => {
       <br />
       <br />
       <p className="sm:ml-[30px]">
-        1. <u> License Grant.</u>: Subject to the terms of this Agreement, the
+        <span className="text-[20px]" >1.</span> <u className="text-[20px]"> License Grant.</u>: Subject to the terms of this Agreement, the
         Company grants you a limited, non-exclusive and nontransferable license
         to:<br></br>
         <br />
@@ -51,7 +53,7 @@ const LegalPage1 = () => {
         </ul>
         <br />
         <br />
-        2. <u> License Restrictions</u>: Licensee shall not:
+        <span className="text-[20px]">2.</span> <u className="text-[20px]"> License Restrictions</u>: Licensee shall not:
         <br />
         <br />
         <p className="ml-[20px]">
@@ -87,7 +89,7 @@ const LegalPage1 = () => {
         </p>
         <br />
         <br />
-        3. <u> Reservation of Rights</u>: You acknowledge and agree that the
+        <span className="text-[20px]">3.</span> <u className="text-[20px]"> Reservation of Rights</u>: You acknowledge and agree that the
         Application is provided under license, and not sold, to you. You do not
         acquire any ownership interest in the Application under this Agreement,
         or any other rights thereto other than to use the Application in
@@ -99,7 +101,7 @@ const LegalPage1 = () => {
         to you in this Agreement.
         <br />
         <br />
-        4. <u> Collection and Use of Your Information</u> : You acknowledge that
+        <span className="text-[20px]">4.</span> <u className="text-[20px]" > Collection and Use of Your Information</u> : You acknowledge that
         when you download, install or use the Application, the Company may use
         automatic means (including, for example, cookies and web beacons) to
         collect information about your Mobile Device and about your use of the
@@ -114,7 +116,7 @@ const LegalPage1 = () => {
         your information in compliance with the Privacy Policy.
         <br />
         <br />
-        5. <u> Content and Services</u>: The
+        <span className="text-[20px]">5.</span> <u className="text-[20px]"> Content and Services</u>: The
         {`Application may provide you with access to the Company's website
           located at`}{" "}
         <Link className="text-blue-800 underline" href="/">
@@ -132,7 +134,7 @@ const LegalPage1 = () => {
           this Agreement.`}
         <br />
         <br />
-        6. <u>Updates :</u>
+        <span className="text-[20px]">6.</span> <u className="text-[20px]">Updates :</u>
         {`The Company may from time to time in its sole
           discretion develop and provide Application updates, which may include
           upgrades, bug fixes, patches and other error corrections and/or new
@@ -158,7 +160,7 @@ const LegalPage1 = () => {
         </p>
         <br />
         <br />
-        7. <u> Third Party Materials</u>{" "}
+        <span className="text-[20px]">7.</span> <u className="text-[20px]"> Third Party Materials</u>{" "}
         {`: The Application may display, include or make available
           third-party content (including data, information, applications and
           other products, services and/or materials) or provide links to
@@ -175,7 +177,7 @@ const LegalPage1 = () => {
           terms and conditions.`}
         <br />
         <br />
-        8. <u> Term and Termination:</u>
+        <span className="text-[20px]">8.</span> <u className="text-[20px]"> Term and Termination:</u>
         <br />
         <p className="ml-[20px]">
           (a) The term of the Agreement commences when you download the
@@ -211,7 +213,7 @@ const LegalPage1 = () => {
         </p>{" "}
         <br />
         <br />
-        9. <u> Disclaimer of Warranties</u>{" "}
+        <span className="text-[20px]">9.</span> <u className="text-[20px]"> Disclaimer of Warranties</u>{" "}
         {`: The application is provided to the
 Licensee "as is" and with all faults and defects, without warranty
 of any kind. To the maximum extent permitted under applicable
@@ -237,7 +239,7 @@ some or all of the above exclusions and limitations may not
 apply to you.`}
         <br />
         <br />
-        10. <u> Limitation of Liability </u>:To the fullest extent permitted by
+        <span className="text-[20px]">10.</span> <u className="text-[20px]"> Limitation of Liability </u>:To the fullest extent permitted by
         applicable law, in no event will the Company or its Affiliates, or any
         of its or their respective Licensors or Service Providers, have any
         liability arising from or related to your use of or inability to use the
@@ -265,7 +267,7 @@ apply to you.`}
         limitations of liability may not apply to you.
         <br />
         <br />
-        11. <u> Indemnification</u>{" "}
+        <span className="text-[20px]">11.</span> <u className="text-[20px]"> Indemnification</u>{" "}
         {`: You
           agree to indemnify, defend and hold harmless the Company and its
           officers, directors, employees, agents, affiliates, successors and
@@ -278,7 +280,7 @@ apply to you.`}
           the content you submit or make available through this Application.`}
         <br />
         <br />
-        12. <u> Export Regulation</u>: The Application may be subject to certain
+        <span className="text-[20px]">12.</span> <u className="text-[20px]"> Export Regulation</u>: The Application may be subject to certain
         export control laws. You shall not, directly or indirectly, export,
         re-export or release the Application to, or make the Application
         accessible from, any jurisdiction or country to which export, re-export
@@ -289,14 +291,14 @@ apply to you.`}
         releasing or otherwise making the Application available.
         <br />
         <br />
-        13. <u> Severability</u> : If any provision of this Agreement is illegal
+        <span className="text-[20px]">13.</span> <u className="text-[20px]"> Severability</u> : If any provision of this Agreement is illegal
         or unenforceable under applicable law, the remainder of the provision
         will be amended to achieve as closely as possible the effect of the
         original term and all other provisions of this Agreement will continue
         in full force and effect.
         <br />
         <br />
-        14. <u> Governing Law</u> : This Agreement is governed by and construed
+        <span className="text-[20px]">14.</span> <u className="text-[20px]"> Governing Law</u> : This Agreement is governed by and construed
         in accordance with the laws of Bengaluru, Karnataka, without giving
         effect to any choice or conflict of law provision or rule. Any legal
         suit, action or proceeding arising out of or related to this Agreement
@@ -308,14 +310,14 @@ apply to you.`}
         courts and to venue in such courts.
         <br />
         <br />
-        15. <u> Limitation of Time to File Claims</u> :Any cause of action or
+        <span className="text-[20px]">15.</span> <u className="text-[20px]"> Limitation of Time to File Claims</u> :Any cause of action or
         claim you may have arising out of or relating to this agreement or the
         Application must be commenced within one (1) year after the cause of
         action accrues; otherwise, such cause of action or claim is permanently
         barred.
         <br />
         <br />
-        16. <u> Entire Agreement</u> : This End User Licence Agreement, our
+        <span className="text-[20px]" >16.</span> <u className="text-[20px]"> Entire Agreement</u> : This End User Licence Agreement, our
         Terms & Conditions, Terms of Sale, Refund and Cancellation Policy, and
         our Privacy Policy constitute the entire agreement between you and the
         Company with respect to the Application and supersede all prior or
@@ -323,7 +325,7 @@ apply to you.`}
         with respect to the Application.
         <br />
         <br />
-        17. <u> Waiver</u> : No failure to exercise, and no delay in exercising,
+        <span className="text-[20px]" >17.</span> <u className="text-[20px]"> Waiver </u> :  No failure to exercise, and no delay in exercising,
         on the part of either party, any right or any power hereunder shall
         operate as a waiver thereof, nor shall any single or partial exercise of
         any right or power hereunder preclude further exercise of that or any

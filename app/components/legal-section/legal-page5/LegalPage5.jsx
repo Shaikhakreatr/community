@@ -3,11 +3,12 @@ import React from "react";
 const LegalPage5 = () => {
   return (
     <div className="content-neue mt-[20px] text-[14px] leading-[16px] sm:mt-[48px] sm:text-[16px] sm:leading-[18px] lg:mt-[58px] lg:text-[18px] lg:leading-[22px] xl:mt-[72px] xl:text-[22px] xl:leading-[26px] ">
-      <div className="legal_page_h pb-2 pt-2">Agreement Structure</div>
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">Agreement Structure</div>
       This Agreement includes General Terms, and what segment means for us and
       our end users.
-      <div className="legal_page_h pb-2 pt-2">General Terms</div>
-      <div className="legal_page_h pb-2 pt-2">1. Applicability</div>
+      <br /><br />
+      <div className="legal_page_h pb-2 pt-2 mb-[15px]">General Terms</div>
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">1. Applicability</div>
       {`By purchasing any Kreatr product/service (“Product") offered by
       Kreatrminds Private Limited, its subsidiaries and affiliates
       (collectively, the “Company," “we" or “our") or carrying out any
@@ -44,14 +45,16 @@ const LegalPage5 = () => {
       <br />
       Subject to any applicable laws, it is acknowledged and agreed that refunds
       are not permitted for a purchase made of a Kreatr product/membership.
-      <div className="legal_page_h pb-2 pt-2">2. Orders</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">2. Orders</div>
       {`When you attempt to purchase any Product or carry out any
       purchase/transaction on our Website by clicking the “Buy" or equivalent
       option, this constitutes an offer to buy the Product and/or complete the
       purchase/transaction. Your purchase is not complete until we email you to
       confirm the transaction. We reserve the right to reject your offer and not
       conclude a sale agreement with you.`}
-      <div className="legal_page_h pb-2 pt-2">3. Pricing</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">3. Pricing</div>
       <ul className="ml-[40px] list-disc">
         <li>
           Products sold by the Company (including any Products) or by the
@@ -98,14 +101,16 @@ const LegalPage5 = () => {
           correct (higher) price or cancel your order and receive a refund.
         </li>
       </ul>
-      <div className="legal_page_h pb-2 pt-2">4. Payment</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">4. Payment</div>
       You may only pay for products purchased on our Website using a valid
       credit or debit card or post pay service or any other payment method made
       available by the Company on our Website. It is acknowledged and agreed
       that any payment made by you using a post pay service is an additional
       separate contractual arrangement between you and that service provider and
       subject to the terms and conditions of that provider.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">
         5. Warranties and Other Information
       </div>
       <ul className="ml-[40px] list-disc">
@@ -121,7 +126,8 @@ const LegalPage5 = () => {
           products before use.
         </li>
       </ul>
-      <div className="legal_page_h pb-2 pt-2">6. Limitation on Liability</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">6. Limitation on Liability</div>
       In no event will the Company, its Affiliates, or their Licensors, Service
       Providers, Employees, Agents, Officers, or Directors be liable for damages
       of any kind, under any legal theory, arising out of or in connection with
@@ -136,7 +142,8 @@ const LegalPage5 = () => {
       <br />
       The foregoing does not affect any liability which cannot be excluded or
       limited under applicable law.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">
         7. Governing Law and Jurisdiction
       </div>
       These Terms of Sale and any dispute or claim arising therefrom or related
@@ -151,14 +158,16 @@ const LegalPage5 = () => {
       jurisdiction of residence or any other relevant jurisdiction. You waive
       any and all objections to the exercise of jurisdiction over you by such
       courts and to venue in such courts.
-      <div className="legal_page_h pb-2 pt-2">
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">
         8. Limitation on Time to File Claims
       </div>
       Any cause of action or claim you may have arising out of or relating to
       these Terms of Sale must be commenced within one (1) year after the cause
       of action accrues; otherwise, such cause of action or claim is permanently
       barred.
-      <div className="legal_page_h pb-2 pt-2">9. Waiver and Severability</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">9. Waiver and Severability</div>
       No waiver by the Company of any term or condition set forth in these Terms
       of Sale shall be deemed a further or continuing waiver of such term or
       condition or a waiver of any other term or condition, and any failure of
@@ -170,7 +179,8 @@ const LegalPage5 = () => {
       for any reason, such provision shall be eliminated or limited to the
       minimum extent such that the remaining provisions of the Terms of Sale
       will continue in full force and effect.
-      <div className="legal_page_h pb-2 pt-2">10. Entire Agreement</div>
+      <br /><br />
+      <div className="text-[20px] content-neue-medium mb-[15px] pb-2 pt-2">10. Entire Agreement</div>
       This Terms of Sale, our End User Licence Agreement, Privacy Policy, Refund
       and Cancellation Policy, and Terms & Conditions constitute the sole and
       entire agreement between you and the Company with respect to your purchase
