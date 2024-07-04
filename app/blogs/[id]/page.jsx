@@ -32,7 +32,7 @@ const BlogDetailsHero = () => {
       {loading ? (
         <Spinner loading={loading} />
       ) : (
-        <div className='w-full h-full flex flex-col justify-center items-center' dangerouslySetInnerHTML={{ __html: htmlData?.htmlPage || '<p>No content available</p>' }} />
+        <div className='w-full h-full flex flex-col justify-center items-center xl:mt-[140px] lg:mt-[80px] sm:mt-[60px] mt-[44px]' dangerouslySetInnerHTML={{ __html: htmlData?.htmlPage || '<p>No content available</p>' }} />
       )}
       <Footer />
     </main>

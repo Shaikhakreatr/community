@@ -121,7 +121,7 @@ const UpcomingHero = ({ upcomingData }) => {
             <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
-            <div className="mt-[22px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
+            <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
               <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
