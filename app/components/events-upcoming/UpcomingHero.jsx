@@ -301,14 +301,14 @@ const UpcomingHero = ({ upcomingData }) => {
                   </span>
                 </h1>
               </div>
-              <div className="content-neue mb-[30px] items-center justify-center text-center sm:mb-[65px] sm:mt-[10px] sm:flex lg:gap-3 xl:gap-5">
+              <div className="content-neue mb-[30px] items-center justify-center text-center sm:mb-[65px] sm:mt-[28px] mt-[20px] xl:mt-[44px] lg:mt-[36px]  sm:flex lg:gap-3 xl:gap-5">
                 <Button
                   className={styles.formButton}
                   radius={50}
                   type="submit"
                   mt="sm"
                 >
-                  PROCEED TO PAY
+                  Proceed to pay
                 </Button>
               </div>
             </form>

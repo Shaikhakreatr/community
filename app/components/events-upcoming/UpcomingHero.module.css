@@ -152,15 +152,15 @@
 
     }
     .formButton {
-        height: 47px;
-        width: 250px;  
+        height: 36px;
+        width: 180px;  
         color: #FFFDEE;
         font-size: 18px;
         background-color:#2A2A2A ;
     }
     .formButton:hover {
-        height: 47px;
-        width: 250px;  
+        height: 36px;
+        width: 180px;  
         font-size: 18px;
         border: 1px solid #2A2A2A;
         color: #2A2A2A;
@@ -182,15 +182,15 @@
 
 @media only screen and (min-width: 1440px) {
     .formButton {
-        height: 67px;
-        width: 291px;  
+        height: 44px;
+        width: 210px;  
         color: #FFFDEE;
         background-color:#2A2A2A ;
         font-size: 22px;
     }
     .formButton:hover {
-        height: 67px;
-        width: 291px;  
+        height: 44px;
+        width: 210px;  
         border: 1px solid #2A2A2A;
         color: #2A2A2A;
         background-color:transparent ;
