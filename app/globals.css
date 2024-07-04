@@ -448,6 +448,14 @@ h1{
   display: none;
 }
 
+@media only screen and (max-width: 639px){
+  .legal_page_h{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+  }
+}
+
 .legal_page_h{
   font-size: 30px;
   font-weight: 800;

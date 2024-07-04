@@ -187,7 +187,7 @@ const Header = () => {
                   />
                 </CustomLink>
               </div>
-              <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[66%] xl:top-[68%]">
+              <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[64%] xl:top-[67%]">
                 <CustomLink href="/contact" closeMenu={closeMenu} menuOpen={menuOpen}>
                   <Image
                     className="h-[102px] w-[79px] hover:scale-105 sm:h-[154px] sm:w-[120px] lg:h-[114px] lg:w-[95px] xl:h-[150px] xl:w-[120px]"
