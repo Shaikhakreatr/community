@@ -141,11 +141,11 @@ const UpcomingHero = ({ upcomingData }) => {
             </div>
             <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[1.9px] text-[14px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
-              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
+              <div className="h-[20px] sm:border-2 border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
-              <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
+              <div className="h-[20px] sm:border-2 border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{`₹  ${upcomingData.price}`}</div>
-              <div className="h-[20px] sm:h-[35px] sm:border-r sm:border-[#2A2A2A]"></div>
+              <div className="h-[20px] sm:border-2 sm:h-[35px] sm:border-r sm:border-[#2A2A2A]"></div>
               <div
                 onClick={scrollToDiv}
                 className=" upcoming-btn hidden h-[24.52px] w-[128.12px]  cursor-pointer items-center  justify-center rounded-[40px] text-center text-[13px] hover:border hover:border-[#2A2A2A] hover:bg-transparent hover:text-[#2A2A2A] sm:mx-[8px] sm:flex sm:h-[30px] sm:w-[200px] sm:text-[20px] lg:h-[38px] lg:w-[221px] lg:rounded-[80px] lg:text-[22px] xl:h-[45px] xl:w-[251px] xl:text-[30px]"
@@ -173,15 +173,9 @@ const UpcomingHero = ({ upcomingData }) => {
           </div>
           <div className="mt-[20px] lg:mt-[50px] xl:mt-[72px]">
             <div className="flex items-center justify-center">
-              <h1 className="content-neue-medium mr-[10px] text-[16px]  sm:mr-[20px] sm:text-[20px] lg:text-[28px] xl:text-[34px]">
+              <h1 className="content-neue-medium  text-[16px]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
-              <img
-                src="/assets/images/events_page/arrow.svg"
-                alt="arrow image"
-                className="h-[24px] w-[24px]"
-                
-              />
             </div>
             <div className="mt-[20px] flex flex-wrap items-center justify-center gap-1 sm:gap-4 lg:gap-[30px]">
               {upcomingData.images.map((item, index) => (
@@ -190,7 +184,6 @@ const UpcomingHero = ({ upcomingData }) => {
                   className={` h-[106px] w-[106px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
-                  
                 />
               ))}
             </div>
@@ -286,12 +279,12 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
               <div className="mt-[10px] sm:mx-[150px] sm:mt-[40px]">
                 <div>
-                  <p className="content-neue-medium text-center text-[8px] sm:text-[12px] lg:text-[18px] xl:text-[20px]">
+                  <p className="content-neue text-center text-[12px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                     By clicking on proceed, I agree that I have read and
                     <br />
                     understood the{" "}
                     <a href="/legal" className=" text-blue-700">
-                      t&c
+                      T&C
                     </a>{" "}
                     and the{" "}
                     <a href="/legal" className=" text-blue-700">
@@ -301,14 +294,14 @@ const UpcomingHero = ({ upcomingData }) => {
                 </div>
               </div>
               <div className="mt-[10px] sm:mt-[30px]">
-                <h1 className="content-neue-medium text-center text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
+                <h1 className="content-neue-medium text-center text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                   Total Amount :{" "}
-                  <span className="page-subhead text-[14px] sm:text-[20px] lg:text-[30px] xl:text-[34px]">
+                  <span className="page-subhead text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>
               </div>
-              <div className="mb-[30px] items-center justify-center text-center sm:mb-[65px] sm:mt-[10px] sm:flex lg:gap-3 xl:gap-5">
+              <div className="content-neue mb-[30px] items-center justify-center text-center sm:mb-[65px] sm:mt-[10px] sm:flex lg:gap-3 xl:gap-5">
                 <Button
                   className={styles.formButton}
                   radius={50}

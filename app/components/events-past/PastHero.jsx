@@ -38,7 +38,7 @@ const PastHero = ({ pastData }) => {
                   Speaker: {pastData.speakerName}
                 </div>
               </div>
-              <div className=" flex items-center justify-center mt-[44px] sm:mt-[48px] lg:mt-[58px] xl:mt-[72px] ">
+              <div className=" mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px] ">
                 <img
                   className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px]"
                   src={pastData.coverImg}
@@ -47,7 +47,7 @@ const PastHero = ({ pastData }) => {
               </div>
               <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[5px] text-[14px] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
                 <div>{pastData.date}</div>
-                <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
+                <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] sm:border-2"></div>
                 <div>{pastData.location}</div>
               </div>
             </div>

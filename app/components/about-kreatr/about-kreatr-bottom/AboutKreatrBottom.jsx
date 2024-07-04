@@ -17,7 +17,7 @@ const AboutKreatrBottom = () => {
         ...prev,
         [index]: false,
       }));
-    }, 1000);
+    }, 1500);
   };
 
   return (
@@ -28,7 +28,7 @@ const AboutKreatrBottom = () => {
         </h1>
         <div className="relative h-[50px]">
           <Image
-            className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] rotate-[-4deg] sm:left-[44%] lg:right-[42%] lg:top-[-78%] lg:h-[70px] lg:w-[238px] xl:h-[80px] xl:w-[248px]"
+            className="absolute right-[36%] top-[-32%] h-[37px] w-[114px] rotate-[-4deg] sm:left-[44%] lg:left-[41%] lg:top-[-65%] lg:h-[70px] lg:w-[238px] xl:left-[41%] xl:h-[80px] xl:w-[248px]"
             src={"/assets/images/about-kreatr/Kreatr_About.svg"}
             alt="about kreatr image"
             width={238}
