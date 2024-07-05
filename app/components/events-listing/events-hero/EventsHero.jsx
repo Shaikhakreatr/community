@@ -52,7 +52,7 @@ const EventsHero = () => {
                   <br className="sm:hidden" /> very own
                 </h1>
                 <div className="relative sm:h-[50px]">
-                  <h1 className="absolute right-[27%] top-[90%] rotate-[-1deg] text-center text-[48px] leading-[38px] text-blue-600 sm:left-[1%] sm:right-0 sm:top-[95%] sm:text-[74px] sm:leading-[0px]  lg:right-[2%] lg:top-[118%] lg:text-[94px] xl:right-[2%] xl:top-[142%] xl:text-[110px]">
+                  <h1 className="absolute right-[27%] top-[90%] rotate-[-1deg] text-center text-[48px] leading-[38px] text-blue-600 sm:left-[1%] sm:right-0 sm:top-[95%] sm:text-[74px] sm:leading-[0px]  lg:right-[2%] lg:top-[124%] lg:text-[94px] xl:right-[2%] xl:top-[148%] xl:text-[110px]">
                     events and
                     <br className="block sm:hidden" /> Workshops
                   </h1>
