@@ -2,7 +2,10 @@
     border: 1px solid #2A2A2A;
     background-color: transparent;
     color: #2A2A2A;
-    font-family: 'Neue Montreal';;
+    font-family: 'Neue Montreal';
+    font-size: 16px;
+    padding: 10px 22px;
+    margin-right: 8px;
   }
   
   .activeTab {
@@ -10,5 +13,8 @@
     background-color: #2A2A2A;
     color: #FFFCEE;
     font-family: 'Neue Montreal';
+    font-size: 16px;
+    padding: 10px 22px;
+    margin-right: 8px;
   }
   

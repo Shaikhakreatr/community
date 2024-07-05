@@ -4,7 +4,7 @@ import Link from "next/link";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute sm:block hidden xl:left-[2%] xl:top-[10%]  lg:top-[17%] lg:left-[5%] sm:left-[-43px] sm:top-[77px] page-heading lg:text-[94px] sm:text-[74px] text-[50px] xl:text-[110px]">
+      <div className="absolute sm:block hidden xl:left-[3.4%] xl:top-[8%]  lg:top-[12%] lg:left-[5.5%] sm:left-[-46px] sm:top-[58px] page-heading lg:text-[94px] sm:text-[74px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
       </div>
       <div className="absolute sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
@@ -12,8 +12,8 @@ const LeftImageSection = () => {
       </div>
       <div className="sm:grid sm:grid-cols-5 xl:gap-12 lg:gap-10 lg:mt-[60px]  ">
         <div className="sm:block hidden content-neue col-span-2 xl:ml-[9%] xl:mt-[20%] lg:mt-[40px] lg:ml-[34px] sm:mt-[60px] sm:ml-[-45px]">
-          <p className=" contact-text sm:text-[14px] lg:text-[16px] xl:text-[18px] leading-5">
-            For all your ‘I have a doubt!’,<br /> ‘Can I…’, ‘What if…’, or simply<br /> want
+          <p className=" contact-text text-[16px] sm:text-[14px] lg:text-[18px] lg:leading-[22px] xl:leading-[26px] xl:text-[22px] leading-5">
+            For all your ‘I have a doubt!’, ‘Can I…’, ‘What if…’, or simply want
             to grab a coffee…?
           </p>
           <ul>
@@ -47,7 +47,7 @@ const LeftImageSection = () => {
           />
         </div>
         <div className="sm:hidden content-neue flex flex-col justify-center items-center mt-[50px] ">
-          <p className=" contact-text  text-[17px] text-center leading-5">
+          <p className=" contact-text  text-[16px] text-center leading-5">
             For all your ‘I have a doubt!’,<br /> ‘Can I…’, ‘What if…’, or simply want
             to<br /> grab a coffee…?
           </p>

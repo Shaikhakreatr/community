@@ -73,7 +73,7 @@ const EventsHero = () => {
             </Tabs.Panel>
 
             {/* toggle section */}
-            <div className="mb-[34px] mt-[105px] flex justify-center sm:mb-0  lg:mt-[98px] xl:mt-[120px]">
+            <div className="mb-[34px] mt-[105px] flex justify-center sm:mb-[0px]  lg:mt-[120px] xl:mt-[140px]">
               <Tabs.List>
                 <Tabs.Tab
                   className={`${styles.notActiveTab} ${tab === "upcoming" && styles.activeTab}`}
