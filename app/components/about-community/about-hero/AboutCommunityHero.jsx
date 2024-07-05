@@ -104,9 +104,9 @@ const AboutCommunityHero = () => {
               <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 Follow us on our socials and Download the Kreatr app!
               </p>
-              <div className="mt-[18px] flex items-center justify-center sm:justify-start lg:mt-[30px]">
+              <div className="mt-[18px] gap-1 sm:gap-3 flex items-center justify-center sm:justify-start lg:mt-[30px]">
                 <Link href="/join-our-klan">
-                  <div className="content-neue-medium JOK-btn mr-2 flex h-[40px] w-[160px] items-center justify-center text-[16px] sm:mr-3 lg:h-[51px] lg:w-[185px] lg:text-[20px] xl:text-[24px]">
+                  <div className="content-neue-medium JOK-btn  flex h-[40px] w-[160px] items-center justify-center text-[16px]  lg:h-[51px] lg:w-[185px] lg:text-[20px] xl:text-[24px]">
                     Join our Klan
                   </div>
                 </Link>
@@ -116,7 +116,7 @@ const AboutCommunityHero = () => {
                   rel="noreferrer"
                 >
                   <Image
-                    className="playstore mr-1 h-[40px] w-[40px] sm:mr-3 lg:h-[55px] lg:w-[55px]"
+                    className="playstore  h-[40px] w-[40px]  lg:h-[55px] lg:w-[55px]"
                     src={playstore}
                     alt="play store icon"
                   />
