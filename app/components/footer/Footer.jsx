@@ -25,7 +25,7 @@ const Footer = () => {
                     <br /> Bengaluru, Karnataka (560034)
                   </p>
                 </div>
-                <div className="my-5 hidden items-center justify-start sm:flex xl:mt-6">
+                <div className="my-5 gap-2 hidden items-center justify-start sm:flex xl:mt-6">
                   <Link
                     href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM"
                     target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/Whatsapp.svg"
                       }
-                      className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Whatsapp"
                       height={36}
                       width={36}
@@ -50,7 +50,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/Instagram.svg"
                       }
-                      className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Instagram"
                       height={36}
                       width={36}
@@ -65,7 +65,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/LinkedIn.svg"
                       }
-                      className="pr-2 md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
                       alt="Linkedin"
                       height={36}
                       width={36}
@@ -170,7 +170,7 @@ const Footer = () => {
           </div>
 
           <div className="sm:hidden ">
-            <div className="my-3 flex items-center justify-center sm:mt-12 sm:flex sm:justify-start">
+            <div className="my-3 flex items-center gap-2 justify-center sm:mt-12 sm:flex sm:justify-start">
               <Link
                 href="https://chat.whatsapp.com/KhEXrhzF4Oj4acJItXEipM"
                 target="_blank"
@@ -180,7 +180,7 @@ const Footer = () => {
                   src={
                     "/assets/images/home_page/social_media_icons/Whatsapp.svg"
                   }
-                  className="h-[1.9375rem] w-[1.9375rem] pr-2"
+                  className="h-[1.9375rem] w-[1.9375rem] "
                   alt="Whatsapp"
                   height={31}
                   width={31}
@@ -195,7 +195,7 @@ const Footer = () => {
                   src={
                     "/assets/images/home_page/social_media_icons/Instagram.svg"
                   }
-                  className="h-[1.9375rem] w-[1.9375rem] pr-2"
+                  className="h-[1.9375rem] w-[1.9375rem] "
                   alt="Instagram"
                   height={31}
                   width={31}
@@ -210,7 +210,7 @@ const Footer = () => {
                   src={
                     "/assets/images/home_page/social_media_icons/LinkedIn.svg"
                   }
-                  className="h-[1.9375rem] w-[1.9375rem] pr-2"
+                  className="h-[1.9375rem] w-[1.9375rem] "
                   alt="Linkedin"
                   height={31}
                   width={31}

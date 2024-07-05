@@ -24,7 +24,7 @@ const AboutKreatrHeader = () => {
       <div className="mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
         <div className="bg-red flex items-center justify-center sm:w-[700px] lg:w-[968px] xl:w-[1125px]">
           <div className="hidden w-[50%] items-center justify-center  sm:flex"></div>
-          <div className="flex flex-col items-center justify-start sm:w-[50%] sm:mx-0 mx-[50px]">
+          <div className="mx-[50px] flex flex-col items-center justify-start sm:mx-0 sm:w-[50%]">
             <div className="mb-[24px] sm:mb-0">
               <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
                 What are we?
@@ -59,11 +59,12 @@ const AboutKreatrHeader = () => {
                 inspire each other.`}
               </p>
             </div>
-            <div className=" mt-[24px] flex w-full justify-center sm:mt-[24px]  sm:block  lg:mt-[24px] ">
-              <Link href="/join-our-klan">
-                <div className="page-subhead kreatr-btn flex  h-[32px] w-[114px] items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  sm:hover:text-[#2A2A2A] sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent  lg:h-[48px] lg:w-[220px] lg:text-[18px] xl:h-[58px] xl:w-[251px] xl:text-[24px]">
-                  Join Our Initiative
-                </div>
+            <div className=" mt-[24px] flex  w-full justify-center sm:mt-[24px]  sm:block  lg:mt-[24px] ">
+              <Link
+                href="/join-our-klan"
+                className="page-subhead kreatr-btn flex h-[32px]  w-[114px] cursor-pointer items-center justify-center rounded-[40px] bg-[#2A2A2A] text-center text-[12px]  sm:h-[45px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent sm:hover:text-[#2A2A2A]  lg:h-[48px] lg:w-[220px] lg:text-[18px] xl:h-[58px] xl:w-[251px] xl:text-[24px]"
+              >
+                Join Our Initiative
               </Link>
             </div>
           </div>

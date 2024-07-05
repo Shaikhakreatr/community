@@ -149,17 +149,17 @@ const LeftSection = () => {
           </Carousel.Slide>
         </Carousel>
       </div>
-      <div className="my-2 flex items-center sm:my-1 md:my-2">
+      <div className="my-2 flex gap-2 items-center sm:my-1 md:my-2">
         <Image
           src={happyActive ? HappyFilled : HappyOutline}
           onClick={toggleHappy}
-          className="h-[2.1875rem] w-[2.1875rem] cursor-pointer pr-2 sm:h-[1.875rem] sm:w-[1.875rem] md:h-[1.875rem] md:w-[1.875rem] lg:h-[2.1875rem] lg:w-[2.1875rem] xl:h-40 xl:w-40 "
+          className="h-[2.1875rem] w-[2.1875rem] cursor-pointer  sm:h-[1.875rem] sm:w-[1.875rem] md:h-[1.875rem] md:w-[1.875rem] lg:h-[2.1875rem] lg:w-[2.1875rem] xl:h-40 xl:w-40 "
           alt="Happy emoji"
         />
         <Image
           src={sadActive ? SadFilled : SadOutline}
           onClick={toggleSad}
-          className="h-[2.1875rem] w-[2.1875rem] cursor-pointer pr-2 sm:h-[1.875rem] sm:w-[1.875rem] md:h-[1.875rem] md:w-[1.875rem] lg:h-[2.1875rem] lg:w-[2.1875rem] xl:h-40 xl:w-40"
+          className="h-[2.1875rem] w-[2.1875rem] cursor-pointer  sm:h-[1.875rem] sm:w-[1.875rem] md:h-[1.875rem] md:w-[1.875rem] lg:h-[2.1875rem] lg:w-[2.1875rem] xl:h-40 xl:w-40"
           alt="Sad emoji"
         />
       </div>
