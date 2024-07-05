@@ -151,7 +151,7 @@ const CollabrationForm = () => {
               className={styles.formButton}
               radius={50}
               type="submit"
-              fz={16}
+              
             >
               Submit
             </Button>

@@ -69,7 +69,7 @@ const FormSection = () => {
 
   return (
     <>
-      <div className="relative sm:mt-[-20px] xl:mt-[-25px] col-span-2 sm:mb-[-2.75rem] mb-[10px] flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%]">
+      <div className="relative col-span-2 mb-[10px] flex w-[75%] items-center sm:mb-[-2.75rem] sm:mt-[-20px] sm:min-h-[500px] sm:w-[100%] lg:mt-0 lg:w-[75%] xl:mt-[0px]">
         <form
           className={`${styles.formWrap} w-full`}
           onSubmit={form.onSubmit((values) => {
@@ -142,7 +142,6 @@ const FormSection = () => {
               color="black.0"
               type="submit"
               mt="sm"
-              fz={16}
             >
               Submit
             </Button>
