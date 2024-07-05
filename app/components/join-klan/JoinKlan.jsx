@@ -31,7 +31,7 @@ const JoinKlan = () => {
         <h1 className="page-heading mb-[-2px]  text-center text-[40px] sm:text-[74px] lg:text-[94px] xl:text-[110px]">
           JoIn our Klan
         </h1>
-        <p className="content-neue sm:lead-[0px] text-center text-[16px] italic leading-[18px] text-blue-700 sm:text-[16px] lg:text-[18px] xl:text-[22px]">
+        <p className="content-neue sm:lead-[0px] text-center text-[16px] italic leading-[18px] text-blue-700 sm:text-[16px] lg:text-[18px] xl:leading-[26px] lg:leading-[22px] xl:text-[22px]">
           (Note: We use the word “Klan”
           <br className="sm:hidden" /> to replace “clan.”)
         </p>
@@ -73,7 +73,7 @@ const JoinKlan = () => {
               height={0}
               width={0}
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[25px] xl:mt-[28px] xl:text-[22px] xl:leading-[26px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[25px] xl:mt-[28px] lg:text-[18px] lg:leading-[20px] xl:text-[22px] xl:leading-[26px]">
               “Pop” goes our hearts when you leave one!
             </p>
           </div>
@@ -91,7 +91,7 @@ const JoinKlan = () => {
               height={0}
               width={0}
             />
-            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[20px] xl:my-[22px] xl:text-[22px] xl:leading-[26px]">
+            <p className="page-subhead mt-[18px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[20px] xl:my-[22px] lg:text-[18px] lg:leading-[20px] xl:text-[22px] xl:leading-[26px]">
               The biggest green flag you will ever see.
             </p>
           </div>
@@ -109,7 +109,7 @@ const JoinKlan = () => {
               height={0}
               width={0}
             />
-            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[30px] xl:mt-[32px] xl:text-[22px] xl:leading-[26px]">
+            <p className="page-subhead mt-[26px] text-[20px] leading-[20px] text-[#2A2A2A] lg:mt-[36px] xl:mt-[32px] lg:text-[18px] lg:leading-[20px] xl:text-[22px] xl:leading-[26px]">
               For your professional needs!
             </p>
           </div>

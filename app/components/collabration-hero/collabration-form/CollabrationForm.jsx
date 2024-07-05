@@ -82,20 +82,21 @@ const CollabrationForm = () => {
         >
           <div className="mt-[20px] w-[100%] sm:mt-[40px] lg:mb-[22px] lg:w-[50%]">
             <label className="content-neue text-[16px] sm:text-[18px] mb-[10px]">
-              Collaboration Type<span className={styles.dropDownStar}>*</span>
+              Collaboration Type<span className={styles.dropDownStar}> *</span>
             </label>
             <Select
             mt={7}
               radius={50}
               
-              className={{
-                input: styles.dropDown,
-                error: styles.dropDownError,
-              }}
+              // classNames={{
+              //   input: styles.dropDown,
+              //   error: styles.dropDownError,
+              // }}
               classNames={{
-                input: styles.selectInput,
+                input: styles.dropDown,
                 dropdown: styles.selectDropDown,
                 option: styles.selectOption,
+                error: styles.dropDownError,
               }}
               key={form.key("collaborationType")}
               placeholder="Choose type"

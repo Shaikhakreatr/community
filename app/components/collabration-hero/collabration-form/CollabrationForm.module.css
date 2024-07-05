@@ -38,27 +38,32 @@
         border-color: #2A2A2A;
       }
 } 
+
 .inputError{
     color: #DE033E;
     margin-top: 6px;
 }
-/* .dropDownError{
+.dropDownError{
     color: #DE033E;
     margin-top: 6px;
-} */
+}
 
 .inputLabel{
     color: #2A2A2A;
     font-size: 1.125rem;
     margin-bottom: 4px;
 }
+.dropDown[data-error]::placeholder {
+    color: #a9a8a8;
+}
+
 .dropDown{ 
-    
+    font-family: "Neue Montreal" ;
     background-color: transparent;
     border: 1px solid #2A2A2A;
 }
 .dropDownStar{
-    color: #DE033E;
+    color:rgb(250, 82, 82);
 }
 .selectInput{
     background: transparent;

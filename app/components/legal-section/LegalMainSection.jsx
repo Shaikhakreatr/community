@@ -16,7 +16,7 @@ const LegalMainSection = () => {
   return (
     <div className="container mx-auto">
       <div className=" mt-[34px] flex flex-col items-center justify-center sm:mt-[60px] lg:mt-[35px] xl:mx-[50px] xl:mt-[82px]">
-        <h1 className="heading mb-[22px]  text-[40px] sm:mb-[26px] sm:text-[74px] lg:mb-[38px] lg:text-[94px] xl:mb-[44px] xl:text-[110px]">
+        <h1 className="heading mb-[22px]  text-[40px] sm:mb-[26px] sm:text-[74px] lg:mb-[30px] lg:text-[94px] xl:mb-[44px] xl:text-[110px]">
           legal
         </h1>
         <div className=" flex  w-full items-center justify-center">
