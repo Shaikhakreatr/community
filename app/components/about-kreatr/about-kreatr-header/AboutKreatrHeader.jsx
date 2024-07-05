@@ -26,7 +26,7 @@ const AboutKreatrHeader = () => {
           <div className="hidden w-[50%] items-center justify-center  sm:flex"></div>
           <div className="mx-[50px] flex flex-col items-center justify-start sm:mx-0 sm:w-[50%]">
             <div className="mb-[24px] sm:mb-0">
-              <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px] xl:text-[48px] xl:leading-[52px]">
+              <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px]  xl:text-[48px] xl:leading-[52px]">
                 What are we?
               </h4>
               <p className="content-neue text-center text-[16px] leading-[18px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">

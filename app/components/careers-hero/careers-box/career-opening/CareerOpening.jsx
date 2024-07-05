@@ -12,7 +12,7 @@ const CareerOpening = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="mb-[6px] flex flex-col items-center justify-center  sm:mb-0">
         <div className="relative mb-[46px] mt-[34px] sm:mt-[60px] lg:mb-[54px] lg:mt-[38px] xl:mb-[64px]  xl:mt-[82px] ">
-          <h1 className="page-heading text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
+          <h1 className="page-heading text-[#2A2A2A] text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
             Careers
           </h1>
           <div className="absolute right-[-54%] top-[6%] rotate-[10deg] sm:right-[-66px] sm:top-[30px] lg:right-[-98px] lg:top-[24px] xl:right-[-35%] xl:top-[22%]">

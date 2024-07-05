@@ -23,7 +23,7 @@ const AboutKreatrBottom = () => {
   return (
     <div className="mb-[40px] mt-[40px] lg:mt-0 xl:mt-[72px]  sm:mb-[50px] ">
       <div className="xl:mb-[42px]">
-        <h1 className="page-heading text-center text-[40px] lg:text-[86px] xl:text-[96px]">
+        <h1 className="page-heading text-center text-[#2A2A2A] text-[40px] lg:text-[86px] xl:text-[96px]">
           Meet the Humans of
         </h1>
         <div className="relative h-[50px]">
@@ -36,7 +36,7 @@ const AboutKreatrBottom = () => {
           />
         </div>
       </div>
-      <div className=" hidden flex-col items-center justify-center sm:flex sm:w-[100%]">
+      <div className=" hidden flex-col mt-[44px] items-center justify-center sm:flex sm:w-[100%]">
         <div className="grid grid-cols-4 items-center justify-center sm:mt-[30px] sm:gap-[5px] lg:mt-[64px] lg:gap-[25px] xl:mt-[60px]">
           <div className={styles.cardContainer} onClick={() => handleFlip(0)}>
             <div
@@ -536,7 +536,7 @@ const AboutKreatrBottom = () => {
           </div>
         </div>
       </div>
-      <div className="content-neue hidden flex-col xl:mt-[72px] xl:mb-[72px] lg:my-[64px] sm:my-[40px] items-center justify-center text-[14px] leading-[18px] sm:flex lg:mt-[64px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+      <div className="content-neue hidden flex-col xl:mt-[72px] xl:mb-[72px] lg:my-[64px] sm:my-[40px] items-center justify-center text-[#2A2A2A] text-[14px] leading-[18px] sm:flex lg:mt-[64px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
         <p className="text-center">
           {`PS: Can't figure out what their descriptions mean?`}
           <br /> {`Here's a link to the`}{" "}

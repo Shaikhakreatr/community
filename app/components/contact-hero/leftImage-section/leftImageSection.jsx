@@ -4,10 +4,10 @@ import Link from "next/link";
 const LeftImageSection = () => {
   return (
     <div className="sm:ml-0 relative col-span-3  items-center flex min-h-[100%] xl:mr-0 lg:mr-[85px] lg:mt-[-32px]">
-      <div className="absolute sm:block hidden xl:left-[3.4%] xl:top-[10%]  lg:top-[12%] lg:left-[5.5%] sm:left-[-46px] sm:top-[58px] page-heading lg:text-[94px] sm:text-[74px] text-[50px] xl:text-[110px]">
+      <div className="absolute sm:block hidden xl:left-[3.4%] xl:top-[10%]  lg:top-[12%] lg:left-[5.5%] sm:left-[-46px] text-[#2A2A2A] sm:top-[58px] page-heading lg:text-[94px] sm:text-[74px] text-[50px] xl:text-[110px]">
         <h1>Get In Touch-</h1>
       </div>
-      <div className="absolute sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
+      <div className="absolute text-[#2A2A2A] sm:hidden block  top-[24%] left-[8%]  page-heading  text-[62px] ">
         <h1>Get In Touch</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 xl:gap-12 lg:gap-10 lg:mt-[60px]  ">

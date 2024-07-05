@@ -59,7 +59,7 @@ const CollabrationSection = () => {
                     <br className="sm:hidden" /> and igniting minds as a
                     speaker?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:mt-[20px] sm:text-[16px] lg:mt-[33px] lg:text-[18px] xl:mt-[40px] xl:text-[22px]">
+                  <p className="content-neue-medium text-center text-[14px] italic text-[#2A2A2A] sm:mt-[20px] sm:text-[16px] lg:mt-[33px] lg:text-[18px] xl:mt-[40px] xl:text-[22px]">
                     {`Here's what happens when you collaborate with us!`}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </div>
-                      <p className="content-neue text-center text-[16px] leading-[17px] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                      <p className="content-neue text-center text-[16px] leading-[17px] text-[#2A2A2A] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                         {item.description}
                       </p>
                     </div>
@@ -92,7 +92,7 @@ const CollabrationSection = () => {
                     {`Turbocharge your brand's`}
                     <br className="sm:hidden" /> visibility through sponsorship!
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:mt-[20px] sm:text-[16px] lg:mt-[18px] lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
+                  <p className="content-neue-medium text-center text-[14px] italic text-[#2A2A2A] sm:mt-[20px] sm:text-[16px] lg:mt-[18px] lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
                     {`Here's what happens when you collaborate with us!`}
                   </p>
                 </div>
@@ -106,7 +106,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-center text-[16px] leading-[17px] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                      <p className="content-neue text-center text-[16px] leading-[17px] text-[#2A2A2A] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                         {item.description}
                       </p>
                     </div>
@@ -120,10 +120,10 @@ const CollabrationSection = () => {
             <Tabs.Panel value="spaces">
               <div className="mt-[35px] lg:mt-[50px]">
                 <div>
-                  <h1 className="page-subhead partner-text mb-[20px] text-center text-[20px] leading-[25px] sm:mb-0 sm:text-[24px] sm:leading-[30px] lg:text-[32px] xl:text-[34px]">
+                  <h1 className="page-subhead partner-text mb-[20px] text-center text-[20px] leading-[25px] sm:mb-0  sm:text-[24px] sm:leading-[30px] lg:text-[32px] xl:text-[34px]">
                     Got a great space to offer?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:mt-[20px] sm:text-[16px] lg:mt-[18px]  lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
+                  <p className="content-neue-medium text-center text-[14px] italic text-[#2A2A2A] sm:mt-[20px] sm:text-[16px] lg:mt-[18px]  lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
                     {`Here's what happens when you collaborate with us!`}
                   </p>
                 </div>
@@ -137,7 +137,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-center text-[16px] leading-[17px] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                      <p className="content-neue text-center text-[16px] leading-[17px] text-[#2A2A2A] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                         {item.description}
                       </p>
                     </div>
@@ -155,7 +155,7 @@ const CollabrationSection = () => {
                     Wish to sell your products
                     <br className="sm:hidden" /> or services as a seller?
                   </h1>
-                  <p className="content-neue-medium text-center text-[14px] italic sm:mt-[20px] sm:text-[16px] lg:mt-[18px] lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
+                  <p className="content-neue-medium text-center text-[14px] italic text-[#2A2A2A] sm:mt-[20px] sm:text-[16px] lg:mt-[18px] lg:text-[18px] xl:mt-[24px] xl:text-[22px]">
                     {`Here's what happens when you collaborate with us!`}
                   </p>
                 </div>
@@ -169,7 +169,7 @@ const CollabrationSection = () => {
                           {item.title}
                         </div>
                       </ul>
-                      <p className="content-neue text-center text-[16px] leading-[17px] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                      <p className="content-neue text-center text-[16px] leading-[17px] text-[#2A2A2A] sm:text-start sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                         {item.description}
                       </p>
                     </div>

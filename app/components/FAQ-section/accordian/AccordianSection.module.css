@@ -24,9 +24,11 @@
 .accordionIcon svg{
     transform: scale(2);
     rotate: 270deg;
+    color: #2A2A2A;
 }
 [data-active] .accordionIcon svg {
     rotate: 180deg;
+    color: #2A2A2A;
 }
 
 @media (min-width: 640px) {
@@ -46,11 +48,13 @@
         font-family: 'Neue Montreal Bold';
         font-size: 12px;
         padding: 10px;
+        color: #2A2A2A;
         }
         .controlBox2{
             font-family: 'Neue Montreal Bold';
             font-size: 12px;
             padding: 7px;
+            color: #2A2A2A;
 
             }
 }
@@ -70,12 +74,13 @@
         font-size: 18px;
         padding: 10px;
         min-height: 91px;
+        color: #2A2A2A;
         }
         .controlBox2{
             font-family: 'Neue Montreal Bold';
             font-size: 18px;
             padding: 7px;
-
+            color: #2A2A2A;
             }
 
 }
@@ -86,6 +91,7 @@
         font-weight: 200;
         padding: 10px;
         min-height: 88px;
+        color: #2A2A2A;
         
         }
         .controlBox2{
@@ -93,6 +99,7 @@
             font-size: 20px;
             font-weight: 200;
             padding: 10px;
+            color: #2A2A2A;
             
             }
         .accordionPanel{
@@ -117,12 +124,14 @@
             font-weight: 200;
             padding: 10px;
             min-height: 98px;
+            color: #2A2A2A;
             }
             .controlBox2{
                 font-family: 'Neue Montreal Bold';
                 font-size: 24px;
                 font-weight: 200;
                 padding: 10px;
+                color: #2A2A2A;
                 }
             .accordionPanel{
                 font-family: "Neue Montreal";

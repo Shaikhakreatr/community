@@ -118,17 +118,17 @@ const UpcomingHero = ({ upcomingData }) => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
-            <h1 className="page-subhead text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
+            <h1 className="page-subhead text-[#2A2A2A] text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
             <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
-              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
@@ -139,7 +139,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 alt="main-img"
               />
             </div>
-            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[4px] text-[13px] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
+            <div className="content-neue-medium mt-[10px] flex items-center  justify-center gap-[4px] text-[13px] text-[#2A2A2A] sm:mt-[18px] sm:gap-[18px] sm:text-[16px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
               <div>{upcomingData.date}</div>
               <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px]"></div>
               <div>{upcomingData.location}</div>
@@ -162,7 +162,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
             </div>
           </div>
-          <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+          <div className="mx-[20px] text-[#2A2A2A] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
             <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
               About
             </h3>
@@ -173,7 +173,7 @@ const UpcomingHero = ({ upcomingData }) => {
           </div>
           <div className="mt-[20px] lg:mt-[50px] xl:mt-[72px]">
             <div className="flex items-center justify-center">
-              <h1 className="content-neue-medium  text-[16px]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">
+              <h1 className="content-neue-medium text-[#2A2A2A] text-[16px]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
             </div>
@@ -193,13 +193,13 @@ const UpcomingHero = ({ upcomingData }) => {
             id="target-section"
             className="mt-[30px] sm:mt-[50px]"
           >
-            <h1 className="content-neue-medium text-center text-[16px] sm:text-[22px] lg:text-[30px] xl:text-[34px]">
+            <h1 className="content-neue-medium text-[#2A2A2A] text-center text-[16px] sm:text-[22px] lg:text-[30px] xl:text-[34px]">
               Fill in the details
             </h1>
             <form onSubmit={handleSubmit} className="mt-[10px] sm:mt-[20px]">
               {form.values.forms.map((formInstance, index) => (
                 <div key={index}>
-                  <p className="page-subhead mt-[30px] text-[12px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  <p className="page-subhead mt-[30px] text-[#2A2A2A] text-[12px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     {`Person  ${index + 1}`}
                   </p>
                   <div className={`${styles.formWrap} w-full`}>
@@ -279,7 +279,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
               <div className="mt-[10px] sm:mx-[150px] sm:mt-[40px]">
                 <div>
-                  <p className="content-neue text-center text-[14px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                  <p className="content-neue text-center text-[14px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] text-[#2A2A2A] xl:text-[22px] xl:leading-[26px]">
                     By clicking on proceed, I agree that I have read and
                     <br />
                     understood the{" "}
@@ -294,9 +294,9 @@ const UpcomingHero = ({ upcomingData }) => {
                 </div>
               </div>
               <div className="mt-[20px] sm:mt-[30px]">
-                <h1 className="content-neue-medium text-center text-[12px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                <h1 className="content-neue-medium text-[#2A2A2A] text-center text-[12px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                   Total Amount :{" "}
-                  <span className="page-subhead text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  <span className="page-subhead text-[#2A2A2A] text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>

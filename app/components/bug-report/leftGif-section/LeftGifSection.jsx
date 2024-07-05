@@ -4,10 +4,10 @@ import Image from "next/image";
 const LeftGifSection = () => {
   return (
     <div className="relative col-span-3 flex  min-h-[100%] items-center sm:ml-0 lg:mr-[85px] xl:mt-[-80px] lg:mt-[-150px] xl:mr-0">
-      <div className="page-heading absolute hidden text-[50px] sm:left-[-50px]  sm:top-[126px] sm:block sm:text-[74px] lg:left-[5%] lg:top-[22%] lg:text-[94px] xl:left-[2%] xl:top-[17%] xl:text-[110px]">
+      <div className="page-heading absolute hidden text-[50px] sm:left-[-50px]  sm:top-[126px] sm:block sm:text-[74px] lg:left-[5%] text-[#2A2A2A] lg:top-[22%] lg:text-[94px] xl:left-[2%] xl:top-[17%] xl:text-[110px]">
         <h1>Report a Pest</h1>
       </div>
-      <div className="page-heading absolute left-[6%]  top-[44%] block  text-[59px]  sm:hidden ">
+      <div className="page-heading absolute text-[#2A2A2A] left-[6%]  top-[44%] block  text-[59px]  sm:hidden ">
         <h1>Report a Pest</h1>
       </div>
       <div className="sm:grid sm:grid-cols-5 lg:mt-[60px] lg:gap-10 xl:gap-12  ">

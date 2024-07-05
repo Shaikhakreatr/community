@@ -478,10 +478,10 @@ const BlogListingHero = () => {
         <h1
           className={
             isMobile
-              ? " heading text-[2.5rem]"
+              ? " heading text-[#2A2A2A] text-[2.5rem]"
               : isTabletView
-                ? " heading text-74"
-                : "heading lg:text-[94px] xl:text-110 "
+                ? " heading text-[#2A2A2A] text-74"
+                : "heading text-[#2A2A2A] lg:text-[94px] xl:text-110 "
           }
         >
           Explore The
@@ -516,7 +516,7 @@ const BlogListingHero = () => {
         {isLoadMoreAvailable && (
           <div
             onClick={loadMoreData}
-            className=" content-neue-medium flex h-[40px] w-[150px] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center text-[18px] text-[#FFF641] sm:h-[50px] sm:w-[180px] sm:text-[24px] lg:h-[3.8125rem] lg:w-[13.5625rem] lg:text-[28px] xl:text-[30px]"
+            className=" content-neue-medium flex h-[40px] w-[150px] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center text-[18px] text-[#FFFDEE] sm:h-[50px] sm:w-[180px] sm:text-[24px] lg:h-[3.8125rem] lg:w-[13.5625rem] lg:text-[28px] xl:text-[30px]"
           >
             Load more
           </div>

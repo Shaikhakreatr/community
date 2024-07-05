@@ -245,6 +245,7 @@ h1{
   background-color: #EAA2CD;
   border: 1px solid #2A2A2A;
   border-radius: 15px;
+  color: #2A2A2A;
   
 }
 .box1:hover{
@@ -258,6 +259,7 @@ h1{
   background-color: #A0A9EB;
   border: 1px solid #2A2A2A;
   border-radius: 15px;
+  color: #2A2A2A;
 }
 .box2:hover{
   background-color: #2A2A2A;
@@ -270,6 +272,7 @@ h1{
   background-color: #9DE29D;
   border: 1px solid #2A2A2A;
   border-radius: 15px;
+  color: #2A2A2A;
 }
 .box3:hover{
   background-color: #2A2A2A;
@@ -282,6 +285,7 @@ h1{
   background-color: #FFFBA8;
   border: 1px solid #2A2A2A;
   border-radius: 15px;
+  color: #2A2A2A;
 }
 .box4:hover{
   background-color: #2A2A2A;
@@ -320,22 +324,26 @@ h1{
   .box1{
     background-color:#EAA2CD;
     border-radius: 10px;
+    color: #2A2A2A;
 
   }
   
   .box2{
     background-color: #A0A9EB;
     border-radius: 10px;
+    color: #2A2A2A;
   }
   
   .box3{
     background-color: #9DE29D;
     border-radius: 10px;
+    color: #2A2A2A;
   }
   
   .box4{
     background-color: #FFFBA8;
     border-radius: 10px;
+    color: #2A2A2A;
   }
   .JOK-btn{
     background-color: #2A2A2A;

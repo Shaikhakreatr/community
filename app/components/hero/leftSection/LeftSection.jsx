@@ -90,11 +90,11 @@ const LeftSection = () => {
 
   return (
     <div>
-      <h1 className="page-heading text-64 md:mb-[15px] lg:mb-0 lg:text-[5rem] xl:text-110">
+      <h1 className="page-heading text-[#2A2A2A] text-64 md:mb-[15px] lg:mb-0 lg:text-[5rem] xl:text-110">
         KReaTR
       </h1>
       <div className="mt-[-15px] flex items-center sm:mt-[-15px] lg:mt-[-0.875rem] xl:mt-[-1.875rem] ">
-        <p className="content-neue pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
+        <p className="content-neue text-[#2A2A2A] pr-3 text-17 italic lg:text-[1.25rem] xl:text-30 ">
           kree-AY-ter
         </p>
         {soundActive ? (
@@ -117,13 +117,13 @@ const LeftSection = () => {
           />
         )}
       </div>
-      <div className=" my-[1.75rem] flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[70%] xl:w-[73%]">
+      <div className=" my-[1.75rem] flex w-[103%] sm:mt-[12px] sm:w-[92%] md:w-[80%] lg:w-[64%] xl:w-[67%]">
         <Carousel plugins={[autoplay]} loop withControls={false}>
           <Carousel.Slide>
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-[22px]">
               noun
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
+            <p className="font-neueMonteral text-[#2A2A2A] carousel text-16 md:leading-6 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
               A group of people who encourage creative thinking, promote
               cross-industry collaboration, and work towards creating a diverse
               community.
@@ -133,7 +133,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-[22px]">
               verb
             </p>
-            <p className="font-neueMonteral carousel text-16 md:leading-6 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
+            <p className="font-neueMonteral text-[#2A2A2A] carousel text-16 md:leading-6 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
               A group of like-minded creatives nurturing a community to support
               creatives like you.
             </p>
@@ -142,7 +142,7 @@ const LeftSection = () => {
             <p className="bulding-blocks text-16 italic text-blue-700 lg:text-[1.125rem] xl:text-[22px]">
               adjective(s)
             </p>
-            <p className="font-neueMonteral carousel text-16 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
+            <p className="font-neueMonteral text-[#2A2A2A] carousel text-16 lg:text-[1.125rem] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] ">
               Innovative, creative, dynamic, supportive, knowledge hub,
               inclusive, and lots of fun.
             </p>
@@ -180,16 +180,16 @@ const LeftSection = () => {
                 </div>
 
                 <div className="ml-2 flex w-2/4 flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 text-[#2A2A2A] h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Community</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 text-[#2A2A2A] h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Klan</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 text-[#2A2A2A] h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Collective</p>
                   </div>
-                  <div className="mb-2 mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2 mr-2 text-[#2A2A2A] h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Alliance</p>
                   </div>
                 </div>
@@ -214,16 +214,16 @@ const LeftSection = () => {
                   </p>
                 </div>
                 <div className="ml-2 flex w-[52%] flex-wrap sm:w-full sm:flex-nowrap sm:pl-0">
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border text-[#2A2A2A]  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Consultancy</p>
                   </div>
-                  <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  mr-2 h-fit rounded-3xl border text-[#2A2A2A]  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Agency</p>
                   </div>
-                  {/* <div className="mb-2  mr-2 h-fit rounded-3xl border  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  {/* <div className="mb-2  mr-2 h-fit rounded-3xl border text-[#2A2A2A]  border-[#2A2A2A] px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Studio</p>
                   </div> */}
-                  <div className="mb-2  h-fit rounded-3xl border border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
+                  <div className="mb-2  h-fit rounded-3xl border text-[#2A2A2A] border-[#2A2A2A]  px-[.625rem] py-0 text-[.75rem] sm:px-[.625rem] sm:py-0 xl:text-18">
                     <p className="emoji-content">Evil-Corp</p>
                   </div>
                 </div>

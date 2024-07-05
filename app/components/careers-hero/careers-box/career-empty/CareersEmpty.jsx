@@ -7,7 +7,7 @@ const CareersEmpty = () => {
   return (
     <div>
       <div>
-        <h1 className="page-heading text-center text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
+        <h1 className="page-heading text-[#2A2A2A] text-center text-[40px] sm:text-[80px] lg:text-[90px] xl:text-[110px]">
           Careers
         </h1>
       </div>
