@@ -116,7 +116,7 @@ const JoinKlan = () => {
         </Link>
       </div>
       <div className="relative mt-[635px] sm:mt-[200px] lg:mt-[250px] xl:mt-[220px]">
-        <h1 className=" page-heading absolute right-[20%] top-[-26%] text-center text-[35px] sm:left-[20%] sm:top-[-25%] text-[#2A2A2A] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
+        <h1 className=" page-heading absolute right-[24%] top-[-26%] text-center text-[35px] sm:left-[20%] sm:top-[-25%] text-[#2A2A2A] lg:right-[19%] lg:top-[-16%] lg:text-[55px] xl:right-[20%] xl:top-[-12%] xl:text-[64px]">
           WE CELEBRATE THE
         </h1>
         <h1 className="JOK-content page-heading rotate-[-1deg] text-center text-[48px] lg:text-[95px] xl:mt-[50px] xl:text-[110px] ">
