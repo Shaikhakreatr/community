@@ -221,7 +221,7 @@ const UpcomingHero = ({ upcomingData }) => {
               {upcomingData.images.map((item, index) => (
                 <img
                   key={index}
-                  className={` h-[106px] w-[106px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                  className={` h-auto w-[50%] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
                 />

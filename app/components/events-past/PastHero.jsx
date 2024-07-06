@@ -51,7 +51,7 @@ const PastHero = ({ pastData }) => {
                 <div>{pastData.location}</div>
               </div>
             </div>
-            <div className="mx-[20px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+            <div className="mx-[0px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
               <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
                 About
               </h3>
@@ -66,11 +66,11 @@ const PastHero = ({ pastData }) => {
                   Behold, Snapshots!
                 </h1>
               </div>
-              <div className="mt-[25px] grid sm:grid-cols-3 grid-cols-2 gap-2 sm:mt-[40px] sm:gap-4 lg:gap-[30px]">
+              <div className="mt-[28px] grid grid-cols-2 gap-3 sm:mt-[40px] sm:grid-cols-3 sm:gap-4 lg:gap-[30px]">
                 {pastData.images.map((item, index) => (
                   <img
                     key={index}
-                    className=" h-[150px] w-[150px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                    className=" h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
                     src={item}
                     alt="events img"
                   />
