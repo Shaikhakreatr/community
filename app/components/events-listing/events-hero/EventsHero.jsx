@@ -47,7 +47,7 @@ const EventsHero = () => {
 
             <Tabs.Panel value="upcoming">
               <div className="page-heading relative mt-[48px] text-center sm:mt-[100px] lg:mt-[105px] xl:mt-[166px]">
-                <h1 className="text-center text-[#2A2A2A] text-[40px] leading-[32px] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
+                <h1 className="text-center text-[40px] leading-[32px] text-[#2A2A2A] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
                   Kreatr’s
                   <br className="sm:hidden" /> very own
                 </h1>
@@ -62,7 +62,7 @@ const EventsHero = () => {
             {/* past heading section */}
             <Tabs.Panel value="past">
               <div className="page-heading relative mb-[-40px] mt-[48px] sm:mb-0 sm:mt-[100px] sm:h-[50px] lg:mt-[105px] xl:mt-[166px] ">
-                <h1 className="text-center text-[40px] text-[#2A2A2A] leading-[33px] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
+                <h1 className="text-center text-[40px] leading-[33px] text-[#2A2A2A] sm:text-[74px] sm:leading-[0px] lg:text-[94px] xl:text-[110px] ">
                   Take a look
                   <br className="sm:hidden" /> at our
                 </h1>
@@ -96,7 +96,7 @@ const EventsHero = () => {
 
             {/* upcoming hero section */}
             {upcomingEvents.length === 0 && tab !== "past" ? (
-              <div className="page-subhead my-[35px] text-[#2A2A2A] text-center text-[30px]">
+              <div className="page-subhead my-[35px] text-center text-[30px] text-[#2A2A2A]">
                 No upcoming events
               </div>
             ) : (
@@ -133,11 +133,11 @@ const EventsHero = () => {
                             alt="upcoming img"
                           />
                           <div className="my-[12px] flex items-start justify-between lg:mb-[20px] lg:mt-[10px] lg:min-h-[56px] xl:my-[25px] xl:min-h-[68px]">
-                            <p className="page-subhead text-[#2A2A2A] text-[24px] leading-[21px] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
+                            <p className="page-subhead text-[24px] leading-[21px] text-[#2A2A2A] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
                               {event.heading}
                             </p>
                           </div>
-                          <div className="upcoming-sub content-neue-medium my-[14px] flex h-[28.34px] w-[92.54px] items-center justify-center rounded-[30px] border border-[#2A2A2A] text-[#2A2A2A] text-center text-[12px] sm:my-0 sm:text-[13px] lg:my-[16px] lg:mt-[-8px] lg:h-[38.16px] lg:w-[123.87px] lg:text-[15px] xl:h-[40.16px] xl:w-[133.87px] xl:text-[16px]">
+                          <div className="upcoming-sub content-neue-medium my-[14px] flex h-[28.34px] w-[92.54px] items-center justify-center rounded-[30px] border border-[#2A2A2A] px-3 text-center text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:mt-[-8px] lg:h-[38.16px] lg:w-[123.87px] lg:text-[15px] xl:h-[40.16px] xl:w-[133.87px] xl:text-[16px]">
                             Register now
                           </div>
                         </div>
@@ -179,11 +179,11 @@ const EventsHero = () => {
                           alt="past img"
                         />
                         <div className="my-[12px] flex items-start justify-between lg:mb-[-4px] lg:mt-[9px] lg:min-h-[56px] xl:my-[20px] xl:min-h-[68px]">
-                          <p className="page-subhead text-[#2A2A2A] text-[24px] leading-[21px] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
+                          <p className="page-subhead text-[24px] leading-[21px] text-[#2A2A2A] sm:text-[26px] sm:leading-[25px] lg:text-[28px] lg:leading-[28px] xl:text-[32px] xl:leading-[35px]">
                             {event.heading}
                           </p>
                         </div>
-                        <div className="past-sub content-neue-medium my-[14px] flex h-[28px] w-[115px] items-center justify-center rounded-[30px] border border-[#2A2A2A]  text-center text-[12px] sm:my-0 text-[#2A2A2A] sm:text-[13px] lg:my-[16px] lg:h-[40.16px] lg:w-[162px] lg:text-[15px] xl:text-[16px]">
+                        <div className="past-sub content-neue-medium my-[14px] flex h-[28px] w-[115px] items-center justify-center rounded-[30px] border border-[#2A2A2A] px-3 text-center  text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:h-[40.16px] lg:w-[162px] lg:text-[15px] xl:text-[16px]">
                           Explore the event
                         </div>
                       </div>

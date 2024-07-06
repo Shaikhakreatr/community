@@ -2,7 +2,7 @@ import React from "react";
 
 const LegalPage5 = () => {
   return (
-    <div className="content-neue sm:px-[20px] mt-[18px] text-[#2A2A2A] text-[16px] leading-[20px] sm:mt-[48px] sm:text-[16px] sm:leading-[18px] lg:mt-[40px] lg:text-[18px] lg:leading-[22px] xl:mt-[58px] xl:text-[22px] xl:leading-[26px] ">
+    <div className="content-neue sm:px-[20px] mt-[18px] text-[#2A2A2A] text-[14px] leading-[20px] sm:mt-[48px] sm:text-[16px] sm:leading-[18px] lg:mt-[40px] lg:text-[16px] lg:leading-[22px] xl:mt-[58px] xl:text-[20px] xl:leading-[26px] ">
       <div className="legal_page_h pb-2 pt-2 mb-[15px]">Agreement Structure</div>
       This Agreement includes General Terms, and what segment means for us and
       our end users.

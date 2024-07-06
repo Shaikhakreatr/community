@@ -30,7 +30,7 @@ const LegalPage2 = () => {
     "Withdraw consent at any time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.",
   ];
   return (
-    <div className="content-neue sm:px-[20px] text-[#2A2A2A] text-[16px] leading-[20px] sm:text-[16px] sm:leading-[18px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px] xl:mt-[58px] lg:mt-[40px] sm:mt-[48px] mt-[18px]">
+    <div className="content-neue sm:px-[20px] text-[#2A2A2A] text-[14px] leading-[20px] sm:text-[16px] sm:leading-[18px] lg:text-[16px] lg:leading-[22px] xl:text-[20px] xl:leading-[26px] xl:mt-[58px] lg:mt-[40px] sm:mt-[48px] mt-[18px]">
       <h1 className="legal_page_h pb-2 mb-[15px]">Introduction </h1>
       {`Kreatrminds Private Limited companies worldwide, its subsidiaries,
       affiliates (collectively, the "Kreatr", "Company," "we," "us," or "our")
