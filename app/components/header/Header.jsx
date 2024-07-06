@@ -94,10 +94,10 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div
-              className={`nav-line1 mb-[9px] h-[2px] w-[25px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
+              className={`nav-line1 mb-[8px] h-[2px] w-[18px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[28px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "translate-y-1.5  rotate-45 transform" : "translate-y-0  rotate-0 transform"}`}
             ></div>
             <div
-              className={`nav-line2 h-[2px] w-[25px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[35px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
+              className={`nav-line2 h-[2px] w-[18px] rounded-[20px] bg-[#2A2A2A] transition-transform duration-300 sm:h-[2px] sm:w-[28px] lg:h-[2px] xl:h-[2px] ${menuOpen ? "-translate-y-1 -rotate-45 transform" : "translate-y-0 rotate-0 transform"}`}
             ></div>
           </div>
         </div>
@@ -138,7 +138,11 @@ const Header = () => {
                 />
               </div>
               <div className="pointer-events-auto absolute left-[8%] top-[62%] sm:left-[18%] sm:top-[62%] md:left-[27%] lg:left-[14%] lg:top-[53%] xl:left-[16%] xl:top-[49%]">
-                <CustomLink href="/about-kreatr" closeMenu={closeMenu} menuOpen={menuOpen}>
+                <CustomLink
+                  href="/about-kreatr"
+                  closeMenu={closeMenu}
+                  menuOpen={menuOpen}
+                >
                   <Image
                     className="h-[134px] w-[134px] hover:scale-105 sm:h-[181px] sm:w-[181px] lg:h-[131px] lg:w-[141px] xl:h-[175px] xl:w-[181px]"
                     src={
@@ -162,7 +166,11 @@ const Header = () => {
                 />
               </div> */}
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] md:left-[27%] md:top-[86%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
-                <CustomLink href="/events" closeMenu={closeMenu} menuOpen={menuOpen}>
+                <CustomLink
+                  href="/events"
+                  closeMenu={closeMenu}
+                  menuOpen={menuOpen}
+                >
                   <Image
                     className="h-[48px] w-[172px] hover:scale-105 sm:h-[85px] sm:w-[236px] lg:h-[50px] lg:w-[200px] xl:h-[66px] xl:w-[236px]"
                     src={
@@ -175,7 +183,11 @@ const Header = () => {
                 </CustomLink>
               </div>
               <div className="pointer-events-auto absolute left-[36.5%] top-[79%] sm:left-[41%] sm:top-[76%] md:left-[42%] lg:left-[35%] lg:top-[74%] xl:left-[38%] xl:top-[72%]">
-                <CustomLink href="/about-community" closeMenu={closeMenu} menuOpen={menuOpen}>
+                <CustomLink
+                  href="/about-community"
+                  closeMenu={closeMenu}
+                  menuOpen={menuOpen}
+                >
                   <Image
                     className="h-[65px] w-[120px] hover:scale-105 sm:h-[100px] sm:w-[170px] md:w-[190px] lg:h-[60px] lg:w-[150px] xl:h-[75px] xl:w-[170px]"
                     src={
@@ -188,7 +200,11 @@ const Header = () => {
                 </CustomLink>
               </div>
               <div className="pointer-events-auto absolute left-[69%] top-[76%] sm:left-[61%] lg:left-[65%] lg:top-[70%] xl:left-[64%] xl:top-[67%]">
-                <CustomLink href="/contact" closeMenu={closeMenu} menuOpen={menuOpen}>
+                <CustomLink
+                  href="/contact"
+                  closeMenu={closeMenu}
+                  menuOpen={menuOpen}
+                >
                   <Image
                     className="h-[102px] w-[79px] hover:scale-105 sm:h-[154px] sm:w-[120px] lg:h-[114px] lg:w-[95px] xl:h-[150px] xl:w-[120px]"
                     src={

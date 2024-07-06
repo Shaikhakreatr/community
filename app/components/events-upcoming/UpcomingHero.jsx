@@ -200,7 +200,7 @@ const UpcomingHero = ({ upcomingData }) => {
               About
             </h3>
             <br />
-            <div className="content-neue whitespace-pre-line text-center text-[16px] leading-[20px] sm:text-start sm:text-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+            <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] sm:text-start sm:text-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
               <p>{upcomingData.description}</p>
             </div>
           </div>
