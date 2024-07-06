@@ -202,7 +202,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
             </div>
           </div>
-          <div className="mx-[20px] mt-[25px] text-[#2A2A2A] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+          <div className="mx-[0px] mt-[25px] text-[#2A2A2A] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
             <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
               About
             </h3>
@@ -221,7 +221,7 @@ const UpcomingHero = ({ upcomingData }) => {
               {upcomingData.images.map((item, index) => (
                 <img
                   key={index}
-                  className={` h-auto w-[50%] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                  className={` h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
                   src={item}
                   alt="events img"
                 />
