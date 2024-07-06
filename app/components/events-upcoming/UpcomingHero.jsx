@@ -255,7 +255,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       label="Phone Number"
                       mt={10}
                       radius={50}
-                      placeholder="+00 1234 5678"
+                      placeholder="+00 1234567890"
                       classNames={{
                         input: styles.transparentInput,
                         label: styles.inputLabel,
