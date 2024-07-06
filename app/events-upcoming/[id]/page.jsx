@@ -6,6 +6,7 @@ import Header from "@/app/components/header/Header";
 import React from "react";
 import UpcomingHero from "@/app/components/events-upcoming/UpcomingHero";
 import { useParams } from "next/navigation";
+import Spinner from "@/app/components/spinner/Spinner";
 
 const UpcomingDetails = () => {
   const { id } = useParams();
@@ -42,7 +43,11 @@ const UpcomingDetails = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Spinner />
+      </div>
+    );
   }
 
   if (error) {

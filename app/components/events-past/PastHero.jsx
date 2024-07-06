@@ -66,11 +66,11 @@ const PastHero = ({ pastData }) => {
                   Behold, Snapshots!
                 </h1>
               </div>
-              <div className="mt-[20px] flex items-center justify-center gap-1 sm:mt-[40px] sm:gap-4 lg:gap-[30px]">
+              <div className="mt-[25px] grid sm:grid-cols-3 grid-cols-2 gap-2 sm:mt-[40px] sm:gap-4 lg:gap-[30px]">
                 {pastData.images.map((item, index) => (
                   <img
                     key={index}
-                    className=" h-[106px] w-[106px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                    className=" h-[150px] w-[150px] object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
                     src={item}
                     alt="events img"
                   />

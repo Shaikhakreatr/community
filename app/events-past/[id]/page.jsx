@@ -6,6 +6,7 @@ import Header from "@/app/components/header/Header";
 import React from "react";
 import PastHero from "@/app/components/events-past/PastHero";
 import { useParams } from "next/navigation";
+import Spinner from "@/app/components/spinner/Spinner";
 
 const PastDetails = () => {
   const { id } = useParams();
@@ -43,7 +44,11 @@ const PastDetails = () => {
   }, [id, BACKEND_EVENT_INFO_URI]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Spinner />
+      </div>
+    );
   }
 
   if (error) {
@@ -53,7 +58,7 @@ const PastDetails = () => {
   if (!pastData) {
     return <div>Past event not found</div>;
   }
-  
+
   return (
     <main className="bg-img pt-[6.25rem]">
       <Header />

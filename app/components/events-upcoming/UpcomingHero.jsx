@@ -16,7 +16,7 @@ import PaymentFailure from "@/app/payment-failure/page";
 
 const UpcomingHero = ({ upcomingData }) => {
   const BBACKEND_EVENT_INFO_URI =
-  process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+    process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
   const router = useRouter();
   const targetRef = useRef(null);
@@ -70,19 +70,28 @@ const UpcomingHero = ({ upcomingData }) => {
       for (let i = 0; i < form.values.forms.length; i++) {
         if (validation.errors[`forms.${i}.name`]) {
           window.scrollTo({
-            top: nameRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            top:
+              nameRefs.current[i].getBoundingClientRect().top +
+              window.scrollY -
+              200,
             behavior: "smooth",
           });
           break;
         } else if (validation.errors[`forms.${i}.phoneNo`]) {
           window.scrollTo({
-            top: phoneRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            top:
+              phoneRefs.current[i].getBoundingClientRect().top +
+              window.scrollY -
+              200,
             behavior: "smooth",
           });
           break;
         } else if (validation.errors[`forms.${i}.email`]) {
           window.scrollTo({
-            top: emailRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            top:
+              emailRefs.current[i].getBoundingClientRect().top +
+              window.scrollY -
+              200,
             behavior: "smooth",
           });
           break;
@@ -90,7 +99,7 @@ const UpcomingHero = ({ upcomingData }) => {
       }
       return; // Exit the function early
     }
-  
+
     if (!validation.hasErrors) {
       console.log(form.values.forms);
       try {
@@ -107,7 +116,7 @@ const UpcomingHero = ({ upcomingData }) => {
             })),
           }),
         });
-  
+
         // Handle the response correctly
         if (res.ok) {
           console.log("Data sent successfully");
@@ -122,8 +131,6 @@ const UpcomingHero = ({ upcomingData }) => {
       }
     }
   };
-  
-  
 
   const scrollToDiv = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
@@ -210,7 +217,7 @@ const UpcomingHero = ({ upcomingData }) => {
                 Explore more events
               </h1>
             </div>
-            <div className="mt-[20px] flex flex-wrap items-center justify-center gap-1 sm:gap-4 lg:gap-[30px]">
+            <div className="mt-[25px] grid  grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4 lg:gap-[30px]">
               {upcomingData.images.map((item, index) => (
                 <img
                   key={index}
@@ -322,7 +329,7 @@ const UpcomingHero = ({ upcomingData }) => {
                     <a href="/legal" className=" text-blue-700">
                       T&C
                     </a>{" "}
-                    and {" "}
+                    and{" "}
                     <a href="/legal" className=" text-blue-700">
                       Privacy Policy
                     </a>
