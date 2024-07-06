@@ -16,10 +16,13 @@ import PaymentFailure from "@/app/payment-failure/page";
 
 const UpcomingHero = ({ upcomingData }) => {
   const BBACKEND_EVENT_INFO_URI =
-    process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+  process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
   const router = useRouter();
   const targetRef = useRef(null);
+  const nameRefs = useRef([]);
+  const phoneRefs = useRef([]);
+  const emailRefs = useRef([]);
 
   const form = useForm({
     mode: "controlled",
@@ -60,7 +63,35 @@ const UpcomingHero = ({ upcomingData }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!form.validate().hasErrors) {
+    const validation = form.validate();
+    // Validation check added here
+    if (validation.hasErrors) {
+      // Find the first field with an error and scroll to it
+      for (let i = 0; i < form.values.forms.length; i++) {
+        if (validation.errors[`forms.${i}.name`]) {
+          window.scrollTo({
+            top: nameRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            behavior: "smooth",
+          });
+          break;
+        } else if (validation.errors[`forms.${i}.phoneNo`]) {
+          window.scrollTo({
+            top: phoneRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            behavior: "smooth",
+          });
+          break;
+        } else if (validation.errors[`forms.${i}.email`]) {
+          window.scrollTo({
+            top: emailRefs.current[i].getBoundingClientRect().top + window.scrollY - 200,
+            behavior: "smooth",
+          });
+          break;
+        }
+      }
+      return; // Exit the function early
+    }
+  
+    if (!validation.hasErrors) {
       console.log(form.values.forms);
       try {
         const res = await fetch(`${BBACKEND_EVENT_INFO_URI}/${id}`, {
@@ -76,7 +107,7 @@ const UpcomingHero = ({ upcomingData }) => {
             })),
           }),
         });
-
+  
         // Handle the response correctly
         if (res.ok) {
           console.log("Data sent successfully");
@@ -91,6 +122,8 @@ const UpcomingHero = ({ upcomingData }) => {
       }
     }
   };
+  
+  
 
   const scrollToDiv = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
@@ -118,17 +151,17 @@ const UpcomingHero = ({ upcomingData }) => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
-            <h1 className="page-subhead text-[#2A2A2A] text-[22px] leading-[24px] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
+            <h1 className="page-subhead text-[22px] leading-[24px] text-[#2A2A2A] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
             <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
-              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border text-[#2A2A2A] border-[#2A2A2A] text-center text-[10px] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
@@ -162,7 +195,7 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
             </div>
           </div>
-          <div className="mx-[20px] text-[#2A2A2A] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
+          <div className="mx-[20px] mt-[25px] text-[#2A2A2A] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
             <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
               About
             </h3>
@@ -173,7 +206,7 @@ const UpcomingHero = ({ upcomingData }) => {
           </div>
           <div className="mt-[20px] lg:mt-[50px] xl:mt-[72px]">
             <div className="flex items-center justify-center">
-              <h1 className="content-neue-medium text-[#2A2A2A] text-[16px]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">
+              <h1 className="content-neue-medium text-[16px] text-[#2A2A2A]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">
                 Explore more events
               </h1>
             </div>
@@ -193,13 +226,13 @@ const UpcomingHero = ({ upcomingData }) => {
             id="target-section"
             className="mt-[30px] sm:mt-[50px]"
           >
-            <h1 className="content-neue-medium text-[#2A2A2A] text-center text-[16px] sm:text-[22px] lg:text-[30px] xl:text-[34px]">
+            <h1 className="content-neue-medium text-center text-[16px] text-[#2A2A2A] sm:text-[22px] lg:text-[30px] xl:text-[34px]">
               Fill in the details
             </h1>
             <form onSubmit={handleSubmit} className="mt-[10px] sm:mt-[20px]">
               {form.values.forms.map((formInstance, index) => (
                 <div key={index}>
-                  <p className="page-subhead mt-[30px] text-[#2A2A2A] text-[12px] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  <p className="page-subhead mt-[30px] text-[12px] text-[#2A2A2A] sm:mt-[50px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     {`Person  ${index + 1}`}
                   </p>
                   <div className={`${styles.formWrap} w-full`}>
@@ -215,6 +248,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       }}
                       withAsterisk
                       {...form.getInputProps(`forms.${index}.name`)}
+                      ref={(element) => (nameRefs.current[index] = element)}
                     />
                     <br className="hidden sm:block" />
                     <TextInput
@@ -230,6 +264,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       withAsterisk
                       inputMode="numeric"
                       {...form.getInputProps(`forms.${index}.phoneNo`)}
+                      ref={(element) => (phoneRefs.current[index] = element)}
                     />
                     <br className="hidden sm:block" />
                     <TextInput
@@ -244,6 +279,7 @@ const UpcomingHero = ({ upcomingData }) => {
                       }}
                       withAsterisk
                       {...form.getInputProps(`forms.${index}.email`)}
+                      ref={(element) => (emailRefs.current[index] = element)}
                     />
                   </div>
                 </div>
@@ -279,14 +315,14 @@ const UpcomingHero = ({ upcomingData }) => {
               </div>
               <div className="mt-[10px] sm:mx-[150px] sm:mt-[40px]">
                 <div>
-                  <p className="content-neue text-center text-[14px] leading-[20px] sm:text-[16px] lg:text-[18px] lg:leading-[22px] text-[#2A2A2A] xl:text-[22px] xl:leading-[26px]">
+                  <p className="content-neue text-center text-[14px] leading-[20px] text-[#2A2A2A] sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                     By clicking on proceed, I agree that I have read and
                     <br />
-                    understood the{" "}
+                    accepted{" "}
                     <a href="/legal" className=" text-blue-700">
                       T&C
                     </a>{" "}
-                    and the{" "}
+                    and {" "}
                     <a href="/legal" className=" text-blue-700">
                       Privacy Policy
                     </a>
@@ -294,14 +330,14 @@ const UpcomingHero = ({ upcomingData }) => {
                 </div>
               </div>
               <div className="mt-[20px] sm:mt-[30px]">
-                <h1 className="content-neue-medium text-[#2A2A2A] text-center text-[12px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                <h1 className="content-neue-medium text-center text-[12px] text-[#2A2A2A] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                   Total Amount :{" "}
-                  <span className="page-subhead text-[#2A2A2A] text-[10px] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  <span className="page-subhead text-[10px] text-[#2A2A2A] sm:text-[16px] lg:text-[20px] xl:text-[24px]">
                     INR {form.values.forms.length * upcomingData.price}.00
                   </span>
                 </h1>
               </div>
-              <div className="content-neue mb-[60px] items-center justify-center text-center sm:mb-[65px] sm:mt-[28px] mt-[20px] xl:mt-[44px] lg:mt-[36px]  sm:flex lg:gap-3 xl:gap-5">
+              <div className="content-neue mb-[60px] mt-[20px] items-center justify-center text-center sm:mb-[65px] sm:mt-[28px] sm:flex lg:mt-[36px]  lg:gap-3 xl:mt-[44px] xl:gap-5">
                 <Button
                   className={styles.formButton}
                   radius={50}
