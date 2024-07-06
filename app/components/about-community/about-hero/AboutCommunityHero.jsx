@@ -48,15 +48,10 @@ const AboutCommunityHero = () => {
               </h1>
               <ul className="content-neue ml-[26px] mt-[15px]  list-disc text-[16px] leading-[18px] sm:text-[20px] lg:mt-[28px] lg:text-[18px] lg:leading-[22px] xl:mt-[38px] xl:text-[22px] xl:leading-[26px]">
                 <li>Are a creative or a designer.</li>
-                <li> Stare at a blank canvas for way too long.</li>
                 <li> Are seeking guidance on creative projects.</li>
-                <li> Want to overcome creative blocks.</li>
-                <li>Are a professional or a newbie in the design field.</li>
+
                 <li>Want to host or attend design events and workshops.</li>
-                <li>
-                  Are looking for a community that understands your creative
-                  needs.
-                </li>
+
                 <li>
                   Want to network and collaborate with other creatives and
                   designers.
@@ -104,7 +99,7 @@ const AboutCommunityHero = () => {
               <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 Follow us on our socials and Download the Kreatr app!
               </p>
-              <div className="mt-[18px] gap-1 sm:gap-3 flex items-center justify-center sm:justify-start lg:mt-[30px]">
+              <div className="mt-[18px] flex items-center justify-center gap-1 sm:justify-start sm:gap-3 lg:mt-[30px]">
                 <Link href="/join-our-klan">
                   <div className="content-neue-medium JOK-btn  flex h-[40px] w-[160px] items-center justify-center text-[16px]  lg:h-[51px] lg:w-[185px] lg:text-[20px] xl:text-[24px]">
                     Join our Klan
