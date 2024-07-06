@@ -46,7 +46,7 @@ const RightSection = () => {
         <Link href="/about-kreatr">
         <Image
           src="/assets/images/home_page/menu_stickers/about-layerblur.svg"
-          className=" absolute left-[-4%] top-[9%] h-[8.6875rem] w-[8.6875rem] hover:scale-105 sm:left-[16%] sm:top-[8%] sm:h-[120px] sm:w-[120px] md:left-[12%] md:top-[6%] md:h-[140px] md:w-[140px] lg:left-[4%] lg:top-[3%] lg:h-[190px] lg:w-[190px] xl:left-[-18%] xl:top-[13%] xl:h-[14.9875rem] xl:w-[14.9875rem]"
+          className=" absolute left-[-4%] top-[5%] h-[8.6875rem] w-[8.6875rem] hover:scale-105 sm:left-[16%] sm:top-[8%] sm:h-[120px] sm:w-[120px] md:left-[12%] md:top-[6%] md:h-[140px] md:w-[140px] lg:left-[4%] lg:top-[3%] lg:h-[190px] lg:w-[190px] xl:left-[-18%] xl:top-[13%] xl:h-[14.9875rem] xl:w-[14.9875rem]"
           alt="about kreatr"
           height={190}
           width={190}
