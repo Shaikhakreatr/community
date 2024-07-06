@@ -137,7 +137,7 @@ const EventsHero = () => {
                               {event.heading}
                             </p>
                           </div>
-                          <div className="upcoming-sub content-neue-medium my-[14px] flex h-[28.34px] w-[92.54px] items-center justify-center rounded-[30px] border border-[#2A2A2A] px-3 text-center text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:mt-[-8px] lg:h-[38.16px] lg:w-[123.87px] lg:text-[15px] xl:h-[40.16px] xl:w-[133.87px] xl:text-[16px]">
+                          <div className="upcoming-sub content-neue-medium my-[14px] flex h-[28.34px] w-[100px] items-center justify-center rounded-[30px] border border-[#2A2A2A]  text-center text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:mt-[-8px] lg:h-[38.16px] lg:w-[123.87px] lg:text-[15px] xl:h-[40.16px] xl:w-[133.87px] xl:text-[16px]">
                             Register now
                           </div>
                         </div>
@@ -183,7 +183,7 @@ const EventsHero = () => {
                             {event.heading}
                           </p>
                         </div>
-                        <div className="past-sub content-neue-medium my-[14px] flex h-[28px] w-[115px] items-center justify-center rounded-[30px] border border-[#2A2A2A] px-3 text-center  text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:h-[40.16px] lg:w-[162px] lg:text-[15px] xl:text-[16px]">
+                        <div className="past-sub content-neue-medium my-[14px] flex h-[28px] w-[124px] items-center justify-center rounded-[30px] border border-[#2A2A2A]  text-center  text-[12px] text-[#2A2A2A] sm:my-0 sm:px-0 sm:text-[13px] lg:my-[16px] lg:h-[40.16px] lg:w-[162px] lg:text-[15px] xl:text-[16px]">
                           Explore the event
                         </div>
                       </div>
