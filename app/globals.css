@@ -92,6 +92,7 @@ h1{
 .contact-text{
   color: #A87956;
 }
+
 /* careers-page css */
 .career-btn{
   color: #FFFDEE;
@@ -458,14 +459,14 @@ h1{
 
 @media only screen and (max-width: 639px){
   .legal_page_h{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 800;
     line-height: 36px;
   }
 }
 
 .legal_page_h{
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
 }
 

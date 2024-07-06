@@ -166,11 +166,11 @@ const LegalPage2 = () => {
       We do not collect the following Special Categories of Personal Data:
       <ul className="mb-[10px] ml-[40px] list-disc">
         <li>your philosophical beliefs,</li>
-        <li>sex life,</li>
+        <li>sex/gender,</li>
         <li>political opinions,</li>
         <li>trade union membership,</li>
-        <li>information about your health </li>
-        <li>genetic and biometric data</li>
+        <li>information about your health, </li>
+        <li>genetic and biometric data,</li>
         <li>any information about criminal convictions and offences.</li>
       </ul>
       <div className=" pb-2 pt-2"> If You Fail to Provide Personal Data</div>
