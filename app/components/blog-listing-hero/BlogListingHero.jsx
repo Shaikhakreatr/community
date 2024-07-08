@@ -16,9 +16,8 @@ const BlogListingHero = () => {
 
   const BACKEND_BLOG_URI = process.env.NEXT_PUBLIC_BACKEND_BLOG_URI || null;
   const fetchBlogsData = async () => {
-    
     try {
-      if(!BACKEND_BLOG_URI){
+      if (!BACKEND_BLOG_URI) {
         return [];
       }
 
@@ -67,7 +66,7 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
+
                   <div className="flex items-center justify-between pt-6">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
@@ -94,8 +93,8 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
-                  <div className="mb-[15px]  flex items-center justify-between mt-[30px]">
+
+                  <div className="mb-[15px]  mt-[30px] flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -128,7 +127,6 @@ const BlogListingHero = () => {
                         ? `${data[j - 1].heading.slice(0, 50)}...`
                         : data[j - 1].heading}
                     </h1>
-                    
                   </div>
 
                   <div className="flex flex-col  items-end">
@@ -158,10 +156,9 @@ const BlogListingHero = () => {
                         ? `${data[j - 1].heading.slice(0, 50)}...`
                         : data[j - 1].heading}
                     </h1>
-                    
                   </div>
 
-                  <div className="flex  justify-between mt-[55px]">
+                  <div className="mt-[55px]  flex justify-between">
                     <div className="flex  items-end justify-center  text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -193,7 +190,7 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
@@ -220,8 +217,8 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
-                  <div className="flex items-center justify-between mt-[30px]">
+
+                  <div className="mt-[30px] flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -253,7 +250,7 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 pt-5">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
@@ -280,8 +277,8 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                
-                  <div className="flex items-center justify-between mt-[30px]">
+
+                  <div className="mt-[30px] flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -313,7 +310,7 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                  
+
                   <div className="flex items-center justify-between ">
                     <div className="flex items-center justify-center gap-2 pt-3 text-center">
                       <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
@@ -340,8 +337,8 @@ const BlogListingHero = () => {
                       ? `${data[j - 1].heading.slice(0, 50)}...`
                       : data[j - 1].heading}
                   </h1>
-                
-                  <div className="flex items-center justify-between mt-[30px]">
+
+                  <div className="mt-[30px] flex items-center justify-between">
                     <div className="flex items-center justify-center gap-2 text-center">
                       <div className="content flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center">
                         {data[j - 1].date}
@@ -378,10 +375,10 @@ const BlogListingHero = () => {
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
-                        
+
                         <div className="content flex h-[34px] w-[100px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[12px]">
-                        {data[j - 1].date}
-                      </div>
+                          {data[j - 1].date}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -403,13 +400,12 @@ const BlogListingHero = () => {
                         {data[j - 1].heading.length > 50
                           ? `${data[j - 1].heading.slice(0, 50)}...`
                           : data[j - 1].heading}
-                  
-                        <div className="content mt-[50px] flex h-[34px] w-[151px] items-center justify-center text-[16px] rounded-[24px] border border-selectedBorder text-center">
-                        {data[j - 1].date}
-                      </div>
+
+                        <div className="content mt-[50px] flex h-[34px] w-[151px] items-center justify-center rounded-[24px] border border-selectedBorder text-center text-[16px]">
+                          {data[j - 1].date}
+                        </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               )}
@@ -473,14 +469,14 @@ const BlogListingHero = () => {
   }
 
   return backendData.length !== 0 ? (
-    <div className="flex h-full w-full flex-col items-center justify-center xl:mt-[80px] lg:mt-[35px] sm:mt-[60px] mt-[38px]">
-      <div className="xl:mb-[72px] lg:mb-[58px] sm:mb-[48px] mb-[18px]">
+    <div className="mt-[38px] flex h-full w-full flex-col items-center justify-center sm:mt-[60px] lg:mt-[35px] xl:mt-[80px]">
+      <div className="mb-[18px] sm:mb-[48px] lg:mb-[58px] xl:mb-[72px]">
         <h1
           className={
             isMobile
-              ? " heading text-[#2A2A2A] text-[2.5rem]"
+              ? " heading text-[2.5rem] text-[#2A2A2A]"
               : isTabletView
-                ? " heading text-[#2A2A2A] text-74"
+                ? " heading text-74 text-[#2A2A2A]"
                 : "heading text-[#2A2A2A] lg:text-[94px] xl:text-110 "
           }
         >
@@ -516,7 +512,7 @@ const BlogListingHero = () => {
         {isLoadMoreAvailable && (
           <div
             onClick={loadMoreData}
-            className=" content-neue-medium flex h-[40px] w-[150px] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center text-[18px] text-[#FFFDEE] sm:h-[50px] sm:w-[180px] sm:text-[24px] lg:h-[3.8125rem] lg:w-[13.5625rem] lg:text-[28px] xl:text-[30px]"
+            className=" content-neue-medium flex h-[40px] w-[150px] cursor-pointer items-center justify-center rounded-[2rem] bg-selected text-center text-[14px] text-[#FFFDEE] sm:h-[50px] sm:w-[180px] sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent sm:hover:text-[#2A2A2A] lg:h-[3.8125rem] lg:w-[13.5625rem] lg:text-[16px] xl:text-[20px]"
           >
             Load more
           </div>
