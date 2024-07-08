@@ -7,11 +7,17 @@
     background-color: transparent;
     padding-bottom: 2px;
     border-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .transparentInputArea{
     background-color: transparent;
     padding-bottom: 2px;
     border-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .transparentInput::placeholder{

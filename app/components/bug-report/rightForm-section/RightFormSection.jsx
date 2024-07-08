@@ -56,7 +56,7 @@ const RightFormSection = () => {
 
   return (
     <>
-      <div className="relative col-span-2 mb-5 flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%] xl:mt-[20px] ">
+      <div className="relative col-span-2 mb-[10px] flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%] xl:mt-[20px] ">
         <form
           className={`${styles.formWrap} w-full `}
           onSubmit={form.onSubmit((values) => {
@@ -110,7 +110,7 @@ const RightFormSection = () => {
             rows={1}
             radius={50}
             classNames={{
-              input: styles.transparentInput,
+              input: styles.transparentInputArea,
               label: styles.inputLabel,
               error: styles.inputError,
             }}

@@ -7,12 +7,18 @@
     background-color: transparent;
     padding-bottom: 2px;
     border-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .transparentInputArea{
     background-color: transparent;
     padding-bottom: 2px;
     border-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .transparentInput::placeholder{
     color:#2A2A2A;
@@ -20,9 +26,7 @@
     font-size: 16px;
     margin-left: 40px;
     font-family: "Neue Montreal";
-    
-    
-    
+       
 }
 .transparentInputArea::placeholder{
     color:#2A2A2A;
