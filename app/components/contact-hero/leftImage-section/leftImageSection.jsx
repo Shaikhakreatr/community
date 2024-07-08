@@ -41,7 +41,7 @@ const LeftImageSection = () => {
         </div>
         <div className="sm:col-span-3 ">
           <img 
-            className="rounded-xl xl:h-[191px] xl:w-[418px] object-cover object-center lg:h-[171px] lg:w-[400px] sm:h-[171px] sm:w-[400px] w-[19.625rem] h-[7.125rem]"
+            className="rounded-xl xl:h-[191px] xl:w-[418px] object-cover object-center lg:h-[171px] lg:w-[400px] sm:h-[171px] sm:w-[400px] w-[19.625rem] h-[137px]"
             src="/assets/images/contact_page/contact-img.jpg"
             alt="form img"
           />
