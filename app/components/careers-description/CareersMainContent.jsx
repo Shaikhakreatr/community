@@ -82,7 +82,7 @@ const CareersMainContent = ({ careerData }) => {
             href="https://www.linkedin.com/company/the-kreatr/"
             target="_blank"
             rel="noreferrer"
-            className=" career-btn content-neue-medium flex h-[36px] w-[128px] cursor-pointer items-center justify-center rounded-[24px] bg-[#2A2A2A] text-center text-[15px] hover:border sm:hover:border-[#2A2A2A]  sm:hover:bg-transparent sm:hover:text-[#2A2A2A] sm:h-[38px] sm:w-[220px] sm:text-[18px] lg:h-[42px] lg:w-[280px]  lg:text-[20px]"
+            className=" career-btn content-neue-medium flex h-[36px] w-[128px] cursor-pointer items-center justify-center rounded-[24px] bg-[#2A2A2A] text-center text-[15px] sm:hover:border sm:hover:border-[#2A2A2A]  sm:hover:bg-transparent sm:hover:text-[#2A2A2A] sm:h-[38px] sm:w-[220px] sm:text-[18px] lg:h-[42px] lg:w-[280px]  lg:text-[20px]"
           >
             Apply Now
           </Link>
