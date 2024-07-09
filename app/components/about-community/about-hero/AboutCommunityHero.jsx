@@ -37,12 +37,12 @@ const AboutCommunityHero = () => {
           <div className="relative grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
             <div className="absolute left-[10%] top-[-32%] sm:static lg:ml-[115px] xl:ml-[130px] ">
               <Image
-                className="h-[228px] w-[254px]  rounded-[15px] object-cover object-center sm:h-[455px] sm:w-[320px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
+                className="h-[228px] w-[254px]  rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[320px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community2}
                 alt="Community image"
               />
             </div>
-            <div className="box2 mt-[168px] h-[369px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[360px] lg:w-[590px] lg:p-[62px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[80px]">
+            <div className="box2 mt-[168px] h-[369px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[350px] sm:w-[347px] sm:p-[50px] lg:ml-[-75px] lg:h-[360px] lg:w-[590px] lg:p-[62px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[80px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 JOIN US IF YOU
               </h1>
@@ -63,7 +63,7 @@ const AboutCommunityHero = () => {
             </div>
           </div>
           <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px] ">
-            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[340px] sm:w-[400px] sm:p-[40px] lg:ml-[115px] lg:h-[360px] lg:w-[610px] lg:p-[46px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[45px]">
+            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[40px] lg:ml-[115px] lg:h-[360px] lg:w-[610px] lg:p-[46px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 WHY SHOULD YOU
                 <br /> JOIN US?
@@ -80,7 +80,7 @@ const AboutCommunityHero = () => {
             </div>
             <div className="absolute left-[10%] top-[-42%] sm:static sm:ml-[80px] lg:ml-[150px] xl:ml-[140px]">
               <Image
-                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[340px] sm:w-[300px] lg:h-[360px] lg:w-[366px] xl:h-[401px] xl:w-[456px]"
+                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[300px] lg:h-[360px] lg:w-[366px] xl:h-[401px] xl:w-[456px]"
                 src={Community3}
                 alt="Community image"
               />
@@ -89,12 +89,12 @@ const AboutCommunityHero = () => {
           <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
             <div className="absolute left-[10%] top-[-40%] sm:static lg:ml-[115px] xl:ml-[130px]">
               <Image
-                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[290px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
+                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community4}
                 alt="Community image"
               />
             </div>
-            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[290px] sm:w-[410px] sm:p-[24px] lg:ml-[-70px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[50px]">
+            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[350px] sm:w-[410px] sm:p-[50px] lg:ml-[-70px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[50px]">
               <h1 className="page-heading text-center  text-[40px] leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 hOW CAN YOU BE A PART
                 <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?
