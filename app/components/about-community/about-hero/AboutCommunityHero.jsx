@@ -14,7 +14,7 @@ const AboutCommunityHero = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="container mx-auto mb-[60px] sm:mb-[90px] sm:mt-[60px] lg:mb-[140px] ">
           <div className="relative mt-[170px] grid-cols-2 sm:mt-0 sm:grid">
-            <div className="box1 h-[369px] w-[317px]  px-[22px] pt-[132px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[60px] lg:ml-[115px] lg:h-[390px] lg:w-[590px] lg:p-[70px] xl:ml-[130px] xl:h-[419px] xl:w-[697px] xl:p-[70px]">
+            <div className="box1 h-[369px] w-[317px]  px-[22px] pt-[132px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[60px] lg:ml-[115px] lg:h-[360px] lg:w-[590px] lg:p-[70px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[70px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[50px] sm:leading-[42px]  lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 Who Is the
                 <br /> communIty for?
@@ -28,39 +28,42 @@ const AboutCommunityHero = () => {
             </div>
             <div className="absolute left-[10%] top-[-32%] sm:static sm:ml-[80px] lg:ml-[120px] xl:ml-[140px]">
               <Image
-                className=" h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[300px] lg:h-[390px] lg:w-[390px] xl:h-[419px] xl:w-[466px]"
+                className=" h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[300px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community1}
                 alt="Community image"
               />
             </div>
           </div>
           <div className="relative grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
-            <div className="absolute left-[10%] top-[-45%] sm:static lg:ml-[115px] xl:ml-[130px] ">
+            <div className="absolute left-[10%] top-[-32%] sm:static lg:ml-[115px] xl:ml-[130px] ">
               <Image
-                className="h-[317px] w-[254px]  rounded-[15px] object-cover object-center sm:h-[455px] sm:w-[320px] lg:h-[460px] lg:w-[390px] xl:h-[534px] xl:w-[466px]"
+                className="h-[228px] w-[254px]  rounded-[15px] object-cover object-center sm:h-[455px] sm:w-[320px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community2}
                 alt="Community image"
               />
             </div>
-            <div className="box2 mt-[265px] h-[470px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[460px] lg:w-[586px] lg:p-[58px] xl:ml-[-85px] xl:h-[534px] xl:w-[690px] xl:p-[80px]">
+            <div className="box2 mt-[168px] h-[369px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[455px] sm:w-[347px] sm:p-[40px] lg:ml-[-75px] lg:h-[360px] lg:w-[590px] lg:p-[62px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[80px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 JOIN US IF YOU
               </h1>
               <ul className="content-neue ml-[26px] mt-[15px]  list-disc text-[16px] leading-[18px] sm:text-[20px] lg:mt-[28px] lg:text-[18px] lg:leading-[22px] xl:mt-[38px] xl:text-[22px] xl:leading-[26px]">
-                <li>Are a creative or a designer.</li>
-                <li> Are seeking guidance on creative projects.</li>
-
-                <li>Want to host or attend design events and workshops.</li>
+                <li>A creative mind or designer.</li>
+                <li>Seeking guidance on your creative projects.</li>
 
                 <li>
-                  Want to network and collaborate with other creatives and
+                  Interested in hosting or attending design events and
+                  workshops.
+                </li>
+
+                <li>
+                  Eager to network and collaborate with other creatives and
                   designers.
                 </li>
               </ul>
             </div>
           </div>
           <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px] ">
-            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[340px] sm:w-[400px] sm:p-[40px] lg:ml-[115px] lg:h-[400px] lg:w-[610px] lg:p-[60px] xl:ml-[130px] xl:h-[442px] xl:w-[697px] xl:p-[70px]">
+            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[340px] sm:w-[400px] sm:p-[40px] lg:ml-[115px] lg:h-[360px] lg:w-[610px] lg:p-[46px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 WHY SHOULD YOU
                 <br /> JOIN US?
@@ -77,7 +80,7 @@ const AboutCommunityHero = () => {
             </div>
             <div className="absolute left-[10%] top-[-42%] sm:static sm:ml-[80px] lg:ml-[150px] xl:ml-[140px]">
               <Image
-                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[340px] sm:w-[300px] lg:h-[400px] lg:w-[366px] xl:h-[442px] xl:w-[466px]"
+                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[340px] sm:w-[300px] lg:h-[360px] lg:w-[366px] xl:h-[401px] xl:w-[456px]"
                 src={Community3}
                 alt="Community image"
               />
@@ -86,12 +89,12 @@ const AboutCommunityHero = () => {
           <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
             <div className="absolute left-[10%] top-[-40%] sm:static lg:ml-[115px] xl:ml-[130px]">
               <Image
-                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[290px] lg:h-[390px] lg:w-[390px] xl:h-[425px] xl:w-[466px]"
+                className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[290px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community4}
                 alt="Community image"
               />
             </div>
-            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[290px] sm:w-[410px] sm:p-[24px] lg:ml-[-70px] lg:h-[390px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[425px] xl:w-[690px] xl:p-[50px]">
+            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[290px] sm:w-[410px] sm:p-[24px] lg:ml-[-70px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[50px]">
               <h1 className="page-heading text-center  text-[40px] leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 hOW CAN YOU BE A PART
                 <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?
