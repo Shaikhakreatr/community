@@ -53,8 +53,15 @@ h1{
   background-attachment: fixed;
 }
 .footer-ul li{
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
+@media only screen and (max-width: 639px){
+  .footer-ul li{
+    margin-bottom: 14px;
+  }
+}
+
+
 .footer-section{
   color:#2A2A2A
 }
