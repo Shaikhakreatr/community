@@ -20,7 +20,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/Whatsapp.svg"
                       }
-                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[28px] md:w-[28px] lg:h-[30px] lg:w-[30px] xl:h-[36px] xl:w-[36px]"
                       alt="Whatsapp"
                       height={36}
                       width={36}
@@ -35,7 +35,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/Instagram.svg"
                       }
-                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[28px] md:w-[28px] lg:h-[30px] lg:w-[30px] xl:h-[36px] xl:w-[36px]"
                       alt="Instagram"
                       height={36}
                       width={36}
@@ -50,7 +50,7 @@ const Footer = () => {
                       src={
                         "/assets/images/home_page/social_media_icons/LinkedIn.svg"
                       }
-                      className=" md:h-[2.125rem] md:w-[2.125rem] lg:h-[2.25rem] lg:w-[2.25rem] xl:h-43.71 xl:w-43.71"
+                      className=" md:h-[28px] md:w-[28px] lg:h-[30px] lg:w-[30px] xl:h-[36px] xl:w-[36px]"
                       alt="Linkedin"
                       height={36}
                       width={36}
@@ -218,7 +218,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:py-5">
+          <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:pb-5 md:pt-0">
             <p className="content-neue footer-section text-[12px] opacity-[70%] sm:opacity-[60%] md:text-[12px] xl:text-20 ">
               Copyright © 2024 KreatrMinds Pvt. Ltd.|{" "}
               <Link
