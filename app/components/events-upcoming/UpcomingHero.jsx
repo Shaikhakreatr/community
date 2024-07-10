@@ -11,6 +11,7 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
+import ProceedCancelBtn from "../proceed-cancel/ProceedCancelBtn";
 import PaymentSuccess from "@/app/payment-success/page";
 import PaymentFailure from "@/app/payment-failure/page";
 
