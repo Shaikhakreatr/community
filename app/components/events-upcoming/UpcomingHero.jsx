@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef , useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
   useForm,
@@ -24,6 +24,19 @@ const UpcomingHero = ({ upcomingData }) => {
   const nameRefs = useRef([]);
   const phoneRefs = useRef([]);
   const emailRefs = useRef([]);
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+      event.returnValue = "You want to leave the page";
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
 
   const form = useForm({
     mode: "controlled",
