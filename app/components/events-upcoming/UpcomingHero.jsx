@@ -11,11 +11,10 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
-import ProceedCancelBtn from "../proceed-cancel/ProceedCancelBtn";
 import PaymentSuccess from "@/app/payment-success/page";
 import PaymentFailure from "@/app/payment-failure/page";
 
-const UpcomingHero = ({ upcomingData }) => {
+const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
   const BBACKEND_EVENT_INFO_URI =
     process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
@@ -25,18 +24,7 @@ const UpcomingHero = ({ upcomingData }) => {
   const phoneRefs = useRef([]);
   const emailRefs = useRef([]);
 
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      event.preventDefault();
-      event.returnValue = "You want to leave the page";
-    };
 
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
 
   const form = useForm({
     mode: "controlled",
@@ -144,11 +132,24 @@ const UpcomingHero = ({ upcomingData }) => {
         router.push("/payment-failure");
       }
     }
+    setHasUnsavedChanges(false);
   };
 
   const scrollToDiv = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    // Check if any form instance has data filled
+    const anyFormFilled = form.values.forms.some(
+      formInstance => formInstance.name !== "" || 
+                      formInstance.phoneNo !== "" || 
+                      formInstance.email !== ""
+    );
+  
+    setHasUnsavedChanges(anyFormFilled);
+  }, [form.values.forms, setHasUnsavedChanges]);
+
 
   const isDataAvailable =
     upcomingData &&

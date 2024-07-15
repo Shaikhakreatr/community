@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const CareersMainContent = ({ careerData }) => {
+  console.log(careerData);
   // Check if careerData is defined and has all required fields
   const isDataAvailable =
     careerData &&
@@ -11,8 +12,8 @@ const CareersMainContent = ({ careerData }) => {
     careerData.type &&
     careerData.location &&
     careerData.description &&
-    Array.isArray(careerData.responsibilities) &&
-    Array.isArray(careerData.qualifications);
+    careerData.responsibilities &&
+    careerData.qualifications;
 
   if (!isDataAvailable) {
     return <div>No Data Available</div>;
@@ -49,7 +50,7 @@ const CareersMainContent = ({ careerData }) => {
           </div>
         </div>
         <div className="mt-[10px] sm:mb-4  sm:mt-0">
-          <p className="content-neue text-[16px] sm:mb-[20px] sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
+          <p className="content-neue text-[16px] sm:mb-[20px] whitespace-pre-line sm:text-[16px] lg:mb-[24px] lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
             {careerData.description}
           </p>
 
@@ -58,11 +59,9 @@ const CareersMainContent = ({ careerData }) => {
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
-              {careerData.responsibilities.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+            <p className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:mb-[20px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:mb-[24px] lg:ml-10 whitespace-pre-line lg:text-[18px] xl:mb-[24px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
+              {careerData.responsibilities}
+            </p>
           </div>
 
           <p className="content-neue-medium mt-[10px] text-[16px] sm:mb-[20px] sm:mt-0 sm:text-[18px] lg:mb-[24px] lg:text-[22px] xl:mb-[24px] xl:text-[28px]">
@@ -70,16 +69,14 @@ const CareersMainContent = ({ careerData }) => {
           </p>
 
           <div>
-            <ul className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[22px] lg:leading-[22px] xl:leading-[26px]">
-              {careerData.qualifications.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+            <p className="content-neue ml-5 mt-[8px] list-disc text-[16px] sm:ml-5 sm:mt-0 sm:text-[16px] lg:ml-10 lg:text-[18px] xl:text-[22px] whitespace-pre-line lg:leading-[22px] xl:leading-[26px]">
+              {careerData.qualifications}
+            </p>
           </div>
         </div>
         <div className="mt-[24px] flex justify-center sm:mt-[50px] lg:mb-[24px] lg:mt-[44px]">
           <Link
-            href="https://www.linkedin.com/company/the-kreatr/"
+            href={careerData.url}
             target="_blank"
             rel="noreferrer"
             className=" career-btn content-neue-medium flex h-[36px] w-[128px] cursor-pointer items-center justify-center rounded-[24px] bg-[#2A2A2A] text-center text-[15px] sm:hover:border sm:hover:border-[#2A2A2A]  sm:hover:bg-transparent sm:hover:text-[#2A2A2A] sm:h-[38px] sm:w-[220px] sm:text-[18px] lg:h-[42px] lg:w-[280px]  lg:text-[20px]"

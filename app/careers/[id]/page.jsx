@@ -28,6 +28,7 @@ const CareerDetails = () => {
         const careerData = data.find((career) => career.id === id);
         if (careerData) {
           setCareerData(careerData);
+          console.log(careerData);
         } else {
           setError(new Error("Career not found"));
         }

@@ -15,6 +15,28 @@ const UpcomingDetails = () => {
   const [error, setError] = useState(null);
 
   const BACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
+  // State for tracking unsaved changes
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+
+  useEffect(() => {
+    console.log("UpcomingDetails page is opened");
+
+    // Handle browser unload event to prompt user about unsaved changes
+    const handleBeforeUnload = (event) => {
+      if (hasUnsavedChanges) {
+        event.preventDefault();
+        event.returnValue = ""; // This is required for most browsers to show the confirmation dialog
+      }
+    };
+
+    // Add event listener for beforeunload
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, [hasUnsavedChanges]);
 
   useEffect(() => {
     const fetchUpcomingData = async () => {
@@ -61,7 +83,10 @@ const UpcomingDetails = () => {
   return (
     <main className="bg-img pt-[6.25rem]">
       <Header />
-      <UpcomingHero upcomingData={upcomingData} />
+      <UpcomingHero
+        upcomingData={upcomingData}
+        setHasUnsavedChanges={setHasUnsavedChanges}
+      />
       <Footer />
     </main>
   );
