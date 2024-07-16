@@ -12,9 +12,9 @@ const AboutCommunityHero = () => {
   return (
     <div className="flex w-full items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-        <div className="container mx-auto mb-[60px] sm:mb-[90px] sm:mt-[60px] lg:mb-[140px] ">
-          <div className="relative mt-[170px] grid-cols-2 sm:mt-0 sm:grid">
-            <div className="box1 h-[369px] w-[317px]  px-[22px] pt-[132px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[60px] lg:ml-[115px] lg:h-[360px] lg:w-[590px] lg:p-[70px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[70px]">
+        <div className=" mx-auto mb-[60px]  sm:mb-[90px] sm:mt-[60px] sm:w-[680px] lg:mb-[140px] lg:w-[1000px] xl:w-[1125px] ">
+          <div className="relative mt-[170px] grid-cols-2 sm:static sm:mt-0 sm:grid lg:gap-[60px] xl:gap-[150px]">
+            <div className="box1 h-[369px] w-[317px]  px-[22px] pt-[132px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[60px] lg:ml-[0px] lg:h-[360px] lg:w-[590px] lg:p-[70px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[70px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[50px] sm:leading-[42px]  lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 Who Is the
                 <br /> communIty for?
@@ -26,7 +26,7 @@ const AboutCommunityHero = () => {
                 at every stage of your journey.
               </p>
             </div>
-            <div className="absolute left-[10%] top-[-32%] sm:static sm:ml-[80px] lg:ml-[120px] xl:ml-[140px]">
+            <div className="absolute left-[10%] top-[-32%] sm:static sm:ml-[80px] ">
               <Image
                 className=" h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[300px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community1}
@@ -34,15 +34,14 @@ const AboutCommunityHero = () => {
               />
             </div>
           </div>
-          <div className="relative grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
-            <div className="absolute left-[10%] top-[-32%] sm:static lg:ml-[115px] xl:ml-[130px] ">
-              <Image
-                className="h-[228px] w-[254px]  rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[320px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
-                src={Community2}
-                alt="Community image"
-              />
-            </div>
-            <div className="box2 mt-[168px] h-[369px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[350px] sm:w-[347px] sm:p-[50px] lg:ml-[-75px] lg:h-[360px] lg:w-[590px] lg:p-[62px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[80px]">
+          <div className="relative sm:static sm:mt-[30px] sm:flex lg:mt-[25px] sm:gap-[20px] lg:gap-[25px] xl:mt-[25px] xl:gap-[30px]">
+            <Image
+              className="absolute left-[10%] top-[-32%] h-[228px] w-[254px] rounded-[15px]   object-cover object-center sm:static sm:h-[350px] sm:w-[320px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
+              src={Community2}
+              alt="Community image"
+            />
+
+            <div className="box2 mt-[168px] h-[369px] w-[317px] px-[25px]  pt-[132px] sm:mt-0 sm:h-[350px] sm:w-[347px] sm:p-[50px] lg:ml-[0px] lg:h-[360px] lg:w-[590px] lg:p-[62px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[80px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 JOIN US IF YOU
               </h1>
@@ -62,8 +61,8 @@ const AboutCommunityHero = () => {
               </ul>
             </div>
           </div>
-          <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px] ">
-            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[40px] lg:ml-[115px] lg:h-[360px] lg:w-[610px] lg:p-[46px] xl:ml-[130px] xl:h-[401px] xl:w-[688px] xl:p-[45px]">
+          <div className="relative mt-[206px] grid-cols-2 sm:static sm:mt-[30px] sm:grid lg:mt-[25px] sm:gap-[160px] lg:gap-[260px] xl:mt-[25px] xl:gap-[310px] ">
+            <div className="box3 h-[369px] w-[317px] px-[42px] pt-[98px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[40px] lg:ml-[0px] lg:h-[360px] lg:w-[610px] lg:p-[46px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[45px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 WHY SHOULD YOU
                 <br /> JOIN US?
@@ -78,7 +77,7 @@ const AboutCommunityHero = () => {
                 supportive environment.
               </p>
             </div>
-            <div className="absolute left-[10%] top-[-42%] sm:static sm:ml-[80px] lg:ml-[150px] xl:ml-[140px]">
+            <div className="absolute left-[10%] top-[-42%] sm:static ">
               <Image
                 className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] sm:w-[300px] lg:h-[360px] lg:w-[366px] xl:h-[401px] xl:w-[456px]"
                 src={Community3}
@@ -86,15 +85,15 @@ const AboutCommunityHero = () => {
               />
             </div>
           </div>
-          <div className="relative mt-[206px] grid-cols-2 sm:mt-[30px] sm:grid lg:mt-[40px] xl:mt-[25px]">
-            <div className="absolute left-[10%] top-[-40%] sm:static lg:ml-[115px] xl:ml-[130px]">
+          <div className="relative mt-[206px] sm:mt-[30px] sm:flex lg:mt-[25px] sm:gap-[20px] lg:gap-[25px] xl:mt-[25px] xl:gap-[30px]">
+            <div className="absolute left-[10%] top-[-40%] sm:static ">
               <Image
                 className="h-[228px] w-[254px] rounded-[15px] object-cover object-center sm:h-[350px] lg:h-[360px] lg:w-[390px] xl:h-[401px] xl:w-[456px]"
                 src={Community4}
                 alt="Community image"
               />
             </div>
-            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[-64px] sm:h-[350px] sm:w-[410px] sm:p-[50px] lg:ml-[-70px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[50px] xl:ml-[-85px] xl:h-[401px] xl:w-[688px] xl:p-[50px]">
+            <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[0px] sm:h-[350px] sm:w-[410px] sm:p-[50px] lg:ml-[0px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[30px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[35px]">
               <h1 className="page-heading text-center  text-[40px] leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 hOW CAN YOU BE A PART
                 <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?

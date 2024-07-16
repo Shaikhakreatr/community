@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef , useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
   useForm,
@@ -14,7 +14,7 @@ import styles from "./UpcomingHero.module.css";
 import PaymentSuccess from "@/app/payment-success/page";
 import PaymentFailure from "@/app/payment-failure/page";
 
-const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
+const UpcomingHero = ({ upcomingData, setHasUnsavedChanges }) => {
   const BBACKEND_EVENT_INFO_URI =
     process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
   const { id } = useParams();
@@ -23,8 +23,6 @@ const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
   const nameRefs = useRef([]);
   const phoneRefs = useRef([]);
   const emailRefs = useRef([]);
-
-
 
   const form = useForm({
     mode: "controlled",
@@ -142,14 +140,14 @@ const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
   useEffect(() => {
     // Check if any form instance has data filled
     const anyFormFilled = form.values.forms.some(
-      formInstance => formInstance.name !== "" || 
-                      formInstance.phoneNo !== "" || 
-                      formInstance.email !== ""
+      (formInstance) =>
+        formInstance.name !== "" ||
+        formInstance.phoneNo !== "" ||
+        formInstance.email !== "",
     );
-  
+
     setHasUnsavedChanges(anyFormFilled);
   }, [form.values.forms, setHasUnsavedChanges]);
-
 
   const isDataAvailable =
     upcomingData &&
@@ -172,7 +170,7 @@ const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
+          <div className="mt-[44px] lg:w-[990px] xl:w-[1125px]  sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
             <h1 className="page-subhead text-[22px] leading-[24px] text-[#2A2A2A] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
@@ -216,16 +214,17 @@ const UpcomingHero = ({ upcomingData,setHasUnsavedChanges }) => {
                 Book Now
               </div>
             </div>
-          </div>
-          <div className="mx-[0px] mt-[25px] text-[#2A2A2A] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
-            <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
-              About
-            </h3>
-            <br />
-            <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] sm:text-start sm:text-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
-              <p>{upcomingData.description}</p>
+            <div className="mx-[0px] lg:w-[990px] xl:w-[1125px]  mt-[25px] text-[#2A2A2A]  lg:mt-[60px]  xl:mt-[72px]">
+              <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
+                About
+              </h3>
+              <br />
+              <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] sm:text-start sm:text-[20px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                <p>{upcomingData.description}</p>
+              </div>
             </div>
           </div>
+
           <div className="mt-[20px] lg:mt-[50px] xl:mt-[72px]">
             <div className="flex items-center justify-center">
               <h1 className="content-neue-medium text-[16px] text-[#2A2A2A]  sm:text-[20px] lg:text-[28px] xl:text-[34px]">

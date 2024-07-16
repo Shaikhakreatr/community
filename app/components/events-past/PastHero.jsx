@@ -23,7 +23,7 @@ const PastHero = ({ pastData }) => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
+            <div className="mt-[44px] lg:w-[990px] xl:w-[1125px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px] xl:mx-[140px] lg:mx-[140px]">
               <h1 className="page-subhead text-[22px] leading-[24px] text-[#2A2A2A] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
                 {pastData.heading}
               </h1>
@@ -50,16 +50,17 @@ const PastHero = ({ pastData }) => {
                 <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
                 <div>{pastData.location}</div>
               </div>
-            </div>
-            <div className="mx-[0px] mt-[25px] lg:mx-[120px] lg:mt-[60px] xl:mx-[145px] xl:mt-[72px]">
-              <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
-                About
-              </h3>
+              <div className="mx-[0px] mt-[25px] lg:w-[990px] xl:w-[1125px] lg:mt-[60px]  xl:mt-[72px]">
+                <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
+                  About
+                </h3>
 
-              <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] text-[#2A2A2A] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
-                <p>{pastData.description}</p>
+                <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] text-[#2A2A2A] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                  <p>{pastData.description}</p>
+                </div>
               </div>
             </div>
+
             <div className="mt-[20px] sm:mt-[50px] xl:mt-[72px] ">
               <div className="flex items-center justify-center">
                 <h1 className="content-neue-medium mr-[20px] text-[17px]  text-[#2A2A2A] sm:text-[20px] lg:text-[30px] xl:text-[34px] ">

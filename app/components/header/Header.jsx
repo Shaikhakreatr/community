@@ -108,13 +108,13 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`pointer-events-auto absolute inset-0 top-[68px] mt-[21px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
+            className={`pointer-events-auto absolute lg:h-[100vh] inset-0 top-[68px] mt-[21px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
             }}
           >
-            <div className="relative mt-[-4px] flex items-center justify-center sm:mt-[-5px] lg:mt-[0px] xl:mt-[1rem]">
+            <div className="relative mt-[-4px] flex items-center justify-center sm:mt-[-5px] lg:my-[8px] xl:mt-[50px]">
               <div className="absolute left-[29%] top-[30%] sm:left-[37%] sm:top-[35%] lg:left-[33%] lg:top-[20%] xl:left-[35%] xl:top-[20%]">
                 <Image
                   className="h-[68px]  w-[130px] sm:h-[98px] sm:w-[160px] lg:h-[65px] lg:w-[120px] xl:h-[84px] xl:w-[150px]"

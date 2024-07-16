@@ -53,7 +53,9 @@ const AboutKreatrBottom = () => {
 
   const handleCardFlip = (index) => {
     setFlippedIndex(index); // Flip the card
-
+    if(flippedIndex !== null){
+      setFlippedIndex(null);
+    }
     // Automatically flip back after 1.5 seconds
     setTimeout(() => {
       setFlippedIndex(null);
