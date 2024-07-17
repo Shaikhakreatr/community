@@ -49,7 +49,7 @@ const AboutKreatrMiddle = () => {
                 establish a global standard for creativity.
               </p>
             </div>
-            <div className="absolute left-[9%] top-[-55%]">
+            <div className="absolute sm:static left-[9%] top-[-55%]">
               <Image
                 className="h-[219px] w-[255px] rounded-[15px] object-cover object-center sm:h-[280px] sm:w-[320px] lg:h-[280px] lg:w-[460px] xl:h-[295px] xl:w-[511px]"
                 src={"/assets/images/about-kreatr/kreatr-img1.jpg"}
@@ -60,7 +60,7 @@ const AboutKreatrMiddle = () => {
             </div>
           </div>
           <div className="relative sm:static mt-[186px] justify-end sm:mt-[30px] sm:flex sm:gap-[30px]  lg:mt-[35px]  xl:mt-[25px]  xl:gap-[30px]">
-            <div className="absolute left-[9%] top-[-55%]" >
+            <div className="absolute sm:static left-[9%] top-[-55%]" >
               <Image
                 className="h-[219px] w-[255px] rounded-[15px]  object-cover object-center sm:h-[280px] sm:w-[350px] lg:h-[280px] lg:w-[480px] xl:h-[295px] xl:w-[511px]"
                 src={"/assets/images/about-kreatr/kreatr-img2.jpg"}
