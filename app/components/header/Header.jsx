@@ -108,7 +108,7 @@ const Header = () => {
           ref={menuRef}
         >
           <div
-            className={`pointer-events-auto absolute lg:h-[100vh] inset-0 top-[68px] mt-[21px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] xl:mt-[71px] ${styles.menuWrap}`}
+            className={`pointer-events-auto absolute inset-0 top-[68px] mt-[21px] bg-[rgba(190,181,113,0.14)] p-8 sm:mt-[30px] sm:backdrop-blur-lg lg:mt-[22px] lg:h-[100vh] xl:mt-[71px] ${styles.menuWrap}`}
             style={{
               transition: "opacity 0.7s ease",
               opacity: menuOpen ? 1 : 0,
@@ -154,17 +154,21 @@ const Header = () => {
                   />
                 </CustomLink>
               </div>
-              {/* <div className="pointer-events-auto absolute left-[41%] top-[64%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[59%] xl:left-[46%] xl:top-[56%]">
-                <Image
-                  className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[80px] lg:w-[160px] xl:h-[95px] xl:w-[185px]"
-                  src={
-                    "/assets/images/home_page/menu_stickers/app-withshadow.svg"
-                  }
-                  alt="app image"
-                  height={90}
-                  width={160}
-                />
-              </div> */}
+              <div className="pointer-events-auto absolute left-[38%] md:left-[47%] top-[65%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[57%] xl:left-[45%] xl:top-[55%]">
+                <CustomLink
+                  href="#"
+                  closeMenu={closeMenu}
+                  menuOpen={menuOpen}
+                >
+                  <Image
+                    className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[85px] lg:w-[160px] xl:h-[110px] xl:w-[185px]"
+                    src={"/assets/images/home_page/menu_stickers/studio.svg"}
+                    alt="app image"
+                    height={90}
+                    width={160}
+                  />
+                </CustomLink>
+              </div>
               <div className="pointer-events-auto absolute left-[6%] top-[87%] sm:left-[22%] sm:top-[84%] md:left-[27%] md:top-[86%] lg:left-[10%] lg:top-[85%] xl:left-[15%] xl:top-[84%]">
                 <CustomLink
                   href="/events"
