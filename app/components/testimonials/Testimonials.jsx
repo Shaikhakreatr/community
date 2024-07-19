@@ -59,6 +59,7 @@ function Card({ title, person }) {
 }
 
 export default function CustomCarousel({ testimonials }) {
+  console.log(testimonials);
   const theme = useMantineTheme();
   const xlScreen = useMediaQuery(`(max-width: ${theme.breakpoints.xl}px)`);
   const totalSlides = testimonials.length;
