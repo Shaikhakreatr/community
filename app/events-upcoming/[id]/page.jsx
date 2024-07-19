@@ -16,7 +16,7 @@ const UpcomingDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const BACKEND_EVENT_INFO_URI = process.env.NEXT_PUBLIC_BACKEND_EVENT_INFO_URI;
-  
+
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [showProceedCancel, setShowProceedCancel] = useState(false);
   const [targetURL, setTargetURL] = useState("");
@@ -31,17 +31,44 @@ const UpcomingDetails = () => {
 
     const handleNavigation = (event) => {
       if (hasUnsavedChanges) {
-        event.preventDefault(); // Prevent the default action
-        setShowProceedCancel(true); // Show custom confirmation dialog
+        event.preventDefault(); // Prevent the default back navigation
+        const confirmLeave = window.confirm(
+          "You have unsaved changes. Are you sure you want to leave?",
+        );
+        setShowProceedCancel(true);
+
+        if (confirmLeave) {
+          // User confirmed; navigate back
+          window.history.back();
+        } else {
+          // User canceled; stay on the same page
+          // (Do nothing as the default action is already prevented)
+        }
       }
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
     window.addEventListener("popstate", handleNavigation);
 
+    const handleLinkClick = (event) => {
+      if (hasUnsavedChanges) {
+        event.preventDefault();
+        setTargetURL(event.currentTarget.href); // Store the target URL
+        setShowProceedCancel(true);
+      }
+    };
+
+    // Add event listener for link clicks
+    document.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", handleLinkClick);
+    });
+
     return () => {
       window.removeEventListener("beforeunload", handleBeforeUnload);
       window.removeEventListener("popstate", handleNavigation);
+      document.querySelectorAll("a").forEach((link) => {
+        link.removeEventListener("click", handleLinkClick);
+      });
     };
   }, [hasUnsavedChanges]);
 

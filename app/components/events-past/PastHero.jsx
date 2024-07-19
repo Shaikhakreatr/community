@@ -12,7 +12,8 @@ const PastHero = ({ pastData }) => {
     pastData.coverImg &&
     pastData.location &&
     pastData.description &&
-    Array.isArray(pastData.images);
+    Array.isArray(pastData.images)&&
+    Array.isArray(pastData.testimonials);
 
   if (!isDataAvailable) {
     return <div>No Data Available</div>;
@@ -83,7 +84,7 @@ const PastHero = ({ pastData }) => {
                 {`Happy Folks' Words!`}
               </h1>
               <div className="content-neue mt-[30px] text-[#2A2A2A] lg:mx-[50px]">
-                <Testimonials />
+                <Testimonials testimonials={pastData.testimonials} />
               </div>
             </div>
           </div>
