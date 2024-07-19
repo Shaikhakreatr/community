@@ -175,7 +175,7 @@ const UpcomingHero = ({ upcomingData, setHasUnsavedChanges }) => {
               {upcomingData.heading}
             </h1>
             <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
-              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px]">
+              <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px]  lg:text-[18px] xl:h-[34px] lg:px-[50px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
               <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">

@@ -12,7 +12,7 @@ const PastHero = ({ pastData }) => {
     pastData.coverImg &&
     pastData.location &&
     pastData.description &&
-    Array.isArray(pastData.images)&&
+    Array.isArray(pastData.images) &&
     Array.isArray(pastData.testimonials);
 
   if (!isDataAvailable) {
@@ -24,12 +24,12 @@ const PastHero = ({ pastData }) => {
       <section>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="mt-[44px] lg:w-[990px] xl:w-[1125px] sm:mt-[60px] lg:mt-[74px] xl:mt-[120px] xl:mx-[140px] lg:mx-[140px]">
+            <div className="mt-[44px] sm:mt-[60px] lg:mx-[140px] lg:mt-[74px] lg:w-[990px] xl:mx-[140px] xl:mt-[120px] xl:w-[1125px]">
               <h1 className="page-subhead text-[22px] leading-[24px] text-[#2A2A2A] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
                 {pastData.heading}
               </h1>
               <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px]">
-                <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px] lg:w-[80px] lg:text-[18px] xl:h-[34px] xl:w-[112px] xl:text-[24px] ">
+                <div className="content-neue mr-3 flex h-[14px] w-[46px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[66px] sm:text-[15px] lg:h-[28px]  lg:px-[50px] lg:text-[18px] xl:h-[34px] xl:text-[24px] ">
                   {pastData.sessionType}
                 </div>
                 <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
@@ -51,7 +51,7 @@ const PastHero = ({ pastData }) => {
                 <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
                 <div>{pastData.location}</div>
               </div>
-              <div className="mx-[0px] mt-[25px] lg:w-[990px] xl:w-[1125px] lg:mt-[60px]  xl:mt-[72px]">
+              <div className="mx-[0px] mt-[25px] lg:mt-[60px] lg:w-[990px] xl:mt-[72px]  xl:w-[1125px]">
                 <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
                   About
                 </h3>
