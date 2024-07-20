@@ -154,9 +154,11 @@ const Header = () => {
                   />
                 </CustomLink>
               </div>
-              <div className="pointer-events-auto absolute left-[38%] md:left-[47%] top-[65%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[57%] xl:left-[45%] xl:top-[55%]">
+              <div className="pointer-events-auto absolute left-[38%] top-[65%] sm:left-[46%] sm:top-[63%] md:left-[47%] lg:left-[42%] lg:top-[57%] xl:left-[45%] xl:top-[55%]">
                 <CustomLink
                   href="https://studio-website-eta.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
                   closeMenu={closeMenu}
                   menuOpen={menuOpen}
                 >
