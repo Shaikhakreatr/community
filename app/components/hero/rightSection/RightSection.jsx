@@ -15,7 +15,7 @@ const RightSection = () => {
             width={200}
           />
         </Link>
-        <Link href="#">
+        <Link href="https://studio-website-eta.vercel.app/">
           <Image
             src="/assets/images/home_page/menu_stickers/studio.svg"
             alt="app"

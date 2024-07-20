@@ -156,14 +156,14 @@ const Header = () => {
               </div>
               <div className="pointer-events-auto absolute left-[38%] md:left-[47%] top-[65%] sm:left-[46%] sm:top-[63%] lg:left-[42%] lg:top-[57%] xl:left-[45%] xl:top-[55%]">
                 <CustomLink
-                  href="#"
+                  href="https://studio-website-eta.vercel.app/"
                   closeMenu={closeMenu}
                   menuOpen={menuOpen}
                 >
                   <Image
                     className="h-[92px] w-[152px] hover:scale-105 sm:h-[130px] sm:w-[185px] lg:h-[85px] lg:w-[160px] xl:h-[110px] xl:w-[185px]"
                     src={"/assets/images/home_page/menu_stickers/studio.svg"}
-                    alt="app image"
+                    alt="studio image"
                     height={90}
                     width={160}
                   />
