@@ -30,8 +30,8 @@ const LegalPage2 = () => {
     "Withdraw consent at any time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.",
   ];
   return (
-    <div className="content-neue sm:px-[20px] text-[#2A2A2A] text-[14px] leading-[20px] sm:text-[16px] sm:leading-[18px] lg:text-[16px] lg:leading-[22px] xl:text-[20px] xl:leading-[26px] xl:mt-[58px] lg:mt-[40px] sm:mt-[48px] mt-[0px]">
-      <h1 className="legal_page_h pb-2 mb-[15px]">Introduction </h1>
+    <div className="content-neue mt-[0px] text-[14px] leading-[20px] text-[#2A2A2A] sm:mt-[48px] sm:px-[20px] sm:text-[16px] sm:leading-[18px] lg:mt-[40px] lg:text-[16px] lg:leading-[22px] xl:mt-[58px] xl:text-[20px] xl:leading-[26px]">
+      <h1 className="legal_page_h mb-[15px] pb-2">Introduction </h1>
       {`Kreatrminds Private Limited companies worldwide, its subsidiaries,
       affiliates (collectively, the "Kreatr", "Company," "we," "us," or "our")
       recognize the importance of protecting the privacy of all consumers ("you"
@@ -47,11 +47,14 @@ const LegalPage2 = () => {
       data when you visit this and all of our Sites (regardless of where you
       visit it from) and tell you about your privacy rights and how the law
       protects you.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
         1. Important Information and Who We Are
       </div>
-      <div className="pb-2 text-[20px] mb-[15px] ">Purpose of this Privacy Policy </div>
+      <div className="mb-[15px] pb-2 text-[20px] ">
+        Purpose of this Privacy Policy{" "}
+      </div>
       This Privacy Policy aims to give you information on how the Company
       collects and processes your personal data through your use of any of its
       Sites, including any data you may provide through this Site when you
@@ -66,7 +69,7 @@ const LegalPage2 = () => {
       override them.
       <br />
       <br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px] ">
+      <div className="mb-[15px] pb-2 pt-2 text-[20px] ">
         Persons Under the Age of 13 Years
       </div>
       The Sites are not intended for children and we do not knowingly collect
@@ -88,8 +91,9 @@ const LegalPage2 = () => {
       delete that information. If you believe we might have any information from
       or about a person under 13 for which there is no legal parental or
       guardian consent, please contact us.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px] ">Controller</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px] ">Controller</div>
       {`The Company is made up of different legal entities. This Privacy Policy is
       issued on behalf of the Company so when we mention "Company", "KREATR",
       "we", "us" or "our" in this Privacy Policy, we are referring to the
@@ -101,8 +105,9 @@ const LegalPage2 = () => {
       relevant supervisory authority so please contact us in the first instance.
       For any questions or comments relating to this Privacy Policy or the
       manner in which we collect and use your personal data, please contact us.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px] leading-[24px]">
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px] leading-[24px]">
         Changes to the Privacy Policy and Your Duty to Inform Us of Changes
       </div>
       This version was last updated on 1 November 2023 and historic versions can
@@ -119,8 +124,9 @@ const LegalPage2 = () => {
       these third-party websites and are not responsible for their privacy
       statements. When you leave our Sites, we encourage you to read the privacy
       policy of every website or other site you visit.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
         2. The Data We Collect About You
       </div>
       Personal data, or personal information, means any information about an
@@ -180,8 +186,9 @@ const LegalPage2 = () => {
       trying to enter into with you (for example, to provide you with goods or
       services). In this case, we may have to cancel a product or service you
       have with us but we will notify you if this is the case at the time.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
         3. How Is Your Personal Data Collected?
       </div>
       <ul className="mb-[10px] ml-[40px] list-disc">
@@ -356,8 +363,11 @@ not be viewed by unauthorized persons.`}</li>
           </ul>
         </li>
       </ul>
-      <br /><br />
-      <div className="legal_page_h  pt-2 mb-[15px]">4. How We Use Your Personal Data</div>
+      <br />
+      <br />
+      <div className="legal_page_h  mb-[15px] pt-2">
+        4. How We Use Your Personal Data
+      </div>
       <br />
       We will only use your personal data when the law allows us to. Most
       commonly, we will use your personal data in the following circumstances:
@@ -384,8 +394,9 @@ not be viewed by unauthorized persons.`}</li>
       marketing communications to you via email, text message or other means.
       You have the right to withdraw consent to marketing at any time by
       contacting us.
-      <br /><br />
-      <div className="legal_page_h leading-[28px]  pt-2 mb-[15px]">
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px]  pt-2 leading-[28px]">
         Purposes for Which We Will Use Your Personal Data
       </div>
       <br />
@@ -650,7 +661,7 @@ not be viewed by unauthorized persons.`}</li>
       </div>
       <br />
       <br />
-      <div className=" pb-2 pt-2 text-[20px]  mb-[15px]">Marketing</div>
+      <div className=" mb-[15px] pb-2 pt-2  text-[20px]">Marketing</div>
       {`We strive to provide you with choices regarding certain personal data
       uses, particularly around marketing and advertising.`}
       <br />
@@ -669,8 +680,11 @@ not be viewed by unauthorized persons.`}</li>
       us to use information that we collect or that you provide to us to deliver
       advertisements according to our advertisers' target-audience preferences,
       you can opt-out by Contacting us.`}
-      <br /><br />
-      <div className=" pb-2 pt-2 text-[20px]  mb-[15px]">Promotional Offers from Us</div>
+      <br />
+      <br />
+      <div className=" mb-[15px] pb-2 pt-2  text-[20px]">
+        Promotional Offers from Us
+      </div>
       We may use your Identity, Contact, Technical, Usage and Profile Data and
       Special Categories of Personal Data to form a view on what we think you
       may want or need, or what may be of interest to you. This is how we decide
@@ -682,16 +696,20 @@ not be viewed by unauthorized persons.`}</li>
       you provided us with your details when you entered a competition or
       registered for a promotion and, in each case, you have not opted out of
       receiving that marketing.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px]  mb-[15px]">Third-Party Marketing</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2  text-[20px]">
+        Third-Party Marketing
+      </div>
       {`We will get your express opt-in consent before we share your personal data
       with any company outside the Company for marketing purposes. We do not
       control third parties' collection or use of your information to serve
       interest-based advertising. However, these third parties may provide you
       with ways to choose not to have your information collected or used in this
       way.`}
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px]  mb-[15px]">Opting Out</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2  text-[20px]">Opting Out</div>
       You can ask us or third parties to stop sending you marketing messages at
       any time by logging into the website and checking or unchecking relevant
       boxes to adjust your marketing preferences or by following the opt-out
@@ -703,21 +721,26 @@ not be viewed by unauthorized persons.`}</li>
       apply to personal data provided to us as a result of a product/service
       purchase, warranty registration, product/service experience or other
       transactions.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px]  mb-[15px]">Cookies</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2  text-[20px]">Cookies</div>
       You can set your browser to refuse all or some browser cookies, or to
       alert you when websites set or access cookies. If you disable or refuse
       cookies, please note that some parts of our Sites may become inaccessible
       or not function properly. For more information about the cookies we use,
       please see Section 3 – How is your Personal Data collected above.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px] ">Location Information</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px] ">
+        Location Information
+      </div>
       {`You can choose whether or not to allow our Sites to collect and use
       real-time information about your device's location through the device's
       privacy settings. If you block the use of location information, some parts
       of our Sites may then be inaccessible or not function properly.`}
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">Change of Purpose</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">Change of Purpose</div>
       We will only use your personal data for the purposes for which we
       collected it, unless we reasonably consider that we need to use it for
       another reason and that reason is compatible with the original purpose. If
@@ -731,8 +754,9 @@ not be viewed by unauthorized persons.`}</li>
       <br /> Please note that we may process your personal data without your
       knowledge or consent, in compliance with the above rules, where this is
       required or permitted by law.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
         5. Disclosures of Your Personal Data
       </div>
       We may have to share your personal data with the parties set out below for
@@ -768,8 +792,11 @@ not be viewed by unauthorized persons.`}</li>
       third-party service providers to use your personal data for their own
       purposes and only permit them to process your personal data for specified
       purposes and in accordance with our instructions.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">6. International Transfers</div>
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
+        6. International Transfers
+      </div>
       We share your personal data within the Company. This will involve
       transferring your data outside the European Economic Area (EEA). We ensure
       your personal data is protected by requiring all our group companies to
@@ -806,7 +833,7 @@ not be viewed by unauthorized persons.`}</li>
       mechanism used by us when transferring your personal data out of the EEA.
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">7. Data Security</div>
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">7. Data Security</div>
       We have put in place appropriate security measures to prevent your
       personal data from being accidentally lost, used or accessed in an
       unauthorised way, altered or disclosed. In addition, we limit access to
@@ -818,8 +845,9 @@ not be viewed by unauthorized persons.`}</li>
       <br /> We have put in place procedures to deal with any suspected personal
       data breach and will notify you and any applicable regulator of a breach
       where we are legally required to do so.
-      <br /><br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">8. Data Retention</div>
+      <br />
+      <br />
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">8. Data Retention</div>
       <div className="pb-2 pt-2">
         How Long Will You Use My Personal Data For?
       </div>
@@ -840,7 +868,9 @@ not be viewed by unauthorized persons.`}</li>
       further notice to you.
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">9. Your Legal Rights</div>
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">
+        9. Your Legal Rights
+      </div>
       Under certain circumstances, you have rights under data protection laws in
       relation to your personal data. These include the following (see section
       10 – Glossary below):
@@ -867,30 +897,38 @@ not be viewed by unauthorized persons.`}</li>
         us.
       </p>
       <br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">No Fee Usually Required</div>
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">
+        No Fee Usually Required
+      </div>
       You will not have to pay a fee to access your personal data (or to
       exercise any of the other rights). However, we may charge a reasonable fee
       if your request is clearly unfounded, repetitive or excessive.
       Alternatively, we may refuse to comply with your request in these
       circumstances.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">What We May Need From You</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">
+        What We May Need From You
+      </div>
       We may need to request specific information from you to help us confirm
       your identity and ensure your right to access your personal data (or to
       exercise any of your other rights). This is a security measure to ensure
       that personal data is not disclosed to any person who has no right to
       receive it. We may also contact you to ask you for further information in
       relation to your request to speed up our response.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">Time Limit to Respond</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">
+        Time Limit to Respond
+      </div>
       We try to respond to all legitimate requests within one month.
       Occasionally it may take us longer than a month if your request is
       particularly complex or you have made a number of requests. In this case,
       we will notify you and keep you updated.
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px]">10. Glossary</div>
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">Lawful Basis</div>
+      <div className="legal_page_h mb-[15px] pb-2 pt-2">10. Glossary</div>
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">Lawful Basis</div>
       Legitimate Interest means the interest of our business in conducting and
       managing our business to enable us to give you the best service/product
       and the best and most secure experience. We make sure we consider and
@@ -910,14 +948,20 @@ not be viewed by unauthorized persons.`}</li>
       <br /> Comply with a legal or regulatory obligation means processing your
       personal data where it is necessary for compliance with a legal or
       regulatory obligation that we are subject to.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[20px] mb-[15px]">Third Parties</div>
-      <div className="pb-2 pt-2 text-[18px] mb-[15px]">Internal Third Parties</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[20px]">Third Parties</div>
+      <div className="mb-[15px] pb-2 pt-2 text-[18px]">
+        Internal Third Parties
+      </div>
       Our companies, their subsidiaries and affiliates acting as joint
       controllers or processors who provide IT and system administration
       services and undertake reporting.
-      <br /><br />
-      <div className="pb-2 pt-2 text-[18px] mb-[15px]">External Third Parties</div>
+      <br />
+      <br />
+      <div className="mb-[15px] pb-2 pt-2 text-[18px]">
+        External Third Parties
+      </div>
       <ul className="ml-[40px] list-disc">
         <li>
           Service providers acting as processors who provide IT and system
@@ -946,8 +990,8 @@ not be viewed by unauthorized persons.`}</li>
       </ul>
       <br />
       <br />
-      <div className="legal_page_h pb-2 pt-2 mb-[20px]">Your Legal Rights</div>
-      <p className="text-[20px] mb-[10px]">You have the right to:</p>
+      <div className="legal_page_h mb-[20px] pb-2 pt-2">Your Legal Rights</div>
+      <p className="mb-[10px] text-[20px]">You have the right to:</p>
       <br />
       <ul className="ml-[40px] list-disc">
         {yourLegalRights.map((value, index) => (
@@ -957,7 +1001,7 @@ not be viewed by unauthorized persons.`}</li>
         ))}
       </ul>
       <br />
-      <div className="legal_page_h pb-2 pt-2 mb-[15px] ">Entire Agreement</div>
+      <div className="legal_page_h mb-[15px] pb-2 pt-2 ">Entire Agreement</div>
       This Privacy Policy, our End User Licence Agreement , Terms of Sale,
       Refund Policy, and our Terms and Conditions constitute the sole and entire
       agreement between you and the Company with respect to the Website and
