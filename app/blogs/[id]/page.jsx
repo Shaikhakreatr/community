@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Header from "@/app/components/header/Header";
@@ -59,14 +60,34 @@ const BlogDetailsHero = () => {
               <div>
                 {blogData.blogDetails.map((detail, index) => {
                   if (detail.tagType === "h1") {
-                    <h1 className={`${detail.class}`}>{detail.value}</h1>;
+                    return (
+                      <h1 key={index} className={`${detail.class}`}>
+                        {detail.value}
+                      </h1>
+                    );
                   } else if (detail.tagType === "h2") {
-                    <h2 className={`${detail.class}`}>{detail.value}</h2>;
+                    return (
+                      <h2 key={index} className={`${detail.class}`}>
+                        {detail.value}
+                      </h2>
+                    );
                   } else if (detail.tagType === "p") {
-                    <p className={`${detail.class}`}>{detail.value}</p>;
+                    return (
+                      <p key={index} className={`${detail.class}`}>
+                        {detail.value}
+                      </p>
+                    );
                   } else if (detail.tagType === "images") {
-                    <Image src={detail.value} alt="blog images" className={`${detail.class}`} />;
+                    return (
+                      <Image
+                        key={index}
+                        src={detail.value}
+                        alt="blog images"
+                        className={`${detail.class}`}
+                      />
+                    );
                   }
+                  return null; // Return null for unhandled tag types
                 })}
               </div>
             </div>
