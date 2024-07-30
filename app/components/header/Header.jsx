@@ -79,7 +79,7 @@ const Header = () => {
       <header
         className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? "bg-[#f7f3e6e8]" : "bg-transparent"}`}
       >
-        <div className="flex h-[90px] items-center justify-center border-b border-gray-500 p-2 sm:h-[120px] lg:h-[90px] xl:h-[140px]">
+        <div className="flex h-[90px] items-center justify-center border-b border-gray-500 p-2 sm:h-[120px] lg:h-[90px] xl:h-[120px]">
           <CustomLink href="/" closeMenu={closeMenu} menuOpen={menuOpen}>
             <Image
               className="my-3 h-[25px] w-124 sm:h-[30px] sm:w-[8rem] lg:h-[30px] lg:w-[10rem] xl:h-[40px] xl:w-[181px]"
@@ -90,7 +90,7 @@ const Header = () => {
             />
           </CustomLink>
           <div
-            className="nav-bar  pointer-events-auto  absolute right-[3%] cursor-pointer py-[5px]"
+            className="nav-bar  pointer-events-auto  absolute lg:right-[12%] right-[5%] cursor-pointer py-[5px]"
             onClick={toggleMenu}
           >
             <div
