@@ -4,7 +4,7 @@ import HeaderHome from './components/header-home/HeaderHome';
 import Hero from './components/hero/Hero';
 import '@mantine/core/styles.css';
 import Footer from './components/footer/Footer';
-import Spinner from './components/spinner/Spinner';
+import HomePageLoader from './components/home-page-loader/HomePageLoader';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
     {loading ? (
-      <Spinner loading={loading} />
+      <HomePageLoader loading={loading} />
     ) : (
       <main className='pt-[6.25rem] bg-img md:min-h-[100vh] xl:min-h-[auto] flex flex-col overflow-x-hidden sm:justify-between'>
         <HeaderHome />

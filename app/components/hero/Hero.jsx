@@ -1,5 +1,6 @@
 "use client";
 
+import HomePageLoader from "../home-page-loader/HomePageLoader";
 import LeftSection from "./leftSection/LeftSection";
 import RightSection from "./rightSection/RightSection";
 
@@ -12,6 +13,7 @@ const Hero = () => {
           <LeftSection />
           <RightSection />
         </div>
+        <HomePageLoader />
       </div>
     </section>
   );
