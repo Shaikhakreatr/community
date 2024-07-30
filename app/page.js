@@ -13,7 +13,7 @@ const App = () => {
     // Simulate a loading time with a timeout
     setTimeout(() => {
       setLoading(false);
-    },800); 
+    },1000); 
   }, []);
   return (
     <>
