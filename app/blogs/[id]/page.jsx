@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
@@ -34,6 +34,11 @@ const BlogDetailsHero = () => {
     fetchData();
   }, [id]);
 
+  const parseParagraphText = (text) => {
+    // Convert Markdown-style links to HTML links
+    return text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+  };
+
   return (
     <main className="bg-img h-full w-full pt-[6.25rem]">
       <Header />
@@ -61,26 +66,39 @@ const BlogDetailsHero = () => {
                 {blogData.blogDetails.map((detail, index) => {
                   if (detail.tagType === "h1") {
                     return (
-                      <h1 key={index} className={`${detail.class}`}>
+                      <h1
+                        key={index}
+                        className={`${detail.class} content-neue`}
+                      >
                         {detail.value}
                       </h1>
                     );
                   } else if (detail.tagType === "h2") {
                     return (
-                      <h2 key={index} className={`${detail.class}`}>
+                      <h2
+                        key={index}
+                        className={`${detail.class} content-neue`}
+                      >
                         {detail.value}
                       </h2>
                     );
                   } else if (detail.tagType === "p") {
                     return (
-                      <p key={index} className={`${detail.class}`}>
-                        {detail.value}
-                      </p>
+                      <p
+                        key={index}
+                        className={`${detail.class} content-neue`}
+                        dangerouslySetInnerHTML={{
+                          __html: parseParagraphText(detail.value),
+                        }}
+                      ></p>
                     );
                   } else if (detail.tagType === "images") {
                     return (
                       <Image
                         key={index}
+                        height={0}
+                        width={0}
+                        sizes="100vw"
                         src={detail.value}
                         alt="blog images"
                         className={`${detail.class}`}
