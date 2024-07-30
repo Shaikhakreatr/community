@@ -86,7 +86,7 @@ const BlogDetailsHero = () => {
                     return (
                       <p
                         key={index}
-                        className={`${detail.class} content-neue`}
+                        className={`${detail.class} content-neue whitespace-pre-line`}
                         dangerouslySetInnerHTML={{
                           __html: parseParagraphText(detail.value),
                         }}
