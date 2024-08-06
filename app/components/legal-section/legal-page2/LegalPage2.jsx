@@ -415,7 +415,7 @@ not be viewed by unauthorized persons.`}</li>
       <br />
       <br />
       <br />
-      <div style={{ overflowX: "auto" }}>
+      <div className="w-full overflow-x-auto flex justify-start" style={{ overflowX: "auto" }}>
         <Table
           withTableBorder
           withRowBorders

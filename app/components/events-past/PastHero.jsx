@@ -29,7 +29,7 @@ const PastHero = ({ pastData }) => {
                 {pastData.heading}
               </h1>
               <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px]">
-                <div className="content-neue lg:h-[28px]nxl:px-[50px] mr-3 flex h-[14px] px-[25px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px]  sm:text-[15px]  lg:px-[40px] lg:text-[18px] xl:h-[34px] xl:text-[24px] ">
+                <div className="content-neue lg:h-[28px]nxl:px-[50px] mr-3 flex h-[14px] items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[25px] text-center text-[10px] text-[#2A2A2A] sm:h-[24px]  sm:text-[15px]  lg:px-[40px] lg:text-[18px] xl:h-[34px] xl:text-[24px] ">
                   {pastData.sessionType}
                 </div>
                 <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
@@ -79,14 +79,18 @@ const PastHero = ({ pastData }) => {
                 ))}
               </div>
             </div>
-            <div className="my-[25px] w-full sm:my-[50px] xl:mt-[72px] ">
-              <h1 className="content-neue-medium text-center text-[17px] text-[#2A2A2A] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
-                {`Happy Folks' Words!`}
-              </h1>
-              <div className="content-neue mt-[30px] text-[#2A2A2A] lg:mx-[50px]">
-                <Testimonials testimonials={pastData.testimonials} />
+
+            {/* testimonials section */}
+            {pastData.testimonials.length > 0 ? (
+              <div className="my-[25px] w-full sm:my-[50px] xl:mt-[72px] ">
+                <h1 className="content-neue-medium text-center text-[17px] text-[#2A2A2A] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
+                  {`Happy Folks' Words!`}
+                </h1>
+                <div className="content-neue mt-[30px] text-[#2A2A2A] lg:mx-[50px]">
+                  <Testimonials testimonials={pastData.testimonials} />
+                </div>
               </div>
-            </div>
+            ):""}
           </div>
         </div>
       </section>

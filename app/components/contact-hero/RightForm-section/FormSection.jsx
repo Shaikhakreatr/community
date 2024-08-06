@@ -35,12 +35,8 @@ const FormSection = () => {
 
   const [messageRows, setMessageRows] = useState(1);
 
-  const handleTextareaFocus = () => {
+  const handleRowClick = () => {
     setMessageRows(3);
-  };
-
-  const handleTextareaBlur = () => {
-    setMessageRows(1);
   };
 
   const sendFormData = async (data) => {
@@ -122,8 +118,7 @@ const FormSection = () => {
           <Textarea
             label="Message"
             radius={50}
-            onFocus={handleTextareaFocus}
-            onBlur={handleTextareaBlur}
+            onClick={handleRowClick}
             classNames={{
               input: styles.transparentInputArea,
               label: styles.inputLabel,

@@ -66,9 +66,9 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="flex flex-col items-center sm:justify-end justify-around sm:gap-[16px] xl:gap-[90px] lg:gap-[90px] pb-[14px] pt-2 sm:flex-row sm:border-none sm:pt-0 ">
+              <div className="flex flex-col items-center justify-around pb-[14px] pt-2 sm:flex-row sm:justify-end sm:gap-[16px] sm:border-none sm:pt-0 lg:gap-[90px] xl:gap-[90px] ">
                 <ul className="footer-ul flex flex-row tracking-tight sm:flex-col sm:tracking-normal ">
-                  <li className="footer-section footer-content inline-block  pr-[2rem]  sm:pr-0 text-[12px] opacity-[70%] sm:opacity-[60%] lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-section footer-content inline-block  pr-[2rem]  text-[12px] opacity-[70%] sm:pr-0 sm:opacity-[60%] lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/blogs"
@@ -77,7 +77,7 @@ const Footer = () => {
                     </Link>
                   </li>
 
-                  <li className="footer-section footer-content inline-block pr-[2rem]  sm:pr-0 text-[12px] opacity-[70%] sm:opacity-[60%] lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-section footer-content inline-block pr-[2rem]  text-[12px] opacity-[70%] sm:pr-0 sm:opacity-[60%] lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/collaboration"
@@ -93,7 +93,7 @@ const Footer = () => {
                       Careers
                     </Link>
                   </li>
-                  <li className="footer-section footer-content  hidden  sm:pr-0 text-[12px] opacity-[70%] sm:inline-block sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-section footer-content  hidden  text-[12px] opacity-[70%] sm:inline-block sm:pr-0 sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/FAQ"
@@ -103,7 +103,7 @@ const Footer = () => {
                   </li>
                 </ul>
                 <ul className="footer-ul flex flex-row tracking-tight sm:mt-[0px] sm:flex-col sm:tracking-normal md:mt-[0px] lg:mt-[0px] xl:mt-[0px]">
-                  <li className="footer-content footer-section inline-block pr-[2rem]  sm:pr-0 text-[12px] opacity-[70%] sm:hidden sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-content footer-section inline-block pr-[2rem]  text-[12px] opacity-[70%] sm:hidden sm:pr-0 sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/FAQ"
@@ -111,7 +111,7 @@ const Footer = () => {
                       FAQs
                     </Link>
                   </li>
-                  <li className="footer-content footer-section inline-block pr-[2rem]  sm:pr-0 text-[12px] opacity-[70%] sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-content footer-section inline-block pr-[2rem]  text-[12px] opacity-[70%] sm:pr-0 sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/contact"
@@ -127,7 +127,7 @@ const Footer = () => {
                       Join our Klan
                     </Link>
                   </li>
-                  <li className="footer-content footer-section hidden  sm:pr-0 text-[12px] opacity-[70%] sm:inline-block  sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
+                  <li className="footer-content footer-section hidden  text-[12px] opacity-[70%] sm:inline-block sm:pr-0  sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
                     <Link
                       className="cursor-pointer sm:inline-block sm:hover:italic"
                       href="/legal"
@@ -135,10 +135,15 @@ const Footer = () => {
                       Legal
                     </Link>
                   </li>
-                  <li className="footer-content footer-section hidden  sm:pr-0 text-[12px] opacity-[70%] sm:inline-block  sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
-                    <div className=" sm:inline-block sm:hover:italic">
+                  <li className="footer-content footer-section hidden  text-[12px] opacity-[70%] sm:inline-block sm:pr-0  sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://studio-website-eta.vercel.app/"
+                      className=" cursor-pointer sm:inline-block sm:hover:italic"
+                    >
                       Studio
-                    </div>
+                    </Link>
                   </li>
                 </ul>
                 <ul className="flex items-center justify-center gap-4">
@@ -151,9 +156,14 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="footer-section footer-content inline-block pr-8 text-[12px] opacity-[70%] sm:hidden  sm:opacity-[60%]  lg:text-[16px] xl:text-[16px]">
-                    <div className=" sm:inline-block sm:hover:italic">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://studio-website-eta.vercel.app/"
+                      className=" cursor-pointer sm:inline-block sm:hover:italic"
+                    >
                       Studio
-                    </div>
+                    </Link>
                   </li>
                 </ul>
               </div>

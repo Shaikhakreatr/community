@@ -90,7 +90,7 @@ const Header = () => {
             />
           </CustomLink>
           <div
-            className="nav-bar  pointer-events-auto  absolute lg:right-[12%] right-[5%] cursor-pointer py-[5px]"
+            className="nav-bar  pointer-events-auto  absolute right-[5%] cursor-pointer py-[5px] lg:right-[12%]"
             onClick={toggleMenu}
           >
             <div

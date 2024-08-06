@@ -54,6 +54,12 @@ const RightFormSection = () => {
     }
   };
 
+  const [messageRows, setMessageRows] = useState(1);
+
+  const handleRowClick = () => {
+    setMessageRows(3);
+  };
+
   return (
     <>
       <div className="relative col-span-2 mb-[10px] flex w-[75%] items-center sm:min-h-[500px] sm:w-[100%] lg:w-[75%] xl:mt-[20px] ">
@@ -105,9 +111,11 @@ const RightFormSection = () => {
             {...form.getInputProps("deviceName")}
           />
           <br />
+
           <Textarea
             label="Feedback"
-            rows={1}
+            onClick={handleRowClick}
+            rows={messageRows}
             radius={50}
             classNames={{
               input: styles.transparentInputArea,
@@ -126,7 +134,6 @@ const RightFormSection = () => {
               color="black.0"
               type="submit"
               mt="sm"
-              
             >
               Submit
             </Button>
