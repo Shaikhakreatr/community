@@ -38,10 +38,10 @@ function Card({ title, person }) {
             alt="star image"
           />
         </div>
-        <div className="content-neue mt-[-20px] px-[10px] lg:px-[15px] text-center text-[14px] leading-[20px] text-[#2A2A2A] sm:text-[16px] lg:mt-[-25px] lg:text-[18px] lg:leading-[22px] xl:mt-[-35px] xl:text-[22px] xl:leading-[26px]">
+        <div className="content-neue mt-[-20px] px-[10px] lg:px-[15px] text-center text-[14px] leading-[20px] text-[#2A2A2A] text-wrap sm:text-[16px] lg:mt-[-25px] lg:text-[18px] lg:leading-[22px] xl:mt-[-35px] xl:text-[22px] xl:leading-[26px]">
           {title}
         </div>
-        <div className="content-neue mt-[10px] px-[10px]lg:px-[15px] text-center text-[12px] text-[#2A2A2A] sm:text-[14px] lg:text-[16px] xl:text-[20px]">
+        <div className="content-neue mt-[10px] px-[10px]lg:px-[15px] text-center text-[12px] text-[#2A2A2A] sm:text-[14px] text-wrap lg:text-[16px] xl:text-[20px]">
           {person}
         </div>
         <div className="absolute  right-[20px] top-[120px] sm:right-[20px] sm:top-[122px] lg:right-[25px] lg:top-[110px] xl:top-[118px]">
@@ -79,7 +79,7 @@ export default function CustomCarousel({ testimonials }) {
 
   const slides = testimonials.map((item, index) => (
     <Carousel.Slide
-      key={item.title}
+      key={index}
       className={`${
         activeIndex === index ? classes.activeSlide : classes.slide
       }`}

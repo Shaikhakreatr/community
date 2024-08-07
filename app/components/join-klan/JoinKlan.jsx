@@ -130,7 +130,7 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div
-            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A] text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A] text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[60px] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]" : "career-btn"}`}
             onMouseEnter={handlePlayStoreEnter}
             onMouseLeave={handlePlayStoreLeave}
@@ -168,7 +168,7 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div
-            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A]  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[3.125rem] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A]  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[60px] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
               ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]"
