@@ -130,7 +130,7 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div
-            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A] text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[60px] md:w-[9.75rem] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
+            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A] text-[1rem]  sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[70px] md:w-[160px] md:p-2 md:px-1 md:py-2 lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 
                     ${logoPlayActive ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]" : "career-btn"}`}
             onMouseEnter={handlePlayStoreEnter}
             onMouseLeave={handlePlayStoreLeave}
@@ -157,7 +157,7 @@ const JoinKlan = () => {
                 />
               </div>
             )}
-            <p className="button-store ml-[22px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
+            <p className="button-store ml-[22px] xl:ml-[40px] sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ">
               Get it on Playstore
             </p>
           </div>
@@ -168,7 +168,7 @@ const JoinKlan = () => {
           rel="noreferrer"
         >
           <div
-            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A]  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[60px] md:w-[9.75rem]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
+            className={` flex cursor-pointer items-center rounded-full bg-[#2A2A2A]  py-1 text-[1rem] sm:h-[3.125rem] sm:w-[9.75rem] sm:p-2 md:h-[70px] md:w-[160px]  lg:text-[1rem] lg:leading-4 xl:h-82 xl:w-230 xl:p-7 xl:text-20 xl:leading-6 
           ${
             logoAppActive
               ? "button-text border border-[#2A2A2A] bg-transparent text-[#2A2A2A]"
@@ -196,7 +196,7 @@ const JoinKlan = () => {
             )}
             <p
               className={`button-store sm:text-[14px] sm:leading-4 md:leading-4 lg:text-[1rem] lg:leading-4 xl:text-20 xl:leading-5 ${
-                logoAppActive ? "ml-[.625rem]" : "ml-[.625rem] "
+                logoAppActive ? "xl:ml-[24px] lg:ml-[16px] ml-[16px]" : "ml-[16px] xl:ml-[24px] lg:ml-[16px] "
               } `}
             >
               Available on
