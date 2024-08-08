@@ -5,7 +5,6 @@ import HeaderHome from "../header-home/HeaderHome";
 const HomePageLoader = () => {
   return (
     <div className="h-[100vh]" >
-      <HeaderHome />
       <div className="mt-[400px] sm:mt-[500px] lg:mt-[200px] xl:mt-[400px]">
         <div className="relative flex justify-center">
           <Image
