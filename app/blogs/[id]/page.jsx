@@ -59,10 +59,10 @@ const BlogDetailsHero = () => {
               <header className="blogHeading page-subhead">
                 {blogData.heading} {/* Default text for debugging */}
               </header>
-              <div className="content-neue mt-[24px] w-[182px] rounded-[24px] border border-[#2A2A2A] px-[22px] py-[6px]  lg:text-[20px]">
+              <div className="content-neue mt-[24px] lg:mt-[36px] sm:mt-[28px] w-fit rounded-[24px] border border-[#2A2A2A] lg:px-[20px] lg:py-[4px] px-[14px] py-[3px] flex justify-center items-center text-[14px] lg:text-[20px]">
                 {blogData.date}
               </div>
-              <div>
+              <div className="mt-[24px] sm:mt-[28px] lg:mt-[36px]">
                 {blogData.blogDetails.map((detail, index) => {
                   if (detail.tagType === "h1") {
                     return (
