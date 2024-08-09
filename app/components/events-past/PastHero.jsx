@@ -42,7 +42,7 @@ const PastHero = ({ pastData }) => {
               </div>
               <div className=" mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px] ">
                 <img
-                  className="lg:h-[398px] max-w-[100%] object-cover object-center lg:w-[1064px] xl:w-[1064px]"
+                  className="h-[398px] max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px]"
                   src={pastData.coverImg}
                   alt="main-img"
                 />
