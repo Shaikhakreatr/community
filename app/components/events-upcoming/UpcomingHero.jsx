@@ -11,6 +11,7 @@ import {
 } from "@mantine/form";
 import { Button, TextInput } from "@mantine/core";
 import styles from "./UpcomingHero.module.css";
+import { Carousel } from "@mantine/carousel";
 import PaymentSuccess from "@/app/payment-success/page";
 import PaymentFailure from "@/app/payment-failure/page";
 
@@ -170,18 +171,18 @@ const UpcomingHero = ({ upcomingData, setHasUnsavedChanges }) => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-[44px] lg:w-[990px] xl:w-[1125px]  sm:mt-[60px] lg:mt-[74px] xl:mt-[120px]">
+          <div className="mt-[44px] sm:mt-[60px] lg:mt-[74px]  lg:w-[990px] xl:mt-[120px] xl:w-[1125px]">
             <h1 className="page-subhead text-[22px] leading-[24px] text-[#2A2A2A] sm:text-[48px] lg:text-[54px] lg:leading-[55px] xl:text-[64px]">
               {upcomingData.heading}
             </h1>
             <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px] ">
-              <div className="content-neue mr-3 flex h-[14px]  items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] px-[25px] sm:text-[15px] lg:h-[28px]   lg:text-[18px] xl:h-[34px] lg:px-[40px] xl:px-[50px] xl:text-[24px]">
+              <div className="content-neue mr-2  flex h-[24px] w-fit items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[8.5px] text-center text-[14px] text-[#2A2A2A] sm:mr-3 sm:h-[24px] sm:px-[20px] sm:text-[15px] lg:h-[28px] lg:text-[18px] xl:h-[34px] xl:text-[24px]">
                 {upcomingData.sessionType}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
+              <div className="content-neue mr-2 flex h-[24px] w-fit items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[8.5px] text-center text-[14px] text-[#2A2A2A] sm:mr-3 sm:h-[24px] sm:px-[20px]  sm:text-[15px] lg:h-[28px]  lg:text-[18px] xl:h-[34px]  xl:text-[24px]">
                 {upcomingData.duration}
               </div>
-              <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
+              <div className="content-neue mr-2 flex h-[24px] w-fit items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[8.5px] text-center text-[14px] text-[#2A2A2A] sm:mr-3 sm:h-[24px] sm:px-[30px]  sm:text-[15px] lg:h-[28px]  lg:text-[18px] xl:h-[34px]  xl:text-[24px]">
                 Speaker: {upcomingData.speakerName}
               </div>
             </div>
@@ -214,7 +215,7 @@ const UpcomingHero = ({ upcomingData, setHasUnsavedChanges }) => {
                 Book Now
               </div>
             </div>
-            <div className="mx-[0px] lg:w-[990px] xl:w-[1125px]  mt-[25px] text-[#2A2A2A]  lg:mt-[60px]  xl:mt-[72px]">
+            <div className="mx-[0px] mt-[25px] text-[#2A2A2A]  lg:mt-[60px] lg:w-[990px]  xl:mt-[72px]  xl:w-[1125px]">
               <h3 className="content-neue-medium mb-[14px] text-center text-[16px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
                 About
               </h3>
@@ -231,15 +232,44 @@ const UpcomingHero = ({ upcomingData, setHasUnsavedChanges }) => {
                 Explore more events
               </h1>
             </div>
-            <div className="mt-[25px] grid  grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4 lg:gap-[30px]">
-              {upcomingData.images.map((item, index) => (
-                <img
-                  key={index}
-                  className={` h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
-                  src={item}
-                  alt="events img"
-                />
-              ))}
+            <div className="mt-[28px] hidden justify-center sm:mt-[40px] sm:flex lg:mx-[120px] xl:mx-[190px] ">
+              <Carousel
+                withIndicators={false}
+                slideSize="33.333333%"
+                slideGap="md"
+                align="start"
+                slidesToScroll={1}
+              >
+                {upcomingData.images.map((item, index) => (
+                  <Carousel.Slide key={index}>
+                    <img
+                      className={` h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                      src={item}
+                      alt="events img"
+                    />
+                  </Carousel.Slide>
+                ))}
+              </Carousel>
+            </div>
+
+            <div className="mt-[28px] flex justify-center sm:mt-[40px] sm:hidden lg:mx-[120px] ">
+              <Carousel
+                withIndicators={false}
+                align="start"
+                slideSize="100%"
+                height={250}
+                slideGap="xs"
+              >
+                {upcomingData.images.map((item, index) => (
+                  <Carousel.Slide key={index}>
+                    <img
+                      className={` h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]`}
+                      src={item}
+                      alt="events img"
+                    />
+                  </Carousel.Slide>
+                ))}
+              </Carousel>
             </div>
           </div>
           <div
