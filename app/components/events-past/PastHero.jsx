@@ -1,5 +1,6 @@
 import React from "react";
 import Testimonials from "../testimonials/Testimonials";
+import { Carousel } from "@mantine/carousel";
 
 const PastHero = ({ pastData }) => {
   const isDataAvailable =
@@ -29,10 +30,10 @@ const PastHero = ({ pastData }) => {
                 {pastData.heading}
               </h1>
               <div className="mt-[24px] flex sm:mt-[28px] lg:mt-[36px] xl:mt-[44px]">
-                <div className="content-neue lg:h-[28px]nxl:px-[50px] mr-3 flex h-[14px] items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[25px] text-center text-[10px] text-[#2A2A2A] sm:h-[24px]  sm:text-[15px]  lg:px-[40px] lg:text-[18px] xl:h-[34px] xl:text-[24px] ">
+                <div className="content-neue lg:h-[28px]nxl:px-[50px] mr-3 flex h-[14px] items-center justify-center rounded-[24px] border border-[#2A2A2A] px-[25px] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:text-[15px] lg:px-[40px] lg:text-[18px] xl:h-[34px] xl:text-[24px]">
                   {pastData.sessionType}
                 </div>
-                <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px] ">
+                <div className="content-neue mr-3 flex h-[14px] w-[36px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[50px] sm:text-[15px] lg:h-[28px] lg:w-[60px] lg:text-[18px] xl:h-[34px] xl:w-[87px] xl:text-[24px]">
                   {pastData.duration}
                 </div>
                 <div className="content-neue mr-3 flex h-[14px] w-[110px] items-center justify-center rounded-[24px] border border-[#2A2A2A] text-center text-[10px] text-[#2A2A2A] sm:h-[24px] sm:w-[180px] sm:text-[15px] lg:h-[28px] lg:w-[200px] lg:text-[18px] xl:h-[34px] xl:w-[264px] xl:text-[24px]">
@@ -41,7 +42,7 @@ const PastHero = ({ pastData }) => {
               </div>
               <div className=" mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px] ">
                 <img
-                  className="h-auto max-w-[100%] object-cover object-center lg:w-[990px] xl:w-[1125px]"
+                  className="lg:h-[398px] max-w-[100%] object-cover object-center lg:w-[1064px] xl:w-[1064px]"
                   src={pastData.coverImg}
                   alt="main-img"
                 />
@@ -56,32 +57,44 @@ const PastHero = ({ pastData }) => {
                   About
                 </h3>
 
-                <div className="content-neue whitespace-pre-line text-start text-[16px] leading-[20px] text-[#2A2A2A] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
+                <div className="content-neue mb-[20px] whitespace-pre-line text-start text-[16px] leading-[20px] text-[#2A2A2A] sm:mb-[30px] sm:text-start sm:text-[16px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                   <p>{pastData.description}</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-[20px] sm:mt-[50px] xl:mt-[72px] ">
-              <div className="flex items-center justify-center">
-                <h1 className="content-neue-medium mr-[20px] text-[17px]  text-[#2A2A2A] sm:text-[20px] lg:text-[30px] xl:text-[34px] ">
-                  Behold, Snapshots!
-                </h1>
+            {/*past event images section */}
+            {pastData.images.length > 0 && (
+              <div className="mb-[20px] mt-[20px] sm:mb-[30px] sm:mt-[50px] xl:mt-[72px] ">
+                <div className="flex items-center justify-center">
+                  <h1 className="content-neue-medium mr-[20px] text-[17px]  text-[#2A2A2A] sm:text-[20px] lg:text-[30px] xl:text-[34px] ">
+                    Behold, Snapshots!
+                  </h1>
+                </div>
+                <div className="mt-[28px] flex justify-center lg:mx-[120px] sm:mt-[40px] ">
+                  <Carousel
+                    withIndicators={false}
+                    slideSize="33.333333%"
+                    slideGap="md"
+                    align="start"
+                    slidesToScroll={1}
+                  >
+                    {pastData.images.map((item, index) => (
+                      <Carousel.Slide key={index}>
+                        <img
+                          className=" h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                          src={item}
+                          alt="events img"
+                        />
+                      </Carousel.Slide>
+                    ))}
+                  </Carousel>
+                </div>
               </div>
-              <div className="mt-[28px] grid grid-cols-2 gap-3 sm:mt-[40px] sm:grid-cols-3 sm:gap-4 lg:gap-[30px]">
-                {pastData.images.map((item, index) => (
-                  <img
-                    key={index}
-                    className=" h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                    src={item}
-                    alt="events img"
-                  />
-                ))}
-              </div>
-            </div>
+            )}
 
             {/* testimonials section */}
-            {pastData.testimonials.length > 0 ? (
+            {pastData.testimonials.length > 0 && (
               <div className="my-[25px] w-full sm:my-[50px] xl:mt-[72px] ">
                 <h1 className="content-neue-medium text-center text-[17px] text-[#2A2A2A] sm:text-[24px] lg:text-[30px] xl:text-[36px]">
                   {`Happy Folks' Words!`}
@@ -90,7 +103,7 @@ const PastHero = ({ pastData }) => {
                   <Testimonials testimonials={pastData.testimonials} />
                 </div>
               </div>
-            ):""}
+            )}
           </div>
         </div>
       </section>
