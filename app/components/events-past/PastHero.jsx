@@ -3,7 +3,8 @@ import Testimonials from "../testimonials/Testimonials";
 import { Carousel } from "@mantine/carousel";
 
 const PastHero = ({ pastData }) => {
-  
+  console.log(pastData);
+
   const isDataAvailable =
     pastData &&
     pastData.heading &&
@@ -54,9 +55,18 @@ const PastHero = ({ pastData }) => {
               </div>
               <div className="content-neue-medium mt-[10px] flex items-center justify-center gap-[4px] text-[12px] text-[#2A2A2A] sm:mt-[18px] sm:text-[16px] lg:mt-[24px] lg:gap-[18px] lg:text-[18px] xl:text-[22px]">
                 <div>{pastData.date}</div>
-                <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
-                <div>{pastData.location}</div>
+
+                {/* pastData location section */}
+                {pastData.location === !null ||
+                  (pastData.location.length > 0 && (
+                    <>
+                      <div className="h-[20px] border-r border-[#2A2A2A] sm:h-[35px] "></div>
+                      <div>{pastData.location}</div>
+                    </>
+                  ))}
               </div>
+
+              {/* about section */}
               <div className="mx-[0px] mt-[25px] lg:mt-[60px] lg:w-[990px] xl:mt-[72px]  xl:w-[1125px]">
                 <h3 className="content-neue-medium mb-[14px]  text-center text-[16px] text-[#2A2A2A] sm:mb-[24px] sm:text-start sm:text-[24px] lg:text-[30px] xl:text-[34px]">
                   About
