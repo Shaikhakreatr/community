@@ -129,7 +129,7 @@ const EventsHero = () => {
                         >
                           <img
                             className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-left lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
-                            src={event.coverImg}
+                            src={event.thumbnail}
                             alt="upcoming img"
                           />
                           <div className="my-[12px] flex items-start justify-between lg:mb-[20px] lg:mt-[10px] lg:min-h-[56px] xl:my-[25px] xl:min-h-[68px]">
@@ -175,7 +175,7 @@ const EventsHero = () => {
                       >
                         <img
                           className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-left lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
-                          src={event.coverImg}
+                          src={event.thumbnail}
                           alt="past img"
                         />
                         <div className="my-[12px] flex items-start justify-between lg:mb-[-4px] lg:mt-[9px] lg:min-h-[56px] xl:my-[20px] xl:min-h-[68px]">
