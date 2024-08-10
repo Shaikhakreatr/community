@@ -33,7 +33,7 @@ const EventsHero = () => {
 
     fetchEvents();
   }, []);
-  const [tab, setTab] = useState("upcoming");
+  const [tab, setTab] = useState("past");
 
   return (
     <>
@@ -41,7 +41,7 @@ const EventsHero = () => {
         <Spinner loading={loading} />
       ) : (
         <div>
-          <Tabs variant="pills" radius="xl" defaultValue="upcoming">
+          <Tabs variant="pills" radius="xl" defaultValue="past">
             {/* heading section */}
             {/* upcoming heading section */}
 
