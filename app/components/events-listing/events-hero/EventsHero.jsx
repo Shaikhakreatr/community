@@ -128,7 +128,7 @@ const EventsHero = () => {
                           }}
                         >
                           <img
-                            className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-left lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
+                            className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-center lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
                             src={event.thumbnail}
                             alt="upcoming img"
                           />
@@ -174,7 +174,7 @@ const EventsHero = () => {
                         }}
                       >
                         <img
-                          className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-left lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
+                          className="h-[225.63px] w-[261.18px] rounded-[15px] object-cover object-center lg:h-[250px] lg:w-[280px] xl:h-[319.77px] xl:w-[348px]"
                           src={event.thumbnail}
                           alt="past img"
                         />
