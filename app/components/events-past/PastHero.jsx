@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Testimonials from "../testimonials/Testimonials";
 import { Carousel } from "@mantine/carousel";
-import { IoMdPlayCircle } from "react-icons/io";
-import { MdPauseCircle } from "react-icons/md";
 
 const PastHero = ({ pastData }) => {
-  const [playingVideo, setPlayingVideo] = useState(null);
-
+  
   const isDataAvailable =
     pastData &&
     pastData.heading &&
@@ -24,11 +21,7 @@ const PastHero = ({ pastData }) => {
     return url.match(/\.(mp4|webm|ogg)$/i);
   };
 
-  const handlePlayPause = (index) => {
-    setPlayingVideo(playingVideo === index ? null : index);
-  };
-
-  if (!isDataAvailable) {
+  if (!pastData) {
     return <div>No Data Available</div>;
   }
 
@@ -75,7 +68,7 @@ const PastHero = ({ pastData }) => {
               </div>
             </div>
 
-            {/* past event images section */}
+            {/*past event images section */}
             {pastData.images.length > 0 && (
               <div className="mb-[20px] mt-[20px] sm:mb-[30px] sm:mt-[50px] xl:mt-[72px] ">
                 <div className="flex items-center justify-center">
@@ -94,38 +87,16 @@ const PastHero = ({ pastData }) => {
                     {pastData.images.map((item, index) => (
                       <Carousel.Slide key={index}>
                         {isVideo(item) ? (
-                          <div className="relative">
-                            <video
-                              className="h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                              controls={false}
-                              autoPlay={playingVideo === index}
-                              playsInline
-                              loop
-                              ref={(video) => {
-                                if (video) {
-                                  video.currentTime = 0;
-                                }
-                              }}
-                            >
-                              <source src={item} type="video/mp4" />
-                              Your browser does not support the video tag.
-                            </video>
-                            <div className="absolute right-2 top-[82%] h-[60px] sm:right-5 sm:top-[86%] lg:right-5 lg:top-[89%]">
-                              <button onClick={() => handlePlayPause(index)}>
-                                {isPlaying ? (
-                                  <MdPauseCircle
-                                    className="h-[32px] w-[32px] lg:h-[48px] lg:w-[48px]"
-                                    color="grey"
-                                  />
-                                ) : (
-                                  <IoMdPlayCircle
-                                    className="h-[32px] w-[32px] lg:h-[48px] lg:w-[48px]"
-                                    color="grey"
-                                  />
-                                )}
-                              </button>
-                            </div>
-                          </div>
+                          <video
+                            className="h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                            controls={false}
+                            autoPlay
+                            playsInline
+                            loop
+                          >
+                            <source src={item} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
                         ) : (
                           <img
                             className="h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
@@ -149,38 +120,16 @@ const PastHero = ({ pastData }) => {
                     {pastData.images.map((item, index) => (
                       <Carousel.Slide key={index}>
                         {isVideo(item) ? (
-                          <div className="relative">
-                            <video
-                              className="h-[300px] w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                              controls={false}
-                              autoPlay={playingVideo === index}
-                              playsInline
-                              loop
-                              ref={(video) => {
-                                if (video) {
-                                  video.currentTime = 0;
-                                }
-                              }}
-                            >
-                              <source src={item} type="video/mp4" />
-                              Your browser does not support the video tag.
-                            </video>
-                            <div className="absolute right-2 top-[82%] h-[60px] sm:right-5 sm:top-[86%] lg:right-5 lg:top-[89%]">
-                              <button onClick={() => handlePlayPause(index)}>
-                                {isPlaying ? (
-                                  <MdPauseCircle
-                                    className="h-[32px] w-[32px] lg:h-[48px] lg:w-[48px]"
-                                    color="grey"
-                                  />
-                                ) : (
-                                  <IoMdPlayCircle
-                                    className="h-[32px] w-[32px] lg:h-[48px] lg:w-[48px]"
-                                    color="grey"
-                                  />
-                                )}
-                              </button>
-                            </div>
-                          </div>
+                          <video
+                            className="h-[300px] w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                            controls={false}
+                            autoPlay
+                            playsInline
+                            loop
+                          >
+                            <source src={item} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
                         ) : (
                           <img
                             className="h-[300px] w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
