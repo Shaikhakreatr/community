@@ -725,10 +725,8 @@ h1{
 /* blog details css */
 
 .blogContainer {
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 2%;
-  width: 50%;
+  width: 68%;
   padding-bottom: 2%;
 }
 .blogHeading {

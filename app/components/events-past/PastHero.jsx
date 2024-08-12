@@ -94,28 +94,31 @@ const PastHero = ({ pastData }) => {
                     align="start"
                     slidesToScroll={1}
                   >
-                    {pastData.images.map((item, index) => (
-                      <Carousel.Slide key={index}>
-                        {isVideo(item) ? (
-                          <video
-                            className="h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                            controls={false}
-                            autoPlay
-                            playsInline
-                            loop
-                          >
-                            <source src={item} type="video/mp4" />
-                            Your browser does not support the video tag.
-                          </video>
-                        ) : (
-                          <img
-                            className="h-auto w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                            src={item}
-                            alt="events img"
-                          />
-                        )}
-                      </Carousel.Slide>
-                    ))}
+                    {pastData.images
+                      .filter((item) => item !== "")
+                      .map((item, index) => (
+                        <Carousel.Slide key={index}>
+                          {isVideo(item) ? (
+                            <video
+                              className="h-auto w-full object-cover object-center sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                              controls={false}
+                              autoPlay
+                              playsInline
+                              loop
+                              muted
+                            >
+                              <source src={item} type="video/mp4" />
+                              Your browser does not support the video tag.
+                            </video>
+                          ) : (
+                            <img
+                              className="h-auto w-full object-cover object-center sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                              src={item}
+                              alt="events img"
+                            />
+                          )}
+                        </Carousel.Slide>
+                      ))}
                   </Carousel>
                 </div>
 
@@ -127,28 +130,31 @@ const PastHero = ({ pastData }) => {
                     height={250}
                     slideGap="xs"
                   >
-                    {pastData.images.map((item, index) => (
-                      <Carousel.Slide key={index}>
-                        {isVideo(item) ? (
-                          <video
-                            className="h-[300px] w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                            controls={false}
-                            autoPlay
-                            playsInline
-                            loop
-                          >
-                            <source src={item} type="video/mp4" />
-                            Your browser does not support the video tag.
-                          </video>
-                        ) : (
-                          <img
-                            className="h-[300px] w-full object-cover object-center  sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
-                            src={item}
-                            alt="events img"
-                          />
-                        )}
-                      </Carousel.Slide>
-                    ))}
+                    {pastData.images
+                      .filter((item) => item !== "")
+                      .map((item, index) => (
+                        <Carousel.Slide key={index}>
+                          {isVideo(item) ? (
+                            <video
+                              className="h-auto w-full object-cover object-center sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                              controls={false}
+                              autoPlay
+                              playsInline
+                              loop
+                              muted
+                            >
+                              <source src={item} type="video/mp4" />
+                              Your browser does not support the video tag.
+                            </video>
+                          ) : (
+                            <img
+                              className="h-auto w-full object-cover object-center sm:h-[250px] sm:w-[250px] lg:h-[310px] lg:w-[310px] xl:h-[354px] xl:w-[354px]"
+                              src={item}
+                              alt="events img"
+                            />
+                          )}
+                        </Carousel.Slide>
+                      ))}
                   </Carousel>
                 </div>
               </div>

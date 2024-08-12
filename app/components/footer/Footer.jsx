@@ -230,7 +230,7 @@ const Footer = () => {
           </div>
           <div className="flex justify-center px-10 py-5 text-center sm:px-0 md:pb-5 md:pt-0">
             <p className="content-neue footer-section text-[12px] opacity-[70%] sm:opacity-[60%] md:text-[12px] xl:text-20 ">
-              Copyright © 2024 KreatrMinds Pvt. Ltd.|{" "}
+              Copyright © 2024 Kreatrminds Pvt. Ltd.|{" "}
               <Link
                 href="/bug-report"
                 className="content-neue text-blue-800 underline"
