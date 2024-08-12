@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HeaderHome from "../header-home/HeaderHome";
+
 
 const HomePageLoader = () => {
   return (
