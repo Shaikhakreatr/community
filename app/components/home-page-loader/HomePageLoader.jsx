@@ -31,6 +31,7 @@ const HomePageLoader = () => {
             alt="clock image"
             height={79}
             width={148}
+            sizes="100vw"
             className="absolute lg:left-[27%] sm:top-[150%] sm:left-[18%] lg:top-[108%] top-[136%] left-[5%] lg:h-[79px] lg:w-[148px] h-[56px] w-[114px] z-20"
           />
           <h2 className="content-neue-medium text-center lg:text-[40px] text-[20px] leading-[24px] lg:leading-[44px]">
