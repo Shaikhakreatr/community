@@ -8,7 +8,7 @@ const HomePageLoader = () => {
       <div className="mt-[400px] sm:mt-[500px] lg:mt-[200px] xl:mt-[400px]">
         <div className="relative flex justify-center">
           <Image
-            src="/assets/images/Clock.svg"
+            src="/assets/images/new clock.svg"
             alt="clock image"
             height={157}
             width={128}
@@ -18,7 +18,7 @@ const HomePageLoader = () => {
             Hey Creative,
           </h2>
           <Image
-            src="/assets/images/Bulb_2.svg"
+            src="/assets/images/weird boy.svg"
             alt="bulb image"
             height={135}
             width={110}
@@ -27,7 +27,7 @@ const HomePageLoader = () => {
         </div>
         <div className="relative mt-[40px] flex justify-center">
           <Image
-            src="/assets/images/Glasses.svg"
+            src="/assets/images/pantone.svg"
             alt="clock image"
             height={79}
             width={148}
