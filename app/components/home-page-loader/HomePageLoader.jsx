@@ -18,7 +18,7 @@ const HomePageLoader = () => {
             Hey Creative,
           </h2>
           <Image
-            src="/assets/images/Bulb.svg"
+            src="/assets/images/Bulb_2.svg"
             alt="bulb image"
             height={135}
             width={110}
