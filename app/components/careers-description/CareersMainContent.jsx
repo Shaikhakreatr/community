@@ -84,14 +84,14 @@ const CareersMainContent = ({ careerData }) => {
             Apply Now
           </Link>
         </div>
-        <div className="content-neue mt-[24px] mb-[40px] text-center text-[14px] leading-[18px] sm:mb-[50px] sm:mt-[30px] sm:text-[16px] lg:text-[20px] xl:text-[28px]">
+        {/* <div className="content-neue mt-[24px] mb-[40px] text-center text-[14px] leading-[18px] sm:mb-[50px] sm:mt-[30px] sm:text-[16px] lg:text-[20px] xl:text-[28px]">
           <p>
             Can’t find any suitable vacancy? Drop us a line{" "}
             <Link className="text-blue-700" href="mailto:hr@thekreatr.com">
               hr@thekreatr.com
             </Link>{" "}
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

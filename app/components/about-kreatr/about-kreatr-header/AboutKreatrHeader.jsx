@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const AboutKreatrHeader = () => {
   return (
     <div className="mt-[30px] sm:mt-0 lg:mt-[30px]">
@@ -12,7 +11,7 @@ const AboutKreatrHeader = () => {
           <br className="sm:hidden" /> Kreatr
         </h1>
       </div>
-      <div className="mt-[24px] flex items-center justify-center sm:mt-[40px] lg:mt-[64px] xl:mt-[72px] ">
+      <div className="mt-[24px] flex  items-center justify-center sm:mt-[40px] lg:mt-[64px] xl:mt-[72px] ">
         <Image
           className="h-[178px] w-[317px] rounded-[15px] object-cover object-center sm:h-[400px] sm:w-[700px]  lg:h-[450px] lg:w-[968px] xl:h-[632px] xl:w-[1125px]"
           src="/assets/images/about-kreatr/about-kreatr-balloon-img.jpg"
@@ -21,11 +20,10 @@ const AboutKreatrHeader = () => {
           width={1125}
         />
       </div>
-      <div className="mt-[44px] flex items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
-        <div className="bg-red flex items-center justify-center sm:w-[700px] lg:w-[968px] xl:w-[1125px]">
-          <div className="hidden w-[50%] items-center justify-center  sm:flex"></div>
-          <div className="mx-[50px] flex flex-col items-center justify-start sm:mx-0 sm:w-[50%]">
-            <div className="mb-[24px] sm:mb-0">
+      <div className="mt-[44px] flex flex-col items-center justify-center sm:mt-[48px] lg:mt-[58px] xl:mt-[72px]">
+        <div className="flex items-center justify-center sm:w-[700px] lg:w-[968px] xl:w-[1125px]">
+          <div className="mx-[50px] flex flex-col items-center justify-start sm:mx-0 sm:w-[100%] sm:items-start">
+            <div>
               <h4 className="page-heading mb-[12px] text-center text-[24px] leading-[28px] text-[#2A2A2A] sm:mb-[24px] sm:text-start  sm:text-[34px] sm:leading-[38px]  lg:text-[40px] lg:leading-[45px]  xl:text-[48px] xl:leading-[52px]">
                 What are we?
               </h4>
@@ -59,15 +57,16 @@ const AboutKreatrHeader = () => {
                 inspire each other.`}
               </p>
             </div>
-            <div className=" mt-[24px] flex  w-full justify-center sm:mt-[24px]  sm:block  lg:mt-[24px] ">
-              <Link
-                href="/join-our-klan"
-                className="page-subhead kreatr-btn flex h-[32px] w-[140px] cursor-pointer  items-center justify-center rounded-[40px] bg-[#2A2A2A]  text-center text-[14px] sm:h-[45px]  sm:w-[180px] sm:px-0 sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent sm:hover:text-[#2A2A2A]  lg:h-[48px] lg:w-[220px] lg:text-[16px] xl:h-[58px] xl:w-[251px] xl:text-[20px]"
-              >
-                Join Our Initiative
-              </Link>
-            </div>
           </div>
+        </div>
+
+        <div className=" mt-[24px] flex items-center justify-center sm:mt-[24px] sm:flex sm:w-[700px] lg:mt-[24px]  lg:w-[968px]  xl:w-[1125px] ">
+          <Link
+            href="/join-our-klan"
+            className="page-subhead kreatr-btn flex h-[32px] w-[140px] cursor-pointer  items-center justify-center rounded-[40px] bg-[#2A2A2A]  text-center text-[14px] sm:h-[45px]  sm:w-[180px] sm:px-0 sm:text-[16px] sm:hover:border sm:hover:border-[#2A2A2A] sm:hover:bg-transparent sm:hover:text-[#2A2A2A]  lg:h-[48px] lg:w-[220px] lg:text-[16px] xl:h-[58px] xl:w-[251px] xl:text-[20px]"
+          >
+            Join Our Initiative
+          </Link>
         </div>
       </div>
 
