@@ -16,7 +16,7 @@ const AboutCommunityHero = () => {
           <div className="relative mt-[170px] grid-cols-2 sm:static sm:mt-0 sm:grid lg:gap-[60px] xl:gap-[150px]">
             <div className="box1 h-[369px] w-[317px]  px-[22px] pt-[132px] sm:ml-0 sm:h-[350px] sm:w-[400px] sm:p-[60px] lg:ml-[0px] lg:h-[360px] lg:w-[590px] lg:p-[70px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[70px]">
               <h1 className="page-heading text-center text-[40px]  leading-[35px] sm:text-start sm:text-[50px] sm:leading-[42px]  lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
-                Who Is this
+                Who Is thIs
                 <br /> communIty for?
               </h1>
               <p className="content-neue mt-[15px] text-center  text-[16px] leading-[18px]  sm:text-start sm:text-[20px] lg:mt-[28px] lg:text-[18px] lg:leading-[22px] xl:mt-[38px] xl:text-[22px] xl:leading-[26px] ">
@@ -96,7 +96,7 @@ const AboutCommunityHero = () => {
             <div className="box4 h-[369px] w-[317px] px-[25px] pt-[105px] sm:ml-[0px] sm:h-[350px] sm:w-[410px] sm:p-[50px] lg:ml-[0px] lg:h-[360px] lg:w-[586px] lg:px-[36px] lg:py-[30px] xl:ml-[0px] xl:h-[401px] xl:w-[688px] xl:p-[35px]">
               <h1 className="page-heading text-center  text-[40px] leading-[35px]  sm:text-start sm:text-[50px] sm:leading-[42px] lg:text-[70px] lg:leading-[56px] xl:text-[80px] xl:leading-[67px]">
                 hOW CAN YOU BE A PART
-                <br className="block sm:hidden lg:block" /> OF OUR COMMUNITY?
+                 OF OUR COMMUNITY?
               </h1>
               <p className="content-neue mt-[24px] list-disc  text-center text-[16px] leading-[18px] sm:text-start sm:text-[20px] lg:mt-[30px] lg:text-[18px] lg:leading-[22px] xl:text-[22px] xl:leading-[26px]">
                 Follow us on our socials and download the Kreatr app!
