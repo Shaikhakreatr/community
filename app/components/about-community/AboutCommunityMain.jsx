@@ -8,6 +8,7 @@ const AboutCommunityMain = () => {
       <div>
         <div>
             <AboutCommunityHeader />
+            
             <AboutCommunityHero />
         </div>
       </div>
